@@ -22,7 +22,7 @@
       {
         "id": "input",
         "title": "Input and output",
-        "body": "<p>A sparse polynomial is stored by listing its nonzero coefficients and exponent vectors. Exponents may be written in binary. Thus \\(x^N-1\\) has input length of order \\(\\log N\\), apart from coefficient encoding. For a prime \\(\\ell\\), its factor \\(\\Phi_\\ell(x)=1+x+\\cdots+x^{\\ell-1}\\) has \\(\\ell\\) terms. An algorithm that prints every factor densely cannot always run in time polynomial in sparse input length.</p><p>In several variables, <em>individual degree at most \\(d\\)</em> means \\(\\deg_{x_i}f\\le d\\) for every variable. This differs from allowing one variable an arbitrarily large binary exponent.</p>",
+        "body": "<p>A sparse polynomial is stored by listing its nonzero coefficients and exponent vectors. Exponents may be written in binary. Thus \\(x^N-1\\) has input length of order \\(\\log N\\), apart from coefficient encoding. When \\(N=\\ell\\) is prime, its factor \\(\\Phi_\\ell(x)=1+x+\\cdots+x^{\\ell-1}\\) has \\(\\ell\\) terms. An algorithm that prints every factor densely cannot always run in time polynomial in sparse input length.</p><p>In several variables, <em>individual degree at most \\(d\\)</em> means \\(\\deg_{x_i}f\\le d\\) for every variable. This differs from allowing one variable an arbitrarily large binary exponent.</p>",
         "citations": [
           {
             "key": "Lenstra1999Lacunary",
@@ -48,22 +48,24 @@
       {
         "id": "factor-sparsity",
         "title": "How many terms can a factor have?",
-        "body": "<p>If \\(f\\) has \\(n\\) variables, at most \\(s\\) terms, and individual degree at most \\(d\\), Bhargava–Saraf–Volkovich prove that every factor has at most \\(s^{O(d^2\\log n)}\\) terms. Their proof uses Newton polytopes. It yields deterministic quasipolynomial factorization when \\(d\\) is fixed.</p><p>This bounds the number of terms in factors, not just their degrees. The cost of univariate factorization over the coefficient field must also be included.</p>",
+        "body": "<p>Let \\(0\\ne f\\in F[x_1,\\ldots,x_n]\\), where \\(F\\) is a field, have at most \\(s\\) terms and individual degree at most \\(d\\). Then Bhargava–Saraf–Volkovich prove that every factor has at most \\(s^{O(d^2\\log(n+1))}\\) terms. Their proof uses Newton polytopes. It yields deterministic quasipolynomial factorization when \\(d\\) is fixed.</p><p>This bounds the number of terms in factors, not just their degrees. The cost of univariate factorization over the coefficient field must also be included.</p>",
         "citations": [
           {
             "key": "BhargavaSarafVolkovich2020",
-            "locator": "Theorems 1 and 2 of the arXiv manuscript"
+            "locator": "Theorems 1 and 2 of the arXiv manuscript",
+            "note": "The equivalent log(n+1) bound avoids a convention at n=1; add a dummy variable to treat that case."
           }
         ]
       },
       {
         "id": "sparse-divisors",
         "title": "Sparse divisors",
-        "body": "<p>Chuyoon–Shpilka’s 2026 preprint lists all \\(s\\)-sparse divisors not divisible by a nonconstant monomial in time \\(\\operatorname{poly}(n,d!,s^d)\\), up to nonzero scalar multiples. It also gives full factorization in time \\(\\operatorname{poly}(n,s^{d^2\\log n})\\). These bounds suppress univariate-factorization and field-arithmetic costs.</p><p>Finding sparse divisors does not settle irreducibility: a proper factor may have more terms than the input.</p>",
+        "body": "<p>Chuyoon–Shpilka’s 2026 preprint lists all \\(s\\)-sparse divisors not divisible by a nonconstant monomial in time \\(\\operatorname{poly}(n,d!,s^d)\\), up to nonzero scalar multiples. It also gives full factorization in time \\(\\operatorname{poly}(n,s^{d^2\\log(n+1)})\\). These bounds suppress univariate-factorization and field-arithmetic costs.</p><p>Finding sparse divisors does not settle irreducibility: a proper factor may have more terms than the input.</p>",
         "citations": [
           {
             "key": "ChuyoonShpilka2026",
-            "locator": "Theorems 1.9 and 1.12; Remark 1.7"
+            "locator": "Theorems 1.9 and 1.12; Remark 1.7",
+            "note": "The input is the nonzero polynomial defined above; log(n+1) gives a bound valid also for n=1."
           }
         ]
       },

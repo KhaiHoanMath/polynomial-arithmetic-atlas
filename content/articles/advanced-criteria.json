@@ -8,7 +8,7 @@
     "level": "Intermediate",
     "field": "general fields; characteristic zero for binomials",
     "status": "Classical theory",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
       "When is a composition of polynomials irreducible?",
       "Exactly when is a binomial irreducible in characteristic zero?",
@@ -161,7 +161,7 @@
     "level": "Intermediate",
     "field": "Q",
     "status": "Classical theory",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
       "Why is a product of distinct linear integer factors minus one irreducible?",
       "How small must many values be to force irreducibility?",

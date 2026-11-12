@@ -22,7 +22,7 @@
       {
         "id": "statement",
         "title": "The Dedekind–Frobenius theorem",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Dedekind–Frobenius</p><p>Let \\(f\\in\\mathbb Z[x]\\) be monic and separable, and let \\(G\\) be the Galois group of its splitting field over \\(\\mathbb Q\\), acting on its \\(n\\) roots. If \\(p\\nmid\\operatorname{disc}(f)\\) and</p>\\[\\bar f=f_1\\cdots f_r\\quad\\text{in }\\mathbb F_p[x]\\]<p>is its factorization into distinct monic irreducibles, then \\(G\\) contains a permutation whose cycle lengths are \\(\\deg f_1,\\ldots,\\deg f_r\\).</p></div><p>The cycle statement does not require irreducibility of \\(f\\). Irreducibility is the additional condition that makes \\(G\\) transitive. For nonmonic integral polynomials, also exclude primes dividing the leading coefficient.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Dedekind–Frobenius</p><p>Let \\(f\\in\\mathbb Z[x]\\) be nonconstant, monic, and separable, and let \\(G\\) be the Galois group of its splitting field over \\(\\mathbb Q\\), acting on its \\(n\\) roots. If \\(p\\nmid\\operatorname{disc}(f)\\) and</p>\\[\\bar f=f_1\\cdots f_r\\quad\\text{in }\\mathbb F_p[x]\\]<p>is its factorization into distinct monic irreducibles, then \\(G\\) contains a permutation whose cycle lengths are \\(\\deg f_1,\\ldots,\\deg f_r\\).</p></div><p>The cycle statement does not require irreducibility of \\(f\\). Irreducibility is the additional condition that makes \\(G\\) transitive. For nonmonic integral polynomials, also exclude primes dividing the leading coefficient.</p>",
         "citations": [
           {
             "key": "ConradModP",
@@ -150,7 +150,7 @@
       {
         "id": "definition",
         "title": "Definition",
-        "body": "<p>For \\(f(x)=a_n\\prod_{i=1}^n(x-\\alpha_i)\\) of degree \\(n\\), the polynomial discriminant is</p>\\[\\Delta(f)=a_n^{2n-2}\\prod_{i\\lt j}(\\alpha_i-\\alpha_j)^2=(-1)^{n(n-1)/2}a_n^{-1}\\operatorname{Res}(f,f').\\]<p>It is nonzero exactly when the roots are distinct. The resultant formula computes it from coefficients without computing the roots. Multiplying \\(f\\) by a nonzero scalar changes its discriminant by an even power, so its square class is unchanged.</p>",
+        "body": "<p>For \\(f(x)=a_n\\prod_{i=1}^n(x-\\alpha_i)\\) of degree \\(n\\ge1\\), the polynomial discriminant is</p>\\[\\Delta(f)=a_n^{2n-2}\\prod_{i\\lt j}(\\alpha_i-\\alpha_j)^2=(-1)^{n(n-1)/2}a_n^{-1}\\operatorname{Res}(f,f').\\]<p>It is nonzero exactly when the roots are distinct. The resultant formula computes it from coefficients without computing the roots. Multiplying \\(f\\) by a nonzero scalar changes its discriminant by an even power, so its square class is unchanged.</p>",
         "citations": [
           {
             "key": "Milne2022",
@@ -217,11 +217,11 @@
       {
         "id": "double-discriminants",
         "title": "Double discriminants",
-        "body": "<p>For \\(n\\ge2\\), \\(0\\le k\\le n\\), and the generic polynomial \\(f=\\sum_{i=0}^n a_ix^i\\), put \\(DD_{n,k}=\\operatorname{disc}_{a_k}(\\operatorname{disc}_x f)\\). Anderson and collaborators give a factorization</p>\\[DD_{n,k}=c_{n,k}R_0R_nA_{n,k}^{3}B_{n,k}^{2}.\\]<p>Here \\(R_0=a_0\\) only when \\(k=1\\), and \\(R_n=a_n\\) only when \\(k=n-1\\); otherwise these factors are \\(1\\). The other factors are explicit polynomials. The cube and square reflect a triple root and two double roots in the coefficient family. This structure connects discriminant geometry to counting exceptional Galois groups.</p>",
+        "body": "<p>For \\(n\\ge2\\), \\(0\\le k\\le n\\), and the generic polynomial \\(f=\\sum_{i=0}^n a_ix^i\\), put \\(DD_{n,k}=\\operatorname{disc}_{a_k}(\\operatorname{disc}_x f)\\). In their 2025 preprint, Anderson and collaborators give a factorization</p>\\[DD_{n,k}=c_{n,k}R_0R_nA_{n,k}^{3}B_{n,k}^{2}.\\]<p>Here \\(R_0=a_0\\) only when \\(k=1\\), and \\(R_n=a_n\\) only when \\(k=n-1\\); otherwise these factors are \\(1\\). The other factors are explicit polynomials. The cube and square describe the loci with a triple root and two double roots, respectively. These factors may be constant in small degrees.</p>",
         "citations": [
           {
             "key": "AndersonEtAl2025DoubleDiscriminant",
-            "locator": "Theorems 1.1, 3.1, 3.4 and 3.11"
+            "locator": "Theorem 1.1, Remark 1.2, and Theorems 3.1, 3.4 and 3.11 (arXiv v2)"
           }
         ]
       },
@@ -432,7 +432,7 @@
       {
         "id": "superelliptic-jacobians",
         "title": "Superelliptic Jacobians",
-        "body": "<p>For \\(C:y^p=f(x)\\), with \\(p\\) an odd prime, the automorphism \\((x,y)\\mapsto(x,\\zeta_p y)\\) already produces cyclotomic endomorphisms. Zarhin’s later theorem states that if \\(K\\subseteq\\mathbb C\\), \\(\\deg f=n\\ge5\\), and \\(\\operatorname{Gal}(f/K)=S_n\\) or \\(A_n\\), then</p>\\[\\operatorname{End}_{\\mathbb C}(\\operatorname{Jac} C)\\simeq\\mathbb Z[\\zeta_p].\\]<p>The proof relates endomorphisms to central simple representations. The revised treatment covers the degree-five case that was missing from an earlier argument. A separate theorem treats other doubly transitive groups with explicit restrictions on subgroup indices and \\(p\\).</p>",
+        "body": "<p>Let \\(C\\) be the smooth projective model of \\(y^p=f(x)\\), where \\(p\\) is an odd prime. Then the automorphism \\((x,y)\\mapsto(x,\\zeta_p y)\\) already produces cyclotomic endomorphisms. Zarhin’s later theorem states that if \\(K\\subseteq\\mathbb C\\), \\(\\deg f=n\\ge5\\), and \\(\\operatorname{Gal}(f/K)=S_n\\) or \\(A_n\\), then</p>\\[\\operatorname{End}_{\\mathbb C}(\\operatorname{Jac} C)\\simeq\\mathbb Z[\\zeta_p].\\]<p>The proof relates endomorphisms to central simple representations. The revised proof handles the gap in the earlier argument for degree \\(5\\) and \\(p>5\\). A separate theorem treats other doubly transitive groups with explicit restrictions on subgroup indices and \\(p\\).</p>",
         "citations": [
           {
             "key": "Zarhin2026Superelliptic",

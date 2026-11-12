@@ -30,7 +30,7 @@
       {
         "id": "pairs",
         "title": "Centering and root pairs",
-        "body": "<p>Write \\(n=2m+\\delta\\), where \\(\\delta\\in\\{0,1\\}\\). There is a degree-\\(m\\) polynomial \\(Q_m^{(\\delta,t)}\\) such that</p>\\[\\mathcal K_n^{(t)}(x+t/2)=x^\\delta Q_m^{(\\delta,t)}(x^2).\\]<p>The conjecture concerns \\(Q_m^{(\\delta,t)}\\), not the polynomial of degree \\(2m\\). If \\(Q_m^{(\\delta,t)}\\) is squarefree and has no zero root, the roots of \\(Q_m^{(\\delta,t)}(x^2)\\) form \\(m\\) distinct opposite pairs. Its Galois group maps onto the group of \\(Q_m^{(\\delta,t)}\\), with an elementary abelian 2-group as kernel. The pair group does not determine this kernel. At degenerate specializations, repeated zero roots must first be removed.</p>",
+        "body": "<p>Write \\(n=2m+\\delta\\), where \\(\\delta\\in\\{0,1\\}\\). There is a degree-\\(m\\) polynomial \\(Q_m^{(\\delta,t)}\\) such that</p>\\[\\mathcal K_n^{(t)}(x+t/2)=x^\\delta Q_m^{(\\delta,t)}(x^2).\\]<p>The conjecture concerns \\(Q_m^{(\\delta,t)}\\), not the polynomial of degree \\(2m\\). If \\(Q_m^{(\\delta,t)}\\) is squarefree and has no zero root, the roots of \\(Q_m^{(\\delta,t)}(x^2)\\) form \\(m\\) distinct opposite pairs. Its Galois group maps onto the group of \\(Q_m^{(\\delta,t)}\\), with an elementary abelian 2-group as kernel. The pair group does not determine this kernel. At degenerate specializations, use the distinct nonzero roots when forming pairs.</p>",
         "citations": [
           {
             "key": "Cullinan2024",
@@ -820,7 +820,7 @@
       {
         "id": "curves-and-parameters",
         "title": "Dynatomic curves and parameter polynomials",
-        "body": "<p>There are two different irreducibility questions. For \\(f_c(z)=z^2+c\\), the curve</p>\\[\\Phi_n(c,z)=\\prod_{d\\mid n}(f_c^{\\circ d}(z)-z)^{\\mu(n/d)}=0\\]<p>is irreducible over \\(\\mathbb C\\). Buff–Tan give a proof using kneading sequences, and also prove that the affine curve is smooth. These are statements about the two-variable polynomial. Intersecting this curve with \\(z=0\\) leads to the critical-parameter problem; geometric irreducibility of the curve does not imply irreducibility of that intersection over \\(\\mathbb Q\\).</p><p>Doyle–Poonen study the irreducible components of preperiodic-point curves for \\(z^d+c\\). Over a field containing the \\(d\\)-th roots of unity, with characteristic not dividing \\(d\\), each such component is geometrically irreducible and their gonalities tend to infinity. The characteristic-zero proof uses the Castelnuovo–Severi inequality. This connects the geometry of the curves with bounds on rational preperiodic points.</p>",
+        "body": "<p>There are two different irreducibility questions. For \\(f_c(z)=z^2+c\\), the curve</p>\\[\\Phi_n(c,z)=\\prod_{d\\mid n}(f_c^{\\circ d}(z)-z)^{\\mu(n/d)}=0\\]<p>is irreducible over \\(\\mathbb C\\). Buff–Tan give a proof using kneading sequences, and also prove that the affine curve is smooth. These are statements about the two-variable polynomial. Intersecting this curve with \\(z=0\\) leads to the critical-parameter problem; geometric irreducibility of the curve does not imply irreducibility of that intersection over \\(\\mathbb Q\\).</p><p>For fixed \\(d\\ge2\\), Doyle–Poonen study the irreducible components of preperiodic-point curves for \\(z^d+c\\). Over a field containing the \\(d\\)-th roots of unity, with characteristic not dividing \\(d\\), each such component is geometrically irreducible and their gonalities tend to infinity. The characteristic-zero proof uses the Castelnuovo–Severi inequality. This connects the geometry of the curves with bounds on rational preperiodic points.</p>",
         "citations": [
           {
             "key": "BuffTan2014Dynatomic",
@@ -1024,7 +1024,7 @@
     "title": "Stern polynomials",
     "kind": "family",
     "subject": "families",
-    "summary": "Two different polynomial sequences extend Stern’s sequence. Their irreducibility questions must be kept separate.",
+    "summary": "Several polynomial constructions use Stern’s sequence. Their irreducibility questions depend on the recurrence or coefficients.",
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results and conjectures",
@@ -1504,7 +1504,7 @@
       {
         "id": "local-orbits",
         "title": "Local invariants",
-        "body": "<p>For prime-power or squarefree \\(N\\), Dieulefait–Pacetti–Tsaknias prove, for sufficiently large even \\(k\\),</p>\\[\\mathrm{NCM}(N,k)\\ge\\prod_{p\\mid N}\\mathrm{LO}(p^{v_p(N)}).\\]<p>Here \\(\\mathrm{LO}\\) counts local Galois orbits with compatible minimal Atkin–Lehner signs. Equality is asked in Question 4.5. Their level-256 computations give 12 non-CM orbits against a bound of 10, through weight 28. The authors therefore warn that additional invariants may be needed.</p>",
+        "body": "<p>For prime-power or squarefree \\(N\\), Dieulefait–Pacetti–Tsaknias prove, for sufficiently large even \\(k\\),</p>\\[\\mathrm{NCM}(N,k)\\ge\\prod_{p\\mid N}\\mathrm{LO}(p^{v_p(N)}).\\]<p>Here \\(\\mathrm{LO}\\) counts local Galois orbits with compatible minimal Atkin–Lehner signs. Equality is asked in Question 4.5. At weight 12 and level 256, they find 12 non-CM orbits against a bound of 10; the discrepancy persists in their computations through weight 28. The authors therefore warn that additional invariants may be needed.</p>",
         "citations": [
           {
             "key": "DieulefaitPacettiTsaknias2021",
@@ -1621,7 +1621,7 @@
       {
         "id": "distinctions",
         "title": "Related families",
-        "body": "<p>These polynomials should not be confused with the Hecke polynomials of cusp forms or with the Kaneko–Zagier lifts of supersingular polynomials. The latter arise from different modular forms. A theorem for one family does not settle the other.</p><p>A related coefficient-valuation conjecture of González is reported proved by Chiriac–Jorza in their 2026 preprint. That result should not remain listed as an unqualified open problem; it is not a claim that every \\(\\varphi_k\\) is irreducible.</p>",
+        "body": "<p>These polynomials should not be confused with the Hecke polynomials of cusp forms or with the Kaneko–Zagier lifts of supersingular polynomials. The latter arise from different modular forms. A theorem for one family does not settle the other.</p><p>A related coefficient-valuation conjecture of González is reported proved by Chiriac–Jorza in their 2026 preprint. This concerns coefficient valuations, not irreducibility of every \\(\\varphi_k\\).</p>",
         "citations": [
           {
             "key": "MahlburgOno2004",

@@ -19,7 +19,7 @@
         "ConradModP",
         "ConradSnAn"
       ],
-      "checkpoint": "Give a proof of \\(\\operatorname{Gal}(x^5-x-1/\\mathbb Q)=S_5\\) and state exactly what each prime contributes.",
+      "checkpoint": "For \\(f(x)=x^5-x-1\\), prove \\(\\operatorname{Gal}(f/\\mathbb Q)=S_5\\) and state what each prime contributes.",
       "steps": [
         {
           "article": "foundations",
@@ -59,7 +59,7 @@
         },
         {
           "title": "Exercise",
-          "note": "Give a proof of \\(\\operatorname{Gal}(x^5-x-1/\\mathbb Q)=S_5\\) and state exactly what each prime contributes."
+          "note": "For \\(f(x)=x^5-x-1\\), prove \\(\\operatorname{Gal}(f/\\mathbb Q)=S_5\\) and state what each prime contributes."
         }
       ]
     },
@@ -93,7 +93,7 @@
         {
           "article": "newton-polygons",
           "title": "Newton polygons and Galois groups",
-          "note": "Determine p-adic root valuations from coefficients, intersect the permitted factor degrees, and apply group criteria to the resulting slope denominators.",
+          "note": "Determine p-adic root valuations, combine factor-degree restrictions, and use suitable prime divisors of slope denominators to force large groups.",
           "references": []
         },
         {
@@ -153,7 +153,7 @@
         {
           "article": "reciprocity",
           "title": "Reciprocal polynomials",
-          "note": "Reduce a reciprocal polynomial to a polynomial of half the degree, then study the remaining quadratic extensions to determine irreducibility and the ambient Galois group.",
+          "note": "For a reciprocal polynomial of even degree, form the trace polynomial of half the degree. Study the remaining quadratic extensions to determine irreducibility and the Galois group.",
           "references": []
         },
         {
@@ -276,7 +276,7 @@
         {
           "article": "height-counting",
           "title": "Height bounds for exceptional Galois groups",
-          "note": "At fixed degree, almost all integer polynomials have full symmetric group. Study the exceptional counts and the changes imposed by reciprocal symmetry.",
+          "note": "As coefficient height grows at fixed degree, almost all integer polynomials have full symmetric group. Study the exceptional counts and the restrictions from reciprocal symmetry.",
           "references": []
         },
         {
@@ -294,7 +294,7 @@
         {
           "article": "random-reciprocal",
           "title": "Random reciprocal polynomials of growing degree",
-          "note": "For reciprocal polynomials with independent free coefficients, roots occur in inverse pairs and the Galois group lies in a signed-permutation group. Study this model through the associated trace polynomial.",
+          "note": "A separable reciprocal polynomial of even degree has inverse root pairs and a signed-permutation group. Study the independent-coefficient model through its trace polynomial.",
           "references": []
         },
         {
@@ -616,7 +616,7 @@
       "signal": "Different primes exclude different factor degrees",
       "method": "Intersect Newton-polygon degree constraints",
       "article": "newton-polygons",
-      "output": "A global irreducibility proof even when each individual prime permits factors",
+      "output": "Irreducibility when the permitted proper factor degrees have empty intersection",
       "boundary": "The degree restrictions from different primes may still have a common proper degree.",
       "references": [
         "Coleman1987",
@@ -684,7 +684,7 @@
       "method": "Frobenius cycle types",
       "article": "frobenius",
       "output": "An element of the specified cycle type",
-      "boundary": "The squarefree-reduction argument does not apply at bad primes; a missing cycle type need not be absent from the group.",
+      "boundary": "Use squarefree reduction at good primes. Failure to observe a cycle type at the tested primes does not exclude it from the group.",
       "references": [
         "ConradModP",
         "StevenhagenLenstra1996"
@@ -707,7 +707,7 @@
     },
     {
       "question": "How can A_n be distinguished from S_n?",
-      "signal": "Containment of \\(A_n\\) has already been proved",
+      "signal": "A separable degree-n polynomial in characteristic different from 2, with containment of A_n already proved",
       "method": "Discriminant square class or an odd permutation",
       "article": "discriminants",
       "output": "Equality with A_n or S_n",
@@ -716,7 +716,7 @@
         "Milne2022",
         "ConradSnAn"
       ],
-      "input": "Containment of \\(A_n\\) has already been proved"
+      "input": "A separable degree-n polynomial in characteristic different from 2, with containment of A_n already proved"
     },
     {
       "question": "Does a root symmetry force a smaller ambient group?",
@@ -746,7 +746,7 @@
     },
     {
       "question": "Do generic results survive parameter specialization?",
-      "signal": "An irreducible family over Q(t), or over K(t) with K Hilbertian",
+      "signal": "An irreducible separable family over K(t), with K Hilbertian (for example, K=Q)",
       "method": "Hilbert irreducibility and specialized geometric criteria",
       "article": "specialization",
       "output": "Irreducible specializations, with the exceptional set described under the stated hypotheses",
@@ -756,7 +756,7 @@
         "Serre2007Topics",
         "HajirWong2006"
       ],
-      "input": "An irreducible family over Q(t), or over K(t) with K Hilbertian"
+      "input": "An irreducible separable family over K(t), with K Hilbertian (for example, K=Q)"
     },
     {
       "question": "Are all iterates irreducible?",
@@ -816,8 +816,8 @@
     },
     {
       "question": "What is the generic Galois group of F(X)−T?",
-      "signal": "Simple critical points with pairwise distinct critical values in characteristic zero",
-      "input": "Simple critical points with pairwise distinct critical values in characteristic zero",
+      "signal": "A polynomial of degree n≥2 in characteristic zero, with simple critical points and pairwise distinct critical values",
+      "input": "A polynomial of degree n≥2 in characteristic zero, with simple critical points and pairwise distinct critical values",
       "method": "Morse criterion: finite branch inertia generates transpositions",
       "article": "critical-points-monodromy",
       "output": "Geometric and arithmetic group \\(S_n\\); a regular splitting field",

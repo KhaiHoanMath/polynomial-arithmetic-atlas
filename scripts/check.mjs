@@ -9,10 +9,16 @@ async function walk(dir){const out=[];for(const entry of await readdir(dir,{with
 const pages=new Map(await Promise.all((await walk(dist)).map(async f=>[f,await readFile(f,'utf8')])));
 const ids=new Map([...pages].map(([f,h])=>[f,new Set([...h.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]))]));
 const problems=[];
+const publicBase=new URL(process.env.SITE_URL??'https://khaihoanmath.github.io/polynomial-arithmetic-atlas/');
+if(!publicBase.pathname.endsWith('/'))publicBase.pathname+='/';
 const decode=s=>s.replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&#39;',"'").replaceAll('&lt;','<').replaceAll('&gt;','>');
 let localLinks=0,externalLinks=0;
 for(const[file,html]of pages){
  const label=relative(dist,file);
+ const expectedURL=new URL(label==='index.html'?'./':label,publicBase).href;
+ const canonical=html.match(/<link rel="canonical" href="([^"]+)"/);
+ if(!canonical||decode(canonical[1])!==expectedURL)problems.push(`Missing or incorrect canonical URL: ${label}`);
+ for(const field of ['og:title','og:description','og:url'])if(!html.includes(`property="${field}"`))problems.push(`Missing sharing metadata ${field}: ${label}`);
  if(!html.includes('© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.')||!html.includes('name="author" content="Khai-Hoan Nguyen-Dang"'))problems.push(`Missing copyright/author: ${label}`);
  if(/\bdownload(?:\s|=|>)/.test(html)||/href="[^"#]*(?:downloads\/|handbook\.html)/.test(html))problems.push(`Public download link: ${label}`);
  const declarations=[...html.matchAll(/\sid="([^"]+)"/g)];

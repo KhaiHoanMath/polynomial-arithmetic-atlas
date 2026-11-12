@@ -72,3 +72,10 @@ The exposition review of 12 November revised all 37 articles, the reading and me
 Added 49 references, three articles, and 13 questions after searching Hexagon, arXiv, Zenodo, journal sites, and author pages. The Taylor article records Nguyen-Dang’s version 3, with separate attribution to Wei, Seki, and Sun. The update also covers sparse algorithms, Ehrhart polynomials, primitive normal bases, dynatomic geometry, local specialization, trace forms, Jacobians, and discriminant counting.
 
 Corrected the higher-level Maeda multiplicativity discussion and recorded the original eventual-stability counterexample. The Morgan–Mullen and strong van der Waerden updates retain their preprint status. Generalized Bessel references include the published corrigendum; parameter-dependent claims not checked in the correction are not asserted. Source review checks statements, hypotheses, versions, and selected examples; it does not certify every proof or establish bibliographic completeness.
+
+
+## Review before announcement · 12 November 2026
+
+Read all 53 articles and their 107 questions, along with reading paths and method summaries. Clarified separability and degree-preserving reduction, sparse input and output conventions, reciprocal and dynatomic group bounds, fixed-degree limits, and the precise ensembles in random-matrix statements. Preprint claims retain version-specific attribution; question statuses remain Settled, Claimed, Open, or Research direction.
+
+The release includes canonical page URLs and sharing metadata. Exact example checks, formula rendering, citation IDs, internal links, and representative browser controls were checked. This is a statement and exposition review, not an independent proof verification of every source.

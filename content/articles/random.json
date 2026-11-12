@@ -286,7 +286,7 @@
       {
         "id": "special-degrees",
         "title": "Irreducibility in special degrees",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bary-Soroker–Hokken–Kozma–Poonen</p><p>There is an absolute \\(c>0\\) such that, for \\(n=2^r-1\\),</p>\\[\\Pr(L_n\\text{ irreducible over }\\mathbb Q)\\ge1-n^{-c}.\\]<p>In particular, \\(\\limsup_{n\\to\\infty}\\Pr(L_n\\text{ irreducible})=1\\). The paper also treats degrees \\(n=p^r-1\\) when \\(p\\ge7\\) is prime and \\(2\\) generates \\( (\\mathbb Z/p^2\\mathbb Z)^\\times\\).</p></div><p>For \\(g(x)=L_n(x+1)\\), every coefficient below the leading one is even. Their residues modulo \\(4\\) are independent and uniform in \\(\\{0,2\\}\\). With probability tending to one, a coefficient near the constant term has valuation exactly one. The 2-adic Newton polygon then gives a local irreducible factor of degree close to \\(n\\). If the polynomial factors over the rationals, a remaining factor must have small degree. The separate small-factor theorem excludes such a factor with probability tending to one.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bary-Soroker–Hokken–Kozma–Poonen</p><p>There is an absolute \\(c>0\\) such that, for \\(n=2^r-1\\) with \\(r\\ge1\\),</p>\\[\\Pr(L_n\\text{ irreducible over }\\mathbb Q)\\ge1-n^{-c}.\\]<p>In particular, \\(\\limsup_{n\\to\\infty}\\Pr(L_n\\text{ irreducible})=1\\). The paper also treats degrees \\(n=p^r-1\\) when \\(p\\ge7\\) is prime and \\(2\\) generates \\( (\\mathbb Z/p^2\\mathbb Z)^\\times\\).</p></div><p>For \\(g(x)=L_n(x+1)\\), every coefficient below the leading one is even. Their residues modulo \\(4\\) are independent and uniform in \\(\\{0,2\\}\\). With probability tending to one, a coefficient near the constant term has valuation exactly one. The 2-adic Newton polygon then gives a local irreducible factor of degree close to \\(n\\). If the polynomial factors over the rationals, a remaining factor must have small degree. The separate small-factor theorem excludes such a factor with probability tending to one.</p>",
         "citations": [
           {
             "key": "BarySorokerHokkenKozmaPoonen2025",
@@ -382,7 +382,7 @@
     "level": "Research",
     "field": "Q",
     "status": "Preprint boundary",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
       "What does reversing a factor preserve?",
       "Why do the coefficients remain binary?",
@@ -510,7 +510,7 @@
       {
         "id": "height-model",
         "title": "Monic polynomials",
-        "body": "<p>Fix \\(n\\ge3\\) and consider the monic polynomials</p>\\[f=x^n+a_1x^{n-1}+\\cdots+a_n,\\qquad |a_i|\\le H.\\]<p>There are \\((2\\lfloor H\\rfloor+1)^n\\) choices. Let \\(E_n(H)\\) count those whose Galois group on the roots is not \\(S_n\\). This count includes reducible polynomials and polynomials with repeated roots. The degree is fixed, and implied constants may depend on it.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bhargava</p><p>For fixed \\(n\\ge3\\),</p>\\[E_n(H)=O_n(H^{n-1}).\\]</div><p>The \\((2\\lfloor H\\rfloor+1)^{n-1}\\) choices with \\(a_n=0\\) all have the factor \\(x\\) and give a lower bound of the same order. The exceptional proportion therefore has order \\(H^{-1}\\).</p>",
+        "body": "<p>Fix \\(n\\ge3\\) and consider the monic polynomials</p>\\[f=x^n+a_1x^{n-1}+\\cdots+a_n,\\qquad |a_i|\\le H.\\]<p>There are \\((2\\lfloor H\\rfloor+1)^n\\) choices. Let \\(E_n(H)\\) count the polynomials with repeated roots, together with the separable polynomials whose Galois group on the \\(n\\) roots is not \\(S_n\\). Thus reducible polynomials are included. The degree is fixed, and implied constants may depend on it.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bhargava</p><p>For fixed \\(n\\ge3\\),</p>\\[E_n(H)=O_n(H^{n-1}).\\]</div><p>The \\((2\\lfloor H\\rfloor+1)^{n-1}\\) choices with \\(a_n=0\\) all have the factor \\(x\\) and give a lower bound of the same order. The exceptional proportion therefore has order \\(H^{-1}\\).</p>",
         "citations": [
           {
             "key": "Bhargava2025",
@@ -583,7 +583,7 @@
       {
         "id": "prescribed-action",
         "title": "Prescribed permutation actions",
-        "body": "<p>Write \\(B(H;G,\\Omega)\\) for the set of monic separable integer polynomials of degree \\(|\\Omega|\\), height at most \\(H\\), and root action isomorphic to \\((G,\\Omega)\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Reported preprint result · Ben-Porath (2026)</p><p>If \\(G\\le S_m\\) is \\(k\\)-transitive and \\([m]_k\\) denotes the ordered \\(k\\)-tuples of distinct elements, then for fixed \\(G,m,k\\) and every \\(\\varepsilon>0\\),</p>\\[|B(H;G,[m]_k)|\\ll_{G,m,k,\\varepsilon} H^{m+1+\\varepsilon}.\\]</div><p>For \\(S_5\\) on ordered pairs, the degree is \\(20\\) and the bound is \\(O_\\varepsilon(H^{6+\\varepsilon})\\). The natural action has degree five.</p><p>The coefficients of \\(\\prod_{\\alpha\\in A}(x-\\alpha)\\) generate the field fixed by the setwise stabilizer of the root subset \\(A\\). The proof chooses families of subsets to recover the splitting field while controlling the heights. The paper also treats subset actions, primitive wreath-product actions, and regular actions.</p>",
+        "body": "<p>Write \\(B(H;G,\\Omega)\\) for the set of monic separable integer polynomials of degree \\(|\\Omega|\\), height at most \\(H\\), and root action isomorphic to \\((G,\\Omega)\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Reported preprint result · Ben-Porath (2026)</p><p>Let \\(1\\le k\\le m\\). If \\(G\\le S_m\\) is \\(k\\)-transitive and \\([m]_k\\) denotes the ordered \\(k\\)-tuples of distinct elements, then for fixed \\(G,m,k\\) and every \\(\\varepsilon>0\\),</p>\\[|B(H;G,[m]_k)|\\ll_{G,m,k,\\varepsilon} H^{m+1+\\varepsilon}.\\]</div><p>For \\(S_5\\) on ordered pairs, the degree is \\(20\\) and the bound is \\(O_\\varepsilon(H^{6+\\varepsilon})\\). The natural action has degree five.</p><p>The coefficients of \\(\\prod_{\\alpha\\in A}(x-\\alpha)\\) generate the field fixed by the setwise stabilizer of the root subset \\(A\\). The proof chooses families of subsets to recover the splitting field while controlling the heights. The paper also treats subset actions, primitive wreath-product actions, and regular actions.</p>",
         "citations": [
           {
             "key": "BenPorath2026RootSubsets",
@@ -724,7 +724,7 @@
       {
         "id": "other-ensembles",
         "title": "Other matrix ensembles",
-        "body": "<div class=\"table-wrap\"><table><thead><tr><th>Ensemble</th><th>Result</th><th>Source</th></tr></thead><tbody><tr><td>Symmetric fair-sign matrices</td><td>High-probability irreducibility under ERH, using finite-field rank estimates.</td><td>Ferber–Jain–Sah–Sawhney</td></tr><tr><td>Specified random tridiagonal matrices</td><td>Irreducibility with exponentially small failure probability and alternating or symmetric Galois group, under the stated Dedekind RH assumptions.</td><td>Bary-Soroker–Garzoni–Sodin</td></tr><tr><td>Fixed-size matrices with entries bounded by height</td><td>Counts of exceptional groups as the height tends to infinity at fixed size.</td><td>Anderson–O’Dorney</td></tr></tbody></table></div><p>The tridiagonal paper also gives a smaller group for a related ensemble. The allowed group can depend on the matrix structure.</p>",
+        "body": "<div class=\"table-wrap\"><table><thead><tr><th>Ensemble</th><th>Result</th><th>Source</th></tr></thead><tbody><tr><td>Symmetric fair-sign matrices</td><td>High-probability irreducibility under ERH, using finite-field rank estimates.</td><td>Ferber–Jain–Sah–Sawhney</td></tr><tr><td>Symmetric tridiagonal matrices with iid bounded, nonconstant integer diagonal entries and adjacent off-diagonal entries equal to 1</td><td>Irreducibility with exponentially small failure probability and alternating or symmetric Galois group, under the stated Dedekind RH assumptions.</td><td>Bary-Soroker–Garzoni–Sodin</td></tr><tr><td>Fixed-size matrices with entries bounded by height</td><td>Counts of exceptional groups as the height tends to infinity at fixed size.</td><td>Anderson–O’Dorney</td></tr></tbody></table></div><p>The tridiagonal paper also gives a smaller group for a related ensemble. The allowed group can depend on the matrix structure.</p>",
         "citations": [
           {
             "key": "FerberJainSahSawhney2023",
@@ -732,7 +732,8 @@
           },
           {
             "key": "BarySorokerGarzoniSodin2026",
-            "note": "Conditional tridiagonal results and contrasting ensemble."
+            "note": "Conditional tridiagonal theorem; bounded diagonal entries satisfy the paper's more general tail assumption. A related ensemble has a smaller group.",
+            "locator": "Theorem 1 and equations (1)–(3), arXiv v3"
           },
           {
             "key": "AndersonODorney2026Matrices",
@@ -813,7 +814,7 @@
     "level": "Research",
     "field": "Q",
     "status": "Preprint boundary",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
       "Which permutation group acts on the inverse pairs?",
       "How does the trace change of variables affect coefficient independence?",
@@ -933,7 +934,7 @@
     "level": "Research",
     "field": "Q",
     "status": "Preprint boundary",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
       "What is the trace variable for x↦b/x?",
       "How is the discriminant expressed in terms of the trace polynomial?",
@@ -975,12 +976,12 @@
       {
         "id": "counting",
         "title": "Exceptional groups at fixed degree",
-        "body": "<p>O’Dorney’s September 2026 preprint uses an adapted Euclidean height. For fixed \\(b\\ne0\\) and \\(m\\ge4\\), it reports that the number of polynomials with Galois group smaller than \\(W_m\\) is an explicit constant times \\(H^m\\log H\\), with error \\(O_{m,b}(H^m)\\). Groups contained in an index-two subgroup supply the main term. The counting convention and constant are those of the linked preprint version.</p><p>The discriminant formula reduces the even-permutation condition to a square-value condition on the trace polynomial. Anderson–Bertelli–O’Dorney treat the untwisted case \\(b=1\\) in the published paper.</p>",
+        "body": "<p>Fix integers \\(m\\ge4\\) and \\(b\\ne0\\). For an integer \\(b\\)-reciprocal polynomial \\(F(x)=\\sum_{i=0}^{2m}a_ix^i\\) of degree \\(2m\\), use the weighted Euclidean height</p>\\[\\operatorname{Ht}_b(F)=\\left(\\sum_{i=0}^{2m}|b|^i a_i^2\\right)^{1/2}.\\]<p>Let \\(\\mathcal E_{m,b}(H)\\) count separable such polynomials of height at most \\(H\\) whose Galois group is smaller than \\(W_m\\), and let \\(\\mathcal E^{\\mathrm{monic}}_{m,b}(H)\\) count the monic subset.</p><div class=\"math-block theorem\"><p class=\"block-label\">Preprint theorem · O’Dorney</p>\\[\\begin{aligned}\\mathcal E_{m,b}(H)&=c_{m,b}H^m\\log H+O_{m,b}(H^m),\\\\\\mathcal E^{\\mathrm{monic}}_{m,b}(H)&=c^{\\mathrm{monic}}_{m,b}H^{m-1}\\log H+O_{m,b}(H^{m-1}).\\end{aligned}\\]<p>The constants are explicit and positive. The main term comes from \\(G_1=W_m\\cap A_{2m}\\); all other exceptional groups together contribute at most the stated error terms.</p></div><p>The discriminant formula reduces the even-permutation condition to a square-value condition on the trace polynomial. Anderson–Bertelli–O’Dorney treat the untwisted case \\(b=1\\) in the published paper.</p>",
         "citations": [
           {
             "key": "ODorney2026Twisted",
-            "note": "Verified primary indexed abstract; full-text theorem details are not asserted here.",
-            "locator": "Abstract, v1"
+            "note": "Full primary theorem and height definition checked; this remains a preprint result.",
+            "locator": "Theorem 1.1, equations (2)–(7), and the following paragraph, arXiv v1"
           },
           {
             "key": "AndersonBertelliODorney2026",

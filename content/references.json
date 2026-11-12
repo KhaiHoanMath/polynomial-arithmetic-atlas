@@ -531,19 +531,22 @@
       "issue": "4",
       "pages": "491",
       "doi": "10.4064/aa-11-4-491",
-      "url": "https://doi.org/10.4064/aa-11-4-491",
+      "url": "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/11/4/96020/errata-to-the-paper-on-the-reducibility-of-polynomials-and-in-particular-of-trinomials",
       "section": "Classical criteria and factorization methods",
       "annotation": "Corrects statements in Schinzel’s 1965 paper; the correction and original paper should be consulted together.",
       "status": "published erratum",
       "verification_urls": [
-        "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/en/publishing-house/journals-and-series/acta-arithmetica/all/11/4/96020/errata-to-the-paper-on-the-reducibility-of-polynomials-and-in-particular-of-trinomials"
+        "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/en/publishing-house/journals-and-series/acta-arithmetica/all/11/4/96020/errata-to-the-paper-on-the-reducibility-of-polynomials-and-in-particular-of-trinomials",
+        "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/11/4/96020/errata-to-the-paper-on-the-reducibility-of-polynomials-and-in-particular-of-trinomials"
       ],
       "source_file": "classical",
-      "accessed": "2026-11-11",
+      "accessed": "2026-11-12",
       "group": "Classical criteria and sparse-polynomial methods",
       "group_index": 1,
       "kind": "Published work",
-      "number": 21
+      "number": 21,
+      "doi_resolves": false,
+      "metadata_note": "The publisher page confirms the citation and DOI. The DOI resolver returned 404 on 12 November 2026; the Source link uses the working publisher page."
     },
     {
       "id": "levit1968",
@@ -4517,9 +4520,10 @@
       "section": "Databases and software",
       "annotation": "Official documentation for the Stauduhar-based GaloisGroup implementation, with no fixed degree cap for the documented integer, rational and number-field polynomial inputs. GaloisGroup does not itself certify its conditional steps; the documented GaloisProof overloads attempt certification for integer polynomials or absolute number fields. Record a successful result and the exact input/options.",
       "status": "Maintained software documentation",
-      "accessed": "2026-11-11",
+      "accessed": "2026-11-12",
       "verification_urls": [
-        "https://docs.magma-maths.org/GlobalFields/GaloisGroupsAndAutomorphisms/galois.html"
+        "https://docs.magma-maths.org/GlobalFields/GaloisGroupsAndAutomorphisms/galois.html",
+        "https://docs.magma-maths.org/v2.30-1/GlobalFields/GaloisGroupsAndAutomorphisms/galois.html"
       ],
       "source_file": "algorithms",
       "group": "Databases and software",
@@ -5149,17 +5153,18 @@
       "url": "https://arxiv.org/abs/2609.31613v1",
       "arxiv": "2609.31613",
       "section": "Special families: Fekete and reciprocal polynomials",
-      "annotation": "For fixed twist b≠0 and half-degree m≥4, reports an asymptotic for exceptional hyperoctahedral Galois groups in an adapted Euclidean height. Primary arXiv indexed abstract checked; theorem details and constants require the full version.",
+      "annotation": "For fixed integers b≠0 and m≥4, proposes asymptotics for separable integer b-reciprocal polynomials of degree 2m whose Galois group is smaller than the full hyperoctahedral group. In the specified weighted Euclidean height, the exceptional counts have main terms proportional to H^m log H in the nonmonic family and H^{m−1} log H in the monic family.",
       "status": "Preprint; v1 (25 September 2026)",
       "verification_urls": [
-        "https://arxiv.org/abs/2609.31613v1"
+        "https://arxiv.org/abs/2609.31613v1",
+        "https://arxiv.org/html/2609.31613v1"
       ],
       "group": "Special polynomial families",
       "group_index": 3,
       "kind": "Preprint",
-      "accessed": "2026-11-11",
+      "accessed": "2026-11-12",
       "number": 200,
-      "metadata_note": "The primary arXiv abstract and v1 endpoint could not be reopened on 12 November 2026. The earlier abstract-only catalogue entry is retained; full theorem statements, constants and any later version remain unverified in this pass."
+      "metadata_note": "Theorem 1.1, equations (2)–(7), and §2.1 of v1 were checked in the full primary text on 12 November 2026. The positive leading constants and error terms depend on the fixed degree and twist; the errors are O(H^m) and O(H^{m−1}), respectively. This verifies the statement and conventions, not the full proof."
     },
     {
       "id": "GuardiaMontesNart2012Newton",
@@ -6797,20 +6802,22 @@
       "issue": "4",
       "pages": "337--355",
       "doi": "10.1007/s00145-004-0221-0",
-      "url": "https://vonzurgathen.online/old/files/gatnoc05.pdf",
+      "url": "https://doi.org/10.1007/s00145-004-0221-0",
       "section": "Finite fields: construction and prescribed coefficients",
       "annotation": "Studies finite-field arithmetic using sparse polynomial bases and normal bases. Conjectures 2.5 and 2.8 predict bounded-weight irreducible polynomials and irreducible polynomials x^n+h with deg h at most 3+log_q n. The author-hosted prepublication text retains these locators.",
       "status": "Published article",
       "verification_urls": [
         "https://link.springer.com/article/10.1007/s00145-004-0221-0",
-        "https://vonzurgathen.online/old/files/gatnoc05.pdf"
+        "https://vonzurgathen.online/old/files/gatnoc05.pdf",
+        "https://cosec.bit.uni-bonn.de/fileadmin/user_upload/publications/pubs/gatnoc05.pdf"
       ],
       "source_file": "finite",
       "accessed": "2026-11-12",
       "group": "Finite fields: construction and distribution",
       "group_index": 7,
       "kind": "Published work",
-      "number": 264
+      "number": 264,
+      "open_url": "https://cosec.bit.uni-bonn.de/fileadmin/user_upload/publications/pubs/gatnoc05.pdf"
     },
     {
       "id": "Entin2025RationalFunction",

@@ -4,6 +4,7 @@ document.documentElement.classList.add('js');
 const normalize=text=>String(text??'').toLowerCase().normalize('NFKD').replace(/\p{Diacritic}/gu,'').replace(/[‐‑–—]/g,'-');
 const menu=document.querySelector('.nav-toggle');
 menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));document.querySelector('#main-nav').classList.toggle('is-open',open);});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu?.getAttribute('aria-expanded')==='true'){menu.setAttribute('aria-expanded','false');document.querySelector('#main-nav').classList.remove('is-open');menu.focus();}});
 const form=document.querySelector('[data-filter-form]');
 if(form){
  const items=[...document.querySelectorAll('[data-filter-item]')].map((node,index)=>({node,index,text:normalize(node.dataset.search),title:normalize(node.dataset.title??node.querySelector('h2,h3')?.textContent??''),year:Number(node.dataset.year??0)}));
