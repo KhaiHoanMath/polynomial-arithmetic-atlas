@@ -42,7 +42,15 @@ export async function validateContent(root) {
   for(const key of m.references??[])reference(key,'method: '+m.question);
  }
  for(const e of laboratory)article(e.article,e.id+' laboratory relation');
+ const sourceIDs={doi:new Map(),arxiv:new Map()};
  for(const r of catalogue.references) {
+  for(const field of ['doi','arxiv']) {
+   if(!r[field])continue;
+   const value=String(r[field]).trim().toLowerCase().replace(/^https?:\/\/(?:dx\.)?doi\.org\//,'').replace(field==='arxiv'?/v\d+$/:/$^/,'');
+   const previous=sourceIDs[field].get(value);
+   if(previous)errors.push(r.id+': duplicate '+field+' also used by '+previous);
+   sourceIDs[field].set(value,r.id);
+  }
   if(!Number.isInteger(r.group_index)||r.group_index<0||r.group_index>=subjects.length)errors.push(r.id+': invalid reference group');
   for(const u of [r.url,r.open_url,...(r.verification_urls??[])].filter(Boolean)){
    try {const parsed=new URL(u);if(!['https:','http:'].includes(parsed.protocol))throw Error();}

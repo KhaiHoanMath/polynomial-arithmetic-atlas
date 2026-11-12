@@ -165,6 +165,11 @@
         "id": "specialization",
         "relation": "Supplies examples for",
         "why": "The geometric group of a finite-field family can differ from the groups of its specializations."
+      },
+      {
+        "id": "sparse-finite-fields",
+        "relation": "Related family",
+        "why": "Sparsity conjectures ask for irreducibles with few nonzero coefficients."
       }
     ],
     "questions": [

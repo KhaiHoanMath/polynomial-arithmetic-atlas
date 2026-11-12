@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "krawtchouk",
+    "title": "Krawtchouk polynomials",
+    "kind": "family",
+    "subject": "families",
+    "summary": "Centering separates the action on pairs of roots from its quadratic kernel. Cullinan conjectures a symmetric group for every irreducible reduced specialization.",
+    "level": "Intermediate",
+    "field": "Q",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Does every irreducible reduced Krawtchouk polynomial have full symmetric group?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition",
+        "body": "<p>For \\(n\\ge1\\) and \\(t\\in\\mathbb Q\\), put</p>\\[\\mathcal K_n^{(t)}(x)=\\sum_{j=0}^n(-2)^j\\binom{t-j}{n-j}\\binom{x}{j}.\\]<p>These are the binary Krawtchouk polynomials, with the length parameter allowed to be rational. The leading coefficient is \\((-2)^n/n!\\), so the degree never drops.</p>",
+        "citations": [
+          {
+            "key": "Cullinan2024",
+            "locator": "§1.1, equation (1.1.1); arXiv:2212.07539v1"
+          }
+        ]
+      },
+      {
+        "id": "pairs",
+        "title": "Centering and root pairs",
+        "body": "<p>Write \\(n=2m+\\delta\\), where \\(\\delta\\in\\{0,1\\}\\). There is a degree-\\(m\\) polynomial \\(Q_m^{(\\delta,t)}\\) such that</p>\\[\\mathcal K_n^{(t)}(x+t/2)=x^\\delta Q_m^{(\\delta,t)}(x^2).\\]<p>The conjecture concerns \\(Q_m^{(\\delta,t)}\\), not the polynomial of degree \\(2m\\). The latter has an action on opposite pairs, with an elementary abelian quadratic kernel. The pair group does not determine that kernel.</p>",
+        "citations": [
+          {
+            "key": "Cullinan2024",
+            "locator": "§1.2, equations (1.2.4)–(1.2.5) and Lemma 2.0.1; arXiv:2212.07539v1"
+          }
+        ]
+      },
+      {
+        "id": "known",
+        "title": "Known cases",
+        "body": "<p>For \\(n=2^a\\) and every integer \\(n\\le t<2n\\), Cullinan proves irreducibility by a single-edge 2-adic Newton polygon. This is a restricted family of specializations, not an all-parameter irreducibility theorem.</p>",
+        "citations": [
+          {
+            "key": "Cullinan2024",
+            "locator": "Corollary 1.2.3; arXiv:2212.07539v1"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "reciprocity",
+        "relation": "Uses",
+        "why": "Centering produces opposite root pairs and a quadratic kernel."
+      },
+      {
+        "id": "newton-polygons",
+        "relation": "Uses",
+        "why": "A 2-adic polygon proves selected irreducible specializations."
+      }
+    ],
+    "questions": [
+      {
+        "id": "krawtchouk-reduced-group",
+        "title": "Does every irreducible reduced Krawtchouk polynomial have full symmetric group?",
+        "status": "Conjecture in cited source",
+        "scope": "\\(m\\ge1\\), \\(\\delta\\in\\{0,1\\}\\), \\(t\\in\\mathbb Q\\), and \\(Q_m^{(\\delta,t)}\\) irreducible over \\(\\mathbb Q\\).",
+        "body": "<p>Cullinan conjectures \\(\\operatorname{Gal}(Q_m^{(\\delta,t)}/\\mathbb Q)=S_m\\). The irreducibility assumption is essential; this does not assert that all rational specializations are irreducible.</p>",
+        "citations": [
+          {
+            "key": "Cullinan2024",
+            "locator": "Conjectures 1.2.6 and 4.0.3; arXiv:2212.07539v1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kaneko-zagier",
+    "title": "Kaneko–Zagier polynomials",
+    "kind": "family",
+    "subject": "families",
+    "summary": "Four Jacobi families give rational lifts of supersingular polynomials. Their irreducibility and symmetric-group conjecture has published partial results and a recent preprint claiming a complete proof.",
+    "level": "Intermediate",
+    "field": "Q",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Are all four Kaneko–Zagier families irreducible with symmetric Galois group?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Four Jacobi families",
+        "body": "<p>With the standard Jacobi convention, define</p>\\[J_n^{(\\alpha,\\beta)}(x)=\\sum_{j=0}^n\\binom{n+\\alpha}{n-j}\\binom{n+\\alpha+\\beta+j}{j}x^j.\\]<p>This equals \\(P_n^{(\\alpha,\\beta)}(1+2x)\\). For \\(\\alpha\\in\\{-1/3,1/3\\}\\), \\(\\beta\\in\\{-1/2,1/2\\}\\), and \\(n\\ge1\\), rational changes of variable and nonzero scaling identify these four families with the Kaneko–Zagier polynomials after their forced elliptic factors are removed. When the modular weight plus one is prime, the latter reduce to the nontrivial part of the supersingular polynomial.</p>",
+        "citations": [
+          {
+            "key": "CullinanHajir2017",
+            "locator": "§§1.1–1.3 and 2.1–2.2, especially Lemma 2.4"
+          }
+        ]
+      },
+      {
+        "id": "known",
+        "title": "Published results",
+        "body": "<p>Mahlburg–Ono prove irreducibility in several infinite degree families. Cullinan–Hajir give further cases and a prime criterion for the full symmetric group under an irreducibility hypothesis. Their verification up to modular index \\(\\ell\\le10^9\\) is conditional on irreducibility; it is not an irreducibility verification to that bound.</p><p>Cullinan–Gajek-Leonard calculate further Newton polygons and derive additional one-edge irreducibility cases.</p>",
+        "citations": [
+          {
+            "key": "MahlburgOno2004",
+            "locator": "Theorem 1.1"
+          },
+          {
+            "key": "CullinanHajir2017",
+            "locator": "Theorems 1.6, 1.8, and 1.9; Remark 4.6"
+          },
+          {
+            "key": "CullinanGajekLeonard2016",
+            "locator": "Theorem 1 and Corollary 1"
+          }
+        ]
+      },
+      {
+        "id": "status",
+        "title": "Current source status",
+        "body": "<p>A 22 October 2026 preprint by Nguyen-Dang claims a complete proof of the Mahlburg–Ono conjecture for these four families. Its claim is recorded separately from the published partial results. The full proof and a peer-reviewed publication have not been verified in this review.</p>",
+        "citations": [
+          {
+            "key": "NguyenDang2026Jacobi",
+            "locator": "Abstract; version 1, 22 October 2026"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "orthogonal-families",
+        "relation": "Connects to",
+        "why": "The Legendre group problem uses related Jacobi coefficient products."
+      },
+      {
+        "id": "newton-polygons",
+        "relation": "Uses",
+        "why": "Prime divisors produce long cycles in the Galois action."
+      }
+    ],
+    "questions": [
+      {
+        "id": "kaneko-zagier-mahlburg-ono",
+        "title": "Are all four Kaneko–Zagier families irreducible with symmetric Galois group?",
+        "status": "Resolution claimed in preprint",
+        "scope": "\\(n\\ge1\\), \\(\\alpha=\\pm1/3\\), \\(\\beta=\\pm1/2\\), over \\(\\mathbb Q\\).",
+        "body": "<p>The conjecture asks for irreducibility and group \\(S_n\\) for every polynomial defined above. Degree-zero members are excluded. The 2026 preprint claims the full result; it is not used here as an established theorem.</p>",
+        "citations": [
+          {
+            "key": "MahlburgOno2004",
+            "locator": "Conjecture on p. 40"
+          },
+          {
+            "key": "CullinanHajir2017",
+            "locator": "Conjecture 1.4"
+          },
+          {
+            "key": "NguyenDang2026Jacobi",
+            "locator": "Abstract; version 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "laguerre-negative-parameters",
+    "title": "Laguerre polynomials with negative parameters",
+    "kind": "family",
+    "subject": "families",
+    "summary": "Hajir’s conjectures ask for irreducibility and alternating-group containment throughout a two-parameter family. Fixed-parameter results leave the simultaneous variation of both parameters unresolved.",
+    "level": "Intermediate",
+    "field": "Q",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Is \\(F_{n,r}\\) irreducible for every \\(n\\ge1\\) and \\(r\\ge0\\)?",
+      "If \\(F_{n,r}\\) is irreducible, must its group contain \\(A_n\\)?",
+      "Which Laguerre polynomials remain irreducible under every admissible coefficient modification?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition",
+        "body": "<p>For integers \\(n\\ge1\\) and \\(r\\ge0\\), set</p>\\[F_{n,r}(x)=\\sum_{j=0}^n\\binom{n-j+r}{n-j}\\frac{x^j}{j!}=(-1)^nL_n^{(-n-r-1)}(x).\\]<p>The parameter of the Laguerre polynomial varies with its degree. The case \\(r=0\\) is the exponential truncation. The diagonal \\(r=n\\) is equivalent to the Bessel polynomial by reversal and rational scaling.</p>",
+        "citations": [
+          {
+            "key": "Hajir2009",
+            "locator": "§1 and Conjectures 1.1–1.2"
+          }
+        ]
+      },
+      {
+        "id": "known",
+        "title": "Known ranges",
+        "body": "<p>Hajir proves both conjectures for each fixed \\(r\\) and sufficiently large \\(n\\), and in every degree for \\(0\\le r\\le8\\). Jindal–Nair–Shorey extend all-degree irreducibility to \\(0\\le r\\le92\\). For \\(93\\le r\\le100\\), they exclude proper linear factors and obtain alternating-group containment conditional on irreducibility. Their result does not eliminate higher-degree factors in that last range.</p>",
+        "citations": [
+          {
+            "key": "Hajir2009",
+            "locator": "Theorems 1.3–1.4"
+          },
+          {
+            "key": "JindalNairShorey2024",
+            "locator": "Abstract; the paper writes s for r"
+          }
+        ]
+      },
+      {
+        "id": "recent",
+        "title": "Recent preprint",
+        "body": "<p>A November 2026 preprint claims a degree threshold independent of the positive integral parameter, together with an effective finite exceptional set. This is a claim about uniform eventual behavior, not a proof that every pair satisfies the conjectures. Its full argument has not been verified here.</p>",
+        "citations": [
+          {
+            "key": "NguyenDang2026UniformLaguerre",
+            "locator": "Abstract; version 1, 4 November 2026"
+          }
+        ]
+      },
+      {
+        "id": "modifications",
+        "title": "Coefficient modifications",
+        "body": "<p>If \\(F_{n,r}=\\sum a_jx^j\\), an admissible modification is \\(\\sum b_ja_jx^j\\), with \\(b_j\\in\\mathbb Z\\), \\(b_0=\\pm1\\), and \\(b_n=1\\). Irreducibility of every such modification is stronger and sometimes false: for \\((n,r)=(2,3)\\), changing the sign of the constant coefficient of \\(2F_{2,3}\\) gives</p>\\[x^2+8x-20=(x-2)(x+10).\\]<p>Banerjee–Bera prove eventual irreducibility of all admissible modifications for each fixed r. Shorey–Sinha give further small-parameter factor restrictions and explicit exceptional-pair calculations.</p>",
+        "citations": [
+          {
+            "key": "Hajir2009",
+            "locator": "§8, Question 8.1 and the example following it"
+          },
+          {
+            "key": "BanerjeeBera2020Modifications",
+            "locator": "Abstract"
+          },
+          {
+            "key": "ShoreySinha2022",
+            "locator": "Abstract"
+          },
+          {
+            "key": "ShoreySinha2022II",
+            "locator": "Abstract"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "laguerre",
+        "relation": "Complements",
+        "why": "The Laguerre parameter here depends on both integer indices."
+      },
+      {
+        "id": "taylor",
+        "relation": "Includes",
+        "why": "The line r=0 consists of exponential truncations."
+      },
+      {
+        "id": "orthogonal-families",
+        "relation": "Includes",
+        "why": "The line r=n is a reversal of the Bessel family."
+      }
+    ],
+    "questions": [
+      {
+        "id": "hajir-negative-irreducibility",
+        "title": "Is \\(F_{n,r}\\) irreducible for every \\(n\\ge1\\) and \\(r\\ge0\\)?",
+        "status": "Conjecture in cited source",
+        "scope": "\\(n\\ge1\\), \\(r\\ge0\\), and the displayed positive-coefficient normalization over \\(\\mathbb Q\\).",
+        "body": "<p>This is Hajir’s first conjecture. The ranges proved above and the recent uniform preprint claim do not by themselves settle every pair.</p>",
+        "citations": [
+          {
+            "key": "Hajir2009",
+            "locator": "Conjecture 1.1"
+          },
+          {
+            "key": "JindalNairShorey2024",
+            "locator": "Abstract"
+          },
+          {
+            "key": "NguyenDang2026UniformLaguerre",
+            "locator": "Abstract"
+          }
+        ]
+      },
+      {
+        "id": "hajir-negative-group",
+        "title": "If \\(F_{n,r}\\) is irreducible, must its group contain \\(A_n\\)?",
+        "status": "Conjecture in cited source",
+        "scope": "\\(n\\ge1\\), \\(r\\ge0\\), assuming irreducibility over \\(\\mathbb Q\\).",
+        "body": "<p>This is Hajir’s second conjecture. Equality with \\(S_n\\) is not asserted: the discriminant can be a square.</p>",
+        "citations": [
+          {
+            "key": "Hajir2009",
+            "locator": "Conjecture 1.2"
+          }
+        ]
+      },
+      {
+        "id": "laguerre-admissible-modifications",
+        "title": "Which Laguerre polynomials remain irreducible under every admissible coefficient modification?",
+        "status": "Open in cited source",
+        "scope": "\\(F_{n,r}\\), \\(n\\ge1\\), \\(r\\ge0\\), with the endpoint conditions defined above.",
+        "body": "<p>Hajir asks for a classification of the pairs. Later work gives eventual results for each fixed parameter and explicit small-parameter results; the displayed quadratic example rules out an unrestricted affirmative answer.</p>",
+        "citations": [
+          {
+            "key": "Hajir2009",
+            "locator": "Question 8.1"
+          },
+          {
+            "key": "BanerjeeBera2020Modifications",
+            "locator": "Abstract"
+          },
+          {
+            "key": "ShoreySinha2022II",
+            "locator": "Abstract"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "family",
+    "subject": "families",
+    "level": "Intermediate",
+    "field": "Q",
+    "status": "Published results and open questions",
+    "checked": "2026-11-12",
+    "prerequisites": [
+      "foundations"
+    ],
+    "id": "touchard",
+    "title": "Touchard polynomials",
+    "summary": "The Touchard polynomials count set partitions. Wilf’s nonvanishing conjecture asks whether their only nonzero rational root occurs at index two; this is weaker than irreducibility after removing x.",
+    "questionsAnswered": [
+      "What is the normalization for irreducibility?",
+      "How is Wilf’s conjecture related to rational roots?",
+      "Why does excluding rational roots not determine the Galois group?"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition",
+        "body": "<p>Let \\(S(n,k)\\) be the number of partitions of an \\(n\\)-element set into \\(k\\) nonempty blocks. The Touchard polynomial is</p>\\[T_n(x)=\\sum_{k=0}^n S(n,k)x^k,\\qquad \\sum_{n\\ge0}T_n(x)\\frac{t^n}{n!}=\\exp(x(e^t-1)).\\]<p>These are also called the one-variable Bell polynomials. They are distinct from Bernoulli polynomials. For \\(n\\ge1\\), \\(x\\) is a simple factor, and \\(Q_n=T_n/x\\) is monic with integer coefficients and constant term one.</p>",
+        "citations": [
+          {
+            "key": "AmdeberhanDeAngelisMoll2013",
+            "locator": "§1, equations (1.1)–(1.3)",
+            "note": "The polynomial generating function follows by marking the number of blocks in the stated Stirling sums."
+          }
+        ]
+      },
+      {
+        "id": "rational-roots",
+        "title": "Rational roots",
+        "body": "<p>The rational-root theorem leaves only \\(1\\) and \\(-1\\) as possible rational roots of \\(Q_n\\). Its coefficients are positive, so \\(Q_n(1)>0\\). Thus \\(Q_n\\) has a rational root exactly when</p>\\[T_n(-1)=\\sum_{k=0}^n(-1)^kS(n,k)=0.\\]<p>The sum counts the difference between partitions with an even and an odd number of blocks. It vanishes at \\(n=2\\). The conjecture commonly called Wilf’s conjecture says that there are no other indices. Excluding a rational root excludes only a linear factor.</p>",
+        "citations": [
+          {
+            "key": "DeAngelisMarcello2016",
+            "locator": "§1, pp. 557–558",
+            "note": "The rational-root reformulation is proved here."
+          }
+        ]
+      },
+      {
+        "id": "known",
+        "title": "Known result",
+        "body": "<p>There is at most one index \\(n>2\\) for which \\(T_n(-1)=0\\). The proof studies powers of an infinite matrix modulo powers of two. A sequence of congruence conditions leaves at most one possible exceptional index. De Angelis and Marcello give a corrected account of this argument.</p><p>The cited 2016 paper leaves that possible index unresolved. The literature search on 12 November 2026 did not identify a verified later resolution.</p>",
+        "citations": [
+          {
+            "key": "DeAngelisMarcello2016",
+            "locator": "§1 and Theorem 2, §7"
+          },
+          {
+            "key": "AmdeberhanDeAngelisMoll2013",
+            "locator": "Theorem 10.1 in the author-hosted version",
+            "note": "Earlier argument; use the 2016 corrections."
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p>\\[Q_3=x^2+3x+1,\\qquad Q_4=x^3+6x^2+7x+1.\\]<p>The discriminant of \\(Q_3\\) is \\(5\\), so its group is \\(C_2\\). Since \\(Q_4(\\pm1)\\ne0\\), the monic cubic has no rational root and is irreducible. Its discriminant is \\(257\\), hence its group is \\(S_3\\).</p></div>",
+        "citations": [
+          {
+            "key": "Cox2012",
+            "note": "Standard cubic criterion; the two polynomials and discriminants are computed directly."
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "eulerian",
+        "relation": "Compare",
+        "why": "Both families arise from counting problems, but their coefficient statistics and symmetries differ."
+      },
+      {
+        "id": "discriminants",
+        "relation": "Uses",
+        "why": "An irreducible cubic has group S3 exactly when its discriminant is not a square."
+      }
+    ],
+    "questions": [
+      {
+        "id": "touchard-wilf",
+        "title": "Can \\(T_n(-1)\\) vanish for \\(n\\ne2\\)?",
+        "status": "Conjecture in cited source",
+        "scope": "Touchard polynomials T_n(x), n≥0; conjecture discussed in De Angelis–Marcello (2016).",
+        "body": "<p>The conjecture is \\(T_n(-1)\\ne0\\) for every \\(n\\ne2\\). For \\(n\\ge3\\), it is equivalent to the absence of rational roots of \\(T_n/x\\). At most one additional index is possible.</p>",
+        "citations": [
+          {
+            "key": "DeAngelisMarcello2016",
+            "locator": "§1; Theorem 2 and the discussion following it"
+          }
+        ]
+      },
+      {
+        "id": "touchard-factor-groups",
+        "title": "When is \\(T_n(x)/x\\) irreducible, and what is its Galois group?",
+        "status": "Research direction",
+        "scope": "Touchard polynomials T_n(x), n≥2, over Q.",
+        "body": "<p>Determine all factor degrees and the Galois group of \\(T_n(x)/x\\). This is stronger than Wilf’s conjecture; the cited source addresses rational roots.</p>",
+        "citations": [
+          {
+            "key": "DeAngelisMarcello2016",
+            "locator": "§1",
+            "note": "The cited open problem controls only rational roots."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "family",
+    "subject": "families",
+    "level": "Intermediate",
+    "field": "Q",
+    "status": "Published results and open questions",
+    "checked": "2026-11-12",
+    "prerequisites": [
+      "foundations"
+    ],
+    "id": "chromatic-polynomials",
+    "title": "Chromatic polynomials",
+    "summary": "Chromatic polynomials count graph colourings and always have forced linear factors. Their remaining factors lead to questions about algebraic integers, irreducibility, and Galois groups.",
+    "questionsAnswered": [
+      "Which factors are forced by graph colouring?",
+      "Can every algebraic integer become a chromatic root after an integer shift?",
+      "What is conjectured for the nonlinear factors of a random graph?"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition",
+        "body": "<p>For a finite simple graph \\(G\\), its chromatic polynomial \\(P_G(q)\\) counts proper colourings with \\(q\\) available colours at nonnegative integers \\(q\\). It is monic in \\(\\mathbb Z[q]\\). If \\(\\chi(G)\\) is the chromatic number, then</p>\\[\\prod_{j=0}^{\\chi(G)-1}(q-j)\\mid P_G(q).\\]<p>Irreducibility questions therefore concern the remaining factors. When removing all linear factors, include their full multiplicities. Since the polynomial is monic, every rational root is an integer.</p>",
+        "citations": [
+          {
+            "key": "Bohn2012Chromatic",
+            "locator": "§1, p. 543"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p>\\[P_{C_4}(q)=q(q-1)(q^2-3q+3).\\]<p>The quadratic has discriminant \\(-3\\). Thus the splitting field is \\(\\mathbb Q(\\sqrt{-3})\\) and the Galois group is \\(C_2\\). For \\(C_7\\), two quadratic factors occur, but both split in this same field. Their groups do not form a direct product.</p></div>",
+        "citations": [
+          {
+            "key": "Morgan2012Chromatic",
+            "locator": "§2, pp. 283–284"
+          }
+        ]
+      },
+      {
+        "id": "algebraic-integers",
+        "title": "Algebraic integers",
+        "body": "<p>The shift and multiplication conjectures are stated below. Bohn proves the shift conjecture for algebraic integers of degree at most three and constructs a dense set of chromatic roots closed under multiplication by positive integers.</p><p>The shift question has a Galois interpretation: translating a monic irreducible polynomial changes neither its splitting field nor its permutation group. If every algebraic integer has the required shift, every group already realized over \\(\\mathbb Q\\) by an irreducible polynomial also occurs on an irreducible chromatic factor. This implication does not solve the inverse Galois problem.</p>",
+        "citations": [
+          {
+            "key": "Bohn2012Chromatic",
+            "locator": "Abstract and §§2–4"
+          },
+          {
+            "key": "CameronMorgan2017",
+            "locator": "§6"
+          }
+        ]
+      },
+      {
+        "id": "specialization",
+        "title": "Specialization",
+        "body": "<p>Morgan constructs infinite graph families with cyclic and dihedral groups. Thus the group of a chromatic polynomial need not be symmetric. The existence of such families alone does not refute a statement about the probability of a symmetric group for random graphs.</p><p>Similarly, the generic group of a Tutte polynomial does not determine the group of every chromatic specialization.</p>",
+        "citations": [
+          {
+            "key": "Morgan2012Chromatic",
+            "locator": "§§5–6"
+          },
+          {
+            "key": "GoodallJouveSereni2025Tutte",
+            "locator": "§1, pp. 2–3"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "tutte-polynomials",
+        "relation": "Specializes",
+        "why": "The chromatic polynomial is obtained from the Tutte polynomial by a fixed specialization."
+      },
+      {
+        "id": "specialization",
+        "relation": "Compare",
+        "why": "Generic Galois groups can drop at a specified specialization."
+      },
+      {
+        "id": "discriminants",
+        "relation": "Uses",
+        "why": "Discriminants distinguish cyclic cubic groups from symmetric ones."
+      }
+    ],
+    "questions": [
+      {
+        "id": "chromatic-shift",
+        "title": "Does every algebraic integer become a chromatic root after an integer shift?",
+        "status": "Conjecture in cited source",
+        "scope": "For every algebraic integer α, seek an integer n≥0 and a finite graph G with P_G(α+n)=0.",
+        "body": "<p>This is the \\(\\alpha+n\\) conjecture. It is known in degrees at most three.</p>",
+        "citations": [
+          {
+            "key": "CameronMorgan2017",
+            "locator": "Conjecture 1.1"
+          },
+          {
+            "key": "Bohn2012Chromatic",
+            "locator": "Abstract and §§2–4"
+          }
+        ]
+      },
+      {
+        "id": "chromatic-multiple",
+        "title": "Are positive integer multiples of chromatic roots again chromatic roots?",
+        "status": "Conjecture in cited source",
+        "scope": "If α is a root of some chromatic polynomial, and m≥1, ask whether mα is also a chromatic root.",
+        "body": "<p>This is the \\(n\\alpha\\) conjecture. It is distinct from closure under nonnegative integer translation, which is known.</p>",
+        "citations": [
+          {
+            "key": "CameronMorgan2017",
+            "locator": "Proposition 1.3 and Conjecture 1.2"
+          }
+        ]
+      },
+      {
+        "id": "chromatic-random-group",
+        "title": "Does a random graph have one nonlinear chromatic factor with symmetric group?",
+        "status": "Conjecture in cited source",
+        "scope": "Cameron–Morgan (2017), Conjecture 6.1; the source uses the informal word “typically”.",
+        "body": "<p>After the linear factors are removed, the conjectured remaining factor is irreducible with the full symmetric group. A precise probabilistic version must specify the graph model, for example \\(G(N,1/2)\\), and the limit \\(N\\to\\infty\\).</p>",
+        "citations": [
+          {
+            "key": "CameronMorgan2017",
+            "locator": "§6.1, Conjecture 6.1"
+          }
+        ]
+      },
+      {
+        "id": "chromatic-split",
+        "title": "Which graphs have chromatic polynomials that split completely over Q?",
+        "status": "Open in cited source",
+        "scope": "Finite simple graphs; all factors of P_G(q) are linear over Q.",
+        "body": "<p>Chordal graphs have this property, but they are not the only ones. The cited source asks for a characterization.</p>",
+        "citations": [
+          {
+            "key": "CameronMorgan2017",
+            "locator": "§6.1, paragraph after Conjecture 6.1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "family",
+    "subject": "families",
+    "level": "Intermediate",
+    "field": "Characteristic zero; rational function fields",
+    "status": "Published results and open questions",
+    "checked": "2026-11-12",
+    "prerequisites": [
+      "foundations"
+    ],
+    "id": "tutte-polynomials",
+    "title": "Tutte polynomials",
+    "summary": "The Tutte polynomial of a connected matroid is irreducible. Its full symmetric Galois group is conjectural in general; recent work proves cases for cycles and uniform matroids.",
+    "questionsAnswered": [
+      "Which field is used for the Galois group of a bivariate polynomial?",
+      "What is known for the multivariate Tutte polynomial?",
+      "Which cases of the symmetric-group conjecture are established?"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition",
+        "body": "<p>Let \\(M\\) be a finite matroid on \\(E\\), with rank function \\(r\\) and positive rank \\(d=r(E)\\). Its Tutte polynomial is</p>\\[T_M(x,y)=\\sum_{A\\subseteq E}(x-1)^{d-r(A)}(y-1)^{|A|-r(A)}.\\]<p>To ask for its Galois group, regard it as a degree-\\(d\\) polynomial in \\(x\\) over \\(K(y)\\). The variable \\(y\\) remains transcendental. For a connected matroid, irreducibility in characteristic zero is known; it gives a transitive action, not the full group.</p><p>For a graph, connectedness here means that its cycle matroid is connected. A connected graph need not have a connected cycle matroid: the two-edge path has Tutte polynomial \\(x^2\\).</p>",
+        "citations": [
+          {
+            "key": "MerinoDeMierNoy2001",
+            "locator": "Main theorem"
+          },
+          {
+            "key": "BohnCameronMuller2012Tutte",
+            "locator": "Introduction and Conjecture 9"
+          }
+        ]
+      },
+      {
+        "id": "multivariate",
+        "title": "Independent variables",
+        "body": "<p>With a separate variable \\(v_e\\) for each element, define</p>\\[\\widehat Z_M(q,\\mathbf v)=\\sum_{A\\subseteq E}q^{d-r(A)}\\prod_{e\\in A}v_e.\\]<p>For a connected matroid of positive rank, Bohn, Cameron, and Müller prove that its group over \\(K(\\mathbf v)\\) is \\(S_d\\), for any field \\(K\\). Identifying all the variables is a specialization; this theorem therefore does not settle the ordinary Tutte case.</p>",
+        "citations": [
+          {
+            "key": "BohnCameronMuller2012Tutte",
+            "locator": "Theorem 1 and Conjecture 9"
+          }
+        ]
+      },
+      {
+        "id": "recent",
+        "title": "Recent cases",
+        "body": "<p>Goodall, Jouve, and Sereni’s 2025 preprint restates the general conjecture. Their Theorem 4.5 proves it for cycle graphs. For uniform matroids \\(U_{a,b}\\), Theorem 4.7(1) proves the group \\(S_a\\) over \\(\\mathbb Q(y)\\) when \\(a\\ge2\\) is fixed and \\(b\\) is sufficiently large in terms of \\(a\\). This is not an all-parameter theorem for uniform matroids.</p><p>The paper uses specialization, ramification, permutation groups, and the large sieve. Its general conjecture remains distinct from the cases proved in the preprint.</p>",
+        "citations": [
+          {
+            "key": "GoodallJouveSereni2025Tutte",
+            "locator": "Conjecture 1.1; Theorems 4.5 and 4.7(1); Remark 5"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p>\\[T_{C_4}(x,y)=x^3+x^2+x+y.\\]<p>It is irreducible over \\(\\mathbb Q(y)\\): a factorization in \\(\\mathbb Q[x,y]\\) would have one factor independent of \\(y\\), and that factor would divide the coefficient \\(1\\) of \\(y\\). Its discriminant is \\(-27y^2+14y-3\\), which has two distinct zeros and is not a square in \\(\\mathbb Q(y)\\). The group is therefore \\(S_3\\).</p><p>At \\(y=0\\), the polynomial becomes \\(x(x^2+x+1)\\), with group \\(C_2\\). This example shows the change a specialization can cause.</p></div>",
+        "citations": [
+          {
+            "key": "GoodallJouveSereni2025Tutte",
+            "locator": "§4.2",
+            "note": "The cycle formula; the cubic calculation is given directly."
+          },
+          {
+            "key": "Cox2012",
+            "note": "The discriminant criterion for an irreducible cubic."
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "chromatic-polynomials",
+        "relation": "Specializes to",
+        "why": "A fixed Tutte specialization gives the chromatic polynomial up to a power and a sign."
+      },
+      {
+        "id": "critical-points-monodromy",
+        "relation": "Uses",
+        "why": "The group is the monodromy of projection to the y-line."
+      },
+      {
+        "id": "specialization",
+        "relation": "Uses",
+        "why": "A well-chosen specialization can prove a lower bound for the generic group."
+      }
+    ],
+    "questions": [
+      {
+        "id": "tutte-symmetric",
+        "title": "Does every connected matroid have a Tutte polynomial with full symmetric group?",
+        "status": "Conjecture in cited source",
+        "scope": "Finite connected matroids M of positive rank d; Galois group of T_M(x,y) as a polynomial in x over K(y), with char(K)=0.",
+        "body": "<p>The proposed group is \\(S_d\\). The multivariate version is proved; the ordinary bivariate version remains conjectural in the cited 2025 preprint beyond its established families.</p>",
+        "citations": [
+          {
+            "key": "BohnCameronMuller2012Tutte",
+            "locator": "Conjecture 9"
+          },
+          {
+            "key": "GoodallJouveSereni2025Tutte",
+            "locator": "Conjecture 1.1 and §4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "critical-parameter-polynomials",
+    "title": "Gleason and Misiurewicz polynomials",
+    "kind": "family",
+    "subject": "dynamics",
+    "summary": "Critical-orbit equations define arithmetic families of polynomials in a parameter. Their irreducibility is linked to the geometry of dynamical moduli spaces.",
+    "level": "Intermediate",
+    "field": "Q and cyclotomic fields",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Which polynomial records an exact critical period?",
+      "Which irreducibility conjectures remain open?",
+      "Why does the higher-degree normalization matter?"
+    ],
+    "prerequisites": [
+      "composition-iteration",
+      "discriminants"
+    ],
+    "sections": [
+      {
+        "id": "gleason",
+        "title": "Gleason polynomials",
+        "body": "<p>Put \\(a_0(c)=0\\) and \\(a_{j+1}(c)=a_j(c)^2+c\\). The quadratic Gleason polynomial is</p>\\[G_n(c)=\\prod_{d\\mid n}a_d(c)^{\\mu(n/d)}\\in\\mathbb Z[c].\\]<p>Its roots are exactly the parameters for which \\(0\\) has period \\(n\\) under \\(z^2+c\\). Irreducibility over \\(\\mathbb Q\\) would say that these parameters form one Galois orbit. Ramadas records verification through \\(n=19\\) and proves that, for \\(n\\ge4\\), irreducibility of \\(G_n\\) implies geometric irreducibility of the curve \\(\\operatorname{Per}_n(0)\\) of quadratic rational maps with an \\(n\\)-periodic critical point.</p>",
+        "citations": [
+          {
+            "key": "Ramadas2024Moduli",
+            "locator": "Introduction, Theorem 1.1 and Corollary 1.2"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p>\\[G_1(c)=c,\\qquad G_2(c)=c+1,\\qquad G_3(c)=c^3+2c^2+c+1.\\]<p>Modulo \\(2\\), the cubic becomes \\(c^3+c+1\\), which has no root and is irreducible. Its discriminant is \\(-23\\), so its Galois group over \\(\\mathbb Q\\) is \\(S_3\\). This proves the period-three case, not the statement for every period.</p></div><p>The factorization of \\(G_n\\) modulo \\(2\\) has a combinatorial description by binary necklaces. It need not remain irreducible: for \\(n=4\\), the factor degrees are \\(2\\) and \\(4\\).</p>",
+        "citations": [
+          {
+            "key": "BakerChenLiQian2026Necklaces",
+            "locator": "Introduction and Theorem A",
+            "note": "The cubic discriminant is calculated here."
+          }
+        ]
+      },
+      {
+        "id": "misiurewicz",
+        "title": "Misiurewicz polynomials",
+        "body": "<p>For \\(f_{d,c}(z)=z^d+c\\), now let \\(a_j=f_{d,c}^{\\circ j}(0)\\). Fix \\(d,m\\ge2\\), \\(n\\ge1\\), and a nontrivial \\(d\\)-th root of unity \\(\\zeta\\). Define</p>\\[G_{d,m,n}^{\\zeta}(c)=\\frac{\\prod_{k\\mid n}(a_{m+k-1}-\\zeta a_{m-1})^{\\mu(n/k)}}{\\left(\\prod_{k\\mid n}a_k^{\\mu(n/k)}\\right)^{\\epsilon}},\\quad \\epsilon=\\begin{cases}1&n\\mid m-1,\\\\0&n\\nmid m-1.\\end{cases}\\]<p>This is a monic polynomial in \\(\\mathbb Z[\\zeta][c]\\). Its roots are parameters for which 0 has exact tail \\(m\\), period \\(n\\), and the indicated collision relation. The conjectured irreducibility is over \\(\\mathbb Q(\\zeta)\\). Known cases include \\(d=2,n\\le3\\), \\(d=3,n=2\\), and prime-power \\(d\\) with \\(n=1\\). For \\(d=2\\), write \\(G_{m,n}=G_{2,m,n}^{-1}\\); for example, \\(G_{2,1}(c)=c+2\\).</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2024UnitsII",
+            "locator": "Equation (2), Conjecture 1.1 and the following paragraph"
+          }
+        ]
+      },
+      {
+        "id": "units",
+        "title": "Polynomial values and algebraic units",
+        "body": "<p>These irreducibility questions also enter the study of algebraic units. Let \\(c_0\\) be a root of \\(G_{m,n}\\). In the unresolved case \\(\\ell\\mid n\\), \\(1\\le\\ell<n\\), the predicted conclusion is that \\(G_{m,\\ell}(c_0)\\) is not a unit. Benedetto–Goksel prove this for prime \\(\\ell\\le1024\\), assuming both relevant Misiurewicz polynomials are irreducible. A statement about a polynomial value is not automatically a statement about every difference between individual roots; the latter needs further information over the root field.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2026NonUnit",
+            "locator": "Introduction, Questions 1.1–1.2 and Theorem 1.3"
+          }
+        ]
+      },
+      {
+        "id": "higher-degree",
+        "title": "A higher-degree exception",
+        "body": "<p>The quadratic Gleason conjecture must not be extended to every unicritical degree without modification. In Buff’s normalization \\(f_a(z)=az^D+1\\), the exact-period-three parameter polynomial is reducible precisely when \\(D\\equiv1\\pmod6\\); then one factor is \\(a^2+a+1\\). The parameter and normalization must therefore be specified before stating irreducibility.</p>",
+        "citations": [
+          {
+            "key": "Buff2018PCF",
+            "locator": "Proposition 5"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "composition-iteration",
+        "relation": "Uses",
+        "why": "Critical-orbit equations arise from iteration."
+      },
+      {
+        "id": "specialization",
+        "relation": "Contrasts with",
+        "why": "A polynomial in the parameter and a specialized dynatomic polynomial are different objects."
+      },
+      {
+        "id": "modular-irreducibility",
+        "relation": "Uses",
+        "why": "Modular factorizations can certify individual parameter polynomials."
+      }
+    ],
+    "questions": [
+      {
+        "id": "gleason-irreducibility",
+        "title": "Are all quadratic Gleason polynomials irreducible?",
+        "status": "Conjecture in cited source",
+        "scope": "G_n(c) over Q, for every integer n≥1",
+        "body": "<p>The conjecture asks whether the exact-period parameters form a single Galois orbit for every \\(n\\). Verification through \\(n=19\\) is recorded by Ramadas; the 2026 necklace paper still states the general conjecture.</p>",
+        "citations": [
+          {
+            "key": "Ramadas2024Moduli",
+            "locator": "Introduction"
+          },
+          {
+            "key": "BakerChenLiQian2026Necklaces",
+            "locator": "Introduction, footnote 1"
+          }
+        ]
+      },
+      {
+        "id": "misiurewicz-irreducibility",
+        "title": "Are the normalized Misiurewicz polynomials irreducible?",
+        "status": "Conjecture in cited source",
+        "scope": "d,m≥2; n≥1; ζ≠1 a d-th root of unity; base field Q(ζ)",
+        "body": "<p>Conjecture 1.1 asserts irreducibility of \\(G_{d,m,n}^{\\zeta}\\). Even the full quadratic family remains unresolved in the cited 2026 paper. Removing lower-period factors and fixing \\(\\zeta\\) are part of the statement.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2024UnitsII",
+            "locator": "Conjecture 1.1"
+          },
+          {
+            "key": "BenedettoGoksel2026NonUnit",
+            "locator": "Introduction before Question 1.1"
+          }
+        ]
+      },
+      {
+        "id": "misiurewicz-nonunit",
+        "title": "Are the remaining Misiurewicz values always non-units?",
+        "status": "Conjecture in cited source",
+        "scope": "m≥2; 1≤ℓ<n with ℓ|n; c₀ a root of quadratic G_{m,n}",
+        "body": "<p>Must \\(G_{m,\\ell}(c_0)\\) fail to be an algebraic unit? The 2026 result covers prime \\(\\ell\\le1024\\) under irreducibility assumptions, and leaves the general case open.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2026NonUnit",
+            "locator": "Introduction and Theorem 1.3"
+          },
+          {
+            "key": "BenedettoGoksel2024UnitsII",
+            "locator": "Conjecture 1.3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "truncated-binomial",
+    "title": "Truncated binomial polynomials",
+    "kind": "family",
+    "subject": "families",
+    "summary": "Irreducibility is known in many ranges. The general two-parameter conjecture and a precise sextic Galois-group conjecture remain questions in the cited sources.",
+    "level": "Intermediate",
+    "field": "Q",
+    "status": "Published results and conjectures",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Are all interior binomial truncations irreducible?",
+      "Does every sextic truncation with n≥11 have group S₆?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition",
+        "body": "<p>For integers \\(n>r\\ge1\\), put</p>\\[P_{n,r}(x)=\\sum_{j=0}^{r}\\binom njx^j.\\]<p>The conjectured irreducible range is \\(1\\le r\\le n-2\\). The boundary \\(r=n-1\\) is different: \\(P_{n,n-1}=(1+x)^n-x^n\\) is irreducible exactly when \\(n\\) is prime.</p>",
+        "citations": [
+          {
+            "key": "FilasetaKumchevPasechnik2007",
+            "locator": "§1"
+          }
+        ]
+      },
+      {
+        "id": "known-results",
+        "title": "Known results",
+        "body": "<p>For each fixed \\(r\\), irreducibility holds for all sufficiently large \\(n\\). Filaseta–Kumchev–Pasechnik also bound the number of possibly reducible pairs with \\(n\\le N\\) by \\(O_\\varepsilon(N^{23/18+\\varepsilon})\\).</p><p>Laishram–Yadav prove irreducibility in the range \\(2r\\le n<(r+1)^{10}\\), within \\(n>r+1\\). Their explicit eventual bounds for irreducibility and the full symmetric group assume an explicit form of the \\(abc\\) conjecture. These conditional bounds do not settle every pair.</p>",
+        "citations": [
+          {
+            "key": "FilasetaKumchevPasechnik2007",
+            "locator": "Theorems 1 and 3; remark following Theorem 3"
+          },
+          {
+            "key": "LaishramYadav2024Truncated",
+            "locator": "Abstract; published article pp. 1663–1680"
+          }
+        ]
+      },
+      {
+        "id": "galois-groups",
+        "title": "Galois groups",
+        "body": "<p>For every fixed \\(r\\ge2\\), the group is \\(S_r\\) for all sufficiently large \\(n\\). Filaseta–Moy prove this for \\(r\\ne6\\). The sextic case was obtained by Rouse and Juillerat, as credited by Klahn–Technau, who give a separate proof using a resolvent and Faltings’ theorem.</p><p>For \\(n\\ge8\\), the only possible sextic groups are \\(S_6\\) and the transitive degree-six group \\(\\operatorname{PGL}_2(5)\\cong S_5\\). The latter occurs at \\(n=10\\). Filaseta–Moy conjecture that the group is \\(S_6\\) for every \\(n\\ge11\\). The finiteness theorem does not determine every exception.</p>",
+        "citations": [
+          {
+            "key": "FilasetaMoy2018",
+            "locator": "Theorem 1; §1, preprint pp. 2–3"
+          },
+          {
+            "key": "KlahnTechnau2023Truncated",
+            "locator": "Theorem 2; conjecture and attribution remark in §1, p. 2"
+          },
+          {
+            "key": "Juillerat2021Thesis",
+            "locator": "Abstract; Theorem 1.3 as cited by Klahn–Technau"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(r=2\\),</p>\\[\\operatorname{disc}(P_{n,2})=n^2-4\\binom n2=n(2-n).\\]<p>Thus \\(P_{n,2}\\) is irreducible over \\(\\mathbb Q\\) for every \\(n\\ge3\\), since its discriminant is negative. Its Galois group is \\(S_2\\).</p></div>",
+        "citations": []
+      }
+    ],
+    "related": [
+      {
+        "id": "taylor",
+        "relation": "Related to",
+        "why": "Both questions concern arithmetic properties of truncations."
+      },
+      {
+        "id": "newton-polygons",
+        "relation": "Uses",
+        "why": "Valuations restrict factor degrees and give cycle information."
+      }
+    ],
+    "questions": [
+      {
+        "id": "truncated-binomial-all",
+        "title": "Are all interior binomial truncations irreducible?",
+        "status": "Conjecture in cited source",
+        "scope": "Integers \\(1\\le r\\le n-2\\); \\(P_{n,r}\\in\\mathbb Q[x]\\).",
+        "body": "<p>This is the conjecture recorded again by Laishram–Yadav in 2024. A theorem for each fixed degree and sufficiently large upper index does not prove it for all pairs.</p>",
+        "citations": [
+          {
+            "key": "LaishramYadav2024Truncated",
+            "locator": "Abstract"
+          }
+        ]
+      },
+      {
+        "id": "truncated-binomial-sextic",
+        "title": "Does every sextic truncation with n≥11 have group S₆?",
+        "status": "Conjecture in cited source",
+        "scope": "\\(P_{n,6}(x)=\\sum_{j=0}^6\\binom njx^j\\), integers \\(n\\ge11\\).",
+        "body": "<p>This conjecture of Filaseta–Moy is restated by Klahn–Technau in 2023. Only finitely many exceptions are possible, but the cited theorem does not determine them. The exceptional group at \\(n=10\\) explains the lower bound.</p>",
+        "citations": [
+          {
+            "key": "FilasetaMoy2018",
+            "locator": "§1, preprint p. 3"
+          },
+          {
+            "key": "KlahnTechnau2023Truncated",
+            "locator": "§1, conjecture and Theorem 2, p. 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "stern-polynomials",
+    "title": "Stern polynomials",
+    "kind": "family",
+    "subject": "families",
+    "summary": "Two different polynomial sequences extend Stern’s sequence. Their irreducibility questions must be kept separate.",
+    "level": "Intermediate",
+    "field": "Q",
+    "status": "Published results and conjectures",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Is \\(a_p\\) irreducible for every odd prime \\(p\\ne17\\)?",
+      "Must every reducible \\(a_n\\) have a cyclotomic factor?",
+      "Is the nonreciprocal part of \\(a_n\\) irreducible or 1?",
+      "Do these cyclotomic factors force divisibility of the index?",
+      "Do all zeros of \\(S_n\\) have real part less than 1?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "zero-one",
+        "title": "Stern (0,1)-polynomials",
+        "body": "<p>Define \\(a_0=0,a_1=1\\), and, for \\(n\\ge1\\),</p>\\[a_{2n}(x)=a_n(x^2),\\qquad a_{2n+1}(x)=x a_n(x^2)+a_{n+1}(x^2).\\]<p>These have coefficients 0 and 1. If a prime \\(p\\) has 2 as a primitive root, then \\(a_p\\) is irreducible over \\(\\mathbb Q\\).</p>",
+        "citations": [
+          {
+            "key": "DilcherEricksen2014Stern",
+            "locator": "§1, equations (2)–(3), Proposition 1"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Direct recursion and multiplication give</p>\\[a_{17}(x)=x^8+x^4+x^2+x+1=\\Phi_5(x)(x^4-x^3+1).\\]<p>Thus prime index alone does not imply irreducibility in this sequence.</p></div>",
+        "citations": []
+      },
+      {
+        "id": "other-sequence",
+        "title": "A different Stern sequence",
+        "body": "<p>The polynomials \\(S_0=0,S_1=1\\),</p>\\[S_{2n}(x)=xS_n(x),\\qquad S_{2n+1}(x)=S_n(x)+S_{n+1}(x)\\]<p>are different: for example, \\(S_5=1+2x\\), whereas \\(a_5=1+x+x^2\\). Altizio’s 2025 preprint proves prime-index irreducibility for \\(S_p\\) by excluding roots from \\(|z-2|\\le1\\). It does not resolve the questions about \\(a_n\\) below.</p>",
+        "citations": [
+          {
+            "key": "Altizio2025Stern",
+            "locator": "§1, Theorem 2 and Corollary 1"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "integer-values",
+        "relation": "Related to",
+        "why": "Prime values can imply irreducibility when root bounds control possible factors."
+      },
+      {
+        "id": "reciprocity",
+        "relation": "Uses",
+        "why": "Removing reciprocal factors gives a precise remaining irreducibility question."
+      }
+    ],
+    "questions": [
+      {
+        "id": "stern-prime-index",
+        "title": "Is \\(a_p\\) irreducible for every odd prime \\(p\\ne17\\)?",
+        "status": "Conjecture in cited source",
+        "scope": "The (0,1)-sequence \\(a_n\\); rational irreducibility.",
+        "body": "<p>Dilcher–Ericksen formulate this conjecture in 2014.</p>",
+        "citations": [
+          {
+            "key": "DilcherEricksen2014Stern",
+            "locator": "§8.1, Conjecture 1, p. 99"
+          }
+        ]
+      },
+      {
+        "id": "stern-cyclotomic",
+        "title": "Must every reducible \\(a_n\\) have a cyclotomic factor?",
+        "status": "Conjecture in cited source",
+        "scope": "\\(n\\ge1\\), with \\(a_n\\) nonconstant.",
+        "body": "<p>The conjectured factor is \\(\\Phi_k\\) for some \\(k\\ge3\\).</p>",
+        "citations": [
+          {
+            "key": "DilcherEricksen2014Stern",
+            "locator": "§8.2, Conjecture 3, p. 99"
+          }
+        ]
+      },
+      {
+        "id": "stern-nonreciprocal",
+        "title": "Is the nonreciprocal part of \\(a_n\\) irreducible or 1?",
+        "status": "Conjecture in cited source",
+        "scope": "\\(n\\ge1\\); remove every irreducible reciprocal factor over \\(\\mathbb Q\\).",
+        "body": "<p>This is a separate conjecture concerning the remaining factor.</p>",
+        "citations": [
+          {
+            "key": "DilcherEricksen2014Stern",
+            "locator": "§8.3, Conjecture 4, p. 100"
+          }
+        ]
+      },
+      {
+        "id": "stern-cyclotomic-indices",
+        "title": "Do these cyclotomic factors force divisibility of the index?",
+        "status": "Conjecture in cited source",
+        "scope": "Prime \\(p\\ge3\\) with 2 primitive modulo \\(p\\); \\(m_p=2^{p-1}+1\\).",
+        "body": "<p>Conjecture: if \\(\\Phi_p(x)\\) or \\(\\Phi_p(-x)\\) divides \\(a_n(x)\\), then \\(m_p\\mid n\\).</p>",
+        "citations": [
+          {
+            "key": "DilcherEricksen2014Stern",
+            "locator": "§8.2, Conjecture 2, p. 99"
+          }
+        ]
+      },
+      {
+        "id": "stern-half-plane",
+        "title": "Do all zeros of \\(S_n\\) have real part less than 1?",
+        "status": "Conjecture in cited source",
+        "scope": "The sequence \\(S_n\\) above, \\(n\\ge1\\).",
+        "body": "<p>The preprint proves the weaker exclusion \\(|z-2|\\le1\\). The half-plane conjecture remains stated separately.</p>",
+        "citations": [
+          {
+            "key": "Altizio2025Stern",
+            "locator": "§1, Conjecture 1 and Theorem 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "newman-pentanomials",
+    "title": "Five-term Newman polynomials",
+    "kind": "family",
+    "subject": "families",
+    "summary": "Mercer’s conjecture asks whether every reducible five-term polynomial with coefficients 0 and 1 has a cyclotomic factor.",
+    "level": "Intermediate",
+    "field": "Q",
+    "status": "Published results and conjectures",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Must a reducible five-term Newman polynomial have a cyclotomic factor?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition",
+        "body": "<p>A normalized five-term Newman polynomial has the form</p>\\[f(x)=1+x^s+x^r+x^m+x^n,\\qquad 0<s<r<m<n.\\]<p>The constant term 1 excludes the forced factor \\(x\\). Mercer conjectures that reducibility over \\(\\mathbb Q\\) forces a cyclotomic factor. The corresponding statements for three and four terms are known.</p>",
+        "citations": [
+          {
+            "key": "Mercer2012Newman",
+            "locator": "§3, Proposition 5 and Conjecture 6, p. 5"
+          }
+        ]
+      },
+      {
+        "id": "known-result",
+        "title": "Cyclotomic factors",
+        "body": "<p>Koley–Reddy prove a related classification: if such an \\(f\\) has any cyclotomic factor, it has one of the form \\(\\Phi_{5^\\gamma}\\) or \\(\\Phi_{2^\\alpha3^\\beta}\\), for positive integers \\(\\alpha,\\beta,\\gamma\\). Their theorem does not establish that a reducible \\(f\\) must have a cyclotomic factor.</p><p>This distinction matters when searching the literature: the paper resolves its Conjecture 1.3, whereas Mercer’s reducibility question is its Conjecture 1.2.</p>",
+        "citations": [
+          {
+            "key": "KoleyReddy2019Cyclotomic",
+            "locator": "Conjectures 1.2–1.3; Theorem 3.2 and the reduction preceding §2"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<p>The restriction on the number of terms is essential to this formulation. Multiplication gives</p>\\[(1+x+x^3)(1+x^4+x^9)=1+x+x^3+x^4+x^5+x^7+x^9+x^{10}+x^{12}.\\]<p>It is reducible and has no cyclotomic factor: neither \\(1+x+x^3\\) nor \\(1+x^4+x^9\\) vanishes at a root of unity. The same example is recorded by Mercer.</p>",
+        "citations": [
+          {
+            "key": "Mercer2012Newman",
+            "locator": "§6, following Proposition 15, p. 13"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "trinomials",
+        "relation": "Extends",
+        "why": "Sparse polynomials with fewer terms have stronger factorization theorems."
+      },
+      {
+        "id": "stern-polynomials",
+        "relation": "Related to",
+        "why": "The Stern (0,1)-polynomials form another structured Newman family."
+      }
+    ],
+    "questions": [
+      {
+        "id": "newman-five-cyclotomic",
+        "title": "Must a reducible five-term Newman polynomial have a cyclotomic factor?",
+        "status": "Conjecture in cited source",
+        "scope": "\\(f=1+x^s+x^r+x^m+x^n\\), integers \\(0<s<r<m<n\\), over \\(\\mathbb Q\\).",
+        "body": "<p>This is Mercer’s Conjecture 6 (2012), restated as Conjecture 1.2 by Koley–Reddy (2019). It is distinct from their proved classification of possible cyclotomic divisors.</p>",
+        "citations": [
+          {
+            "key": "Mercer2012Newman",
+            "locator": "Conjecture 6, p. 5"
+          },
+          {
+            "key": "KoleyReddy2019Cyclotomic",
+            "locator": "Conjecture 1.2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sparse-finite-fields",
+    "title": "Sparse irreducible polynomials over finite fields",
+    "kind": "research",
+    "subject": "finite-fields",
+    "summary": "Two conjectures ask how few nonzero terms, or how short a lower-degree part, an irreducible polynomial can have.",
+    "level": "Research",
+    "field": "finite fields",
+    "status": "Conjectures and known obstructions",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Does every degree admit an irreducible polynomial with at most five nonzero terms?",
+      "How short can the lower-degree part of x^n+h be?",
+      "Why can binary trinomials fail?"
+    ],
+    "prerequisites": [
+      "finite-field-irreducibility",
+      "finite-field-constructions"
+    ],
+    "sections": [
+      {
+        "id": "sparsity",
+        "title": "Few nonzero terms",
+        "body": "<p>Let \\(\\sigma_q(n)\\) be the least number of nonzero coefficients of an irreducible degree-\\(n\\) polynomial over \\(\\mathbb F_q\\). Von zur Gathen–Nöcker conjecture, for \\(n\\ge2\\),</p>\\[\\sigma_2(n)\\le5,\\qquad \\sigma_q(n)\\le4\\quad(q\\ge3).\\]<p>These are existence statements: the support and coefficients may depend on the degree. They do not assert irreducibility for every polynomial of small weight.</p><p>The bounds also hold trivially in degree one, for example using \\(x+1\\). The equivalent binary formulation using trinomials or pentanomials concerns degrees at least two.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.5, author-hosted text p. 6"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjectures 3.4.30–3.4.31; §11.1.1.2"
+          }
+        ]
+      },
+      {
+        "id": "short-tail",
+        "title": "A short lower-degree part",
+        "body": "<p>For \\(n\\ge2\\), define \\(\\tau_q(n)=\\min\\{\\deg h:x^n+h\\text{ is irreducible over }\\mathbb F_q,\\ \\deg h<n\\}\\). A second conjecture is</p>\\[\\tau_q(n)\\le3+\\log_q n.\\]<p>The authors call these polynomials <em>sedimentary</em>. This condition bounds the positions of all nonleading terms, whereas sparsity bounds their number. Both forms allow fast reduction in a polynomial basis of \\(\\mathbb F_{q^n}\\).</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.8, author-hosted text p. 7"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjecture 3.4.35 and Conjecture 11.1.20"
+          }
+        ]
+      },
+      {
+        "id": "binary-obstructions",
+        "title": "Example",
+        "body": "<p>Over \\(\\mathbb F_2\\), any polynomial with an even number of nonzero coefficients vanishes at \\(1\\). Thus an irreducible polynomial of degree greater than one must have odd weight. Swan’s theorem also excludes irreducible trinomials when \\(8\\mid n\\). Five terms are therefore necessary in some degrees.</p><div class=\"math-block example\"><p>For degree eight,</p>\\[x^8+x^4+x^3+x+1\\]<p>is irreducible over \\(\\mathbb F_2\\). Its exact Frobenius certificate is \\(x^{256}\\equiv x\\pmod f\\) and \\(\\gcd(f,x^{16}-x)=1\\). The only prime divisor of eight is two, so these are precisely the required tests.</p></div>",
+        "citations": [
+          {
+            "key": "Swan1962",
+            "note": "Obstruction for binary trinomials in degrees divisible by eight."
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Example 11.1.19"
+          }
+        ]
+      },
+      {
+        "id": "scope",
+        "title": "Status and Galois groups",
+        "body": "<p>The displayed conjectures are recorded in the 2005 paper and the 2013 handbook. No general resolution was verified in this review. Individual computations establish particular degrees, not the universal assertions. Over a finite field, the splitting-field group of an irreducible degree-\\(n\\) polynomial is already cyclic of order \\(n\\); the unresolved issue here is existence under coefficient restrictions.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Concluding paragraph of §4"
+          },
+          {
+            "key": "LidlNiederreiter1997",
+            "note": "The Frobenius description of finite-field extensions."
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "finite-field-constructions",
+        "relation": "Refines",
+        "why": "The existence question imposes strong restrictions on the support."
+      },
+      {
+        "id": "finite-field-irreducibility",
+        "relation": "Uses",
+        "why": "Frobenius-power tests certify individual candidates."
+      },
+      {
+        "id": "sparse-gaps",
+        "relation": "Contrasts with",
+        "why": "Large-gap criteria over characteristic zero concern a different field and asymptotic problem."
+      }
+    ],
+    "questions": [
+      {
+        "id": "binary-pentanomial-conjecture",
+        "title": "Does every binary degree admit an irreducible trinomial or pentanomial?",
+        "status": "Conjecture in cited source",
+        "scope": "Every degree n≥2 over F_2; the support may depend on n.",
+        "body": "<p>The conjecture is \\(\\sigma_2(n)\\le5\\). Even weights are impossible, and degrees divisible by eight require at least five terms.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.5"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjecture 3.4.30"
+          }
+        ]
+      },
+      {
+        "id": "finite-quadrinomial-conjecture",
+        "title": "Do four nonzero terms suffice over every finite field with more than two elements?",
+        "status": "Conjecture in cited source",
+        "scope": "Every prime power q≥3 and degree n≥2.",
+        "body": "<p>The assertion is \\(\\sigma_q(n)\\le4\\). It asks for at least one irreducible polynomial in each degree, without fixing the positions or values of its coefficients.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.5"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjecture 3.4.31"
+          }
+        ]
+      },
+      {
+        "id": "sedimentary-conjecture",
+        "title": "Can the lower-degree part always have degree at most \\(3+\\log_q n\\)?",
+        "status": "Conjecture in cited source",
+        "scope": "Every prime power q and degree n≥2.",
+        "body": "<p>The question asks for an irreducible \\(x^n+h\\) with \\(\\deg h\\le3+\\log_q n\\). The degree bound is logarithmic; the coefficients of \\(h\\) are free.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.8"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjecture 3.4.35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "family",
+    "subject": "families",
+    "level": "Advanced",
+    "field": "Q",
+    "status": "Open problems and partial results",
+    "checked": "2026-11-12",
+    "prerequisites": [
+      "foundations",
+      "frobenius",
+      "discriminants"
+    ],
+    "id": "hecke-polynomials",
+    "title": "Hecke polynomials and Maeda’s conjecture",
+    "summary": "Characteristic polynomials of Hecke operators connect irreducibility with Galois orbits of modular forms.",
+    "questionsAnswered": [
+      "What does Maeda’s conjecture assert?",
+      "What is known by exact computation?",
+      "How must the question change at higher level?"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Hecke polynomials",
+        "body": "<p>Let \\(k\\) be a positive even integer and let \\(S_k=S_k(\\mathrm{SL}_2(\\mathbb Z))\\) be the space of cusp forms of weight \\(k\\). Assume \\(d=\\dim S_k>0\\). For \\(m>1\\), the Hecke polynomial is</p>\\[H_{k,m}(X)=\\det(XI-T_m\\mid S_k)\\in\\mathbb Z[X].\\]<p>Its roots are the \\(m\\)-th Fourier coefficients of the normalized simultaneous Hecke eigenforms, counted with multiplicity. Thus its irreducibility asks whether these eigenvalues form one Galois orbit of size \\(d\\).</p>",
+        "citations": [
+          {
+            "key": "GhitzaMcAndrew2012",
+            "locator": "§1, pp. 55–56"
+          }
+        ]
+      },
+      {
+        "id": "maeda",
+        "title": "Maeda’s conjecture",
+        "body": "<p>The formulation in Ghitza–McAndrew predicts that every \\(H_{k,m}\\) above is irreducible over \\(\\mathbb Q\\) with Galois group \\(S_d\\). Their Theorem 1.5 verifies this for \\(T_2\\) through weight \\(14000\\), and extends the result to specified sets of other indices. A computation through a finite weight does not settle the assertion for all weights.</p><p>One must distinguish this statement from the weaker assertion that the simultaneous eigenforms form one Galois orbit. A single Fourier coefficient need not generate the whole coefficient field merely by definition.</p>",
+        "citations": [
+          {
+            "key": "GhitzaMcAndrew2012",
+            "locator": "Conjecture 1.1 and Theorem 1.5"
+          },
+          {
+            "key": "Tsaknias2012",
+            "locator": "Conjectures 1.1–1.2"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p>In weight \\(24\\), use the basis \\(f=\\Delta E_4^3\\), \\(g=\\Delta^2\\). The first coefficients give</p>\\[T_2f=696f+20736000g,\\qquad T_2g=f+384g.\\]<p>Hence</p>\\[H_{24,2}(X)=X^2-1080X-20468736.\\]<p>Its discriminant is \\(576\\cdot144169\\). Since \\(379^2<144169<380^2\\), it is not a square. The polynomial is irreducible and its group is \\(S_2\\). The matrix and discriminant are verified by the accompanying exact calculation.</p></div>",
+        "citations": [
+          {
+            "key": "GhitzaMcAndrew2012",
+            "locator": "§1, formula for the Hecke action",
+            "note": "The displayed weight-24 calculation is carried out in the atlas."
+          }
+        ]
+      },
+      {
+        "id": "higher-level",
+        "title": "Higher level",
+        "body": "<p>At a fixed level \\(N>1\\), the newspace can have several Galois orbits. Tsaknias asks whether the number of non-CM newform orbits becomes constant as the even weight tends to infinity. For squarefree \\(N\\), a more precise prediction is \\(2^{\\omega(N)}\\) orbits for all sufficiently large weights, where \\(\\omega(N)\\) counts distinct prime factors.</p><p>Local types and Atkin–Lehner signs explain necessary decompositions. The 2026 preprint of Banerjee and collaborators studies quadratic nebentypus and proves lower bounds; it does not prove the general eventual-count conjecture. These questions concern simultaneous eigensystems, so their count should not be identified with the number of distinct factors of an arbitrary single Hecke polynomial without further hypotheses.</p>",
+        "citations": [
+          {
+            "key": "Tsaknias2012",
+            "locator": "Questions 2.1–2.3"
+          },
+          {
+            "key": "BanerjeeEtAl2026",
+            "locator": "§1 and Theorem 1.1, arXiv v2"
+          }
+        ]
+      },
+      {
+        "id": "inverse-galois",
+        "title": "Inverse Galois theory",
+        "body": "<p>Wiese proves that Maeda’s conjecture would imply the following: for each positive even \\(r\\), the group \\(\\mathrm{PSL}_2(\\mathbb F_{p^r})\\) occurs over \\(\\mathbb Q\\), ramified only at \\(p\\), for a density-one set of primes \\(p\\). This is a conditional consequence, not a proof of Maeda’s conjecture.</p>",
+        "citations": [
+          {
+            "key": "Wiese2013Maeda",
+            "locator": "Theorem 1.1(a)"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "frobenius",
+        "relation": "Uses",
+        "why": "Modular factorizations give cycle certificates for Hecke polynomials."
+      },
+      {
+        "id": "inverse-galois",
+        "relation": "Connects to",
+        "why": "Maeda’s conjecture has consequences for realizing linear groups over Q."
+      },
+      {
+        "id": "eisenstein-zero-polynomials",
+        "relation": "Compare",
+        "why": "Eisenstein zero polynomials come from zeros of modular forms, rather than Hecke eigenvalues."
+      }
+    ],
+    "questions": [
+      {
+        "id": "maeda-level-one",
+        "title": "Do all level-one Hecke polynomials have full symmetric group?",
+        "status": "Conjecture in cited source",
+        "scope": "Even k with d=dim S_k(SL_2(Z))>0; every integer m>1.",
+        "body": "<p>Maeda’s conjecture predicts that \\(H_{k,m}\\) is irreducible and has Galois group \\(S_d\\). The bound \\(k\\le14000\\) for \\(T_2\\) is verified; the universal assertion remains conjectural in the cited 2026 discussion.</p>",
+        "citations": [
+          {
+            "key": "GhitzaMcAndrew2012",
+            "locator": "Conjecture 1.1; Theorem 1.5"
+          },
+          {
+            "key": "BanerjeeEtAl2026",
+            "locator": "§1"
+          }
+        ]
+      },
+      {
+        "id": "maeda-higher-level",
+        "title": "Do non-CM Galois orbit counts stabilize with the weight?",
+        "status": "Open in cited source",
+        "scope": "Fixed N≥1; even weights k→∞; trivial nebentypus; the new subspace.",
+        "body": "<p>Tsaknias asks whether the number \\(\\mathrm{NCM}(N,k)\\) of non-CM newform Galois orbits is eventually constant, and whether the resulting function of \\(N\\) is multiplicative. At squarefree level, Question 2.3 predicts \\(2^{\\omega(N)}\\) total orbits for all sufficiently large weights.</p>",
+        "citations": [
+          {
+            "key": "Tsaknias2012",
+            "locator": "Questions 2.2–2.3"
+          },
+          {
+            "key": "BanerjeeEtAl2026",
+            "locator": "§1, summary of the fixed-level conjecture"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "family",
+    "subject": "families",
+    "level": "Advanced",
+    "field": "Q",
+    "status": "Open problems and partial results",
+    "checked": "2026-11-12",
+    "prerequisites": [
+      "foundations",
+      "frobenius",
+      "discriminants"
+    ],
+    "id": "eisenstein-zero-polynomials",
+    "title": "Zero polynomials of Eisenstein series",
+    "summary": "The j-invariants of the non-elliptic zeros of an Eisenstein series define a rational polynomial. Its irreducibility and full Galois group are conjectural in general.",
+    "questionsAnswered": [
+      "Which zeros enter the polynomial?",
+      "Which infinite set of weights is known?",
+      "How does this differ from the Kaneko–Zagier family?"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition",
+        "body": "<p>For even \\(k\\ge4\\), let \\(E_k\\) be the normalized Eisenstein series for \\(\\mathrm{SL}_2(\\mathbb Z)\\). Let</p>\\[\\varphi_k(X)=\\prod_{\\substack{\\tau\\in\\mathbb H/\\mathrm{SL}_2(\\mathbb Z)\\\\E_k(\\tau)=0,\\ j(\\tau)\\ne0,1728}}(X-j(\\tau)),\\]<p>with zeros counted with multiplicity. This polynomial lies in \\(\\mathbb Q[X]\\). The exclusions remove the elliptic zeros. When \\(\\varphi_k=1\\), there is no irreducibility assertion; the conjecture concerns positive degree.</p>",
+        "citations": [
+          {
+            "key": "Gonzalez2022",
+            "locator": "§1, equations (1)–(2)"
+          },
+          {
+            "key": "MahlburgOno2004",
+            "locator": "§1, p. 40"
+          }
+        ]
+      },
+      {
+        "id": "known",
+        "title": "Known cases",
+        "body": "<p>González proves that \\(\\varphi_{12\\cdot2^\\ell}\\) is irreducible for every \\(\\ell\\ge0\\). His proof uses a recurrence for Eisenstein series to control coefficient valuations, then applies Dumas’ criterion. This proves infinitely many weights, not all even weights.</p><p>For instance,</p>\\[\\varphi_{16}(X)=X-\\frac{3456000}{3617}.\\]<p>Its linearity settles this individual case immediately.</p>",
+        "citations": [
+          {
+            "key": "Gonzalez2022",
+            "locator": "§1, Theorem 1 and the preceding examples"
+          }
+        ]
+      },
+      {
+        "id": "distinctions",
+        "title": "Related families",
+        "body": "<p>These polynomials should not be confused with the Hecke polynomials of cusp forms or with the Kaneko–Zagier lifts of supersingular polynomials. The latter arise from different modular forms. A theorem for one family does not settle the other.</p><p>A related coefficient-valuation conjecture of González is reported proved by Chiriac–Jorza in their 2026 preprint. That result should not remain listed as an unqualified open problem; it is not a claim that every \\(\\varphi_k\\) is irreducible.</p>",
+        "citations": [
+          {
+            "key": "MahlburgOno2004",
+            "locator": "§1, distinction between Eisenstein and hypergeometric modular forms"
+          },
+          {
+            "key": "ChiriacJorza2026",
+            "locator": "Abstract and Theorem 1, arXiv v2"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "hecke-polynomials",
+        "relation": "Compare",
+        "why": "Hecke polynomials encode eigenvalues rather than zeros."
+      },
+      {
+        "id": "eisenstein-dumas",
+        "relation": "Uses",
+        "why": "A single Newton edge proves the known infinite family."
+      },
+      {
+        "id": "orthogonal-families",
+        "relation": "Compare",
+        "why": "Kaneko–Zagier lifts are related to Jacobi polynomials."
+      },
+      {
+        "id": "kaneko-zagier",
+        "relation": "Related family",
+        "why": "Kaneko–Zagier polynomials are defined by Jacobi specializations, rather than by zeros of Eisenstein series."
+      }
+    ],
+    "questions": [
+      {
+        "id": "eisenstein-zero-irreducibility",
+        "title": "Are all nonconstant Eisenstein zero polynomials irreducible?",
+        "status": "Conjecture in cited source",
+        "scope": "Even k≥4 with deg(φ_k)>0; ground field Q.",
+        "body": "<p>The conjecture predicts irreducibility of \\(\\varphi_k\\). González proves it for \\(k=12\\cdot2^\\ell\\), \\(\\ell\\ge0\\). The general assertion is recorded as conjectural in that source.</p>",
+        "citations": [
+          {
+            "key": "Gonzalez2022",
+            "locator": "§1 and Theorem 1"
+          }
+        ]
+      },
+      {
+        "id": "eisenstein-zero-galois",
+        "title": "Do Eisenstein zero polynomials have full symmetric group?",
+        "status": "Conjecture in cited source",
+        "scope": "Even k≥4 with d=deg(φ_k)>0; ground field Q.",
+        "body": "<p>Mahlburg–Ono record the stronger prediction \\(\\operatorname{Gal}(\\varphi_k/\\mathbb Q)=S_d\\). The known irreducibility theorem alone does not determine this group.</p>",
+        "citations": [
+          {
+            "key": "MahlburgOno2004",
+            "locator": "§1, p. 40, paragraph before the displayed conjecture"
+          },
+          {
+            "key": "Gonzalez2022",
+            "locator": "Theorem 1"
+          }
+        ]
+      }
+    ]
+  }
+]

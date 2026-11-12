@@ -57,3 +57,8 @@
 .footer-top>div{display:flex;flex-wrap:wrap;gap:12px 24px}
 @media(max-width:780px){.home-links{grid-template-columns:repeat(2,minmax(0,1fr))}.home-subject-list{grid-template-columns:repeat(2,minmax(0,1fr))}.home-intro{padding:34px 0}.footer-top>div{flex-basis:100%}}
 @media(max-width:520px){.home-intro h1{font-size:2.6rem}.home-intro p{font-size:.92rem}.home-counts{gap:12px 22px;font-size:.78rem}.home-section-heading h2{font-size:1.8rem}.home-links>a{font-size:.85rem;padding:17px 13px}.home-subject-list{grid-template-columns:1fr}.home-subject-list>a{padding:13px 0}.home-content{padding-bottom:30px}.home-downloads{gap:12px 20px}}
+
+/* Family index: keep topic headings above individual questions. */
+.problem-family > h2{font-size:2rem;line-height:1.2;margin:.45rem 0 1.35rem}
+.problem-family .question-body + .question-body{border-top:1px solid var(--line);padding-top:1.25rem;margin-top:1.25rem}
+.problem-family .question-body h3{font-size:1.4rem;line-height:1.35;margin:.65rem 0}

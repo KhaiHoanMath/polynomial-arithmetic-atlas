@@ -2,7 +2,9 @@
 
 A reference handbook on polynomial irreducibility and Galois groups, with results, proofs, examples, and an annotated bibliography.
 
-The current edition contains 37 explanatory articles across 12 subjects and 232 annotated references. Counts are generated from the content and may grow. Literature review date: **12 November 2026**.
+The current edition contains 50 explanatory articles across 12 subjects, 94 questions, and 276 annotated references. Counts are generated from the content and may grow. Literature review date: **12 November 2026**.
+
+Open `problems.html` for source-attributed open questions grouped by family, or `questions.html` for the complete question register, including settled cases and suggested research directions. Source dates and claimed preprint resolutions are shown separately.
 
 ## Read without installing anything
 
@@ -58,6 +60,7 @@ Read [EDITORIAL.md](EDITORIAL.md) before adding a theorem or changing the status
 python3 -m pip install sympy==1.14.0
 python3 scripts/atlas_certificates.py --check
 python3 scripts/review_certificates.py
+python3 scripts/open_problem_certificates.py
 python3 static/downloads/galois_certificates.py
 python3 scripts/generate_eulerian.py --check
 ```

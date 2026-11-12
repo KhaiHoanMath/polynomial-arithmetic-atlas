@@ -142,12 +142,17 @@
       {
         "id": "function-field-model",
         "title": "Polynomials over a function field",
-        "body": "<p>Fix a prime power \\(q\\) and set</p>\\[f(x,y)=y^n+\\sum_{i=0}^{n-1}a_i(x)y^i,\\qquad a_i\\text{ independent and uniform in }\\{a\\in\\mathbb F_q[x]:\\deg a\\le d\\}.\\]<p>Entin–Popov take the splitting field over \\(\\mathbb F_q(x)\\). For fixed \\(n,q\\) and \\(d\\to\\infty\\), the probability of irreducibility, separability, and Galois group \\(S_n\\) tends to one. For fixed \\(d\\ge1,q\\) and \\(n\\to\\infty\\),</p>\\[\\Pr(f\\text{ irreducible})\\longrightarrow1-q^{-d},\\qquad\\Pr(G_f\\in\\{A_n,S_n\\}\\mid f\\text{ irreducible})\\longrightarrow1.\\]<p>In odd characteristic, the authors obtain \\(S_n\\) with probability tending to one conditional on irreducibility, under the uniform polynomial Chowla conjecture stated in Conjecture 1.5. In the finite-field setting, an irreducible polynomial over \\(\\mathbb F_q\\) has cyclic Galois group.</p>",
+        "body": "<p>Fix a prime power \\(q\\) and set</p>\\[f(x,y)=y^n+\\sum_{i=0}^{n-1}a_i(x)y^i,\\qquad a_i\\text{ independent and uniform in }\\{a\\in\\mathbb F_q[x]:\\deg a\\le d\\}.\\]<p>Entin–Popov take the splitting field over \\(\\mathbb F_q(x)\\). For fixed \\(n,q\\) and \\(d\\to\\infty\\), the probability of irreducibility, separability, and Galois group \\(S_n\\) tends to one. For fixed \\(d\\ge1,q\\) and \\(n\\to\\infty\\),</p>\\[\\Pr(f\\text{ irreducible})\\longrightarrow1-q^{-d},\\qquad\\Pr(G_f\\in\\{A_n,S_n\\}\\mid f\\text{ irreducible})\\longrightarrow1.\\]<p>Entin subsequently removed the Chowla hypothesis for odd \\(q\\): with fixed \\(d\\ge1\\), the conditional probability \\(\\Pr(G_f=S_n\\mid f\\text{ irreducible})\\) tends to one. His method does not treat characteristic two. In the finite-field setting, an irreducible polynomial over \\(\\mathbb F_q\\) has cyclic Galois group.</p>",
         "citations": [
           {
             "key": "EntinPopov2024",
             "locator": "Theorems 1.1, 1.2, 1.4 and 1.6; Conjecture 1.5",
-            "note": "The full symmetric conclusion in the fixed-d regime is conditional, and Theorem 1.6 assumes odd q."
+            "note": "Entin–Popov’s original full symmetric conclusion was conditional and assumed odd q; Entin’s later theorem removes that condition on Chowla."
+          },
+          {
+            "key": "Entin2025RationalFunction",
+            "locator": "Corollary 1.1 and Remark 1.4",
+            "note": "Unconditional full symmetric group in odd characteristic; the characteristic-two case lies outside the theorem."
           }
         ]
       }
@@ -186,6 +191,38 @@
             "key": "BlacharBreuillardKozma2026",
             "note": "The authors discuss the entropy assumption as a limitation of their method.",
             "locator": "Introduction after Theorem 1.1"
+          }
+        ]
+      },
+      {
+        "id": "truncated-fekete-prime-range",
+        "title": "How short can the prime interval be?",
+        "status": "Open in cited source",
+        "scope": "A prime P sampled uniformly from (d,H(d)], where this interval contains at least one prime.",
+        "body": "<p>Set</p>\\[T_{d,P}(x)=\\sum_{a=1}^d\\left(\\frac aP\\right)x^a.\\]<p>Varjú–Xu ask for the probability that this polynomial is irreducible after its linear factors are removed. Assuming RH for the Dedekind zeta functions of all number fields, they prove</p>\\[\\Pr\\bigl(T_{d,P}/x\\text{ irreducible over }\\mathbb Q\\bigr)\\ge1-O_\\varepsilon(d^{-1/2+\\varepsilon})\\]<p>when \\(H(d)>2^{2\\pi(d)}d^4\\); here \\(\\pi(d)\\) counts primes at most \\(d\\). The behavior in shorter intervals is the open problem. The endpoint \\(d=P-1\\) gives the classical Fekete family, whose additional linear factors must also be removed.</p>",
+        "citations": [
+          {
+            "key": "VarjuXu2026",
+            "locator": "Problem 1.2 and Corollary 1.3",
+            "note": "The random-prime truncated model is different from the all-prime classical Fekete conjecture."
+          }
+        ]
+      },
+      {
+        "id": "function-field-characteristic-two",
+        "title": "Does the full symmetric conclusion hold in characteristic two?",
+        "status": "Open in cited source",
+        "scope": "Fixed q a power of two and d≥1; independent uniform coefficients in F_q[t] of degree at most d; polynomial degree n→∞.",
+        "body": "<p>Does \\(\\Pr(G_f=S_n\\mid f\\text{ irreducible})\\to1\\)? Entin proves this for odd \\(q\\). Remark 1.4 explains why the discriminant argument does not extend to characteristic two.</p>",
+        "citations": [
+          {
+            "key": "Entin2025RationalFunction",
+            "locator": "Corollary 1.1 and Remark 1.4"
+          },
+          {
+            "key": "EntinPopov2024",
+            "locator": "Remark 1.7",
+            "note": "Explicitly expects the full symmetric conclusion without the odd-characteristic restriction."
           }
         ]
       }
@@ -584,7 +621,7 @@
     "level": "Research",
     "field": "Q",
     "status": "Research overview",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
       "How are the characteristic coefficients dependent?",
       "Which entry laws admit an unconditional theorem?",
@@ -689,6 +726,24 @@
             "key": "Eberhard2022",
             "note": "Exact conjectural and proved scopes.",
             "locator": "Conjecture 1.1; Theorems 1.2–1.3"
+          }
+        ]
+      },
+      {
+        "id": "matrix-height-exceptional-count",
+        "title": "Are reducible characteristic polynomials the main exception for matrices of bounded height?",
+        "status": "Conjecture in cited source",
+        "scope": "Fixed matrix size n≥2; integer entries of absolute value at most T; T→∞.",
+        "body": "<p>Let \\(M_n(T)\\) count matrices whose characteristic polynomial has group different from \\(S_n\\), and \\(R_n(T)\\) those with reducible characteristic polynomial. Anderson–O’Dorney conjecture</p>\\[R_n(T)\\sim M_n(T)\\asymp_n T^{n^2-n+1}\\log T.\\]<p>The lower bound comes from integer eigenvalues. Their general upper bound is \\(M_n(T)\\ll_n T^{n^2-1/2}\\log T\\). The size \\(n\\) is fixed here; this is a different problem from bounded entries and growing dimension.</p>",
+        "citations": [
+          {
+            "key": "AndersonODorney2026Matrices",
+            "locator": "Conjecture 1.2; Theorems 1.3 and 2.1",
+            "note": "The reducible-count prediction is attributed there to Rivin, Conjecture 12."
+          },
+          {
+            "key": "Rivin2008",
+            "locator": "Conjecture 12"
           }
         ]
       }

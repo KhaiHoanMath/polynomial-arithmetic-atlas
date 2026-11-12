@@ -24,12 +24,13 @@ review_date_long=f'{review_date.day} {review_date.strftime("%B")} {review_date.y
 navigation=read('content/navigation.json')
 articles=[a for f in sorted((REPO/'content/articles').glob('*.json')) for a in json.loads(f.read_text())]
 byid={a['id']:a for a in articles}; byref={r['id']:r for r in refs}
-order=['foundations','modular-irreducibility','eisenstein-dumas','newton-polygons','archimedean-criteria','integer-values','sparse-gaps','capelli-composition','frobenius','discriminants','ramification-inertia','permutation-groups','resolvents','reciprocity','trinomials','taylor','laguerre','orthogonal-families','eulerian','bernoulli-euler','fekete','height-counting','random-models','littlewood','factor-reversal','random-matrices','random-reciprocal','twisted-reciprocity','specialization','critical-points-monodromy','inverse-galois','composition-iteration','finite-field-irreducibility','finite-field-constructions','factorization-algorithms','galois-computation','multivariate-irreducibility']
+order=['foundations','modular-irreducibility','eisenstein-dumas','newton-polygons','archimedean-criteria','integer-values','sparse-gaps','capelli-composition','frobenius','discriminants','ramification-inertia','permutation-groups','resolvents','reciprocity','trinomials','taylor','laguerre','orthogonal-families','krawtchouk','kaneko-zagier','laguerre-negative-parameters','eulerian','bernoulli-euler','fekete','truncated-binomial','stern-polynomials','newman-pentanomials','touchard','chromatic-polynomials','tutte-polynomials','hecke-polynomials','eisenstein-zero-polynomials','height-counting','random-models','littlewood','factor-reversal','random-matrices','random-reciprocal','twisted-reciprocity','specialization','critical-points-monodromy','inverse-galois','composition-iteration','critical-parameter-polynomials','finite-field-irreducibility','finite-field-constructions','sparse-finite-fields','factorization-algorithms','galois-computation','multivariate-irreducibility']
 articles.sort(key=lambda a:order.index(a['id']) if a['id'] in order else 999)
 
 MATH=re.compile(r'\\\[([\s\S]*?)\\\]|\\\(([\s\S]*?)\\\)')
 math_count=0
 unicode_math={'≥':r'\ge','≤':r'\le','−':'-','↦':r'\mapsto','±':r'\pm','μ':r'\mu','∈':r'\in','→':r'\to','∞':r'\infty','α':r'\alpha','δ':r'\delta','ℤ':r'\mathbb Z','ε':r'\varepsilon','√':r'\surd','⋯':r'\cdots','≠':r'\ne','²':'{}^2','⁴':'{}^4','⁶':'{}^6','ⁿ':'{}^n','₂':'{}_2','₃':'{}_3','₄':'{}_4','₅':'{}_5','ₙ':'{}_n'}
+unicode_math.update({'≡':r'\equiv','₆':'{}_6','φ':r'\varphi','∖':r'\setminus','ζ':r'\zeta','ℓ':r'\ell','₀':'{}_0'})
 def plain(s):
     s=str(s or '').replace('–','-').replace('—','-').replace('‑','-').replace('’',"'").replace('“','``').replace('”',"''").replace('·', ' / ')
     escaped=[]
@@ -279,7 +280,7 @@ for sid in subject_order:
             for q in a['questions']:
                 parts.append(r'\needspace{7\baselineskip}\subsection*{'+text(q['title'])+'}\n'+r'{\small\sffamily\color{atlasgold}'+text(q['status'])+' / '+text(q['scope'])+'}\\par\\smallskip\n'+convert_html(q['body'])+source_list(q.get('citations',[])))
         if a.get('related'):
-            parts.append(r'\needspace{6\baselineskip}\par\medskip\begingroup\footnotesize\setlength{\parskip}{1pt}\textbf{\sffamily\color{atlasgreen}Related topics}\par'+'\n')
+            parts.append(r'\needspace{3\baselineskip}\par\medskip\begingroup\footnotesize\setlength{\parskip}{1pt}\textbf{\sffamily\color{atlasgreen}Related topics}\par'+'\n')
             for rel in a['related']:
                 parts.append(r'\color{black}\textbf{'+text(rel['relation'])+r'.} \hyperlink{article:'+rel['id']+'}{'+text(byid[rel['id']]['title'])+'}. '+text(rel['why'])+'\\par\n')
             parts.append(r'\endgroup'+'\n')

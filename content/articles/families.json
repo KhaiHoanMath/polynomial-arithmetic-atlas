@@ -560,6 +560,16 @@
         "id": "capelli-composition",
         "relation": "Uses",
         "why": "The factorization of a power composition is controlled over a root field; irreducibility must precede the classification."
+      },
+      {
+        "id": "truncated-binomial",
+        "relation": "Related family",
+        "why": "Binomial truncations provide another family with local factor-degree methods."
+      },
+      {
+        "id": "newman-pentanomials",
+        "relation": "Related family",
+        "why": "Five-term polynomials lead to a cyclotomic-factor conjecture."
       }
     ],
     "questions": [
@@ -726,6 +736,11 @@
         "id": "capelli-composition",
         "relation": "Connects to",
         "why": "Power substitutions can create factors even when the original Laguerre polynomial is irreducible."
+      },
+      {
+        "id": "laguerre-negative-parameters",
+        "relation": "Related family",
+        "why": "A negative parameter varying with the degree gives Hajir’s two-parameter conjectures."
       }
     ],
     "questions": [
@@ -768,7 +783,7 @@
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
       "Which rational factors must be removed?",
       "Why can half the degree suffice for irreducibility?",
@@ -851,6 +866,30 @@
             "note": "Principal-character family, cyclotomic factors, and associated conjectures."
           }
         ]
+      },
+      {
+        "id": "principal-semiprime-normalization",
+        "title": "Principal characters at semiprime moduli",
+        "body": "<p>For odd primes \\(p>q\\), put \\(n=pq\\) and</p>\\[S_n=\\{d>1:d\\mid p-1,\\ d\\ne q\\}\\cup\\{d>1:d\\mid q-1\\}\\cup\\{d>1:d\\mid\\gcd(pq+1,p+q)\\}.\\]\\[f_n=\\frac{F_n^{\\mathrm{prin}}}{x\\prod_{d\\in S_n}\\Phi_d},\\qquad f_n(x)=x^m g_n(x+x^{-1}),\\quad 2m=\\deg f_n.\\]<p>The indicated division is proved. Whether it removes every cyclotomic factor is part of the conjecture.</p>",
+        "citations": [
+          {
+            "key": "ChidambaramMinacNguyenTan2025",
+            "locator": "Proposition 3.1, Theorem 3.2, and Definitions 3.3, 3.6 (published version)",
+            "note": "Proposition 3.1 proves the indicated divisibility; Theorem 3.2 makes completeness conditional on Conjecture 2.11."
+          }
+        ]
+      },
+      {
+        "id": "generalized-quadratic-definition",
+        "title": "Generalized quadratic characters",
+        "body": "<p>For a nontrivial fundamental discriminant \\(\\Delta\\), write \\(D=|\\Delta|\\) and</p>\\[F_\\Delta(x)=\\sum_{a=1}^{D-1}\\left(\\frac{\\Delta}{a}\\right)x^a.\\]<p>The symbol is the Kronecker symbol. Let \\(r_\\Delta(d)\\) be the multiplicity of \\(\\Phi_d\\) in \\(F_\\Delta/x\\). The monic non-cyclotomic remainder is</p>\\[R_\\Delta=\\pm\\frac{F_\\Delta}{x\\prod_{d\\ge1}\\Phi_d^{r_\\Delta(d)}}.\\]<p>It may be constant for small conductors; irreducibility is asked only when its degree is positive.</p>",
+        "citations": [
+          {
+            "key": "MinacNguyenTan2024",
+            "locator": "Definitions 3.1–3.2, Question 3.9, and Conjecture 10.6 in arXiv:2206.11778v2",
+            "note": "The nonconstant restriction excludes the elementary cases with only cyclotomic factors."
+          }
+        ]
       }
     ],
     "related": [
@@ -873,9 +912,33 @@
         "id": "bernoulli-euler",
         "relation": "Supplies examples for",
         "why": "Generalized Bernoulli special values connect character sums with arithmetic invariants."
+      },
+      {
+        "id": "stern-polynomials",
+        "relation": "Related family",
+        "why": "Cyclotomic factors must be separated before testing the remaining polynomial."
       }
     ],
     "questions": [
+      {
+        "id": "fekete-prime-irreducible",
+        "title": "Is every normalized prime-conductor Fekete polynomial irreducible?",
+        "status": "Open in cited source",
+        "scope": "Primes p≥7; the normalized polynomial f_p defined above, over Q.",
+        "body": "<p>The question is whether \\(f_p\\) is always irreducible, equivalently whether its trace polynomial \\(g_p\\) is irreducible. Mináč–Nguyen–Tân verify both for \\(p<10^4\\). This is weaker than their full wreath-product conjecture. Varjú–Xu still describe the all-prime irreducibility assertion as conjectural in 2026.</p>",
+        "citations": [
+          {
+            "key": "MinacNguyenTan2023",
+            "locator": "Corollary 4.2 and Remark 4.15 in arXiv:2111.05256v3",
+            "note": "Irreducibility is discussed in Remark 4.15 as a consequence of Conjecture 4.13; it has no separate numbered conjecture here."
+          },
+          {
+            "key": "VarjuXu2026",
+            "locator": "Introduction, paragraph before Problem 1.2",
+            "note": "Current independent source describing the classical Fekete irreducibility conjecture."
+          }
+        ]
+      },
       {
         "id": "fekete-full-wreath",
         "title": "Does every normalized prime-conductor Fekete polynomial have the full wreath-product group?",
@@ -886,6 +949,86 @@
           {
             "key": "MinacNguyenTan2023",
             "locator": "Conjecture 4.13 in arXiv:2111.05256v3"
+          }
+        ]
+      },
+      {
+        "id": "fekete-principal-cyclotomic",
+        "title": "Which cyclotomic factors occur for principal characters?",
+        "status": "Conjecture in cited source",
+        "scope": "Squarefree n>1; d>1 with d not dividing n.",
+        "body": "<p>Set \\(d_1=\\gcd(d,n)\\). The conjecture says that \\(\\Phi_d\\mid F_n^{\\mathrm{prin}}\\) exactly when the numbers</p>\\[\\#\\{1\\le a\\le n:\\gcd(a,n)=1,\\ a\\equiv r\\pmod d\\}\\]<p>are equal for all residue classes \\(r\\pmod d\\) with \\(\\gcd(r,d_1)=1\\). Equal counts imply divisibility; the converse is conjectural.</p>",
+        "citations": [
+          {
+            "key": "ChidambaramMinacNguyenTan2025",
+            "locator": "Proposition 2.9 and Conjecture 2.11"
+          }
+        ]
+      },
+      {
+        "id": "fekete-principal-irreducible",
+        "title": "Is the semiprime remainder irreducible?",
+        "status": "Conjecture in cited source",
+        "scope": "Principal-character normalization above; n=pq, odd primes p>q.",
+        "body": "<p>Conjecture 6.9 asserts that \\(f_n\\) is irreducible over \\(\\mathbb Q\\). The source verifies all such \\(n<10^4\\).</p>",
+        "citations": [
+          {
+            "key": "ChidambaramMinacNguyenTan2025",
+            "locator": "Conjecture 6.9 and the preceding computational statement, p. 86"
+          }
+        ]
+      },
+      {
+        "id": "fekete-principal-galois",
+        "title": "What is the semiprime Galois group?",
+        "status": "Open in cited source",
+        "scope": "Principal-character normalization above; n=pq, odd primes p>q; m=deg(g_n).",
+        "body": "<p>The proposed groups are \\(\\operatorname{Gal}(g_n/\\mathbb Q)=S_m\\) and</p>\\[\\operatorname{Gal}(f_n/\\mathbb Q)=\\begin{cases}C_2^m\\rtimes S_m,&p\\equiv1\\pmod q\\text{ or }p,q\\equiv1\\pmod4,\\\\\\ker(\\Sigma)\\rtimes S_m,&\\text{otherwise},\\end{cases}\\]<p>where \\(\\Sigma:C_2^m\\to C_2\\) adds the coordinates. Both predictions hold for all such \\(n<10^4\\).</p>",
+        "citations": [
+          {
+            "key": "ChidambaramMinacNguyenTan2025",
+            "locator": "Proposition 3.7, Questions 7.2 and 7.6, and Propositions 7.3 and 7.7"
+          }
+        ]
+      },
+      {
+        "id": "fekete-general-cyclotomic",
+        "title": "What are the cyclotomic multiplicities for quadratic characters?",
+        "status": "Open in cited source",
+        "scope": "Nontrivial fundamental discriminants Δ; all d≥1.",
+        "body": "<p>Determine \\(r_\\Delta(d)\\). This includes factors whose orders do not divide \\(|\\Delta|\\); multiplicities can exceed one.</p>",
+        "citations": [
+          {
+            "key": "MinacNguyenTan2024",
+            "locator": "Question 3.9 and §§4–10 in arXiv:2206.11778v2"
+          }
+        ]
+      },
+      {
+        "id": "fekete-general-remainder",
+        "title": "Is the quadratic-character remainder irreducible?",
+        "status": "Conjecture in cited source",
+        "scope": "The remainder R_Δ defined above, when deg(R_Δ)>0.",
+        "body": "<p>Conjecture 10.6 predicts one irreducible non-cyclotomic factor. This extends the prime-conductor question to composite conductors.</p>",
+        "citations": [
+          {
+            "key": "MinacNguyenTan2024",
+            "locator": "Conjecture 10.6 in arXiv:2206.11778v2",
+            "note": "Stated here only for nonconstant remainders."
+          }
+        ]
+      },
+      {
+        "id": "fekete-general-even-signed",
+        "title": "Does the square discriminant give the only group restriction?",
+        "status": "Open in cited source",
+        "scope": "Δ=−3p with p≡5 mod8 prime.",
+        "body": "<p>Define</p>\\[h_p=-\\frac{F_{-3p}}{x\\Phi_1\\Phi_3\\Phi_p},\\qquad \\deg h_p=2(p-2).\\]<p>The source proves \\(\\operatorname{Gal}(h_p/\\mathbb Q)\\le\\ker(\\Sigma)\\rtimes S_{p-2}\\), where \\(\\Sigma:C_2^{p-2}\\to C_2\\) is summation. Is this containment always an equality?</p>",
+        "citations": [
+          {
+            "key": "MinacNguyenTan2024",
+            "locator": "Definition 10.3, Proposition 10.4, Proposition 11.12, Corollary 11.13, and §11.5 in arXiv:2206.11778v2",
+            "note": "A precise subcase of the generalized Galois-group problem; the proven containment is distinguished from the conjectural equality."
           }
         ]
       }
@@ -900,7 +1043,7 @@
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
       "How do Euler, Bernoulli, and Eulerian polynomials differ?",
       "Which rational factors are forced by the generating identities?",
@@ -1045,6 +1188,27 @@
             "locator": "§§24.4(vii), 24.12(iv)"
           }
         ]
+      },
+      {
+        "id": "higher-order-bernoulli",
+        "title": "Higher-order Bernoulli polynomials",
+        "body": "<p>The order is a separate parameter:</p>\\[\\left(\\frac{t}{e^t-1}\\right)^r e^{xt}=\\sum_{n\\ge0}B_n^{(r)}(x)\\frac{t^n}{n!}.\\]<p>Adelberg conjectures that the diagonal member \\(B_n^{(n)}\\) is irreducible over \\(\\mathbb Q\\) for every even \\(n\\ge2\\), and that \\(B_n^{(n)}(x)/(x-n/2)\\) is irreducible for every odd \\(n\\ge3\\). The linear factor follows from reflection about \\(n/2\\). This conjecture concerns order \\(n\\), not the ordinary family of order one.</p><p>Adelberg–Filaseta prove that Eisenstein’s criterion applies to a set of indices with lower density greater than \\(1/5\\). Filaseta–Luckner later improve this lower bound to \\((\\log 2)/2\\), and prove the same bound for diagonal higher-order Euler polynomials, defined by replacing \\(t/(e^t-1)\\) with \\(2/(e^t+1)\\). These density results leave the universal Bernoulli assertion unresolved in the cited sources.</p>",
+        "citations": [
+          {
+            "key": "AdelbergFilaseta2002",
+            "locator": "Theorem 1, p. 21; conjecture stated on p. 22"
+          },
+          {
+            "key": "Adelberg1998Newton",
+            "locator": "§5",
+            "note": "Original conjecture source, explicitly attributed in Adelberg–Filaseta (2002). The conjecture itself was checked in that later primary paper."
+          },
+          {
+            "key": "FilasetaLuckner2024Euler",
+            "locator": "Theorem 2 and the paragraph following Table 1 in §1",
+            "note": "Bernoulli improvement is stated separately after the Euler theorem."
+          }
+        ]
       }
     ],
     "related": [
@@ -1077,6 +1241,11 @@
         "id": "frobenius",
         "relation": "Uses",
         "why": "A derangement produces primes with no linear factor through Chebotarev."
+      },
+      {
+        "id": "touchard",
+        "relation": "Related family",
+        "why": "Set-partition polynomials have a separate rational-root conjecture."
       }
     ],
     "questions": [
@@ -1128,6 +1297,23 @@
           {
             "key": "DLMFBernoulliEuler",
             "locator": "§24.12(iv)"
+          }
+        ]
+      },
+      {
+        "id": "adelberg-diagonal-bernoulli",
+        "title": "Are the diagonal higher-order Bernoulli polynomials irreducible after removing the forced factor?",
+        "status": "Conjecture in cited source",
+        "scope": "B_n^(n) for even n≥2; B_n^(n)/(x−n/2) for odd n≥3, over Q.",
+        "body": "<p>This is Adelberg’s conjecture. Degree one is excluded from the quotient formulation because it leaves a constant. The ordinary odd Bernoulli normalization \\(B_n(x)/[x(x-1)(x-1/2)]\\) is a different problem.</p>",
+        "citations": [
+          {
+            "key": "AdelbergFilaseta2002",
+            "locator": "p. 22, first paragraph"
+          },
+          {
+            "key": "Adelberg1998Newton",
+            "locator": "§5"
           }
         ]
       }
@@ -1254,6 +1440,21 @@
             "note": "Geometric specialization methods and the distinction between parameter regimes."
           }
         ]
+      },
+      {
+        "id": "legendre-group-conjecture",
+        "title": "Legendre Galois groups",
+        "body": "<p>Write \\(P_{2m+\\delta}(x)=x^\\delta Q_{m,\\delta}(x^2)\\), with \\(\\delta\\in\\{0,1\\}\\). Cullinan–Hajir conjecture, under irreducibility of the degree-\\(m\\) reduced polynomial, that its group is \\(S_m\\) and that the group of \\(P_{2m+\\delta}/x^\\delta\\) is \\(C_2\\wr S_m\\). The two conclusions concern different permutation actions. Their Theorem 1.9(a) verifies the first conclusion through \\(m=10^9\\), still assuming irreducibility. A 2026 preprint claims the full group conjecture; it has not been independently verified here.</p>",
+        "citations": [
+          {
+            "key": "CullinanHajir2014",
+            "locator": "Conjecture 1.5 and Theorem 1.9(a)"
+          },
+          {
+            "key": "NguyenDang2026Jacobi",
+            "locator": "Abstract; version 1, 22 October 2026"
+          }
+        ]
       }
     ],
     "related": [
@@ -1276,6 +1477,16 @@
         "id": "specialization",
         "relation": "Applies to",
         "why": "Parameterized Jacobi families connect to fixed-degree specialization theorems."
+      },
+      {
+        "id": "krawtchouk",
+        "relation": "Related family",
+        "why": "Centering separates pairs of roots and leads to a reduced Galois group."
+      },
+      {
+        "id": "kaneko-zagier",
+        "relation": "Related family",
+        "why": "Four Jacobi specializations connect orthogonal polynomials and modular forms."
       }
     ],
     "questions": [
@@ -1307,6 +1518,53 @@
           {
             "key": "FilasetaTrifonov2002",
             "locator": "Main theorem"
+          }
+        ]
+      },
+      {
+        "id": "legendre-full-group",
+        "title": "Are the reduced and full Legendre groups \\(S_m\\) and \\(C_2\\wr S_m\\)?",
+        "status": "Resolution claimed in preprint",
+        "scope": "\\(m\\ge1\\), \\(\\delta\\in\\{0,1\\}\\), assuming irreducibility of the degree-\\(m\\) pair polynomial over \\(\\mathbb Q\\).",
+        "body": "<p>This is the two-part group conjecture of Cullinan–Hajir. It concerns the Galois groups, separately from Stieltjes’ irreducibility conjecture. A 2026 preprint claims a complete proof.</p>",
+        "citations": [
+          {
+            "key": "CullinanHajir2014",
+            "locator": "Conjecture 1.5"
+          },
+          {
+            "key": "NguyenDang2026Jacobi",
+            "locator": "Abstract"
+          }
+        ]
+      },
+      {
+        "id": "hermite-wronskian-simple-zeros",
+        "title": "Are all nonzero zeros of every Hermite Wronskian simple?",
+        "status": "Conjecture in cited source",
+        "scope": "Wronskians of Hermite polynomials with distinct nonnegative indices; zeros over \\(\\mathbb C\\).",
+        "body": "<p>Veselov’s conjecture permits a multiple zero at the origin. It is a separability question for the remainder after removing that zero, not a claim that every remainder is irreducible. Felder–Hemery–Veselov state it as Conjecture 1. Grosu–Grosu prove further cases, including partitions \\((n,k,k-1,\\ldots,1)\\). No general resolution was verified in this review.</p>",
+        "citations": [
+          {
+            "key": "FelderHemeryVeselov2012",
+            "locator": "§6, Conjecture 1"
+          },
+          {
+            "key": "GrosuGrosu2021",
+            "locator": "Conjecture 1 and Proposition 6; arXiv:2007.00065v1"
+          }
+        ]
+      },
+      {
+        "id": "hermite-wronskian-two-parts",
+        "title": "Which two-part Hermite Wronskians have irreducible nonconstant remainders?",
+        "status": "Open in cited source",
+        "scope": "The probabilists’ normalization \\(R_{(n,m)}\\), where \\(n\\ge m\\ge1\\) and \\(\\deg R_{(n,m)}>0\\).",
+        "body": "<p>Grosu–Grosu ask to extend their irreducibility results to further two-part partitions. Their results include \\(m=1,2\\) and the diagonal when \\(n+1\\) is a square. The constant remainder at \\((2,1)\\) is excluded. A blanket statement for all partitions would be false.</p>",
+        "citations": [
+          {
+            "key": "GrosuGrosu2021",
+            "locator": "Introduction, Theorems 1–3, and §10; arXiv:2007.00065v1"
           }
         ]
       }
