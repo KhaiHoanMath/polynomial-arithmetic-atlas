@@ -45,10 +45,7 @@ export async function validateContent(root) {
   article(m.article,'method: '+m.question);
   for(const key of m.references??[])reference(key,'method: '+m.question);
  }
- for(const e of laboratory) {
-  article(e.article,e.id+' example relation');
-  if(!articles.find(a=>a.id===e.article)?.sections.some(s=>s.id===e.section))errors.push(e.id+': unknown example section '+e.section);
- }
+ for(const e of laboratory)article(e.article,e.id+' laboratory relation');
  const sourceIDs={doi:new Map(),arxiv:new Map()};
  for(const r of catalogue.references) {
   for(const field of ['doi','arxiv']) {
