@@ -1,6 +1,6 @@
 # Polynomial Arithmetic Atlas
 
-A connected handbook on polynomial irreducibility, Galois groups, and proof methods, with foundations, exact examples, research boundaries, and an annotated source collection.
+A reference handbook on polynomial irreducibility and Galois groups, with results, proofs, examples, and an annotated bibliography.
 
 The current edition contains 37 explanatory articles across 12 subjects and 232 annotated references. Counts are generated from the content and may grow. Literature review date: **12 November 2026**.
 
@@ -48,9 +48,9 @@ The build exports `atlas_content.json`, annotated references in JSON/CSV/BibTeX,
 
 ## Edit an article
 
-Keep its `id` stable. Each record includes a title, subject, kind, field, status, checked date, orientation questions, sections, prerequisites, connections, and a question register. Section bodies are HTML; write inline mathematics as `\(...\)` and displays as `\[...\]`, escaping backslashes in JSON. A section citation names a reference `key` and may provide a verified `locator` and explanatory `note`.
+Keep its `id` stable. Each record includes a title, subject, kind, field, status, checked date, introductory questions, sections, prerequisites, connections, and a question register. Section bodies are HTML; write inline mathematics as `\(...\)` and displays as `\[...\]`, escaping backslashes in JSON. A section citation names a reference `key` and may provide a verified `locator` and explanatory `note`.
 
-Read [EDITORIAL.md](EDITORIAL.md) before adding a theorem or changing the status of a research problem. Do not remove hypotheses when shortening a statement. A published result, conditional theorem, reported preprint claim, exact example, and editorial research direction have different evidentiary roles.
+Read [EDITORIAL.md](EDITORIAL.md) before adding a theorem or changing the status of a research problem. Do not remove hypotheses when shortening a statement. A published result, conditional theorem, reported preprint claim, exact example, and editorial research direction must be identified as such.
 
 ## Verify the examples
 
@@ -75,6 +75,7 @@ xelatex -interaction=nonstopmode -halt-on-error -output-directory=build/handbook
 xelatex -interaction=nonstopmode -halt-on-error -output-directory=build/handbook build/handbook/polynomial_arithmetic_atlas_handbook.tex
 cp build/handbook/polynomial_arithmetic_atlas_handbook.pdf static/downloads/
 cp build/handbook/polynomial_arithmetic_atlas_handbook.tex static/downloads/
+cp build/handbook/handbook-manifest.json static/downloads/
 npm run build
 npm run check
 ```

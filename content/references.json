@@ -15,7 +15,7 @@
       "venue": "Springer",
       "url": "https://link.springer.com/book/10.1007/978-1-4757-5673-9",
       "section": "Foundations and reference books",
-      "annotation": "Reference for valuations, ramification, the different, and discriminants. Supplies the local field framework behind Newton polygons and arguments that produce inertia elements in polynomial Galois groups.",
+      "annotation": "Treats valuations, ramification, the different, and discriminants. These provide the local field framework for Newton polygons and for constructing inertia elements in polynomial Galois groups.",
       "status": "Published book",
       "verification_urls": [
         "https://link.springer.com/book/10.1007/978-1-4757-5673-9"
@@ -40,7 +40,7 @@
       "venue": "Cambridge University Press",
       "url": "https://www.cambridge.org/core/books/finite-fields/75BDAA74ABAE713196E718392B9E5E72",
       "section": "Foundations and reference books",
-      "annotation": "Standard reference for irreducible and primitive polynomials over finite fields, factorization, and constructions. Keep finite-field questions separate from Galois groups over the rationals: a degree-n irreducible polynomial over a finite field has cyclic splitting-field group of order n.",
+      "annotation": "Treats irreducible and primitive polynomials over finite fields, factorization, and constructions. An irreducible polynomial of degree n over a finite field has cyclic splitting-field group of order n; Galois groups over the rationals need not be cyclic.",
       "status": "Published book",
       "verification_urls": [
         "https://www.cambridge.org/core/books/finite-fields/75BDAA74ABAE713196E718392B9E5E72"
@@ -66,7 +66,7 @@
       "venue": "Springer",
       "url": "https://link.springer.com/book/10.1007/978-3-662-03983-0",
       "section": "Foundations and reference books",
-      "annotation": "A source for prime decomposition, ramification, and global arithmetic of splitting fields. Useful when a polynomial argument passes from reductions modulo primes to arithmetic properties of number fields.",
+      "annotation": "Treats prime decomposition, ramification, and the global arithmetic of splitting fields, relating reduction modulo primes to arithmetic properties of number fields.",
       "status": "Published book",
       "verification_urls": [
         "https://link.springer.com/book/10.1007/978-3-662-03983-0"
@@ -91,7 +91,7 @@
       "venue": "Cambridge University Press",
       "url": "https://doi.org/10.1017/CBO9780511542916",
       "section": "Foundations and reference books",
-      "annotation": "The central research monograph for this bibliography. It treats arbitrary and lacunary polynomials over several classes of fields; its bibliography is an essential starting point for backward searches into the classical literature.",
+      "annotation": "Treats arbitrary and lacunary polynomials over several classes of fields. Its bibliography documents the classical literature on reducibility.",
       "status": "Published book",
       "verification_urls": [
         "https://doi.org/10.1017/CBO9780511542916",
@@ -117,7 +117,7 @@
       "venue": "Springer",
       "url": "https://link.springer.com/book/10.1007/978-1-4613-0041-0",
       "section": "Foundations and reference books",
-      "annotation": "A reference for the algebra underlying irreducibility, field extensions, and Galois theory. Use it to check hypotheses over general fields and the distinction between separability and irreducibility.",
+      "annotation": "Develops the algebra of irreducibility, field extensions, and Galois theory over general fields, including the distinction between separability and irreducibility.",
       "status": "Published book",
       "verification_urls": [
         "https://link.springer.com/book/10.1007/978-1-4613-0041-0"
@@ -142,7 +142,7 @@
       "venue": "Springer",
       "url": "https://link.springer.com/book/10.1007/978-3-642-03980-5",
       "section": "Foundations and reference books",
-      "annotation": "A broad treatment of polynomial techniques: irreducibility appears on pp. 47–76, special polynomial forms on pp. 77–131, and Galois theory on pp. 181–218. Useful for connecting algebraic arguments with root location and constructive examples.",
+      "annotation": "Treats irreducibility on pp. 47–76, special polynomial forms on pp. 77–131, and Galois theory on pp. 181–218, relating algebraic arguments to root location and explicit constructions.",
       "status": "Published book",
       "verification_urls": [
         "https://link.springer.com/book/10.1007/978-3-642-03980-5"
@@ -167,7 +167,7 @@
       "venue": "John Wiley & Sons",
       "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781118218457",
       "section": "Foundations and reference books",
-      "annotation": "A detailed route from field extensions to explicit Galois groups. Chapters 13 and 14 treat resolvents, computation, and solvable permutation groups; especially useful for building worked examples.",
+      "annotation": "Develops field extensions and explicit Galois-group calculations through worked examples. Chapters 13 and 14 treat resolvents, computation, and solvable permutation groups.",
       "status": "Published book",
       "verification_urls": [
         "https://onlinelibrary.wiley.com/doi/book/10.1002/9781118218457"
@@ -191,7 +191,7 @@
       "venue": "Kea Books",
       "url": "https://www.jmilne.org/math/Books/index.html",
       "section": "Foundations and reference books",
-      "annotation": "A concise graduate reference with proofs and examples; Chapter 4 explains computation of Galois groups. The linked file is the 2022 book. Consult the author’s errata, including the distinction between irreducibility in Q[X] and Z[X] and the degree-two exception in the polynomial-counting discussion. Frozen course notes v5.10 have different pagination.",
+      "annotation": "Develops field and Galois theory through proofs and examples; Chapter 4 treats Galois-group computation. The linked file is the 2022 book. The author’s errata address, among other points, irreducibility in Q[X] versus Z[X] and the degree-two exception in polynomial counting. The frozen course notes v5.10 have different pagination.",
       "status": "Published book; author errata available",
       "verification_urls": [
         "https://www.jmilne.org/math/Books/index.html",
@@ -222,7 +222,7 @@
       "doi": "10.1515/crll.1846.32.93",
       "url": "https://www.degruyterbrill.com/document/doi/10.1515/crll.1846.32.93/html",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Historical source preceding Eisenstein for the criterion now often called Schönemann–Eisenstein. Read alongside Cox's historical account for the role of higher congruences and the precise translation into modern polynomial language.",
+      "annotation": "Precedes Eisenstein’s treatment of the criterion now often called Schönemann–Eisenstein. Cox’s historical account explains the role of higher congruences and translates the statement into modern polynomial language.",
       "status": "published",
       "verification_urls": [
         "https://www.degruyterbrill.com/document/doi/10.1515/crll.1846.32.93/html",
@@ -247,7 +247,7 @@
       "doi": "10.1515/crll.1850.39.160",
       "url": "https://doi.org/10.1515/crll.1850.39.160",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Original source for Eisenstein's treatment, motivated by division of the lemniscate and Gaussian integers. The familiar integer-polynomial criterion requires a prime dividing all nonleading coefficients, not the leading coefficient, and not dividing the constant coefficient twice.",
+      "annotation": "Develops Eisenstein’s criterion in connection with division of the lemniscate and Gaussian integers. For an integer polynomial, the familiar criterion requires a prime dividing every nonleading coefficient but not the leading coefficient, with its square not dividing the constant coefficient.",
       "status": "published",
       "verification_urls": [
         "https://doi.org/10.1090/proc/14856",
@@ -298,7 +298,7 @@
       "pages": "191--258",
       "url": "https://www.numdam.org/item/JMPA_1906_6_2__191_0/",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Foundational source for using Newton polygons to restrict possible factor degrees. In the familiar one-edge case, coprime horizontal and vertical increments give an irreducibility criterion; the polygon-product rule is useful far beyond this special case.",
+      "annotation": "Uses Newton polygons to restrict possible factor degrees. In the one-edge case, coprime horizontal and vertical increments give an irreducibility criterion; the polygon-product rule applies to more general factorization questions.",
       "status": "published",
       "verification_urls": [
         "https://www.numdam.org/item/JMPA_1906_6_2__191_0/",
@@ -401,7 +401,7 @@
       "pages": "278--288",
       "url": "https://link.springer.com/article/10.1007/BF01192407",
       "section": "Classical criteria and factorization methods",
-      "annotation": "An early systematic extension of valuation-based irreducibility criteria. This belongs in the chain from Eisenstein and Dumas to augmented valuations and higher-order Newton polygons.",
+      "annotation": "Extends valuation-based irreducibility criteria beyond the Eisenstein and Dumas cases, preceding the development of augmented valuations and higher-order Newton polygons.",
       "status": "published",
       "verification_urls": [
         "https://link.springer.com/article/10.1007/BF01192407",
@@ -429,7 +429,7 @@
       "doi": "10.2307/1968341",
       "url": "https://www.jstor.org/stable/1968341",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Studies irreducibility using repeated small or prime values at integer arguments, and extensions of Schur-type constructions. Particularly useful when the polynomial is naturally specified through its values or through products of linear factors.",
+      "annotation": "Studies irreducibility from repeated small or prime values at integer arguments and extends Schur-type constructions involving products of linear factors.",
       "status": "published",
       "verification_urls": [
         "https://www.jstor.org/stable/1968341",
@@ -455,7 +455,7 @@
       "doi": "10.1080/00029890.1935.11987732",
       "url": "https://www.tandfonline.com/doi/abs/10.1080/00029890.1935.11987732",
       "section": "Classical criteria and factorization methods",
-      "annotation": "A compact historical survey organizing criteria through divisibility of coefficients, sizes of coefficients and values at integers. It remains a useful map of the classical literature, supplemented by later work for present-day coverage.",
+      "annotation": "Surveys classical criteria based on coefficient divisibility, coefficient size, and values at integers. Its bibliography records the literature available at the time.",
       "status": "published",
       "verification_urls": [
         "https://www.tandfonline.com/doi/abs/10.1080/00029890.1935.11987732",
@@ -481,7 +481,7 @@
       "doi": "10.1090/S0002-9947-1936-1501879-8",
       "url": "https://users.encs.concordia.ca/~ford/UNCG/smvals.pdf",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Constructs polynomial valuations through successive augmentations and key polynomials. It supplies a conceptual framework for irreducibility tests that go beyond a first Newton polygon, and underlies modern local factorization methods.",
+      "annotation": "Constructs polynomial valuations through successive augmentations and key polynomials. This framework supports irreducibility tests beyond a first Newton polygon and underlies modern local factorization methods.",
       "status": "published",
       "verification_urls": [
         "https://celebratio.org/MacLane_S/article/213/",
@@ -507,7 +507,7 @@
       "doi": "10.4064/aa-11-1-1-34",
       "url": "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/11/1/95825/on-the-reducibility-of-polynomials-and-in-particular-of-trinomials",
       "section": "Classical criteria and factorization methods",
-      "annotation": "A major classical source on structural reducibility questions, especially sparse polynomials and trinomials. Consult the 1966 errata together with the original paper before quoting a specific statement.",
+      "annotation": "Studies structural reducibility, especially for sparse polynomials and trinomials. Specific statements should be read with the 1966 errata.",
       "status": "published; errata available",
       "verification_urls": [
         "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/11/1/95825/on-the-reducibility-of-polynomials-and-in-particular-of-trinomials",
@@ -533,7 +533,7 @@
       "doi": "10.4064/aa-11-4-491",
       "url": "https://doi.org/10.4064/aa-11-4-491",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Corrections to Schinzel's 1965 paper. Keep this linked to the original record in any atlas so readers do not use an uncorrected statement.",
+      "annotation": "Corrects statements in Schinzel’s 1965 paper; the correction and original paper should be consulted together.",
       "status": "published erratum",
       "verification_urls": [
         "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/en/publishing-house/journals-and-series/acta-arithmetica/all/11/4/96020/errata-to-the-paper-on-the-reducibility-of-polynomials-and-in-particular-of-trinomials"
@@ -558,7 +558,7 @@
       "doi": "10.2307/1994841",
       "url": "https://www.jstor.org/stable/1994841",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Sharpens the interpolation bounds behind Pólya's small-value criterion. It also excludes factors of specified degrees, which is often more useful than an all-or-nothing test when combined with local information.",
+      "annotation": "Sharpens the interpolation bounds in Pólya’s small-value criterion. Its exclusions of factors of specified degrees can be combined with local degree restrictions.",
       "status": "published",
       "verification_urls": [
         "https://www.jstor.org/stable/i334275",
@@ -583,7 +583,7 @@
       "doi": "10.7146/math.scand.a-11442",
       "url": "https://journals.msp.org/mscand/article/view/2165",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Further development of the small-value method, including asymptotic refinements. Read after Pólya and Levit when integer evaluations give stronger information than coefficient divisibility.",
+      "annotation": "Refines the small-value method, including asymptotic bounds, extending the interpolation arguments of Pólya and Levit.",
       "status": "published",
       "verification_urls": [
         "https://journals.msp.org/mscand/article/view/2165",
@@ -609,7 +609,7 @@
       "doi": "10.4153/CJM-1981-080-0",
       "url": "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/on-an-irreducibility-theorem-of-a-cohn/F1644BDFD66CFC166841810C29CBA91A",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Generalizes the criterion that a prime's digit expansion yields an irreducible polynomial when the digits are used as coefficients. Useful for prime-value methods and for understanding precisely which coefficient restrictions make a single prime evaluation decisive.",
+      "annotation": "Generalizes the criterion that a prime’s digit expansion gives an irreducible polynomial when its digits are used as coefficients. It identifies coefficient restrictions under which a single prime evaluation proves irreducibility.",
       "status": "published",
       "verification_urls": [
         "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/on-an-irreducibility-theorem-of-a-cohn/F1644BDFD66CFC166841810C29CBA91A"
@@ -634,7 +634,7 @@
       "doi": "10.1112/S0025579300011931",
       "url": "https://londmathsoc.onlinelibrary.wiley.com/doi/abs/10.1112/S0025579300011931",
       "section": "Classical criteria and factorization methods",
-      "annotation": "A modern extension of the Eisenstein method in the setting of valued fields. It is a useful entry to generalizations where the ordinary divisibility pattern of the coefficients does not suffice.",
+      "annotation": "Extends the Eisenstein method over valued fields to coefficient patterns beyond the ordinary divisibility criterion.",
       "status": "published",
       "verification_urls": [
         "https://londmathsoc.onlinelibrary.wiley.com/doi/abs/10.1112/S0025579300011931",
@@ -659,7 +659,7 @@
       "doi": "10.1515/9783110285581.143",
       "url": "https://doi.org/10.1515/9783110285581.143",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Uses restrictions on the Euclidean norm of the coefficient vector to control factorization. A useful methodological source for sparse polynomials and for results about their nonreciprocal parts, which must be distinguished from irreducibility of the whole polynomial.",
+      "annotation": "Uses the Euclidean norm of the coefficient vector to constrain factorization, including that of sparse polynomials and their nonreciprocal parts. Irreducibility of the nonreciprocal part does not imply irreducibility of the whole polynomial.",
       "status": "published",
       "verification_urls": [
         "https://people.math.sc.edu/filaseta/paperindex.html",
@@ -713,7 +713,7 @@
       "doi": "10.1080/00029890.2002.11919872",
       "url": "https://doi.org/10.1080/00029890.2002.11919872",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Readable account linking prime values, coefficient bounds and irreducibility, with Cohn's theorem as a central example. A single prime value needs additional size or coefficient hypotheses; the paper provides such hypotheses rather than asserting a general converse to prime-producing conjectures.",
+      "annotation": "Relates prime values, coefficient bounds, and irreducibility, with Cohn’s theorem as an example. A single prime value requires additional size or coefficient hypotheses; the paper states such hypotheses.",
       "status": "published",
       "verification_urls": [
         "https://doi.org/10.1080/00029890.2002.11919872",
@@ -738,7 +738,7 @@
       "pages": "29--37",
       "url": "https://www.hri.res.in/~thanga/papers/mnl.pdf",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Accessible survey of rational irreducibility for integer polynomials, covering several classical tests and their limitations. A useful first reading before the more specialized Newton-polygon, small-value and prime-value papers in this section.",
+      "annotation": "Surveys classical tests for rational irreducibility of integer polynomials and explains their limitations.",
       "status": "published",
       "verification_urls": [
         "https://www.hri.res.in/~thanga/expository.html",
@@ -765,7 +765,7 @@
       "doi": "10.4169/amer.math.monthly.118.01.003",
       "url": "https://people.math.ethz.ch/~halorenz/4students/Algebra/Schoenemann_Eisenstein.pdf",
       "section": "Classical criteria and factorization methods",
-      "annotation": "A particularly useful historical and mathematical exposition linking Gauss's lemma, finite fields, Hensel lifting, Gaussian integers and lemniscatic division. It gives careful attribution and explains the distinct routes by which Schönemann and Eisenstein arrived at their criteria.",
+      "annotation": "Explains the history and mathematics of Eisenstein’s criterion through Gauss’s lemma, finite fields, Hensel lifting, Gaussian integers, and lemniscatic division. It distinguishes the arguments and contributions of Schönemann and Eisenstein.",
       "status": "published",
       "verification_urls": [
         "https://www.tandfonline.com/doi/abs/10.4169/amer.math.monthly.118.01.003",
@@ -820,7 +820,7 @@
       "doi": "10.1080/00927872.2014.910800",
       "url": "https://www.tandfonline.com/doi/abs/10.1080/00927872.2014.910800",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Combines coefficient divisibility information from several primes through Newton polygons. This is directly useful when each prime leaves possible factor degrees but their combined restrictions exclude every proper factor.",
+      "annotation": "Combines coefficient divisibility at several primes through Newton polygons. Intersecting the permitted factor degrees can exclude every proper factor even when each prime alone is inconclusive.",
       "status": "published",
       "verification_urls": [
         "https://www.tandfonline.com/doi/full/10.1080/00927872.2014.910800",
@@ -903,7 +903,7 @@
       "arxiv": "1803.10811",
       "url": "https://arxiv.org/abs/1803.10811",
       "section": "Classical criteria and factorization methods",
-      "annotation": "Develops Ljunggren's factor-reversal method into practical irreducibility algorithms for x^N c(x^-1)+d(x). It treats cyclotomic obstructions separately and improves effective bounds under additional robustness hypotheses; its introduction is a useful guide to earlier large-gap work.",
+      "annotation": "Develops Ljunggren’s factor-reversal method into irreducibility algorithms for x^N c(x^-1)+d(x). It treats cyclotomic obstructions separately, improves effective bounds under additional robustness hypotheses, and reviews earlier large-gap results.",
       "status": "published",
       "verification_urls": [
         "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/192/2/113301/irreducibility-of-polynomials-with-a-large-gap",
@@ -928,7 +928,7 @@
       "pages": "383--408",
       "url": "https://www.numdam.org/item/JMPA_1871_2_16__383_0/",
       "section": "Permutation groups and Frobenius methods",
-      "annotation": "Historical source for the primitive-group results underlying many proofs that a polynomial's Galois group contains A_n. Use modern expositions for the precise prime-cycle criterion and for checking primitivity before applying it.",
+      "annotation": "Establishes primitive-group results used to prove containment of A_n in polynomial Galois groups. Modern expositions give the prime-cycle criterion in current terminology, including its primitivity hypothesis.",
       "status": "Published article",
       "verification_urls": [
         "https://www.numdam.org/item/JMPA_1871_2_16__383_0/",
@@ -952,7 +952,7 @@
       "doi": "10.1007/978-1-4612-0731-3",
       "url": "https://link.springer.com/book/10.1007/978-1-4612-0731-3",
       "section": "Permutation groups and Frobenius methods",
-      "annotation": "Reference for transitivity, block systems, primitive groups, and the Jordan-type results used to force large Galois groups. It supports the group-theoretic step after reduction modulo primes or local ramification has supplied cycle information.",
+      "annotation": "Treats transitivity, block systems, primitive groups, and Jordan-type criteria for large permutation groups. These criteria apply once modular factorization or local ramification has supplied cycle information.",
       "status": "Published monograph",
       "verification_urls": [
         "https://link.springer.com/book/10.1007/978-1-4612-0731-3",
@@ -978,7 +978,7 @@
       "doi": "10.1007/BF03027290",
       "url": "https://pub.math.leidenuniv.nl/~lenstrahw/PUBLICATIONS/1996d/art.pdf",
       "section": "Permutation groups and Frobenius methods",
-      "annotation": "An accessible explanation of how splitting modulo primes records conjugacy classes in a Galois group, together with the history and proof of Chebotarev's theorem. A strong source for explaining both the power and the limitations of modular factorization experiments.",
+      "annotation": "Explains Frobenius conjugacy classes and their relation to splitting modulo primes, with the history and proof of Chebotarev’s theorem. It describes what modular factorization data can establish and what remains undetermined.",
       "status": "Published expository article",
       "verification_urls": [
         "https://pub.math.leidenuniv.nl/~lenstrahw/PUBLICATIONS/1996d/art.pdf",
@@ -1033,7 +1033,7 @@
       "pages": "409--464",
       "url": "https://websites.umich.edu/~lagarias/zeta.html",
       "section": "Effective Chebotarev and quantitative specialization",
-      "annotation": "A foundational source for effective forms of Chebotarev, with conditional and unconditional estimates distinguished. It explains the analytic input needed to turn existence of useful Frobenius elements into bounds on the primes where they occur.",
+      "annotation": "Gives conditional and unconditional effective Chebotarev estimates. These bound the primes with specified Frobenius conjugacy classes.",
       "status": "Published proceedings chapter",
       "verification_urls": [
         "https://websites.umich.edu/~lagarias/zeta.html",
@@ -1063,7 +1063,7 @@
       "doi": "10.1112/plms/s3-43.2.227",
       "url": "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/plms/s3-43.2.227",
       "section": "Effective Chebotarev and quantitative specialization",
-      "annotation": "A foundational quantitative treatment of exceptional specializations and the distribution of Galois groups in polynomial families. It connects Hilbert irreducibility with sieve estimates, complementing the qualitative existence theorem.",
+      "annotation": "Gives quantitative bounds for exceptional specializations and Galois-group distributions in polynomial families by combining Hilbert irreducibility with sieve estimates.",
       "status": "Published article",
       "verification_urls": [
         "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/plms/s3-43.2.227",
@@ -1088,7 +1088,7 @@
       "doi": "10.1007/BF02698692",
       "url": "https://numdam.org/articles/10.1007/BF02698692/",
       "section": "Effective Chebotarev and quantitative specialization",
-      "annotation": "Develops effective Chebotarev estimates and arithmetic applications. An important reference when checking exactly how analytic hypotheses, extension degrees, and discriminants enter arguments based on observed factorization types modulo primes.",
+      "annotation": "Develops effective Chebotarev estimates and arithmetic applications, specifying the dependence on analytic hypotheses, extension degrees, and discriminants.",
       "status": "Published article",
       "verification_urls": [
         "https://doi.org/10.1007/BF02698692",
@@ -1116,7 +1116,7 @@
       "arxiv": "1803.02823",
       "url": "https://msp.org/ant/2019/13-5/ant-v13-n5-p02-s.pdf",
       "section": "Effective Chebotarev and quantitative specialization",
-      "annotation": "Gives an unconditional effective Chebotarev theorem with improved uniformity, including treatment of a possible exceptional zero. Useful for evaluating whether a probabilistic or computational Galois argument can replace a GRH input by an unconditional estimate within its required parameter range.",
+      "annotation": "Gives an unconditional effective Chebotarev theorem with improved uniformity, including a possible exceptional zero. Its parameter dependence determines when an unconditional estimate can replace a GRH-based estimate in a probabilistic or computational argument.",
       "status": "Published article",
       "verification_urls": [
         "https://msp.org/ant/2019/13-5/ant-v13-n5-p02-s.pdf",
@@ -1138,7 +1138,7 @@
       "type": "article",
       "venue": "Mathematica Scandinavica",
       "section": "Special families: trinomials and sparse families",
-      "annotation": "The classical source for irreducibility of x^n-x-1 over Q for every n at least 2. A starting point for the arithmetic of sparse polynomials; the full symmetric-group conclusion has a separate attribution.",
+      "annotation": "Proves irreducibility of x^n-x-1 over Q for every n at least 2. The later full symmetric-group conclusion has a separate attribution.",
       "status": "Published",
       "url": "https://doi.org/10.7146/math.scand.a-10478",
       "verification_urls": [
@@ -1162,7 +1162,7 @@
       "type": "article",
       "venue": "Mathematica Scandinavica",
       "section": "Special families: trinomials and sparse families",
-      "annotation": "A foundational source for factorization of sparse polynomials and the reciprocal/nonreciprocal distinction. The factor-reversal method developed here has later applications far beyond these initial families.",
+      "annotation": "Studies factorization of sparse polynomials through the distinction between reciprocal and nonreciprocal factors. Its factor-reversal method extends to later large-gap problems.",
       "status": "Published",
       "url": "https://doi.org/10.7146/math.scand.a-10593",
       "verification_urls": [
@@ -1210,7 +1210,7 @@
       "type": "article",
       "venue": "Journal of Number Theory",
       "section": "Special families: trinomials and sparse families",
-      "annotation": "Gives arithmetic conditions forcing the full symmetric group for trinomials. Useful for the ramification route to transpositions and for the independent proof concerning x^n-x-1.",
+      "annotation": "Gives arithmetic conditions forcing the full symmetric group for trinomials, using ramification to obtain transpositions. It includes an independent proof for x^n-x-1.",
       "status": "Published",
       "url": "https://doi.org/10.1016/0022-314X(87)90029-1",
       "verification_urls": [
@@ -1312,7 +1312,7 @@
       "type": "article",
       "venue": "Sitzungsberichte der Preußischen Akademie der Wissenschaften, Physikalisch-Mathematische Klasse",
       "section": "Special families: Schur and orthogonal polynomials",
-      "annotation": "Classical source for the Galois-group theorem for exponential Taylor polynomials. Coleman gives a particularly accessible later proof through Newton polygons.",
+      "annotation": "Proves the Galois-group theorem for exponential Taylor polynomials. Coleman later gives a proof using Newton polygons.",
       "status": "Published; citation verified through later literature",
       "url": "https://www.numdam.org/articles/10.5802/pmb.57/",
       "verification_urls": [
@@ -1338,7 +1338,7 @@
       "type": "article",
       "venue": "Journal für die reine und angewandte Mathematik",
       "section": "Special families: Schur and orthogonal polynomials",
-      "annotation": "Foundational treatment of irreducibility and Galois groups in the Laguerre and Hermite families. For Hermite polynomials, parity and the forced factor at zero must be respected in any statement about irreducibility.",
+      "annotation": "Studies irreducibility and Galois groups of Laguerre and Hermite polynomials. Statements for Hermite polynomials must account for parity and the forced factor at zero.",
       "status": "Published",
       "url": "https://doi.org/10.1515/crll.1931.165.52",
       "verification_urls": [
@@ -1363,7 +1363,7 @@
       "type": "article",
       "venue": "L'Enseignement Mathématique",
       "section": "Special families: Taylor and truncated binomial polynomials",
-      "annotation": "A short Newton-polygon proof of Schur’s theorem for sum_{j=0}^n x^j/j!: irreducible over Q, with group A_n when 4 divides n and S_n otherwise (n at least 2). A model example of local slopes, long cycles, and the discriminant square test working together.",
+      "annotation": "Proves Schur’s theorem for sum_{j=0}^n x^j/j!: irreducible over Q, with group A_n when 4 divides n and S_n otherwise (n at least 2). The proof combines Newton-polygon slopes, long cycles, and the discriminant square test.",
       "status": "Published",
       "url": "https://doi.org/10.5169/seals-87891",
       "verification_urls": [
@@ -1413,7 +1413,7 @@
       "type": "article",
       "venue": "Rocky Mountain Journal of Mathematics",
       "section": "Special families: Taylor and truncated binomial polynomials",
-      "annotation": "Investigates the first k+1 terms of (1+x)^n and related coefficient families. A useful bridge from factorial-coefficient criteria to explicit truncated-binomial questions.",
+      "annotation": "Studies irreducibility of the first k+1 terms of (1+x)^n and related coefficient families through factorial-coefficient criteria.",
       "status": "Published",
       "url": "https://doi.org/10.1216/rmjm/1181068761",
       "verification_urls": [
@@ -1516,7 +1516,7 @@
       "type": "article",
       "venue": "Publications mathématiques de Besançon. Algèbre et théorie des nombres",
       "section": "Special families: Taylor and truncated binomial polynomials",
-      "annotation": "A compact survey centred on exponential truncations, with further explicit investigations of Padé approximants. Particularly useful as an entry point connecting classical Schur results with later computational questions.",
+      "annotation": "Surveys exponential truncations and gives explicit investigations of Padé approximants, relating Schur’s classical results to later computational questions.",
       "status": "Published",
       "url": "https://www.numdam.org/articles/10.5802/pmb.57/",
       "verification_urls": [
@@ -1561,7 +1561,7 @@
       "type": "book",
       "venue": "Springer",
       "section": "Special families: Laguerre and Bessel polynomials",
-      "annotation": "The standard monograph, including chapters on algebraic irreducibility and the Galois group. Read its conjectural irreducibility discussion together with the later Filaseta–Trifonov theorem.",
+      "annotation": "Treats Bessel polynomials, including their algebraic irreducibility and Galois groups. Its irreducibility conjecture was later resolved by Filaseta and Trifonov.",
       "status": "Published",
       "url": "https://link.springer.com/book/10.1007/BFb0063135",
       "verification_urls": [
@@ -1840,7 +1840,7 @@
       "type": "article",
       "venue": "Journal of the Ramanujan Mathematical Society",
       "section": "Special families: Jacobi, Legendre and related polynomials",
-      "annotation": "Determines Newton polygons for certain Krawtchouck polynomials and proves new irreducibility cases. Shows how a familiar local method applies to a less understood discrete orthogonal family.",
+      "annotation": "Determines Newton polygons for certain Krawtchouck polynomials and uses them to prove new irreducibility cases.",
       "status": "Published",
       "url": "https://www.mathjournals.org/jrms/2024-039-004/2024-039-004-002.html",
       "verification_urls": [
@@ -1891,7 +1891,7 @@
       "type": "article",
       "venue": "Journal für die reine und angewandte Mathematik",
       "section": "Special families: Euler, Bernoulli and Eulerian polynomials",
-      "annotation": "A central classical paper on arithmetic factorization and roots of Euler and Bernoulli polynomials. Useful both for known irreducibility results and for the normalization needed after removing forced factors.",
+      "annotation": "Studies factorization and roots of Euler and Bernoulli polynomials, including irreducibility results and normalizations after removing forced factors.",
       "status": "Published",
       "url": "https://doi.org/10.1515/crll.1969.234.45",
       "verification_urls": [
@@ -1916,7 +1916,7 @@
       "type": "book",
       "venue": "Springer",
       "section": "Special families: Euler, Bernoulli and Eulerian polynomials",
-      "annotation": "Foundational combinatorial background for Eulerian polynomials: conventions, generating functions, and symmetry. It supplies the structural background needed before formulating an arithmetic irreducibility or Galois question.",
+      "annotation": "Develops the conventions, generating functions, and symmetries of Eulerian polynomials used in their arithmetic study.",
       "status": "Published",
       "url": "https://www.mat.univie.ac.at/~slc/books/foaschuetz.html",
       "verification_urls": [
@@ -1941,7 +1941,7 @@
       "type": "article",
       "venue": "Canadian Mathematical Bulletin",
       "section": "Special families: Euler, Bernoulli and Eulerian polynomials",
-      "annotation": "A key reference for Euler–Frobenius irreducibility. Theorem 6 at parameter r=1 includes the classical Eulerian polynomial at an odd prime index, where a shift makes Eisenstein’s criterion visible.",
+      "annotation": "Proves irreducibility results for Euler–Frobenius polynomials. Theorem 6 at parameter r=1 includes the classical Eulerian polynomial at an odd prime index, where a shift gives Eisenstein’s criterion.",
       "status": "Published",
       "url": "https://doi.org/10.4153/CMB-1974-052-x",
       "verification_urls": [
@@ -2047,7 +2047,7 @@
       "year": 1936,
       "type": "article",
       "section": "Counting by height and probabilistic Galois theory",
-      "annotation": "Classical starting point for the rarity of reducible polynomials and exceptional Galois groups in coefficient boxes. The asymptotic variable is coefficient height, with degree fixed.",
+      "annotation": "Studies the rarity of reducible polynomials and exceptional Galois groups in coefficient boxes as coefficient height grows with degree fixed.",
       "url": "https://link.springer.com/article/10.1007/BF01707594",
       "status": "Published",
       "verification_urls": [
@@ -2078,7 +2078,7 @@
       "url": "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms/s1-38.1.183",
       "status": "Published",
       "section": "Counting by height and probabilistic Galois theory",
-      "annotation": "Classical asymptotic counting of reducible integer polynomials in fixed-degree coefficient boxes. Useful for the main contribution from linear factors and for separating reducibility from exceptional transitive Galois groups.",
+      "annotation": "Gives asymptotic counts of reducible integer polynomials in fixed-degree coefficient boxes, including the main contribution from linear factors. Reducibility is distinct from having an exceptional transitive Galois group.",
       "verification_urls": [
         "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms/s1-38.1.183",
         "https://arxiv.org/pdf/2111.06507"
@@ -2097,7 +2097,7 @@
       "year": 1973,
       "type": "inproceedings",
       "section": "Counting by height and probabilistic Galois theory",
-      "annotation": "Foundational use of the large sieve to combine factorization information at many primes and bound exceptional Galois groups. The method turns finite-field factorization statistics into quantitative results for fixed-degree integer coefficient boxes.",
+      "annotation": "Uses the large sieve to combine factorization information at many primes and bound exceptional Galois groups in fixed-degree integer coefficient boxes.",
       "url": "https://doi.org/10.1090/pspum/024/0332694",
       "status": "Published",
       "verification_urls": [
@@ -2125,7 +2125,7 @@
       "year": 2012,
       "type": "article",
       "section": "Counting by height and probabilistic Galois theory",
-      "annotation": "Bounds the number of monic integer polynomials of fixed degree and bounded height with a prescribed Galois group. Useful for the resolvent and integral-point approach to exceptional groups.",
+      "annotation": "Bounds the number of monic integer polynomials of fixed degree and bounded height with a prescribed Galois group, using resolvents and integral-point estimates.",
       "url": "https://arxiv.org/abs/1010.5341",
       "status": "Published",
       "verification_urls": [
@@ -2152,7 +2152,7 @@
       "year": 2020,
       "type": "article",
       "section": "Counting by height and probabilistic Galois theory",
-      "annotation": "Studies counts for individual Galois groups in degrees three and four. A useful source for understanding the stronger asymptotic questions that remain after a generic full-symmetric-group result.",
+      "annotation": "Studies counts for individual Galois groups in degrees three and four, refining the question of how often the full symmetric group occurs.",
       "url": "https://arxiv.org/abs/1807.05820",
       "status": "Published",
       "verification_urls": [
@@ -2232,7 +2232,7 @@
       "year": 1993,
       "type": "article",
       "section": "Random polynomials of growing degree",
-      "annotation": "Historical source for the asymptotic irreducibility question for monic 0–1 polynomials with constant coefficient 1. Its principal results concern the geometry and topology of their zero sets, which provide useful background for restricted-coefficient families.",
+      "annotation": "Poses the asymptotic irreducibility question for monic 0–1 polynomials with constant coefficient 1. Its principal results concern the geometry and topology of their zero sets.",
       "url": "https://www.cecm.sfu.ca/organics/papers/odlyzko/paper/html/paper.html",
       "status": "Published",
       "verification_urls": [
@@ -2257,7 +2257,7 @@
       "year": 1999,
       "type": "article",
       "section": "Random polynomials of growing degree",
-      "annotation": "A foundational unconditional result for the 0–1 model, excluding small-degree factors with high probability and obtaining a lower bound of order 1/log n for irreducibility. The finite-field and exponential-sum techniques are important predecessors of later work.",
+      "annotation": "For the 0–1 model, unconditionally excludes small-degree factors with high probability and obtains a lower bound of order 1/log n for irreducibility, using finite-field and exponential-sum methods.",
       "url": "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/88/44/110736/on-the-number-of-irreducible-polynomials-with-0-1-coefficients",
       "status": "Published",
       "verification_urls": [
@@ -2283,7 +2283,7 @@
       "year": 2017,
       "type": "article",
       "section": "Random polynomials of growing degree",
-      "annotation": "A short treatment of irreducibility for random bivariate sign polynomials. It is useful for comparing the extra flexibility of several variables with the substantially harder univariate fixed-coefficient problem.",
+      "annotation": "Studies irreducibility of random bivariate sign polynomials. The additional variable permits arguments unavailable in the univariate fixed-coefficient model.",
       "url": "https://doi.org/10.1142/S1793042117500488",
       "status": "Published",
       "verification_urls": [
@@ -2469,7 +2469,7 @@
       "year": 2025,
       "type": "article",
       "section": "Random polynomials of growing degree",
-      "annotation": "Proves unconditionally that the limsup of the irreducibility probability for uniformly random Littlewood polynomials is 1. Special-degree factorization constraints are essential; the statement should not be replaced by an all-degree limit.",
+      "annotation": "Proves unconditionally that the limsup of the irreducibility probability for uniformly random Littlewood polynomials is 1, using factorization constraints in special degrees. This does not establish an all-degree limit.",
       "url": "https://arxiv.org/abs/2308.04878",
       "status": "Published",
       "verification_urls": [
@@ -2544,7 +2544,7 @@
       "year": 2026,
       "type": "misc",
       "section": "Random polynomials of growing degree",
-      "annotation": "Preprint reporting an O(1/log n) square-discriminant probability bound in a high-entropy bounded-coefficient model (Rényi entropy of order 2 greater than 12). The atlas reports the constant-term-one subclass and the conditional uniform-interval full-S_n corollary. The unqualified v1 statement permits a zero constant term and misses the persistent discriminant-zero event when the first two coefficients vanish; the full proof has not been independently verified.",
+      "annotation": "Preprint reporting an O(1/log n) square-discriminant probability bound in a high-entropy bounded-coefficient model (Rényi entropy of order 2 greater than 12). The atlas reports the constant-term-one subclass and the uniform-interval full-S_n corollary conditioned on a nonzero constant term. The unqualified v1 statement permits a zero constant term and misses the persistent discriminant-zero event when the first two coefficients vanish; the full proof has not been independently verified.",
       "url": "https://arxiv.org/abs/2609.40123v1",
       "status": "Preprint; version 1 dated 30 September 2026; scope issue noted",
       "verification_urls": [
@@ -2568,7 +2568,7 @@
       "year": 2026,
       "type": "misc",
       "section": "Random polynomials of growing degree",
-      "annotation": "Preprint presenting an unconditional proof of the irreducibility limit for monic polynomials with constant coefficient 1 and all remaining coefficients independent uniform in {0,1}. This precise model and the preprint status should accompany any account of the claimed advance.",
+      "annotation": "Preprint presenting an unconditional proof of the irreducibility limit for monic polynomials with constant coefficient 1 and all remaining coefficients independent uniform in {0,1}. The claim concerns this coefficient model and remains a preprint result.",
       "url": "https://arxiv.org/abs/2609.26771v2",
       "status": "Preprint; version 2 dated 14 October 2026",
       "verification_urls": [
@@ -2617,7 +2617,7 @@
       "year": 2008,
       "type": "article",
       "section": "Characteristic polynomials and random matrices",
-      "annotation": "Relates random walks on arithmetic groups and finite quotients to irreducible characteristic polynomials. Provides a route from arithmetic of polynomials to geometric group theory; its random-walk and height models differ from independent bounded matrix entries.",
+      "annotation": "Relates random walks on arithmetic groups and finite quotients to irreducible characteristic polynomials. Its random-walk and height models differ from models with independent bounded matrix entries.",
       "url": "https://arxiv.org/abs/math/0703532",
       "status": "Published",
       "verification_urls": [
@@ -2671,7 +2671,7 @@
       "year": 2023,
       "type": "article",
       "section": "Characteristic polynomials and random matrices",
-      "annotation": "Under ERH, proves high-probability irreducibility for characteristic polynomials of random symmetric sign matrices. The key innovation is sharp rank-distribution estimates over finite fields, using inverse Littlewood-Offord ideas.",
+      "annotation": "Under ERH, proves high-probability irreducibility for characteristic polynomials of random symmetric sign matrices, using sharp finite-field rank-distribution estimates and inverse Littlewood-Offord methods.",
       "url": "https://arxiv.org/abs/2106.04049",
       "status": "Published; irreducibility application conditional on ERH",
       "verification_urls": [
@@ -2721,7 +2721,7 @@
       "year": 2026,
       "type": "article",
       "section": "Characteristic polynomials and random matrices",
-      "annotation": "Under RH for certain Dedekind zeta functions, proves irreducibility with exponentially high probability and alternating-or-symmetric Galois group for a specified tridiagonal model. Also analyzes a related model with a smaller Galois group, illustrating why the matrix ensemble matters.",
+      "annotation": "Under RH for certain Dedekind zeta functions, proves irreducibility with exponentially high probability and alternating-or-symmetric Galois group for a specified tridiagonal model. A related model has a smaller Galois group.",
       "url": "https://arxiv.org/abs/2502.17218",
       "status": "Published; conditional on RH",
       "verification_urls": [
@@ -2771,7 +2771,7 @@
       "year": 2016,
       "type": "article",
       "section": "Probabilistic permutation-group methods",
-      "annotation": "Sharpens quantitative control of permutations lying in transitive subgroups other than S_n or A_n. Separates imprimitive and primitive obstructions, making it useful in arguments that first establish irreducibility and then force a large Galois group.",
+      "annotation": "Sharpens quantitative bounds for permutations lying in transitive subgroups other than S_n or A_n. It treats imprimitive and primitive obstructions separately, supplying estimates for large-group arguments after irreducibility has been established.",
       "url": "https://discreteanalysisjournal.com/article/849-permutations-contained-in-transitive-subgroups",
       "status": "Published",
       "verification_urls": [
@@ -2855,7 +2855,7 @@
       "pages": "421--443",
       "url": "https://www.numdam.org/item/ASNSP_1994_4_21_3_421_0/",
       "section": "Hilbert irreducibility and specialization",
-      "annotation": "Studies the number fields generated by specialized values of algebraic functions. A useful bridge from the existence of irreducible specializations to questions about the diversity of the fields produced.",
+      "annotation": "Studies the number fields generated by specialized values of algebraic functions, addressing the diversity of fields obtained from irreducible specializations.",
       "status": "Published article",
       "verification_urls": [
         "https://www.numdam.org/item/ASNSP_1994_4_21_3_421_0/"
@@ -2907,7 +2907,7 @@
       "doi": "10.1215/S0012-7094-07-13934-6",
       "url": "https://arpi.unipi.it/handle/11568/112812",
       "section": "Hilbert irreducibility and specialization",
-      "annotation": "Develops Hilbert irreducibility in cyclotomic extensions using the arithmetic of torsion points on tori. Relevant when specialization parameters are roots of unity or when polynomial dynamics is restricted to cyclotomic fields; its structural hypotheses must be retained.",
+      "annotation": "Develops Hilbert irreducibility in cyclotomic extensions through the arithmetic of torsion points on tori. Applications to roots-of-unity parameters or dynamics over cyclotomic fields require the stated structural hypotheses.",
       "status": "Published article",
       "verification_urls": [
         "https://arpi.unipi.it/handle/11568/112812",
@@ -2933,7 +2933,7 @@
       "doi": "10.1201/b10588",
       "url": "https://www.routledge.com/Topics-in-Galois-Theory-2nd-Edition/Serre/p/book/9780429064401",
       "section": "Hilbert irreducibility and specialization",
-      "annotation": "A compact route from Hilbert irreducibility and thin sets to explicit Galois realizations, rigidity, and sieve methods. Chapter 3 and Section 4.6 are particularly useful for explaining why generic Galois groups survive many specializations. Section 4.4 proves the Morse criterion through inertia and Riemann–Hurwitz, providing a geometric route to full symmetric monodromy.",
+      "annotation": "Treats Hilbert irreducibility, thin sets, explicit Galois realizations, rigidity, and sieve methods. Chapter 3 and Section 4.6 explain preservation of generic Galois groups under specialization. Section 4.4 proves the Morse criterion using inertia and Riemann–Hurwitz to obtain full symmetric monodromy.",
       "note": "Notes written by Henri Darmon. Publisher electronic edition copyright 2007; the physical second edition is also commonly catalogued and cited as 2008.",
       "status": "Published monograph",
       "verification_urls": [
@@ -3015,7 +3015,7 @@
       "doi": "10.1007/978-3-031-28020-7",
       "url": "https://link.springer.com/book/10.1007/978-3-031-28020-7",
       "section": "Hilbert irreducibility and specialization",
-      "annotation": "A major reference for Hilbertian fields, absolute Galois groups, specialization, and PAC fields. The fourth edition updates the earlier editions and includes a new chapter on Hilbertian subfields of Galois extensions.",
+      "annotation": "Treats Hilbertian fields, absolute Galois groups, specialization, and PAC fields. The fourth edition updates the earlier editions and adds a chapter on Hilbertian subfields of Galois extensions.",
       "status": "Published monograph",
       "verification_urls": [
         "https://link.springer.com/book/10.1007/978-3-031-28020-7"
@@ -3038,7 +3038,7 @@
       "doi": "10.1017/CBO9780511471117",
       "url": "https://www.cambridge.org/core/books/groups-as-galois-groups/A2233CBEE2CD250DDE2B867502C0A4DE",
       "section": "Generic polynomials and inverse Galois theory",
-      "annotation": "Introduces the geometric approach to inverse Galois theory through covers, Riemann's existence theorem, and rigidity. Especially useful for learning how permutation data can be converted into polynomial families with a desired group.",
+      "annotation": "Develops the geometric approach to inverse Galois theory through covers, Riemann’s existence theorem, and rigidity, constructing polynomial families from prescribed permutation data.",
       "status": "Published monograph",
       "verification_urls": [
         "https://www.cambridge.org/core/books/groups-as-galois-groups/A2233CBEE2CD250DDE2B867502C0A4DE",
@@ -3061,7 +3061,7 @@
       "publisher": "Cambridge University Press",
       "url": "https://library.slmath.org/books/Book45/index.html",
       "section": "Generic polynomials and inverse Galois theory",
-      "annotation": "A constructive source for generic polynomials and the invariant-theoretic methods behind them. The freely accessible MSRI/SLMath page supplies downloadable chapters and concrete families for specified finite groups.",
+      "annotation": "Constructs generic polynomials using invariant-theoretic methods. The MSRI/SLMath page provides free downloadable chapters and explicit families for specified finite groups.",
       "status": "Published monograph",
       "verification_urls": [
         "https://library.slmath.org/books/Book45/index.html",
@@ -3111,7 +3111,7 @@
       "doi": "10.1112/plms/s3-51.3.385",
       "url": "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/plms/s3-51.3.385",
       "section": "Iteration, composition, and arboreal Galois groups",
-      "annotation": "A foundational treatment of Galois groups under composition and iteration. In characteristic zero, the iterates of the generic degree-d polynomial have the full iterated wreath-product group, leading to finite-level specialization results and the later arboreal questions.",
+      "annotation": "Studies Galois groups under composition and iteration. In characteristic zero, the iterates of the generic degree-d polynomial have the full iterated wreath-product group, giving finite-level specialization results and motivating arboreal questions.",
       "status": "Published article",
       "verification_urls": [
         "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/plms/s3-51.3.385",
@@ -3136,7 +3136,7 @@
       "doi": "10.1007/BF01197321",
       "url": "https://link.springer.com/article/10.1007/BF01197321",
       "section": "Iteration, composition, and arboreal Galois groups",
-      "annotation": "Determines maximality of iterated quadratic Galois groups through arithmetic square-class conditions. A useful concrete model for how critical-orbit information controls the growth of splitting fields under iteration.",
+      "annotation": "Characterizes maximality of iterated quadratic Galois groups through arithmetic square-class conditions, relating critical orbits to the growth of splitting fields.",
       "status": "Published article",
       "verification_urls": [
         "https://link.springer.com/article/10.1007/BF01197321",
@@ -3188,7 +3188,7 @@
       "doi": "10.4064/aa99-1-9",
       "url": "https://geodesic.mathdoc.fr/articles/10.4064/aa99-1-9/",
       "section": "Iteration, composition, and arboreal Galois groups",
-      "annotation": "The published correction to Ayad and McQuillan's quadratic-iteration paper. Keep this record linked to the original article when building a methods database.",
+      "annotation": "Corrects Ayad and McQuillan’s quadratic-iteration paper and should be read with the original article.",
       "status": "Published correction",
       "verification_urls": [
         "https://geodesic.mathdoc.fr/articles/10.4064/aa99-1-9/"
@@ -3239,7 +3239,7 @@
       "arxiv": "1402.6018",
       "url": "https://www.numdam.org/articles/10.5802/pmb.a-154/",
       "section": "Iteration, composition, and arboreal Galois groups",
-      "annotation": "A readable entry point to Galois actions on trees of iterated preimages, stability, and density questions. Use its bibliography for the foundational literature, then supplement its open-problem discussion with later work.",
+      "annotation": "Surveys Galois actions on trees of iterated preimages, stability, and density questions. Its bibliography covers the foundational literature; its open-problem discussion predates subsequent results.",
       "status": "Published survey",
       "verification_urls": [
         "https://www.numdam.org/articles/10.5802/pmb.a-154/",
@@ -3290,7 +3290,7 @@
       "arxiv": "1803.01987",
       "url": "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.12225",
       "section": "Iteration, composition, and arboreal Galois groups",
-      "annotation": "Proves the desired existence of full arboreal Galois groups for even degree over every number field and for odd degree when the number field has odd degree over Q. The title should not be read as asserting every number-field case within this paper alone.",
+      "annotation": "Proves existence of full arboreal Galois groups for even degree over every number field and for odd degree when the number field has odd degree over Q. The paper does not cover every number-field case suggested by the title.",
       "status": "Published article",
       "verification_urls": [
         "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.12225",
@@ -3374,7 +3374,7 @@
       "arxiv": "2012.03076",
       "url": "https://arxiv.org/abs/2012.03076",
       "section": "Iteration, composition, and arboreal Galois groups",
-      "annotation": "Disproves Odoni's conjecture in its general formulation over Hilbertian fields of characteristic zero. It does not contradict positive existence results over number fields; the difference in the base-field quantifier is essential.",
+      "annotation": "Disproves Odoni’s conjecture over general Hilbertian fields of characteristic zero. The counterexamples do not contradict positive existence results over number fields.",
       "status": "Published article",
       "verification_urls": [
         "https://doi.org/10.1090/proc/15920",
@@ -3454,7 +3454,7 @@
       "arxiv": "0807.3578",
       "url": "https://arxiv.org/abs/0807.3578",
       "section": "Composition, indecomposability and monodromy",
-      "annotation": "Develops a structured description of all complete decompositions of a complex polynomial, refining the classical Ritt framework. Both authors' publication pages still list it as a preprint, so it should be cited with its arXiv identifier rather than an invented journal reference.",
+      "annotation": "Describes all complete decompositions of a complex polynomial, refining Ritt’s theory. Both authors’ publication pages list the work as a preprint; no journal publication is asserted here.",
       "status": "Preprint; no journal publication verified",
       "verification_urls": [
         "https://arxiv.org/abs/0807.3578",
@@ -3557,7 +3557,7 @@
       "doi": "10.1006/jsco.1994.1025",
       "url": "https://doi.org/10.1006/jsco.1994.1025",
       "section": "Finite fields: construction and prescribed coefficients",
-      "annotation": "Develops faster algorithms for constructing an irreducible polynomial of specified degree over a finite field. Useful when the objective is an explicit extension-field representation rather than testing a single given polynomial.",
+      "annotation": "Gives faster algorithms for constructing an irreducible polynomial of specified degree over a finite field, thereby producing an explicit representation of the corresponding extension field.",
       "status": "Published article",
       "verification_urls": [
         "https://www.shoup.net/papers/",
@@ -3666,7 +3666,7 @@
       "doi": "10.1201/b15006",
       "url": "https://doi.org/10.1201/b15006",
       "section": "Finite fields: construction and prescribed coefficients",
-      "annotation": "A broad reference for irreducible and primitive polynomials, prescribed coefficients, factorization algorithms, and finite-field applications. Its extensive bibliography is a practical starting point for extending this guide in characteristic p.",
+      "annotation": "Treats irreducible and primitive polynomials, prescribed coefficients, factorization algorithms, and finite-field applications, with an extensive bibliography.",
       "status": "Published edited handbook",
       "verification_urls": [
         "https://pure.psu.edu/en/publications/handbook-of-finite-fields/"
@@ -3746,7 +3746,7 @@
       "arxiv": "1604.04023",
       "url": "https://arxiv.org/abs/1604.04023",
       "section": "Finite fields: construction and prescribed coefficients",
-      "annotation": "Gives a different proof of the one-prescribed-coefficient existence theorem using least periods of discrete Fourier transforms over finite fields. A useful example of a method that differs from the character-sum approach while preserving the genuine exceptional cases.",
+      "annotation": "Proves the one-prescribed-coefficient existence theorem using least periods of discrete Fourier transforms over finite fields. This replaces the character-sum approach while retaining the necessary exceptional cases.",
       "status": "Published article",
       "verification_urls": [
         "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/new-proof-of-the-hansenmullen-irreducibility-conjecture/189A3A4627AC3912AC76E77F6E5221E8",
@@ -3801,7 +3801,7 @@
       "doi": "10.4064/aa-17-3-255-271",
       "url": "https://doi.org/10.4064/aa-17-3-255-271",
       "section": "Finite fields: factorization statistics and monodromy",
-      "annotation": "A foundational study of the factorization patterns of f(X)-a g(X) as a varies over a finite field. It connects prescribed factor degrees to permutation cycle types in a function-field Galois group, with the arithmetic hypotheses governing the distribution.",
+      "annotation": "Studies factorization patterns of f(X)-a g(X) as a varies over a finite field, relating factor degrees to cycle types in a function-field Galois group under the stated arithmetic hypotheses.",
       "status": "Published article",
       "verification_urls": [
         "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/17/3/97248/the-distribution-of-polynomials-over-finite-fields",
@@ -3912,7 +3912,7 @@
       "doi": "10.1002/j.1538-7305.1967.tb03174.x",
       "url": "https://doi.org/10.1002/j.1538-7305.1967.tb03174.x",
       "section": "Algorithms: finite fields and factorization",
-      "annotation": "The foundational linear-algebra method for factoring polynomials over finite fields. Read it to understand the Frobenius-fixed subalgebra that detects the irreducible factors.",
+      "annotation": "Factors polynomials over finite fields by linear algebra in the Frobenius-fixed subalgebra, which detects the irreducible factors.",
       "status": "Published article",
       "verification_urls": [
         "https://onlinelibrary.wiley.com/doi/abs/10.1002/j.1538-7305.1967.tb03174.x",
@@ -3964,7 +3964,7 @@
       "doi": "10.1137/0209024",
       "url": "https://doi.org/10.1137/0209024",
       "section": "Algorithms: finite fields and factorization",
-      "annotation": "A central source for finite-field algorithms for irreducible-polynomial construction, root finding, and factorization. Useful alongside the exact Frobenius-power criterion for testing a monic polynomial for irreducibility.",
+      "annotation": "Develops finite-field algorithms for irreducible-polynomial construction, root finding, and factorization, alongside Frobenius-power tests for irreducibility of monic polynomials.",
       "status": "Published article",
       "verification_urls": [
         "https://epubs.siam.org/doi/10.1137/0209024",
@@ -3991,7 +3991,7 @@
       "doi": "10.1090/S0025-5718-1981-0606517-5",
       "url": "https://doi.org/10.1090/S0025-5718-1981-0606517-5",
       "section": "Algorithms: finite fields and factorization",
-      "annotation": "A basic randomized finite-field factorization algorithm, especially important for splitting products whose irreducible factors have equal degree. Its randomness concerns the search procedure; successful factors can be checked exactly.",
+      "annotation": "Gives a randomized finite-field factorization algorithm, including the splitting of products whose irreducible factors have equal degree. The search is randomized; the resulting factors can be checked exactly.",
       "status": "Published article",
       "verification_urls": [
         "https://flintlib.org/doc/gr_poly/gr_poly_factor_equal_deg.html",
@@ -4017,7 +4017,7 @@
       "doi": "10.1007/BF01457454",
       "url": "https://doi.org/10.1007/BF01457454",
       "section": "Algorithms: finite fields and factorization",
-      "annotation": "Proves polynomial-time factorization over the rationals using lattice basis reduction. The LLL algorithm introduced here is also a central tool for finding algebraic relations and constructing certificates.",
+      "annotation": "Proves polynomial-time factorization over the rationals using lattice basis reduction. The lattice algorithm also supports algebraic-relation searches and certificate construction.",
       "status": "Published article",
       "verification_urls": [
         "https://ir.cwi.nl/pub/9304",
@@ -4046,7 +4046,7 @@
       "doi": "10.1006/jsco.1995.1055",
       "url": "https://doi.org/10.1006/jsco.1995.1055",
       "section": "Algorithms: finite fields and factorization",
-      "annotation": "Develops a practical implementation of baby-step/giant-step finite-field factorization. A useful bridge between asymptotic algorithms and actual computational work.",
+      "annotation": "Develops and implements baby-step/giant-step finite-field factorization, examining its computational performance.",
       "status": "Published article",
       "verification_urls": [
         "https://www.sciencedirect.com/science/article/pii/S0747717185710553",
@@ -4074,7 +4074,7 @@
       "doi": "10.1090/S0025-5718-98-00944-2",
       "url": "https://doi.org/10.1090/S0025-5718-98-00944-2",
       "section": "Algorithms: finite fields and factorization",
-      "annotation": "A major complexity advance in randomized polynomial factorization over finite fields. Its baby-step/giant-step framework is part of the background to modern finite-field factorization libraries.",
+      "annotation": "Improves the complexity of randomized polynomial factorization over finite fields through a baby-step/giant-step framework used in later factorization algorithms.",
       "status": "Published article",
       "verification_urls": [
         "https://www.shoup.net/papers/",
@@ -4103,7 +4103,7 @@
       "doi": "10.1006/jnth.2001.2763",
       "url": "https://doi.org/10.1006/jnth.2001.2763",
       "section": "Algorithms: finite fields and factorization",
-      "annotation": "Transforms the expensive recombination stage of modular factorization into a structured knapsack problem handled by lattice reduction. This is one of the main sources behind practical rational-polynomial factorization.",
+      "annotation": "Replaces the recombination search in modular factorization with a structured knapsack problem solved by lattice reduction.",
       "status": "Published article",
       "verification_urls": [
         "https://www.math.fsu.edu/~hoeij/papers.html",
@@ -4158,7 +4158,7 @@
       "doi": "10.1090/S0025-5718-1973-0327712-4",
       "url": "https://doi.org/10.1090/S0025-5718-1973-0327712-4",
       "section": "Algorithms: Galois groups and resolvents",
-      "annotation": "Introduces the subgroup-descent strategy based on relative invariants and resolvents. This remains the conceptual starting point for many practical Galois-group computations.",
+      "annotation": "Introduces subgroup descent using relative invariants and resolvents, a method underlying later Galois-group algorithms.",
       "status": "Published article",
       "verification_urls": [
         "https://docs.magma-maths.org/GlobalFields/GaloisGroupsAndAutomorphisms/bibliography.html",
@@ -4269,7 +4269,7 @@
       "doi": "10.1006/jsco.2000.0377",
       "url": "https://doi.org/10.1006/jsco.2000.0377",
       "section": "Algorithms: Galois groups and resolvents",
-      "annotation": "A practical development of Galois-group computation using p-adic roots and refinements of Stauduhar's method. Read it before the later degree-independent approach of Fieker and Klüners.",
+      "annotation": "Develops Galois-group computation using p-adic roots and refinements of Stauduhar’s method, preceding Fieker and Klüners’s approach without an a priori degree bound.",
       "status": "Published article",
       "verification_urls": [
         "https://www.sciencedirect.com/science/article/pii/S0747717100903778",
@@ -4295,7 +4295,7 @@
       "doi": "10.1006/jsco.2000.0378",
       "url": "https://doi.org/10.1006/jsco.2000.0378",
       "section": "Algorithms: Galois groups and resolvents",
-      "annotation": "Constructs explicit polynomials realizing all transitive groups of degree at most fifteen over the rationals. A valuable source of test examples and methods for organizing computations by permutation group.",
+      "annotation": "Constructs explicit rational polynomials realizing all transitive groups of degree at most fifteen and organizes the constructions by permutation group.",
       "status": "Published article",
       "verification_urls": [
         "https://ris.uni-paderborn.de/record/34899",
@@ -4322,7 +4322,7 @@
       "arxiv": "1009.5388",
       "url": "https://doi.org/10.2140/ant.2013.7.1325",
       "section": "Algorithms: Galois groups and resolvents",
-      "annotation": "Identifies Frobenius conjugacy classes more precisely than the factor-degree data of reduction modulo a prime. Useful when distinct conjugacy classes have the same cycle type in the chosen permutation representation.",
+      "annotation": "Identifies Frobenius conjugacy classes beyond the factor-degree data of reduction modulo a prime, distinguishing classes that share a cycle type in the chosen permutation representation.",
       "status": "Published article",
       "verification_urls": [
         "https://msp.org/ant/2013/7-6/ant-v7-n6-p02-s.pdf",
@@ -4350,7 +4350,7 @@
       "arxiv": "1211.3588",
       "url": "https://doi.org/10.1112/S1461157013000302",
       "section": "Algorithms: Galois groups and resolvents",
-      "annotation": "Constructs relative invariants for practical Galois-group computation without an a priori degree bound. It is a central reference for understanding current Magma computations; practical time and memory limits still matter.",
+      "annotation": "Constructs relative invariants for Galois-group computation without an a priori degree bound. The method underlies current Magma computations, subject to practical time and memory limits.",
       "status": "Published article",
       "verification_urls": [
         "https://www.cambridge.org/core/journals/lms-journal-of-computation-and-mathematics/article/computation-of-galois-groups-of-rational-polynomials/70FFFC0B1BBA91C846342618C93D1E08",
@@ -4375,7 +4375,7 @@
       "doi": "10.1007/978-3-662-02945-9",
       "url": "https://doi.org/10.1007/978-3-662-02945-9",
       "section": "Algorithms: reference books",
-      "annotation": "A systematic computational number-theory reference, including polynomial factorization, number fields, and Galois-group computations. Particularly helpful for translating a mathematical method into a reproducible algorithm.",
+      "annotation": "Develops algorithms for polynomial factorization, number fields, and Galois-group computation, with the arithmetic needed for their implementation.",
       "status": "Published book",
       "verification_urls": [
         "https://link.springer.com/book/10.1007/978-3-662-02945-9"
@@ -4398,7 +4398,7 @@
       "doi": "10.1017/CBO9781139856065",
       "url": "https://doi.org/10.1017/CBO9781139856065",
       "section": "Algorithms: reference books",
-      "annotation": "A comprehensive source on polynomial arithmetic, finite-field factorization, Hensel lifting, and factorization over the rationals. Use it for complexity models and complete algorithmic proofs rather than isolated software recipes.",
+      "annotation": "Treats polynomial arithmetic, finite-field factorization, Hensel lifting, and factorization over the rationals, with complexity models and algorithmic proofs.",
       "status": "Published book",
       "verification_urls": [
         "https://www.cambridge.org/core/books/modern-computer-algebra/DB3563D4013401734851CF683D2F03F0",
@@ -4603,7 +4603,7 @@
       "url": "https://www.sciencedirect.com/science/article/pii/S0022000085710239",
       "open_url": "https://users.cs.duke.edu/~elk27/bibliography/95/Ka95_jcss.pdf",
       "section": "Adjacent topic: multivariate absolute irreducibility",
-      "annotation": "Gives effective bounds for algebraic irreducibility criteria and applications to specialization and factorization complexity. Useful when one wants quantitative control of exceptional specializations in several variables.",
+      "annotation": "Gives effective bounds for algebraic irreducibility criteria, with applications to exceptional specializations in several variables and to factorization complexity.",
       "status": "Published article",
       "verification_urls": [
         "https://www.sciencedirect.com/science/article/pii/S0022000085710239",
@@ -4682,7 +4682,7 @@
       "doi": "10.5802/ccirm.18",
       "url": "https://www.numdam.org/articles/10.5802/ccirm.18/",
       "section": "Adjacent topic: multivariate absolute irreducibility",
-      "annotation": "An extensive French-language course on multivariate factorization, with a substantial bibliography. A good continuation when the atlas expands from univariate arithmetic to absolute factorization and computational algebraic geometry.",
+      "annotation": "A French-language course on multivariate factorization, including absolute factorization and computational algebraic geometry, with an extensive bibliography.",
       "status": "Published lecture notes",
       "note": "Journées Nationales de Calcul Formel, 13–17 May 2013, talk 2.",
       "verification_urls": [
@@ -4707,7 +4707,7 @@
       "venue": "University of South Carolina course materials",
       "url": "https://people.math.sc.edu/filaseta/gradcourses/Math788F/Math788F.html",
       "section": "Free expositions and research portals",
-      "annotation": "A focused course hub with a syllabus, problems, and a Newton polygon introduction. It is a useful model for learning by proof techniques; the page does not currently provide every chapter of the proposed book as an open link.",
+      "annotation": "Provides a syllabus, problems, and an introduction to Newton polygons for a course on irreducibility methods. The page does not currently link openly to every chapter of the proposed book.",
       "status": "Expository notes",
       "verification_urls": [
         "https://people.math.sc.edu/filaseta/gradcourses/Math788F/Math788F.html"
@@ -4774,7 +4774,7 @@
       "venue": "Author-hosted expository note",
       "url": "https://kconrad.math.uconn.edu/blurbs/ugradnumthy/irredtestFpT.pdf",
       "section": "Free expositions and research portals",
-      "annotation": "An accessible account of irreducibility tests over finite fields. Useful for implementing transparent modular certificates rather than reporting an unexplained software answer.",
+      "annotation": "Explains finite-field irreducibility tests and the congruence and gcd calculations that give modular certificates.",
       "status": "Expository notes",
       "verification_urls": [
         "https://kconrad.math.uconn.edu/blurbs/ugradnumthy/irredtestFpT.pdf",
@@ -4797,7 +4797,7 @@
       "venue": "Author-hosted expository note",
       "url": "https://kconrad.math.uconn.edu/blurbs/ringtheory/irredtestsoverQ.pdf",
       "section": "Free expositions and research portals",
-      "annotation": "Clear proofs of Gauss’s lemma, reduction modulo a prime, and Eisenstein’s criterion. Good first reading before more specialized irreducibility criteria.",
+      "annotation": "Proves Gauss’s lemma, the reduction-modulo-a-prime criterion, and Eisenstein’s criterion, establishing the prerequisites for more specialized irreducibility tests.",
       "status": "Expository notes",
       "verification_urls": [
         "https://kconrad.math.uconn.edu/blurbs/ringtheory/irredtestsoverQ.pdf",
@@ -4820,7 +4820,7 @@
       "venue": "Author-hosted expository note",
       "url": "https://kconrad.math.uconn.edu/blurbs/gradnumthy/galois-Q-factor-mod-p.pdf",
       "section": "Free expositions and research portals",
-      "annotation": "A short explanation of how squarefree factorizations modulo good primes produce cycle types in a Galois group. Read the discriminant condition carefully.",
+      "annotation": "Explains how squarefree factorizations modulo good primes produce cycle types in a Galois group, with an explicit discriminant condition.",
       "status": "Expository notes",
       "verification_urls": [
         "https://kconrad.math.uconn.edu/blurbs/gradnumthy/galois-Q-factor-mod-p.pdf",
@@ -4843,7 +4843,7 @@
       "venue": "Author-hosted expository note",
       "url": "https://kconrad.math.uconn.edu/blurbs/galoistheory/galoisSnAn.pdf",
       "section": "Free expositions and research portals",
-      "annotation": "Useful group-theoretic recognition criteria and examples. A practical bridge from modular factorization and real roots to identifying the full permutation group.",
+      "annotation": "Gives permutation-group recognition criteria and examples that use modular factorization and real roots to identify S_n or A_n.",
       "status": "Expository notes",
       "verification_urls": [
         "https://kconrad.math.uconn.edu/blurbs/galoistheory/galoisSnAn.pdf",
@@ -4868,7 +4868,7 @@
       "url": "https://arxiv.org/abs/2609.04551v1",
       "open_url": "https://arxiv.org/html/2609.04551v1",
       "section": "Hilbert irreducibility and specialization",
-      "annotation": "Describes exceptional S-unit fibers of a curve cover as a finite set together with finitely many power cosets. Theorem3 makes the cosets effective but leaves the finite remainder ineffective; Corollary1 characterizes infinitely many reducible f(x)−p_1^{e_1}⋯p_s^{e_s}.",
+      "annotation": "Describes exceptional S-unit fibers of a curve cover as a finite set together with finitely many power cosets. Theorem 3 makes the cosets effective but leaves the finite remainder ineffective; Corollary 1 characterizes infinitely many reducible f(x)−p_1^{e_1}⋯p_s^{e_s}.",
       "status": "Preprint; version 1, 3 September 2026",
       "verification_urls": [
         "https://arxiv.org/abs/2609.04551v1",
@@ -4891,7 +4891,7 @@
       "venue": "arXiv preprint",
       "url": "https://arxiv.org/abs/2611.14014v1",
       "section": "Iteration, composition, and arboreal Galois groups",
-      "annotation": "Reworks quadratic critical-orbit criteria and extends explicit sufficient conditions to rational parameters. Theorem6.1 has region and congruence restrictions; Conjecture8.1 asks for uniform finite-level detection. Computational evidence and the reported formalization are distinguished from a general solution of that conjecture.",
+      "annotation": "Reworks quadratic critical-orbit criteria and extends explicit sufficient conditions to rational parameters. Theorem 6.1 imposes region and congruence restrictions; Conjecture 8.1 asks for uniform finite-level detection. Neither the computational evidence nor the reported formalization establishes that conjecture in general.",
       "status": "Preprint; version 1, 10 November 2026",
       "verification_urls": [
         "https://arxiv.org/abs/2611.14014v1",
@@ -4923,7 +4923,7 @@
       "url": "https://link.springer.com/article/10.1007/s00454-001-0024-0",
       "open_url": "https://arxiv.org/html/math/0012099v1",
       "section": "Adjacent topic: multivariate absolute irreducibility",
-      "annotation": "Connects Minkowski decompositions of lattice polytopes with possible polynomial factors, gives algorithms for polygon decomposition, and develops projection-based tests in higher dimension. Corollary2 states the absolute-irreducibility certificate with the necessary exclusion of monomial factors. A decomposable polytope is inconclusive.",
+      "annotation": "Relates Minkowski decompositions of lattice polytopes to possible polynomial factors, gives polygon-decomposition algorithms, and develops projection tests in higher dimension. Corollary 2 gives an absolute-irreducibility certificate with the necessary exclusion of monomial factors. A decomposable polytope is inconclusive.",
       "status": "Published article",
       "verification_urls": [
         "https://link.springer.com/article/10.1007/s00454-001-0024-0",
@@ -4946,7 +4946,7 @@
       "url": "https://dlmf.nist.gov/24",
       "open_url": "https://dlmf.nist.gov/24",
       "section": "Special families: Euler, Bernoulli and Eulerian polynomials",
-      "annotation": "Authoritative conventions, generating identities, Bernoulli denominator arithmetic, and complete multiple-root classifications: every B_n is squarefree; E_5 is the unique Euler exception. Distinguishes Appell Euler polynomials from Eulerian descent polynomials.",
+      "annotation": "Gives conventions, generating identities, Bernoulli denominator arithmetic, and complete multiple-root classifications: every B_n is squarefree; E_5 is the unique Euler exception. Appell Euler polynomials are distinct from Eulerian descent polynomials.",
       "status": "Maintained reference resource",
       "verification_urls": [
         "https://dlmf.nist.gov/24.2",
@@ -4996,7 +4996,7 @@
       "doi": "10.1016/0022-314X(84)90050-7",
       "url": "https://doi.org/10.1016/0022-314X(84)90050-7",
       "section": "Special families: Euler, Bernoulli and Eulerian polynomials",
-      "annotation": "A central source on arithmetic factorization of Eulerian polynomials, including the lower bound p−1 for the degree of a large irreducible factor when p is the largest prime not exceeding the index. The atlas includes an elementary Newton-polygon derivation and the prime-plus-one consequence.",
+      "annotation": "Studies arithmetic factorization of Eulerian polynomials, including the lower bound p−1 for the degree of a large irreducible factor when p is the largest prime not exceeding the index. The atlas gives an elementary Newton-polygon derivation and the prime-plus-one consequence.",
       "status": "Published article; original full text not accessed in this review",
       "verification_urls": [
         "https://ftp.math.utah.edu/public_html/pub/tex/bib/jnumbertheory1980.pdf",
@@ -5171,7 +5171,7 @@
       "arxiv": "0807.2620",
       "url": "https://doi.org/10.1090/S0002-9947-2011-05442-5",
       "open_url": "https://arxiv.org/abs/0807.2620v2",
-      "annotation": "Develops Ore’s program of higher Newton polygons for local factorization. Product and residual-polynomial theorems sharpen slope restrictions to irreducibility certificates; higher-order indices control termination. Useful when reduction has repeated factors and a first Newton polygon is inconclusive. Theorem numbers cited in this atlas are explicitly those of arXiv v2 where indicated.",
+      "annotation": "Develops Ore’s higher Newton polygons for local factorization. Product and residual-polynomial theorems refine slope restrictions to irreducibility certificates, and higher-order indices control termination. These methods address repeated factors in reduction and cases where a first Newton polygon is inconclusive. Theorem numbers cited in this atlas refer to arXiv v2 where indicated.",
       "status": "Published article; open author preprint v2 (2008)",
       "section": "Local irreducibility and higher Newton polygons",
       "group": "Classical criteria and sparse polynomials",
@@ -5298,7 +5298,7 @@
       "type": "article",
       "doi": "10.1137/08073408X",
       "url": "https://doi.org/10.1137/08073408X",
-      "annotation": "Near-linear bit complexity for modular composition over finite fields leads to the degree-3/2 randomized factorization benchmark. Essential for understanding Frobenius iteration, multivariate evaluation, and the difference between bit and field-operation models. Corollary 7.2 states the modular-composition bound for each fixed positive epsilon.",
+      "annotation": "Proves a near-linear bit-complexity bound for modular composition over finite fields, yielding the degree-3/2 randomized factorization benchmark. The method uses multivariate evaluation and supports fast Frobenius iteration; its bit-complexity bounds differ from field-operation bounds. Corollary 7.2 states the modular-composition bound for each fixed positive epsilon.",
       "section": "Algorithms: factorization and modular composition",
       "status": "Published article",
       "verification_urls": [
@@ -5325,7 +5325,7 @@
       "type": "inproceedings",
       "doi": "10.4230/LIPIcs.MFCS.2016.47",
       "url": "https://doi.org/10.4230/LIPIcs.MFCS.2016.47",
-      "annotation": "Relates finite-field factorization to several algebraic problems by reductions. Gives concrete routes toward improving the degree exponent 3/2; this is a collection of equivalences, not an impossibility result or a proof that 3/2 is optimal.",
+      "annotation": "Relates finite-field factorization to other algebraic problems by reductions, identifying improvements that would lower its degree exponent below 3/2. These equivalences do not establish optimality of the exponent 3/2.",
       "section": "Algorithms: factorization and modular composition",
       "status": "Published conference paper",
       "verification_urls": [
@@ -5430,7 +5430,7 @@
       "type": "misc",
       "doi": "10.48550/arXiv.2511.10851",
       "url": "https://arxiv.org/abs/2511.10851",
-      "annotation": "Proposes a structured divisibility-covering conjecture which, under the paper’s hypotheses, would improve the degree exponent for finite-field factorization below 3/2. The proposed algorithmic improvement is conditional. Available as a 2025 preprint and listed in the December 2026 ISAAC program at the verification date; do not cite it as an unconditional breakthrough.",
+      "annotation": "Proposes a structured divisibility-covering conjecture which, under the paper’s hypotheses, would improve the degree exponent for finite-field factorization below 3/2. The improvement is conditional. The work is available as a 2025 preprint and was listed in the December 2026 ISAAC program at the verification date.",
       "section": "Algorithms: factorization and modular composition",
       "status": "Preprint; listed for ISAAC 2026",
       "verification_urls": [
@@ -5454,7 +5454,7 @@
       "type": "article",
       "doi": "10.1142/S179304212050092X",
       "url": "https://arxiv.org/abs/2003.05834",
-      "annotation": "Local Galois-group algorithms based on resolvents, ramification, and global models. Useful alongside global computations because a local group is a decomposition subgroup. Remark 3.5 records a heuristic precision bound in the original implementation; the linked package separately documents an exact p-adic input mode for proved results.",
+      "annotation": "Develops local Galois-group algorithms using resolvents, ramification, and global models; a local group occurs as a decomposition subgroup in a global computation. Remark 3.5 records a heuristic precision bound in the original implementation. The linked package separately documents an exact p-adic input mode for proved results.",
       "section": "Algorithms: Galois groups and resolvents",
       "status": "Published article",
       "verification_urls": [
@@ -5590,7 +5590,7 @@
       "doi": "10.1112/jlms.70257",
       "url": "https://doi.org/10.1112/jlms.70257",
       "section": "Composition, iteration, and arboreal groups",
-      "annotation": "Describes groups for x²+c with periodic critical point in characteristic different from two. Theorem 1.5 gives equivalent square-root, finite-level, and all-level conditions for attaining the specified constrained group. This is not surjectivity to the full binary-tree automorphism group; the target point and cyclotomic constants are essential.",
+      "annotation": "Describes groups for x²+c with periodic critical point in characteristic different from two. Theorem 1.5 gives equivalent square-root, finite-level, and all-level conditions for attaining the specified constrained group, which is not the full binary-tree automorphism group. The target point and cyclotomic constants enter the hypotheses.",
       "status": "Published article",
       "verification_urls": [
         "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms.70257",
@@ -5676,7 +5676,7 @@
         "https://arxiv.org/html/2007.00065v1",
         "https://www.sciencedirect.com/science/article/pii/S0019357720301233"
       ],
-      "annotation": "Two-part Wronskian Hermite families, Newton polygons, and Schur congruences link arithmetic to zeros. We exclude the unit remainder R_(2,1)=1 when restating Theorem 2 under this atlas’s nonconstant irreducibility convention.",
+      "annotation": "Studies arithmetic and zeros of two-part Wronskian Hermite families using Newton polygons and Schur congruences. The atlas’s restatement of Theorem 2 excludes the unit remainder R_(2,1)=1, since irreducibility here requires a nonconstant polynomial.",
       "status": "Published",
       "section": "Special polynomial families",
       "source_file": "families",
@@ -5828,7 +5828,7 @@
       "arxiv": "1603.03811",
       "status": "Published",
       "section": "Repeated roots and squarefreeness",
-      "annotation": "For bounded iid integer coefficients with largest atom at most 1/2, locates repeated-root probability at 0 and ±1 up to o(n^(-2)); when zero is excluded, obtains O(n^(-2)). A useful safeguard against forgetting the persistent zero-discriminant event.",
+      "annotation": "For bounded iid integer coefficients with largest atom at most 1/2, locates repeated-root probability at 0 and ±1 up to o(n^(-2)); when zero is excluded, obtains O(n^(-2)). Allowing zero coefficients can leave a persistent discriminant-zero event.",
       "verification_urls": [
         "https://arxiv.org/html/1603.03811v1",
         "https://arxiv.org/abs/1603.03811",
@@ -5909,7 +5909,7 @@
       "arxiv": "2311.14862",
       "status": "Published; full-group conclusion in the fixed-coefficient-degree model conditional",
       "section": "Random polynomials over function fields",
-      "annotation": "Studies monic polynomials in y with independent uniformly bounded-degree coefficients in F_q[x]. The two limiting regimes differ: growing coefficient degree gives S_n with probability tending to one; growing y-degree gives irreducibility limit 1−q^(−d) and conditional A_n-or-S_n. The full-S_n refinement in odd characteristic uses a uniform polynomial Chowla conjecture.",
+      "annotation": "Studies monic polynomials in y with independent uniformly bounded-degree coefficients in F_q[x]. The two limiting regimes differ: growing coefficient degree gives S_n with probability tending to one; growing y-degree gives irreducibility limit 1−q^(−d), and conditioned on irreducibility, the group is A_n or S_n with probability tending to one. The full-S_n refinement in odd characteristic uses a uniform polynomial Chowla conjecture.",
       "verification_urls": [
         "https://arxiv.org/abs/2311.14862v3",
         "https://arxiv.org/html/2311.14862v3",

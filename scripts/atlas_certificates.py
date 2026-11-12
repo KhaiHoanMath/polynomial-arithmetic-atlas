@@ -53,11 +53,11 @@ def modular_record(f, p):
     degrees = sorted(degree_list)
     allowed = degrees_allowed(degrees)
     if not squarefree:
-        conclusion = 'Repeated factors prevent the good-prime Frobenius inference. Degree constraints from reduction remain valid because the leading coefficient is nonzero modulo this prime.'
+        conclusion = 'The reduction has repeated factors, so the Frobenius cycle criterion does not apply. It still restricts factor degrees because the degree is preserved.'
     elif not allowed:
-        conclusion = 'The reduction is irreducible. It proves irreducibility over Q and gives a full-length cycle in the Galois group.'
+        conclusion = 'The irreducible reduction proves irreducibility over Q and gives a cycle of full length in the Galois group.'
     else:
-        conclusion = 'The squarefree factorization gives a Frobenius element with these cycle lengths. A rational factor must have one of the listed proper degrees.'
+        conclusion = 'The factor degrees are the cycle lengths of a Frobenius element. Every proper rational factor has one of the listed degrees.'
     return {'prime': p, 'latex': ''.join(parts), 'degrees': degrees,
             'squarefree': squarefree, 'allowed': allowed, 'conclusion': conclusion,
             'factors': [{'coefficients': [int(c) for c in factor.all_coeffs()], 'multiplicity': int(m)} for factor,m in factors]}
@@ -90,20 +90,20 @@ def newton_record(f,p):
 
 def build():
     samples=[
-      dict(id='selmer',shortTitle=r'\(x^5-x-1\)',title='A complete symmetric-group certificate',latex=r'x^5-x-1',f=x**5-x-1,ps=[2,3,5,7,11],article='frobenius',
-        intro='Two small primes are enough for this polynomial. Keep the irreducibility step separate from the permutation-group step.',resultTitle=r'The group is \(S_5\).',
+      dict(id='selmer',shortTitle=r'\(x^5-x-1\)',title='A quintic with symmetric Galois group',latex=r'x^5-x-1',f=x**5-x-1,ps=[2,3,5,7,11],article='frobenius',
+        intro='Reduction modulo 3 proves irreducibility. Reduction modulo 2 then determines the Galois group.',resultTitle=r'The group is \(S_5\).',
         result=r'<p>Modulo 3 the polynomial is irreducible. Its Galois group is therefore transitive of prime degree 5, hence primitive.</p><p>Modulo 2 the factor degrees are 2 and 3. Cubing the corresponding permutation leaves a single transposition. A primitive group containing a transposition is the full symmetric group.</p>'),
-      dict(id='cyclotomic',shortTitle=r'\(x^4+1\)',title='Irreducible, but never irreducible modulo a prime',latex=r'x^4+1',f=x**4+1,ps=[2,3,5,7,11,13,17],article='modular-irreducibility',
-        intro='A negative modular search need not mean a polynomial is reducible. This example gives a structural reason the search cannot succeed.',resultTitle=r'Eisenstein works after a shift.',
+      dict(id='cyclotomic',shortTitle=r'\(x^4+1\)',title='An irreducible cyclotomic polynomial',latex=r'x^4+1',f=x**4+1,ps=[2,3,5,7,11,13,17],article='modular-irreducibility',
+        intro='This polynomial is irreducible over Q but reducible modulo every prime.',resultTitle=r'Eisenstein after translation',
         result=r'<p>The shift is \(f(x+1)=x^4+4x^3+6x^2+4x+2\), which is Eisenstein at 2.</p><p>At an odd prime, every primitive eighth root of unity lies in \(\mathbb F_{p^2}\), since \(p^2\equiv1\pmod8\). All irreducible factors therefore have degree at most 2. The Galois group is \((\mathbb Z/8\mathbb Z)^\times\cong C_2^2\), which has no 4-cycle.</p>'),
-      dict(id='eulerian',shortTitle=r'\(A_5(x)\)',title='Reciprocity changes the ambient group',latex=r'x^4+26x^3+66x^2+26x+1',f=x**4+26*x**3+66*x**2+26*x+1,ps=[2,11,13,17,23],article='eulerian',
-        intro='The two pairs of inverse roots are preserved by every Galois automorphism. The expected group is a subgroup of the order-eight wreath product.',resultTitle=r'The group is \(C_2\wr S_2\).',
+      dict(id='eulerian',shortTitle=r'\(A_5(x)\)',title='A reciprocal quartic',latex=r'x^4+26x^3+66x^2+26x+1',f=x**4+26*x**3+66*x**2+26*x+1,ps=[2,11,13,17,23],article='eulerian',
+        intro='Galois automorphisms permute the two inverse pairs of roots. The Galois group is therefore contained in the wreath product of order eight.',resultTitle=r'The group is \(C_2\wr S_2\).',
         result=r'<p>The irreducible reduction modulo 11 supplies a 4-cycle and proves irreducibility over \(\mathbb Q\). The factorization modulo 23 supplies a transposition.</p><p>Reciprocity bounds the group by \(C_2\wr S_2\), of order 8. A 4-cycle generates a subgroup of order 4, and a single transposition lies outside that cyclic subgroup. The generated subgroup has order 8, so it is the full wreath product.</p>'),
-      dict(id='exponential',shortTitle=r'\(6!\,e_6(x)\)',title='Two Newton polygons exclude every factor degree',latex=r'720+720x+360x^2+120x^3+30x^4+6x^5+x^6',f=sum(sp.factorial(6)//sp.factorial(i)*x**i for i in range(7)),ps=[2,3,5,7,11],article='newton-polygons',
-        intro='Bad primes for squarefree reduction can still carry the strongest information through their coefficient valuations.',resultTitle=r'Irreducibility from incompatible local degrees.',
-        result=r'<p>At 2, the Newton polygon leaves only proper factor degrees 2 and 4. At 3, it leaves only degree 3. These sets have empty intersection, so the polynomial is irreducible over \(\mathbb Q\).</p><p>This argument uses valuations, not a squarefree Frobenius factorization. The displayed modular factorizations at 2 and 3 are highly repeated.</p>')]
-    samples.append(dict(id='residual',shortTitle=r'\(x^4+2x^2+4\)',title='Residual information completes a Newton certificate',latex=r'x^4+2x^2+4',f=x**4+2*x**2+4,ps=[2,3,5,7],article='newton-polygons',
-      intro='Ordinary reduction and the slope denominator leave a possible quadratic factor. Leading residues on the Newton edge eliminate it.',resultTitle=r'Irreducible, with group \(V_4\).',
+      dict(id='exponential',shortTitle=r'\(6!\,e_6(x)\)',title='Two Newton polygons',latex=r'720+720x+360x^2+120x^3+30x^4+6x^5+x^6',f=sum(sp.factorial(6)//sp.factorial(i)*x**i for i in range(7)),ps=[2,3,5,7,11],article='newton-polygons',
+        intro='The coefficient valuations at 2 and 3 exclude all proper factor degrees.',resultTitle=r'Irreducibility',
+        result=r'<p>At 2, the Newton polygon leaves only proper factor degrees 2 and 4. At 3, it leaves only degree 3. These sets have empty intersection, so the polynomial is irreducible over \(\mathbb Q\).</p><p>This argument uses valuations, not a squarefree Frobenius factorization. The reductions at 2 and 3 have repeated factors.</p>')]
+    samples.append(dict(id='residual',shortTitle=r'\(x^4+2x^2+4\)',title='A residual polynomial',latex=r'x^4+2x^2+4',f=x**4+2*x**2+4,ps=[2,3,5,7],article='newton-polygons',
+      intro='The Newton slope permits a quadratic factor. The residual polynomial rules it out.',resultTitle=r'Irreducible, with group \(V_4\).',
       result=r'<p>At 2 the single slope is \(-1/2\). Its residual polynomial is \(Y^2+Y+1\), irreducible over \(\mathbb F_2\). The residual criterion proves irreducibility over \(\mathbb Q_2\), hence over \(\mathbb Q\).</p><p>The four roots \((\pm\sqrt2\pm\sqrt{-6})/2\) generate \(\mathbb Q(\sqrt2,\sqrt{-6})\). Thus the group is \(V_4\); all its nonidentity elements act as double transpositions. A slope denominator 2 alone does not supply a single transposition.</p>'))
     result=[]
     for sample in samples:

@@ -2,7 +2,7 @@
 
 The atlas is a curated mathematical handbook, not an exhaustive census of the literature or a certification of every cited proof. The current review date is 12 November 2026.
 
-## A claim travels with its hypotheses
+## Statements and hypotheses
 
 Record the ground field, polynomial normalization, parameters, quantifiers, assumptions, and exact conclusion. Distinguish irreducibility, containment of the alternating group, and equality with the symmetric group. For reciprocal polynomials, identify the natural wreath-product action first.
 
@@ -56,3 +56,9 @@ The Laguerre entry records the explicit degree-one obstruction to an unrestricte
 ## Final review for GitHub Pages
 
 The standalone summaries now retain three assumptions already present in their full statements: degree at least two for the Selmer trinomial family, characteristic zero for the Morse criterion, and a monic integral polynomial with an odd prime in the discriminant-valuation-one criterion. This pass introduces no new theorem or change to a conjecture's status. The website, exported records, and handbook are regenerated together.
+
+## Writing
+
+Use direct mathematical prose and short, descriptive headings. Prefer “Example”, “Proof”, and “Remark” where appropriate; distinguish a proof from a proof sketch. Define notation before using it and explain each logical step. Remove repetition, slogans, and commentary that does not help the reader understand the mathematics. Preserve hypotheses, exceptions, attribution, and publication status when shortening text.
+
+The exposition review of 12 November revised all 37 articles, the reading and method guides, and reference annotations. Formula strings, citation records, public identifiers, and source metadata were compared with the preceding edition.

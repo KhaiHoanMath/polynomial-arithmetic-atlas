@@ -1,19 +1,19 @@
 [
   {
     "id": "finite-field-constructions",
-    "title": "Finite fields: construction, prescribed coefficients, and distribution",
+    "title": "Irreducible polynomials with coefficient restrictions",
     "kind": "method",
     "subject": "finite-fields",
-    "summary": "Count and construct finite-field irreducibles, prescribe selected coefficients, or restrict every coefficient to an allowed set. Keep the coefficient distribution and the limiting regime explicit.",
+    "summary": "Frobenius orbits count irreducible polynomials over finite fields and give construction algorithms. Prescribed coefficients, allowed coefficient sets, and factorization statistics lead to distinct counting problems.",
     "level": "Intermediate",
     "field": "finite fields",
     "status": "Published results",
     "checked": "2026-11-12",
     "questionsAnswered": [
       "How many monic irreducibles of degree n exist over a finite field?",
-      "How does counting produce a certified construction algorithm?",
+      "How does counting yield an exact construction algorithm?",
       "Which arbitrary coefficients can be prescribed simultaneously?",
-      "Can every coefficient be restricted to an allowed set, and how does this differ from prescribing a few coefficients?",
+      "How does restricting every coefficient differ from prescribing selected coefficients?",
       "Why do factor degrees resemble permutation cycles, and in which limit?"
     ],
     "prerequisites": [
@@ -23,8 +23,8 @@
     "sections": [
       {
         "id": "count-by-frobenius",
-        "title": "Counting by Frobenius orbits",
-        "body": "<p>Let \\(N_q(n)\\) count monic irreducibles of degree \\(n\\) over \\(\\mathbb F_q\\), where \\(q\\) is a prime power. Every element of \\(\\mathbb F_{q^m}\\) is a root of \\(x^{q^m}-x\\), whose derivative is \\(-1\\). A monic irreducible divides this polynomial exactly when its degree divides \\(m\\).</p><div class=\"math-block proof\"><p class=\"block-label\">Proof mechanism · partition by minimal polynomial</p>\\[q^m=\\sum_{d\\mid m}dN_q(d),\\qquad N_q(n)=\\frac1n\\sum_{d\\mid n}\\mu(d)q^{n/d}.\\]<p>The second identity is Möbius inversion; \\(\\mu\\) is the Möbius function. Every proper divisor of \\(n\\) is at most \\(n/2\\), giving \\(N_q(n)=q^n/n+O(q^{n/2}/n)\\), uniformly for \\(q\\ge2\\). Thus a uniform monic polynomial is irreducible with probability asymptotic to \\(1/n\\) as \\(n\\to\\infty\\), even for fixed \\(q\\).</p></div><div class=\"math-block example\"><p class=\"block-label\">Exact example</p>\\[N_2(6)=\\frac{64-8-4+2}{6}=9.\\]<p>There are nine successes among all 64 monic binary sextics, or among the 32 with constant coefficient one.</p></div>",
+        "title": "Counting irreducible polynomials",
+        "body": "<p>Let \\(N_q(n)\\) count monic irreducibles of degree \\(n\\) over \\(\\mathbb F_q\\), where \\(q\\) is a prime power. Every element of \\(\\mathbb F_{q^m}\\) is a root of \\(x^{q^m}-x\\), whose derivative is \\(-1\\). A monic irreducible divides this polynomial exactly when its degree divides \\(m\\).</p><div class=\"math-block proof\"><p class=\"block-label\">Derivation</p>\\[q^m=\\sum_{d\\mid m}dN_q(d),\\qquad N_q(n)=\\frac1n\\sum_{d\\mid n}\\mu(d)q^{n/d}.\\]<p>The second identity is Möbius inversion; \\(\\mu\\) is the Möbius function. Every proper divisor of \\(n\\) is at most \\(n/2\\), giving \\(N_q(n)=q^n/n+O(q^{n/2}/n)\\), uniformly for \\(q\\ge2\\). Thus a uniform monic polynomial is irreducible with probability asymptotic to \\(1/n\\) as \\(n\\to\\infty\\), even for fixed \\(q\\).</p></div><div class=\"math-block example\"><p class=\"block-label\">Example</p>\\[N_2(6)=\\frac{64-8-4+2}{6}=9.\\]<p>Thus nine of the 64 monic binary sextics are irreducible. All nine have constant coefficient one, so nine of the 32 constant-one sextics are irreducible.</p></div>",
         "citations": [
           {
             "key": "LidlNiederreiter1997",
@@ -39,8 +39,8 @@
       },
       {
         "id": "certified-construction",
-        "title": "From abundance to construction",
-        "body": "<p>Sample monic polynomials independently and apply the exact Frobenius-power test in the companion article. Stop only after the test proves irreducibility. This is a Las Vegas construction: runtime is random, but every returned answer is certified. For binary sextics, sampling only constant-one candidates takes exactly \\(32/9\\) trials on average.</p><p>If an extension \\(\\mathbb F_{q^n}\\) is already represented, choose \\(\\alpha\\) outside its maximal proper subfields. Equivalently, require \\(\\alpha^{q^{n/\\ell}}\\ne\\alpha\\) for every prime \\(\\ell\\mid n\\). Its minimal polynomial is then \\(\\prod_{i=0}^{n-1}(x-\\alpha^{q^i})\\). This is a construction inside an available extension, not a way to obtain that initial representation for free.</p><p>Shoup develops deterministic constructions, including bounds polynomial for small characteristic, and faster construction methods. A complexity bound polynomial in the characteristic \\(p\\) must not be read as polynomial in its input length \\(\\log p\\).</p>",
+        "title": "Construction algorithms",
+        "body": "<p>Independent uniform sampling of monic polynomials, followed by the exact Frobenius-power irreducibility test, gives a Las Vegas construction. Sampling continues until the test proves irreducibility; the runtime is random and the output is certified. For binary sextics, sampling only constant-one candidates takes exactly \\(32/9\\) trials on average.</p><p>If an extension \\(\\mathbb F_{q^n}\\) is already represented, choose \\(\\alpha\\) outside its maximal proper subfields. Equivalently, require \\(\\alpha^{q^{n/\\ell}}\\ne\\alpha\\) for every prime \\(\\ell\\mid n\\). Its minimal polynomial is then \\(\\prod_{i=0}^{n-1}(x-\\alpha^{q^i})\\). This construction assumes a representation of the extension field.</p><p>Shoup develops deterministic constructions, including bounds polynomial for small characteristic, and faster construction methods. Polynomial dependence on the characteristic \\(p\\) need not be polynomial in its bit length \\(\\log p\\).</p>",
         "citations": [
           {
             "key": "Rabin1980",
@@ -59,8 +59,8 @@
       },
       {
         "id": "one-coefficient",
-        "title": "One coefficient: a complete existence theorem",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Hansen–Mullen, including the genuine exceptions</p><p>Given \\(n\\ge2\\), \\(0\\le j<n\\), and \\(c\\in\\mathbb F_q\\), a monic irreducible degree-\\(n\\) polynomial with coefficient \\([x^j]f=c\\) exists, except precisely when \\(j=0,c=0\\), or when \\(q\\) is even and \\((n,j,c)=(2,1,0)\\).</p></div><p>The exceptions have elementary explanations: a zero constant term supplies the factor \\(x\\); in characteristic two, \\(x^2+c\\) is a square because finite fields are perfect. For \\(n\\ge3\\), the constant-term obstruction is the only one.</p><p>Wan proved a large-parameter range and Ham–Mullen finished the remaining cases. Tuxanidy–Wang give another proof: sufficiently long periods of finite-field discrete Fourier transforms force elements of full degree in supports of functions encoding elementary symmetric coefficients. Irreducibility here does not require a root to generate the multiplicative group.</p>",
+        "title": "One prescribed coefficient",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Hansen–Mullen)</p><p>Given \\(n\\ge2\\), \\(0\\le j<n\\), and \\(c\\in\\mathbb F_q\\), a monic irreducible degree-\\(n\\) polynomial with coefficient \\([x^j]f=c\\) exists, except precisely when \\(j=0,c=0\\), or when \\(q\\) is even and \\((n,j,c)=(2,1,0)\\).</p></div><p>The exceptional cases follow from elementary obstructions: a zero constant term supplies the factor \\(x\\); in characteristic two, \\(x^2+c\\) is a square because finite fields are perfect. For \\(n\\ge3\\), the constant-term obstruction is the only one.</p><p>Wan proved a large-parameter range and Ham–Mullen finished the remaining cases. Tuxanidy–Wang give another proof: sufficiently long periods of finite-field discrete Fourier transforms force elements of full degree in supports of functions encoding elementary symmetric coefficients. Irreducibility here does not require a root to generate the multiplicative group.</p>",
         "citations": [
           {
             "key": "Wan1997",
@@ -79,8 +79,8 @@
       },
       {
         "id": "many-coefficients",
-        "title": "Several coefficients: uniformity and explicit bounds",
-        "body": "<p>Let \\(I\\subset\\{0,\\ldots,n-1\\}\\) have size \\(r\\); prescribe arbitrary \\(a_i\\in\\mathbb F_q\\), requiring \\(a_0\\ne0\\) if \\(0\\in I\\). Pollack proves, for fixed \\(\\varepsilon>0\\) and \\(r\\le(1-\\varepsilon)\\sqrt n\\),</p>\\[\\#\\{f\\text{ irreducible with these coefficients}\\}\\sim\\sigma N_q(n),\\quad \\sigma=\\begin{cases}q^{-r},&0\\notin I,\\\\q^{1-r}/(q-1),&0\\in I,\\end{cases}\\]<p>as \\(n\\to\\infty\\), uniformly in the field and prescriptions.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Ha, an explicit linear range</p><p>For every prime power \\(q\\), if \\(n\\ge52\\) and \\(r\\le n/10\\), every such prescription is realized by a monic irreducible. Thus any six chosen coefficients of a degree-60 polynomial over \\(\\mathbb F_2\\) can be prescribed, subject to the constant-term condition.</p></div><p>Ha also obtains \\(\\lfloor(1/4-\\varepsilon)n\\rfloor\\) prescriptions for \\(n\\ge8\\), \\(0<\\varepsilon<1/4\\), and \\(q\\ge q_0(\\varepsilon)\\). These methods use exponential-sum estimates and the function-field circle method to compare a positive main term with an error. They provide existence beyond unrestricted random sampling; they do not assert that every sparse pattern is possible.</p>",
+        "title": "Several prescribed coefficients",
+        "body": "<p>Let \\(I\\subset\\{0,\\ldots,n-1\\}\\) have size \\(r\\); prescribe arbitrary \\(a_i\\in\\mathbb F_q\\), requiring \\(a_0\\ne0\\) if \\(0\\in I\\). Pollack proves, for fixed \\(\\varepsilon>0\\) and \\(r\\le(1-\\varepsilon)\\sqrt n\\),</p>\\[\\#\\{f\\text{ irreducible with these coefficients}\\}\\sim\\sigma N_q(n),\\quad \\sigma=\\begin{cases}q^{-r},&0\\notin I,\\\\q^{1-r}/(q-1),&0\\in I,\\end{cases}\\]<p>as \\(n\\to\\infty\\), uniformly in the field and prescriptions.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Ha)</p><p>For every prime power \\(q\\), if \\(n\\ge52\\) and \\(r\\le n/10\\), every such prescription is realized by a monic irreducible. Thus any six chosen coefficients of a degree-60 polynomial over \\(\\mathbb F_2\\) can be prescribed, subject to the constant-term condition.</p></div><p>Ha also obtains \\(\\lfloor(1/4-\\varepsilon)n\\rfloor\\) prescriptions for \\(n\\ge8\\), \\(0<\\varepsilon<1/4\\), and \\(q\\ge q_0(\\varepsilon)\\). The proofs use exponential-sum estimates and the function-field circle method, with a positive main term larger than the error. The conclusions apply within the stated ranges for the number of prescribed coefficients.</p>",
         "citations": [
           {
             "key": "Pollack2013Prescribed",
@@ -96,8 +96,8 @@
       },
       {
         "id": "restricted-coefficient-sets",
-        "title": "Restricting every coefficient: forbidden values",
-        "body": "<p>Prescribing a few coefficients and restricting <em>all</em> coefficients to large sets are different problems. Porritt treats a common forbidden set using the function-field circle method. Cheng allows the forbidden set to depend on the coefficient position.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Cheng, fixed field and growing degree</p><p>Fix a prime power \\(q\\ge300\\). For each \\(0\\le i<n\\), let \\(R_i\\subseteq\\mathbb F_q\\) have \\(|R_i|\\le\\sqrt q/2\\), and put \\(A_i=\\mathbb F_q\\setminus R_i\\). The number of monic irreducibles \\(x^n+\\sum_{i<n}a_ix^i\\) with \\(a_i\\in A_i\\) satisfies</p>\\[\\#\\mathcal I=\\frac{q}{n(q-1)}\\prod_{i=0}^{n-1}|A_i|\\left(\\Delta+O\\bigl(q^{-\\sqrt{n/45}}\\bigr)\\right),\\qquad \\Delta=\\frac{|A_0\\setminus\\{0\\}|}{|A_0|},\\]<p>for sufficiently large \\(n\\). The cited theorem gives an explicit threshold. These are large allowed sets; the statement does not permit arbitrary tiny alphabets.</p></div><p>The factor \\(\\Delta\\) removes the constant-zero obstruction. For example, if every coefficient must be nonzero, the count is asymptotic to \\(q(q-1)^{n-1}/n\\). If each position must avoid a specified value \\(c_i\\), multiply this main term by \\(1\\) when \\(c_0=0\\), and by \\((q-2)/(q-1)\\) otherwise. These are asymptotic counts, not assertions for every small degree.</p>",
+        "title": "Forbidden coefficient values",
+        "body": "<p>Prescribing a few coefficients and restricting <em>all</em> coefficients to large sets are different problems. Porritt treats a common forbidden set using the function-field circle method. Cheng allows the forbidden set to depend on the coefficient position.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Cheng, fixed field and growing degree</p><p>Fix a prime power \\(q\\ge300\\). For each \\(0\\le i<n\\), let \\(R_i\\subseteq\\mathbb F_q\\) have \\(|R_i|\\le\\sqrt q/2\\), and put \\(A_i=\\mathbb F_q\\setminus R_i\\). The number of monic irreducibles \\(x^n+\\sum_{i<n}a_ix^i\\) with \\(a_i\\in A_i\\) satisfies</p>\\[\\#\\mathcal I=\\frac{q}{n(q-1)}\\prod_{i=0}^{n-1}|A_i|\\left(\\Delta+O\\bigl(q^{-\\sqrt{n/45}}\\bigr)\\right),\\qquad \\Delta=\\frac{|A_0\\setminus\\{0\\}|}{|A_0|},\\]<p>for sufficiently large \\(n\\). The cited theorem gives an explicit threshold. The estimate applies to allowed sets satisfying the stated size condition.</p></div><p>The factor \\(\\Delta\\) removes the constant-zero obstruction. For example, if every coefficient must be nonzero, the count is asymptotic to \\(q(q-1)^{n-1}/n\\). If each position must avoid a specified value \\(c_i\\), multiply this main term by \\(1\\) when \\(c_0=0\\), and by \\((q-2)/(q-1)\\) otherwise. These counts apply as the degree tends to infinity.</p>",
         "citations": [
           {
             "key": "Porritt2019Restricted",
@@ -113,8 +113,8 @@
       },
       {
         "id": "square-coefficient-model",
-        "title": "Square coefficients: a different limiting regime",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bary-Soroker–Shmueli, published 2026</p><p>Fix \\(n\\ge1\\). Choose the \\(n\\) nonleading coefficients of a monic degree-\\(n\\) polynomial independently and uniformly from the <em>set of square values</em> \\(S_q=\\{u^2:u\\in\\mathbb F_q\\}\\), including zero. Then</p>\\[\\Pr(f\\text{ is irreducible over }\\mathbb F_q)=\\frac1n+O_n(q^{-1/2}),\\qquad q\\longrightarrow\\infty.\\]</div><p>For odd \\(q\\), uniform sampling from \\(S_q\\) differs from squaring a uniform element of \\(\\mathbb F_q\\): the latter gives zero half the weight of each nonzero square. For even \\(q\\), squaring is a bijection and this is the unrestricted model.</p><p>The proof uses finite-field Chebotarev and disjointness of suitable function-field extensions. The paper also handles coefficient sets of bounded algebraic complexity. Its fixed-degree error term does not establish a fixed-field, growing-degree analogue.</p><div class=\"math-block example\"><p class=\"block-label\">Exact small example</p><p>Over \\(\\mathbb F_5\\), the square values are \\(0,1,4\\). The polynomial \\(x^2+x+1\\) has square coefficients and is irreducible because its discriminant is \\(2\\), a nonsquare. By contrast, \\(x^2+1=(x-2)(x+2)\\). Membership in the coefficient set alone is no certificate of irreducibility.</p></div>",
+        "title": "Square coefficients",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bary-Soroker–Shmueli, published 2026</p><p>Fix \\(n\\ge1\\). Choose the \\(n\\) nonleading coefficients of a monic degree-\\(n\\) polynomial independently and uniformly from the <em>set of square values</em> \\(S_q=\\{u^2:u\\in\\mathbb F_q\\}\\), including zero. Then</p>\\[\\Pr(f\\text{ is irreducible over }\\mathbb F_q)=\\frac1n+O_n(q^{-1/2}),\\qquad q\\longrightarrow\\infty.\\]</div><p>For odd \\(q\\), uniform sampling from \\(S_q\\) differs from squaring a uniform element of \\(\\mathbb F_q\\): the latter gives zero half the weight of each nonzero square. For even \\(q\\), squaring is a bijection and this is the unrestricted model.</p><p>The proof uses finite-field Chebotarev and disjointness of suitable function-field extensions. The paper also handles coefficient sets of bounded algebraic complexity. Its fixed-degree error term does not establish a fixed-field, growing-degree analogue.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Over \\(\\mathbb F_5\\), the square values are \\(0,1,4\\). The polynomial \\(x^2+x+1\\) has square coefficients and is irreducible because its discriminant is \\(2\\), a nonsquare. By contrast, \\(x^2+1=(x-2)(x+2)\\). Thus square coefficients alone do not imply irreducibility.</p></div>",
         "citations": [
           {
             "key": "BarySorokerShmueli2026Squares",
@@ -125,8 +125,8 @@
       },
       {
         "id": "factorization-statistics",
-        "title": "Factor degrees and permutation cycles",
-        "body": "<p>For a partition \\(\\lambda=1^{m_1}2^{m_2}\\cdots\\) of \\(n\\), unique factorization gives the exact number of squarefree monic polynomials of type \\(\\lambda\\):</p>\\[\\prod_{j=1}^n\\binom{N_q(j)}{m_j}\\sim\\frac{q^n}{z_\\lambda},\\qquad z_\\lambda=\\prod_j j^{m_j}m_j!,\\qquad q\\to\\infty\\quad(n\\text{ fixed}).\\]<p>Indeed, choose the distinct factors of each degree independently. The factor \\(1/z_\\lambda\\) is also the probability of cycle type \\(\\lambda\\) in \\(S_n\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem · distribution in short polynomial intervals</p><p>Let \\(f\\) be monic of degree \\(n\\) and \\(3\\le m<n\\). Bank–Bary-Soroker–Rosenzweig prove that among \\(f+\\{h:\\deg h\\le m\\}\\), the number with factorization type \\(\\lambda\\), counting factor degrees with multiplicity, equals</p>\\[\\frac{q^{m+1}}{z_\\lambda}+O_n(q^{m+1/2}).\\]</div><p>The proof identifies \\(S_n\\) as geometric monodromy of the parameter family and translates Frobenius cycle types into point counts. This group belongs to a function-field cover; an individual finite-field splitting extension still has cyclic Galois group.</p><div class=\"math-block boundary\"><p class=\"block-label\">Keep the limiting regime</p><p>The interval estimate has a constant depending on \\(n\\); its stated asymptotic fixes \\(n\\) and lets \\(q\\to\\infty\\). It does not establish the corresponding fixed-\\(q\\), growing-degree assertion. The unrestricted \\(1/n\\) probability in that regime follows separately from Möbius inversion.</p></div>",
+        "title": "Factorization statistics",
+        "body": "<p>For a partition \\(\\lambda=1^{m_1}2^{m_2}\\cdots\\) of \\(n\\), unique factorization gives the exact number of squarefree monic polynomials of type \\(\\lambda\\):</p>\\[\\prod_{j=1}^n\\binom{N_q(j)}{m_j}\\sim\\frac{q^n}{z_\\lambda},\\qquad z_\\lambda=\\prod_j j^{m_j}m_j!,\\qquad q\\to\\infty\\quad(n\\text{ fixed}).\\]<p>Indeed, choose the distinct factors of each degree independently. The factor \\(1/z_\\lambda\\) is also the probability of cycle type \\(\\lambda\\) in \\(S_n\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Bank–Bary-Soroker–Rosenzweig)</p><p>Let \\(f\\) be monic of degree \\(n\\) and \\(3\\le m<n\\). Bank–Bary-Soroker–Rosenzweig prove that among \\(f+\\{h:\\deg h\\le m\\}\\), the number with factorization type \\(\\lambda\\), counting factor degrees with multiplicity, equals</p>\\[\\frac{q^{m+1}}{z_\\lambda}+O_n(q^{m+1/2}).\\]</div><p>The proof identifies \\(S_n\\) as geometric monodromy of the parameter family and translates Frobenius cycle types into point counts. This group belongs to a function-field cover; an individual finite-field splitting extension still has cyclic Galois group.</p><div class=\"math-block boundary\"><p class=\"block-label\">Remark</p><p>The interval estimate has a constant depending on \\(n\\); its stated asymptotic fixes \\(n\\) and lets \\(q\\to\\infty\\). It does not establish the corresponding fixed-\\(q\\), growing-degree assertion. The unrestricted \\(1/n\\) probability in that regime follows separately from Möbius inversion.</p></div>",
         "citations": [
           {
             "key": "Cohen1970",
@@ -144,7 +144,7 @@
       {
         "id": "finite-field-irreducibility",
         "relation": "Uses",
-        "why": "The Frobenius-power test certifies each candidate produced by a construction."
+        "why": "Frobenius-power tests certify the output of construction algorithms."
       },
       {
         "id": "frobenius",
@@ -159,12 +159,12 @@
       {
         "id": "random-models",
         "relation": "Contrasts with",
-        "why": "The finite-field coefficient model and its q-versus-degree limits differ from random integer-polynomial models."
+        "why": "Finite-field models distinguish increasing field size from increasing degree; neither is the integer-coefficient model."
       },
       {
         "id": "specialization",
         "relation": "Supplies examples for",
-        "why": "Finite-field parameter families make the distinction between generic monodromy and specialized groups explicit."
+        "why": "The geometric group of a finite-field family can differ from the groups of its specializations."
       }
     ],
     "questions": [
@@ -186,7 +186,7 @@
         "title": "Which coefficient positions allow stronger bounds?",
         "status": "Research direction",
         "scope": "Fixed finite field, growing degree, and a specified family of prescription patterns",
-        "body": "<p>Fix the positions and values before comparing results. Ask whether their structure improves the guaranteed linear proportion, yields an asymptotic count, or enables an efficient construction. The bounds above are proved ranges, not a claim that they are optimal or the latest possible for every pattern.</p>",
+        "body": "<p>For a specified pattern of positions and values, one can ask for a larger proportion of prescribed coefficients, an asymptotic count, or an efficient construction. The bounds above establish sufficient ranges; they need not be optimal or the strongest known for every pattern.</p>",
         "citations": [
           {
             "key": "Ha2016",
@@ -200,10 +200,10 @@
       },
       {
         "id": "finite-restricted-regimes",
-        "title": "What happens when both degree and coefficient restrictions vary?",
+        "title": "Can degree and coefficient restrictions vary simultaneously?",
         "status": "Research direction",
         "scope": "A specified sequence of fields, degrees, and allowed coefficient sets",
-        "body": "<p>Specify which of \\(q,n\\), and the sets \\(A_i\\) vary. Cheng’s large-degree theorem assumes large allowed sets; the square-coefficient theorem fixes the degree. A useful project is to determine quantitative overlap or stronger uniformity for a chosen model. This is a comparison of proved regimes, not an assertion that every intermediate regime is open.</p>",
+        "body": "<p>The problem depends on which of \\(q,n\\) and the sets \\(A_i\\) vary. Cheng’s theorem allows increasing degree with large allowed sets, whereas the square-coefficient theorem fixes the degree. For a specified model, one can seek estimates uniform in both parameters or compare the ranges of these results. This formulation does not assert that every intermediate regime is open.</p>",
         "citations": [
           {
             "key": "Cheng2025Restricted",

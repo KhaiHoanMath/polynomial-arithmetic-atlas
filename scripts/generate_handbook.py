@@ -131,7 +131,7 @@ def urls(r):
 
 def source_list(cs):
     if not cs:return ''
-    out=['\\begin{sources}\n\\textbf{Sources for this section}\\par\\smallskip\n']
+    out=['\\begin{sources}\n\\textbf{References}\\par\\smallskip\n']
     for c in cs:
         r=byref[c['key']]
         href=r['url'].replace('%',r'\%').replace('#',r'\#')
@@ -185,53 +185,54 @@ preamble=r'''\documentclass[11pt,a4paper,oneside,openany]{book}
 \begin{document}
 \begin{titlepage}\thispagestyle{empty}
 \vspace*{14mm}
-{\sffamily\large\color{atlasgold}A CONNECTED RESEARCH HANDBOOK\par}
+{\sffamily\large\color{atlasgold}REFERENCE HANDBOOK\par}
 \vspace{14mm}
 {\sffamily\bfseries\fontsize{38}{43}\selectfont\color{atlasgreen}Polynomial\\Arithmetic\\Atlas\par}
 \vspace{11mm}
-{\fontsize{18}{24}\selectfont Irreducibility, Galois groups,\\and the methods between them\par}
+{\fontsize{18}{24}\selectfont Polynomial irreducibility\\and Galois groups\par}
 \vspace{10mm}\textcolor{atlasgold}{\rule{35mm}{1.2pt}}\par\vspace{8mm}
-{\large Precise statements. Proof mechanisms. Exact examples.\\Connected literature, with explicit boundaries.\par}
+{\large Results, methods, examples, and references.\par}
 \vfill
-{\sffamily\large @@ARTICLE_COUNT@@ explanatory articles\quad /\quad @@REFERENCE_COUNT@@ annotated sources\par}
+{\sffamily\large @@ARTICLE_COUNT@@ articles\quad /\quad @@REFERENCE_COUNT@@ references\par}
 \vspace{4mm}
 {\color{atlasgray}Complete offline edition / Literature checked through @@REVIEW_DATE@@\par}
 \vspace{7mm}
-{\small This handbook records the current atlas. It includes the complete article text, section-level citations, research questions, reading routes, and annotated reference catalogue. It is a curated collection, not a claim to contain every publication.\par}
+{\small This edition includes the articles, references, questions, and reading guides from the website. The bibliography is not exhaustive.\par}
 \end{titlepage}
 \frontmatter
 \tableofcontents
-\chapter{How to use this handbook}
-The organizing question is not only whether a polynomial is irreducible or which group it has, but \emph{why} a particular method answers that question. Start with the ground field and the exact object, then separate factorization, transitivity, cycle evidence, and identification of the complete group.
+\chapter{Introduction}
+This handbook describes methods for proving polynomial irreducibility and determining Galois groups. It covers the rationals, number fields, and finite fields, with related material on specialization, iteration, and absolute irreducibility in several variables.
 
-This edition contains all @@ARTICLE_COUNT@@ articles and all @@REFERENCE_COUNT@@ annotated reference records in the current website source. Mathematics, qualifications, and source-specific research status have been retained. Section citations carry a stable reference key, precise source location where available, and a clickable source link; the annotated catalogue prints the complete URLs with publication details, DOI links, and verification links. Internal links and the PDF outline support offline navigation.
+The edition contains @@ARTICLE_COUNT@@ articles and @@REFERENCE_COUNT@@ annotated references. Each result includes its hypotheses and source. References give theorem or section numbers when these have been checked, together with links and publication details. Central statements were compared with the cited sources, and selected examples were checked by exact computation. Not every cited proof has been checked independently.
 
-\section*{Read the status together with the statement}
+\section*{Publication status}
 \begin{description}
-\item[Classical or published result.] Read the field, parameter range, exceptional cases, and quantifiers alongside the theorem.
-\item[Preprint boundary.] A preprint is labelled as such. An abstract-level verification is not silently presented as a line-by-line proof audit.
-\item[Open in a cited source.] This records a question's status in the named source; it is not an unsupported assertion that all subsequent literature has been exhausted.
-\item[Research direction.] This is a useful question suggested by the connections, not necessarily a new conjecture or a verified unsolved problem.
-\item[Exact example.] A computation supports the specified polynomial. A finite sample cannot establish a uniform theorem or an asymptotic statement.
+\item[Classical or published result.] The statement appears in a published work or an established exposition.
+\item[Conditional result.] An additional assumption is part of the statement.
+\item[Preprint.] The entry reports the cited version. Limits on access and verification are recorded in the reference entry.
+\item[Open in a cited source.] The question was open in that source; later work may have resolved it.
+\item[Research direction.] A suggested question for further study, not necessarily a new conjecture or an open problem.
+\item[Example.] A computation concerns the stated polynomial. A finite sample does not prove a result for an entire family.
 \end{description}
 
-\section*{Scope and editions}
-The literature-review date is @@REVIEW_DATE@@. This handbook is a new, complete snapshot of the expanded atlas. The earlier @@ORIGINAL_COUNT@@-source, 37-page bibliography remains a separate fixed edition; it does not contain the full current explanations or all subsequent reference additions. Linked papers and books remain with their authors and publishers. The catalogue stores metadata, annotations, and links rather than reproducing their full text.
+\section*{Editions}
+The literature review is dated @@REVIEW_DATE@@. The earlier @@ORIGINAL_COUNT@@-source bibliography is a separate fixed edition. The current handbook includes later additions and corrections. Linked books and papers remain with their authors or publishers; this bibliography provides publication details, annotations, and links.
 
-\section*{A reliable order of work}
+\section*{Using the methods}
 \begin{enumerate}
-\item Specify the field, degree, separability, coefficient assumptions, and any factor removed by normalization.
+\item State the field, degree, separability, coefficient assumptions, and any factor removed by normalization.
 \item Establish irreducibility or list the possible factor degrees.
-\item Obtain permutations or structural upper bounds without confusing local evidence with a complete group determination.
-\item Use a stated group theorem, resolvent, or certificate to finish; use the discriminant for parity only within its proper scope.
-\item Save the precise theorem, source location, prime, identity, or polygon that makes the conclusion reproducible.
+\item Find elements of the Galois group or a subgroup containing it.
+\item Apply group-theoretic criteria or resolvents to determine the group. Check the hypotheses before using the discriminant criterion.
+\item Record the computations and theorem references used in the proof.
 \end{enumerate}
 '''
 
 for token,value in {'@@ARTICLE_COUNT@@':str(len(articles)), '@@REFERENCE_COUNT@@':str(len(refs)), '@@REVIEW_DATE@@':review_date_long, '@@REVIEW_DATE_UPPER@@':review_date_long.upper(), '@@ORIGINAL_COUNT@@':str(catalogue['original_collection_count'])}.items():
     preamble=preamble.replace(token,value)
 parts=[preamble]
-parts.append(r'\chapter{Reading routes and reference books}'+'\n')
+parts.append(r'\chapter{Reading guide}'+'\n')
 for route in navigation['routes']:
     parts.append(r'\section*{'+text(route['title'])+'}\n'+text(route.get('goal',''))+'\\par\n'+(r'\textbf{Background:} '+text(route['audience'])+'\\par\n' if route.get('audience') else '')+r'\begin{enumerate}'+'\n')
     for step in route.get('steps',[]):
@@ -241,18 +242,18 @@ for route in navigation['routes']:
         parts.append(r'\item \textbf{'+link+'}. '+text(step.get('note',''))+'\\par\n')
         if step.get('references'):parts.append(r'{\footnotesize References: '+', '.join(r'\hyperlink{ref:'+k+'}{'+plain(k)+'}' for k in step['references'])+'}\\par\n')
     parts.append(r'\end{enumerate}'+'\n')
-parts.append(r'\section*{The book shelf}'+'\n')
+parts.append(r'\section*{Books}'+'\n')
 for book in navigation['books']:
     r=byref[book['key']]
     parts.append(r'\needspace{5\baselineskip}\textbf{\hyperlink{ref:'+r['id']+'}{'+text(r['title'])+'}} / '+text(display_creators(r.get('authors','')))+'\\par\n'+text(book.get('role',book.get('use','')))+'\\par\n'+r'{\small '+text(book.get('level',''))+'}\\par\\medskip\n')
 
-parts.append(r'\chapter{Choose a method}'+'\n')
+parts.append(r'\chapter{Methods}'+'\n')
 for row in navigation['methods']:
     aid=row['article']
     parts.append(r'\section*{'+text(row.get('question',row['method']))+'}\n')
-    parts.append(r'\textbf{Available information.} '+text(row.get('input',row.get('signal','')))+'\\par\n')
+    parts.append(r'\textbf{Given.} '+text(row.get('input',row.get('signal','')))+'\\par\n')
     parts.append(r'\textbf{Method.} \hyperlink{article:'+aid+'}{'+text(row['method'])+'}.\\par\n')
-    parts.append(r'\textbf{Conclusion.} '+text(row['output'])+'\\par\n'+r'\textbf{Boundary.} '+text(row['boundary'])+'\\par\\medskip\n')
+    parts.append(r'\textbf{Conclusion.} '+text(row['output'])+'\\par\n'+r'\textbf{Limitations.} '+text(row['boundary'])+'\\par\\medskip\n')
 
 parts.append(r'\mainmatter'+'\n')
 subject_titles={s['id']:s for s in subjects}
@@ -265,26 +266,26 @@ for sid in subject_order:
     parts.append(r'\part{'+text(subject['title'])+'}\n')
     for a in group:
         parts.append(r'\chapter{'+text(a['title'])+'}\\label{article:'+a['id']+'}'+r'\hypertarget{article:'+a['id']+'}{}\\color{black}\n')
-        parts.append(r'{\sffamily\small\color{atlasgold}'+text(' / '.join([a['kind'],a['level'],a['field'],a['status']]))+'}\\par\\medskip\n')
+        parts.append(r'{\sffamily\small\color{atlasgold}'+text(' / '.join([a['kind'],a['level'],a['field'],('Preprint' if a['status']=='Preprint boundary' else a['status'])]))+'}\\par\\medskip\n')
         parts.append(text(a['summary'])+'\\par\\medskip\n')
         if a.get('questionsAnswered'):
-            parts.append(r'\textbf{Questions answered}\begin{itemize}'+'\n'+''.join(r'\item '+text(q)+'\n' for q in a['questionsAnswered'])+r'\end{itemize}'+'\n')
+            parts.append(r'\textbf{Overview}\begin{itemize}'+'\n'+''.join(r'\item '+text(q)+'\n' for q in a['questionsAnswered'])+r'\end{itemize}'+'\n')
         if a.get('prerequisites'):
             parts.append(r'{\small\textbf{Prerequisites:} '+ '; '.join(r'\hyperlink{article:'+k+'}{'+text(byid[k]['title'])+'}' for k in a['prerequisites'])+'}\\par\n')
         for section in a['sections']:
             parts.append(r'\needspace{8\baselineskip}\section{'+text(section['title'])+'}\n'+convert_html(section['body'])+source_list(section.get('citations',[])))
         if a.get('questions'):
-            parts.append(r'\needspace{11\baselineskip}\section*{Questions and research boundaries}'+'\n')
+            parts.append(r'\needspace{11\baselineskip}\section*{Questions}'+'\n')
             for q in a['questions']:
                 parts.append(r'\needspace{7\baselineskip}\subsection*{'+text(q['title'])+'}\n'+r'{\small\sffamily\color{atlasgold}'+text(q['status'])+' / '+text(q['scope'])+'}\\par\\smallskip\n'+convert_html(q['body'])+source_list(q.get('citations',[])))
         if a.get('related'):
-            parts.append(r'\needspace{6\baselineskip}\par\medskip\begingroup\footnotesize\setlength{\parskip}{1pt}\textbf{\sffamily\color{atlasgreen}Connections}\par'+'\n')
+            parts.append(r'\needspace{6\baselineskip}\par\medskip\begingroup\footnotesize\setlength{\parskip}{1pt}\textbf{\sffamily\color{atlasgreen}Related topics}\par'+'\n')
             for rel in a['related']:
                 parts.append(r'\color{black}\textbf{'+text(rel['relation'])+r'.} \hyperlink{article:'+rel['id']+'}{'+text(byid[rel['id']]['title'])+'}. '+text(rel['why'])+'\\par\n')
             parts.append(r'\endgroup'+'\n')
 
-parts.append(r'\backmatter\setcounter{secnumdepth}{-1}\part{Annotated reference catalogue}\chapter{'+str(len(refs))+' sources, with links and annotations}'+'\n')
-parts.append('The stable keys below are used in the section citations throughout the handbook. The reference list combines the original '+str(catalogue['original_collection_count'])+'-source collection with subsequent verified additions. Publication and preprint status are preserved record by record.\\par\\medskip\n')
+parts.append(r'\backmatter\setcounter{secnumdepth}{-1}\part{Bibliography}\chapter{'+str(len(refs))+' references}'+'\n')
+parts.append('The reference keys are used throughout the handbook. This list includes the original '+str(catalogue['original_collection_count'])+'-source collection and later additions. Publication status is recorded for each entry.\\par\\medskip\n')
 for gi in sorted({r.get('group_index') for r in refs}):
     group=[r for r in refs if r.get('group_index')==gi]
     if not group:continue

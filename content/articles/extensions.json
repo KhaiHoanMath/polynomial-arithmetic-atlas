@@ -4,7 +4,7 @@
     "title": "Specialization and Hilbert irreducibility",
     "kind": "method",
     "subject": "specialization",
-    "summary": "Pass from a polynomial over a rational function field to arithmetic fibers, and understand how the exceptional parameters are organized.",
+    "summary": "Hilbert irreducibility preserves the generic Galois group outside a thin set. Geometry and restrictions on the parameters give more precise descriptions of the exceptions.",
     "level": "Intermediate",
     "field": "number fields",
     "status": "Classical theory",
@@ -22,8 +22,8 @@
     "sections": [
       {
         "id": "generic-and-special",
-        "title": "The generic polynomial and its fibers",
-        "body": "<p>Fix a number field \\(K\\) and a monic, separable, irreducible polynomial \\(F(T,x)\\in K(T)[x]\\). Its <em>arithmetic</em> group is \\(G=\\operatorname{Gal}(F/K(T))\\), acting on the roots. Remove the finitely many parameter values where a coefficient has a pole or the discriminant vanishes. At every remaining \\(t\\in K\\), the specialized group \\(G_t\\) is conjugate to a subgroup of \\(G\\).</p><p>This inclusion comes from a decomposition group above the place \\(T=t\\) in the generic splitting field. Because the roots stay distinct, its unramified residue action identifies with the action on the specialized roots. The generic group is an upper bound; a particular fiber can have a smaller group.</p>",
+        "title": "Specialization of Galois groups",
+        "body": "<p>Fix a number field \\(K\\) and a monic, separable, irreducible polynomial \\(F(T,x)\\in K(T)[x]\\). Its <em>arithmetic</em> group is \\(G=\\operatorname{Gal}(F/K(T))\\), acting on the roots. Exclude the finitely many parameter values where a coefficient has a pole or the discriminant vanishes. At every other \\(t\\in K\\), the specialized group \\(G_t\\) is conjugate to a subgroup of \\(G\\).</p><p>This inclusion comes from a decomposition group above the place \\(T=t\\) in the generic splitting field. The roots remain distinct, so the unramified residue action is the action on the specialized roots. The specialized group may be a proper subgroup of the generic group.</p>",
         "citations": [
           {
             "key": "Serre2007Topics",
@@ -34,8 +34,8 @@
       },
       {
         "id": "arithmetic-geometric-constants",
-        "title": "Arithmetic and geometric groups: the role of constants",
-        "body": "<p>Let \\(K\\) have characteristic zero, let \\(T\\) be transcendental, and let \\(L/K(T)\\) be the splitting field of a separable polynomial. Inside a common algebraic closure, put \\(C=L\\cap\\overline K\\), the field of algebraic constants. Define</p>\\[G_{\\mathrm{arith}}=\\operatorname{Gal}(L/K(T)),\\qquad G_{\\mathrm{geom}}=\\operatorname{Gal}(L\\overline K/\\overline K(T)).\\]<div class=\"math-block theorem\"><p class=\"block-label\">Structure · the constants exact sequence</p><p>The extension \\(C/K\\) is finite Galois, and restriction to constants gives</p>\\[1\\longrightarrow G_{\\mathrm{geom}}\\longrightarrow G_{\\mathrm{arith}}\\longrightarrow\\operatorname{Gal}(C/K)\\longrightarrow1.\\]</div><p>Indeed, normality makes \\(C\\) stable under the arithmetic group, and automorphisms of \\(C(T)/K(T)\\) extend to \\(L\\). The kernel is \\(\\operatorname{Gal}(L/C(T))\\). Since \\(C\\) is relatively algebraically closed in \\(L\\), the extension is regular over \\(C\\); extending constants to \\(\\overline K\\) preserves this kernel. Thus the two groups agree exactly when \\(C=K\\), the regular case. The exact sequence need not split in general.</p><div class=\"math-block example\"><p class=\"block-label\">Worked example · \\(X^3-T\\) over \\(\\mathbb Q(T)\\)</p><p>Choose \\(\\alpha^3=T\\) and a primitive cube root \\(\\zeta\\). The roots are \\(\\alpha,\\zeta\\alpha,\\zeta^2\\alpha\\), so \\(L=\\mathbb Q(\\zeta)(\\alpha)\\). Because \\(\\alpha\\) is transcendental, this rational function field has algebraic constants exactly \\(C=\\mathbb Q(\\zeta)=\\mathbb Q(\\sqrt{-3})\\). Eisenstein at \\(T\\) over \\(C[T]\\) gives</p>\\[[L:\\mathbb Q(T)]=[L:C(T)]\\,[C(T):\\mathbb Q(T)]=3\\cdot2=6.\\]<p>The automorphism \\(r\\) sends \\(\\alpha\\mapsto\\zeta\\alpha\\) and fixes \\(\\zeta\\); the automorphism \\(s\\) fixes \\(\\alpha\\) and sends \\(\\zeta\\mapsto\\zeta^{-1}\\). They satisfy \\(r^3=s^2=1\\) and \\(srs=r^{-1}\\). Hence \\(G_{\\mathrm{arith}}\\cong S_3\\), while \\(G_{\\mathrm{geom}}=\\langle r\\rangle\\cong C_3\\). The quotient \\(C_2\\) records the action on the quadratic constants. The discriminant \\(-27T^2=-3(3T)^2\\) displays the same constant obstruction.</p></div><p>By comparison, \\(X^3-X-T\\) is irreducible over \\(\\overline{\\mathbb Q}(T)\\): apply Gauss’s lemma to its irreducibility as a polynomial linear in \\(T\\) with unit leading coefficient in \\(\\overline{\\mathbb Q}[X,T]\\). Its discriminant \\(4-27T^2\\) has two simple zeros, so is not a square in that rational function field. The cubic criterion gives \\(G_{\\mathrm{geom}}=S_3\\); consequently \\(G_{\\mathrm{arith}}=S_3\\) and \\(C=\\mathbb Q\\). This family is regular, whereas \\(X^3-T\\) is not.</p>",
+        "title": "Arithmetic and geometric groups",
+        "body": "<p>Let \\(K\\) have characteristic zero, let \\(T\\) be transcendental, and let \\(L/K(T)\\) be the splitting field of a separable polynomial. Inside a common algebraic closure, put \\(C=L\\cap\\overline K\\), the field of algebraic constants. Define</p>\\[G_{\\mathrm{arith}}=\\operatorname{Gal}(L/K(T)),\\qquad G_{\\mathrm{geom}}=\\operatorname{Gal}(L\\overline K/\\overline K(T)).\\]<div class=\"math-block theorem\"><p class=\"block-label\">The constants exact sequence</p><p>The extension \\(C/K\\) is finite Galois, and restriction to constants gives</p>\\[1\\longrightarrow G_{\\mathrm{geom}}\\longrightarrow G_{\\mathrm{arith}}\\longrightarrow\\operatorname{Gal}(C/K)\\longrightarrow1.\\]</div><p>Normality makes \\(C\\) stable under the arithmetic group, and automorphisms of \\(C(T)/K(T)\\) extend to \\(L\\). The kernel is \\(\\operatorname{Gal}(L/C(T))\\). Since \\(C\\) is relatively algebraically closed in \\(L\\), the extension is regular over \\(C\\); extending constants to \\(\\overline K\\) preserves this kernel. Thus the two groups agree exactly when \\(C=K\\), the regular case. The exact sequence need not split in general.</p><div class=\"math-block example\"><p class=\"block-label\">Example: \\(X^3-T\\) over \\(\\mathbb Q(T)\\)</p><p>Choose \\(\\alpha^3=T\\) and a primitive cube root \\(\\zeta\\). The roots are \\(\\alpha,\\zeta\\alpha,\\zeta^2\\alpha\\), so \\(L=\\mathbb Q(\\zeta)(\\alpha)\\). Because \\(\\alpha\\) is transcendental, this rational function field has algebraic constants exactly \\(C=\\mathbb Q(\\zeta)=\\mathbb Q(\\sqrt{-3})\\). Eisenstein at \\(T\\) over \\(C[T]\\) gives</p>\\[[L:\\mathbb Q(T)]=[L:C(T)]\\,[C(T):\\mathbb Q(T)]=3\\cdot2=6.\\]<p>The automorphism \\(r\\) sends \\(\\alpha\\mapsto\\zeta\\alpha\\) and fixes \\(\\zeta\\); the automorphism \\(s\\) fixes \\(\\alpha\\) and sends \\(\\zeta\\mapsto\\zeta^{-1}\\). They satisfy \\(r^3=s^2=1\\) and \\(srs=r^{-1}\\). Hence \\(G_{\\mathrm{arith}}\\cong S_3\\), while \\(G_{\\mathrm{geom}}=\\langle r\\rangle\\cong C_3\\). The quotient \\(C_2\\) acts on the quadratic constant field. The discriminant \\(-27T^2=-3(3T)^2\\) identifies the same quadratic constant field.</p></div><p>For comparison, \\(X^3-X-T\\) is irreducible over \\(\\overline{\\mathbb Q}(T)\\): apply Gauss’s lemma to its irreducibility as a polynomial linear in \\(T\\) with unit leading coefficient in \\(\\overline{\\mathbb Q}[X,T]\\). Its discriminant \\(4-27T^2\\) has two simple zeros, so is not a square in that rational function field. The cubic criterion gives \\(G_{\\mathrm{geom}}=S_3\\); consequently \\(G_{\\mathrm{arith}}=S_3\\) and \\(C=\\mathbb Q\\). Thus this family is regular, whereas \\(X^3-T\\) is not.</p>",
         "citations": [
           {
             "key": "Milne2022",
@@ -56,8 +56,8 @@
       },
       {
         "id": "hilbert",
-        "title": "The theorem and its quantifiers",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Hilbert irreducibility</p><p>For \\(F\\) as above, there is a thin set \\(B\\subset K\\) such that every \\(t\\in K\\setminus B\\) is admissible, \\(F(t,x)\\) is irreducible, and \\(G_t=G\\) up to conjugacy. In particular, infinitely many parameters retain the generic group.</p></div><p>Here “thin” means contained in a finite union of finite sets and images of rational points under dominant, generically finite maps from geometrically integral curves to the parameter line of degree at least two. It does not mean finite. To detect a drop of group, take fixed fields of proper subgroups of \\(G\\): a smaller specialization group forces a rational point on an associated resolvent cover. Hilbert’s theorem allows parameters outside all these images.</p>",
+        "title": "Hilbert irreducibility",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Hilbert irreducibility)</p><p>For \\(F\\) as above, there is a thin set \\(B\\subset K\\) such that every \\(t\\in K\\setminus B\\) is admissible, \\(F(t,x)\\) is irreducible, and \\(G_t=G\\) up to conjugacy. In particular, infinitely many parameters retain the generic group.</p></div><p>Here “thin” means contained in a finite union of finite sets and images of rational points under dominant, generically finite maps from geometrically integral curves to the parameter line of degree at least two. Such a set may be infinite. The fixed fields of proper subgroups of \\(G\\) define resolvent covers. If a specialization has a smaller group, an associated cover has a rational point above that parameter. Hilbert’s theorem gives parameters outside the union of these images.</p>",
         "citations": [
           {
             "key": "Hilbert1892",
@@ -72,8 +72,8 @@
       },
       {
         "id": "cubic-example",
-        "title": "Example: one cubic family, infinitely many exceptions",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Worked example</p><p>Let \\(F(T,x)=x^3-x-T\\). The quotient \\(\\mathbb Q[T,x]/(F)\\) is \\(\\mathbb Q[x]\\), with \\(T=x^3-x\\). Hence \\(F\\) is irreducible in the polynomial ring and, by Gauss’s lemma, in \\(\\mathbb Q(T)[x]\\). Its discriminant is</p>\\[\\Delta(T)=4-27T^2.\\]<p>The two zeros of this rational function are simple, so it is not a square in \\(\\mathbb Q(T)\\). A transitive cubic group with nonsquare discriminant is \\(S_3\\).</p><p>At \\(t=1\\), the reduction of \\(x^3-x-1\\) modulo \\(2\\) has no root, and its discriminant is \\(-23\\), giving \\(S_3\\) again. But every \\(t=u^3-u\\), with \\(u\\in\\mathbb Q\\), gives the rational root \\(u\\). The parameters \\(t=u^3-u\\) form precisely the reducible-fiber locus, an infinite subset of the full-group exceptional set. The latter is larger: at \\(t=1/7\\), the cubic remains irreducible but its discriminant is \\(169/49\\), giving \\(A_3\\).</p></div>",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Let \\(F(T,x)=x^3-x-T\\). The quotient \\(\\mathbb Q[T,x]/(F)\\) is \\(\\mathbb Q[x]\\), with \\(T=x^3-x\\). Hence \\(F\\) is irreducible in the polynomial ring and, by Gauss’s lemma, in \\(\\mathbb Q(T)[x]\\). Its discriminant is</p>\\[\\Delta(T)=4-27T^2.\\]<p>The two zeros of this rational function are simple, so it is not a square in \\(\\mathbb Q(T)\\). A transitive cubic group with nonsquare discriminant is \\(S_3\\).</p><p>At \\(t=1\\), the reduction of \\(x^3-x-1\\) modulo \\(2\\) has no root, and its discriminant is \\(-23\\), giving \\(S_3\\) again. But every \\(t=u^3-u\\), with \\(u\\in\\mathbb Q\\), gives the rational root \\(u\\). The parameters \\(t=u^3-u\\) form precisely the reducible-fiber locus, an infinite subset of the full-group exceptional set. There are also irreducible exceptional fibers: at \\(t=1/7\\), the cubic remains irreducible but its discriminant is \\(169/49\\), giving \\(A_3\\).</p></div>",
         "citations": [
           {
             "key": "ConradCubicQuartic",
@@ -83,8 +83,8 @@
       },
       {
         "id": "finite-exceptions",
-        "title": "When geometry makes the exceptional set finite",
-        "body": "<p>Hilbert irreducibility can be strengthened in particular families. Proper-subgroup resolvent covers turn exceptional parameters into rational points on curves. If the relevant curves have genus at least two, finiteness of their rational points gives a finite exceptional set. Establishing the genus bounds requires ramification calculations and subgroup information.</p><div class=\"math-block theorem\"><p class=\"block-label\">Published example · Hajir–Wong</p><p>Fix a number field \\(K\\). For fixed \\(n\\ge5\\), all but finitely many \\(\\alpha\\in K\\) give an irreducible generalized Laguerre polynomial \\(L_n^{(\\alpha)}\\) whose group contains \\(A_n\\). For \\(n\\ge10\\), the group is \\(S_n\\) outside a finite set.</p></div><p>The degree is fixed and the parameter varies. This differs from fixing \\(\\alpha\\) and letting \\(n\\) grow. The argument does not generally compute the finite exceptional set.</p>",
+        "title": "Finite exceptional sets",
+        "body": "<p>In some families, proper-subgroup resolvent covers give a finite exceptional set. If the corresponding curves have genus at least two, each has only finitely many rational points. The required genus bounds depend on the ramification and the subgroup structure.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Hajir–Wong)</p><p>Fix a number field \\(K\\). For fixed \\(n\\ge5\\), all but finitely many \\(\\alpha\\in K\\) give an irreducible generalized Laguerre polynomial \\(L_n^{(\\alpha)}\\) whose group contains \\(A_n\\). For \\(n\\ge10\\), the group is \\(S_n\\) outside a finite set.</p></div><p>Here the degree is fixed and the parameter varies. Fixing \\(\\alpha\\) and letting \\(n\\) grow is a different problem. The argument does not generally determine the finite exceptional set effectively.</p>",
         "citations": [
           {
             "key": "HajirWong2006",
@@ -95,8 +95,8 @@
       },
       {
         "id": "power-parameters",
-        "title": "Power parameters need a geometric hypothesis",
-        "body": "<p>Hilbert irreducibility over all rational parameters does not by itself control a prescribed sequence such as \\(2^n\\). For \\(X^2-t\\), exactly the odd integers \\(n\\) make \\(X^2-2^n\\) irreducible over \\(\\mathbb Q\\); their density is \\(1/2\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bary-Soroker–Garzoni–Matei, conditional on GRH</p><p>Let \\(f(\\mathbf t,X)\\in\\mathbb Z[t_1,\\ldots,t_r,X]\\), with \\(\\deg_Xf\\ge1\\), satisfy the pullback condition: for every tuple \\(m_i\\ge1\\),</p>\\[f(t_1^{m_1},\\ldots,t_r^{m_r},X)\\text{ is irreducible in }\\overline{\\mathbb Q}[\\mathbf t,X].\\]<p>Fix \\(a_i\\in\\mathbb Z\\setminus\\{0,1,-1\\}\\). Assuming GRH, the proportion of exponent vectors \\(\\mathbf n\\in([-N,N]\\cap\\mathbb Z)^r\\) for which \\(f(a_1^{n_1},\\ldots,a_r^{n_r},X)\\) is irreducible over \\(\\mathbb Q\\) tends to one as \\(N\\to\\infty\\).</p></div><p>The geometric condition rules out power-cover obstructions. For \\(X^2-t\\), substituting \\(t=u^2\\) already produces a factorization. The theorem concerns irreducibility; preservation of an entire Galois group requires applying the appropriate resolvent-cover argument with its hypotheses.</p><p><strong>One parameter is stronger and unconditional.</strong> Under the same pullback condition with \\(r=1\\), Dèbes proves that \\(f(a^n,X)\\) is irreducible for all but finitely many integers \\(n\\), without GRH. His Theorem 1.2 shows that infinitely many reducible fibers force a reducible scaled power pullback; geometric (PB) excludes this. The proof uses Siegel’s theorem on integral points on curves. This finiteness assertion does not by itself give an effective list of the exceptional exponents.</p>",
+        "title": "Power parameters",
+        "body": "<p>Hilbert irreducibility over all rational parameters does not by itself control a prescribed sequence such as \\(2^n\\). For \\(X^2-t\\), exactly the odd integers \\(n\\) make \\(X^2-2^n\\) irreducible over \\(\\mathbb Q\\); their density is \\(1/2\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Bary-Soroker–Garzoni–Matei, conditional on GRH)</p><p>Let \\(f(\\mathbf t,X)\\in\\mathbb Z[t_1,\\ldots,t_r,X]\\), with \\(\\deg_Xf\\ge1\\), satisfy the pullback condition: for every tuple \\(m_i\\ge1\\),</p>\\[f(t_1^{m_1},\\ldots,t_r^{m_r},X)\\text{ is irreducible in }\\overline{\\mathbb Q}[\\mathbf t,X].\\]<p>Fix \\(a_i\\in\\mathbb Z\\setminus\\{0,1,-1\\}\\). Assuming GRH, the proportion of exponent vectors \\(\\mathbf n\\in([-N,N]\\cap\\mathbb Z)^r\\) for which \\(f(a_1^{n_1},\\ldots,a_r^{n_r},X)\\) is irreducible over \\(\\mathbb Q\\) tends to one as \\(N\\to\\infty\\).</p></div><p>The pullback condition excludes reducibility caused by a power substitution. For \\(X^2-t\\), substituting \\(t=u^2\\) already produces a factorization. The theorem concerns irreducibility. Preservation of the Galois group requires a resolvent-cover argument and its additional hypotheses.</p><p>For one parameter there is a stronger unconditional result. Under the same pullback condition with \\(r=1\\), Dèbes proves that \\(f(a^n,X)\\) is irreducible for all but finitely many integers \\(n\\), without GRH. His Theorem 1.2 shows that infinitely many reducible fibers force a reducible scaled power pullback; geometric (PB) excludes this. The proof uses Siegel’s theorem on integral points on curves. The exceptional exponents are finite in number, but the theorem does not give an effective list.</p>",
         "citations": [
           {
             "key": "BarySorokerGarzoniMatei2025Powers",
@@ -112,8 +112,8 @@
       },
       {
         "id": "units-update",
-        "title": "A 2026 extension: exceptional unit parameters",
-        "body": "<p><strong>Preprint, 3 September 2026.</strong> Let \\(\\pi:X\\to\\mathbb P^1\\) be a nonconstant morphism from a smooth projective irreducible curve over a number field \\(K\\), let \\(S\\) be a finite set of non-archimedean places of \\(K\\), and put \\(U=\\mathcal O_S^\\times\\). Let \\(\\operatorname{Red}(\\pi)\\) be the set of rational parameters with a reducible fiber, together with all rational branch values. Siksek–Stoll prove</p>\\[U\\cap\\operatorname{Red}(\\pi)=I\\cup\\bigcup_{j=1}^{k}\\gamma_j U^{r_j},\\qquad |I|<\\infty,\\quad \\gamma_j\\in U,\\quad r_j\\ge2.\\]<p>The power cosets are effectively computable; the proof does not make the finite remainder \\(I\\) effective. This supplies structure for an exceptional set that ordinary Hilbert irreducibility only labels thin. For \\(x^2-T\\), the exceptional unit parameters are simply the squares \\(U^2\\): if a square in \\(K\\) is an \\(S\\)-unit, its square root is also an \\(S\\)-unit.</p>",
+        "title": "Unit parameters",
+        "body": "<p><strong>Preprint, 3 September 2026.</strong> Let \\(\\pi:X\\to\\mathbb P^1\\) be a nonconstant morphism from a smooth projective irreducible curve over a number field \\(K\\), let \\(S\\) be a finite set of non-archimedean places of \\(K\\), and put \\(U=\\mathcal O_S^\\times\\). Let \\(\\operatorname{Red}(\\pi)\\) be the set of rational parameters with a reducible fiber, together with all rational branch values. Siksek–Stoll prove</p>\\[U\\cap\\operatorname{Red}(\\pi)=I\\cup\\bigcup_{j=1}^{k}\\gamma_j U^{r_j},\\qquad |I|<\\infty,\\quad \\gamma_j\\in U,\\quad r_j\\ge2.\\]<p>The power cosets are effectively computable; the proof does not make the finite remainder \\(I\\) effective. This describes the exceptional unit parameters more precisely than thinness alone. For \\(x^2-T\\), the exceptional unit parameters are simply the squares \\(U^2\\): if a square in \\(K\\) is an \\(S\\)-unit, its square root is also an \\(S\\)-unit.</p>",
         "citations": [
           {
             "key": "SiksekStoll2026",
@@ -124,8 +124,8 @@
       },
       {
         "id": "boundaries",
-        "title": "What a specialization argument does not give",
-        "body": "<div class=\"math-block boundary\"><p>Irreducibility of one fiber proves neither a uniform theorem in degree nor a description of all exceptions. The arithmetic group over \\(K(T)\\) can exceed the geometric group over \\(\\overline K(T)\\). A theorem for each finite iteration depth does not supply one parameter that works simultaneously at every depth: an intersection of infinitely many Hilbert sets needs a separate argument.</p></div>",
+        "title": "Limitations",
+        "body": "<div class=\"math-block boundary\"><p>Irreducibility of one fiber does not imply a uniform theorem in degree or determine all exceptional fibers. The arithmetic group over \\(K(T)\\) can exceed the geometric group over \\(\\overline K(T)\\). A theorem at each finite iteration depth need not give one parameter valid at every depth. This requires control of an intersection of infinitely many Hilbert sets.</p></div>",
         "citations": [
           {
             "key": "FriedJarden2023",
@@ -158,12 +158,12 @@
       {
         "id": "composition-iteration",
         "relation": "Contrasts with",
-        "why": "All finite depths separately do not settle one infinite tower."
+        "why": "Separate results at every finite depth need not give a single parameter valid throughout the infinite tower."
       },
       {
         "id": "height-counting",
         "relation": "Generalizes",
-        "why": "Thin exceptional sets lead to quantitative counting questions."
+        "why": "Counting points in thin exceptional sets gives quantitative specialization theorems."
       }
     ],
     "questions": [
@@ -172,7 +172,7 @@
         "title": "Can the finite exceptional parameters be determined effectively?",
         "status": "Research direction",
         "scope": "A specified one-parameter family over a fixed number field",
-        "body": "<p>Finiteness and effective determination are different outputs. Hajir–Wong explain the difficulty for their curves; the 2026 unit-specialization theorem likewise leaves a finite set ineffective. A concrete project should name the family and the auxiliary curves whose rational or integral points must be found.</p>",
+        "body": "<p>A finiteness theorem need not determine the exceptional parameters effectively. Hajir–Wong discuss this difficulty for their curves; the 2026 unit-specialization theorem also leaves a finite set ineffective. For a given family, the problem reduces to determining rational or integral points on the associated curves.</p>",
         "citations": [
           {
             "key": "HajirWong2006",
@@ -191,7 +191,7 @@
     "title": "Inverse Galois theory and generic polynomials",
     "kind": "foundation",
     "subject": "specialization",
-    "summary": "Construct a polynomial with a prescribed group, then distinguish one realization from regular families and universal parametrizations.",
+    "summary": "The inverse Galois problem asks which finite groups occur over a given field. Regular realizations and generic polynomials impose further conditions on families of extensions.",
     "level": "Intermediate",
     "field": "Q and number fields",
     "status": "Research overview",
@@ -199,7 +199,7 @@
     "questionsAnswered": [
       "What does it mean to realize a finite group by a polynomial?",
       "How do regular realizations and generic polynomials differ?",
-      "Which major existence statements are known?"
+      "Which existence results are known?"
     ],
     "prerequisites": [
       "foundations",
@@ -208,8 +208,8 @@
     "sections": [
       {
         "id": "four-problems",
-        "title": "Four construction problems",
-        "body": "<p>The inverse Galois problem over \\(K\\) asks whether a given finite group \\(G\\) is \\(\\operatorname{Gal}(L/K)\\) for some finite Galois extension. An explicit polynomial whose splitting field is \\(L\\) is a stronger practical output. A <em>regular realization</em> over \\(K(T)\\) requires \\(L\\cap\\overline K=K\\). It is a family without an enlarged constant field.</p><p>A polynomial \\(P(\\mathbf T,x)\\) is <em>parametric</em> for \\(G\\) over \\(K\\) if its generic splitting group is \\(G\\) and every \\(G\\)-extension of \\(K\\) is obtained by specialization. It is <em>generic</em> if this remains true over every extension field of \\(K\\). A family with group \\(G\\) at infinitely many parameters need not parametrize all \\(G\\)-extensions.</p>",
+        "title": "Realizations and parametrizations",
+        "body": "<p>The inverse Galois problem over \\(K\\) asks whether a given finite group \\(G\\) is \\(\\operatorname{Gal}(L/K)\\) for some finite Galois extension. One may also ask for an explicit polynomial whose splitting field is \\(L\\). A <em>regular realization</em> over \\(K(T)\\) requires \\(L\\cap\\overline K=K\\). Thus the constant field remains unchanged.</p><p>A polynomial \\(P(\\mathbf T,x)\\) is <em>parametric</em> for \\(G\\) over \\(K\\) if its generic splitting group is \\(G\\) and every \\(G\\)-extension of \\(K\\) is obtained by specialization. It is <em>generic</em> if this remains true over every extension field of \\(K\\). A family with group \\(G\\) at infinitely many parameters need not parametrize all \\(G\\)-extensions.</p>",
         "citations": [
           {
             "key": "JensenLedetYui2002",
@@ -220,8 +220,8 @@
       },
       {
         "id": "realization-method",
-        "title": "From a cover to arithmetic realizations",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Method · regular realization and specialization</p><p>A regular finite Galois extension of \\(K(T)\\) with nontrivial group \\(G\\), for \\(K\\) a number field, gives infinitely many linearly disjoint \\(G\\)-extensions of \\(K\\) by Hilbert irreducibility.</p></div><p>One first builds a cover with a controlled geometric group. Possible tools include invariant fields, branched covers and rigidity, embedding problems, and arithmetic families such as torsion on elliptic curves. One then proves descent to the desired base field and regularity, and finally chooses arithmetic fibers. The descent step is substantial: constructing a complex cover with group \\(G\\) does not by itself construct a \\(G\\)-extension of \\(\\mathbb Q\\).</p>",
+        "title": "Regular realizations",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Regular realization and specialization</p><p>A regular finite Galois extension of \\(K(T)\\) with nontrivial group \\(G\\), for \\(K\\) a number field, gives infinitely many linearly disjoint \\(G\\)-extensions of \\(K\\) by Hilbert irreducibility.</p></div><p>Regular realizations can be constructed using invariant fields, branched covers and rigidity, embedding problems, or arithmetic families such as torsion on elliptic curves. The cover must have the required geometric group, descend to the chosen base field, and be regular there. Hilbert irreducibility then gives arithmetic specializations. A complex cover with group \\(G\\) does not by itself give a \\(G\\)-extension of \\(\\mathbb Q\\).</p>",
         "citations": [
           {
             "key": "Serre2007Topics",
@@ -236,8 +236,8 @@
       },
       {
         "id": "small-example",
-        "title": "Example: a generic quadratic and a cyclic cubic",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Worked examples</p><p>If \\(\\operatorname{char}K\\ne2\\), the polynomial \\(x^2-T\\) is generic for \\(C_2\\): every quadratic extension of every field \\(E\\supseteq K\\) has the form \\(E(\\sqrt a)\\) for a nonsquare \\(a\\in E\\). The exceptional specializations \\(T=a\\in E^2\\) split. Thus “generic for a group” never means that every parameter has that group.</p><p>For a single cyclic cubic realization over \\(\\mathbb Q\\), take</p>\\[f=x^3+x^2-2x-1.\\]<p>The rational-root candidates \\(\\pm1\\) are not roots, so \\(f\\) is irreducible. Its discriminant is \\(49\\), hence the transitive group lies in \\(A_3=C_3\\) and is exactly \\(C_3\\). In fact a root is \\(\\zeta_7+\\zeta_7^{-1}\\), displaying the real cubic subfield of \\(\\mathbb Q(\\zeta_7)\\).</p></div>",
+        "title": "Examples",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Examples</p><p>If \\(\\operatorname{char}K\\ne2\\), the polynomial \\(x^2-T\\) is generic for \\(C_2\\): every quadratic extension of every field \\(E\\supseteq K\\) has the form \\(E(\\sqrt a)\\) for a nonsquare \\(a\\in E\\). The exceptional specializations \\(T=a\\in E^2\\) split. A generic polynomial may therefore have specializations with a smaller group.</p><p>For a cyclic cubic extension of \\(\\mathbb Q\\), take</p>\\[f=x^3+x^2-2x-1.\\]<p>The rational-root candidates \\(\\pm1\\) are not roots, so \\(f\\) is irreducible. Its discriminant is \\(49\\), hence the transitive group lies in \\(A_3=C_3\\) and is exactly \\(C_3\\). A root is \\(\\zeta_7+\\zeta_7^{-1}\\), which generates the real cubic subfield of \\(\\mathbb Q(\\zeta_7)\\).</p></div>",
         "citations": [
           {
             "key": "ConradCubicQuartic",
@@ -251,8 +251,8 @@
       },
       {
         "id": "known-landscape",
-        "title": "Established existence results and remaining scale",
-        "body": "<p>Every finite solvable group occurs over \\(\\mathbb Q\\) by Shafarevich’s theorem. Symmetric and alternating groups also occur over \\(\\mathbb Q\\), as Hilbert proved. These cover many groups but do not settle the assertion for every finite group. The regular inverse problem is stronger still; the literature treats it separately from ordinary existence.</p><p>For a concrete target, record the faithful permutation action as well as the abstract group. A transitive action of degree \\(n\\) corresponds to a degree-\\(n\\) irreducible polynomial whose splitting group acts in that way. The regular action has degree \\(|G|\\), often much larger than the smallest useful polynomial degree. Databases of number fields therefore organize groups by degree and transitive action, not only abstract isomorphism type.</p>",
+        "title": "Existence results",
+        "body": "<p>Every finite solvable group occurs over \\(\\mathbb Q\\) by Shafarevich’s theorem. Symmetric and alternating groups also occur over \\(\\mathbb Q\\), as Hilbert proved. The general assertion for every finite group remains open in the cited sources. The regular inverse Galois problem is stronger.</p><p>An explicit realization also specifies a faithful permutation action. A transitive action of degree \\(n\\) corresponds to a degree-\\(n\\) irreducible polynomial whose splitting group acts in that way. The regular action has degree \\(|G|\\), often much larger than the smallest degree of a faithful transitive action. Databases of number fields therefore organize groups by degree and transitive action, not only abstract isomorphism type.</p>",
         "citations": [
           {
             "key": "JensenLedetYui2002",
@@ -271,8 +271,8 @@
       },
       {
         "id": "limits",
-        "title": "What a list of examples proves",
-        "body": "<div class=\"math-block boundary\"><p>An example realizes its own group and action. Computations for every group up to a degree bound do not prove a theorem for all finite groups. A failure to find a polynomial is not a nonexistence proof. A generic polynomial demands a universality argument, not a successful search over many parameter values.</p></div><p>For a new family, an effective route is to state the intended group and action; prove an upper bound from symmetry; prove irreducibility; find sufficient local cycle types or resolvent information for the lower bound; then explain which extensions the family is known to parametrize.</p>",
+        "title": "Limitations",
+        "body": "<div class=\"math-block boundary\"><p>A finite list of examples realizes only the listed groups and actions. Even a complete computation up to a degree bound leaves the general inverse problem unresolved. Failure to find a polynomial does not establish nonexistence. A generic polynomial requires a proof that every extension in the stated class occurs by specialization.</p></div><p>For a polynomial family, symmetry often bounds the Galois group from above. Irreducibility, local cycle types, and resolvents can then determine the group. A separate argument is needed to determine which extensions occur among its specializations.</p>",
         "citations": [
           {
             "key": "JensenLedetYui2002",
@@ -295,7 +295,7 @@
       {
         "id": "galois-computation",
         "relation": "Uses",
-        "why": "A proposed realization needs a certified group calculation."
+        "why": "An explicit realization requires a proof of its Galois group."
       },
       {
         "id": "resolvents",
@@ -319,7 +319,7 @@
         "title": "Does every finite group occur as a Galois group over Q?",
         "status": "Open in cited source",
         "scope": "Finite Galois extensions of Q; no fixed degree bound",
-        "body": "<p>This is the classical inverse Galois problem. The cited monographs give constructions and known families, rather than a general solution. A group-specific project must also distinguish an abstract realization from a prescribed transitive action.</p>",
+        "body": "<p>This is the classical inverse Galois problem. The cited monographs describe known realizations. For a specified group, one can also ask for a realization in a prescribed transitive action.</p>",
         "citations": [
           {
             "key": "MalleMatzat2018",
@@ -347,7 +347,7 @@
     "title": "Composition, iteration, and arboreal groups",
     "kind": "method",
     "subject": "dynamics",
-    "summary": "Use extension towers and rooted trees to study repeated polynomial composition. Separate stability from maximality of the Galois action.",
+    "summary": "Polynomial composition gives extension towers and Galois actions on rooted trees. Irreducibility of all iterates is weaker than surjectivity of the arboreal representation.",
     "level": "Intermediate",
     "field": "general fields and number fields",
     "status": "Research overview",
@@ -355,7 +355,7 @@
     "questionsAnswered": [
       "When is a composition irreducible?",
       "Why do iterated Galois groups lie in wreath products?",
-      "What extra arithmetic is needed for all iteration levels?"
+      "Which arithmetic conditions control the group at every level?"
     ],
     "prerequisites": [
       "foundations",
@@ -364,8 +364,8 @@
     "sections": [
       {
         "id": "two-decompositions",
-        "title": "Multiplication and composition are different",
-        "body": "<p>A factorization \\(f=gh\\) and a decomposition \\(f=g\\circ h\\) answer different questions. In composition theory the factors are nonconstant maps, and the units are linear changes of variable. For example, \\(x^4=(x^2)\\circ(x^2)\\), while over \\(\\mathbb C\\) every polynomial already factors multiplicatively into linear factors. Ritt’s “prime” polynomials are indecomposable under composition.</p><p>For \\(f\\in\\mathbb C[x]\\), composition is connected to intermediate fields of \\(\\mathbb C(x)/\\mathbb C(f(x))\\) and to blocks in the monodromy action of \\(f(x)-T\\). This is a function-field group, not the splitting group of the particular polynomial \\(f(x)\\) over \\(\\mathbb Q\\).</p>",
+        "title": "Factorization and composition",
+        "body": "<p>Multiplicative factorization \\(f=gh\\) differs from composition \\(f=g\\circ h\\). In composition theory, the factors are nonconstant maps and the units are linear changes of variable. For example, \\(x^4=(x^2)\\circ(x^2)\\), whereas every nonconstant polynomial over \\(\\mathbb C\\) factors multiplicatively into linear factors. Ritt’s “prime” polynomials are indecomposable under composition.</p><p>For \\(f\\in\\mathbb C[x]\\), composition is connected to intermediate fields of \\(\\mathbb C(x)/\\mathbb C(f(x))\\) and to blocks in the monodromy action of \\(f(x)-T\\). This is a function-field group, not the splitting group of the particular polynomial \\(f(x)\\) over \\(\\mathbb Q\\).</p>",
         "citations": [
           {
             "key": "Ritt1922",
@@ -379,8 +379,8 @@
       },
       {
         "id": "capelli",
-        "title": "The composition test",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Capelli’s composition lemma</p><p>Let \\(F\\in K[x]\\) be irreducible of degree \\(m\\), let \\(g\\in K[x]\\) have degree \\(d\\ge1\\), and let \\(\\alpha\\) be a root of \\(F\\). Then \\(F(g(x))\\) is irreducible over \\(K\\) if and only if \\(g(x)-\\alpha\\) is irreducible over \\(K(\\alpha)\\).</p></div><div class=\"math-block proof\"><p>For a root \\(\\beta\\) of \\(g(x)-\\alpha\\), we have \\(\\alpha=g(\\beta)\\), so \\(K(\\alpha)\\subseteq K(\\beta)\\). The tower law gives \\([K(\\beta):K]=m[K(\\beta):K(\\alpha)]\\). This equals \\(md=\\deg(F\\circ g)\\) exactly when \\(g(x)-\\alpha\\) has degree \\(d\\) as a minimal polynomial. This proves both implications.</p></div><p>The challenge has moved to an extension field; it has not vanished. In quadratic iteration, deciding whether certain elements become squares is the essential new step.</p>",
+        "title": "Capelli’s lemma",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Capelli’s composition lemma)</p><p>Let \\(F\\in K[x]\\) be irreducible of degree \\(m\\), let \\(g\\in K[x]\\) have degree \\(d\\ge1\\), and let \\(\\alpha\\) be a root of \\(F\\). Then \\(F(g(x))\\) is irreducible over \\(K\\) if and only if \\(g(x)-\\alpha\\) is irreducible over \\(K(\\alpha)\\).</p></div><div class=\"math-block proof\"><p>For a root \\(\\beta\\) of \\(g(x)-\\alpha\\), we have \\(\\alpha=g(\\beta)\\), so \\(K(\\alpha)\\subseteq K(\\beta)\\). The tower law gives \\([K(\\beta):K]=m[K(\\beta):K(\\alpha)]\\). This equals \\(md=\\deg(F\\circ g)\\) exactly when \\(g(x)-\\alpha\\) is a scalar multiple of a minimal polynomial of degree \\(d\\). This proves both implications.</p></div><p>The criterion reduces the problem to factorization over a root field. For quadratic iterates, this requires deciding whether certain elements are squares in that field.</p>",
         "citations": [
           {
             "key": "Schinzel2000",
@@ -394,8 +394,8 @@
       },
       {
         "id": "root-tree",
-        "title": "The natural ambient group is a rooted-tree group",
-        "body": "<p>Let \\(f\\in K[x]\\) have degree \\(d\\ge2\\), and suppose each iterate \\(f^{\\circ n}\\) is separable. Put a separate copy of its roots at level \\(n\\), with an edge from \\(\\beta\\) to \\(f(\\beta)\\). The resulting regular rooted \\(d\\)-ary tree is preserved by Galois, because every automorphism commutes with evaluation of \\(f\\).</p>\\[G_n\\ \\le\\ \\operatorname{Aut}(T_{d,n})\\cong [S_d]^n,\\qquad |\\operatorname{Aut}(T_{d,n})|=(d!)^{1+d+\\cdots+d^{n-1}}.\\]<p>The right side is an iterated wreath product, generally far smaller than \\(S_{d^n}\\). Irreducibility of every iterate, called <em>stability</em>, says the action is transitive at every level. Surjectivity onto the tree automorphism group is stronger.</p>",
+        "title": "Rooted trees and wreath products",
+        "body": "<p>Let \\(f\\in K[x]\\) have degree \\(d\\ge2\\), and suppose each iterate \\(f^{\\circ n}\\) is separable. Put a separate copy of its roots at level \\(n\\), with an edge from \\(\\beta\\) to \\(f(\\beta)\\). The resulting regular rooted \\(d\\)-ary tree is preserved by Galois, because every automorphism commutes with evaluation of \\(f\\).</p>\\[G_n\\ \\le\\ \\operatorname{Aut}(T_{d,n})\\cong [S_d]^n,\\qquad |\\operatorname{Aut}(T_{d,n})|=(d!)^{1+d+\\cdots+d^{n-1}}.\\]<p>The right side is an iterated wreath product, generally much smaller than \\(S_{d^n}\\). Irreducibility of every iterate, called <em>stability</em>, is equivalent to transitivity at every level. Surjectivity onto the tree automorphism group is stronger.</p>",
         "citations": [
           {
             "key": "Jones2013Arboreal",
@@ -406,8 +406,8 @@
       },
       {
         "id": "quadratic-example",
-        "title": "Example: the first two levels of x²+1",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Worked example</p><p>For \\(f=x^2+1\\), the first iterate is irreducible over \\(\\mathbb Q\\), and</p>\\[f^{\\circ2}=x^4+2x^2+2\\]<p>is Eisenstein at \\(2\\). Its four roots fall into two pairs according to whether \\(f(\\beta)=i\\) or \\(-i\\). Thus its group is contained in \\(C_2\\wr C_2\\), of order eight.</p><p>The quadratic critical-orbit criterion uses \\(c_1=-a\\) and \\(c_n=f_a^{\\circ n}(0)\\) for \\(n\\ge2\\), where \\(f_a=x^2+a\\) and \\(a\\in\\mathbb Q\\setminus\\{0,-1\\}\\). It says that the level-\\(n\\) group is full precisely when \\(c_1,\\ldots,c_n\\) are independent in \\(\\mathbb Q^\\times/\\mathbb Q^{\\times2}\\). Here \\((c_1,c_2)=(-1,2)\\); none of \\(-1,2,-2\\) is a rational square. Consequently \\(G_2=C_2\\wr C_2\\), the dihedral group of order eight. Checking two levels alone does not prove maximality at every level.</p></div>",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(f=x^2+1\\), the first iterate is irreducible over \\(\\mathbb Q\\), and</p>\\[f^{\\circ2}=x^4+2x^2+2\\]<p>is Eisenstein at \\(2\\). Its four roots fall into two pairs according to whether \\(f(\\beta)=i\\) or \\(-i\\). Thus its group is contained in \\(C_2\\wr C_2\\), of order eight.</p><p>The quadratic critical-orbit criterion uses \\(c_1=-a\\) and \\(c_n=f_a^{\\circ n}(0)\\) for \\(n\\ge2\\), where \\(f_a=x^2+a\\) and \\(a\\in\\mathbb Q\\setminus\\{0,-1\\}\\). It says that the level-\\(n\\) group is full precisely when \\(c_1,\\ldots,c_n\\) are independent in \\(\\mathbb Q^\\times/\\mathbb Q^{\\times2}\\). Here \\((c_1,c_2)=(-1,2)\\); none of \\(-1,2,-2\\) is a rational square. Consequently \\(G_2=C_2\\wr C_2\\), the dihedral group of order eight. This calculation determines only the first two levels.</p></div>",
         "citations": [
           {
             "key": "Stoll1992",
@@ -418,8 +418,8 @@
       },
       {
         "id": "pcf-counterexample",
-        "title": "Stable does not mean maximal: x²−2 at every level",
-        "body": "<p>A polynomial is <em>postcritically finite</em> (PCF) when every critical point has finite forward orbit. For \\(f=x^2-2\\), the finite critical orbit is \\(0\\mapsto-2\\mapsto2\\mapsto2\\). Nevertheless every iterate is irreducible over \\(\\mathbb Q\\).</p><div class=\"math-block proof\"><p class=\"block-label\">Exact cyclotomic description</p><p>The identity \\(f(z+z^{-1})=z^2+z^{-2}\\) gives</p>\\[f^{\\circ n}(z+z^{-1})=z^{2^n}+z^{-2^n}.\\]<p>For a primitive \\(2^{n+2}\\)-th root of unity \\(\\zeta\\), the element \\(\\zeta+\\zeta^{-1}\\) is therefore a root of \\(f^{\\circ n}\\). It has degree \\(\\varphi(2^{n+2})/2=2^n\\), the degree of the iterate. All its conjugates lie in the same real cyclotomic field, so</p>\\[K_n=\\mathbb Q(\\zeta+\\zeta^{-1}),\\qquad G_n\\cong C_{2^n}.\\]<p>Thus the action is transitive at every level, whereas \\(|G_n|=2^n\\) is much smaller than \\(|\\operatorname{Aut}(T_{2,n})|=2^{2^n-1}\\) for \\(n\\ge2\\).</p></div><p>The recent PCF work of Benedetto–Ghioca–Juul–Tucker describes the constrained ambient groups and gives criteria for attaining them: the 2025 paper treats periodic critical points; its 2026 companion treats strictly preperiodic ones. These groups depend on critical-orbit relations, the base field, and the target point. The classical Chebyshev case above is separated from the general constructions in the latter paper.</p>",
+        "title": "Postcritically finite polynomials",
+        "body": "<p>A polynomial is <em>postcritically finite</em> (PCF) when every critical point has finite forward orbit. For \\(f=x^2-2\\), the finite critical orbit is \\(0\\mapsto-2\\mapsto2\\mapsto2\\). Every iterate is nevertheless irreducible over \\(\\mathbb Q\\).</p><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>The identity \\(f(z+z^{-1})=z^2+z^{-2}\\) gives</p>\\[f^{\\circ n}(z+z^{-1})=z^{2^n}+z^{-2^n}.\\]<p>For a primitive \\(2^{n+2}\\)-th root of unity \\(\\zeta\\), the element \\(\\zeta+\\zeta^{-1}\\) is therefore a root of \\(f^{\\circ n}\\). It has degree \\(\\varphi(2^{n+2})/2=2^n\\), the degree of the iterate. All its conjugates lie in the same real cyclotomic field, so</p>\\[K_n=\\mathbb Q(\\zeta+\\zeta^{-1}),\\qquad G_n\\cong C_{2^n}.\\]<p>Thus the action is transitive at every level, whereas \\(|G_n|=2^n\\) is much smaller than \\(|\\operatorname{Aut}(T_{2,n})|=2^{2^n-1}\\) for \\(n\\ge2\\).</p></div><p>Benedetto–Ghioca–Juul–Tucker describe the ambient groups imposed by PCF relations and give criteria for attaining them: the 2025 paper treats periodic critical points; its 2026 companion treats strictly preperiodic ones. These groups depend on critical-orbit relations, the base field, and the target point. The latter paper treats the classical Chebyshev case above separately from its general constructions.</p>",
         "citations": [
           {
             "key": "BenedettoGhiocaJuulTucker2025Periodic",
@@ -435,8 +435,8 @@
       },
       {
         "id": "generic-and-arithmetic",
-        "title": "Generic maximality versus an arithmetic tower",
-        "body": "<p>For the generic monic degree-\\(d\\) polynomial \\(F=x^d+s_{d-1}x^{d-1}+\\cdots+s_0\\) over a characteristic-zero field \\(k\\), Odoni proves \\(\\operatorname{Gal}(F^{\\circ n}/k(\\mathbf s))=[S_d]^n\\) for every fixed \\(n\\). Juul extends this to positive characteristic, excluding \\((d,\\operatorname{char}k)=(2,2)\\) for polynomials. Disjoint ramification in the new branches supplies the independent permutations needed at each induction step.</p><p>Over number fields, Benedetto–Juul prove all-level existence in every even degree and in odd degree when \\([K:\\mathbb Q]\\) is odd. Specter’s 2018 preprint states all degrees over every number field. In contrast, Dittmann–Kadets construct characteristic-zero Hilbertian fields admitting no finite-index arboreal image. The base-field quantifier matters.</p>",
+        "title": "Generic and arithmetic groups",
+        "body": "<p>For the generic monic degree-\\(d\\) polynomial \\(F=x^d+s_{d-1}x^{d-1}+\\cdots+s_0\\) over a characteristic-zero field \\(k\\), Odoni proves \\(\\operatorname{Gal}(F^{\\circ n}/k(\\mathbf s))=[S_d]^n\\) for every fixed \\(n\\). Juul extends this to positive characteristic, excluding \\((d,\\operatorname{char}k)=(2,2)\\) for polynomials. The induction uses disjoint ramification in the new branches to obtain independent permutations.</p><p>Over number fields, Benedetto–Juul prove all-level existence in every even degree and in odd degree when \\([K:\\mathbb Q]\\) is odd. Specter’s 2018 preprint states all degrees over every number field. In contrast, Dittmann–Kadets construct characteristic-zero Hilbertian fields admitting no finite-index arboreal image. Thus the existence theorem depends on the base field.</p>",
         "citations": [
           {
             "key": "Odoni1985",
@@ -466,8 +466,8 @@
       },
       {
         "id": "current-boundary",
-        "title": "A recent boundary: how many levels suffice?",
-        "body": "<p><strong>Preprint submitted 10 November 2026.</strong> Stoll gives revised proofs and rational-parameter extensions of maximality criteria for \\(x^2+a\\). Proposition 1.7 restates the square-class test. Theorem 6.1 gives explicit regions and congruence classes where level two controls the full tree; it is not a theorem for every rational \\(a\\).</p><p>The same paper formulates a uniform finite-level detection conjecture and reports supporting computations. Computational verification to a finite height or depth is recorded as evidence, not as an all-parameter theorem. Critical-orbit square relations explain why a tower may first fail at a later level.</p><div class=\"math-block example\"><p class=\"block-label\">A later failure with an exact certificate</p><p>For \\(a=2/3\\), the first four adjusted critical values are</p>\\[(c_1,c_2,c_3,c_4)=\\left(-\\frac23,\\frac{10}{9},\\frac{154}{81},\\frac{28090}{6561}\\right).\\]<p>The first three square classes are independent: the sign detects \\(c_1\\), the prime \\(5\\) detects \\(c_2\\), and the prime \\(7\\) detects \\(c_3\\). But \\(c_2c_4=(530/243)^2\\). Hence the level-three group is full and the level-four group is not. A universal detection level, if one exists, must therefore be at least four.</p></div>",
+        "title": "Finite-level detection",
+        "body": "<p><strong>Preprint submitted 10 November 2026.</strong> Stoll gives revised proofs and rational-parameter extensions of maximality criteria for \\(x^2+a\\). Proposition 1.7 restates the square-class test. Theorem 6.1 gives explicit regions and congruence classes where maximality at level two implies maximality at every level. Its hypotheses do not include every rational \\(a\\).</p><p>The paper also formulates a uniform finite-level detection conjecture and reports supporting computations. These finite calculations do not prove the conjecture for all parameters. Relations among critical-orbit square classes can cause the first failure of maximality at a later level.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(a=2/3\\), the first four adjusted critical values are</p>\\[(c_1,c_2,c_3,c_4)=\\left(-\\frac23,\\frac{10}{9},\\frac{154}{81},\\frac{28090}{6561}\\right).\\]<p>The first three square classes are independent: the sign detects \\(c_1\\), the prime \\(5\\) detects \\(c_2\\), and the prime \\(7\\) detects \\(c_3\\). But \\(c_2c_4=(530/243)^2\\). Hence the level-three group is full and the level-four group is not. A universal detection level, if one exists, must therefore be at least four.</p></div>",
         "citations": [
           {
             "key": "Stoll2026Arboreal",
@@ -481,7 +481,7 @@
       {
         "id": "specialization",
         "relation": "Uses",
-        "why": "Generic finite-level groups specialize, while all-level arithmetic needs an additional argument."
+        "why": "Finite-level generic groups specialize by Hilbert irreducibility. A single parameter valid at every level requires an additional argument."
       },
       {
         "id": "permutation-groups",
@@ -491,7 +491,7 @@
       {
         "id": "discriminants",
         "relation": "Uses",
-        "why": "Square classes and ramification control new quadratic branches."
+        "why": "Square classes and ramification control the quadratic extensions introduced at each level."
       },
       {
         "id": "inverse-galois",
@@ -520,10 +520,10 @@
       },
       {
         "id": "odoni-base-field",
-        "title": "Does Hilbertianity alone force an all-level full arboreal realization?",
+        "title": "Does every Hilbertian field admit a surjective arboreal representation?",
         "status": "Settled in stated scope",
         "scope": "General Hilbertian fields of characteristic zero",
-        "body": "<p>No. Dittmann–Kadets give counterexample fields. This does not contradict the positive existence results over number fields, and does not negate generic maximality at every fixed finite level.</p>",
+        "body": "<p>No. Dittmann–Kadets give counterexample fields. These counterexamples are compatible with the positive existence results over number fields and with generic maximality at each fixed finite level.</p>",
         "citations": [
           {
             "key": "DittmannKadets2022",
@@ -538,7 +538,7 @@
     "title": "Irreducibility over finite fields",
     "kind": "method",
     "subject": "finite-fields",
-    "summary": "Turn Frobenius powers into exact irreducibility certificates, count irreducibles, and distinguish irreducible from primitive polynomials.",
+    "summary": "Frobenius powers give an exact irreducibility criterion and a formula for the number of irreducible polynomials. Primitive polynomials satisfy an additional multiplicative-order condition.",
     "level": "Start here",
     "field": "finite fields",
     "status": "Classical theory",
@@ -554,8 +554,8 @@
     "sections": [
       {
         "id": "frobenius-identity",
-        "title": "The identity behind the algorithms",
-        "body": "<p>Let \\(q\\) be a prime power. In \\(\\mathbb F_q[x]\\),</p>\\[x^{q^m}-x=\\prod_{\\substack{P\\text{ monic irreducible}\\\\\\deg P\\mid m}}P(x).\\]<p>Every element of \\(\\mathbb F_{q^m}\\) is a root, the derivative is \\(-1\\), and an element of degree \\(d\\) over \\(\\mathbb F_q\\) belongs to \\(\\mathbb F_{q^m}\\) exactly when \\(d\\mid m\\). Thus each indicated factor occurs once.</p><p>If \\(f\\) is irreducible of degree \\(n\\), adjoining one root gives \\(\\mathbb F_{q^n}\\), which already contains every conjugate. Its Galois group is \\(C_n\\), generated by \\(z\\mapsto z^q\\). Noncyclic monodromy groups in finite-field research concern function fields such as \\(\\mathbb F_q(T)\\), not this constant-field extension.</p>",
+        "title": "The Frobenius identity",
+        "body": "<p>Let \\(q\\) be a prime power. In \\(\\mathbb F_q[x]\\),</p>\\[x^{q^m}-x=\\prod_{\\substack{P\\text{ monic irreducible}\\\\\\deg P\\mid m}}P(x).\\]<p>Every element of \\(\\mathbb F_{q^m}\\) is a root, the derivative is \\(-1\\), and an element of degree \\(d\\) over \\(\\mathbb F_q\\) belongs to \\(\\mathbb F_{q^m}\\) exactly when \\(d\\mid m\\). Thus each indicated factor occurs once.</p><p>If \\(f\\) is irreducible of degree \\(n\\), adjoining one root gives \\(\\mathbb F_{q^n}\\), which already contains every conjugate. Its Galois group is \\(C_n\\), generated by \\(z\\mapsto z^q\\). Noncyclic monodromy groups over finite fields arise over function fields such as \\(\\mathbb F_q(T)\\), not this constant-field extension.</p>",
         "citations": [
           {
             "key": "LidlNiederreiter1997",
@@ -569,8 +569,8 @@
       },
       {
         "id": "rabin",
-        "title": "A necessary and sufficient test",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Frobenius-power criterion</p><p>A monic polynomial \\(f\\in\\mathbb F_q[x]\\) of degree \\(n\\ge1\\) is irreducible if and only if</p>\\[x^{q^n}\\equiv x\\pmod f,\\qquad \\gcd\\bigl(f,x^{q^{n/\\ell}}-x\\bigr)=1\\quad\\text{for every prime }\\ell\\mid n.\\]</div><p>The first condition makes \\(f\\) squarefree and forces every factor degree to divide \\(n\\). If a proper divisor \\(d\\mid n\\) occurred as a factor degree, some prime \\(\\ell\\mid n/d\\) would give \\(d\\mid n/\\ell\\), contradicting the corresponding gcd. The reverse implication follows from the same Frobenius identity. Modular powering and Euclidean gcds suffice; there is no need to expand the huge power.</p>",
+        "title": "The irreducibility criterion",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Frobenius-power criterion)</p><p>A monic polynomial \\(f\\in\\mathbb F_q[x]\\) of degree \\(n\\ge1\\) is irreducible if and only if</p>\\[x^{q^n}\\equiv x\\pmod f,\\qquad \\gcd\\bigl(f,x^{q^{n/\\ell}}-x\\bigr)=1\\quad\\text{for every prime }\\ell\\mid n.\\]</div><p>The first condition makes \\(f\\) squarefree and forces every factor degree to divide \\(n\\). If a proper divisor \\(d\\mid n\\) occurred as a factor degree, some prime \\(\\ell\\mid n/d\\) would give \\(d\\mid n/\\ell\\), contradicting the corresponding gcd. The reverse implication follows from the same Frobenius identity. The criterion uses modular exponentiation and Euclidean gcds, without expanding the powers as polynomials.</p>",
         "citations": [
           {
             "key": "Rabin1980",
@@ -585,8 +585,8 @@
       },
       {
         "id": "quartic-certificate",
-        "title": "Example: a four-degree certificate over F₂",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Worked example</p><p>Take \\(f=x^4+x+1\\in\\mathbb F_2[x]\\). Repeated squaring modulo \\(f\\) gives</p>\\[x^4\\equiv x+1,\\qquad x^8\\equiv x^2+1,\\qquad x^{16}\\equiv x.\\]<p>The only prime divisor of \\(n=4\\) is \\(2\\), and \\(x^4-x\\equiv1\\pmod f\\). Thus the required gcd is one, and \\(f\\) is irreducible. Its splitting field has 16 elements, and the Galois group over \\(\\mathbb F_2\\) has order four.</p><p>By contrast, the congruence \\(x^{16}\\equiv x\\pmod f\\) alone would not prove irreducibility: the reducible quartic \\(x^4+x=x(x+1)(x^2+x+1)\\), for instance, also divides \\(x^{16}-x\\). The gcd conditions eliminate smaller-degree factors.</p></div>",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Take \\(f=x^4+x+1\\in\\mathbb F_2[x]\\). Repeated squaring modulo \\(f\\) gives</p>\\[x^4\\equiv x+1,\\qquad x^8\\equiv x^2+1,\\qquad x^{16}\\equiv x.\\]<p>The only prime divisor of \\(n=4\\) is \\(2\\), and \\(x^4-x\\equiv1\\pmod f\\). Thus the required gcd is one, and \\(f\\) is irreducible. Its splitting field has 16 elements, and the Galois group over \\(\\mathbb F_2\\) has order four.</p><p>The congruence \\(x^{16}\\equiv x\\pmod f\\) alone does not suffice: the reducible quartic \\(x^4+x=x(x+1)(x^2+x+1)\\) also divides \\(x^{16}-x\\). The gcd conditions eliminate smaller-degree factors.</p></div>",
         "citations": [
           {
             "key": "Rabin1980",
@@ -596,8 +596,8 @@
       },
       {
         "id": "counting",
-        "title": "Counting and constructing irreducibles",
-        "body": "<p>If \\(N_q(n)\\) counts monic irreducibles of degree \\(n\\), taking degrees in the Frobenius identity and applying Möbius inversion gives</p>\\[N_q(n)=\\frac1n\\sum_{d\\mid n}\\mu(d)q^{n/d}.\\]<p>For example, \\(N_2(4)=(16-4)/4=3\\). For fixed \\(q\\) and large \\(n\\), the proportion of monic degree-\\(n\\) polynomials that are irreducible is asymptotic to \\(1/n\\). Random sampling followed by exact testing therefore supplies a simple construction method. Deterministic constructions and fast implementations are separate algorithmic questions, developed by Shoup and others.</p>",
+        "title": "Counting irreducible polynomials",
+        "body": "<p>If \\(N_q(n)\\) counts monic irreducibles of degree \\(n\\), taking degrees in the Frobenius identity and applying Möbius inversion gives</p>\\[N_q(n)=\\frac1n\\sum_{d\\mid n}\\mu(d)q^{n/d}.\\]<p>For example, \\(N_2(4)=(16-4)/4=3\\). For fixed \\(q\\) and large \\(n\\), the proportion of monic degree-\\(n\\) polynomials that are irreducible is asymptotic to \\(1/n\\). Random sampling followed by exact testing gives a construction algorithm. Shoup and others also study deterministic constructions and faster algorithms.</p>",
         "citations": [
           {
             "key": "LidlNiederreiter1997",
@@ -616,7 +616,7 @@
       {
         "id": "primitive-and-prescribed",
         "title": "Primitive polynomials and prescribed coefficients",
-        "body": "<p>An irreducible polynomial of degree \\(n\\) is <em>primitive</em> if a root generates \\(\\mathbb F_{q^n}^{\\times}\\), a group of order \\(q^n-1\\). This is a statement about the multiplicative order of a root, not about the order of the Galois group. For the quartic above, the root \\(\\alpha\\) has order 15: \\(\\alpha^3\\ne1\\) and \\(\\alpha^5=\\alpha^2+\\alpha\\ne1\\), excluding the proper maximal divisors 5 and 3 of 15.</p><p>Prescribing coefficients, insisting on a sparse polynomial, or asking for a primitive root changes the counting problem. The Hansen–Mullen irreducibility problem and the stronger primitivity problem are different. Wan’s theorem and the finite checks of Ham–Mullen concern irreducibility; Tuxanidy–Wang give a later proof. Results prescribing several coefficients have parameter restrictions; in particular a prescribed constant coefficient zero rules out irreducibility in degree greater than one.</p>",
+        "body": "<p>An irreducible polynomial of degree \\(n\\) is <em>primitive</em> if a root generates \\(\\mathbb F_{q^n}^{\\times}\\), a group of order \\(q^n-1\\). Primitivity concerns the multiplicative order of a root; the Galois group remains cyclic, with order equal to the degree of the polynomial. For the quartic above, the root \\(\\alpha\\) has order 15: \\(\\alpha^3\\ne1\\) and \\(\\alpha^5=\\alpha^2+\\alpha\\ne1\\), excluding the proper maximal divisors 5 and 3 of 15.</p><p>Prescribed coefficients, sparse support, and primitivity impose different restrictions on the counting problem. The Hansen–Mullen primitivity problem is stronger than its irreducibility problem. Wan’s theorem and the finite checks of Ham–Mullen concern irreducibility; Tuxanidy–Wang give a later proof. Results on several prescribed coefficients have restrictions on the parameters. In particular, a zero constant coefficient precludes irreducibility in degree greater than one.</p>",
         "citations": [
           {
             "key": "HansenMullen1992",
@@ -642,8 +642,8 @@
       },
       {
         "id": "parity-boundary",
-        "title": "Parity gives an obstruction, not a certificate",
-        "body": "<p>For a squarefree polynomial of degree \\(n\\) with \\(r\\) irreducible factors over a finite field of odd order, Frobenius has sign \\((-1)^{n-r}\\). Its discriminant is a square exactly when \\(n-r\\) is even. This is the Stickelberger discriminant-parity theorem. Swan develops its characteristic-two lifting form and applies it to trinomials. An admissible parity of the number of factors still allows several factors; it does not prove irreducibility.</p>",
+        "title": "Discriminants and factor parity",
+        "body": "<p>For a squarefree polynomial of degree \\(n\\) with \\(r\\) irreducible factors over a finite field of odd order, Frobenius has sign \\((-1)^{n-r}\\). Its discriminant is a square exactly when \\(n-r\\) is even. This is the Stickelberger discriminant-parity theorem. Swan develops its characteristic-two lifting form and applies it to trinomials. The required parity may still allow several factors, so it does not prove irreducibility.</p>",
         "citations": [
           {
             "key": "Swan1962",
@@ -686,7 +686,7 @@
         "title": "Which prescribed supports admit irreducibles over a fixed finite field?",
         "status": "Research direction",
         "scope": "A specified finite field, degree, and support",
-        "body": "<p>Existence without coefficient restrictions is settled by the counting formula. Prescribing a support or coefficient pattern can introduce obstructions and is a separate question. A useful project should identify the exact support, exclude forced factors, and publish reproducible certificates together with any general theorem.</p>",
+        "body": "<p>The counting formula proves existence without coefficient restrictions. A prescribed support or coefficient pattern may force factors, and existence must then be studied for that pattern. Exact certificates can establish individual cases; a general result requires a uniform argument.</p>",
         "citations": [
           {
             "key": "HansenMullen1992"
@@ -706,7 +706,7 @@
     "title": "Absolute irreducibility and Newton polytopes",
     "kind": "method",
     "subject": "multivariate",
-    "summary": "Use the shape of a multivariate support to forbid factors over every algebraic extension, then understand the limits of a coefficient-free test.",
+    "summary": "An indecomposable Newton polytope can prove absolute irreducibility. When the polytope decomposes, factorization depends on the coefficients.",
     "level": "Intermediate",
     "field": "arbitrary fields",
     "status": "Published results",
@@ -714,7 +714,7 @@
     "questionsAnswered": [
       "How does absolute irreducibility differ from irreducibility over the ground field?",
       "When does the Newton polytope certify absolute irreducibility?",
-      "Why is a decomposable polytope only an inconclusive result?"
+      "Why does a decomposable polytope leave irreducibility undecided?"
     ],
     "prerequisites": [
       "foundations"
@@ -722,8 +722,8 @@
     "sections": [
       {
         "id": "absolute",
-        "title": "Why the multivariate question is different",
-        "body": "<p>A nonconstant \\(f\\in K[x_1,\\ldots,x_r]\\) is <em>absolutely irreducible</em> if it remains irreducible over \\(\\overline K\\). For a univariate polynomial this forces degree one. With several variables it is a rich condition: the coordinate ring of the hypersurface defined by \\(f\\) stays a domain after extending to \\(\\overline K\\); the hypersurface is geometrically integral.</p><p>For example, \\(x^2+y^2\\) is irreducible over \\(\\mathbb Q\\) but factors over \\(\\mathbb Q(i)\\) as \\((x+iy)(x-iy)\\). A certificate of rational irreducibility therefore does not automatically certify absolute irreducibility. One must also keep irreducibility of a polynomial separate from smoothness of its zero set.</p>",
+        "title": "Absolute irreducibility",
+        "body": "<p>A nonconstant \\(f\\in K[x_1,\\ldots,x_r]\\) is <em>absolutely irreducible</em> if it remains irreducible over \\(\\overline K\\). For a univariate polynomial this forces degree one. In several variables, this means that the coordinate ring of the hypersurface defined by \\(f\\) remains a domain after extension to \\(\\overline K\\). Equivalently, the hypersurface is geometrically integral.</p><p>For example, \\(x^2+y^2\\) is irreducible over \\(\\mathbb Q\\) but factors over \\(\\mathbb Q(i)\\) as \\((x+iy)(x-iy)\\). Irreducibility over the ground field therefore does not imply absolute irreducibility. Irreducibility and smoothness of the hypersurface are also distinct properties.</p>",
         "citations": [
           {
             "key": "Gao2001Polytopes",
@@ -737,8 +737,8 @@
       },
       {
         "id": "polytope",
-        "title": "Support, Minkowski sums, and factors",
-        "body": "<p>For \\(f=\\sum_{\\mathbf a}c_{\\mathbf a}x^{\\mathbf a}\\), its Newton polytope is</p>\\[\\operatorname{Newt}(f)=\\operatorname{conv}\\{\\mathbf a\\in\\mathbb Z_{\\ge0}^{r}:c_{\\mathbf a}\\ne0\\}.\\]<p>A product obeys \\(\\operatorname{Newt}(gh)=\\operatorname{Newt}(g)+\\operatorname{Newt}(h)\\), where the right side is the Minkowski sum. To see why cancellation cannot destroy a vertex, choose a linear weight uniquely exposing the corresponding vertices of the two factor polytopes. The product of the two highest-weight terms is then nonzero and uniquely highest. Varying the weight determines the entire polytope.</p><p>A lattice polytope is integrally indecomposable if every expression as a sum of two lattice polytopes has a point as one summand. A point polytope corresponds to a monomial, not necessarily to a constant.</p>",
+        "title": "Newton polytopes and products",
+        "body": "<p>For \\(f=\\sum_{\\mathbf a}c_{\\mathbf a}x^{\\mathbf a}\\), its Newton polytope is</p>\\[\\operatorname{Newt}(f)=\\operatorname{conv}\\{\\mathbf a\\in\\mathbb Z_{\\ge0}^{r}:c_{\\mathbf a}\\ne0\\}.\\]<p>For a product, \\(\\operatorname{Newt}(gh)=\\operatorname{Newt}(g)+\\operatorname{Newt}(h)\\), where the right side is the Minkowski sum. For a linear weight with unique maxima on the two factor polytopes, the product of the highest-weight terms is nonzero and is the unique highest-weight term of the product. Varying the weight determines the polytope and proves the identity.</p><p>A lattice polytope is integrally indecomposable if every expression as a sum of two lattice polytopes has a point as one summand. A point polytope corresponds to a monomial, not necessarily to a constant.</p>",
         "citations": [
           {
             "key": "GaoLauder2001",
@@ -749,8 +749,8 @@
       },
       {
         "id": "criterion",
-        "title": "A certificate that survives all coefficient fields",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Newton-polytope criterion</p><p>Let \\(f\\in K[x_1,\\ldots,x_r]\\) be nonconstant and divisible by no variable \\(x_i\\). If \\(\\operatorname{Newt}(f)\\) is integrally indecomposable, then \\(f\\) is absolutely irreducible.</p></div><div class=\"math-block proof\"><p>Any factorization over \\(\\overline K\\) decomposes the same lattice polytope. One factor must therefore have point support and be a monomial. Since no variable divides \\(f\\), that factor is a nonzero constant. This excludes every nontrivial factorization.</p></div><p>The coefficients matter only through which terms are nonzero. The certificate remains valid if coefficients change in any field while the relevant support and its indecomposability remain intact.</p>",
+        "title": "The indecomposability criterion",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Newton-polytope criterion)</p><p>Let \\(f\\in K[x_1,\\ldots,x_r]\\) be nonconstant and divisible by no variable \\(x_i\\). If \\(\\operatorname{Newt}(f)\\) is integrally indecomposable, then \\(f\\) is absolutely irreducible.</p></div><div class=\"math-block proof\"><p>Any factorization over \\(\\overline K\\) decomposes the same lattice polytope. One factor must therefore have point support and be a monomial. Since no variable divides \\(f\\), that factor is a nonzero constant. This excludes every nontrivial factorization.</p></div><p>The criterion depends only on the support. It remains valid after changing the nonzero coefficients, over any field, provided the support is unchanged.</p>",
         "citations": [
           {
             "key": "Gao2001Polytopes",
@@ -765,8 +765,8 @@
       },
       {
         "id": "triangle-example",
-        "title": "Example: a sparse triangle in every characteristic",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Worked example</p><p>Consider \\(f=1+x^2y+xy^3\\) over any field. Its Newton polygon has vertices \\((0,0),(2,1),(1,3)\\). The oriented edge vectors are \\((2,1),(-1,2),(-1,-3)\\), all primitive integer vectors.</p><p>A nontrivial Minkowski summand of a triangle must itself be a triangle with parallel corresponding edges; a segment summand would introduce another edge direction. The two triangular summands would therefore divide each edge into two positive integral lengths. A primitive edge has lattice length one, so this is impossible. The polygon is integrally indecomposable. The constant term excludes monomial factors, and the criterion proves absolute irreducibility in every characteristic.</p></div>",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Consider \\(f=1+x^2y+xy^3\\) over any field. Its Newton polygon has vertices \\((0,0),(2,1),(1,3)\\). The oriented edge vectors are \\((2,1),(-1,2),(-1,-3)\\), all primitive integer vectors.</p><p>A nontrivial Minkowski summand of a triangle must itself be a triangle with parallel corresponding edges; a segment summand would introduce another edge direction. The two triangular summands would therefore divide each edge into two positive integral lengths. A primitive edge has lattice length one, so this is impossible. The polygon is integrally indecomposable. The nonzero constant term excludes nonconstant monomial factors. The criterion therefore proves absolute irreducibility in every characteristic.</p></div>",
         "citations": [
           {
             "key": "Gao2001Polytopes",
@@ -776,8 +776,8 @@
       },
       {
         "id": "failures",
-        "title": "Two indispensable limitations",
-        "body": "<div class=\"math-block boundary\"><p><strong>Do not forget monomials.</strong> The polynomial \\(x(1+x+y)\\) has a translated indecomposable triangle as its Newton polygon, yet visibly factors. The hypothesis excluding variable divisors is essential.</p><p><strong>The converse is false.</strong> Over a field of characteristic different from two, \\(x^2+y^2+1\\) is absolutely irreducible, although its polygon is twice the standard simplex and hence decomposable. Its projective homogenization \\(X^2+Y^2+Z^2\\) is nonsingular; a reducible projective conic over an algebraically closed field is a pair of lines, possibly repeated, and is singular. In characteristic two this example becomes \\((x+y+1)^2\\), illustrating the importance of the field.</p></div>",
+        "title": "Limitations",
+        "body": "<div class=\"math-block boundary\"><p><strong>Monomial factors.</strong> The polynomial \\(x(1+x+y)\\) has a translated indecomposable triangle as its Newton polygon, but has a nonconstant monomial factor. The hypothesis excluding variable divisors is essential.</p><p><strong>The converse is false.</strong> Over a field of characteristic different from two, \\(x^2+y^2+1\\) is absolutely irreducible, although its polygon is twice the standard simplex and hence decomposable. Its projective homogenization \\(X^2+Y^2+Z^2\\) is nonsingular; a reducible projective conic over an algebraically closed field is a pair of lines, possibly repeated, and is singular. In characteristic two this example becomes \\((x+y+1)^2\\), so the characteristic restriction is necessary.</p></div>",
         "citations": [
           {
             "key": "GaoLauder2001",
@@ -788,8 +788,8 @@
       },
       {
         "id": "beyond-shape",
-        "title": "When geometry alone is not enough",
-        "body": "<p>If the polytope decomposes, actual coefficients decide whether the potential factors exist. Effective Noether forms describe the reducibility locus precisely. Fix a total-degree bound \\(d\\). There are finitely many integer polynomials in the coefficient variables such that all of them vanish exactly when the specialized polynomial is reducible over the algebraic closure or its total degree drops below \\(d\\). Thus, for a polynomial of <em>exact</em> degree \\(d\\), absolute irreducibility is certified by at least one nonzero Noether form. In positive characteristic, reduce the integer coefficients of the forms modulo that characteristic. Differential methods instead recover factor information through linear systems. For a squarefree bivariate \\(f=\\prod_i f_i\\) in characteristic zero, the identity</p>\\[\\frac{df}{f}=\\sum_i\\frac{df_i}{f_i}\\]<p>suggests looking for closed rational one-forms with denominator \\(f\\). Writing such a form as \\((g/f)\\,dx+(h/f)\\,dy\\) gives the polynomial linear equation</p>\\[f\\,(g_y-h_x)=g f_y-h f_x.\\]<p>Degree bounds and characteristic hypotheses are essential when turning this observation into an algorithm. Gao’s paper develops the method in characteristic zero or sufficiently large characteristic; arbitrary small characteristic requires separate care.</p><p>The practical strategy is to try a cheap polytope certificate first, then use coefficient-sensitive factorization when the shape test is inconclusive. A single reducible specialization \\(f(x,t)\\) does not establish that \\(f(x,y)\\) itself is reducible.</p>",
+        "title": "Coefficient criteria and differential methods",
+        "body": "<p>If the polytope decomposes, the coefficients determine whether a factorization exists. Effective Noether forms describe the reducibility locus. Fix a total-degree bound \\(d\\). There are finitely many integer polynomials in the coefficient variables such that all of them vanish exactly when the specialized polynomial is reducible over the algebraic closure or its total degree drops below \\(d\\). Thus, for a polynomial of <em>exact</em> degree \\(d\\), absolute irreducibility is certified by at least one nonzero Noether form. In positive characteristic, reduce the integer coefficients of the forms modulo that characteristic. Differential methods instead recover factor information through linear systems. For a squarefree bivariate \\(f=\\prod_i f_i\\) in characteristic zero, the identity</p>\\[\\frac{df}{f}=\\sum_i\\frac{df_i}{f_i}\\]<p>suggests looking for closed rational one-forms with denominator \\(f\\). Writing such a form as \\((g/f)\\,dx+(h/f)\\,dy\\) gives the polynomial linear equation</p>\\[f\\,(g_y-h_x)=g f_y-h f_x.\\]<p>An algorithm based on this equation requires degree bounds and hypotheses on the characteristic. Gao’s paper develops the method in characteristic zero or sufficiently large characteristic; small characteristic requires separate arguments.</p><p>The polytope criterion can be applied before methods that use the coefficients. A reducible specialization \\(f(x,t)\\) does not establish that \\(f(x,y)\\) itself is reducible.</p>",
         "citations": [
           {
             "key": "Kaltofen1995",
@@ -826,21 +826,21 @@
       {
         "id": "factorization-algorithms",
         "relation": "Applies to",
-        "why": "Shape certificates can precede more expensive coefficient-sensitive factoring."
+        "why": "The polytope criterion can precede factorization methods that use the coefficients."
       },
       {
         "id": "specialization",
         "relation": "Contrasts with",
-        "why": "Specialized factorization and generic multivariate factorization have different quantifiers."
+        "why": "Factorization of a specialization need not imply factorization of the multivariate polynomial."
       }
     ],
     "questions": [
       {
         "id": "beyond-newton-support",
-        "title": "Which coefficient conditions resolve a decomposable support?",
+        "title": "Which coefficient conditions imply absolute irreducibility when the Newton polytope decomposes?",
         "status": "Research direction",
         "scope": "A fixed multivariate support and a specified coefficient field",
-        "body": "<p>The polytope gives possible factor shapes but generally does not decide whether those shapes occur. One can study the corresponding reducibility locus in coefficient space or combine sparse geometry with differential or lifting methods. This is a program for a specified family, not a claim that absolute factorization is algorithmically undecidable.</p>",
+        "body": "<p>A decomposition of the polytope gives possible supports of factors, but does not determine whether those factors exist. For a specified family, one can study the reducibility locus in coefficient space or combine the support conditions with differential or lifting methods. The question concerns criteria adapted to that family, rather than a general factorization algorithm.</p>",
         "citations": [
           {
             "key": "GaoLauder2001",
