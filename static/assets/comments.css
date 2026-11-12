@@ -36,6 +36,9 @@
 .comments-status { margin-block: .8rem; color: var(--muted, #56634f); }
 .comments-status:empty { display: none; }
 .comments-mount { margin-top: 1.5rem; min-width: 0; }
+.comments-mount #graphcomment { min-height: 341px; }
+@media (min-width: 501px) { .comments-mount #graphcomment { min-height: 304px; } }
+@media (min-width: 600px) { .comments-mount #graphcomment { min-height: 286px; } }
 .question-card > .question-discuss { display: table; margin-top: .75rem; }
 .comments-section [hidden] { display: none !important; }
 @media (max-width: 520px) {

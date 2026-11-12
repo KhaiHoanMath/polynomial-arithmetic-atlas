@@ -1,7 +1,7 @@
 // Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 import { readFile } from 'node:fs/promises';
 
-const keys = new Set(['enabled', 'provider', 'website_id', 'moderation_verified']);
+const keys = new Set(['enabled', 'provider', 'shortname', 'moderation_verified']);
 const threadPattern = /^(?:page|article|question):[a-z0-9]+(?:[._:-][a-z0-9]+)*$/;
 const escapeHTML = value => String(value).replace(/[&<>"']/g, character => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
@@ -17,19 +17,17 @@ function validateConfig(value) {
   if (typeof value.enabled !== 'boolean' || typeof value.moderation_verified !== 'boolean') {
     throw new Error('Comments enabled and moderation_verified must be booleans.');
   }
-  if (value.provider !== 'hyvor') throw new Error('Only the hyvor comments provider is supported.');
-  const websiteId = typeof value.website_id === 'number' && Number.isSafeInteger(value.website_id)
-    ? String(value.website_id) : value.website_id;
-  if (typeof websiteId !== 'string' || (websiteId !== '' && !/^[1-9]\d*$/.test(websiteId))) {
-    throw new Error('Comments website_id must be blank or a positive decimal integer.');
+  if (value.provider !== 'graphcomment') throw new Error('Only the graphcomment provider is supported.');
+  if (typeof value.shortname !== 'string' || (value.shortname !== '' && !/^[A-Za-z0-9][A-Za-z0-9_-]{0,127}$/.test(value.shortname))) {
+    throw new Error('Comments shortname must be blank or a GraphComment site identifier.');
   }
-  if (value.enabled && (!websiteId || !value.moderation_verified)) {
-    throw new Error('Enabling comments requires a website_id and completed moderation verification.');
+  if (value.enabled && (!value.shortname || !value.moderation_verified)) {
+    throw new Error('Enabling comments requires a shortname and completed moderation verification.');
   }
   return Object.freeze({
     enabled: value.enabled,
-    provider: 'hyvor',
-    website_id: websiteId,
+    provider: 'graphcomment',
+    shortname: value.shortname,
     moderation_verified: value.moderation_verified
   });
 }
@@ -84,15 +82,15 @@ export function renderComments(config, { id, title, url, threads } = {}) {
     if (!groups.has(thread.group)) groups.set(thread.group, []);
     groups.get(thread.group).push(thread);
   }
-  const selector = threads !== undefined ? `<label class="comments-topic" for="comments-topic">Discussion
+  const selector = threads !== undefined ? `<label class="comments-topic" for="comments-topic">Page or question
     <select id="comments-topic" data-comments-select>${[...groups].map(([group, members]) =>
       `<optgroup label="${escapeHTML(group)}">${members.map(thread =>
         `<option value="${escapeHTML(thread.id)}" data-thread-title="${escapeHTML(thread.title)}" data-thread-url="${escapeHTML(thread.url)}"${thread.id === context.id ? ' selected' : ''}>${escapeHTML(thread.title)}</option>`
       ).join('')}</optgroup>`
     ).join('')}</select></label>` : '';
-  return `<section id="comments" class="comments-section container narrow" data-comments data-website-id="${escapeHTML(config.website_id)}" data-moderation-verified="true" data-thread-id="${escapeHTML(context.id)}" data-thread-title="${escapeHTML(context.title)}" data-thread-url="${escapeHTML(context.url)}" aria-labelledby="comments-heading">
-    <h2 id="comments-heading">Comments</h2>
-    <p id="comments-notice" class="comments-notice">Comments appear after the site owner approves them. Showing comments connects to Hyvor Talk. <a href="https://hyvor.com/talk/privacy" rel="noopener noreferrer">Privacy policy</a>.</p>
+  return `<section id="comments" class="comments-section container narrow" data-comments data-shortname="${escapeHTML(config.shortname)}" data-moderation-verified="true" data-thread-id="${escapeHTML(context.id)}" data-thread-title="${escapeHTML(context.title)}" data-thread-url="${escapeHTML(context.url)}" aria-labelledby="comments-heading">
+    <h2 id="comments-heading">${threads !== undefined ? 'Discussion' : 'Comments'}</h2>
+    <p id="comments-notice" class="comments-notice">Corrections, references, and questions are welcome. Comments appear after the site owner approves them. Showing comments connects to GraphComment. <a href="https://www.graphcomment.com/en/commenter-privacy" rel="noopener noreferrer">Privacy policy</a>.</p>
     ${selector}
     <button class="button button-outline comments-load" type="button" data-comments-load aria-describedby="comments-notice" aria-controls="comments-mount">Show comments</button>
     <p class="comments-status" data-comments-status role="status" aria-live="polite" aria-atomic="true"></p>

@@ -1,8 +1,7 @@
 // Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 (() => {
   'use strict';
-  const moduleURL = 'https://talk.hyvor.com/embed/embed.js';
-  const componentName = 'hyvor-talk-comments';
+  const scriptURL = 'https://integration.graphcomment.com/gc_graphlogin.js';
   const timeoutMs = 20000;
   let providerReady;
 
@@ -17,25 +16,27 @@
   }
 
   function loadProvider() {
-    if (!window.customElements) return Promise.reject(new Error('Web Components are unavailable.'));
-    if (customElements.get(componentName)) return Promise.resolve();
+    if (typeof window.__semio__gc_graphlogin === 'function') return Promise.resolve();
     if (!providerReady) {
       providerReady = new Promise((resolve, reject) => {
         const script = document.createElement('script');
-        script.src = moduleURL;
-        script.type = 'module';
+        script.src = scriptURL;
         script.async = true;
-        script.dataset.commentsProvider = 'hyvor';
-        script.addEventListener('error', () => {
+        script.dataset.commentsProvider = 'graphcomment';
+        const failed = () => {
           script.remove();
           providerReady = undefined;
           reject(new Error('Comments script could not load.'));
+        };
+        script.addEventListener('error', failed, { once: true });
+        script.addEventListener('load', () => {
+          if (typeof window.__semio__gc_graphlogin !== 'function') return failed();
+          resolve();
         }, { once: true });
-        customElements.whenDefined(componentName).then(resolve, reject);
         document.head.appendChild(script);
       });
     }
-    // A timeout does not insert another script: a slow request can still finish.
+    // Reuse a slow request on retry; never insert a second pending loader.
     return withTimeout(providerReady);
   }
 
@@ -59,11 +60,11 @@
     const mount = section.querySelector('[data-comments-mount]');
     const select = section.querySelector('[data-comments-select]');
     if (!button || !status || !mount) return;
-    const websiteId = section.dataset.websiteId;
+    const shortname = section.dataset.shortname;
     let current;
     const threads = new Map();
     try {
-      if (!/^[1-9]\d*$/.test(websiteId) || section.dataset.moderationVerified !== 'true') {
+      if (!/^[A-Za-z0-9][A-Za-z0-9_-]{0,127}$/.test(shortname ?? '') || section.dataset.moderationVerified !== 'true') {
         throw new Error('Comments have not been configured.');
       }
       current = readThread(section.dataset.threadId, section.dataset.threadTitle, section.dataset.threadUrl);
@@ -77,7 +78,6 @@
         threads.set(thread.id, thread);
       }
       const requested = new URLSearchParams(window.location.search).get('thread');
-      // URL parameters can only choose a thread already emitted by the build.
       if (requested && threads.has(requested)) {
         current = threads.get(requested);
         if (select) select.value = requested;
@@ -89,96 +89,88 @@
       return;
     }
 
-    let generation = 0;
-    let cancelEmbed;
-    function clearEmbed() {
-      if (cancelEmbed) cancelEmbed();
-      cancelEmbed = undefined;
-      mount.replaceChildren();
-      mount.hidden = true;
-    }
+    // GraphComment uses a page-wide loader. Navigate when changing discussions
+    // so a delayed callback can never display the previous discussion's thread.
     select?.addEventListener('change', () => {
       const next = threads.get(select.value);
       if (!next || next.id === current.id) return;
-      generation += 1;
-      current = next;
-      clearEmbed();
-      button.hidden = false;
-      button.disabled = false;
-      button.textContent = 'Show comments';
-      status.textContent = '';
-      section.removeAttribute('aria-busy');
+      const destination = new URL(window.location.href);
+      destination.searchParams.set('thread', next.id);
+      destination.hash = 'comments';
+      window.location.assign(destination.href);
     });
 
+    let initialized = false;
+    let reloadRequired = false;
     button.addEventListener('click', async () => {
       if (button.disabled) return;
-      const attempt = ++generation;
-      const thread = current;
+      if (reloadRequired) {
+        window.location.reload();
+        return;
+      }
       button.disabled = true;
       if (select) select.disabled = true;
       section.setAttribute('aria-busy', 'true');
       status.textContent = 'Loading comments…';
-      clearEmbed();
+      let finishEmbed;
       try {
-        await loadProvider();
-        if (attempt !== generation) return;
-        const embed = document.createElement(componentName);
-        embed.setAttribute('website-id', websiteId);
-        embed.setAttribute('page-id', thread.id);
-        embed.setAttribute('page-url', thread.url);
-        embed.setAttribute('page-title', thread.title);
-        embed.setAttribute('loading', 'manual');
-        embed.setAttribute('settings', JSON.stringify({
-          editor: { math: true, images: false, gifs: false, embeds: false },
-          top_widget: 'none'
-        }));
-        let stopThisEmbed;
         const ready = new Promise((resolve, reject) => {
           let settled = false;
-          const finish = error => {
+          let timer;
+          finishEmbed = error => {
             if (settled) return;
             settled = true;
             clearTimeout(timer);
-            embed.removeEventListener('loaded', loaded);
-            if (cancelEmbed === stopThisEmbed) cancelEmbed = undefined;
             error ? reject(error) : resolve();
           };
-          const loaded = () => finish();
-          const timer = setTimeout(() => finish(new Error('Comments could not finish loading.')), timeoutMs);
-          stopThisEmbed = () => finish(new Error('Comment thread changed.'));
-          cancelEmbed = stopThisEmbed;
-          embed.addEventListener('loaded', loaded, { once: true });
+          // The provider invokes this callback when its widget is ready.
+          // It is registered before the provider script runs, as documented.
+          window.onGcLoaded = () => {
+            if (initialized) finishEmbed();
+          };
+          // The provider's CSP guide documents this name for custom init scripts.
+          window.__semio__onGcLoaded = window.onGcLoaded;
+          // Start the widget timeout only after the loader has completed.
+          finishEmbed.startTimer = () => {
+            timer = setTimeout(() => finishEmbed(new Error('Comments did not finish loading.')), timeoutMs);
+          };
         });
-        mount.replaceChildren(embed);
-        try {
-          // Listen before calling load(), including if the provider resolves immediately.
-          const loading = embed.load();
-          if (loading && typeof loading.catch === 'function') loading.catch(() => stopThisEmbed());
-        } catch (error) {
-          stopThisEmbed();
-          await ready.catch(() => {});
-          throw error;
-        }
-        await ready;
-        if (attempt !== generation) return;
+        // Attach a rejection handler before the asynchronous loader can fail.
+        ready.catch(() => {});
+        await loadProvider();
+        const container = document.createElement('div');
+        container.id = 'graphcomment';
+        mount.replaceChildren(container);
         mount.hidden = false;
+        initialized = true;
+        finishEmbed.startTimer();
+        window.__semio__gc_graphlogin({
+          graphcommentId: shortname,
+          behaviour: { uid: current.id, url: current.url, sort: 'oldest' },
+          statistics: { pageTitle: current.title }
+        });
+        await ready;
         button.hidden = true;
-        status.textContent = `Comments for ${thread.title}.`;
+        status.textContent = `Comments for ${current.title}.`;
       } catch {
-        if (attempt !== generation) return;
-        clearEmbed();
+        finishEmbed?.(new Error('Comments could not load.'));
+        mount.hidden = true;
         button.hidden = false;
-        button.textContent = 'Try again';
-        status.textContent = 'Comments could not load. Please try again.';
+        // Once initialized, recover with a full page reload: no second init or
+        // reused global callback can race a delayed provider response.
+        reloadRequired = initialized;
+        button.textContent = reloadRequired ? 'Reload page' : 'Try again';
+        status.textContent = reloadRequired
+          ? 'Comments did not finish loading. Reload this page to try again.'
+          : 'Comments could not load. Please try again.';
       } finally {
-        if (attempt === generation) {
-          button.disabled = false;
-          if (select) select.disabled = false;
-          section.removeAttribute('aria-busy');
-        }
+        button.disabled = false;
+        if (select) select.disabled = false;
+        section.removeAttribute('aria-busy');
       }
     });
   }
 
-  for (const section of document.querySelectorAll('[data-comments]')) setup(section);
+  const sections = document.querySelectorAll('[data-comments]');
+  if (sections.length === 1) setup(sections[0]);
 })();

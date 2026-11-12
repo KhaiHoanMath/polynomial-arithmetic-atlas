@@ -66,4 +66,4 @@ visibility so the website remains available.
 
 ## Moderated comments
 
-The prepared Hyvor Talk integration is disabled until the owner supplies a website ID and verifies approval-before-publication in the service dashboard. See [COMMENTS.md](COMMENTS.md) for setup and acceptance checks. No third-party comment script loads while disabled. When enabled, comments load only when a reader selects “Show comments”; article and question threads use stable IDs.
+The prepared GraphComment Basic integration is disabled until the owner supplies the site's public shortname and verifies approval before publication in GraphComment. See [COMMENTS.md](COMMENTS.md) for setup and acceptance checks. No third-party comment script loads while disabled. When enabled, comments load only when a reader selects “Show comments”; article and question threads use stable IDs.

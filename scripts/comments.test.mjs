@@ -8,8 +8,8 @@ import test from 'node:test';
 import vm from 'node:vm';
 import { loadComments, renderComments } from './comments.mjs';
 
-const disabled = { enabled: false, provider: 'hyvor', website_id: '', moderation_verified: false };
-const enabled = { ...disabled, enabled: true, website_id: '123', moderation_verified: true };
+const disabled = { enabled: false, provider: 'graphcomment', shortname: '', moderation_verified: false };
+const enabled = { ...disabled, enabled: true, shortname: 'polynomial-atlas', moderation_verified: true };
 const context = { id: 'article:fekete', title: 'Fekete polynomials', url: 'https://example.test/atlas/articles/fekete.html' };
 const question = { id: 'question:fekete-prime', title: 'A question', url: 'https://example.test/atlas/questions.html#question-fekete-prime', group: 'Questions' };
 
@@ -30,20 +30,21 @@ test('disabled configuration renders nothing and needs no thread', async () => {
   assert.ok(Object.isFrozen(config));
 });
 
-test('enabled configuration requires an ID and explicit moderation verification', async () => {
+test('enabled configuration requires a valid shortname and explicit moderation verification', async () => {
   for (const config of [
     { ...disabled, enabled: true },
     { ...enabled, moderation_verified: false },
     { ...enabled, moderation_verified: 'true' },
     { ...enabled, provider: 'giscus' },
-    { ...enabled, website_id: '0' },
-    { ...enabled, website_id: '-2' },
-    { ...enabled, website_id: '1e3' },
-    { ...enabled, website_id: ' 123' },
-    { ...enabled, website_id: Number.MAX_SAFE_INTEGER + 1 },
-    { ...enabled, moderation_verifed: true }
+    { ...enabled, shortname: 123 },
+    { ...enabled, shortname: ' atlas' },
+    { ...enabled, shortname: 'atlas/site' },
+    { ...enabled, shortname: '\"><script>' },
+    { ...enabled, shortname: 'a'.repeat(129) },
+    { ...enabled, moderation_verifed: true },
+    { ...enabled, website_id: '123' }
   ]) await assert.rejects(readFixture(config));
-  assert.equal((await readFixture({ ...enabled, website_id: 123 })).website_id, '123');
+  assert.equal((await readFixture(enabled)).shortname, 'polynomial-atlas');
 });
 
 test('markup escapes titles and groups and contains no provider component or script', () => {
@@ -56,11 +57,14 @@ test('markup escapes titles and groups and contains no provider component or scr
   assert.ok(html.includes('&quot;&gt;&lt;img src=x onerror=alert(1)&gt;'));
   assert.ok(!html.includes('<script'));
   assert.ok(!html.includes('<img'));
-  assert.ok(!html.includes('<hyvor-talk-comments'));
-  assert.ok(!html.includes('embed.js'));
+  assert.ok(!html.includes('<iframe'));
+  assert.ok(!html.includes('gc_graphlogin.js'));
   assert.ok(html.includes('aria-live="polite"'));
   assert.ok(html.includes('data-thread-id="article:fekete"'));
   assert.ok(html.includes('value="question:fekete-prime"'));
+  assert.ok(html.includes('<h2 id="comments-heading">Discussion</h2>'));
+  assert.ok(html.includes('>Page or question'));
+  assert.ok(renderComments(enabled, context).includes('<h2 id="comments-heading">Comments</h2>'));
 });
 
 test('threads have unique stable keys and safe same-origin URLs with exact question anchors', () => {
@@ -76,7 +80,7 @@ test('threads have unique stable keys and safe same-origin URLs with exact quest
   assert.throws(() => renderComments(enabled, { ...context, threads: [{ ...context, title: 'Different' }] }), /Conflicting/);
 });
 
-// A minimal DOM harness checks the request boundary without contacting Hyvor.
+// A minimal DOM harness checks the request boundary without contacting GraphComment.
 class Element {
   constructor(tag = 'div') {
     this.tagName = tag;
@@ -111,90 +115,102 @@ class Element {
 async function browserHarness(search = '', options = {}) {
   const source = await readFile(new URL('../static/assets/comments.js', import.meta.url), 'utf8');
   const section = new Element();
-  section.dataset = { websiteId: '123', moderationVerified: 'true', threadId: context.id, threadTitle: context.title, threadUrl: context.url };
+  section.dataset = { shortname: 'polynomial-atlas', moderationVerified: 'true', threadId: context.id, threadTitle: context.title, threadUrl: context.url, ...options.dataset };
   const button = new Element('button');
   const status = new Element('p');
   const mount = new Element();
+  mount.hidden = true;
   const select = new Element('select');
   select.value = context.id;
   select.options = [context, question].map(thread => ({ value: thread.id, dataset: { threadTitle: thread.title, threadUrl: thread.url } }));
   const children = { '[data-comments-load]': button, '[data-comments-status]': status, '[data-comments-mount]': mount, '[data-comments-select]': select };
   section.querySelector = selector => children[selector];
   const head = new Element('head');
-  const embeds = [];
-  let define;
-  let registered = false;
-  const definition = new Promise(resolve => { define = () => { registered = true; resolve(); }; });
-  const customElements = { get: () => registered, whenDefined: () => definition };
+  const initializations = [];
+  const navigations = [];
+  let reloads = 0;
   const document = {
     head,
     querySelectorAll: () => [section],
-    createElement: name => {
-      const element = new Element(name);
-      if (name === 'hyvor-talk-comments') {
-        embeds.push(element);
-        element.load = () => {
-          element.loaded = true;
-          if (!options.manualLoaded) queueMicrotask(() => element.dispatch('loaded'));
-          if (options.loadingPromise) return new Promise((resolve, reject) => {
-            element.rejectLoad = reject;
-          });
-        };
-      }
-      return element;
-    }
+    createElement: name => new Element(name)
   };
   const timers = new Map();
   let timerId = 0;
   const fakeTimeout = callback => { timers.set(++timerId, callback); return timerId; };
-  const sandbox = { document, window: { location: { search }, customElements }, customElements, URL, URLSearchParams,
+  const window = { location: {
+    search,
+    href: 'https://example.test/atlas/comments.html' + search,
+    assign: value => navigations.push(value),
+    reload: () => { reloads++; }
+  } };
+  const sandbox = { document, window, URL, URLSearchParams,
     setTimeout: fakeTimeout, clearTimeout: id => timers.delete(id) };
   vm.runInNewContext(source, sandbox);
   const flush = () => new Promise(resolve => setImmediate(resolve));
-  return { section, button, status, mount, select, head, embeds, define, flush, timers };
+  const load = () => {
+    window.__semio__gc_graphlogin = params => {
+      initializations.push(JSON.parse(JSON.stringify(params)));
+      if (options.throwInit) throw new Error('Provider error');
+      if (!options.manualLoaded) queueMicrotask(() => window.onGcLoaded());
+    };
+    head.children.at(-1).dispatch('load');
+  };
+  const expire = () => { for (const callback of [...timers.values()]) callback(); };
+  return { section, button, status, mount, select, head, initializations, navigations, window,
+    load, flush, timers, expire, get reloads() { return reloads; } };
 }
 
 test('initialization and whitelisted query selection make no third-party requests', async () => {
   const harness = await browserHarness('?thread=question%3Afekete-prime');
   assert.equal(harness.select.value, question.id);
   assert.equal(harness.head.children.length, 0);
-  assert.equal(harness.embeds.length, 0);
+  assert.equal(harness.initializations.length, 0);
   harness.select.value = context.id;
   harness.select.dispatch('change');
   assert.equal(harness.head.children.length, 0);
+  assert.equal(harness.navigations[0], 'https://example.test/atlas/comments.html?thread=article%3Afekete#comments');
   const unknown = await browserHarness('?thread=question%3Aunknown');
   assert.equal(unknown.select.value, context.id);
   assert.equal(unknown.head.children.length, 0);
+  unknown.select.value = 'question:unknown';
+  unknown.select.dispatch('change');
+  assert.equal(unknown.navigations.length, 0);
 });
 
-test('explicit click loads the module once and binds only the selected known thread', async () => {
-  const harness = await browserHarness('?thread=question%3Afekete-prime');
-  harness.button.dispatch('click');
-  assert.equal(harness.head.children.length, 1);
-  assert.equal(harness.head.children[0].src, 'https://talk.hyvor.com/embed/embed.js');
-  assert.equal(harness.head.children[0].type, 'module');
-  assert.equal(harness.embeds.length, 0);
-  harness.define();
-  await harness.flush();
-  const embed = harness.embeds[0];
-  assert.equal(embed.attributes.get('page-id'), question.id);
-  assert.equal(embed.attributes.get('page-url'), question.url);
-  assert.equal(embed.attributes.get('loading'), 'manual');
-  assert.equal(JSON.parse(embed.attributes.get('settings')).editor.math, true);
-  assert.equal(harness.mount.hidden, false);
-  assert.equal(harness.button.hidden, true);
-  harness.select.value = context.id;
-  harness.select.dispatch('change');
-  assert.equal(harness.mount.children.length, 0);
-  assert.equal(harness.head.children.length, 1);
-  assert.equal(harness.embeds.length, 1);
-  harness.button.dispatch('click');
-  await harness.flush();
-  assert.equal(harness.head.children.length, 1);
-  assert.equal(harness.embeds[1].attributes.get('page-id'), context.id);
+test('missing moderation verification or invalid shortname prevents loading', async () => {
+  for (const dataset of [{ moderationVerified: 'false' }, { shortname: '' }, { shortname: '<script>' }]) {
+    const h = await browserHarness('', { dataset });
+    assert.equal(h.button.hidden, true);
+    h.button.dispatch('click');
+    assert.equal(h.head.children.length, 0);
+  }
 });
 
-test('failed script is retryable; timeout reuses the pending script', async () => {
+test('explicit click loads once and initializes only the selected stable thread', async () => {
+  const h = await browserHarness('?thread=question%3Afekete-prime');
+  h.button.dispatch('click');
+  h.button.dispatch('click');
+  assert.equal(h.head.children.length, 1);
+  assert.equal(h.head.children[0].src, 'https://integration.graphcomment.com/gc_graphlogin.js');
+  assert.equal(h.initializations.length, 0);
+  h.load();
+  await h.flush();
+  assert.equal(h.window.onGcLoaded, h.window.__semio__onGcLoaded);
+  assert.deepEqual(h.initializations, [{
+    graphcommentId: 'polynomial-atlas',
+    behaviour: { uid: question.id, url: question.url, sort: 'oldest' },
+    statistics: { pageTitle: question.title }
+  }]);
+  assert.equal(h.mount.children[0].id, 'graphcomment');
+  assert.equal(h.mount.hidden, false);
+  assert.equal(h.button.hidden, true);
+  h.select.value = context.id;
+  h.select.dispatch('change');
+  assert.equal(h.navigations.length, 1);
+  assert.equal(h.initializations.length, 1);
+});
+
+test('failed script is retryable; a timed-out pending script is reused', async () => {
   const failed = await browserHarness();
   failed.button.dispatch('click');
   failed.head.children[0].dispatch('error');
@@ -203,61 +219,60 @@ test('failed script is retryable; timeout reuses the pending script', async () =
   assert.equal(failed.head.children.length, 0);
   failed.button.dispatch('click');
   assert.equal(failed.head.children.length, 1);
-  failed.define();
+  failed.load();
   await failed.flush();
   assert.equal(failed.mount.hidden, false);
 
   const slow = await browserHarness();
   slow.button.dispatch('click');
-  for (const callback of [...slow.timers.values()]) callback();
+  slow.expire();
   await slow.flush();
   assert.equal(slow.button.textContent, 'Try again');
   slow.button.dispatch('click');
   assert.equal(slow.head.children.length, 1);
-  slow.define();
+  slow.load();
   await slow.flush();
-  assert.equal(slow.embeds.length, 1);
+  assert.equal(slow.initializations.length, 1);
   assert.equal(slow.mount.hidden, false);
 });
 
-test('late loaded event from a timed-out component cannot replace the retried thread', async () => {
-  const harness = await browserHarness('', { manualLoaded: true });
-  harness.button.dispatch('click');
-  harness.define();
-  await harness.flush();
-  const oldEmbed = harness.embeds[0];
-  for (const callback of [...harness.timers.values()]) callback();
-  await harness.flush();
-  assert.equal(harness.button.textContent, 'Try again');
-  harness.button.dispatch('click');
-  await harness.flush();
-  const newEmbed = harness.embeds[1];
-  oldEmbed.dispatch('loaded');
-  await harness.flush();
-  assert.equal(harness.mount.hidden, true);
-  newEmbed.dispatch('loaded');
-  await harness.flush();
-  assert.equal(harness.mount.hidden, false);
-  assert.equal(harness.mount.children[0], newEmbed);
+test('a loader without the documented entry point fails visibly and can be retried', async () => {
+  const h = await browserHarness();
+  h.button.dispatch('click');
+  h.head.children[0].dispatch('load');
+  await h.flush();
+  assert.equal(h.head.children.length, 0);
+  assert.equal(h.button.textContent, 'Try again');
+  assert.equal(h.mount.hidden, true);
 });
 
-test('late load rejection belongs to its old component and cannot cancel a retry', async () => {
-  const harness = await browserHarness('', { manualLoaded: true, loadingPromise: true });
-  harness.button.dispatch('click');
-  harness.define();
-  await harness.flush();
-  const oldEmbed = harness.embeds[0];
-  for (const callback of [...harness.timers.values()]) callback();
-  await harness.flush();
-  harness.button.dispatch('click');
-  await harness.flush();
-  const newEmbed = harness.embeds[1];
-  oldEmbed.rejectLoad(new Error('Late old request failure'));
-  await harness.flush();
-  assert.equal(harness.button.disabled, true);
-  assert.equal(harness.mount.children[0], newEmbed);
-  newEmbed.dispatch('loaded');
-  await harness.flush();
-  assert.equal(harness.mount.hidden, false);
-  assert.equal(harness.button.hidden, true);
+test('late widget readiness cannot revive a failed mount; recovery reloads the page', async () => {
+  const h = await browserHarness('', { manualLoaded: true });
+  h.button.dispatch('click');
+  h.load();
+  await h.flush();
+  assert.equal(h.button.disabled, true);
+  h.expire();
+  await h.flush();
+  assert.equal(h.button.textContent, 'Reload page');
+  assert.equal(h.mount.hidden, true);
+  h.window.onGcLoaded();
+  await h.flush();
+  assert.equal(h.mount.hidden, true);
+  assert.equal(h.button.textContent, 'Reload page');
+  h.button.dispatch('click');
+  assert.equal(h.reloads, 1);
+  assert.equal(h.initializations.length, 1);
+});
+
+test('provider initialization failure does not retry the singleton in place', async () => {
+  const h = await browserHarness('', { throwInit: true });
+  h.button.dispatch('click');
+  h.load();
+  await h.flush();
+  assert.equal(h.button.textContent, 'Reload page');
+  assert.equal(h.mount.hidden, true);
+  h.button.dispatch('click');
+  assert.equal(h.reloads, 1);
+  assert.equal(h.initializations.length, 1);
 });

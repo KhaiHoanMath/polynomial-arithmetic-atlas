@@ -1,6 +1,6 @@
 {
   "enabled": false,
-  "provider": "hyvor",
-  "website_id": "",
+  "provider": "graphcomment",
+  "shortname": "",
   "moderation_verified": false
 }
