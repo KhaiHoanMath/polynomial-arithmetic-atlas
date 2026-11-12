@@ -4,6 +4,21 @@ import { resolve } from 'node:path';
 
 export const QUESTION_STATUSES = ['Settled', 'Claimed', 'Open', 'Research direction'];
 
+// JSON escapes such as \t can silently turn TeX commands into valid but wrong math.
+// Allow ordinary paragraph newlines; mathematical expressions must use TeX spacing.
+function checkContentStrings(value, location, errors) {
+ if(typeof value==='string') {
+  const bad=value.match(/[\u0000-\u0009\u000B-\u001F\u007F-\u009F]/);
+  if(bad)errors.push(`${location}: unexpected control character U+${bad[0].charCodeAt(0).toString(16).toUpperCase().padStart(4,'0')}; check JSON-escaped TeX backslashes`);
+  for(const [expression] of value.matchAll(/\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\]|(?<!\\)\$[\s\S]*?(?<!\\)\$/g))
+   if(expression.includes('\n'))errors.push(`${location}: unexpected newline in mathematics; check JSON-escaped TeX backslashes`);
+ } else if(Array.isArray(value)) {
+  value.forEach((item,i)=>checkContentStrings(item,`${location}[${i}]`,errors));
+ } else if(value&&typeof value==='object') {
+  for(const [key,item] of Object.entries(value))checkContentStrings(item,`${location}.${key}`,errors);
+ }
+}
+
 // Local aliases retain their anchors and comment threads while sharing one statement.
 export function resolveQuestionAliases(articles) {
  const byQuestion=new Map(articles.flatMap(a=>(a.questions??[]).map(q=>[q.id,{question:q,article:a.id}])));
@@ -23,8 +38,12 @@ export async function validateContent(root) {
   read('content/references.json'),read('content/subjects.json'),read('content/navigation.json'),
   read('content/data/laboratory.json'),readdir(resolve(root,'content/articles'))
  ]);
- const articles=resolveQuestionAliases((await Promise.all(files.filter(f=>f.endsWith('.json')).map(f=>read('content/articles/'+f)))).flat());
+ const articleFiles=files.filter(f=>f.endsWith('.json'));
+ const articleGroups=await Promise.all(articleFiles.map(f=>read('content/articles/'+f)));
+ const articles=resolveQuestionAliases(articleGroups.flat());
  const errors=[];
+ for(const [name,data] of [['references.json',catalogue],['subjects.json',subjects],['navigation.json',navigation],['data/laboratory.json',laboratory]])checkContentStrings(data,'content/'+name,errors);
+ articleGroups.forEach((data,i)=>checkContentStrings(data,'content/articles/'+articleFiles[i],errors));
  const unique=(items,field,label)=>{const seen=new Set();for(const item of items){const id=item[field];if(!id||seen.has(id))errors.push(label+': missing or duplicate '+field+' '+id);seen.add(id);}return seen;};
  const articleIDs=unique(articles,'id','articles'),referenceIDs=unique(catalogue.references,'id','references'),subjectIDs=unique(subjects,'id','subjects');
  unique(navigation.routes,'id','reading routes');unique(laboratory,'id','laboratory examples');

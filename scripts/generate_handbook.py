@@ -9,6 +9,7 @@ import json, re, html, hashlib, argparse, subprocess
 from html.parser import HTMLParser
 from pathlib import Path
 from datetime import date
+from urllib.parse import urljoin
 
 HERE=Path(__file__).resolve().parent
 arguments=argparse.ArgumentParser(description=__doc__)
@@ -20,6 +21,7 @@ REPO=options.site_root.resolve()
 AUTHOR_ONLY=REPO/'author-only'
 AUTHOR='Khai-Hoan Nguyen-Dang'
 COPYRIGHT=f'© 2026 {AUTHOR}. All rights reserved.'
+SITE_BASE='https://khaihoanmath.github.io/polynomial-arithmetic-atlas/'
 
 def author_output(path):
     resolved=path.resolve()
@@ -92,7 +94,13 @@ class Parser(HTMLParser):
 def rawcontent(n):
     return ''.join(c if isinstance(c,str) else rawcontent(c) for c in n.children)
 
-def convert_html(body):
+def tex_url(value, base=SITE_BASE):
+    # Table bodies are tokenized before \url reads its argument. Protect these
+    # characters at generation time, and retain an absolute destination in PDFs.
+    return urljoin(base,value).replace('%',r'\%').replace('#',r'\#')
+
+
+def convert_html(body, page_url):
     math_blocks=[]
     def hide(m):math_blocks.append(mathtex(m));return f'ATLASMATHTOKEN{len(math_blocks)-1}ENDTOKEN'
     masked=MATH.sub(hide,body)
@@ -116,8 +124,8 @@ def convert_html(body):
         if tag=='li':return r'\item\leavevmode\color{black} '+children+'\n'
         if tag=='br':return r'\newline '+'\n'
         if tag=='a':
-            url=n.attrs.get('href','')
-            return children+(' ('+r'\url{'+url+'})' if url else '')
+            href=n.attrs.get('href','')
+            return children+(' ('+r'\url{'+tex_url(href,page_url)+'})' if href else '')
         if tag=='div' and 'math-block' in classes:
             style='boundary' if 'boundary' in classes else 'standard'
             return '\n'+r'\begin{atlasblock}['+style+']\n'+children+r'\end{atlasblock}\color{black}'+'\n'
@@ -156,7 +164,7 @@ def source_list(cs):
     out=['\\begin{sources}\n\\textbf{References}\\par\\smallskip\n']
     for c in cs:
         r=byref[c['key']]
-        href=r['url'].replace('%',r'\%').replace('#',r'\#')
+        href=tex_url(r['url'])
         out.append(r'\noindent\hyperlink{ref:'+r['id']+'}{'+plain('['+r['id']+']')+'}'+(' / '+text(c['locator']) if c.get('locator') else '')+'. '+text(c.get('note',''))+' '+r'\href{'+href+r'}{'+plain(r.get('url_label','Source'))+r'}.\par'+'\n')
     return ''.join(out)+r'\end{sources}\color{black}'+'\n'
 
@@ -287,7 +295,7 @@ for route in navigation['routes']:
 parts.append(r'\section*{Books}'+'\n')
 for book in navigation['books']:
     r=byref[book['key']]
-    parts.append(r'\needspace{5\baselineskip}\textbf{\hyperlink{ref:'+r['id']+'}{'+text(r['title'])+'}} / '+text(display_creators(r.get('authors','')))+'\\par\n'+text(book.get('role',book.get('use','')))+'\\par\n'+r'{\small '+text(book.get('level',''))+'}\\par\\medskip\n')
+    parts.append(r'\needspace{5\baselineskip}\textbf{\hyperlink{ref:'+r['id']+'}{'+text(r.get('title_tex',r['title']))+'}} / '+text(display_creators(r.get('authors','')))+'\\par\n'+text(book.get('role',book.get('use','')))+'\\par\n'+r'{\small '+text(book.get('level',''))+'}\\par\\medskip\n')
 
 parts.append(r'\chapter{Methods}'+'\n')
 for row in navigation['methods']:
@@ -315,11 +323,11 @@ for sid in subject_order:
         if a.get('prerequisites'):
             parts.append(r'{\small\textbf{Prerequisites:} '+ '; '.join(r'\hyperlink{article:'+k+'}{'+text(byid[k]['title'])+'}' for k in a['prerequisites'])+'}\\par\n')
         for section in a['sections']:
-            parts.append(r'\needspace{8\baselineskip}\section{'+text(section['title'])+'}\n'+convert_html(section['body'])+source_list(section.get('citations',[])))
+            parts.append(r'\needspace{8\baselineskip}\section{'+text(section['title'])+'}\n'+convert_html(section['body'],urljoin(SITE_BASE,'articles/'+a['id']+'.html'))+source_list(section.get('citations',[])))
         if a.get('questions'):
             parts.append(r'\needspace{11\baselineskip}\section*{Questions}'+'\n')
             for q in a['questions']:
-                parts.append(r'\needspace{7\baselineskip}\subsection*{'+text(q['title'])+'}\n'+r'{\small\sffamily\color{atlasgold}'+text(q['status'])+' / '+text(q['scope'])+'}\\par\\smallskip\n'+convert_html(q['body'])+source_list(q.get('citations',[])))
+                parts.append(r'\needspace{7\baselineskip}\subsection*{'+text(q['title'])+'}\n'+r'{\small\sffamily\color{atlasgold}'+text(q['status'])+' / '+text(q['scope'])+'}\\par\\smallskip\n'+convert_html(q['body'],urljoin(SITE_BASE,'articles/'+a['id']+'.html'))+source_list(q.get('citations',[])))
         if a.get('related'):
             parts.append(r'\needspace{3\baselineskip}\par\medskip\begingroup\footnotesize\setlength{\parskip}{1pt}\textbf{\sffamily\color{atlasgreen}Related topics}\par'+'\n')
             for rel in a['related']:
@@ -333,7 +341,7 @@ for gi in sorted({r.get('group_index') for r in refs}):
     if not group:continue
     parts.append(r'\needspace{12\baselineskip}\section{'+text(group[0]['group'])+'}\n')
     for r in group:
-        parts.append(r'\needspace{7\baselineskip}\hypertarget{ref:'+r['id']+'}{}\n'+r'{\sffamily\bfseries\color{atlasgreen}'+plain('['+r['id']+']')+' '+text(r['title'])+'}\\par\n')
+        parts.append(r'\needspace{7\baselineskip}\hypertarget{ref:'+r['id']+'}{}\n'+r'{\sffamily\bfseries\color{atlasgreen}'+plain('['+r['id']+']')+' '+text(r.get('title_tex',r['title']))+'}\\par\n')
         creators=display_creators(r.get('authors') or r.get('editors',''))
         if r.get('author_role')=='editors':creators+=' (editors)'
         details=[creators,str(r['year']) if r.get('year') is not None else 'Undated',r.get('venue','')]
@@ -353,7 +361,7 @@ for gi in sorted({r.get('group_index') for r in refs}):
         parts.append(r'\color{black} '+text(r.get('annotation',''))+'\\par\n')
         if r.get('note'):parts.append(r'{\small '+text(r['note'])+'}\\par\n')
         if r.get('metadata_note'):parts.append(r'{\small '+text(r['metadata_note'])+'}\\par\n')
-        for url in urls(r):parts.append(r'{\footnotesize\url{'+url+'}}\\par\n')
+        for url in urls(r):parts.append(r'{\footnotesize\url{'+tex_url(url)+'}}\\par\n')
         parts.append(r'\vspace{9pt}'+'\n')
 parts.append(r'\end{document}'+'\n')
 tex=''.join(parts)
