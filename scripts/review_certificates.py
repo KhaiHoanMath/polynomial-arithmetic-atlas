@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 """Exact identities used in the 12 November 2026 review.
 
 Requires SymPy. These checks verify the displayed examples, not all cited

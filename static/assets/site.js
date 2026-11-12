@@ -1,9 +1,9 @@
+// Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 'use strict';
 document.documentElement.classList.add('js');
 const normalize=text=>String(text??'').toLowerCase().normalize('NFKD').replace(/\p{Diacritic}/gu,'').replace(/[‐‑–—]/g,'-');
 const menu=document.querySelector('.nav-toggle');
 menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));document.querySelector('#main-nav').classList.toggle('is-open',open);});
-for(const button of document.querySelectorAll('[data-print]'))button.addEventListener('click',()=>window.print());
 const form=document.querySelector('[data-filter-form]');
 if(form){
  const items=[...document.querySelectorAll('[data-filter-item]')].map((node,index)=>({node,index,text:normalize(node.dataset.search),title:normalize(node.dataset.title??node.querySelector('h2,h3')?.textContent??''),year:Number(node.dataset.year??0)}));

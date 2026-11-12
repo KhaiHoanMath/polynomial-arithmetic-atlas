@@ -1,61 +1,73 @@
 #!/usr/bin/env python3
-"""Create reproducible source and offline distributions from the completed build."""
-from pathlib import Path
-from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
+# Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
+"""Create an optional owner backup of the original website source under author-only/."""
+import argparse
 import hashlib
-import re
 import json
 from datetime import date
+from pathlib import Path
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
-DIST = ROOT / 'dist'
-DOWNLOADS = DIST / 'downloads'
-review_date = date.fromisoformat(json.loads((ROOT/'content/references.json').read_text())['checked_through'])
-STAMP = (review_date.year, review_date.month, review_date.day, 0, 0, 0)
+AUTHOR_ONLY = ROOT / 'author-only'
+COPYRIGHT = '© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.'
+SOURCE_FOLDERS = ('content', 'scripts', 'static', '.github')
+SOURCE_FILES = ('README.md', 'EDITORIAL.md', 'LICENSE', 'package.json', 'package-lock.json', '.gitignore')
 
-def add(archive, name, data):
-    info = ZipInfo(name, STAMP)
-    info.compress_type = ZIP_DEFLATED
-    info.external_attr = 0o644 << 16
-    archive.writestr(info, data)
 
-source = DOWNLOADS / 'polynomial-atlas-source.zip'
-with ZipFile(source, 'w', compression=ZIP_DEFLATED, compresslevel=9) as archive:
-    for folder in ['content', 'scripts', 'static', '.github']:
-        for path in sorted((ROOT / folder).rglob('*')):
-            if path.is_file() and '__pycache__' not in path.parts and path.suffix != '.pyc':
-                add(archive, 'polynomial-arithmetic-atlas/' + path.relative_to(ROOT).as_posix(), path.read_bytes())
-    for name in ['README.md', 'EDITORIAL.md', 'package.json', 'package-lock.json', '.gitignore']:
-        add(archive, 'polynomial-arithmetic-atlas/' + name, (ROOT / name).read_bytes())
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output-dir', type=Path, default=AUTHOR_ONLY / 'backups',
+                        help='Output directory under author-only/ (default: author-only/backups).')
+    args = parser.parse_args()
+    output = args.output_dir.resolve()
+    backup = (output / 'polynomial-atlas-owner-backup.zip').resolve()
+    checksums = (output / 'SHA256SUMS.txt').resolve()
+    for path in (output, backup, checksums):
+        if any(path.is_relative_to(ROOT / folder) for folder in ('dist', 'static')):
+            parser.error('Generated files must not be written under dist/ or static/.')
+        if not path.is_relative_to(AUTHOR_ONLY):
+            parser.error('Generated files must remain under the repository author-only/ directory.')
 
-offline = DOWNLOADS / 'polynomial-atlas-offline.zip'
-with ZipFile(offline, 'w', compression=ZIP_DEFLATED, compresslevel=9) as archive:
-    for path in sorted(DIST.rglob('*')):
-        if not path.is_file() or path == offline or path.name == 'SHA256SUMS.txt':
-            continue
-        data = path.read_bytes()
-        if path.suffix == '.html':
-            html = data.decode('utf-8')
-            html = re.sub(r'<a href="downloads/polynomial-atlas-offline\.zip"[^>]*>[^<]*</a>',
-                          '<span>Offline website — this is your downloaded copy</span>', html)
-            data = html.encode('utf-8')
-        add(archive, path.relative_to(DIST).as_posix(), data)
-    add(archive, 'START-HERE.txt', (
-        'POLYNOMIAL ARITHMETIC ATLAS\n\n'
-        'Extract the entire archive, then open index.html in a browser.\n'
-        'No installation, account, internet connection, or server is needed\n'
-        'for the handbook, search, filters, mathematics, and examples.\n'
-        'External source links require internet access.\n\n'
-        'Open handbook.html for one continuous printable edition.\n'
-        'The complete typeset PDF and editable TeX are in downloads/.\n'
-        'Downloadable reference data and editable source are in downloads/.\n'
-        'The original 188-source PDF is an older fixed edition; use the\n'
-        'current pages and exports for additions and corrections.\n'
-    ).encode('utf-8'))
+    if not (ROOT / 'LICENSE').is_file():
+        parser.error('The repository LICENSE is required for an owner backup.')
+    catalogue = json.loads((ROOT / 'content/references.json').read_text())
+    review_date = date.fromisoformat(catalogue['checked_through'])
+    stamp = (review_date.year, review_date.month, review_date.day, 0, 0, 0)
+    output.mkdir(parents=True, exist_ok=True)
 
-hashes = []
-for path in sorted(DOWNLOADS.iterdir()):
-    if path.is_file() and path.name != 'SHA256SUMS.txt':
-        hashes.append(hashlib.sha256(path.read_bytes()).hexdigest() + '  ' + path.name)
-(DOWNLOADS / 'SHA256SUMS.txt').write_text('\n'.join(hashes) + '\n')
-print(f'Packaged source ({source.stat().st_size:,} bytes) and offline edition ({offline.stat().st_size:,} bytes).')
+    def add(archive, name, data):
+        info = ZipInfo('polynomial-arithmetic-atlas/' + name, stamp)
+        info.compress_type = ZIP_DEFLATED
+        info.external_attr = 0o644 << 16
+        archive.writestr(info, data)
+
+    with ZipFile(backup, 'w', compression=ZIP_DEFLATED, compresslevel=9) as archive:
+        archive.comment = COPYRIGHT.encode('utf-8')
+        for folder in SOURCE_FOLDERS:
+            for path in sorted((ROOT / folder).rglob('*')):
+                relative = path.relative_to(ROOT)
+                if (not path.is_file() or path.is_symlink()
+                        or '__pycache__' in relative.parts or path.suffix == '.pyc'
+                        or 'downloads' in relative.parts):
+                    continue
+                add(archive, relative.as_posix(), path.read_bytes())
+        for name in SOURCE_FILES:
+            path = ROOT / name
+            if path.is_file() and not path.is_symlink():
+                add(archive, name, path.read_bytes())
+        add(archive, 'COPYRIGHT.txt', (
+            COPYRIGHT + '\n\n'
+            'Owner backup of the Polynomial Arithmetic Atlas source.\n'
+            'This archive is not part of the published website.\n'
+            'The repository LICENSE governs the original atlas material.\n'
+            'Cited works and third-party components retain their respective rights.\n'
+        ).encode('utf-8'))
+
+    digest = hashlib.sha256(backup.read_bytes()).hexdigest()
+    checksums.write_text(digest + '  ' + backup.name + '\n', encoding='utf-8')
+    print(f'Created owner backup: {backup} ({backup.stat().st_size:,} bytes).')
+
+
+if __name__ == '__main__':
+    main()

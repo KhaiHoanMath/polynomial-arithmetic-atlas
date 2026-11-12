@@ -1,3 +1,4 @@
+// Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 import { readFile, readdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
 

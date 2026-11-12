@@ -808,7 +808,7 @@
       {
         "id": "normalization",
         "title": "Normalization",
-        "body": "<p>The identity \\(\\chi_p(p-a)=\\chi_p(-1)\\chi_p(a)\\) gives \\(x^pF_p(x^{-1})=\\chi_p(-1)F_p(x)\\). Define</p>\\[f_p(x)=\\begin{cases}\\dfrac{F_p(x)}{x(1-x)},&p\\equiv3\\pmod4,\\\\[6pt]\\dfrac{F_p(x)}{x(1-x)^2(x+1)},&p\\equiv1\\pmod4.\\end{cases}\\]<p>The factors at \\(1\\) and \\(-1\\) have precisely the indicated multiplicities. The result is monic and reciprocal. Write \\(f_p=x^m g_p(x+x^{-1})\\), with \\(m=(p-3)/2\\) or \\((p-5)/2\\), respectively. For \\(p\\ge7\\), irreducibility of \\(f_p\\) over \\(\\mathbb Q\\) is equivalent to irreducibility of \\(g_p\\). This equivalence uses arithmetic special values, not reciprocity alone.</p>",
+        "body": "<p>The identity \\(\\chi_p(p-a)=\\chi_p(-1)\\chi_p(a)\\) gives \\(x^pF_p(x^{-1})=\\chi_p(-1)F_p(x)\\). Define</p>\\[f_p(x)=\\begin{cases}\\dfrac{F_p(x)}{x(1-x)},&p\\equiv3\\pmod4,\\\\[6pt]\\dfrac{F_p(x)}{x(1-x)^2(x+1)},&p\\equiv1\\pmod4.\\end{cases}\\]<p>The factors at \\(1\\) and \\(-1\\) have precisely the indicated multiplicities. The result is monic and reciprocal. Write \\(f_p=x^m g_p(x+x^{-1})\\), with \\(m=(p-3)/2\\) or \\((p-5)/2\\), respectively. For \\(p=3,5\\), one has \\(f_p=1\\). For \\(p\\ge7\\), irreducibility of \\(f_p\\) over \\(\\mathbb Q\\) is equivalent to irreducibility of \\(g_p\\). This equivalence uses arithmetic special values, not reciprocity alone.</p>",
         "citations": [
           {
             "key": "MinacNguyenTan2023",
@@ -1087,7 +1087,7 @@
       {
         "id": "forced-factors",
         "title": "Rational factors",
-        "body": "<p>For odd \\(n\\ge3\\), the Bernoulli values at \\(0\\) and \\(1\\) vanish, so \\(x(x-1)(x-1/2)\\) divides \\(B_n(x)\\). For even \\(n\\ge2\\), the Euler polynomial vanishes at \\(0\\) and \\(1\\), so \\(x(x-1)\\) divides \\(E_n(x)\\). These statements follow directly from the generating functions and reflection. Their removal need not leave an irreducible polynomial.</p><p>Carlitz and Brillhart are classical arithmetic sources. Their results concern these Appell polynomials, which differ from the Euler–Frobenius and Eulerian families.</p>",
+        "body": "<p>For odd \\(n\\ge3\\), the Bernoulli values at \\(0\\) and \\(1\\) vanish, so \\(x(x-1)(x-1/2)\\) divides \\(B_n(x)\\). For even \\(n\\ge2\\), the Euler polynomial vanishes at \\(0\\) and \\(1\\), so \\(x(x-1)\\) divides \\(E_n(x)\\). These statements follow directly from the generating functions and reflection. Their removal need not leave an irreducible polynomial.</p>",
         "citations": [
           {
             "key": "DLMFBernoulliEuler",
@@ -1543,7 +1543,7 @@
         "title": "Are all nonzero zeros of every Hermite Wronskian simple?",
         "status": "Conjecture in cited source",
         "scope": "Wronskians of Hermite polynomials with distinct nonnegative indices; zeros over \\(\\mathbb C\\).",
-        "body": "<p>Veselov’s conjecture permits a multiple zero at the origin. It is a separability question for the remainder after removing that zero, not a claim that every remainder is irreducible. Felder–Hemery–Veselov state it as Conjecture 1. Grosu–Grosu prove further cases, including partitions \\((n,k,k-1,\\ldots,1)\\). No general resolution was verified in this review.</p>",
+        "body": "<p>Veselov’s conjecture permits a multiple zero at the origin. It asks whether the remainder is squarefree; it does not assert irreducibility. Grosu–Grosu prove it for partitions \\((n,k,k-1,\\ldots,1)\\), with \\(n\\ge k\\ge1\\). Felder–Veselov–Nekrasov still state the general problem as open in 2026.</p>",
         "citations": [
           {
             "key": "FelderHemeryVeselov2012",
@@ -1552,6 +1552,11 @@
           {
             "key": "GrosuGrosu2021",
             "locator": "Conjecture 1 and Proposition 6; arXiv:2007.00065v1"
+          },
+          {
+            "key": "FelderVeselovNekrasov2026",
+            "locator": "§5, second paragraph",
+            "note": "The 2026 published paper explicitly states that a general proof of simplicity away from zero is still unknown."
           }
         ]
       },

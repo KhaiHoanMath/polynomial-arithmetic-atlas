@@ -1,5 +1,7 @@
 # Editorial conventions
 
+© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
+
 The atlas is a curated mathematical handbook, not an exhaustive census of the literature or a certification of every cited proof. The current review date is 12 November 2026.
 
 ## Statements and hypotheses

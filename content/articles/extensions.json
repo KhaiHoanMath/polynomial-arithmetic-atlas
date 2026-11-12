@@ -612,7 +612,7 @@
         "title": "Does every quadratic polynomial with infinite critical orbit have finite-index arboreal image?",
         "status": "Conjecture in cited source",
         "scope": "f=x²+c over a number field K; the forward orbit of 0 is infinite; target point 0",
-        "body": "<p>The polynomial case of Jones’s finite-index conjecture predicts \\([\\operatorname{Aut}(T_2):G_\\infty(f,0)]<\\infty\\). This allows a proper subgroup at early levels. The hypothesis excludes the postcritically finite examples, and it also ensures that every preimage level is separable. The general statement is open in the cited survey.</p>",
+        "body": "<p>Let \\(T_\\infty\\) be the full binary tree of preimages of \\(0\\). The polynomial case of Jones’s finite-index conjecture predicts \\([\\operatorname{Aut}(T_\\infty):G_\\infty(f,0)]<\\infty\\). This allows a proper subgroup at early levels. The hypothesis excludes the postcritically finite examples, and it also ensures that every preimage level is separable. The general statement is open in the cited survey.</p>",
         "citations": [
           {
             "key": "Jones2013Arboreal",

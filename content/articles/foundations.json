@@ -349,7 +349,7 @@
       {
         "id": "limits",
         "title": "Limitations and translation",
-        "body": "<p>A polygon with several edges, or one whose endpoint increments have a common divisor, need not imply reducibility. The resulting restrictions may leave several possible factor degrees. Other primes, residual polynomials, or a change of variable can give further information. Local irreducibility alone does not determine the global Galois group.</p>\n<p>Even allowing every integral translation does not make the elementary Eisenstein test complete. Conrad proves that \\(x^4-10x^2+1\\) is irreducible over \\(\\mathbb Q\\), but \\((x+c)^4-10(x+c)^2+1\\) is never Eisenstein for any \\(c\\in\\mathbb Z\\). Thus translated Eisenstein criteria do not characterize irreducibility.</p>\n<p>The stronger one-edge criterion succeeds after translation: at \\(c=1\\) the polynomial becomes \\(x^4+4x^3-4x^2-16x-8\\). Its \\(2\\)-adic coefficient valuations are \\(3,4,2,2,0\\), and the lower polygon is a single edge of slope \\(-3/4\\). Dumas therefore proves irreducibility even over \\(\\mathbb Q_2\\).</p>",
+        "body": "<p>A Newton polygon with several slopes proves reducibility over \\(\\mathbb Q_p\\), but not necessarily over \\(\\mathbb Q\\). A single edge whose horizontal and vertical increments have a common divisor may correspond to either an irreducible or a reducible polynomial over \\(\\mathbb Q_p\\). Other primes, residual polynomials, or a change of variable can give further information. Local irreducibility alone does not determine the global Galois group.</p>\n<p>Even allowing every integral translation does not make the elementary Eisenstein test complete. Conrad proves that \\(x^4-10x^2+1\\) is irreducible over \\(\\mathbb Q\\), but \\((x+c)^4-10(x+c)^2+1\\) is never Eisenstein for any \\(c\\in\\mathbb Z\\). Thus translated Eisenstein criteria do not characterize irreducibility.</p>\n<p>The stronger one-edge criterion succeeds after translation: at \\(c=1\\) the polynomial becomes \\(x^4+4x^3-4x^2-16x-8\\). Its \\(2\\)-adic coefficient valuations are \\(3,4,2,2,0\\), and the lower polygon is a single edge of slope \\(-3/4\\). Dumas therefore proves irreducibility even over \\(\\mathbb Q_2\\).</p>",
         "citations": [
           {
             "key": "ConradAllPrimes",
@@ -359,6 +359,11 @@
           {
             "key": "dumas1906",
             "note": "The one-edge criterion applies to the translated quartic, whose coefficients and valuations are calculated here."
+          },
+          {
+            "key": "Hajir2005",
+            "locator": "Theorem 2.1",
+            "note": "Distinct Newton slopes give factors over the complete local field; they do not imply reducibility over the rational field."
           }
         ]
       }

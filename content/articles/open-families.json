@@ -30,7 +30,7 @@
       {
         "id": "pairs",
         "title": "Centering and root pairs",
-        "body": "<p>Write \\(n=2m+\\delta\\), where \\(\\delta\\in\\{0,1\\}\\). There is a degree-\\(m\\) polynomial \\(Q_m^{(\\delta,t)}\\) such that</p>\\[\\mathcal K_n^{(t)}(x+t/2)=x^\\delta Q_m^{(\\delta,t)}(x^2).\\]<p>The conjecture concerns \\(Q_m^{(\\delta,t)}\\), not the polynomial of degree \\(2m\\). The latter has an action on opposite pairs, with an elementary abelian quadratic kernel. The pair group does not determine that kernel.</p>",
+        "body": "<p>Write \\(n=2m+\\delta\\), where \\(\\delta\\in\\{0,1\\}\\). There is a degree-\\(m\\) polynomial \\(Q_m^{(\\delta,t)}\\) such that</p>\\[\\mathcal K_n^{(t)}(x+t/2)=x^\\delta Q_m^{(\\delta,t)}(x^2).\\]<p>The conjecture concerns \\(Q_m^{(\\delta,t)}\\), not the polynomial of degree \\(2m\\). If \\(Q_m^{(\\delta,t)}\\) is squarefree and has no zero root, the roots of \\(Q_m^{(\\delta,t)}(x^2)\\) form \\(m\\) distinct opposite pairs. Its Galois group maps onto the group of \\(Q_m^{(\\delta,t)}\\), with an elementary abelian 2-group as kernel. The pair group does not determine this kernel. At degenerate specializations, repeated zero roots must first be removed.</p>",
         "citations": [
           {
             "key": "Cullinan2024",
@@ -221,7 +221,7 @@
       {
         "id": "recent",
         "title": "Recent preprint",
-        "body": "<p>A November 2026 preprint claims a degree threshold independent of the positive integral parameter, together with an effective finite exceptional set. This is a claim about uniform eventual behavior, not a proof that every pair satisfies the conjectures. Its full argument has not been verified here.</p>",
+        "body": "<p>The November 2026 preprint uses \\(H_{n,s}=n!F_{n,s-1}\\), with \\(s\\ge1\\). It claims a degree threshold independent of \\(s\\), together with an effective finite exceptional set. This is a claim about uniform eventual behavior, not a proof that every pair satisfies the conjectures. Its full argument has not been verified here.</p>",
         "citations": [
           {
             "key": "NguyenDang2026UniformLaguerre",
@@ -453,7 +453,7 @@
     ],
     "id": "chromatic-polynomials",
     "title": "Chromatic polynomials",
-    "summary": "Chromatic polynomials count graph colourings and always have forced linear factors. Their remaining factors lead to questions about algebraic integers, irreducibility, and Galois groups.",
+    "summary": "Chromatic polynomials count graph colourings. For nonempty graphs, forced linear factors leave questions about the remaining factors and their Galois groups.",
     "questionsAnswered": [
       "Which factors are forced by graph colouring?",
       "Can every algebraic integer become a chromatic root after an integer shift?",
@@ -722,7 +722,7 @@
       {
         "id": "gleason",
         "title": "Gleason polynomials",
-        "body": "<p>Put \\(a_0(c)=0\\) and \\(a_{j+1}(c)=a_j(c)^2+c\\). The quadratic Gleason polynomial is</p>\\[G_n(c)=\\prod_{d\\mid n}a_d(c)^{\\mu(n/d)}\\in\\mathbb Z[c].\\]<p>Its roots are exactly the parameters for which \\(0\\) has period \\(n\\) under \\(z^2+c\\). Irreducibility over \\(\\mathbb Q\\) would say that these parameters form one Galois orbit. Ramadas records verification through \\(n=19\\) and proves that, for \\(n\\ge4\\), irreducibility of \\(G_n\\) implies geometric irreducibility of the curve \\(\\operatorname{Per}_n(0)\\) of quadratic rational maps with an \\(n\\)-periodic critical point.</p>",
+        "body": "<p>Put \\(a_0(c)=0\\) and \\(a_{j+1}(c)=a_j(c)^2+c\\). The quadratic Gleason polynomial is</p>\\[G_n(c)=\\prod_{d\\mid n}a_d(c)^{\\mu(n/d)}\\in\\mathbb Z[c].\\]<p>Its roots are exactly the parameters for which \\(0\\) has exact period \\(n\\) under \\(z^2+c\\). Irreducibility over \\(\\mathbb Q\\) would say that these parameters form one Galois orbit. Ramadas records verification through \\(n=19\\) and proves that, for \\(n\\ge4\\), irreducibility of \\(G_n\\) implies geometric irreducibility of the curve \\(\\operatorname{Per}_n(0)\\) of quadratic rational maps with an \\(n\\)-periodic critical point.</p>",
         "citations": [
           {
             "key": "Ramadas2024Moduli",
@@ -745,7 +745,7 @@
       {
         "id": "misiurewicz",
         "title": "Misiurewicz polynomials",
-        "body": "<p>For \\(f_{d,c}(z)=z^d+c\\), now let \\(a_j=f_{d,c}^{\\circ j}(0)\\). Fix \\(d,m\\ge2\\), \\(n\\ge1\\), and a nontrivial \\(d\\)-th root of unity \\(\\zeta\\). Define</p>\\[G_{d,m,n}^{\\zeta}(c)=\\frac{\\prod_{k\\mid n}(a_{m+k-1}-\\zeta a_{m-1})^{\\mu(n/k)}}{\\left(\\prod_{k\\mid n}a_k^{\\mu(n/k)}\\right)^{\\epsilon}},\\quad \\epsilon=\\begin{cases}1&n\\mid m-1,\\\\0&n\\nmid m-1.\\end{cases}\\]<p>This is a monic polynomial in \\(\\mathbb Z[\\zeta][c]\\). Its roots are parameters for which 0 has exact tail \\(m\\), period \\(n\\), and the indicated collision relation. The conjectured irreducibility is over \\(\\mathbb Q(\\zeta)\\). Known cases include \\(d=2,n\\le3\\), \\(d=3,n=2\\), and prime-power \\(d\\) with \\(n=1\\). For \\(d=2\\), write \\(G_{m,n}=G_{2,m,n}^{-1}\\); for example, \\(G_{2,1}(c)=c+2\\).</p>",
+        "body": "<p>For \\(f_{d,c}(z)=z^d+c\\), now let \\(a_j=f_{d,c}^{\\circ j}(0)\\). Fix \\(d,m\\ge2\\), \\(n\\ge1\\), and a nontrivial \\(d\\)-th root of unity \\(\\zeta\\). Define</p>\\[G_{d,m,n}^{\\zeta}(c)=\\frac{\\prod_{k\\mid n}(a_{m+k-1}-\\zeta a_{m-1})^{\\mu(n/k)}}{\\left(\\prod_{k\\mid n}a_k^{\\mu(n/k)}\\right)^{\\epsilon}},\\quad \\epsilon=\\begin{cases}1&n\\mid m-1,\\\\0&n\\nmid m-1.\\end{cases}\\]<p>This is a monic polynomial in \\(\\mathbb Z[\\zeta][c]\\). Its roots are parameters for which 0 has exact tail \\(m\\), period \\(n\\), and the indicated collision relation. The conjectured irreducibility is over \\(\\mathbb Q(\\zeta)\\). Known cases include \\(d=2,n\\le3\\), \\(d=3,n=2\\), and prime-power \\(d\\) with \\(n=1\\). For \\(d=2\\), set \\(G_{m,n}(c)=G_{2,m,n}^{\\zeta}(c)\\big|_{\\zeta=-1}\\); for example, \\(G_{2,1}(c)=c+2\\).</p>",
         "citations": [
           {
             "key": "BenedettoGoksel2024UnitsII",
@@ -767,7 +767,7 @@
       {
         "id": "higher-degree",
         "title": "A higher-degree exception",
-        "body": "<p>The quadratic Gleason conjecture must not be extended to every unicritical degree without modification. In Buff’s normalization \\(f_a(z)=az^D+1\\), the exact-period-three parameter polynomial is reducible precisely when \\(D\\equiv1\\pmod6\\); then one factor is \\(a^2+a+1\\). The parameter and normalization must therefore be specified before stating irreducibility.</p>",
+        "body": "<p>The quadratic Gleason conjecture must not be extended to every unicritical degree without modification. For an integer \\(D\\ge2\\), Buff uses \\(f_a(z)=az^D+1\\). The exact-period-three parameter polynomial is reducible precisely when \\(D\\equiv1\\pmod6\\); then one factor is \\(a^2+a+1\\). The parameter and normalization must therefore be specified before stating irreducibility.</p>",
         "citations": [
           {
             "key": "Buff2018PCF",
@@ -879,7 +879,7 @@
       {
         "id": "known-results",
         "title": "Known results",
-        "body": "<p>For each fixed \\(r\\), irreducibility holds for all sufficiently large \\(n\\). Filaseta–Kumchev–Pasechnik also bound the number of possibly reducible pairs with \\(n\\le N\\) by \\(O_\\varepsilon(N^{23/18+\\varepsilon})\\).</p><p>Laishram–Yadav prove irreducibility in the range \\(2r\\le n<(r+1)^{10}\\), within \\(n>r+1\\). Their explicit eventual bounds for irreducibility and the full symmetric group assume an explicit form of the \\(abc\\) conjecture. These conditional bounds do not settle every pair.</p>",
+        "body": "<p>For each fixed \\(r\\), irreducibility holds for all sufficiently large \\(n\\). For each \\(\\varepsilon>0\\), Filaseta–Kumchev–Pasechnik bound the number of reducible pairs with \\(1\\le r\\le n-2\\) and \\(n\\le N\\) by \\(O_\\varepsilon(N^{23/18+\\varepsilon})\\) as \\(N\\to\\infty\\).</p><p>Laishram–Yadav prove irreducibility in the range \\(2r\\le n<(r+1)^{10}\\), within \\(n>r+1\\). Their explicit eventual bounds for irreducibility and the full symmetric group assume an explicit form of the \\(abc\\) conjecture. These conditional bounds do not settle every pair.</p>",
         "citations": [
           {
             "key": "FilasetaKumchevPasechnik2007",
@@ -1123,7 +1123,7 @@
       {
         "id": "known-result",
         "title": "Cyclotomic factors",
-        "body": "<p>Koley–Reddy prove a related classification: if such an \\(f\\) has any cyclotomic factor, it has one of the form \\(\\Phi_{5^\\gamma}\\) or \\(\\Phi_{2^\\alpha3^\\beta}\\), for positive integers \\(\\alpha,\\beta,\\gamma\\). Their theorem does not establish that a reducible \\(f\\) must have a cyclotomic factor.</p><p>This distinction matters when searching the literature: the paper resolves its Conjecture 1.3, whereas Mercer’s reducibility question is its Conjecture 1.2.</p>",
+        "body": "<p>Koley–Reddy prove that if such an \\(f\\) has a cyclotomic factor, at least one such divisor has the form \\(\\Phi_{5^\\gamma}\\) or \\(\\Phi_{2^\\alpha3^\\beta}\\), for positive integers \\(\\alpha,\\beta,\\gamma\\). Their theorem does not establish that a reducible \\(f\\) must have a cyclotomic factor.</p>",
         "citations": [
           {
             "key": "KoleyReddy2019Cyclotomic",
@@ -1161,7 +1161,7 @@
         "title": "Must a reducible five-term Newman polynomial have a cyclotomic factor?",
         "status": "Conjecture in cited source",
         "scope": "\\(f=1+x^s+x^r+x^m+x^n\\), integers \\(0<s<r<m<n\\), over \\(\\mathbb Q\\).",
-        "body": "<p>This is Mercer’s Conjecture 6 (2012), restated as Conjecture 1.2 by Koley–Reddy (2019). It is distinct from their proved classification of possible cyclotomic divisors.</p>",
+        "body": "<p>This is Mercer’s Conjecture 6 (2012), restated as Conjecture 1.2 by Koley–Reddy (2019). Their proved theorem instead guarantees a divisor from the two specified cyclotomic families, assuming a cyclotomic factor exists.</p>",
         "citations": [
           {
             "key": "Mercer2012Newman",

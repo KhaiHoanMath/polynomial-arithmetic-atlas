@@ -1,7 +1,8 @@
-"""Build a complete, math-preserving handbook from the site's final JSON.
+# Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
+"""Create an optional author-only handbook from the site's final JSON.
 
-Write a standalone TeX source and source manifest to the selected output directory.
-Compile the generated TeX until cross-references stabilize (normally three XeLaTeX passes on a fresh build).
+Write standalone TeX and a source manifest under author-only/. This script does
+not compile a PDF or place files in the published website.
 """
 import json, re, html, hashlib, argparse
 from html.parser import HTMLParser
@@ -11,10 +12,24 @@ from datetime import date
 HERE=Path(__file__).resolve().parent
 arguments=argparse.ArgumentParser(description=__doc__)
 arguments.add_argument('--site-root',type=Path,default=HERE.parent, help='Repository root; defaults to the parent of the script directory.')
-arguments.add_argument('--output-dir',type=Path,default=HERE.parent/'build/handbook', help='Directory for the standalone TeX source and build manifest.')
+arguments.add_argument('--output-dir',type=Path, help='Output directory under the repository author-only/ directory (default: author-only/handbook).')
 options=arguments.parse_args()
 REPO=options.site_root.resolve()
-OUT=options.output_dir.resolve()
+AUTHOR_ONLY=REPO/'author-only'
+AUTHOR='Khai-Hoan Nguyen-Dang'
+COPYRIGHT=f'© 2026 {AUTHOR}. All rights reserved.'
+
+def author_output(path):
+    resolved=path.resolve()
+    if any(resolved.is_relative_to(REPO/folder) for folder in ('dist','static')):
+        arguments.error('Generated files must not be written under dist/ or static/.')
+    if not resolved.is_relative_to(AUTHOR_ONLY):
+        arguments.error('Generated files must remain under the repository author-only/ directory.')
+    return resolved
+
+OUT=author_output(options.output_dir or AUTHOR_ONLY/'handbook')
+TEX_OUTPUT=author_output(OUT/'polynomial_arithmetic_atlas_handbook.tex')
+MANIFEST_OUTPUT=author_output(OUT/'handbook-manifest.json')
 OUT.mkdir(parents=True,exist_ok=True)
 read=lambda p: json.loads((REPO/p).read_text())
 subjects=read('content/subjects.json')
@@ -156,7 +171,7 @@ preamble=r'''\documentclass[11pt,a4paper,oneside,openany]{book}
 \definecolor{atlaspale}{HTML}{F4F6F1}
 \definecolor{atlasgold}{HTML}{946B30}
 \definecolor{atlasgray}{HTML}{5A6260}
-\hypersetup{pdftitle={Polynomial Arithmetic Atlas: Complete Handbook},pdfauthor={Polynomial Arithmetic Atlas},pdfsubject={Irreducibility, Galois groups, methods, examples, and an annotated bibliography},pdfkeywords={polynomials, irreducibility, Galois theory, Newton polygons, research bibliography}}
+\hypersetup{pdftitle={Polynomial Arithmetic Atlas: Author's Handbook},pdfauthor={Khai-Hoan Nguyen-Dang},pdfsubject={Irreducibility, Galois groups, methods, examples, and an annotated bibliography},pdfkeywords={polynomials, irreducibility, Galois theory, Newton polygons, research bibliography},pdfinfo={Copyright={© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.}}}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{3pt}
 \linespread{1.06}
@@ -178,11 +193,10 @@ preamble=r'''\documentclass[11pt,a4paper,oneside,openany]{book}
 \pagestyle{fancy}\fancyhf{}
 \fancyhead[L]{\sffamily\scriptsize\color{atlasgray}\nouppercase{\leftmark}}
 \fancyhead[R]{\sffamily\small\thepage}
-\fancyfoot[L]{\sffamily\scriptsize\color{atlasgray}POLYNOMIAL ARITHMETIC ATLAS}
-\fancyfoot[R]{\sffamily\scriptsize\color{atlasgray}@@REVIEW_DATE_UPPER@@}
+\fancyfoot[C]{\sffamily\scriptsize\color{atlasgray}© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.}
 \renewcommand{\headrulewidth}{0.3pt}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\sffamily\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\sffamily\scriptsize\color{atlasgray}© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.}\fancyfoot[R]{\sffamily\small\thepage}\renewcommand{\headrulewidth}{0pt}}
 \begin{document}
 \begin{titlepage}\thispagestyle{empty}
 \vspace*{14mm}
@@ -193,14 +207,23 @@ preamble=r'''\documentclass[11pt,a4paper,oneside,openany]{book}
 {\fontsize{18}{24}\selectfont Polynomial irreducibility\\and Galois groups\par}
 \vspace{10mm}\textcolor{atlasgold}{\rule{35mm}{1.2pt}}\par\vspace{8mm}
 {\large Results, methods, examples, and references.\par}
+\vspace{4mm}
+{\large Khai-Hoan Nguyen-Dang\par}
 \vfill
 {\sffamily\large @@ARTICLE_COUNT@@ articles\quad /\quad @@REFERENCE_COUNT@@ references\par}
 \vspace{4mm}
-{\color{atlasgray}Complete offline edition / Literature checked through @@REVIEW_DATE@@\par}
+{\color{atlasgray}Author's copy / Literature checked through @@REVIEW_DATE@@\par}
 \vspace{7mm}
 {\small This edition includes the articles, references, questions, and reading guides from the website. The bibliography is not exhaustive.\par}
+\vspace{4mm}
+{\small © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.\par}
 \end{titlepage}
 \frontmatter
+\chapter*{Copyright}
+© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
+
+This author-only export contains the atlas's original text, annotations, and organization. Rights in cited works remain with their respective authors or publishers. The copyright notice does not claim ownership of mathematical facts or third-party works. See the repository LICENSE for the terms governing this material.
+
 \tableofcontents
 \chapter{Introduction}
 This handbook describes methods for proving polynomial irreducibility and determining Galois groups. It covers the rationals, number fields, and finite fields, with related material on specialization, iteration, and absolute irreducibility in several variables.
@@ -316,8 +339,8 @@ for gi in sorted({r.get('group_index') for r in refs}):
         parts.append(r'\vspace{9pt}'+'\n')
 parts.append(r'\end{document}'+'\n')
 tex=''.join(parts)
-(OUT/'polynomial_arithmetic_atlas_handbook.tex').write_text(tex)
-manifest={'articles':len(articles),'sections':sum(len(a['sections']) for a in articles),'questions':sum(len(a.get('questions',[])) for a in articles),'references':len(refs),'math_expressions':math_count,'checked':review_date.isoformat(),'source_files':{str(f.relative_to(REPO)):hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted((REPO/'content').rglob('*.json'))},'article_ids':[a['id'] for a in articles],'reference_ids':[r['id'] for r in refs]}
-(OUT/'handbook-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+TEX_OUTPUT.write_text(tex,encoding='utf-8')
+manifest={'author':AUTHOR,'copyright':COPYRIGHT,'distribution':'Author-only export','articles':len(articles),'sections':sum(len(a['sections']) for a in articles),'questions':sum(len(a.get('questions',[])) for a in articles),'references':len(refs),'math_expressions':math_count,'checked':review_date.isoformat(),'source_files':{str(f.relative_to(REPO)):hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted((REPO/'content').rglob('*.json'))},'article_ids':[a['id'] for a in articles],'reference_ids':[r['id'] for r in refs]}
+MANIFEST_OUTPUT.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({k:manifest[k] for k in ['articles','sections','questions','references','math_expressions']},indent=2))
-print(OUT/'polynomial_arithmetic_atlas_handbook.tex')
+print(TEX_OUTPUT)

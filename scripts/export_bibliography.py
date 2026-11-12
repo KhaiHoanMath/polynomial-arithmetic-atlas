@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-"""Write conventional BibTeX, preserving source mathematics and accents."""
+# Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
+"""Write an author-only BibTeX export, preserving mathematics and accents."""
+import argparse
 import json
 import re
 import unicodedata
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
+AUTHOR_ONLY=ROOT/'author-only'
+COPYRIGHT='© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.'
 
 def plain_tex(s):
     replacements={'–':'--','—':'---','’':"'",'‘':"'",'“':'``','”':"''",'ℤ':r'$\mathbb{Z}$','ℚ':r'$\mathbb{Q}$','≥':r'$\geq$','≤':r'$\leq$','±':r'$\pm$','∞':r'$\infty$','−':'-','→':r'$\to$','ε':r'$\varepsilon$','α':r'$\alpha$','θ':r'$\theta$','μ':r'$\mu$','√':r'$\sqrt{}$','Ł':r'{\L}','ł':r'{\l}','ß':r'{\ss}','ø':r'{\o}','Ø':r'{\O}','ı':'i','×':r'$\times$','ℓ':r'$\ell$','≠':r'$\neq$','∈':r'$\in$','⊆':r'$\subseteq$','⋯':r'$\cdots$','²':r'$^2$','³':r'$^3$','⁴':r'$^4$'}
@@ -26,7 +30,7 @@ def tex(value):
     return ''.join(part if i%2 else plain_tex(part) for i,part in enumerate(re.split(r'(\$[^$]*\$)',value)))
 
 def render(records, checked):
-    output=[f'% Polynomial Arithmetic Atlas. Literature checked through {checked}.\n% Selective bibliography; preprints and source limitations are recorded.\n']
+    output=[f'% Polynomial Arithmetic Atlas. Literature checked through {checked}.\n% {COPYRIGHT}\n% Author-only export. Original annotations and compilation; cited works retain their own rights.\n% Selective bibliography; preprints and source limitations are recorded.\n']
     for r in records:
         kind=r.get('type','misc')
         if kind not in ['article','book','incollection','inproceedings','techreport','misc']:kind='misc'
@@ -64,8 +68,18 @@ def render(records, checked):
     return '\n'.join(output)
 
 if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output-dir',type=Path,default=AUTHOR_ONLY/'bibliography',help='Output directory under author-only/ (default: author-only/bibliography).')
+    args=parser.parse_args()
+    output=args.output_dir.resolve()
+    target=(output/'atlas_references.bib').resolve()
+    for path in (output,target):
+        if any(path.is_relative_to(ROOT/folder) for folder in ('dist','static')):
+            parser.error('Generated files must not be written under dist/ or static/.')
+        if not path.is_relative_to(AUTHOR_ONLY):
+            parser.error('Generated files must remain under the repository author-only/ directory.')
     catalogue=json.loads((ROOT/'content/references.json').read_text())
     records=catalogue['references']
-    target=ROOT/'dist/downloads/atlas_references.bib'
-    target.write_text(render(records,catalogue['checked_through']))
-    print(f'Exported {len(records)} BibTeX records.')
+    output.mkdir(parents=True,exist_ok=True)
+    target.write_text(render(records,catalogue['checked_through']),encoding='utf-8')
+    print(f'Exported {len(records)} BibTeX records to {target}.')

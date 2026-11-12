@@ -1,21 +1,28 @@
 #!/usr/bin/env python3
+# Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 """Generate the Eulerian table with exact arithmetic.
 
 Install the dependency with `python -m pip install sympy==1.14.0`.
 The coefficients in the CSV are ordered from the constant term up.
 An empty modular witness means the search found none for primes up to 199.
+The tracked table is content/data/eulerian.csv. CSV has no standard metadata
+header; generation writes a separate metadata file under author-only/.
 """
 
 import argparse
 import csv
 import io
+import json
 from pathlib import Path
 
 from sympy import Poly, Symbol, ZZ, primerange
 
 
 X = Symbol("x")
-CSV_PATH = Path(__file__).resolve().parents[1] / "static/assets/eulerian.csv"
+ROOT = Path(__file__).resolve().parents[1]
+CSV_PATH = ROOT / "content/data/eulerian.csv"
+METADATA_PATH = ROOT / "author-only/eulerian/eulerian.csv.metadata.json"
+COPYRIGHT = "© 2026 Khai-Hoan Nguyen-Dang. All rights reserved."
 FIELDS = (
     "index",
     "degree",
@@ -111,6 +118,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="verify the tracked CSV without editing it")
     args = parser.parse_args()
+    if not CSV_PATH.resolve().is_relative_to(ROOT / "content/data"):
+        parser.error("The tracked Eulerian table must remain under content/data/.")
+    if not METADATA_PATH.resolve().is_relative_to(ROOT / "author-only"):
+        parser.error("Generated metadata must remain under author-only/.")
     contents = make_csv()
     if args.check:
         if not CSV_PATH.exists() or CSV_PATH.read_bytes() != contents:
@@ -119,6 +130,17 @@ def main():
     else:
         CSV_PATH.parent.mkdir(parents=True, exist_ok=True)
         CSV_PATH.write_bytes(contents)
+        METADATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+        METADATA_PATH.write_text(json.dumps({
+            "title": "Polynomial Arithmetic Atlas: Eulerian table",
+            "author": "Khai-Hoan Nguyen-Dang",
+            "copyright": COPYRIGHT,
+            "source": "content/data/eulerian.csv",
+            "description": "Exact computations for normalized descent Eulerian polynomials, 3 <= index <= 30.",
+            "coefficients": "Ascending order, from constant term to leading coefficient",
+            "fields": list(FIELDS),
+        }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"Generated {CSV_PATH} and author-only metadata.")
 
 
 if __name__ == "__main__":

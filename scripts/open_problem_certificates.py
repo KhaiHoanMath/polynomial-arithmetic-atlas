@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 """Exact calculations for the open-problem additions of 12 November 2026.
 
 Requires SymPy. Run: python3 scripts/open_problem_certificates.py

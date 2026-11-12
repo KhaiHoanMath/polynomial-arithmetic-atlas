@@ -15,7 +15,7 @@
   },
   {
     "id": "galois",
-    "title": "Galois group detection",
+    "title": "Galois group",
     "summary": "Cycle types, discriminants, and subgroup constraints.",
     "question": "Which arithmetic data determine a group, and which give only constraints?",
     "referenceGroup": 2

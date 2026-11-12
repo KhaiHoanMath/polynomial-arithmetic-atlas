@@ -1,3 +1,4 @@
+// Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { dirname, resolve, sep, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -12,6 +13,8 @@ const decode=s=>s.replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&
 let localLinks=0,externalLinks=0;
 for(const[file,html]of pages){
  const label=relative(dist,file);
+ if(!html.includes('© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.')||!html.includes('name="author" content="Khai-Hoan Nguyen-Dang"'))problems.push(`Missing copyright/author: ${label}`);
+ if(/\bdownload(?:\s|=|>)/.test(html)||/href="[^"#]*(?:downloads\/|handbook\.html)/.test(html))problems.push(`Public download link: ${label}`);
  const declarations=[...html.matchAll(/\sid="([^"]+)"/g)];
  if(declarations.length!==ids.get(file).size)problems.push(`Duplicate IDs: ${label}`);
  if(html.includes('katex-error'))problems.push(`Math rendering error: ${label}`);
@@ -28,8 +31,10 @@ for(const[file,html]of pages){
   else if(fragment&&ids.has(target)&&!ids.get(target).has(decodeURIComponent(fragment)))problems.push(`Missing fragment ${value}: ${label}`);
  }
 }
-const content=JSON.parse(await readFile(resolve(dist,'downloads/atlas_content.json'),'utf8'));
-const refs=JSON.parse(await readFile(resolve(dist,'downloads/atlas_references.json'),'utf8')).references;
+const root=fileURLToPath(new URL('../',import.meta.url));
+const articleFiles=(await readdir(resolve(root,'content/articles'))).filter(f=>f.endsWith('.json'));
+const content={articles:(await Promise.all(articleFiles.map(f=>readFile(resolve(root,'content/articles',f),'utf8').then(JSON.parse)))).flat()};
+const refs=JSON.parse(await readFile(resolve(root,'content/references.json'),'utf8')).references;
 const keys=new Set(refs.map(r=>r.id));
 for(const e of content.articles){
  if(!e.questionsAnswered?.length)problems.push(`No orientation questions: ${e.id}`);
@@ -37,4 +42,6 @@ for(const e of content.articles){
  for(const section of e.sections){if(!section.citations?.length&&!/math-block (?:example|proof)/.test(section.body))problems.push(`No source or explicit derivation: ${e.id}/${section.id}`);for(const c of section.citations??[])if(!keys.has(c.key))problems.push(`Unknown citation: ${e.id}/${c.key}`);}
  for(const q of e.questions??[])if(!q.citations?.length)problems.push(`Question without sources: ${q.id}`);
 }
+async function checkPublicFiles(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=resolve(dir,entry.name);const name=relative(dist,file);if(entry.isDirectory()){if(entry.name==='downloads')problems.push(`Public downloads directory: ${name}`);await checkPublicFiles(file);}else if(/\.(?:pdf|tex|bib|json|csv|zip|py|map)$/i.test(entry.name)||entry.name==='handbook.html')problems.push(`Author file in public build: ${name}`);}}
+await checkPublicFiles(dist);
 if(problems.length){console.error(problems.join('\n'));process.exitCode=1;}else console.log(`Verified ${pages.size} pages, ${localLinks} local links/assets, ${externalLinks} external URL references, all citation keys, and rendered math.`);

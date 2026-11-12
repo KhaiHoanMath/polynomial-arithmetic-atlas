@@ -936,7 +936,7 @@
       ],
       "source_file": "specialization",
       "accessed": "2026-11-11",
-      "group": "Galois group detection and effective prime methods",
+      "group": "Galois group and effective prime methods",
       "group_index": 2,
       "kind": "Published work",
       "number": 36
@@ -960,7 +960,7 @@
       ],
       "source_file": "specialization",
       "accessed": "2026-11-11",
-      "group": "Galois group detection and effective prime methods",
+      "group": "Galois group and effective prime methods",
       "group_index": 2,
       "kind": "Book",
       "number": 37
@@ -986,7 +986,7 @@
       ],
       "source_file": "specialization",
       "accessed": "2026-11-11",
-      "group": "Galois group detection and effective prime methods",
+      "group": "Galois group and effective prime methods",
       "group_index": 2,
       "kind": "Exposition",
       "number": 38
@@ -1014,7 +1014,7 @@
       ],
       "source_file": "specialization",
       "accessed": "2026-11-12",
-      "group": "Galois group detection and effective prime methods",
+      "group": "Galois group and effective prime methods",
       "group_index": 2,
       "kind": "Published work",
       "number": 39,
@@ -1042,7 +1042,7 @@
       ],
       "source_file": "supplementary",
       "accessed": "2026-11-11",
-      "group": "Galois group detection and effective prime methods",
+      "group": "Galois group and effective prime methods",
       "group_index": 2,
       "kind": "Published work",
       "number": 40,
@@ -1071,7 +1071,7 @@
       ],
       "source_file": "supplementary",
       "accessed": "2026-11-11",
-      "group": "Galois group detection and effective prime methods",
+      "group": "Galois group and effective prime methods",
       "group_index": 2,
       "kind": "Published work",
       "number": 41
@@ -1097,7 +1097,7 @@
       ],
       "source_file": "supplementary",
       "accessed": "2026-11-11",
-      "group": "Galois group detection and effective prime methods",
+      "group": "Galois group and effective prime methods",
       "group_index": 2,
       "kind": "Published work",
       "number": 42
@@ -1125,7 +1125,7 @@
       ],
       "source_file": "supplementary",
       "accessed": "2026-11-11",
-      "group": "Galois group detection and effective prime methods",
+      "group": "Galois group and effective prime methods",
       "group_index": 2,
       "kind": "Published work",
       "number": 43
@@ -2211,7 +2211,7 @@
       "status": "Published",
       "verification_urls": [
         "https://annals.math.princeton.edu/2025/201-2/p01",
-        "https://arxiv.org/html/2609.40123v1"
+        "https://arxiv.org/abs/2111.06507"
       ],
       "venue": "Annals of Mathematics",
       "volume": "201",
@@ -2220,7 +2220,7 @@
       "doi": "10.4007/annals.2025.201.2.1",
       "arxiv": "2111.06507",
       "source_file": "random",
-      "accessed": "2026-11-11",
+      "accessed": "2026-11-12",
       "group": "Counting, random polynomials, and random matrices",
       "group_index": 4,
       "kind": "Published work",
@@ -2501,7 +2501,8 @@
       "url": "https://arxiv.org/abs/2402.06643",
       "status": "Published",
       "verification_urls": [
-        "https://arxiv.org/abs/2402.06643"
+        "https://academic.oup.com/imrn/article-abstract/2025/11/rnaf136/8151332",
+        "https://arxiv.org/html/2402.06643v2"
       ],
       "venue": "International Mathematics Research Notices",
       "volume": "2025",
@@ -2510,7 +2511,7 @@
       "doi": "10.1093/imrn/rnaf136",
       "arxiv": "2402.06643",
       "source_file": "random",
-      "accessed": "2026-11-11",
+      "accessed": "2026-11-12",
       "group": "Counting, random polynomials, and random matrices",
       "group_index": 4,
       "kind": "Published work",
@@ -2596,7 +2597,8 @@
       "status": "Published; conditional on RH",
       "verification_urls": [
         "https://academic.oup.com/imrn/article/2026/16/rnag178/8761102",
-        "https://arxiv.org/abs/2511.04240"
+        "https://arxiv.org/abs/2511.04240",
+        "https://arxiv.org/html/2511.04240v2"
       ],
       "venue": "International Mathematics Research Notices",
       "volume": "2026",
@@ -2605,7 +2607,7 @@
       "doi": "10.1093/imrn/rnag178",
       "arxiv": "2511.04240",
       "source_file": "random",
-      "accessed": "2026-11-11",
+      "accessed": "2026-11-12",
       "group": "Counting, random polynomials, and random matrices",
       "group_index": 4,
       "kind": "Published work",
@@ -2645,11 +2647,12 @@
       "year": 2022,
       "type": "article",
       "section": "Characteristic polynomials and random matrices",
-      "annotation": "Assuming ERH, proves high-probability irreducibility and containment of A_n for characteristic polynomials of matrices with independent entries from a fixed nontrivial finitely supported integer law. The dependent polynomial coefficients require matrix-specific input.",
+      "annotation": "Proves high-probability irreducibility and containment of A_n for matrices with independent entries from a fixed nonconstant finitely supported integer law, assuming ERH. Theorem 1.2 proves the same conclusion unconditionally when the law is uniform modulo a product of four distinct primes. The characteristic coefficients are dependent, so the argument uses finite-field matrix estimates.",
       "url": "https://arxiv.org/abs/2008.01223",
-      "status": "Published; conditional on ERH",
+      "status": "Published; general theorem conditional on ERH; unconditional four-prime case",
       "verification_urls": [
         "https://arxiv.org/abs/2008.01223",
+        "https://arxiv.org/html/2008.01223v2",
         "https://pure.qub.ac.uk/en/publications/the-characteristic-polynomial-of-a-random-matrix/"
       ],
       "venue": "Combinatorica",
@@ -2659,7 +2662,7 @@
       "doi": "10.1007/s00493-020-4657-0",
       "arxiv": "2008.01223",
       "source_file": "random",
-      "accessed": "2026-11-11",
+      "accessed": "2026-11-12",
       "group": "Counting, random polynomials, and random matrices",
       "group_index": 4,
       "kind": "Published work",
@@ -5253,8 +5256,8 @@
       "url": "https://www.jstor.org/stable/2323198",
       "annotation": "Original source of the elementary quartic-group test that separates cyclic and dihedral cases after the cubic resolvent and discriminant tests. Publisher metadata verified; the full formulation and proof used in this atlas are checked in Conrad’s author-hosted exposition, Theorem 4.1. The publisher also assigns DOI 10.1080/00029890.1989.11972158.",
       "status": "Published article",
-      "section": "Galois group detection and resolvents",
-      "group": "Galois group detection and effective prime methods",
+      "section": "Galois group and resolvents",
+      "group": "Galois group and effective prime methods",
       "group_index": 2,
       "kind": "Published work",
       "verification_urls": [
@@ -7110,7 +7113,35 @@
       ],
       "annotation": "Gives an exact odd-prime Eisenstein criterion for diagonal higher-order Euler polynomials and lower density at least (log 2)/2. The introduction states that the same argument improves the diagonal Bernoulli lower bound to (log 2)/2. These are order-n families, not ordinary Appell polynomials.",
       "number": 276
+    },
+    {
+      "id": "FelderVeselovNekrasov2026",
+      "authors": "Felder, Giovanni and Veselov, Alexander P. and Nekrasov, Nikita",
+      "title": "Harmonic Locus and Calogero-Moser Spaces",
+      "year": 2026,
+      "type": "article",
+      "venue": "Communications in Mathematical Physics",
+      "volume": "407",
+      "issue": "2",
+      "doi": "10.1007/s00220-025-05522-z",
+      "url": "https://doi.org/10.1007/s00220-025-05522-z",
+      "open_url": "https://link.springer.com/article/10.1007/s00220-025-05522-z",
+      "section": "Special polynomial families",
+      "annotation": "Relates Hermite Wronskians and harmonic locus potentials to fixed points in Calogero–Moser space. Section 5 explicitly retains the conjecture that only the zero at the origin may be multiple. The spectral results for simple locus potentials do not resolve this conjecture.",
+      "status": "Published work",
+      "verification_urls": [
+        "https://link.springer.com/article/10.1007/s00220-025-05522-z"
+      ],
+      "source_file": "families",
+      "accessed": "2026-11-12",
+      "group": "Special polynomial families",
+      "group_index": 3,
+      "kind": "Published work",
+      "article": "22",
+      "number": 277,
+      "metadata_note": "Publisher records publication on 12 January 2026, volume 407, article 22; 22 is an article number, not a page range."
     }
   ],
-  "original_collection_count": 188
+  "original_collection_count": 188,
+  "compilation_copyright": "Original annotations and compilation © 2026 Khai-Hoan Nguyen-Dang. All rights reserved. Cited works retain their own rights."
 }

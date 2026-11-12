@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 """Exact arithmetic certificates for the Polynomial Arithmetic Atlas.
 
 Requires Python 3 and SymPy (verified with 1.14.0).
