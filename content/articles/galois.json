@@ -1,0 +1,952 @@
+[
+  {
+    "id": "frobenius",
+    "title": "Frobenius: from factor degrees to permutations",
+    "kind": "method",
+    "subject": "galois",
+    "summary": "A factorization over a finite field reveals a cycle type in a global Galois group. Combine these local witnesses with a separate group-theoretic argument.",
+    "level": "Intermediate",
+    "field": "Q and number fields",
+    "status": "Classical theory",
+    "checked": "2026-11-11",
+    "questionsAnswered": [
+      "What does a squarefree reduction say about the Galois group?",
+      "When can irreducibility be witnessed by one prime?",
+      "How do two primes prove that a quintic has group S5?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "modular-irreducibility"
+    ],
+    "sections": [
+      {
+        "id": "statement",
+        "title": "The theorem and its hypotheses",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Dedekind–Frobenius</p><p>Let \\(f\\in\\mathbb Z[x]\\) be monic and separable, and let \\(G\\) be the Galois group of its splitting field over \\(\\mathbb Q\\), acting on its \\(n\\) roots. If \\(p\\nmid\\operatorname{disc}(f)\\) and</p>\\[\\bar f=f_1\\cdots f_r\\quad\\text{in }\\mathbb F_p[x]\\]<p>is its factorization into distinct monic irreducibles, then \\(G\\) contains a permutation whose cycle lengths are \\(\\deg f_1,\\ldots,\\deg f_r\\).</p></div><p>Irreducibility of \\(f\\) is not needed for this cycle statement. It is needed when we subsequently infer that \\(G\\) acts transitively. For nonmonic integral polynomials, also exclude primes dividing the leading coefficient.</p>",
+        "citations": [
+          {
+            "key": "ConradModP",
+            "locator": "Theorem 1 and its proof",
+            "note": "The note treats irreducible monic polynomials; the same reduction argument gives the separable form stated here."
+          },
+          {
+            "key": "Milne2022",
+            "locator": "Chapter 4, “Computing Galois groups over Q”"
+          }
+        ]
+      },
+      {
+        "id": "mechanism",
+        "title": "Why factor degrees become cycle lengths",
+        "body": "<p>Choose a prime \\(\\mathfrak p\\) of the splitting field above \\(p\\). At a good prime the roots remain distinct after reduction. Frobenius acts on the residue field by \\(z\\mapsto z^p\\). A root of an irreducible degree-\\(d\\) factor has an orbit of length exactly \\(d\\) under this map. Lifting that action to the roots gives the required permutation.</p><p>A different choice of \\(\\mathfrak p\\) conjugates Frobenius. Thus a factorization determines a cycle type, not a labeling of the roots. Permutations obtained from different primes must not be assigned compatible labels without additional information.</p>",
+        "citations": [
+          {
+            "key": "ConradModP",
+            "locator": "Proof of Theorem 1"
+          }
+        ]
+      },
+      {
+        "id": "quintic",
+        "title": "A complete quintic certificate",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · two primes give \\(S_5\\)</p><p>Take \\(f=x^5-x-1\\). Modulo \\(3\\), it has no root. The only monic irreducible quadratics over \\(\\mathbb F_3\\) are</p>\\[x^2+1,\\quad x^2+x+2,\\quad x^2+2x+2.\\]<p>The remainders on division of \\(f\\) by these are \\(-1,x-1,x-1\\), respectively. Every reducible quintic has a factor of degree at most two, so \\(\\bar f\\) is irreducible over \\(\\mathbb F_3\\). Hence \\(f\\) is irreducible over \\(\\mathbb Q\\), and its group contains a 5-cycle.</p><p>Modulo \\(2\\),</p>\\[f=(x^2+x+1)(x^3+x^2+1),\\]<p>with distinct irreducible factors. This gives an element of type \\((2,3)\\), whose cube is a transposition.</p><p>A transitive action of prime degree is primitive. A primitive group containing a transposition is the full symmetric group, as proved in the permutation-group entry. Therefore \\(\\operatorname{Gal}(f/\\mathbb Q)=S_5\\). All finite-field arithmetic in this example is exact; no numerical root approximation is used.</p></div>",
+        "citations": [
+          {
+            "key": "ConradSnAn",
+            "locator": "Theorem 2.1",
+            "note": "Recognition criterion used after the explicit finite-field computations."
+          },
+          {
+            "key": "Selmer1956",
+            "note": "Classical irreducibility of the broader trinomial family; the present degree-five proof is self-contained."
+          }
+        ]
+      },
+      {
+        "id": "density",
+        "title": "Which factorization patterns eventually appear?",
+        "body": "<p>Chebotarev gives a converse to the existence part: every conjugacy class of \\(G\\) occurs at infinitely many unramified primes. The density for a class \\(C\\) is \\(|C|/|G|\\); a cycle type may comprise several classes of \\(G\\), in which case their densities add.</p><p>Consequently, an irreducible polynomial of degree \\(n\\) has an irreducible reduction at some good prime if and only if \\(G\\) contains an \\(n\\)-cycle. Transitivity alone does not guarantee this. For \\(x^4+1\\), the group is the Klein four-group and no good prime yields an irreducible quartic reduction.</p>",
+        "citations": [
+          {
+            "key": "StevenhagenLenstra1996",
+            "note": "Chebotarev density and Frobenius interpretation."
+          },
+          {
+            "key": "ConradAllPrimes"
+          }
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "What a finite prime search cannot prove",
+        "body": "<div class=\"math-block boundary\"><p class=\"block-label\">Boundary</p><p>Repeated factors invalidate this simple Frobenius reading at that prime. An observed cycle type is a valid witness; an unobserved type is not evidence of impossibility. A finite list of factorizations becomes a proof only when a theorem or a complete candidate-group argument shows that every group compatible with the witnesses is the claimed group.</p></div><p>When reduction is repeatedly bad, local ramification and Newton polygons may supply the missing permutations. When several candidate groups remain, resolvents provide a different kind of constraint.</p>",
+        "citations": [
+          {
+            "key": "ConradSnAn",
+            "locator": "Section 1"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "permutation-groups",
+        "relation": "Uses",
+        "why": "Cycle types need a group-theoretic recognition theorem."
+      },
+      {
+        "id": "discriminants",
+        "relation": "Uses",
+        "why": "The discriminant identifies good primes and the parity character."
+      },
+      {
+        "id": "newton-polygons",
+        "relation": "Contrasts with",
+        "why": "Ramified local information can remain useful when squarefree reduction fails."
+      },
+      {
+        "id": "galois-computation",
+        "relation": "Applies to",
+        "why": "Modular witnesses constrain the groups examined by a certified computation."
+      }
+    ],
+    "questions": [
+      {
+        "id": "irreducible-reduction-existence",
+        "title": "Does every irreducible rational polynomial remain irreducible modulo some prime?",
+        "status": "Settled in stated scope",
+        "scope": "Monic irreducible polynomials over Q",
+        "body": "<p>No. The exact criterion is that the Galois group contain a full cycle. The polynomial \\(x^4+1\\) supplies a counterexample.</p>",
+        "citations": [
+          {
+            "key": "ConradAllPrimes"
+          },
+          {
+            "key": "StevenhagenLenstra1996"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "discriminants",
+    "title": "Discriminants, parity, and ramification",
+    "kind": "method",
+    "subject": "galois",
+    "summary": "The discriminant detects collisions of roots and the sign character of a Galois group. Its square class is powerful, but it does not measure the size of the group.",
+    "level": "Intermediate",
+    "field": "Fields of characteristic not 2; Q",
+    "status": "Classical theory",
+    "checked": "2026-11-11",
+    "questionsAnswered": [
+      "Why does a square discriminant put the group inside A_n?",
+      "What distinguishes polynomial and number-field discriminants?",
+      "When does parity finish a Galois-group proof?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Two formulas for the same invariant",
+        "body": "<p>For \\(f(x)=a_n\\prod_{i=1}^n(x-\\alpha_i)\\) of degree \\(n\\), use the standard polynomial discriminant</p>\\[\\Delta(f)=a_n^{2n-2}\\prod_{i\\lt j}(\\alpha_i-\\alpha_j)^2=(-1)^{n(n-1)/2}a_n^{-1}\\operatorname{Res}(f,f').\\]<p>It is nonzero exactly when the roots are distinct. The resultant formula computes it from coefficients without computing the roots. Multiplying \\(f\\) by a nonzero scalar changes its discriminant by an even power, so its square class is unchanged.</p>",
+        "citations": [
+          {
+            "key": "Milne2022",
+            "locator": "Chapter 4 and its appendix on resultants"
+          }
+        ]
+      },
+      {
+        "id": "parity",
+        "title": "The sign character, proved directly",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · discriminant criterion</p><p>If \\(f\\in K[x]\\) is separable and \\(\\operatorname{char}K\\ne2\\), then</p>\\[\\operatorname{Gal}(f/K)\\subseteq A_n\\quad\\Longleftrightarrow\\quad\\Delta(f)\\in K^{\\times2}.\\]</div><div class=\"math-block proof\"><p class=\"block-label\">Proof mechanism</p><p>Set \\(D=a_n^{n-1}\\prod_{i\\lt j}(\\alpha_i-\\alpha_j)\\), so \\(D^2=\\Delta(f)\\). An automorphism \\(\\sigma\\) sends \\(D\\) to \\(\\operatorname{sgn}(\\sigma)D\\). Thus all automorphisms are even exactly when \\(D\\) belongs to the ground field. Conversely, if \\(D^2=b^2\\) with \\(b\\in K\\), then \\(D=\\pm b\\), so \\(D\\in K\\). Characteristic two is excluded because the signs coincide.</p></div><p>If the group is not contained in \\(A_n\\), the quadratic field \\(K(\\sqrt{\\Delta(f)})\\) is the fixed field of the kernel of the sign character.</p>",
+        "citations": [
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorem 1.3"
+          },
+          {
+            "key": "Milne2022",
+            "locator": "Chapter 4, “When is G_f contained in A_n?”"
+          }
+        ]
+      },
+      {
+        "id": "cubics",
+        "title": "The complete cubic case",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · parity is enough in degree three</p><p>A separable irreducible cubic has a transitive subgroup of \\(S_3\\), hence group \\(A_3\\) or \\(S_3\\). For \\(x^3+ax+b\\), the discriminant is \\(-4a^3-27b^2\\). Therefore</p>\\[\\begin{array}{c|c|c} f & \\Delta(f) & \\operatorname{Gal}(f/\\mathbb Q)\\\\ \\hline x^3-x-1&-23&S_3\\\\ x^3-3x-1&81&C_3\\end{array}\\]<p>The rational-root test proves both polynomials irreducible: neither \\(1\\) nor \\(-1\\) is a root. The table would not follow from the discriminants without this irreducibility check.</p></div>",
+        "citations": [
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorem 2.1 and Example 2.2"
+          }
+        ]
+      },
+      {
+        "id": "nonconverses",
+        "title": "Why neither square class determines a large group",
+        "body": "<p>The polynomial \\(x^4+1\\) is irreducible over \\(\\mathbb Q\\), since replacing \\(x\\) by \\(x+1\\) makes it Eisenstein at \\(2\\). Its discriminant is \\(256\\), but its splitting field is \\(\\mathbb Q(\\zeta_8)\\), whose group is \\((\\mathbb Z/8\\mathbb Z)^\\times\\simeq C_2\\times C_2\\), strictly smaller than \\(A_4\\).</p><p>In the other direction, \\(x^4-2\\) is Eisenstein at \\(2\\) and has nonsquare discriminant \\(-2048\\). Its splitting field is \\(\\mathbb Q(\\sqrt[4]{2},i)\\), of degree eight: the real field \\(\\mathbb Q(\\sqrt[4]{2})\\) has degree four and does not contain \\(i\\). The group is dihedral of order eight, not \\(S_4\\).</p><div class=\"math-block boundary\"><p class=\"block-label\">Correct final step</p><p>First prove \\(A_n\\subseteq G\\). Then a square discriminant gives \\(G=A_n\\), and a nonsquare discriminant gives \\(G=S_n\\). Without the lower containment, the discriminant only gives a parity restriction.</p></div>",
+        "citations": [
+          {
+            "key": "Cox2012",
+            "note": "Cyclotomic and radical extensions; discriminant interpretation."
+          },
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Section 3"
+          }
+        ]
+      },
+      {
+        "id": "arithmetic",
+        "title": "Polynomial discriminant versus field discriminant",
+        "body": "<p>If \\(f\\) is the monic minimal polynomial of an algebraic integer \\(\\alpha\\), and \\(K=\\mathbb Q(\\alpha)\\), then</p>\\[\\Delta(f)=\\operatorname{disc}(K)\\,[\\mathcal O_K:\\mathbb Z[\\alpha]]^2.\\]<p>The two discriminants have the same square class, but can have different prime divisors. A prime dividing \\(\\Delta(f)\\) may come from the index rather than ramification in \\(K\\).</p><p>For \\(f=x^2-5\\), the polynomial discriminant is \\(20\\), whereas \\(\\operatorname{disc}(\\mathbb Q(\\sqrt5))=5\\). Reduction modulo \\(2\\) is repeated, although \\(2\\) is unramified in the quadratic field. The integral generator \\((1+\\sqrt5)/2\\), with polynomial \\(x^2-x-1\\), removes this index obstruction.</p><p>Over \\(\\mathbb Q\\), complex conjugation contributes another parity check: with \\(r\\) nonreal conjugate pairs it has type \\(2^r1^{n-2r}\\), and \\(\\operatorname{sgn}\\Delta(f)=(-1)^r\\).</p>",
+        "citations": [
+          {
+            "key": "Neukirch1999",
+            "note": "Discriminants of orders, indices, and ramification."
+          },
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Remark 3.11 and the discussion of real roots"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "frobenius",
+        "relation": "Applies to",
+        "why": "The polynomial discriminant specifies primes where the elementary cycle-type argument applies."
+      },
+      {
+        "id": "resolvents",
+        "relation": "Applies to",
+        "why": "In degree four, the cubic resolvent adds the information parity alone lacks."
+      },
+      {
+        "id": "permutation-groups",
+        "relation": "Uses",
+        "why": "Large-group containment plus one odd permutation proves equality with S_n."
+      },
+      {
+        "id": "random-models",
+        "relation": "Applies to",
+        "why": "A large-group theorem and a nonsquare-discriminant theorem address distinct probabilistic obstructions."
+      }
+    ],
+    "questions": [
+      {
+        "id": "parity-and-size",
+        "title": "When can a discriminant determine the full Galois group?",
+        "status": "Settled in stated scope",
+        "scope": "Separable irreducible cubics; groups already known to contain \\(A_n\\).",
+        "body": "<p>It determines the group for irreducible cubics, and whenever an independent argument has proved \\(A_n\\subseteq G\\). In general it determines only whether \\(G\\subseteq A_n\\).</p>",
+        "citations": [
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorems 1.3 and 2.1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "permutation-groups",
+    "title": "The group-theoretic step: transitivity, alternating groups, and symmetric groups",
+    "kind": "method",
+    "subject": "galois",
+    "summary": "Local arithmetic supplies permutations. Block systems, transpositions, and long cycles explain when those permutations force a large group.",
+    "level": "Intermediate",
+    "field": "Permutation groups; polynomial Galois groups",
+    "status": "Classical theory",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How is primitivity proved rather than assumed?",
+      "Why does a primitive group with a transposition equal S_n?",
+      "Which single cycles force containment of A_n?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "frobenius"
+    ],
+    "sections": [
+      {
+        "id": "blocks",
+        "title": "Transitivity, blocks, and primitivity",
+        "body": "<p>Let \\(G\\le S_n\\) act on \\(\\Omega\\). A nonempty subset \\(B\\subseteq\\Omega\\) is a block if each translate \\(gB\\) is either equal to \\(B\\) or disjoint from it. A transitive action is primitive if its only blocks have size \\(1\\) or \\(n\\).</p><p>In a transitive action, translates of a block partition \\(\\Omega\\) into equally sized pieces. Hence a transitive action of prime degree is primitive. For an irreducible separable polynomial with root \\(\\alpha\\), the action is primitive exactly when the root field \\(K(\\alpha)\\) has no proper intermediate field between \\(K\\) and \\(K(\\alpha)\\). This follows by applying the Galois correspondence to subgroups between a root stabilizer and the whole group.</p><p>This criterion concerns intermediate fields. For a polynomial map, decomposition of \\(f(X)\\) is instead related to the monodromy of \\(f(X)-t\\) over a function field. These two uses of “primitive” must not be interchanged.</p>",
+        "citations": [
+          {
+            "key": "DixonMortimer1996",
+            "note": "Blocks, stabilizers, and primitive actions."
+          },
+          {
+            "key": "Cox2012",
+            "note": "Galois correspondence and the action on conjugates."
+          }
+        ]
+      },
+      {
+        "id": "transpositions",
+        "title": "A short proof using a graph",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>A primitive subgroup \\(G\\le S_n\\) containing a transposition is \\(S_n\\).</p></div><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>Make a graph on \\(\\Omega\\), joining \\(a\\) to \\(b\\) when \\((a\\ b)\\in G\\). Conjugation by \\(G\\) preserves this graph, so its connected components form a block system. There is an edge, and primitivity forces the graph to be connected. The transpositions associated with the edges of a connected graph generate every transposition: along a path, conjugating successive edge transpositions moves an endpoint step by step. They therefore generate \\(S_n\\), which is contained in \\(G\\).</p></div><p>Primitivity cannot be replaced by transitivity. The square-symmetry group \\(\\langle(1234),(13)\\rangle\\) has order eight and contains a transposition, while preserving the block system \\(\\{\\{1,3\\},\\{2,4\\}\\}\\). It is a proper subgroup of \\(S_4\\).</p>",
+        "citations": [
+          {
+            "key": "DixonMortimer1996",
+            "note": "Primitive permutation groups and generation by transpositions."
+          },
+          {
+            "key": "ConradSnAn",
+            "locator": "Theorem 2.1",
+            "note": "A useful sufficient condition for the required primitivity."
+          }
+        ]
+      },
+      {
+        "id": "large-prime",
+        "title": "A long prime cycle proves primitivity",
+        "body": "<p>Suppose \\(G\\) is transitive and contains a \\(q\\)-cycle, with \\(q\\) prime and \\(q\\gt n/2\\). If a nontrivial block system had \\(a\\) blocks of size \\(b\\), then \\(a,b\\le n/2\\lt q\\). The cycle's induced action on the blocks has order dividing \\(q\\); since \\(a\\lt q\\), it must fix every block. Its restriction to each block is also trivial because \\(b\\lt q\\). This contradicts the presence of a \\(q\\)-cycle. Thus \\(G\\) is primitive.</p><p>Be careful about extracting a cycle from a permutation. If one cycle has length \\(m\\) coprime to every other cycle length, raising the permutation to the least common multiple of the other lengths kills those cycles and preserves an \\(m\\)-cycle. An element of type \\((3,3)\\) does not yield a single 3-cycle by this argument.</p>",
+        "citations": [
+          {
+            "key": "ConradSnAn",
+            "locator": "Theorem 2.1"
+          },
+          {
+            "key": "Jones2014Cycles",
+            "locator": "Remarks 1.4 and 1.6 (published version, p. 160)"
+          }
+        ]
+      },
+      {
+        "id": "one-fixed-point",
+        "title": "A cycle fixing one point gives double transitivity",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Criterion · an alternative route to primitivity</p><p>For \\(n\\ge3\\), a transitive subgroup \\(G\\le S_n\\) containing an \\((n-1)\\)-cycle is doubly transitive. If it also contains a transposition, then \\(G=S_n\\).</p></div><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>If the cycle fixes \\(a\\), its powers act transitively on the other \\(n-1\\) points. Thus the stabilizer \\(G_a\\) is transitive there. Transitivity of \\(G\\) now moves any ordered pair of distinct points to any other: first move the first point, then use its stabilizer to move the second. This is double transitivity. Conjugating one transposition by these elements supplies every transposition, which generates \\(S_n\\).</p></div><p>No primality condition on \\(n-1\\) is needed. In arithmetic applications, a good reduction of factor degrees \\((1,n-1)\\) supplies the long cycle. Irreducibility supplies transitivity. A second squarefree pattern with one 2-cycle and all other cycles of odd lengths supplies a transposition by taking an odd power. The conditions concern cycle types, so no identification of root labels across different primes is required.</p>",
+        "citations": [
+          {
+            "key": "DixonMortimer1996",
+            "locator": "Chapter 1, The Basic Ideas",
+            "note": "The stabilizer characterization of double transitivity; the short proof is included here."
+          },
+          {
+            "key": "ConradSnAn",
+            "locator": "§1 and Example 2.3",
+            "note": "Arithmetic cycle-type witnesses and extracting a transposition by taking a power."
+          }
+        ]
+      },
+      {
+        "id": "jordan",
+        "title": "Jordan and a modern strengthening",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Jordan's prime-cycle theorem</p><p>If a primitive subgroup \\(G\\le S_n\\) contains a \\(q\\)-cycle with \\(q\\) prime and \\(q\\le n-3\\), then \\(A_n\\subseteq G\\).</p></div><p>Combining this with the preceding argument gives a frequent arithmetic criterion: transitivity plus a prime cycle with \\(n/2\\lt q\\le n-3\\) forces \\(A_n\\). Newton polygons often produce just such a prime divisor of the group order; the inequality \\(q\\gt n/2\\) ensures an element of order \\(q\\) is one cycle.</p><div class=\"math-block theorem\"><p class=\"block-label\">Jones's extension</p><p>A primitive subgroup containing a nontrivial single cycle that fixes at least three points contains \\(A_n\\). The cycle length need not be prime.</p></div><p>This stronger result follows from the classification in Jones's paper and uses the classification of finite simple groups. The classical prime-cycle version remains useful when one wants a proof with lighter group-theoretic inputs. Neither theorem proves primitivity by itself.</p>",
+        "citations": [
+          {
+            "key": "Jordan1871",
+            "note": "Historical source for primitive-group criteria."
+          },
+          {
+            "key": "Jones2014Cycles",
+            "locator": "Theorem 1.1, Theorem 1.2, and Corollary 1.3"
+          }
+        ]
+      },
+      {
+        "id": "real-roots",
+        "title": "A complete proof from a real-root count",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · \\(x^5-4x+2\\)</p><p>This polynomial is Eisenstein at \\(2\\), hence irreducible. Its action has prime degree five and is primitive. Put \\(a=(4/5)^{1/4}\\). The derivative \\(5x^4-4\\) vanishes only at \\(-a,a\\); the local maximum has value \\(2+16a/5\\gt 0\\), and the local minimum has value \\(2-16a/5\\lt 0\\), since \\(a\\gt 5/8\\). Monotonicity on the three intervals gives exactly three real roots.</p><p>The remaining two roots form one nonreal conjugate pair. Complex conjugation is therefore a transposition. The graph theorem proves \\(\\operatorname{Gal}(x^5-4x+2\\,/\\mathbb Q)=S_5\\). A plot can suggest this root count; the derivative and exact inequalities establish it.</p></div>",
+        "citations": [
+          {
+            "key": "Milne2022",
+            "locator": "Chapter 4, “Examples of polynomials with S_p as Galois group over Q”"
+          },
+          {
+            "key": "ConradSnAn",
+            "locator": "Theorem 2.1"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "newton-polygons",
+        "relation": "Uses",
+        "why": "Slope denominators can supply the prime-cycle input."
+      },
+      {
+        "id": "discriminants",
+        "relation": "Uses",
+        "why": "Once A_n is contained, the discriminant decides between A_n and S_n."
+      },
+      {
+        "id": "composition-iteration",
+        "relation": "Contrasts with",
+        "why": "Function-field monodromy has a precise connection with decomposition; fixed-polynomial root actions require a separate field test."
+      },
+      {
+        "id": "reciprocity",
+        "relation": "Contrasts with",
+        "why": "Inverse pairs impose a block system and change the natural ambient group."
+      }
+    ],
+    "questions": [
+      {
+        "id": "nonprime-jordan-cycle",
+        "title": "Can the prime-length assumption in Jordan’s cycle criterion be removed?",
+        "status": "Settled in stated scope",
+        "scope": "Primitive finite permutation groups containing a nontrivial cycle with at least three fixed points",
+        "body": "<p>Yes: Jones’s Corollary 1.3 gives containment of \\(A_n\\) without that assumption. The stronger theorem uses the classification of finite simple groups; the primitivity and fixed-point conditions remain essential.</p>",
+        "citations": [
+          {
+            "key": "Jones2014Cycles",
+            "locator": "Corollary 1.3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "resolvents",
+    "title": "Resolvents: turn group containment into factorization",
+    "kind": "method",
+    "subject": "galois",
+    "summary": "A resolvent records how a group acts on selected expressions in the roots. Rational factors can detect a hidden partition or force descent to a smaller subgroup.",
+    "level": "Intermediate",
+    "field": "Q; fields of characteristic not 2 for quartics",
+    "status": "Classical theory",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How does a polynomial in the roots detect a subgroup?",
+      "How is the cubic resolvent of a quartic constructed?",
+      "What distinguishes S4, A4, V4, and the C4/D4 cases?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "discriminants"
+    ],
+    "sections": [
+      {
+        "id": "idea",
+        "title": "A second permutation action",
+        "body": "<p>Let \\(f\\in K[x]\\) be separable, with roots \\(\\alpha_1,\\ldots,\\alpha_n\\), and the group is known to lie in \\(G_0\\le S_n\\). Choose a polynomial \\(\\Phi\\in K[X_1,\\ldots,X_n]\\) to evaluate on these roots whose formal stabilizer in \\(G_0\\) is a subgroup \\(H\\). Evaluate its orbit to obtain values \\(\\beta_1,\\ldots,\\beta_m\\), where \\(m=[G_0:H]\\), and form</p>\\[R_\\Phi(T)=\\prod_{j=1}^m(T-\\beta_j).\\]<p>The actual Galois group permutes these values, so \\(R_\\Phi\\) has coefficients in the ground field. If the values are distinct, its irreducible factor degrees are the orbit sizes for this new action. A root in the ground field gives a fixed coset, hence containment of the Galois group in a conjugate of \\(H\\).</p><p>The distinctness condition prevents accidental equality between evaluated invariants from giving a false subgroup conclusion. In computations it can be checked by the discriminant of the resolvent, or addressed by changing the root expressions.</p>",
+        "citations": [
+          {
+            "key": "FiekerKlueners2014",
+            "locator": "Section 3, Lemma 3.1 and Theorem 3.2"
+          },
+          {
+            "key": "Stauduhar1973",
+            "note": "The subgroup-descent principle."
+          }
+        ]
+      },
+      {
+        "id": "quartic-construction",
+        "title": "The cubic resolvent of a quartic",
+        "body": "<p>For \\(f=x^4+ax^3+bx^2+cx+d\\), the three partitions of its four roots into two unordered pairs give</p>\\[\\beta_1=\\alpha_1\\alpha_2+\\alpha_3\\alpha_4,\\quad\\beta_2=\\alpha_1\\alpha_3+\\alpha_2\\alpha_4,\\quad\\beta_3=\\alpha_1\\alpha_4+\\alpha_2\\alpha_3.\\]<p>Expanding \\(\\prod(T-\\beta_i)\\) in elementary symmetric functions yields</p>\\[R_f(T)=T^3-bT^2+(ac-4d)T+4bd-a^2d-c^2.\\]<p>The action \\(S_4\\to S_3\\) on the three pairings has kernel the normal Klein four-group. Moreover, \\(\\beta_1-\\beta_2=(\\alpha_1-\\alpha_4)(\\alpha_2-\\alpha_3)\\), with analogous formulas for the other differences. Their squared product proves \\(\\operatorname{disc}(R_f)=\\operatorname{disc}(f)\\), so this resolvent is separable whenever \\(f\\) is.</p>",
+        "citations": [
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Definition 3.1, equation (3.7), and Theorem 3.4"
+          },
+          {
+            "key": "Cox2012",
+            "note": "Resolvents and their relation to permutation actions."
+          }
+        ]
+      },
+      {
+        "id": "quartic-table",
+        "title": "The classification and its remaining branch",
+        "body": "<p>Assume \\(\\operatorname{char}K\\ne2\\) and \\(f\\) is a separable irreducible quartic over \\(K\\). Then:</p><div class=\"table-wrap\"><table><thead><tr><th>Resolvent over \\(K\\)</th><th>Discriminant of \\(f\\)</th><th>Galois group</th></tr></thead><tbody><tr><td>Irreducible</td><td>Nonsquare</td><td>\\(S_4\\)</td></tr><tr><td>Irreducible</td><td>Square</td><td>\\(A_4\\)</td></tr><tr><td>Splits completely</td><td>Square</td><td>\\(V_4\\)</td></tr><tr><td>One linear factor and one irreducible quadratic</td><td>Nonsquare</td><td>\\(C_4\\) or \\(D_4\\)</td></tr></tbody></table></div><p>Here \\(D_4\\) denotes the dihedral group of order eight. The table does not distinguish its last two possibilities. If \\(r\\in K\\) is the unique root of \\(R_f\\), they are separated by the following test: the group is \\(C_4\\) precisely when both \\(T^2+aT+(b-r)\\) and \\(T^2-rT+d\\) split over \\(K(\\sqrt{\\Delta(f)})\\); otherwise it is \\(D_4\\).</p>",
+        "citations": [
+          {
+            "key": "KappeWarren1989Quartic",
+            "locator": "pp. 133–137",
+            "note": "Original published quartic-group test; Conrad Theorem 4.1 gives the exact formulation used here."
+          },
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorem 3.6, Corollary 3.8, and Theorem 4.1 (Kappe–Warren)"
+          }
+        ]
+      },
+      {
+        "id": "quartic-example",
+        "title": "An exact S4 certificate",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · \\(f=x^4+2x+2\\)</p><p>Eisenstein at \\(2\\) proves irreducibility. The resolvent is \\(R_f=T^3-8T-4\\). By the rational-root test a rational root would be one of \\(\\pm1,\\pm2,\\pm4\\); the six values, in the order \\(-4,-2,-1,1,2,4\\), are \\(-36,4,3,-11,-12,28\\). None is zero, so \\(R_f\\) is irreducible.</p><p>The discriminant is</p>\\[256\\cdot2^3-27\\cdot2^4=1616=16\\cdot101.\\]<p>It is nonsquare. The first line of the classification gives \\(\\operatorname{Gal}(f/\\mathbb Q)=S_4\\). This argument verifies the candidate group using rational arithmetic and small integer tests.</p></div>",
+        "citations": [
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Table 5",
+            "note": "The example also appears in the source; the arithmetic is displayed here in full."
+          }
+        ]
+      },
+      {
+        "id": "cyclic-dihedral-examples",
+        "title": "Two examples resolving the cyclic–dihedral ambiguity",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · the cyclic case</p><p>For \\(f=x^4+x^3+x^2+x+1\\), translation gives \\(f(x+1)=x^4+5x^3+10x^2+10x+5\\), which is Eisenstein at \\(5\\). Here</p>\n\\[\\Delta(f)=125,\\qquad R_f(T)=(T-2)(T^2+T-1).\\]\n<p>The unique rational resolvent root is \\(r=2\\), and the discriminant field is \\(\\mathbb Q(\\sqrt5)\\). The two test polynomials are \\(T^2+T-1\\) and \\((T-1)^2\\). Both split over that field, so the group is \\(C_4\\).</p></div>\n<div class=\"math-block example\"><p class=\"block-label\">Example · the dihedral case</p><p>For \\(f=x^4-2\\), Eisenstein at \\(2\\) proves irreducibility. Now</p>\n\\[\\Delta(f)=-2048,\\qquad R_f(T)=T(T^2+8).\\]\n<p>Thus \\(r=0\\), the discriminant field is \\(\\mathbb Q(\\sqrt{-2})\\), and the test polynomials are \\(T^2\\) and \\(T^2-2\\). The latter does not split there: a real element of this imaginary quadratic field is rational, while \\(\\sqrt2\\) is not. Hence the group is \\(D_4\\), of order eight.</p></div>\n<p>Both resolvents have the same factor degrees \\((1,2)\\). The extra quadratic-field test distinguishes their groups.</p>",
+        "citations": [
+          {
+            "key": "KappeWarren1989Quartic",
+            "locator": "pp. 133–137",
+            "note": "Original group-separation method."
+          },
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorem 4.1 and Corollary 4.3",
+            "note": "Exact test used in these independently calculated examples."
+          }
+        ]
+      },
+      {
+        "id": "use",
+        "title": "Why resolvents complement prime witnesses",
+        "body": "<p>A prime factorization proves that some cycle type occurs. A resolvent factorization proves that the group preserves an orbit or a structure in another action. These supply different constraints and often work best together. A rational linear resolvent factor can reveal a block structure invisible from the first few primes.</p><p>For larger degrees, computing a single enormous absolute resolvent may be wasteful. Stauduhar's method descends through successive subgroup candidates using relative invariants. Fieker and Klüners explain how to construct invariants from group structure and how to certify the relevant factors. A numerical value close to an integer is a candidate for this process, not an exact factorization certificate.</p>",
+        "citations": [
+          {
+            "key": "Stauduhar1973"
+          },
+          {
+            "key": "FiekerKlueners2014",
+            "locator": "Sections 3 and 7"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "discriminants",
+        "relation": "Uses",
+        "why": "Parity finishes several branches of the quartic classification."
+      },
+      {
+        "id": "galois-computation",
+        "relation": "Applies to",
+        "why": "Relative resolvents are a central tool in practical group determination."
+      },
+      {
+        "id": "permutation-groups",
+        "relation": "Uses",
+        "why": "The factorization of a resolvent describes orbits in a coset action."
+      },
+      {
+        "id": "reciprocity",
+        "relation": "Supplies examples for",
+        "why": "The inverse-pair partition suggests natural resolvents and smaller ambient groups."
+      }
+    ],
+    "questions": [
+      {
+        "id": "quartic-cyclic-dihedral",
+        "title": "How can a quartic with a reducible cubic resolvent be distinguished as cyclic or dihedral?",
+        "status": "Settled in stated scope",
+        "scope": "Separable irreducible quartics over fields of characteristic not 2",
+        "body": "<p>First exclude the Klein-four case using the discriminant. In the remaining branch, the Kappe–Warren test checks the splitting of two specified quadratics over the discriminant quadratic extension.</p>",
+        "citations": [
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorem 4.1"
+          },
+          {
+            "key": "KappeWarren1989Quartic",
+            "locator": "pp. 133–137"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "factorization-algorithms",
+    "title": "Exact factorization: finite fields, Hensel lifting, and lattices",
+    "kind": "algorithm",
+    "subject": "algorithms",
+    "summary": "Factorization algorithms turn structural ideas into certificates: Frobenius and linear algebra over finite fields, then p-adic lifting and lattice reduction over the rationals.",
+    "level": "Intermediate",
+    "field": "Finite fields, Q, and p-adic fields",
+    "status": "Published results",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "What is the mathematics behind a factorization command?",
+      "Why is modular factorization followed by recombination?",
+      "How can a randomized computation still produce exact factors?",
+      "How do recent modular-composition advances relate to factorization?",
+      "How are local factors found when reduction has repeated factors?"
+    ],
+    "prerequisites": [
+      "modular-irreducibility",
+      "finite-field-irreducibility"
+    ],
+    "sections": [
+      {
+        "id": "finite",
+        "title": "The finite-field pipeline",
+        "body": "<p>Start with a polynomial over \\(\\mathbb F_q\\). A squarefree decomposition separates repeated factors, using gcds with the derivative. If the derivative vanishes, the polynomial is a \\(p\\)-th power over the finite field and one first takes its \\(p\\)-th root.</p><p>For a squarefree polynomial, \\(\\gcd(f,x^{q^d}-x)\\) selects its irreducible factors whose degrees divide \\(d\\). Repeating this with the factors already found removed gives a distinct-degree decomposition. Equal-degree splitting then separates factors of the same degree. Cantor–Zassenhaus uses random choices for this splitting step; the output consists of exact polynomial factors whose product and irreducibility can be checked.</p>",
+        "citations": [
+          {
+            "key": "CantorZassenhaus1981"
+          },
+          {
+            "key": "GathenGerhard2013",
+            "note": "Squarefree, distinct-degree, and equal-degree factorization."
+          }
+        ]
+      },
+      {
+        "id": "berlekamp",
+        "title": "Berlekamp: factors as Frobenius-fixed functions",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">The structural observation</p><p>If \\(f\\) is squarefree with \\(r\\) distinct irreducible factors, then</p>\\[\\dim_{\\mathbb F_q}\\{h\\in\\mathbb F_q[x]/(f):h^q=h\\}=r.\\]</div><p>Indeed, the Chinese remainder theorem identifies the quotient with a product \\(\\prod_{i=1}^r\\mathbb F_{q^{d_i}}\\). The fixed elements of Frobenius on each component are exactly \\(\\mathbb F_q\\). Finding the fixed subspace is linear algebra. A fixed element assumes constant values on the components; gcds \\(\\gcd(f,h-c)\\), for \\(c\\in\\mathbb F_q\\), separate components with different values.</p><div class=\"math-block example\"><p class=\"block-label\">Example · a three-dimensional fixed subspace</p><p>Over \\(\\mathbb F_2\\), take \\(f=x^4+x\\). Since \\(f'=1\\), it is squarefree. In the quotient, \\(x^4=x\\), and solving \\(h^2=h\\) gives the basis \\(1,x^2+x,x^3\\). Thus there are three irreducible factors. The gcds from \\(h=x^3\\) first split off \\(x\\); those from \\(h=x^2+x\\) split the remaining cubic. The result is</p>\\[x^4+x=x(x+1)(x^2+x+1).\\]<p>The quadratic has no root in \\(\\mathbb F_2\\), so this is an independently checkable complete factorization.</p></div>",
+        "citations": [
+          {
+            "key": "Berlekamp1967",
+            "note": "Frobenius-fixed algebra and the linear-algebra factorization method."
+          }
+        ]
+      },
+      {
+        "id": "modular-composition",
+        "title": "Modular composition: applying Frobenius efficiently",
+        "body": "<p>The operation <em>modular composition</em> takes \\(a,g,f\\in K[x]\\), with \\(f\\) monic of degree \\(n\\) and \\(\\deg a,\\deg g&lt;n\\), and computes \\(g(a(x))\\bmod f(x)\\). It avoids storing a composition whose unreduced degree can be nearly \\(n^2\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Why this operation belongs in factorization</p><p>In \\(A=\\mathbb F_q[x]/(f)\\), put \\(a=x^q\\bmod f\\). For every \\(h\\in\\mathbb F_q[x]\\),</p>\\[h(x)^q\\equiv h(a(x))\\pmod f.\\]<p>The coefficients are fixed by the \\(q\\)-power map. Thus one application of Frobenius is a modular composition. Iterates of this map supply the powers used in distinct-degree factorization and irreducibility tests.</p></div><div class=\"math-block example\"><p class=\"block-label\">Example · Frobenius without a large unreduced power</p><p>Over \\(\\mathbb F_2\\), take \\(f=x^3+x+1\\). Since \\(x^3=x+1\\) in the quotient, applying Frobenius to \\(h=x^2+x\\) gives</p>\\[h^2=x^4+x^2=(x^2+x)+x^2=x.\\]<p>Equivalently, compose \\(h\\) with \\(a=x^2\\) and reduce modulo \\(f\\). This identity is exact; a complexity theorem concerns how efficiently such identities can be computed in large degree.</p></div><p>Brent–Kung's baby-step/giant-step method groups powers of \\(a\\) into blocks and combines them by matrix multiplication. Later methods encode small algebraic relations between \\(x\\) and \\(a\\) in polynomial matrices, or reduce the task to multivariate evaluation. These are different ways of avoiding the full intermediate composition.</p>",
+        "citations": [
+          {
+            "key": "BrentKung1978",
+            "locator": "Composition algorithms; see also Neiger–Salvy–Schost–Villard (2024), Section 1.1, for modular composition"
+          },
+          {
+            "key": "KedlayaUmans2011",
+            "locator": "Sections 3 and 7"
+          },
+          {
+            "key": "NeigerSalvySchostVillard2024",
+            "locator": "Section 1.1 and Theorem 1.1"
+          }
+        ]
+      },
+      {
+        "id": "complexity-models",
+        "title": "Recent progress: compare the same computational problem and model",
+        "body": "<p>A <em>field-operation count</em> charges unit cost for arithmetic in \\(K\\). A <em>bit-operation count</em> includes the representation and size of coefficients. Over \\(\\mathbb F_q\\), these are not interchangeable uniformly in \\(q\\). Also distinguish modular composition from the entire factorization pipeline.</p><div class=\"table-wrap\"><table><thead><tr><th>Source</th><th>Precise scope</th><th>Contribution</th></tr></thead><tbody><tr><td>Kedlaya–Umans (2011)</td><td>Modular composition over \\(\\mathbb F_q\\); bit complexity</td><td>For each fixed \\(\\varepsilon&gt;0\\), \\(n^{1+\\varepsilon}\\log^{1+o(1)}q\\) bit operations in sufficiently large degree. This leads to a randomized finite-field factorization bound, displayed below.</td></tr><tr><td>Neiger–Salvy–Schost–Villard (2024)</td><td>Arbitrary fields of known characteristic; arithmetic complexity</td><td>A Las Vegas method with expected \\(O(n^{1.43})\\) field operations. Small finite fields are handled through a suitably enlarged extension; a failed randomized trial is detected.</td></tr><tr><td>Neiger–Salvy–Schost–Villard (2026)</td><td>Fixed \\(f\\), generic inner polynomial \\(a\\); arithmetic complexity</td><td>Two relation matrices give \\(\\widetilde O(n^{(\\omega+3)/4})\\) field operations. Here \\(\\omega\\) is a feasible square-matrix multiplication exponent. The genericity requirement is essential.</td></tr><tr><td>van der Hoeven–Lecerf (2026)</td><td>Modular composition over \\(\\mathbb Z/r\\mathbb Z\\); bit complexity</td><td>A sharper nearly linear bound via spiroids and Fourier transforms with proved precision control. Prime finite fields are a special case.</td></tr></tbody></table></div><p>For orientation, the Kedlaya–Umans randomized <em>factorization</em> bound is</p>\\[O\\!\\left(n^{3/2+o(1)}\\log^{1+o(1)}q+n^{1+o(1)}\\log^{2+o(1)}q\\right).\\]<p>A faster modular-composition subroutine does not by itself turn this exponent into \\(1\\). Guo–Narayanan–Umans (2016) organize related algebraic problems through reductions that would transfer an improvement below the factorization exponent \\(3/2\\). These reductions describe a research target, not a lower-bound theorem forbidding faster algorithms.</p><p><strong>Conditional direction.</strong> Umans–Wang (2025) propose structured sets of integers with a divisibility-covering property as a route to faster factorization. Their proposed improvement depends on a number-theoretic conjecture; it is not an unconditional algorithm beating \\(3/2\\). The paper was listed for ISAAC in December 2026 when checked on 12 November; the reference below identifies the available preprint.</p>",
+        "citations": [
+          {
+            "key": "KedlayaUmans2011",
+            "locator": "Corollary 7.2 and finite-field factorization results"
+          },
+          {
+            "key": "NeigerSalvySchostVillard2024",
+            "locator": "Theorem 1.1 and the following discussion of sampling and small finite fields"
+          },
+          {
+            "key": "NeigerSalvySchostVillard2026",
+            "locator": "Theorem 1.3 and the paragraph immediately following it"
+          },
+          {
+            "key": "HoevenLecerf2026",
+            "locator": "Theorem 1 and Sections 1.3–1.4; author version dated 12 August 2026"
+          },
+          {
+            "key": "GuoNarayananUmans2016",
+            "locator": "Introduction and reduction theorems"
+          },
+          {
+            "key": "UmansWang2025",
+            "locator": "Abstract and introduction; conditional strategy"
+          }
+        ]
+      },
+      {
+        "id": "hensel",
+        "title": "Lifting a modular factorization",
+        "body": "<p>For clarity, let \\(f\\in\\mathbb Z[x]\\) be monic and squarefree. Choose a prime where its reduction remains squarefree, factor there, and lift the pairwise coprime factors modulo \\(p,p^2,p^4,\\ldots\\) by Hensel's lemma. Coprimality permits the correction equations to be solved at each stage.</p><p>A rational factor can combine several of the lifted factors. The task is therefore not merely to lift but to discover which combinations descend to \\(\\mathbb Z[x]\\). Bounds for the coefficients of a genuine factor turn sufficiently accurate modular coefficients into unique candidate integers. Exact division then accepts or rejects a candidate.</p><p>This explains why “reducible modulo \\(p\\)” gives no rational factor by itself: the finite-field pieces need not descend separately. Conversely, when one good reduction is irreducible, the rational computation can stop immediately.</p>",
+        "citations": [
+          {
+            "key": "Zassenhaus1969"
+          },
+          {
+            "key": "GathenGerhard2013",
+            "note": "Hensel lifting, coefficient bounds, and modular factorization."
+          }
+        ]
+      },
+      {
+        "id": "montes",
+        "title": "Local factorization beyond coprime reduction",
+        "body": "<p>Factoring over \\(\\mathbb Q_p\\) is itself a complete task, even when every factor of \\(\\bar f\\) is repeated. A residual polynomial separates roots that share a Newton slope; higher Newton polygons continue when that residual information is insufficient. The Montes method organizes successive slopes, residue-field extensions, and polynomial representatives into <em>types</em>. Complete types identify irreducible local factors and their ramification indices and residue degrees.</p><p>Guàrdia–Montes–Nart give the underlying theory and an algorithm for prime ideal decomposition and discriminants. Poteaux–Weimann's ISSAC 2022 paper improves local factorization through Hensel lifting adapted to these valuations and a divide-and-conquer strategy. Its sharper complexity bound assumes residue characteristic zero or greater than the polynomial degree; residual-field factorization costs are accounted for separately.</p><p>A local factor is represented to a stated \\(p\\)-adic precision together with exact structural data; its coefficients need not be rational. Recovering rational factors still requires global recombination and certification.</p>",
+        "citations": [
+          {
+            "key": "GuardiaMontesNart2012Newton",
+            "locator": "§§2–4",
+            "note": "Higher-order polygon and residual-polynomial theory."
+          },
+          {
+            "key": "GuardiaMontesNart2011Montes",
+            "locator": "§2.2, Theorem 2.2; §3",
+            "note": "Complete types and the optimized Montes method."
+          },
+          {
+            "key": "PoteauxWeimann2022Local",
+            "locator": "Assumption 1; §§4–5, Theorems 3–4",
+            "note": "Published algorithmic improvements; assumptions and residual-field costs remain explicit."
+          }
+        ]
+      },
+      {
+        "id": "lattices",
+        "title": "Why lattice reduction changes the recombination step",
+        "body": "<p>Trying every subset of lifted factors can be exponentially expensive in their number. The Lenstra–Lenstra–Lovász theorem gives a deterministic algorithm for factoring rational polynomials in time polynomial in their degree and coefficient bit size, using lattice reduction. The lattice encodes congruence information; short vectors reveal relations compatible with a genuine factor.</p><p>Van Hoeij recasts practical recombination through a structured knapsack problem. Modern variants, including FLINT’s implementation, use logarithmic derivatives to turn products into sums, so a prospective factor corresponds to a vector of choices among local factors. Lattice reduction narrows the possible choice vectors before expensive exact tests. Belabas–van Hoeij–Klüners–Steel (2009) proved polynomial-time complexity for van Hoeij’s original rational-polynomial algorithm and natural variants. This recombination method uses local information to find exact global factors.</p>",
+        "citations": [
+          {
+            "key": "LLL1982",
+            "note": "Polynomial-time factorization over Q."
+          },
+          {
+            "key": "VanHoeij2002",
+            "note": "Recombination by knapsack and lattice methods."
+          },
+          {
+            "key": "BHKS2009",
+            "note": "Polynomial-time analysis of van Hoeij’s original rational-polynomial factorization algorithm and natural variants."
+          },
+          {
+            "key": "FLINTFactorizationDocumentation",
+            "note": "Implementation-oriented explanation of modular factorization.",
+            "locator": "Factoring polynomials over the integers: Van Hoeij’s algorithm and Complexity"
+          }
+        ]
+      },
+      {
+        "id": "certification",
+        "title": "What a complete factorization certificate contains",
+        "body": "<p>The identity \\(f=c\\prod_i g_i^{e_i}\\) proves a factorization, but not its completeness. Completeness additionally requires proof that each \\(g_i\\) is irreducible over the stated field. A modular irreducibility witness, a proved algorithm, or a suitable exact criterion can supply that step. Record the coefficient field, normalization, multiplicities, and the irreducibility method along with the factors.</p><p>Randomized search and uncertain conclusions are different issues. Random choices may affect runtime while every returned factor and certificate is checked exactly. Conversely, a deterministic-looking numerical procedure can still require an explicit certification step. This distinction is essential when computational output becomes evidence in a theorem about a family.</p>",
+        "citations": [
+          {
+            "key": "GathenGerhard2013"
+          },
+          {
+            "key": "Rabin1980",
+            "note": "Finite-field algorithms and exact irreducibility tests."
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "finite-field-irreducibility",
+        "relation": "Uses",
+        "why": "Frobenius tests certify the finite-field factors."
+      },
+      {
+        "id": "modular-irreducibility",
+        "relation": "Generalizes",
+        "why": "One-prime criteria are early exits within a broader exact algorithm."
+      },
+      {
+        "id": "galois-computation",
+        "relation": "Applies to",
+        "why": "A group computation begins with exact factorization and separability checks."
+      },
+      {
+        "id": "newton-polygons",
+        "relation": "Uses",
+        "why": "Residual polynomials and higher Newton polygons refine valuations into local irreducibility and factorization data."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rational-factorization-decidable",
+        "title": "Is irreducibility over Q algorithmically decidable in polynomial time?",
+        "status": "Settled in stated scope",
+        "scope": "Dense univariate polynomials given by rational coefficients in binary",
+        "body": "<p>Yes: LLL gives polynomial-time factorization in degree and coefficient bit size. This is a complexity theorem for this input model; it does not imply equally efficient factorization for every sparse encoding or every extension field representation.</p>",
+        "citations": [
+          {
+            "key": "LLL1982"
+          }
+        ]
+      },
+      {
+        "id": "generic-modular-composition",
+        "title": "Can the 2026 generic composition bound be extended to arbitrary input?",
+        "status": "Research direction",
+        "scope": "Algebraic modular composition over a field; the two-relation-matrix method",
+        "body": "<p>For each degree-\\(n\\) modulus \\(f\\), Theorem 1.3 supplies a nonempty Zariski-open set of coefficient vectors for \\(a\\) on which the faster bound holds. The algorithm can detect failure of its genericity conditions and fall back on another method. The authors explicitly leave a Las Vegas reduction for arbitrary input to future work. A nonempty Zariski-open set over an algebraic closure need not contain a point over a small finite base field; “generic” must not be silently replaced by “every.”</p>",
+        "citations": [
+          {
+            "key": "NeigerSalvySchostVillard2026",
+            "locator": "Theorem 1.3 and following paragraph"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "galois-computation",
+    "title": "Computing a Galois group with a proof certificate",
+    "kind": "algorithm",
+    "subject": "algorithms",
+    "summary": "A reliable computation combines exact arithmetic, subgroup constraints, and certification. Save enough evidence that the conclusion survives a change of software.",
+    "level": "Intermediate",
+    "field": "Q, number fields, and p-adic fields",
+    "status": "Published results",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "What should be stored with a computed Galois group?",
+      "How do resolvents and modular witnesses work together?",
+      "Which official software limitations and proof settings matter?"
+    ],
+    "prerequisites": [
+      "frobenius",
+      "resolvents",
+      "factorization-algorithms"
+    ],
+    "sections": [
+      {
+        "id": "object",
+        "title": "Specify the mathematical object first",
+        "body": "<p>The input is a polynomial and a ground field. For \\(f\\in\\mathbb Q[x]\\), clear denominators, remove content, and compute a squarefree factorization. A transitive-group label describes the action for an irreducible factor. If \\(f\\) is reducible, its whole splitting field is a compositum; the group need not be the direct product of the groups of the factors because their splitting fields can intersect.</p><p>For an irreducible degree-\\(n\\) input, the useful output is the subgroup of \\(S_n\\) up to conjugacy, together with its action on the roots. An abstract isomorphism type alone may lose information needed for cycle types, resolvents, subfields, or iteration.</p>",
+        "citations": [
+          {
+            "key": "Cox2012"
+          },
+          {
+            "key": "FiekerKlueners2014",
+            "locator": "Introduction and Section 2"
+          }
+        ]
+      },
+      {
+        "id": "workflow",
+        "title": "A practical proof workflow",
+        "body": "<ol><li><strong>Establish irreducibility and separability.</strong> Keep the factorization or irreducibility certificate, rather than inferring it from an expected group.</li><li><strong>Compute the discriminant and structural restrictions.</strong> Reciprocity, composition, and known intermediate fields can reduce the ambient permutation group.</li><li><strong>Gather exact local witnesses.</strong> Record good primes, the complete finite-field factorization, and the resulting cycle type. Verify the factors and their irreducibility.</li><li><strong>Eliminate candidates.</strong> Use primitive-group theorems when applicable; otherwise use relative resolvents and subgroup descent.</li><li><strong>Certify the final descent.</strong> Save the successful proof status and the exact data needed to check the decisive tests.</li></ol><p>Stauduhar's method makes the fourth step systematic. Starting from a known overgroup, it tests relative invariants for maximal subgroups and descends whenever a certified resolvent condition permits it.</p>",
+        "citations": [
+          {
+            "key": "Stauduhar1973"
+          },
+          {
+            "key": "FiekerKlueners2014",
+            "locator": "Sections 3 and 7"
+          }
+        ]
+      },
+      {
+        "id": "outputs-and-complexity",
+        "title": "A decision problem can be easier than constructing the splitting field",
+        "body": "<p>Landau–Miller (1985) give a polynomial-time decision procedure for solvability by radicals over \\(\\mathbb Q\\), in the dense binary input model. Their paper also constructs radical expressions in a compact straight-line-program representation. The encoding is part of the theorem: expanding every repeated subexpression can destroy the size bound.</p><p>The method exploits blocks of imprimitivity and the restricted size of primitive solvable permutation groups. Thus one can answer a structural question about a Galois group without first listing all its elements. This is different from constructing the splitting field in an explicit basis: its degree may be \\(n!\\) for a degree-\\(n\\) polynomial with group \\(S_n\\).</p>",
+        "citations": [
+          {
+            "key": "LandauMiller1985",
+            "locator": "Introduction and Sections 2–4"
+          }
+        ]
+      },
+      {
+        "id": "software",
+        "title": "Read the proof contract of the software",
+        "body": "<div class=\"table-wrap\"><table><thead><tr><th>Tool</th><th>Relevant contract</th><th>What to retain</th></tr></thead><tbody><tr><td>Magma</td><td>Native <code>GaloisGroup</code> accepts integer, rational, and number-field polynomials without a fixed degree cap, but does not automatically prove its conditional steps. The documented <code>GaloisProof(f,S)</code> contract covers integer polynomials; an absolute number-field overload is also available.</td><td>Input, options, <code>GaloisData</code>, successful proof result, and version.</td></tr><tr><td>PARI/GP 2.19</td><td><code>polgalois</code> requires irreducible input over \\(\\mathbb Q\\), of degree at most seven, or eleven with <code>galdata</code>. Its resolvent method can rarely return a wrong answer when initial numerical precision is insufficient.</td><td>Polynomial, precision, complete output, numbering convention, and version.</td></tr><tr><td>SageMath 10.10</td><td>The rational-polynomial <code>galois_group</code> interface requires irreducible input. It uses PARI through degree eleven and attempts GAP above that; GAP's documented algorithm range is through degree fifteen, with some higher cases possible. The Magma wrapper identifies groups only through degree thirty.</td><td>Routine, algorithm, backend version, permutation action, and separate certification outcome.</td></tr></tbody></table></div><p>Native Magma's degree-independent algorithm and Sage's wrapper have different limits. A database containing transitive groups of a given degree does not guarantee that the group-computation algorithm handles every polynomial of that degree. Runtime and memory can be decisive even without a formal degree cap.</p><p>For Sage number fields, <code>gc_numbering</code> controls whether permutations act on roots of the original defining polynomial or of the Galois closure's defining polynomial. The documentation also warns that calling <code>galois_group</code> on a relative extension currently computes its absolute Galois closure over \\(\\mathbb Q\\); specify the intended ground field explicitly.</p><p>Sage also documents <code>galois_group_davenport_smith_test</code>: return values \\(1\\) and \\(2\\) certify \\(S_n\\) and \\(A_n\\), while \\(0\\) means inconclusive. Its default checks irreducibility; setting <code>assume_irreducible=True</code> requires an independently established hypothesis. This specialized test is different from unrestricted group determination.</p>",
+        "citations": [
+          {
+            "key": "MagmaGaloisDocumentation",
+            "locator": "GaloisGroup and GaloisProof",
+            "note": "Input fields, degree independence, conditional output, and documented certification scope."
+          },
+          {
+            "key": "PARIDocumentation",
+            "locator": "polgalois, PARI/GP 2.19.0",
+            "note": "Degree limits, output conventions, and explicit precision warning."
+          },
+          {
+            "key": "SageGaloisDocumentation",
+            "locator": "Polynomial_rational_flint.galois_group; galois_group_davenport_smith_test; NumberField.galois_group, SageMath 10.10",
+            "note": "Backend limits, certified specialized test, root-action conventions, and relative-field warning."
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "A portable quartic certificate",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · exact arithmetic first</p><p>For \\(f=x^4+2x+2\\), retain three pieces of data:</p><ol><li>Eisenstein at \\(2\\), proving irreducibility.</li><li>The resolvent \\(R=T^3-8T-4\\), with no rational root among \\(\\pm1,\\pm2,\\pm4\\).</li><li>The discriminant \\(\\Delta(f)=1616=16\\cdot101\\), a nonsquare.</li></ol><p>The quartic classification proves the group is \\(S_4\\). The proof can be checked independently of the program that first suggested the group. The companion exact-arithmetic script verifies these identities, the root tests, and additional small examples.</p></div><p>A corresponding Magma command sequence is:</p><pre><code>Zx&lt;x&gt; := PolynomialRing(Integers());\nf := x^4 + 2*x + 2;\nG, roots, S := GaloisGroup(f);\nassert GaloisProof(f, S);\nOrder(G);</code></pre><p>This is a reproducible command template, not a claimed Magma execution from this atlas. The algebraic proof above establishes \\(|G|=24\\) without relying on that execution.</p>",
+        "citations": [
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Table 5 and Theorem 3.6"
+          },
+          {
+            "key": "MagmaGaloisDocumentation",
+            "locator": "GaloisGroup and GaloisProof"
+          }
+        ]
+      },
+      {
+        "id": "local-groups",
+        "title": "Local Galois groups require a local computation",
+        "body": "<p>For a rational polynomial, computing its group over \\(\\mathbb Q_p\\) asks a different question from computing its group over \\(\\mathbb Q\\). If \\(L/\\mathbb Q\\) is the global splitting field and \\(\\mathfrak P\\mid p\\), the local splitting-field group identifies with the decomposition subgroup \\(D_{\\mathfrak P}\\subseteq\\operatorname{Gal}(L/\\mathbb Q)\\). The embedding depends on the choice of \\(\\mathfrak P\\), up to conjugacy.</p><p>Doris (2020) develops local algorithms using ramification towers, global models, and resolvents. A global model supplies a tractable overgroup; local factorization of resolvents distinguishes the desired subgroup. The base field therefore remains part of the result even when global auxiliary calculations are used.</p><p>Certification must also follow the actual implementation. Remark 3.5 of the paper identifies a heuristic complex-root bound in the then-current implementation. The author's package documentation later describes an exact \\(p\\)-adic input mode that produces proved results. Record the mode and verification outcome; the existence of a mathematical algorithm alone does not certify a particular finite-precision run.</p>",
+        "citations": [
+          {
+            "key": "Neukirch1999",
+            "locator": "Decomposition groups and completions"
+          },
+          {
+            "key": "Doris2020",
+            "locator": "Sections 1.1–4 and Remark 3.5; linked author package documentation for the exact-input mode"
+          }
+        ]
+      },
+      {
+        "id": "data",
+        "title": "From one calculation to a family",
+        "body": "<p>For a parameterized family, save the parameter range, normalization, exceptions, and every input polynomial. A table of successful cases is evidence for a conjecture; it does not establish the same conclusion for all parameters. Separate a proved general result from a finite verified range and from a numerical experiment.</p><p>Factor degrees usually identify the Frobenius cycle type rather than its precise conjugacy class in the group. Dokchitser and Dokchitser give finer invariants for distinguishing classes when cycle type is insufficient. This matters when arithmetic applications require more than the abstract group or its order.</p><p>A useful downloadable record includes exact coefficients, ground field, source theorem or algorithm, witness primes, discriminant, group action, certification outcome, and the date of the run. Databases supply comparison examples; the original computation or theorem supplies the proof.</p>",
+        "citations": [
+          {
+            "key": "DokchitserDokchitser2013",
+            "note": "Distinguishing Frobenius classes beyond their cycle types."
+          },
+          {
+            "key": "LMFDBFieldsGroups",
+            "note": "Comparison data for number fields and transitive groups."
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "resolvents",
+        "relation": "Uses",
+        "why": "Relative invariants certify containment in smaller subgroups."
+      },
+      {
+        "id": "frobenius",
+        "relation": "Uses",
+        "why": "Small-prime witnesses eliminate candidate groups inexpensively."
+      },
+      {
+        "id": "factorization-algorithms",
+        "relation": "Uses",
+        "why": "Exact factors and irreducibility checks establish the input assumptions."
+      },
+      {
+        "id": "eulerian",
+        "relation": "Applies to",
+        "why": "Family tables must separate finite certified calculations from a theorem in every degree."
+      }
+    ],
+    "questions": [
+      {
+        "id": "group-computation-certificate",
+        "title": "What turns a plausible computed Galois group into a proved result?",
+        "status": "Research direction",
+        "scope": "Reproducible computations for explicit polynomial families",
+        "body": "<p>Design short certificates for the decisive containment and noncontainment tests, and retain their verifiers. The quartic example already has such a certificate. Extending this style to a chosen family is a concrete project; it is not a claim that certification of Galois groups is itself unsolved.</p>",
+        "citations": [
+          {
+            "key": "FiekerKlueners2014",
+            "locator": "Section 7"
+          },
+          {
+            "key": "MagmaGaloisDocumentation",
+            "locator": "GaloisProof"
+          }
+        ]
+      }
+    ]
+  }
+]

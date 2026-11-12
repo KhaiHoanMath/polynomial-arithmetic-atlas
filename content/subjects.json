@@ -1,0 +1,86 @@
+[
+  {
+    "id": "foundations",
+    "title": "Foundations",
+    "summary": "Fields, roots, and the questions we ask.",
+    "question": "What does irreducibility depend on, and what information does a Galois group retain?",
+    "referenceGroup": 0
+  },
+  {
+    "id": "criteria",
+    "title": "Irreducibility methods",
+    "summary": "Local, archimedean, and structural criteria.",
+    "question": "How can the shape or arithmetic of coefficients rule out every possible factor?",
+    "referenceGroup": 1
+  },
+  {
+    "id": "galois",
+    "title": "Galois group detection",
+    "summary": "From arithmetic data to permutations.",
+    "question": "Which observations force a group, and which only constrain it?",
+    "referenceGroup": 2
+  },
+  {
+    "id": "families",
+    "title": "Polynomial families",
+    "summary": "Definitions, normalizations, and benchmark theorems.",
+    "question": "What makes a family special, and how do its symmetries change the expected group?",
+    "referenceGroup": 3
+  },
+  {
+    "id": "random",
+    "title": "Counting and probability",
+    "summary": "Models, asymptotic regimes, and exceptional sets.",
+    "question": "When are irreducibility and large Galois groups typical?",
+    "referenceGroup": 4
+  },
+  {
+    "id": "specialization",
+    "title": "Specialization and inverse Galois",
+    "summary": "Moving between a family and its fibers.",
+    "question": "When does a specialization preserve the generic group?",
+    "referenceGroup": 5
+  },
+  {
+    "id": "dynamics",
+    "title": "Composition and iteration",
+    "summary": "Decomposition, trees, and iterated extensions.",
+    "question": "How do repeated substitutions organize roots and Galois groups?",
+    "referenceGroup": 6
+  },
+  {
+    "id": "finite-fields",
+    "title": "Finite fields",
+    "summary": "Exact tests, constructions, and distributions.",
+    "question": "How can one test and construct irreducibles over a finite field?",
+    "referenceGroup": 7
+  },
+  {
+    "id": "algorithms",
+    "title": "Algorithms and certificates",
+    "summary": "Factorization, resolvents, and exact computation.",
+    "question": "What does an algorithm compute, and what certifies its answer?",
+    "referenceGroup": 8
+  },
+  {
+    "id": "resources",
+    "title": "Databases and software",
+    "summary": "Trusted tools and their documented limits.",
+    "question": "Where can examples be found and results reproduced?",
+    "referenceGroup": 9
+  },
+  {
+    "id": "multivariate",
+    "title": "Several variables",
+    "summary": "Absolute irreducibility and geometric methods.",
+    "question": "What changes when irreducibility becomes a geometric question?",
+    "referenceGroup": 10
+  },
+  {
+    "id": "courses",
+    "title": "Books and reading paths",
+    "summary": "A route from first principles to the literature.",
+    "question": "Which sources develop the background needed for a particular method?",
+    "referenceGroup": 11
+  }
+]

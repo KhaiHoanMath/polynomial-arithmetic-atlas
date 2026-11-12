@@ -1,0 +1,133 @@
+[
+  {
+    "id": "ramification-inertia",
+    "title": "Ramification and inertia: cycles at bad primes",
+    "kind": "method",
+    "subject": "galois",
+    "summary": "Good primes reveal Frobenius cycle types. At ramified primes, inertia supplies different information: for a monic integral polynomial, an odd prime dividing its discriminant exactly once forces a transposition.",
+    "level": "Intermediate",
+    "field": "Q and local fields",
+    "status": "Classical theory",
+    "checked": "2026-11-11",
+    "questionsAnswered": [
+      "What replaces Frobenius at a ramified prime?",
+      "When does a discriminant valuation force a transposition?",
+      "Why can repeated factors modulo a prime be misleading?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "discriminants",
+      "frobenius"
+    ],
+    "sections": [
+      {
+        "id": "local-subgroups",
+        "title": "Two local subgroups inside the global group",
+        "body": "<p>Let \\(L/\\mathbb Q\\) be a finite Galois extension with group \\(G\\), and choose a prime \\(\\mathfrak P\\) above \\(p\\). Its <strong>decomposition group</strong> \\(D_{\\mathfrak P}\\) consists of automorphisms preserving \\(\\mathfrak P\\). The <strong>inertia group</strong> \\(I_{\\mathfrak P}\\) consists of those acting trivially on the residue field \\(k_{\\mathfrak P}=\\mathcal O_L/\\mathfrak P\\). There is an exact sequence</p>\\[1\\longrightarrow I_{\\mathfrak P}\\longrightarrow D_{\\mathfrak P}\\longrightarrow\\operatorname{Gal}(k_{\\mathfrak P}/\\mathbb F_p)\\longrightarrow1.\\]<p>Also \\(D_{\\mathfrak P}\\cong\\operatorname{Gal}(L_{\\mathfrak P}/\\mathbb Q_p)\\). Thus a local calculation produces elements of the global group. When \\(p\\) is unramified, inertia is trivial and residue Frobenius lifts uniquely inside \\(D_{\\mathfrak P}\\). At a ramified prime it determines a coset modulo inertia. Inertia fixes the reductions of integral roots, while possibly permuting roots that collide.</p>",
+        "citations": [
+          {
+            "key": "Milne2020ANT",
+            "locator": "Theorem 7.58; Proposition 8.10",
+            "note": "Exact sequence, maximal unramified subfield, and identification with the local Galois group."
+          }
+        ]
+      },
+      {
+        "id": "tame-cycles",
+        "title": "Tame inertia and its cycle lengths",
+        "body": "<p>In residue characteristic \\(p\\), inertia has a normal wild \\(p\\)-subgroup and a cyclic quotient of order prime to \\(p\\). If the extension is <strong>tame</strong>, wild inertia is trivial, so inertia itself is cyclic.</p><p>For irreducible \\(f\\), put \\(K=\\mathbb Q(\\alpha)\\). If its splitting field is tame at \\(p\\), write \\(p\\mathcal O_K=\\prod_i\\mathfrak p_i^{e_i}\\), with residue degrees \\(f_i\\). A generator of inertia acts on the roots with an \\(e_i\\)-cycle repeated \\(f_i\\) times for each \\(i\\). Indeed, the decomposition orbit for \\(\\mathfrak p_i\\) has size \\(e_if_i\\), and splits into \\(f_i\\) inertia orbits of size \\(e_i\\); a cyclic generator traverses each orbit. These are ramification indices in the ring of integers, not automatically exponents in \\(f\\bmod p\\).</p><p>For example, \\(x^3-5\\) is Eisenstein over \\(\\mathbb Q_5\\). Its root has valuation \\(1/3\\), forcing ramification index three. Adjoining a primitive cube root of unity is unramified at \\(5\\), since \\(x^2+x+1\\) has squarefree reduction. The splitting field therefore has cyclic inertia of order three, acting as a three-cycle. Here \\(\\Delta(x^3-5)=-675\\) has valuation two at \\(5\\): tame ramification yields useful cycles beyond the valuation-one criterion.</p>",
+        "citations": [
+          {
+            "key": "Serre1979",
+            "locator": "Ramification Groups, pp. 61–79",
+            "note": "Background for tame and wild inertia; the cycle description is the orbit consequence explained here."
+          },
+          {
+            "key": "Milne2020ANT",
+            "locator": "Corollary 7.59 and the following paragraph",
+            "note": "Cyclicity of the tame quotient and the criterion for tame ramification."
+          }
+        ]
+      },
+      {
+        "id": "simple-discriminant-prime",
+        "title": "A prime appearing once gives a transposition",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · simple discriminant prime</p><p>Let \\(f\\in\\mathbb Z[x]\\) be monic and separable, with splitting field \\(L\\). If \\(p\\) is odd and \\(v_p(\\Delta(f))=1\\), then inertia at every prime of \\(L\\) above \\(p\\) has order two, and its nonidentity element acts as a transposition on the roots. Irreducibility is not required.</p></div><div class=\"math-block proof\"><p class=\"block-label\">Proof · isolate one ramified quadratic factor</p><p>Multiplication by \\(f'\\) on the free \\(\\mathbb Z_p\\)-module \\(\\mathbb Z_p[x]/(f)\\) has determinant \\(\\operatorname{Res}(f,f')=\\pm\\Delta(f)\\). Valuation one means its Smith normal form has exactly one nonunit diagonal entry, so reduction modulo \\(p\\) has cokernel dimension one. This cokernel is \\(\\mathbb F_p[x]/(\\bar f,\\bar f')\\); hence \\(\\deg\\gcd(\\bar f,\\bar f')=1\\).</p><p>Since \\(p\\) is odd, necessarily \\(\\bar f=(x-a)^2\\bar h\\), where \\(a\\in\\mathbb F_p\\), \\(\\bar h\\) is squarefree, and \\(\\bar h(a)\\ne0\\). Hensel's lemma lifts these coprime factors to \\(f=qh\\) over \\(\\mathbb Z_p\\), with \\(q\\) quadratic. The identity</p>\\[\\Delta(f)=\\Delta(q)\\Delta(h)\\operatorname{Res}(q,h)^2\\]<p>and the unit factors \\(\\Delta(h)\\) and \\(\\operatorname{Res}(q,h)\\) give \\(v_p(\\Delta(q))=1\\). The splitting field \\(\\mathbb Q_p(\\sqrt{\\Delta(q)})\\) is ramified quadratic; the squarefree reduction of \\(h\\) makes its splitting field unramified. Their compositum therefore has inertia of order two, swapping precisely the two roots of \\(q\\).</p></div>",
+        "citations": [
+          {
+            "key": "Milne2020ANT",
+            "locator": "Theorem 7.33; Proposition 7.50",
+            "note": "Hensel lifting and unramified extensions used in the explicit proof; the valuation-one deduction is supplied here."
+          },
+          {
+            "key": "Serre1979",
+            "locator": "Discriminant and Different, pp. 47–60; Ramification Groups, pp. 61–79",
+            "note": "Discriminants and local ramification framework."
+          }
+        ]
+      },
+      {
+        "id": "cubic-certificate",
+        "title": "An exact cubic certificate",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · \\(x^3-x-1\\)</p><p>The rational-root test proves \\(f=x^3-x-1\\) irreducible: neither \\(1\\) nor \\(-1\\) is a root. Its discriminant and bad-prime reduction are</p>\\[\\Delta(f)=-4(-1)^3-27(-1)^2=-23,\\qquad f\\equiv(x-10)^2(x-3)\\pmod{23}.\\]<p>The latter identity is certified by \\(f-(x-10)^2(x-3)=23(x^2-7x+13)\\). The theorem supplies an inertia transposition at \\(23\\). Since \\(G\\le S_3\\) is transitive, \\(3\\mid |G|\\); the transposition gives \\(2\\mid |G|\\), so \\(G=S_3\\). The valuation-one hypothesis, rather than the displayed repeated factor alone, certifies the ramification step.</p></div>",
+        "citations": [
+          {
+            "key": "Serre1979",
+            "locator": "Ramification Groups, pp. 61–79",
+            "note": "Local-group background; all numerical identities and the elementary group argument are verified directly here."
+          }
+        ]
+      },
+      {
+        "id": "index-boundary",
+        "title": "Polynomial discriminants can record a nonmaximal order",
+        "body": "<div class=\"math-block boundary\"><p class=\"block-label\">Boundary · repeated reduction need not mean ramification</p><p>For monic irreducible \\(f\\) with root \\(\\alpha\\) and \\(K=\\mathbb Q(\\alpha)\\),</p>\\[\\Delta(f)=\\operatorname{disc}(K)\\,[\\mathcal O_K:\\mathbb Z[\\alpha]]^2.\\]<p>Consider \\(x^2-18\\), with root \\(3\\sqrt2\\). Modulo \\(3\\) it becomes \\(x^2\\), yet \\(K=\\mathbb Q(\\sqrt2)\\) has discriminant \\(8\\), so \\(3\\) is unramified and its inertia group is trivial. The polynomial discriminant is \\(72=8\\cdot3^2\\): the repeated reduction comes from the index \\(3\\). Conversely, valuation one excludes any index contribution at that prime.</p></div><p>To force \\(S_n\\) in higher degree, a transposition still needs additional group information, such as primitivity. Transitivity alone does not suffice.</p>",
+        "citations": [
+          {
+            "key": "Milne2020ANT",
+            "locator": "Remark 2.25; Theorem 3.35",
+            "note": "Index-squared discriminant identity and the ramification–discriminant criterion."
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "frobenius",
+        "relation": "Contrasts with",
+        "why": "Squarefree good-prime factorization records Frobenius; repeated reduction requires inertia and index analysis."
+      },
+      {
+        "id": "discriminants",
+        "relation": "Uses",
+        "why": "The valuation of the polynomial discriminant can isolate a ramified quadratic factor."
+      },
+      {
+        "id": "permutation-groups",
+        "relation": "Applies to",
+        "why": "A certified inertia transposition combines with primitivity to force the symmetric group."
+      },
+      {
+        "id": "newton-polygons",
+        "relation": "Contrasts with",
+        "why": "Newton polygons constrain local factor degrees; inertia records root permutations produced by ramification."
+      }
+    ],
+    "questions": [
+      {
+        "id": "ramification-repeated-root-test",
+        "title": "Does a repeated root modulo p certify nontrivial inertia?",
+        "status": "Settled in stated scope",
+        "scope": "Monic integral polynomials over Q",
+        "body": "<p>No: \\(x^2-18\\) modulo \\(3\\) is a counterexample, because its root field is unramified at \\(3\\). Control the order index or use a stronger condition such as the valuation-one theorem.</p>",
+        "citations": [
+          {
+            "key": "Milne2020ANT",
+            "locator": "Remark 2.25",
+            "note": "The index-squared discriminant identity explains the obstruction."
+          }
+        ]
+      }
+    ]
+  }
+]

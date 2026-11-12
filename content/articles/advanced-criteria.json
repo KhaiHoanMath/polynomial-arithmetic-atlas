@@ -1,0 +1,282 @@
+[
+  {
+    "id": "capelli-composition",
+    "title": "Capelli: composition, binomials, and iterates",
+    "kind": "method",
+    "subject": "criteria",
+    "summary": "Replace the irreducibility of a composition by a lower-degree question in a root field. Binomials and a stable quadratic illustrate how power obstructions and norms make this reduction effective.",
+    "level": "Intermediate",
+    "field": "general fields; characteristic zero for binomials",
+    "status": "Classical theory",
+    "checked": "2026-11-11",
+    "questionsAnswered": [
+      "When is a composition of polynomials irreducible?",
+      "Exactly when is a binomial irreducible in characteristic zero?",
+      "How can one prove irreducibility of every iterate?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "root-field-reduction",
+        "title": "Move the problem into a root field",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Capelli's composition lemma</p><p>Let \\(K\\) be any field, let \\(F\\in K[x]\\) be irreducible of degree \\(m\\ge1\\), and let \\(g\\in K[x]\\) have degree \\(d\\ge1\\). For a root \\(\\alpha\\) of \\(F\\), the composition \\(F(g(x))\\) is irreducible over \\(K\\) if and only if \\(g(x)-\\alpha\\) is irreducible over \\(K(\\alpha)\\).</p></div>\n<div class=\"math-block proof\"><p class=\"block-label\">Proof · multiplication of degrees</p><p>Choose a root \\(\\beta\\) of \\(g(x)-\\alpha\\). Since \\(\\alpha=g(\\beta)\\), we have \\(K(\\alpha)\\subseteq K(\\beta)\\), and</p>\\[[K(\\beta):K]=m\\,[K(\\beta):K(\\alpha)].\\]<p>The polynomial \\(F(g(x))\\), of degree \\(md\\), has root \\(\\beta\\). It is irreducible exactly when the left side is \\(md\\), equivalently when the minimal polynomial of \\(\\beta\\) over \\(K(\\alpha)\\) has degree \\(d\\). No separability assumption is needed for this argument.</p></div>\n<p>The reduction replaces a large degree by arithmetic in a larger coefficient field. When \\(g=x^r+c\\), the new question is whether \\(x^r-(\\alpha-c)\\) factors; power classes and norms become natural tools.</p>",
+        "citations": [
+          {
+            "key": "AyadMcQuillan2000",
+            "note": "Capelli’s composition lemma, stated for arbitrary fields.",
+            "locator": "Lemma 1, p. 87"
+          },
+          {
+            "key": "Schinzel2000",
+            "note": "Composition and reducibility in extension fields."
+          }
+        ]
+      },
+      {
+        "id": "composition-counterexample",
+        "title": "Irreducible inputs can give a reducible composition",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · a square appears in the root field</p><p>Both \\(F=x^2-8\\) and \\(g=x^2-3\\) are irreducible over \\(\\mathbb Q\\), but</p>\\[F(g(x))=x^4-6x^2+1=(x^2-2x-1)(x^2+2x-1).\\]<p>With \\(\\alpha=2\\sqrt2\\), the obstruction is visible before expanding: \\(3+\\alpha=(1+\\sqrt2)^2\\), so \\(g(x)-\\alpha\\) splits in \\(\\mathbb Q(\\sqrt2)[x]\\). Checking each input over \\(\\mathbb Q\\) misses this new square.</p></div>",
+        "citations": [
+          {
+            "key": "AyadMcQuillan2000",
+            "note": "The root-field criterion explains the explicitly verified example.",
+            "locator": "Lemma 1"
+          }
+        ]
+      },
+      {
+        "id": "binomial-criterion",
+        "title": "The exact binomial criterion",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Capelli's binomial criterion</p><p>Let \\(K\\) have characteristic zero, \\(a\\in K^\\times\\), and \\(n\\ge2\\). Then \\(x^n-a\\) is irreducible over \\(K\\) exactly when</p><ul><li>\\(a\\notin K^p\\) for every prime \\(p\\mid n\\);</li><li>if \\(4\\mid n\\), then \\(a\\notin-4K^4\\).</li></ul><p>Here \\(K^p=\\{b^p:b\\in K\\}\\). This statement is restricted to characteristic zero; finite-field questions are treated separately.</p></div>\n<p>The first obstruction gives a difference-of-powers factorization. The exceptional fourth-power obstruction comes from</p>\n\\[x^{4r}+4b^4=(x^{2r}-2bx^r+2b^2)(x^{2r}+2bx^r+2b^2).\\]\n<p>These prove necessity. Sufficiency is the substantive part of Capelli's theorem: one builds the extension by prime-power steps and rules out a power appearing in the intermediate root fields. Odd-prime steps use norms; the power of two requires precisely the additional obstruction above.</p>\n<div class=\"math-block example\"><p class=\"block-label\">Example · two different obstructions</p><p>The polynomial \\(x^4+4\\) factors by the displayed identity even though \\(-4\\) is not a rational square. In contrast, \\(x^6-72\\) is irreducible: \\(72=2^3 3^2\\) is neither a square nor a cube. In fact \\(x^n-72\\) is irreducible for every \\(n\\ge2\\), because no prime divides both valuation exponents \\(3,2\\), and a positive rational number cannot be \\(-4\\) times a rational fourth power.</p></div>",
+        "citations": [
+          {
+            "key": "capelli1901binomials",
+            "note": "The classical binomial reducibility theorem, including the exceptional fourth-power case."
+          },
+          {
+            "key": "Lang2002",
+            "note": "The field-theoretic treatment of irreducible binomials and the norm argument."
+          }
+        ]
+      },
+      {
+        "id": "binomial-local-global",
+        "title": "The same binomial through valuations and fields",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · irreducibility does not determine the group</p><p>For \\(h=x^6-72\\), the Newton polygon at \\(2\\) has one slope \\(-3/6=-1/2\\), allowing proper factor degrees \\(2,4\\). At \\(3\\), its slope is \\(-2/6=-1/3\\), allowing only degree \\(3\\). The empty intersection gives a second proof of irreducibility, complementing Capelli. Neither polygon individually forces the full degree.</p><p>To determine the group, choose the positive root \\(\\alpha=\\sqrt2\\sqrt[3]{3}\\). The identities</p>\\[\\sqrt2=\\alpha^3/6,\\qquad\\sqrt[3]{3}=\\alpha^4/12\\]\n<p>show that the splitting field is \\(L=\\mathbb Q(\\sqrt2,\\sqrt[3]{3},\\zeta_3)\\). The splitting field \\(M\\) of \\(x^3-3\\) has group \\(S_3\\): the cubic is Eisenstein at \\(3\\), and its discriminant is \\(-243\\). Its unique quadratic subfield is \\(\\mathbb Q(\\sqrt{-3})\\). Thus \\(M\\cap\\mathbb Q(\\sqrt2)=\\mathbb Q\\), and restriction gives</p>\\[\\operatorname{Gal}(h/\\mathbb Q)\\cong S_3\\times C_2,\\qquad |\\operatorname{Gal}(h/\\mathbb Q)|=12.\\]\n<p>The discriminant \\(2^{21}3^{16}\\) is nonsquare, but the group is much smaller than \\(S_6\\). The two irreducibility proofs, the root-field calculation, and parity answer distinct questions.</p></div>",
+        "citations": [
+          {
+            "key": "dumas1906",
+            "note": "The slope-denominator principle applied to the explicitly computed two-prime certificate."
+          },
+          {
+            "key": "Milne2022",
+            "note": "Galois correspondence, composita, and the quadratic subfield determined by a discriminant; the displayed sextic calculation is supplied here."
+          },
+          {
+            "key": "capelli1901binomials",
+            "note": "The complementary binomial criterion."
+          }
+        ]
+      },
+      {
+        "id": "norm-stability",
+        "title": "An all-level proof for a quadratic",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · every iterate of \\(f=x^2+1\\) is irreducible over \\(\\mathbb Q\\)</p><p>Put \\(F_r=f^{\\circ r}\\) and \\(a_r=F_r(0)\\), with \\(a_0=0\\). Then \\(a_{r+1}=a_r^2+1\\), beginning \\(0,1,2,5,26,677\\). The base case \\(F_1=x^2+1\\) is irreducible. Suppose \\(F_r\\) is irreducible and let \\(\\alpha\\) be a root. Capelli reduces the next step to showing that \\(\\alpha-1\\) is not a square in \\(\\mathbb Q(\\alpha)\\).</p><p>Since \\(F_r\\) is monic of even degree,</p>\n\\[N_{\\mathbb Q(\\alpha)/\\mathbb Q}(\\alpha-1)=F_r(1)=a_{r+1}=a_r^2+1.\\]\n<p>For \\(r\\ge1\\), this integer lies strictly between \\(a_r^2\\) and \\((a_r+1)^2\\). It is therefore not a rational square. A square in \\(\\mathbb Q(\\alpha)\\) would have square norm, giving the contradiction and completing induction.</p></div>\n<div class=\"math-block boundary\"><p class=\"block-label\">Boundary · use the norm implication in its valid direction</p><p>A nonsquare norm certifies a nonsquare element; a square norm does not certify a square element. The argument proves stability, meaning irreducibility of every iterate. Determining every Galois group in the resulting tree requires further information. The correction to Ayad–McQuillan is relevant when using broader stability criteria: an originally claimed converse does not hold.</p></div>",
+        "citations": [
+          {
+            "key": "AyadMcQuillan2000",
+            "note": "Capelli’s lemma underlying the supplied norm induction.",
+            "locator": "Lemma 1"
+          },
+          {
+            "key": "AyadMcQuillan2001Correction",
+            "note": "The corrected sufficient stability criterion and the failure of the original converse.",
+            "locator": "Theorem A"
+          },
+          {
+            "key": "Jones2013Arboreal",
+            "note": "Stability and its relation to arboreal Galois representations.",
+            "locator": "§5"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "foundations",
+        "relation": "Uses",
+        "why": "The tower formula turns polynomial irreducibility into an equality of extension degrees."
+      },
+      {
+        "id": "composition-iteration",
+        "relation": "Applies to",
+        "why": "Stability is a prerequisite for transitivity at every level of an arboreal action."
+      },
+      {
+        "id": "newton-polygons",
+        "relation": "Supplies examples for",
+        "why": "The sextic x⁶−72 has complementary Capelli and two-prime Newton-polygon proofs."
+      },
+      {
+        "id": "discriminants",
+        "relation": "Uses",
+        "why": "The sextic example has nonsquare discriminant but a group of order only 12."
+      },
+      {
+        "id": "integer-values",
+        "relation": "Applies to",
+        "why": "Arithmetic restrictions on values can establish irreducibility of other composed families."
+      },
+      {
+        "id": "finite-field-irreducibility",
+        "relation": "Contrasts with",
+        "why": "Finite fields have separate effective tests that incorporate the field size and Frobenius."
+      }
+    ],
+    "questions": [
+      {
+        "id": "composition-preserves-irreducibility",
+        "title": "Does composition preserve irreducibility of its two inputs?",
+        "status": "Settled in stated scope",
+        "scope": "Nonconstant polynomials over Q",
+        "body": "<p>No. The explicit pair \\(x^2-8\\), \\(x^2-3\\) above is a counterexample. Capelli identifies the missing condition: the inner polynomial minus a root of the outer one must remain irreducible over that root field.</p>",
+        "citations": [
+          {
+            "key": "AyadMcQuillan2000",
+            "note": "The exact criterion, applied here to an independently expanded example.",
+            "locator": "Lemma 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "integer-values",
+    "title": "Small values, unit values, and prime values",
+    "kind": "method",
+    "subject": "criteria",
+    "summary": "Integer evaluations constrain every possible integral factor. Three precise criteria turn those constraints into proofs, with examples showing where the converses fail.",
+    "level": "Intermediate",
+    "field": "Q",
+    "status": "Classical theory",
+    "checked": "2026-11-11",
+    "questionsAnswered": [
+      "Why is a product of distinct linear integer factors minus one irreducible?",
+      "How small must many values be to force irreducibility?",
+      "How many prime or unit values suffice?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "schur-unit-values",
+        "title": "Unit values: a rigid sign relation",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · the minus-one case of Schur's problem</p><p>For distinct integers \\(a_1,\\ldots,a_m\\), with \\(m\\ge1\\), the polynomial</p>\\[P(x)=\\prod_{i=1}^{m}(x-a_i)-1\\]<p>is irreducible over \\(\\mathbb Q\\).</p></div>\n<div class=\"math-block proof\"><p class=\"block-label\">Proof · too many roots of a smaller polynomial</p><p>A nontrivial factorization gives monic \\(g,h\\in\\mathbb Z[x]\\) of positive degrees with \\(P=gh\\). At each \\(a_i\\), the integers \\(g(a_i),h(a_i)\\) multiply to \\(-1\\), so \\(g(a_i)+h(a_i)=0\\). The polynomial \\(g+h\\) has degree less than \\(m\\) and at least \\(m\\) distinct roots. It must vanish identically, contradicting the monicity of both factors.</p></div>\n<p>The sign cannot simply be reversed. Two exact exceptions are</p>\n\\[x(x-2)+1=(x-1)^2,\\qquad x(x-1)(x-2)(x-3)+1=(x^2-3x+1)^2.\\]\n<p>Westlund and Flügel's classical solution, recalled in Győry–Hajdu–Tijdeman, shows that these are the only reducible plus-one cases, up to an integer translation of the variable. Schur posed the question in 1908; the distinction between a problem and its subsequent solution matters for attribution.</p>",
+        "citations": [
+          {
+            "key": "schur1908problem226",
+            "note": "The original problem, rather than an attribution of the later solution."
+          },
+          {
+            "key": "gyoryhajdutijdeman2011",
+            "note": "The minus-one theorem, the complete plus-one exception list, and attribution of the 1909 solution.",
+            "locator": "§1, p. 416"
+          }
+        ]
+      },
+      {
+        "id": "polya-small-values",
+        "title": "Pólya: many values below a factorial threshold",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Pólya's criterion</p><p>Let \\(P\\in\\mathbb Z[x]\\) have degree \\(n\\ge2\\), and put \\(N=\\lceil n/2\\rceil\\). If there are \\(n\\) distinct integers \\(a\\) such that</p>\\[0\\lt |P(a)|\\lt \\frac{N!}{2^N},\\]<p>then \\(P\\) is irreducible over \\(\\mathbb Q\\).</p></div>\n<div class=\"math-block proof\"><p class=\"block-label\">Proof · interpolation controls a factor's leading coefficient</p><p>If \\(P=QR\\) with positive-degree integral factors, choose the larger degree \\(d=\\deg Q\\), so \\(N\\le d\\le n-1\\). At every selected integer, \\(|Q(a)|\\le|P(a)|\\), because the other integral factor is nonzero. Choose \\(d+1\\) of those arguments and order them as \\(b_0\\lt \\cdots\\lt b_d\\). Their integer spacing gives \\(\\prod_{i\\ne j}|b_j-b_i|\\ge j!(d-j)!\\). Writing \\(M=\\max_j|Q(b_j)|\\), Lagrange interpolation gives</p>\n\\[1\\le|\\operatorname{lc}(Q)|\\le M\\sum_{j=0}^{d}\\frac1{j!(d-j)!}=M\\frac{2^d}{d!}.\\]\n<p>Consequently \\(M\\ge d!/2^d\\ge N!/2^N\\), contradicting the strict bound. Gauss's lemma justifies the integral factorization even when \\(P\\) is not monic.</p></div>\n<div class=\"math-block example\"><p class=\"block-label\">Example · a degree-ten certificate</p><p>For \\(P(x)=\\prod_{j=0}^{9}(x-j)+2\\), the ten values at \\(0,\\ldots,9\\) are all \\(2\\). Since \\(2\\lt 5!/2^5=15/4\\), Pólya proves irreducibility without expanding the polynomial. Nonzero values are essential: an integer zero would itself give a rational linear factor.</p></div>",
+        "citations": [
+          {
+            "key": "polya1919",
+            "note": "The classical small-value irreducibility criterion."
+          },
+          {
+            "key": "gyoryhajdutijdeman2011",
+            "note": "Confirms the ceiling in N and the strict factorial threshold; the displayed interpolation proof is supplied here.",
+            "locator": "§1, p. 416"
+          }
+        ]
+      },
+      {
+        "id": "many-prime-values",
+        "title": "Prime values: count the possible unit evaluations",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · a finite prime-value certificate</p><p>Let \\(f\\in\\mathbb Z[x]\\) be primitive of degree \\(n\\ge1\\). If \\(|f(a)|\\) is either \\(1\\) or a prime at \\(2n+1\\) distinct integers \\(a\\), then \\(f\\) is irreducible over \\(\\mathbb Q\\).</p></div>\n<div class=\"math-block proof\"><p class=\"block-label\">Proof · four equations</p><p>For a putative positive-degree integral factorization \\(f=gh\\), every selected argument satisfies \\(g(a)=1\\), \\(g(a)=-1\\), \\(h(a)=1\\), or \\(h(a)=-1\\). Those four equations have at most \\(2\\deg g+2\\deg h=2n\\) distinct solutions in total, a contradiction.</p></div>\n<div class=\"math-block example\"><p class=\"block-label\">Example · five values suffice for a quadratic</p><p>At \\(a=0,1,2,3,4\\), the values of \\(x^2+x+41\\) are \\(41,43,47,53,61\\), all prime. Thus the criterion proves irreducibility. It says nothing about primality at all later arguments; at \\(40\\) the value is \\(41^2\\).</p></div>",
+        "citations": [
+          {
+            "key": "ConradIrredQ",
+            "note": "The finite prime-or-unit-value criterion and its elementary counting proof.",
+            "locator": "Theorem 5.1"
+          }
+        ]
+      },
+      {
+        "id": "value-method-boundaries",
+        "title": "What values alone do not tell you",
+        "body": "<div class=\"math-block boundary\"><p class=\"block-label\">Boundary · sufficient conditions</p><p>A single prime value is insufficient: \\((x-1)(x+1)\\) takes the prime value \\(3\\) at \\(2\\). Conversely, \\(x^2+x+4\\) is irreducible because its discriminant is \\(-15\\), yet every integer value is even and at least \\(4\\). It never passes the preceding prime-or-unit-value test.</p></div>\n<p>A single prime value can suffice when extra information controls the factors: Cohn's criterion restricts the coefficients to base digits, while root bounds force nonconstant factors to have large absolute values at a chosen integer. The archimedean entry explains those mechanisms. For more general small-value criteria, Levit, Tverberg, and Győry–Hajdu–Tijdeman develop sharper bounds and extensions. Their precise hypotheses should replace any informal assertion that “many small values” automatically imply irreducibility.</p>",
+        "citations": [
+          {
+            "key": "ConradIrredQ",
+            "note": "The irreducible polynomial with no prime or unit evaluations.",
+            "locator": "§5, p. 5"
+          },
+          {
+            "key": "levit1968",
+            "note": "Further criteria based on low absolute values."
+          },
+          {
+            "key": "tverberg1973smallvalues",
+            "note": "Refinements of the small-value method."
+          },
+          {
+            "key": "gyoryhajdutijdeman2011",
+            "note": "Extensions involving Schur-type and Pólya-type families."
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "foundations",
+        "relation": "Uses",
+        "why": "Gauss’s lemma lets integer evaluations constrain rational factors."
+      },
+      {
+        "id": "archimedean-criteria",
+        "relation": "Contrasts with",
+        "why": "The one-value criteria add coefficient or root-location information to control possible unit factors."
+      },
+      {
+        "id": "capelli-composition",
+        "relation": "Applies to",
+        "why": "Schur-type constructions lead to composed families whose irreducibility can also be studied in root fields."
+      },
+      {
+        "id": "factorization-algorithms",
+        "relation": "Contrasts with",
+        "why": "A short evaluation certificate proves irreducibility without producing factors or searching over coefficient bounds."
+      }
+    ],
+    "questions": [
+      {
+        "id": "prime-values-incomplete",
+        "title": "Does every irreducible integer polynomial take a prime or unit value?",
+        "status": "Settled in stated scope",
+        "scope": "Primitive polynomials in Z[x], with integer arguments and without changing variables",
+        "body": "<p>No. The primitive irreducible polynomial \\(x^2+x+4\\) has only positive even values at integers, all at least \\(4\\). This elementary obstruction explains why the finite prime-value criterion is sufficient but cannot be necessary.</p>",
+        "citations": [
+          {
+            "key": "ConradIrredQ",
+            "note": "The same explicit obstruction is recorded after the prime-value criterion.",
+            "locator": "§5, p. 5"
+          }
+        ]
+      }
+    ]
+  }
+]

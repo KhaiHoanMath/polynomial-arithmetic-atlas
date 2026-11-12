@@ -1,0 +1,764 @@
+{
+  "routes": [
+    {
+      "id": "first-proof",
+      "title": "From a polynomial to its Galois group",
+      "audience": "A first course in field theory",
+      "goal": "Prove irreducibility, obtain permutation information, and finish a complete group determination.",
+      "articles": [
+        "foundations",
+        "modular-irreducibility",
+        "frobenius",
+        "permutation-groups",
+        "discriminants"
+      ],
+      "references": [
+        "Milne2022",
+        "Cox2012",
+        "ConradIrredQ",
+        "ConradModP",
+        "ConradSnAn"
+      ],
+      "checkpoint": "Give a proof of \\(\\operatorname{Gal}(x^5-x-1/\\mathbb Q)=S_5\\) and state exactly what each prime contributes.",
+      "steps": [
+        {
+          "article": "foundations",
+          "title": "Fields, factors, and the action on roots",
+          "note": "Fix the ground field, separate irreducibility from separability, and translate factorization into a permutation action.",
+          "references": []
+        },
+        {
+          "article": "modular-irreducibility",
+          "title": "Irreducibility by reduction modulo primes",
+          "note": "Use one finite-field factorization, or intersect the possible degrees supplied by several primes. Understand why the method can fail for an irreducible polynomial.",
+          "references": []
+        },
+        {
+          "article": "frobenius",
+          "title": "Frobenius: from factor degrees to permutations",
+          "note": "A factorization over a finite field reveals a cycle type in a global Galois group. Combine these local witnesses with a separate group-theoretic argument.",
+          "references": []
+        },
+        {
+          "article": "permutation-groups",
+          "title": "The group-theoretic step: transitivity, alternating groups, and symmetric groups",
+          "note": "Local arithmetic supplies permutations. Block systems, transpositions, and long cycles explain when those permutations force a large group.",
+          "references": []
+        },
+        {
+          "article": "discriminants",
+          "title": "Discriminants, parity, and ramification",
+          "note": "The discriminant detects collisions of roots and the sign character of a Galois group. Its square class is powerful, but it does not measure the size of the group.",
+          "references": [
+            "Milne2022",
+            "Cox2012",
+            "ConradIrredQ",
+            "ConradModP",
+            "ConradSnAn"
+          ]
+        },
+        {
+          "title": "Checkpoint",
+          "note": "Give a proof of \\(\\operatorname{Gal}(x^5-x-1/\\mathbb Q)=S_5\\) and state exactly what each prime contributes."
+        }
+      ]
+    },
+    {
+      "id": "valuation-methods",
+      "title": "From valuations to large groups",
+      "audience": "Readers comfortable with valuations and finite permutation groups",
+      "goal": "Learn how coefficient divisibility restricts factor degrees and produces long prime cycles.",
+      "articles": [
+        "eisenstein-dumas",
+        "newton-polygons",
+        "permutation-groups",
+        "taylor",
+        "laguerre"
+      ],
+      "references": [
+        "Serre1979",
+        "dumas1906",
+        "Coleman1987",
+        "Hajir2005",
+        "FilasetaLam2002"
+      ],
+      "checkpoint": "Separate the irreducibility input, the Newton-polygon input, Jordan's theorem, and the discriminant step.",
+      "steps": [
+        {
+          "article": "eisenstein-dumas",
+          "title": "Schönemann–Eisenstein and one-edge Newton polygons",
+          "note": "A divisibility pattern can force every factor to have the full degree. Translation and Newton slopes extend the elementary criterion.",
+          "references": []
+        },
+        {
+          "article": "newton-polygons",
+          "title": "Newton polygons, factor degrees, and large cycles",
+          "note": "Read p-adic root valuations from coefficients, intersect the permitted factor degrees, and use suitable slope denominators to force a large Galois group.",
+          "references": []
+        },
+        {
+          "article": "permutation-groups",
+          "title": "The group-theoretic step: transitivity, alternating groups, and symmetric groups",
+          "note": "Local arithmetic supplies permutations. Block systems, transpositions, and long cycles explain when those permutations force a large group.",
+          "references": []
+        },
+        {
+          "article": "taylor",
+          "title": "Taylor truncations: two exact benchmarks",
+          "note": "Exponential truncations have alternating or symmetric groups, while geometric truncations are cyclotomic. Their contrast identifies which arithmetic features a general truncation theory must track.",
+          "references": []
+        },
+        {
+          "article": "laguerre",
+          "title": "Generalized Laguerre polynomials: two parameter regimes",
+          "note": "Factorial products connect local slopes to large Galois groups. Fixing the parameter and increasing the degree is a different problem from fixing the degree and varying the parameter.",
+          "references": [
+            "Serre1979",
+            "dumas1906",
+            "Coleman1987",
+            "Hajir2005",
+            "FilasetaLam2002"
+          ]
+        },
+        {
+          "title": "Checkpoint",
+          "note": "Separate the irreducibility input, the Newton-polygon input, Jordan's theorem, and the discriminant step."
+        }
+      ]
+    },
+    {
+      "id": "structured-families",
+      "title": "Study a structured family",
+      "audience": "Researchers moving from examples to a family theorem",
+      "goal": "Identify forced factors and symmetries before choosing the expected Galois group.",
+      "articles": [
+        "reciprocity",
+        "sparse-gaps",
+        "trinomials",
+        "eulerian",
+        "fekete",
+        "orthogonal-families"
+      ],
+      "references": [
+        "Schinzel2000",
+        "Prasolov2004",
+        "sawinshustermanstoll2020",
+        "MinacNguyenTan2023",
+        "CullinanHajir2014"
+      ],
+      "checkpoint": "Write the normalization, the natural ambient permutation group, a proved benchmark, and a source-scoped unresolved question.",
+      "steps": [
+        {
+          "article": "reciprocity",
+          "title": "Reciprocal symmetry and the group on root pairs",
+          "note": "Pass from a reciprocal polynomial to a polynomial of half the degree. The remaining quadratic extensions explain both irreducibility and the correct ambient Galois group.",
+          "references": []
+        },
+        {
+          "article": "sparse-gaps",
+          "title": "Sparse polynomials, factor reversal, and large gaps",
+          "note": "Separate persistent reciprocal factors from the nonreciprocal part, then use coefficient sparsity to constrain possible factorizations.",
+          "references": []
+        },
+        {
+          "article": "trinomials",
+          "title": "Trinomials: uniform families and explicit classifications",
+          "note": "The polynomials xⁿ−x−1 realize Sₙ in every degree. Prime reductions give short certificates, while inertia explains the uniform theorem.",
+          "references": []
+        },
+        {
+          "article": "eulerian",
+          "title": "Eulerian polynomials: descents, shifts, and inverse pairs",
+          "note": "Descent statistics lead to reciprocal polynomials. A prime-index Eisenstein argument and an exact quartic example show how combinatorics, local arithmetic, and Galois theory fit together.",
+          "references": []
+        },
+        {
+          "article": "fekete",
+          "title": "Fekete polynomials: character sums and reciprocal arithmetic",
+          "note": "Quadratic characters impose exact rational factors and reciprocal symmetry. Trace polynomials connect their irreducibility and Galois groups to special values and square classes.",
+          "references": []
+        },
+        {
+          "article": "orthogonal-families",
+          "title": "Hermite, Bessel, and Legendre: shared tools, different answers",
+          "note": "Classical polynomial families share differential and recurrence identities, but their arithmetic factorization problems differ. Parity reduction and coefficient products expose the correct questions.",
+          "references": [
+            "Schinzel2000",
+            "Prasolov2004",
+            "sawinshustermanstoll2020",
+            "MinacNguyenTan2023",
+            "CullinanHajir2014"
+          ]
+        },
+        {
+          "title": "Checkpoint",
+          "note": "Write the normalization, the natural ambient permutation group, a proved benchmark, and a source-scoped unresolved question."
+        }
+      ]
+    },
+    {
+      "id": "random-regimes",
+      "title": "Read probabilistic results without changing the model",
+      "audience": "Researchers reading counting and random-polynomial papers",
+      "goal": "Keep the asymptotic parameter, coefficient law, conditioning, and analytic hypotheses visible.",
+      "articles": [
+        "height-counting",
+        "random-models",
+        "littlewood",
+        "random-reciprocal",
+        "random-matrices"
+      ],
+      "references": [
+        "Bhargava2025",
+        "BreuillardVarju2019",
+        "BarySorokerKoukoulopoulosKozma2023",
+        "BarySorokerHokkenKozmaPoonen2025",
+        "Eberhard2022"
+      ],
+      "checkpoint": "Explain why a fixed-degree height theorem does not imply a growing-degree fair-sign theorem.",
+      "steps": [
+        {
+          "article": "height-counting",
+          "title": "Counting exceptional Galois groups by height",
+          "note": "At fixed degree, almost all integer polynomials have full symmetric group. The sharp exceptional order, and its change under reciprocity, reveal which arithmetic obstructions dominate.",
+          "references": []
+        },
+        {
+          "article": "random-models",
+          "title": "Random polynomials: models and proof strategies",
+          "note": "The coefficient law and the limiting parameter determine the problem. A guide to irreducibility, alternating-group containment, and the additional step needed for a full symmetric group.",
+          "references": []
+        },
+        {
+          "article": "littlewood",
+          "title": "Littlewood polynomials: signs, parity, and special degrees",
+          "note": "Independent signs create strong congruence constraints. Exact examples show both their usefulness and why the all-degree probabilistic problem needs more than reduction modulo two.",
+          "references": []
+        },
+        {
+          "article": "random-reciprocal",
+          "title": "Random reciprocal polynomials of growing degree",
+          "note": "Independent free coefficients generate paired roots and a signed-permutation group. The trace polynomial connects this structured model to ordinary factorization problems.",
+          "references": []
+        },
+        {
+          "article": "random-matrices",
+          "title": "Characteristic polynomials of random matrices",
+          "note": "Matrix entries can be independent while characteristic-polynomial coefficients are strongly dependent. Local rank estimates replace the independent-coefficient tools.",
+          "references": [
+            "Bhargava2025",
+            "BreuillardVarju2019",
+            "BarySorokerKoukoulopoulosKozma2023",
+            "BarySorokerHokkenKozmaPoonen2025",
+            "Eberhard2022"
+          ]
+        },
+        {
+          "title": "Checkpoint",
+          "note": "Explain why a fixed-degree height theorem does not imply a growing-degree fair-sign theorem."
+        }
+      ]
+    },
+    {
+      "id": "families-and-specialization",
+      "title": "From generic families to arithmetic specializations",
+      "audience": "Graduate readers interested in arithmetic geometry and inverse Galois theory",
+      "goal": "Connect generic monodromy, Hilbert irreducibility, and specialization while tracking the quantifiers.",
+      "articles": [
+        "critical-points-monodromy",
+        "specialization",
+        "inverse-galois",
+        "composition-iteration",
+        "laguerre"
+      ],
+      "references": [
+        "Serre2007Topics",
+        "FriedJarden2023",
+        "HajirWong2006",
+        "JensenLedetYui2002",
+        "Jones2013Arboreal"
+      ],
+      "checkpoint": "Distinguish infinitely many good specializations, all but finitely many, density one, and an infinite tower.",
+      "steps": [
+        {
+          "article": "critical-points-monodromy",
+          "title": "Critical points and monodromy: a geometric route to the symmetric group",
+          "note": "Derivatives and critical values determine the generic group; the cubic example separates that group from four different rational fibers.",
+          "references": [
+            "Serre2007Topics"
+          ]
+        },
+        {
+          "article": "specialization",
+          "title": "Specialization and Hilbert irreducibility",
+          "note": "Pass from a polynomial over a rational function field to arithmetic fibers, and understand how the exceptional parameters are organized.",
+          "references": []
+        },
+        {
+          "article": "inverse-galois",
+          "title": "Inverse Galois theory and generic polynomials",
+          "note": "Construct a polynomial with a prescribed group, then distinguish one realization from regular families and universal parametrizations.",
+          "references": []
+        },
+        {
+          "article": "composition-iteration",
+          "title": "Composition, iteration, and arboreal groups",
+          "note": "Use extension towers and rooted trees to study repeated polynomial composition. Separate stability from maximality of the Galois action.",
+          "references": []
+        },
+        {
+          "article": "laguerre",
+          "title": "Generalized Laguerre polynomials: two parameter regimes",
+          "note": "Factorial products connect local slopes to large Galois groups. Fixing the parameter and increasing the degree is a different problem from fixing the degree and varying the parameter.",
+          "references": [
+            "Serre2007Topics",
+            "FriedJarden2023",
+            "HajirWong2006",
+            "JensenLedetYui2002",
+            "Jones2013Arboreal"
+          ]
+        },
+        {
+          "title": "Checkpoint",
+          "note": "Distinguish infinitely many good specializations, all but finitely many, density one, and an infinite tower."
+        }
+      ]
+    },
+    {
+      "id": "exact-computation",
+      "title": "Turn a computation into a certificate",
+      "audience": "Readers using computer algebra in proofs",
+      "goal": "Understand the algebra behind factorization and group algorithms and record what has been proved.",
+      "articles": [
+        "finite-field-irreducibility",
+        "factorization-algorithms",
+        "resolvents",
+        "galois-computation"
+      ],
+      "references": [
+        "LidlNiederreiter1997",
+        "GathenGerhard2013",
+        "LLL1982",
+        "FiekerKlueners2014",
+        "MagmaGaloisDocumentation",
+        "PARIDocumentation"
+      ],
+      "checkpoint": "Record the exact input, software version, field, factorization or resolvent witness, and certification step.",
+      "steps": [
+        {
+          "article": "finite-field-irreducibility",
+          "title": "Irreducibility over finite fields",
+          "note": "Turn Frobenius powers into exact irreducibility certificates, count irreducibles, and distinguish irreducible from primitive polynomials.",
+          "references": []
+        },
+        {
+          "article": "factorization-algorithms",
+          "title": "Exact factorization: finite fields, Hensel lifting, and lattices",
+          "note": "Factorization algorithms turn structural ideas into certificates: Frobenius and linear algebra over finite fields, then p-adic lifting and lattice reduction over the rationals.",
+          "references": []
+        },
+        {
+          "article": "resolvents",
+          "title": "Resolvents: turn group containment into factorization",
+          "note": "A resolvent records how a group acts on selected expressions in the roots. Rational factors can detect a hidden partition or force descent to a smaller subgroup.",
+          "references": []
+        },
+        {
+          "article": "galois-computation",
+          "title": "Computing a Galois group with a proof certificate",
+          "note": "A reliable computation combines exact arithmetic, subgroup constraints, and certification. Save enough evidence that the conclusion survives a change of software.",
+          "references": [
+            "LidlNiederreiter1997",
+            "GathenGerhard2013",
+            "LLL1982",
+            "FiekerKlueners2014",
+            "MagmaGaloisDocumentation",
+            "PARIDocumentation"
+          ]
+        },
+        {
+          "title": "Checkpoint",
+          "note": "Record the exact input, software version, field, factorization or resolvent witness, and certification step."
+        }
+      ]
+    }
+  ],
+  "books": [
+    {
+      "key": "Milne2022",
+      "role": "Field extensions, separability, and the fundamental theorem of Galois theory; Chapter 4 gives explicit Galois-group computations. The frozen course notes v5.10 and the 2022 book have different pagination. Cite the version actually used.",
+      "use": "Field extensions, separability, and the fundamental theorem of Galois theory; Chapter 4 gives explicit Galois-group computations.",
+      "caution": "The frozen course notes v5.10 and the 2022 book have different pagination. Cite the version actually used.",
+      "articles": [
+        "foundations",
+        "frobenius",
+        "discriminants"
+      ],
+      "level": "Free entry point"
+    },
+    {
+      "key": "Cox2012",
+      "role": "Work through explicit polynomials, resolvents, radicals, and permutation actions alongside the general theory.",
+      "use": "Work through explicit polynomials, resolvents, radicals, and permutation actions alongside the general theory.",
+      "articles": [
+        "foundations",
+        "resolvents",
+        "galois-computation"
+      ],
+      "level": "Examples and classical constructions"
+    },
+    {
+      "key": "Prasolov2004",
+      "role": "Read the chapters on irreducible polynomials, special forms, root properties, and Galois theory together. The linked electronic edition carries a 2009 release date; the English book is ©2004.",
+      "use": "Read the chapters on irreducible polynomials, special forms, root properties, and Galois theory together.",
+      "caution": "The linked electronic edition carries a 2009 release date; the English book is ©2004.",
+      "articles": [
+        "archimedean-criteria",
+        "reciprocity",
+        "trinomials"
+      ],
+      "level": "Connections across polynomial methods"
+    },
+    {
+      "key": "Schinzel2000",
+      "role": "Consult for structured, sparse, and multivariable polynomials and for the historical trail behind criteria. The publisher states that results valid only over finite fields, local fields, or Q lie outside this monograph’s scope. Pair it with the field-specific references in this guide.",
+      "use": "Consult for structured, sparse, and multivariable polynomials and for the historical trail behind criteria.",
+      "articles": [
+        "sparse-gaps",
+        "archimedean-criteria",
+        "composition-iteration",
+        "multivariate-irreducibility"
+      ],
+      "caution": "The publisher states that results valid only over finite fields, local fields, or Q lie outside this monograph’s scope. Pair it with the field-specific references in this guide.",
+      "level": "Central research reference on reducibility"
+    },
+    {
+      "key": "Serre1979",
+      "role": "Learn valuations, ramification, and local extensions before using Newton polygons to produce Galois elements.",
+      "use": "Learn valuations, ramification, and local extensions before using Newton polygons to produce Galois elements.",
+      "articles": [
+        "eisenstein-dumas",
+        "newton-polygons",
+        "discriminants"
+      ],
+      "level": "Local arithmetic behind the methods"
+    },
+    {
+      "key": "DixonMortimer1996",
+      "role": "Use transitivity, blocks, primitivity, and cycle criteria to turn arithmetic evidence into group determination.",
+      "use": "Use transitivity, blocks, primitivity, and cycle criteria to turn arithmetic evidence into group determination.",
+      "articles": [
+        "permutation-groups",
+        "frobenius",
+        "reciprocity"
+      ],
+      "level": "The permutation-group step"
+    },
+    {
+      "key": "LidlNiederreiter1997",
+      "role": "Irreducible and primitive polynomials, extension fields, counting, constructions, and factorization.",
+      "use": "Irreducible and primitive polynomials, extension fields, counting, constructions, and factorization.",
+      "articles": [
+        "finite-field-irreducibility",
+        "factorization-algorithms"
+      ],
+      "level": "Finite-field foundation"
+    },
+    {
+      "key": "GathenGerhard2013",
+      "role": "Polynomial arithmetic, finite-field algorithms, Hensel lifting, lattice reduction, and factorization over the rationals.",
+      "use": "Polynomial arithmetic, finite-field algorithms, Hensel lifting, lattice reduction, and factorization over the rationals.",
+      "articles": [
+        "factorization-algorithms",
+        "galois-computation"
+      ],
+      "level": "Algorithmic proofs and complexity"
+    },
+    {
+      "key": "Cohen1993",
+      "role": "Connect defining polynomials to number fields, integral bases, discriminants, and explicit arithmetic.",
+      "use": "Connect defining polynomials to number fields, integral bases, discriminants, and explicit arithmetic.",
+      "articles": [
+        "discriminants",
+        "galois-computation"
+      ],
+      "level": "Practical computational number theory"
+    },
+    {
+      "key": "Serre2007Topics",
+      "role": "Hilbert irreducibility, thin sets, regular realizations, and sieve arguments. The electronic edition has copyright 2007; the physical second edition is also catalogued as 2008.",
+      "use": "Hilbert irreducibility, thin sets, regular realizations, and sieve arguments.",
+      "caution": "The electronic edition has copyright 2007; the physical second edition is also catalogued as 2008.",
+      "articles": [
+        "specialization",
+        "inverse-galois",
+        "height-counting"
+      ],
+      "level": "Compact route to specialization and inverse Galois theory"
+    },
+    {
+      "key": "FriedJarden2023",
+      "role": "Hilbertian fields, PAC fields, absolute Galois groups, and specialization in the fourth edition.",
+      "use": "Hilbertian fields, PAC fields, absolute Galois groups, and specialization in the fourth edition.",
+      "articles": [
+        "specialization",
+        "inverse-galois",
+        "composition-iteration"
+      ],
+      "level": "Deep field arithmetic"
+    },
+    {
+      "key": "MalleMatzat2018",
+      "role": "Regular realizations, rigidity, embedding problems, and explicit construction methods.",
+      "use": "Regular realizations, rigidity, embedding problems, and explicit construction methods.",
+      "articles": [
+        "inverse-galois",
+        "specialization"
+      ],
+      "level": "Inverse Galois research reference"
+    }
+  ],
+  "methods": [
+    {
+      "question": "Is a given polynomial irreducible over Q?",
+      "signal": "A useful factorization modulo a small prime",
+      "method": "Degree-preserving reduction and intersection of possible factor degrees",
+      "article": "modular-irreducibility",
+      "output": "An exact irreducibility certificate when the remaining proper degrees are eliminated",
+      "boundary": "An irreducible polynomial need not have an irreducible reduction at any prime.",
+      "references": [
+        "ConradIrredQ",
+        "ConradAllPrimes"
+      ],
+      "input": "A useful factorization modulo a small prime"
+    },
+    {
+      "question": "Can coefficient divisibility prove irreducibility?",
+      "signal": "One prime divides all lower coefficients, or the valuations have a simple pattern",
+      "method": "Schönemann–Eisenstein and Dumas/Newton polygons",
+      "article": "eisenstein-dumas",
+      "output": "Irreducibility over a local field, hence over Q, or restrictions on factor degrees",
+      "boundary": "A criterion is sufficient; failure of its hypotheses is not evidence of reducibility.",
+      "references": [
+        "cox2011eisenstein",
+        "dumas1906"
+      ],
+      "input": "One prime divides all lower coefficients, or the valuations have a simple pattern"
+    },
+    {
+      "question": "Can several local tests work together?",
+      "signal": "Different primes exclude different factor degrees",
+      "method": "Intersect Newton-polygon degree constraints",
+      "article": "newton-polygons",
+      "output": "A global irreducibility proof even when each individual prime permits factors",
+      "boundary": "The same polygons may still leave common possible degrees.",
+      "references": [
+        "Coleman1987",
+        "Hajir2005"
+      ],
+      "input": "Different primes exclude different factor degrees"
+    },
+    {
+      "question": "Can root sizes rule out factors?",
+      "signal": "A monic integer polynomial satisfying Perron's coefficient inequality, or a root bound at a prime-valued argument",
+      "method": "Perron's criterion and archimedean factor bounds",
+      "article": "archimedean-criteria",
+      "output": "Irreducibility from root location and integral constant terms or factor evaluations",
+      "boundary": "Perron's test needs monicity and a nonzero constant term; the displayed bounds are strict.",
+      "references": [
+        "perron1907",
+        "Prasolov2004"
+      ],
+      "input": "A monic integer polynomial satisfying Perron's coefficient inequality, or a root bound at a prime-valued argument"
+    },
+    {
+      "question": "Can integer evaluations rule out every factor?",
+      "signal": "Many distinct integer arguments with small nonzero values, or at least 2n+1 unit or prime values for a primitive degree-n polynomial",
+      "method": "Schur unit-value arguments, Pólya interpolation, and prime-value counting",
+      "article": "integer-values",
+      "output": "An exact irreducibility certificate from restrictions on the values of hypothetical integral factors",
+      "boundary": "Use the stated degree-dependent threshold and distinct arguments; one prime value alone is insufficient.",
+      "references": [
+        "polya1919",
+        "gyoryhajdutijdeman2011",
+        "ConradIrredQ"
+      ],
+      "input": "Many distinct integer arguments with small nonzero values, or at least 2n+1 unit or prime values for a primitive degree-n polynomial"
+    },
+    {
+      "question": "Is a composition or binomial irreducible?",
+      "signal": "An irreducible outer polynomial F, a nonconstant inner polynomial g, or a binomial in characteristic zero",
+      "method": "Capelli root-field reduction and the exact binomial power criterion",
+      "article": "capelli-composition",
+      "output": "A lower-degree irreducibility question over a root field; for binomials, necessary and sufficient power exclusions",
+      "boundary": "Irreducibility of both inputs is insufficient. Binomials with exponent divisible by 4 require the exceptional negative-four-times-a-fourth-power exclusion.",
+      "references": [
+        "AyadMcQuillan2000",
+        "capelli1901binomials",
+        "Lang2002"
+      ],
+      "input": "An irreducible outer polynomial F, a nonconstant inner polynomial g, or a binomial in characteristic zero"
+    },
+    {
+      "question": "What happens when a sparse polynomial has a large gap?",
+      "signal": "A family x^N c(x^{-1})+d(x) with fixed end pieces",
+      "method": "Nonreciprocal-part theorems and Capelli exclusions",
+      "article": "sparse-gaps",
+      "output": "Irreducibility of a specified nonreciprocal part for sufficiently large N",
+      "boundary": "Reciprocal factors and Capellian exceptions cannot be discarded silently.",
+      "references": [
+        "Schinzel2000",
+        "sawinshustermanstoll2020"
+      ],
+      "input": "A family x^N c(x^{-1})+d(x) with fixed end pieces"
+    },
+    {
+      "question": "Which permutations occur in the Galois group?",
+      "signal": "Squarefree factorization at a prime of good reduction",
+      "method": "Frobenius cycle types",
+      "article": "frobenius",
+      "output": "An element of the specified cycle type",
+      "boundary": "Bad primes and unseen cycle types require separate treatment.",
+      "references": [
+        "ConradModP",
+        "StevenhagenLenstra1996"
+      ],
+      "input": "Squarefree factorization at a prime of good reduction"
+    },
+    {
+      "question": "When does cycle evidence force A_n or S_n?",
+      "signal": "Transitivity, primitivity, and an appropriate prime cycle or transposition",
+      "method": "Permutation-group recognition",
+      "article": "permutation-groups",
+      "output": "A proved group containment or equality",
+      "boundary": "A transitive subgroup containing a transposition need not be \\(S_n\\).",
+      "references": [
+        "DixonMortimer1996",
+        "ConradSnAn",
+        "Jones2014Cycles"
+      ],
+      "input": "Transitivity, primitivity, and an appropriate prime cycle or transposition"
+    },
+    {
+      "question": "How can A_n be distinguished from S_n?",
+      "signal": "Containment of \\(A_n\\) has already been proved",
+      "method": "Discriminant square class or an odd permutation",
+      "article": "discriminants",
+      "output": "The remaining parity distinction",
+      "boundary": "A nonsquare discriminant alone does not prove \\(S_n\\).",
+      "references": [
+        "Milne2022",
+        "ConradSnAn"
+      ],
+      "input": "Containment of \\(A_n\\) has already been proved"
+    },
+    {
+      "question": "Does a root symmetry force a smaller ambient group?",
+      "signal": "Reciprocal, even, or compositional structure",
+      "method": "Invariant blocks and quotient variables",
+      "article": "reciprocity",
+      "output": "A wreath-product or other structural upper bound",
+      "boundary": "A generic \\(S_n\\) expectation can be incompatible with the root symmetry.",
+      "references": [
+        "Prasolov2004",
+        "AndersonBertelliODorney2026"
+      ],
+      "input": "Reciprocal, even, or compositional structure"
+    },
+    {
+      "question": "How can remaining candidate groups be separated?",
+      "signal": "Several subgroups fit the observed Frobenius types",
+      "method": "Resolvents, relative invariants, and subgroup descent",
+      "article": "resolvents",
+      "output": "Additional exact constraints or a certified group",
+      "boundary": "Numerical approximation and a plausible candidate are not by themselves a proof.",
+      "references": [
+        "Stauduhar1973",
+        "FiekerKlueners2014"
+      ],
+      "input": "Several subgroups fit the observed Frobenius types"
+    },
+    {
+      "question": "Do generic results survive parameter specialization?",
+      "signal": "An irreducible family over Q(t), or over K(t) with K Hilbertian",
+      "method": "Hilbert irreducibility and specialized geometric criteria",
+      "article": "specialization",
+      "output": "Many good specializations under the stated hypotheses",
+      "boundary": "Infinitely many, density one, and all but finitely many are different conclusions.",
+      "references": [
+        "Hilbert1892",
+        "Serre2007Topics",
+        "HajirWong2006"
+      ],
+      "input": "An irreducible family over Q(t), or over K(t) with K Hilbertian"
+    },
+    {
+      "question": "Are all iterates irreducible?",
+      "signal": "A polynomial f and the tower of its iterates",
+      "method": "Capelli-type steps, critical orbits, and arboreal groups",
+      "article": "composition-iteration",
+      "output": "Finite-level or all-level conclusions only under the relevant hypotheses",
+      "boundary": "Specializing each finite level does not select one specialization valid at every level.",
+      "references": [
+        "Odoni1985",
+        "Jones2013Arboreal",
+        "AyadMcQuillan2001Correction"
+      ],
+      "input": "A polynomial f and the tower of its iterates"
+    },
+    {
+      "question": "Can an irreducible polynomial over F_q be constructed or certified?",
+      "signal": "Specified degree and possibly prescribed coefficients",
+      "method": "Frobenius congruences, gcd tests, and finite-field constructions",
+      "article": "finite-field-irreducibility",
+      "output": "A finite-field irreducibility certificate or an existence theorem",
+      "boundary": "Primitive is stronger than irreducible; an irreducible degree-n polynomial has cyclic splitting-field group.",
+      "references": [
+        "LidlNiederreiter1997",
+        "Rabin1980",
+        "TuxanidyWang2018"
+      ],
+      "input": "Specified degree and possibly prescribed coefficients"
+    },
+    {
+      "question": "Is a multivariate polynomial absolutely irreducible?",
+      "signal": "Sparse exponent support or an effective specialization problem",
+      "method": "Newton polytopes and absolute-irreducibility criteria",
+      "article": "multivariate-irreducibility",
+      "output": "Irreducibility after extending the coefficient field to an algebraic closure",
+      "boundary": "Exclude monomial factors; this differs from ordinary irreducibility over the ground field.",
+      "references": [
+        "Gao2001Polytopes",
+        "Kaltofen1995",
+        "Lecerf2013"
+      ],
+      "input": "Sparse exponent support or an effective specialization problem"
+    },
+    {
+      "question": "What does a random-polynomial theorem actually apply to?",
+      "signal": "A coefficient law and a specified limiting parameter",
+      "method": "Local mixing, sieve methods, and factor exclusion",
+      "article": "random-models",
+      "output": "A probability estimate for the exact model in the theorem",
+      "boundary": "Track conditioning, \\(A_n\\) versus \\(S_n\\), and any RH or GRH hypothesis.",
+      "references": [
+        "BreuillardVarju2019",
+        "BarySorokerKoukoulopoulosKozma2023",
+        "Bhargava2025"
+      ],
+      "input": "A coefficient law and a specified limiting parameter"
+    },
+    {
+      "question": "What is the generic Galois group of F(X)−T?",
+      "signal": "Simple critical points with pairwise distinct critical values in characteristic zero",
+      "input": "Simple critical points with pairwise distinct critical values in characteristic zero",
+      "method": "Morse criterion: finite branch inertia generates transpositions",
+      "article": "critical-points-monodromy",
+      "output": "Geometric and arithmetic group \\(S_n\\); a regular splitting field",
+      "boundary": "A full generic group does not determine every rational fiber. Check specialization separately.",
+      "references": [
+        "Serre2007Topics"
+      ]
+    }
+  ]
+}
