@@ -23,6 +23,11 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run check
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install sympy==1.14.0
+      - run: python scripts/literature_certificates.py
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist

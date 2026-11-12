@@ -148,6 +148,50 @@
             "locator": "Equation (1.1), Problems 1.2–1.3, Theorem 1.4 and Proposition 2.2"
           }
         ]
+      },
+      {
+        "id": "dynatomic-period-four",
+        "title": "Period four",
+        "body": "<p>For every quadratic \\(f\\in\\mathbb Q[x]\\), Krumm determines the Galois group and the degrees of the irreducible factors of its fourth dynatomic polynomial. Thus period four has an explicit classification, while the finiteness question above concerns larger periods. The proof uses subgroup computations and rational points on the corresponding specialization curves.</p>",
+        "citations": [
+          {
+            "key": "Krumm2018DynatomicFour",
+            "locator": "Abstract and classification of fourth dynatomic polynomials"
+          }
+        ]
+      },
+      {
+        "id": "specialization-local-groups",
+        "title": "Local groups under specialization",
+        "body": "<p>Hilbert irreducibility controls the global group. Ramification imposes additional local conditions. Let \\(E/K(T)\\) be a finite Galois extension, regular over a number field \\(K\\), and let \\(t_i\\in K\\) be a finite branch point. Write \\(I_i\\triangleleft D_i\\) for its inertia and decomposition groups and \\(\\pi_i:D_i\\to D_i/I_i\\) for the quotient map. The residue extension at \\(t_i\\) has group \\(D_i/I_i\\).</p><p>Let \\(t_0\\in K\\) be a nonbranch specialization point. Outside a finite set of primes, suppose \\(t_0,t_i\\) are integral at \\(\\mathfrak p\\), \\(a=v_{\\mathfrak p}(t_0-t_i)>0\\), and \\(\\gcd(a,|I_i|)=1\\). If \\(D_{i,\\mathfrak p}\\) denotes the decomposition group in the branch-point residue extension, then the decomposition group of the specialization at \\(\\mathfrak p\\) is conjugate to \\(\\pi_i^{-1}(D_{i,\\mathfrak p})\\). This gives a method for prescribing local behavior while seeking specializations with the full global group.</p>",
+        "citations": [
+          {
+            "key": "KoenigLegrandNeftin2019Local",
+            "locator": "Theorem 1.1; Theorem 4.1 for the more general statement"
+          }
+        ]
+      },
+      {
+        "id": "compute-geometric-group",
+        "title": "Computing the geometric group",
+        "body": "<p>Over \\(\\mathbb Q(t)\\), Fieker–Sutherland compute the field of algebraic constants and the geometric group. These determine both the kernel and quotient of the constants exact sequence above; the arithmetic group alone does not determine them.</p>",
+        "citations": [
+          {
+            "key": "FiekerSutherland2023",
+            "locator": "arXiv v3: §6.3, Algorithm 7 and Theorem 10"
+          }
+        ]
+      },
+      {
+        "id": "exceptional-curves",
+        "title": "Curves for exceptional specializations",
+        "body": "<p>Let \\(P(t,x)\\in\\mathbb Q[t,x]\\) be separable over \\(\\mathbb Q(t)\\), with nontrivial generic group \\(G\\). For representatives \\(M_i\\) of the conjugacy classes of maximal subgroups, choose monic polynomials \\(F_i(t,y)\\in\\mathbb Q[t,y]\\) defining the fixed fields \\(L^{M_i}\\). Exclude values where the leading coefficient or discriminant of \\(P\\), or a discriminant of \\(F_i\\), vanishes.</p><p>Krumm–Sutherland prove that the specialized group is smaller than \\(G\\) exactly when some \\(F_i(c,y)\\) has a rational root. Thus exceptional parameters come from rational points on finitely many explicit curves. Constructing these curves does not, in general, compute all their rational points.</p><p>For \\(c\\in\\mathbb Q\\), their examples prove that \\(x^6+c^6-1\\) is reducible exactly when \\(c=0,1,-1\\).</p>",
+        "citations": [
+          {
+            "key": "KrummSutherland2021",
+            "locator": "arXiv v2: Theorem 2.7; §4.1, Proposition 4.3"
+          }
+        ]
       }
     ],
     "related": [
@@ -513,6 +557,36 @@
           {
             "key": "DeMarkEtAl2020Stability",
             "locator": "Theorems 1.2–1.4 and Conjectures 1.7–1.8"
+          }
+        ]
+      },
+      {
+        "id": "local-eventual-stability",
+        "title": "Local criteria for eventual stability",
+        "body": "<p>For \\(f\\in K[x]\\), eventual stability means that the numbers of irreducible factors of \\(f^{\\circ n}\\), counted with multiplicity, are bounded. Hamblen–Jones–Madhu prove this for \\(f=x^d+c\\in\\mathbb Q[x]\\), \\(d\\ge2\\), whenever \\(c\\ne0\\) is not the reciprocal of an integer. Their proof controls how a factor can split under further composition by using valuations of critical-orbit values.</p><p>Jones–Levy give a different local criterion. Over a discretely valued field with finite residue field of characteristic \\(p\\), a rational map with good reduction to \\(M(x^{p^j})\\), where \\(j\\ge1\\) and \\(M\\) is an invertible fractional linear map over the residue field, is eventually stable at every nonperiodic target. In particular, \\(x^2+1/a\\) is eventually stable over \\(\\mathbb Q\\) for odd \\(a\\ne-1\\).</p>",
+        "citations": [
+          {
+            "key": "HamblenJonesMadhu2015",
+            "locator": "Theorem 5 and Corollary 6 in arXiv:1303.6513v1"
+          },
+          {
+            "key": "JonesLevy2017Eventual",
+            "locator": "Theorem 1.3 and Corollary 1.5"
+          }
+        ]
+      },
+      {
+        "id": "nonperiodic-counterexample",
+        "title": "A nonperiodic target need not give eventual stability",
+        "body": "<p>The original Jones–Levy conjecture allowed any target that was not periodic. This is stronger than requiring an infinite forward orbit. For \\(\\phi(x)=x^6\\) and target \\(-1\\), the orbit is \\(-1\\mapsto1\\mapsto1\\), but</p>\\[\\phi^{\\circ n}(x)+1=x^{6^n}+1=\\prod_{j=0}^{n}\\Phi_{2^{n+1}3^j}(x).\\]<p>Here \\(\\Phi_m\\) is the \\(m\\)-th cyclotomic polynomial. Indeed, the divisors of \\(2\\cdot6^n\\) that do not divide \\(6^n\\) are exactly \\(2^{n+1}3^j\\), \\(0\\le j\\le n\\). Cyclotomic irreducibility gives exactly \\(n+1\\) factors over \\(\\mathbb Q\\), so eventual stability fails. This direct calculation does not contradict the reciprocal-quadratic questions above.</p><p>Tucker–Zhu’s October 2026 preprint reports a counterexample and a classification for power maps. Theorem 1.2 gives the displayed example, whose factorization is verified by the argument above.</p>",
+        "citations": [
+          {
+            "key": "JonesLevy2017Eventual",
+            "locator": "Conjecture 1.2"
+          },
+          {
+            "key": "TuckerZhu2026Counterexample",
+            "locator": "Theorem 1.2; arXiv:2610.28688v1"
           }
         ]
       }

@@ -297,7 +297,7 @@
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
       "What are the Galois groups of exponential truncations?",
       "How does the discriminant computation work?",
@@ -375,6 +375,17 @@
             "note": "Frequency questions, variants, and shifts."
           }
         ]
+      },
+      {
+        "id": "katz-rivin-developments",
+        "title": "Katz–Rivin questions",
+        "body": "<p>Recent preprints address the Galois-group frequencies of Taylor sections, including arbitrary symmetric-degree prescriptions and arithmetic results for binomial and Catalan families. See <a href=\"taylor-prescriptions.html\">Taylor polynomials and Katz–Rivin questions</a> for precise statements, methods, and remaining questions.</p>",
+        "citations": [
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Theorems A–E"
+          }
+        ]
       }
     ],
     "related": [
@@ -397,6 +408,11 @@
         "id": "specialization",
         "relation": "Contrasts with",
         "why": "A family indexed by degree is different from specialization of one fixed-degree cover."
+      },
+      {
+        "id": "taylor-prescriptions",
+        "relation": "Leads to",
+        "why": "Frequency questions extend the classical exponential and geometric examples."
       }
     ],
     "questions": [
@@ -405,11 +421,15 @@
         "title": "When does a truncation family have a limiting Galois-group frequency?",
         "status": "Research direction",
         "scope": "A specified rational power series, a stated normalization, and n tending to infinity.",
-        "body": "<p>The exponential and geometric families have different Galois-group distributions. Katz and Rivin ask about limiting frequencies in more general truncation families. Such a distribution depends on the factors removed and the permutation action chosen.</p>",
+        "body": "<p>Katz–Rivin ask for a structural description of series with convergent Galois-group frequencies. Nguyen-Dang’s version 3 claims counterexamples to universal convergence, while this classification question remains open. The separate article distinguishes arbitrary constructions from arithmetic families.</p>",
         "citations": [
           {
             "key": "KatzRivinSpeculations",
-            "locator": "§§1–4"
+            "locator": "Question 1.1"
+          },
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Theorem A and §7.16"
           }
         ]
       }
@@ -890,6 +910,21 @@
             "note": "The nonconstant restriction excludes the elementary cases with only cyclotomic factors."
           }
         ]
+      },
+      {
+        "id": "necklace-functions",
+        "title": "Necklace functions",
+        "body": "<p>Necklace polynomials are</p>\\[M_n(x)=\\frac1n\\sum_{d\\mid n}\\mu(d)x^{n/d}.\\]<p>The value \\(M_n(q)\\) counts monic irreducible polynomials of degree \\(n\\) over \\(\\mathbb F_q\\); this does not say that \\(M_n(x)\\) itself is irreducible. Hyde studies its cyclotomic factors.</p><p>A 2026 preprint extends the construction to \\(\\mathcal M_n(f)=\\sum_{d\\mid n}\\mu(d)f(x^d)\\). For squarefree \\(n>1\\), the principal-character Fekete polynomial satisfies</p>\\[\\frac{F_n(x)}{1-x^n}=\\mathcal M_n\\!\\left(\\frac{x}{1-x}\\right).\\]<p>For \\(m>1\\), let \\(\\zeta_m\\) be a primitive \\(m\\)-th root of unity. If \\(f\\) has no pole at any \\(\\zeta_m^d\\) with \\(d\\mid n\\), and \\(\\sum_{d\\mid n,\\ d\\equiv r\\pmod m}\\mu(d)=0\\) for every residue class \\(r\\), then \\(\\mathcal M_n(f)(\\zeta_m)=0\\): group the terms by residue class. Since these are rational functions, divisibility means divisibility of the numerator after cancellation. The results do not prove irreducibility of the remaining Fekete factor.</p>",
+        "citations": [
+          {
+            "key": "Hyde2022Necklace",
+            "locator": "§1 and Theorem 1.1"
+          },
+          {
+            "key": "MinhEtAl2026RationalNecklace",
+            "locator": "§1; Definition 2.5; Theorems 2.7 and 4.5, arXiv v1"
+          }
+        ]
       }
     ],
     "related": [
@@ -1209,6 +1244,18 @@
             "note": "Bernoulli improvement is stated separately after the Euler theorem."
           }
         ]
+      },
+      {
+        "id": "fixed-order-bernoulli",
+        "title": "Fixed order",
+        "body": "<p>Keeping the order fixed gives a different problem from the diagonal \\(B_n^{(n)}\\). McCarthy proves that, for each positive integer \\(k\\),</p>\\[B_{2^t}^{(k)}(x)\\text{ is irreducible over }\\mathbb Q\\quad\\text{for every }t\\ge k.\\]<p>More generally, for a fixed prime \\(p\\), fixed order \\(k\\), and \\(1\\le m<p\\), the polynomials \\(B_{m(p-1)p^t}^{(k)}\\) are irreducible once \\(t\\) exceeds an effective bound. The proof compares coefficients modulo \\(p\\) as the order decreases and applies Eisenstein’s criterion to a reciprocal polynomial.</p><p>Arbitrary degree and order cannot be combined into an unrestricted irreducibility assertion. For example, \\(B_2^{(12)}(x)=x^2-12x+35=(x-5)(x-7)\\).</p>",
+        "citations": [
+          {
+            "key": "McCarthy1962",
+            "locator": "Theorems 1–2 and Corollary, p. 566; degree-two criterion on p. 567",
+            "note": "The full page scan confirms t≥k (not t>k). The historical broad conjecture in the final paragraph is not adopted."
+          }
+        ]
       }
     ],
     "related": [
@@ -1403,6 +1450,23 @@
         ]
       },
       {
+        "id": "generalized-bessel-literature",
+        "title": "Generalized Bessel polynomials",
+        "body": "<p>Banerjee–Bera study irreducibility and Galois groups for a generalized Bessel family. Their 2020 paper has a 2021 corrigendum, which must be consulted with the original. These references concern additional parameters and do not change the all-degree theorem for the ordinary Bessel polynomials above.</p>",
+        "citations": [
+          {
+            "key": "BanerjeeBera2020Grosswald",
+            "locator": "Publisher abstract",
+            "note": "Full parameter-dependent theorem statements were not checked and are not asserted here."
+          },
+          {
+            "key": "BanerjeeBera2021GrosswaldCorrection",
+            "locator": "Published correction, pp. 426–428",
+            "note": "Bibliographic record verified; full correction not accessed."
+          }
+        ]
+      },
+      {
         "id": "legendre",
         "title": "Legendre polynomials",
         "body": "<p>Define \\(P_n(x)=\\frac1{2^n n!}(d/dx)^n(x^2-1)^n\\). Since \\(P_n(-x)=(-1)^nP_n(x)\\), the factor \\(x\\) is forced at odd indices. Stieltjes' conjecture, as presented by Cullinan–Hajir, asks whether \\(P_{2m}\\) and \\(P_{2m+1}/x\\) are irreducible over \\(\\mathbb Q\\) for every \\(m\\ge1\\). Their Galois-group questions concern these even polynomials and the corresponding signed-permutation action.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>After scaling, \\(8P_4=35x^4-30x^2+3\\), which is Eisenstein at \\(3\\). Its pair polynomial \\(35y^2-30y+3\\) has discriminant \\(480\\). Thus its pair field is \\(\\mathbb Q(\\sqrt{30})\\). This calculation proves irreducibility in degree four only.</p></div>",
@@ -1442,6 +1506,18 @@
         ]
       },
       {
+        "id": "jacobi-trace-forms",
+        "title": "Trace forms",
+        "body": "<p>Let \\(f\\in\\mathbb Q[x]\\) be monic and irreducible, with roots \\(\\theta_1,\\ldots,\\theta_n\\), and let \\(E=\\mathbb Q[x]/(f)\\). The trace form is the quadratic form \\(z\\mapsto\\operatorname{Tr}_{E/\\mathbb Q}(z^2)\\). Put</p>\\[s_k=\\sum_{i=1}^n\\theta_i^k,\\qquad \\Delta_t=\\det(s_{i+j})_{0\\le i,j<t}.\\]<p>Then \\(\\Delta_n=\\operatorname{disc}(f)\\). When all these minors are nonzero, their successive ratios diagonalize the trace form. Cullinan–Hajir–Young’s 2026 preprint computes the Jacobi minors and associated Hasse–Witt invariants using continued fractions. These invariants enter embedding problems for central double covers of alternating groups. They provide arithmetic information beyond the discriminant; they do not establish irreducibility for arbitrary Jacobi parameters.</p>",
+        "citations": [
+          {
+            "key": "CullinanHajirYoung2026",
+            "locator": "§1.2, Theorems 6 and 13, and §4; version 1",
+            "note": "The full preprint was read for the stated scope. Rational specializations must avoid degree loss and the denominators in its formulas."
+          }
+        ]
+      },
+      {
         "id": "legendre-group-conjecture",
         "title": "Legendre Galois groups",
         "body": "<p>Write \\(P_{2m+\\delta}(x)=x^\\delta Q_{m,\\delta}(x^2)\\), with \\(\\delta\\in\\{0,1\\}\\). Cullinan–Hajir conjecture, under irreducibility of the degree-\\(m\\) reduced polynomial, that its group is \\(S_m\\) and that the group of \\(P_{2m+\\delta}/x^\\delta\\) is \\(C_2\\wr S_m\\). The two conclusions concern different permutation actions. Their Theorem 1.9(a) verifies the first conclusion through \\(m=10^9\\), still assuming irreducibility. A 2026 preprint claims the full group conjecture; it has not been independently verified here.</p>",
@@ -1453,6 +1529,17 @@
           {
             "key": "NguyenDang2026Jacobi",
             "locator": "Abstract; version 1, 22 October 2026"
+          }
+        ]
+      },
+      {
+        "id": "jacobi-integral-claims",
+        "title": "Jacobi and Gegenbauer parameters",
+        "body": "<div class=\"math-block boundary\"><p class=\"block-label\">Preprint claims</p><p>Nguyen-Dang’s Jacobi preprint also treats standard \\(P_n^{(a,b)}\\) with fixed distinct nonnegative integers \\(a,b\\). Theorem 1.3 claims irreducibility and group \\(S_n\\) for every sufficiently large \\(n\\), with an effective parameter-dependent threshold.</p><p>For integer \\(r\\ge0\\), \\(m\\ge1\\), and \\(\\delta\\in\\{0,1\\}\\), set \\(G_{m,r,\\delta}=C_{2m+\\delta}^{r+1/2}(x)/x^\\delta\\), using the usual Gegenbauer polynomial. Theorem 1.4 claims irreducibility of this degree-\\(2m\\) polynomial when \\(m\\ge\\max\\{100r,1000\\}\\), and when \\(m\\ge\\max\\{8r,M_0\\}\\) for an effective absolute \\(M_0\\). These extend the paper’s Legendre and Kaneko–Zagier claims. The full proofs have not been independently verified here.</p></div>",
+        "citations": [
+          {
+            "key": "NguyenDang2026Jacobi",
+            "locator": "Theorems 1.3–1.4, pp. 2–3; equations (1.2)–(1.3); version 1, 22 October 2026"
           }
         ]
       }

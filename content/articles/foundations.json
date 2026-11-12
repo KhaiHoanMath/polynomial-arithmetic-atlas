@@ -697,6 +697,18 @@
             "note": "Exact polynomial factorization algorithms."
           }
         ]
+      },
+      {
+        "id": "prime-constant-boundary",
+        "title": "A prime constant term",
+        "body": "<p>Let \\(f=a_0+\\sum_{i=1}^r a_i x^{n_i}\\in\\mathbb Z[x]\\) be primitive, with nonzero coefficients and \\(0<n_1<\\cdots<n_r\\). Suppose \\(|a_0|=\\sum_i|a_i|=p\\) is prime. Set</p>\\[C=\\gcd_i\\bigl(x^{n_i}+\\operatorname{sgn}(a_0a_i)\\bigr),\\]<p>with monic gcd. Then \\(C\\) is the cyclotomic part, and \\(f/C\\) is irreducible and nonreciprocal. Thus \\(f\\) is irreducible exactly when \\(C=1\\).</p><p>Every root has modulus at least \\(1\\). The prime constant term forces all but one irreducible factor to have constant term \\(\\pm1\\); those factors are cyclotomic. Equality in the triangle inequality identifies their gcd.</p><p>For positive coefficients, irreducibility is equivalent to the \\(n_i\\) not all having the same \\(2\\)-adic valuation. For example, \\(3+x+x^2+x^5\\) is irreducible.</p>",
+        "citations": [
+          {
+            "key": "KoleyReddy2020Criterion",
+            "locator": "Theorem 3 and Corollary 4, pp. 84–85",
+            "note": "Primitivity is included explicitly to remove constant-content degeneracies."
+          }
+        ]
       }
     ],
     "related": [

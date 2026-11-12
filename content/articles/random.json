@@ -296,6 +296,17 @@
         ]
       },
       {
+        "id": "reciprocal-square-discriminants",
+        "title": "Square discriminants",
+        "body": "<p>Every Littlewood polynomial of even degree is separable: modulo \\(2\\), it becomes \\((x^{n+1}-1)/(x-1)\\), which is squarefree. Its discriminant is never a square when \\(n\\equiv2,4\\pmod8\\).</p><p>In the reciprocal or skew-reciprocal subfamily, Hokken proves</p>\\[\\Pr(\\operatorname{disc}(f)\\text{ is a square})\\asymp\\frac{\\log n}{\\sqrt n}\\qquad(n\\equiv0,6\\pmod8).\\]<p>Here the sampling is uniform within the chosen subfamily. This does not estimate the probability in the full Littlewood model, or prove irreducibility. The proof reduces the count to binomial sums and weighted Pythagorean triples.</p>",
+        "citations": [
+          {
+            "key": "Hokken2026ReciprocalSquare",
+            "locator": "Theorem 1.1, Corollary 1.2 and §8"
+          }
+        ]
+      },
+      {
         "id": "shift-example",
         "title": "Example",
         "body": "<div class=\"math-block example\"><p>Let \\(L(x)=1+x+x^2+x^3+x^4+x^5+x^6-x^7\\). Modulo \\(2\\), \\(L(x+1)=x^7\\), so every coefficient below the leading one is even. The constant term \\(L(1)=6\\) is not divisible by \\(4\\). Eisenstein at \\(2\\) proves that \\(L(x+1)\\), and hence \\(L(x)\\), is irreducible over \\(\\mathbb Q\\).</p></div><p>In the preceding probabilistic argument, the first coefficient of valuation one need not be the constant term.</p>",
@@ -515,6 +526,18 @@
         "citations": []
       },
       {
+        "id": "strong-van-der-waerden",
+        "title": "Irreducible exceptions",
+        "body": "<p>Let \\(I_n(H)\\) count only the irreducible polynomials in the monic box whose Galois group is not \\(S_n\\). The strong van der Waerden conjecture asks whether \\(I_n(H)=o_n(H^{n-1})\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Preprint result · Anderson and collaborators (2026)</p>\\[I_n(H)=O_n(H^{n-1-1/440})\\qquad(n\\ge40).\\]</div><p>The degree is fixed as \\(H\\to\\infty\\). Version 2 proves the required twisted Möbius-correlation estimate in this range. Its stronger correlation conjecture would extend the conclusion to \\(n\\ge8\\). The argument uses a square sieve, differencing and finite-field estimates.</p>",
+        "citations": [
+          {
+            "key": "AndersonEtAl2026StrongVdW",
+            "locator": "Conjecture 1.1; Theorems 1.2, 1.4–1.5; Conjecture 1.6",
+            "note": "Version 2; I_n here is the paper’s E_n, to distinguish it from the atlas’s count including reducible polynomials."
+          }
+        ]
+      },
+      {
         "id": "nonmonic-counting",
         "title": "Nonmonic polynomials",
         "body": "<p>Let \\(R_n(H)\\) count degree-\\(n\\) polynomials in \\(\\mathbb Z[x]\\) that are reducible over \\(\\mathbb Q\\) and whose coefficients have absolute value at most \\(H\\). The leading coefficient may be any nonzero integer in the given range. Kuba proves</p>\\[R_n(H)\\asymp_n H^n\\quad(n\\ge3),\\qquad R_2(H)\\asymp H^2\\log H.\\]<p>The total count is \\(2\\lfloor H\\rfloor(2\\lfloor H\\rfloor+1)^n\\asymp_n H^{n+1}\\), so the reducible proportion has order \\(H^{-1}\\) for \\(n\\ge3\\). The nonmonic count has one additional power of \\(H\\) relative to the monic count.</p><p>The proof counts factorizations using height inequalities and lattice-point estimates. For \\(n\\ge3\\), all but \\(O_n(H^{n-1}(\\log H)^2)\\) reducible polynomials have an irreducible factor of degree \\(n-1\\) and hence a linear cofactor.</p>",
@@ -539,6 +562,21 @@
             "key": "Bhargava2025",
             "note": "Group-sensitive bounds and the link with counting number fields.",
             "locator": "Introduction and Theorem 2"
+          }
+        ]
+      },
+      {
+        "id": "smallest-defining-polynomial",
+        "title": "Counting fields by polynomial height",
+        "body": "<p>For a degree-\\(n\\) number field \\(K\\), define \\(H_{\\min}(K)\\) as the least coefficient height of an integral degree-\\(n\\) polynomial defining \\(K\\), with no monicity condition. Arango-Piñeros and collaborators prove in a preprint that</p>\\[\\#\\{K/\\mathbb Q:[K:\\mathbb Q]=n,\\ H_{\\min}(K)<X\\}\\sim C_nX^{n+1}\\quad(n\\ge3),\\]<p>where fields are counted up to isomorphism and \\(C_n>0\\). For \\(n=2\\), the asymptotic is \\((27/\\pi^2)X^2\\). The proof controls when two small defining polynomials give the same field, using the action of rational linear fractional transformations.</p><p>Counting by field discriminant is a separate problem; Chow–Dietmann give bounds for prescribed even permutation groups in that setting.</p>",
+        "citations": [
+          {
+            "key": "ArangoPinerosEtAl2026SmallestPolynomial",
+            "locator": "§1, Theorems 1.1–1.2"
+          },
+          {
+            "key": "ChowDietmann2026NumberFields",
+            "locator": "§1.1, Theorem 1.8 and Remark 1.9"
           }
         ]
       },
@@ -607,6 +645,23 @@
             "key": "AndersonBertelliODorney2026",
             "note": "Explicit low-degree exception.",
             "locator": "Remark 1.4 and Remark 1.6, v2"
+          }
+        ]
+      },
+      {
+        "id": "strong-vdw-small-degrees",
+        "title": "Are irreducible exceptions negligible in every fixed degree?",
+        "status": "Open in cited source",
+        "scope": "Monic integer polynomials of fixed degree 5≤n≤39 and coefficient height H→∞.",
+        "body": "<p>Does \\(I_n(H)=o_n(H^{n-1})\\) hold throughout this range? Here \\(I_n\\) excludes reducible polynomials. The cited preprint proves the claim for \\(n\\ge40\\); the cubic and quartic cases were known earlier. Its twisted Chowla conjecture would cover \\(8\\le n\\le39\\), leaving smaller degrees to other arguments.</p>",
+        "citations": [
+          {
+            "key": "AndersonEtAl2026StrongVdW",
+            "locator": "Conjecture 1.1; Theorems 1.2 and 1.4; Conjecture 1.6; §1.3"
+          },
+          {
+            "key": "ChowDietmann2020",
+            "locator": "Introduction and the cubic and quartic counting results"
           }
         ]
       }

@@ -4,7 +4,7 @@
 
 A reference website on polynomial irreducibility and Galois groups, with results,
 methods, examples, and annotated sources. The edition reviewed on 12 November
-2026 contains 50 articles, 94 questions, and 277 references across 12 subjects.
+2026 contains 53 articles, 107 questions, and 326 references across 12 subjects.
 The collection is selective; cited source versions and verification limits are
 recorded in the entries.
 
@@ -44,6 +44,7 @@ Install SymPy 1.14.0 to run the exact example checks:
 python3 scripts/atlas_certificates.py --check
 python3 scripts/review_certificates.py
 python3 scripts/open_problem_certificates.py
+python3 scripts/literature_certificates.py
 python3 scripts/generate_eulerian.py --check
 ```
 

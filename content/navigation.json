@@ -137,14 +137,16 @@
         "trinomials",
         "eulerian",
         "fekete",
-        "orthogonal-families"
+        "orthogonal-families",
+        "ehrhart-polynomials"
       ],
       "references": [
         "Schinzel2000",
         "Prasolov2004",
         "sawinshustermanstoll2020",
         "MinacNguyenTan2023",
-        "CullinanHajir2014"
+        "CullinanHajir2014",
+        "FiekerHofmannJoswig2022"
       ],
       "checkpoint": "State the normalization, the ambient permutation group, a proved result, and an unresolved question with its source and stated range.",
       "steps": [
@@ -191,8 +193,62 @@
           ]
         },
         {
+          "article": "ehrhart-polynomials",
+          "title": "Ehrhart polynomials",
+          "note": "Compare lattice-point counting with factorization and Galois groups.",
+          "references": [
+            "FiekerHofmannJoswig2022"
+          ]
+        },
+        {
           "title": "Exercise",
           "note": "State the normalization, the ambient permutation group, a proved result, and an unresolved question with its source and stated range."
+        }
+      ]
+    },
+    {
+      "id": "taylor-frequencies",
+      "title": "Taylor polynomials and Katz–Rivin questions",
+      "audience": "Readers with a background in Galois theory",
+      "goal": "Distinguish arbitrary coefficient constructions from fixed arithmetic families.",
+      "articles": [
+        "taylor",
+        "taylor-prescriptions",
+        "specialization",
+        "newton-polygons"
+      ],
+      "references": [
+        "KatzRivinSpeculations",
+        "NguyenDang2026Taylor",
+        "Wei2026JacobiPrimeWitnesses",
+        "Seki2026Catalan",
+        "Sun2013CatalanGroups"
+      ],
+      "checkpoint": "Explain why a nonconvergent prescribed sequence does not settle the rational-function convergence question.",
+      "steps": [
+        {
+          "article": "taylor",
+          "title": "Classical examples",
+          "note": "Compare the exponential and geometric series."
+        },
+        {
+          "article": "taylor-prescriptions",
+          "title": "Frequency questions and arithmetic families",
+          "note": "Read the prescription theorem, the binomial and Catalan results, and the remaining questions. These results retain their preprint status."
+        },
+        {
+          "article": "specialization",
+          "title": "Construction by specialization",
+          "note": "Follow the use of generic groups and Hilbert irreducibility."
+        },
+        {
+          "article": "newton-polygons",
+          "title": "Arithmetic methods",
+          "note": "Use valuations and inertia to study a fixed coefficient family."
+        },
+        {
+          "title": "Exercise",
+          "note": "Explain why a nonconvergent prescribed sequence does not settle the rational-function convergence question."
         }
       ]
     },
@@ -333,7 +389,8 @@
         "finite-field-irreducibility",
         "factorization-algorithms",
         "resolvents",
-        "galois-computation"
+        "galois-computation",
+        "sparse-factorization"
       ],
       "references": [
         "LidlNiederreiter1997",
@@ -341,7 +398,8 @@
         "LLL1982",
         "FiekerKlueners2014",
         "MagmaGaloisDocumentation",
-        "PARIDocumentation"
+        "PARIDocumentation",
+        "Lenstra1999Lacunary"
       ],
       "checkpoint": "Record the exact input, software version, field, factorization or resolvent certificate, and certification step.",
       "steps": [
@@ -374,6 +432,14 @@
             "FiekerKlueners2014",
             "MagmaGaloisDocumentation",
             "PARIDocumentation"
+          ]
+        },
+        {
+          "article": "sparse-factorization",
+          "title": "Sparse input",
+          "note": "Specify the factor degree, input encoding, and output representation.",
+          "references": [
+            "Lenstra1999Lacunary"
           ]
         },
         {
@@ -758,6 +824,18 @@
       "boundary": "A full generic group does not determine every rational fiber. Check specialization separately.",
       "references": [
         "Serre2007Topics"
+      ]
+    },
+    {
+      "question": "Does a sparse polynomial have a factor of bounded degree?",
+      "input": "Sparse coefficients and binary-encoded exponents over a number field",
+      "signal": "A prescribed factor-degree bound d",
+      "method": "Separate cyclotomic factors and use exponent gaps",
+      "article": "sparse-factorization",
+      "output": "All monic irreducible factors of degree at most d, with multiplicities",
+      "boundary": "The running time is polynomial in d, not in log d; dense full output can be too large.",
+      "references": [
+        "Lenstra1999Lacunary"
       ]
     }
   ]

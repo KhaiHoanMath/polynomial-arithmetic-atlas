@@ -1,0 +1,261 @@
+[
+  {
+    "id": "taylor-prescriptions",
+    "title": "Taylor polynomials and Katz–Rivin questions",
+    "kind": "research",
+    "subject": "families",
+    "summary": "Galois-group frequencies in Taylor sequences, prescribed symmetric degrees, and arithmetic results for binomial and Catalan sections. The recent results are recorded with their preprint status and precise scope.",
+    "level": "Research",
+    "field": "Q and number fields",
+    "status": "Questions and preprint results",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Do Taylor Galois-group proportions always converge?",
+      "Can the symmetric degrees be prescribed?",
+      "Which coefficient conditions force symmetric groups in density one?",
+      "What is claimed for binomial and Catalan sections?",
+      "Which questions remain after the general counterexamples?"
+    ],
+    "prerequisites": [
+      "taylor",
+      "frobenius",
+      "specialization"
+    ],
+    "sections": [
+      {
+        "id": "questions",
+        "title": "Katz–Rivin questions",
+        "body": "<p>Let \\(f(x)=\\sum_{j\\ge0}a_jx^j\\), with every \\(a_j\\in\\mathbb Q^\\times\\), and put \\(f_n=\\sum_{j=0}^n a_jx^j\\). For \\(n\\ge3\\), classify the natural root action as \\(S_n\\), \\(A_n\\), or other; a repeated-root section belongs to the last class. Let \\(s_f(N),a_f(N),o_f(N)\\) be the corresponding counts through degree \\(N\\), divided by \\(N\\).</p><p>Katz–Rivin ask whether these proportions always converge and, when they do, whether the third limit must be zero or one. Their first question also asks which series have convergent proportions. Write \\((S(f),A(f),O(f))\\) for the limits when they exist.</p><p>The 2026 results below are preprint claims. Their full proofs have not been independently verified here; all Nguyen-Dang locators refer to version 3.</p>",
+        "citations": [
+          {
+            "key": "KatzRivinSpeculations",
+            "locator": "Questions 1.1–1.2, pp. 1–2"
+          },
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "§1.1; Theorems A–E"
+          }
+        ]
+      },
+      {
+        "id": "prescription",
+        "title": "Prescribing the symmetric degrees",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Preprint theorem (Nguyen-Dang, Theorem A)</p><p>For any set \\(B\\subseteq\\{3,4,\\ldots\\}\\), there is an entire function</p>\\[f(z)=1+z+\\sum_{n\\ge2}a_nz^n,\\qquad a_n\\in\\mathbb Q_{>0},\\]<p>such that</p>\\[\\operatorname{Gal}(f_n/\\mathbb Q)=\\begin{cases}S_n,&n\\in B,\\\\1\\oplus S_{n-1},&n\\notin B,\\end{cases}\\qquad n\\ge3.\\]<p>The second action fixes one root and permutes the other roots arbitrarily. Its fixed root is a negative integer. Every section has distinct negative real roots, and \\(f\\) has order zero.</p></div><p>If \\(B\\) has density \\(\\delta\\), the frequency triple is \\((\\delta,0,1-\\delta)\\). If \\(B\\) has no density, the first and third proportions fail to converge. Thus the proposed construction answers both universal questions negatively. It does not classify the series for which convergence holds.</p><p>The theorem also controls every consecutive coefficient block after its initial power of \\(x\\) is removed: each proper block of degree at least two has full symmetric group. The splitting fields of these segments and of the full sections of degree at least two are jointly linearly disjoint over \\(\\mathbb Q\\).</p>",
+        "citations": [
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Theorem A, pp. 2–3; Corollary 7.6"
+          }
+        ]
+      },
+      {
+        "id": "prescription-method",
+        "title": "Construction",
+        "body": "<p>Choose one coefficient at a time. Reversal turns the new coefficient into a constant parameter:</p>\\[x^nf_n(1/x)=g_n(x)+a_n,\\qquad g_n(x)=\\sum_{j<n}a_jx^{n-j}.\\]<p>The construction arranges simple critical points with distinct critical values. These conditions give symmetric groups before specialization. Hilbert irreducibility supplies rational specializations with the required groups and field disjointness. Specializing after adjoining one root produces the fixed-root alternative.</p><p>The choices can be positive and arbitrarily small, with \\(a_{n-1}^2>4a_{n-2}a_n\\) and \\(a_n<2^{-n^2}\\). The first inequality controls real roots; the second gives convergence on the whole complex plane and order zero. Real-rootedness and rapid coefficient decay therefore coexist with arbitrary symmetric-degree patterns in the stated construction.</p>",
+        "citations": [
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "§1.4; Lemmas 2.2–2.6 and §2"
+          }
+        ]
+      },
+      {
+        "id": "rational-example",
+        "title": "Example",
+        "body": "<p>A simpler zero–one counterexample in the same preprint is</p>\\[h(x)=\\frac{1+x^2}{1-x}=1+x+2x^2+2x^3+\\cdots.\\]<p>Proposition 6.2 states that every even section has group \\(S_n\\), while every odd section of degree at least three has the factor \\(x+1\\). Hence its frequency triple is \\((1/2,0,1/2)\\). For instance,</p>\\[h_2=1+x+2x^2,\\qquad h_3=(1+x)(1+2x^2).\\]<p>The quadratic has discriminant \\(-7\\). This rational function illustrates the zero–one question; it is different from the entire functions constructed above.</p>",
+        "citations": [
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Proposition 6.2 and Corollary 6.3, pp. 32–33"
+          }
+        ]
+      },
+      {
+        "id": "arithmetic-coefficients",
+        "title": "A condition on coefficient denominators",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Preprint theorem (Nguyen-Dang, Theorem B)</p><p>Fix \\(s=a/b\\in\\mathbb Q\\setminus\\mathbb Z\\) in lowest terms, \\(b\\ge2\\), a constant \\(C\\ge0\\), and a number field \\(F\\). Let</p>\\[R_n(x)=\\sum_{j=0}^n u_{n,j}\\frac{s}{s+j}x^j,\\qquad u_{n,j}\\in\\mathbb Q^\\times.\\]<p>Assume each multiplier is a \\(p\\)-adic unit at every prime \\(p>n+C\\). Then, for all sufficiently large \\(n\\), \\(R_n\\) is irreducible over \\(F\\) and its group contains \\(A_n\\). Odd degrees have group \\(S_n\\), and, for every \\(\\varepsilon>0\\),</p>\\[\\#\\{n\\le X:\\operatorname{Gal}(R_n/F)\\ne S_n\\}\\ll_{s,C,F,\\varepsilon}X^{1/2+\\varepsilon}.\\]<p>The threshold and implied constant are uniform in the multipliers.</p></div><p>Primes larger than the degree produce two primitive Newton edges and inertia cycles of lengths \\(j,n-j\\). Several primes exclude proper factors and block systems. A permutation-group classification gives \\(A_n\\)-containment, and a quadratic large sieve bounds the remaining degrees. The nonintegral hypothesis on \\(s\\) is essential to this argument.</p>",
+        "citations": [
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Theorem B; §§3–4, especially §§4.5–4.6",
+            "note": "The containment step invokes Müller’s classification of primitive groups with a two-cycle element."
+          }
+        ]
+      },
+      {
+        "id": "binomial",
+        "title": "Nonintegral binomial powers",
+        "body": "<p>For fixed \\(s=a/b\\in\\mathbb Q\\setminus\\mathbb Z\\), put</p>\\[B_{s,n}(x)=\\sum_{j=0}^n\\frac{(s)_j}{j!}x^j,\\qquad (s)_0=1,\\quad (s)_j=s(s+1)\\cdots(s+j-1)\\ (j\\ge1).\\]<p>These are the sections of \\((1-x)^{-s}\\). Wei’s preprint gives the eventual group classification over \\(\\mathbb Q\\). Nguyen-Dang’s Theorem C extends it to each fixed number field \\(F\\): for sufficiently large \\(n\\),</p>\\[\\operatorname{Gal}(B_{s,n}/F)=\\begin{cases}A_n,&n\\text{ even and }(-1)^{n/2}a(a+bn)\\in F^{\\times2},\\\\S_n,&\\text{otherwise}.\\end{cases}\\]<p>Here \\(F^{\\times2}\\) denotes the nonzero squares. An affine substitution gives the reciprocal-coefficient form above. The discriminant then determines the group.</p><p>Theorem C also states that the number of exceptions to \\(S_n\\) through degree \\(X\\) is \\(c_{s,F}\\sqrt X+O_{s,F}(1)\\), with an explicit constant. Thus the symmetric degrees have density one, even when infinitely many alternating degrees occur. The exponent is fixed throughout; this is not a uniform all-parameter classification in small degree.</p>",
+        "citations": [
+          {
+            "key": "Wei2026JacobiPrimeWitnesses",
+            "locator": "Theorem A and Corollary 9.4",
+            "note": "Wei uses J_n(x,y); the parameter here is y=s−1."
+          },
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Theorem C; §§4.9–4.10; formula (4.16)"
+          }
+        ]
+      },
+      {
+        "id": "central-binomial",
+        "title": "Central-binomial sections",
+        "body": "<p>Let \\(C_n(x)=\\sum_{j=0}^n\\binom{2j}{j}x^j\\). Wei’s preprint supplies all-degree irreducibility and the eventual group formula. Nguyen-Dang’s Theorem D states the formula in every degree \\(n\\ge1\\):</p>\\[\\operatorname{Gal}(C_n/\\mathbb Q)=\\begin{cases}A_n,&n=2r(r+1),\\ r\\ge1,\\\\S_n,&\\text{otherwise}.\\end{cases}\\]<p>For the monic reciprocal \\(Q_n=x^nC_n(1/x)\\), it also states Sun’s criterion: an irreducible reduction modulo a prime exists exactly outside those exceptional degrees. In the permitted degrees, these primes have density \\(1/n\\).</p><div class=\"math-block example\"><p class=\"block-label\">Example</p>\\[Q_4=x^4+2x^3+6x^2+20x+70.\\]<p>Here is an exact certificate. Set</p>\\[T(y)=1-\\frac43y+\\frac65y^2-\\frac47y^3+\\frac19y^4.\\]<p>Direct expansion gives \\(C_4(x)=\\frac{315}{128}T(1-4x)\\). The Newton polygons of \\(T\\) at \\(5\\) and \\(7\\) have vertices</p>\\[(0,0),(2,-1),(4,0),\\qquad (0,0),(3,-1),(4,0).\\]<p>They restrict a proper rational factor to degree \\(2\\), respectively degree \\(1\\) or \\(3\\). Hence \\(C_4\\), and therefore \\(Q_4\\), is irreducible. Moreover,</p>\\[Q_4\\equiv(x+3)(x^3-x^2-4x+6)\\pmod{13}.\\]<p>The cubic has no root in \\(\\mathbb F_{13}\\), giving a 3-cycle. The discriminant is \\(7560^2\\), so transitivity and this cycle force \\(A_4\\). Every prime reduction is reducible: an irreducible quartic reduction would supply an odd 4-cycle.</p></div>",
+        "citations": [
+          {
+            "key": "Wei2026JacobiPrimeWitnesses",
+            "locator": "Theorem B(i), (ii), (iv); Remark 9.6"
+          },
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Theorem D; §4.11"
+          },
+          {
+            "key": "Sun2013CatalanGroups",
+            "locator": "OEIS A224416, Comments, conjecture (ii)"
+          }
+        ]
+      },
+      {
+        "id": "catalan",
+        "title": "Catalan sections",
+        "body": "<p>Write \\(c_j=\\binom{2j}{j}/(j+1)\\) and \\(P_n(x)=\\sum_{j=0}^n c_jx^j\\). Seki’s preprint states irreducibility for every \\(n\\ge1\\). Nguyen-Dang’s Theorem E states the stronger conclusion</p>\\[\\operatorname{Gal}(P_n/\\mathbb Q)=S_n\\qquad(n\\ge1).\\]<p>The proof starts from Seki’s transitivity result. Inertia and estimates for sums of roots exclude proper block systems; a long cycle gives alternating containment, and an odd inertia permutation gives the symmetric group.</p><p>Theorem E also gives \\(\\operatorname{Gal}(P_n/F)=S_n\\) for \\(n\\ge R_F\\), where \\(R_F\\) is the largest rational prime ramified in the fixed number field \\(F\\), with \\(R_{\\mathbb Q}=1\\). Sun’s separate bound \\(n^2+n+5\\) for the least prime giving an irreducible reduction of \\(x^nP_n(1/x)\\) remains open in the cited sources.</p>",
+        "citations": [
+          {
+            "key": "Seki2026Catalan",
+            "locator": "Theorem 1.1; §§2–4",
+            "note": "The preprint proves irreducibility but explicitly does not address the full-group conjecture."
+          },
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Theorem E; §5; §7.16"
+          },
+          {
+            "key": "Sun2013CatalanGroups",
+            "locator": "OEIS A224416, Comments, conjecture (i)"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "taylor",
+        "relation": "Extends",
+        "why": "Schur’s exponential example supplies the frequency triple (3/4,1/4,0)."
+      },
+      {
+        "id": "specialization",
+        "relation": "Uses",
+        "why": "Hilbert irreducibility chooses successive coefficients with prescribed groups."
+      },
+      {
+        "id": "newton-polygons",
+        "relation": "Uses",
+        "why": "A prime dividing one denominator supplies two local factor degrees and inertia cycles."
+      },
+      {
+        "id": "discriminants",
+        "relation": "Uses",
+        "why": "The square class distinguishes the alternating and symmetric possibilities."
+      },
+      {
+        "id": "sparse-gaps",
+        "relation": "Connects to",
+        "why": "Sections of P(x)/(1−x) lead to P(x)−P(1)x^(n+1)."
+      }
+    ],
+    "questions": [
+      {
+        "id": "katz-rivin-limits",
+        "title": "Must all three Taylor Galois proportions converge?",
+        "status": "Resolution claimed in preprint",
+        "scope": "Every coefficient is a nonzero rational number; degrees n≥3 and the natural root actions.",
+        "body": "<p>Theorem A prescribes the set of symmetric degrees. Choosing a set without a natural density gives the claimed counterexample, even for an entire function with positive rational coefficients and simple negative roots in every section. The structural part of Katz–Rivin’s question remains separate.</p>",
+        "citations": [
+          {
+            "key": "KatzRivinSpeculations",
+            "locator": "Question 1.1"
+          },
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Theorem A; Corollary 7.6"
+          }
+        ]
+      },
+      {
+        "id": "katz-rivin-zero-one",
+        "title": "Must the limiting proportion of other groups be zero or one?",
+        "status": "Resolution claimed in preprint",
+        "scope": "A rational-coefficient Taylor sequence for which all three frequencies exist.",
+        "body": "<p>Theorem A gives every triple \\((\\delta,0,1-\\delta)\\), \\(0\\le\\delta\\le1\\). Proposition 6.2 gives the rational-function example with triple \\((1/2,0,1/2)\\).</p>",
+        "citations": [
+          {
+            "key": "KatzRivinSpeculations",
+            "locator": "Question 1.2"
+          },
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "Theorem A and Proposition 6.2"
+          }
+        ]
+      },
+      {
+        "id": "taylor-rational-convergence",
+        "title": "Do the frequencies converge for every rational generating function?",
+        "status": "Open in cited source",
+        "scope": "A fixed f∈Q(x) regular at zero, with every Taylor coefficient nonzero.",
+        "body": "<p>The preprint leaves this question open, including the class \\(P(x)/(1-x)\\). For \\(n\\ge\\deg P\\),</p>\\[(1-x)f_n=P(x)-P(1)x^{n+1}.\\]<p>This identity connects the question to sparse polynomials with a growing exponent. The arbitrary-coefficient construction does not settle it.</p>",
+        "citations": [
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "§7.16, “Rational functions”, p. 46"
+          }
+        ]
+      },
+      {
+        "id": "taylor-irreducible-nonconvergence",
+        "title": "Can the frequencies fail to converge when all sufficiently large sections are irreducible?",
+        "status": "Open in cited source",
+        "scope": "A series in Q[[x]] with nonzero coefficients and eventually irreducible sections.",
+        "body": "<p>The constructed nonconvergent examples use reducible sections. The preprint asks whether one can instead arrange nonconvergence among transitive groups, for example by alternating between symmetric and alternating groups. Prescribing arbitrary alternating degrees is also left open.</p>",
+        "citations": [
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "§7.16, “Irreducible nonconvergence and alternating prescriptions”, p. 46"
+          }
+        ]
+      },
+      {
+        "id": "catalan-least-prime",
+        "title": "Is the least irreducible-reduction prime at most n²+n+5?",
+        "status": "Conjecture in cited source",
+        "scope": "Every n≥1; the monic reciprocal Q_n(x)=Σ_{j=0}^n c_j x^(n−j) of the Catalan section.",
+        "body": "<p>Sun conjectures a prime \\(p\\le n^2+n+5\\) for which \\(Q_n\\bmod p\\) is irreducible. Knowing the group is \\(S_n\\) gives infinitely many such primes, but does not give this explicit bound.</p>",
+        "citations": [
+          {
+            "key": "Sun2013CatalanGroups",
+            "locator": "OEIS A224416, Comments, conjecture (i)"
+          },
+          {
+            "key": "NguyenDang2026Taylor",
+            "locator": "§7.16, “Classical sections and smaller thresholds”, p. 45"
+          }
+        ]
+      },
+      {
+        "id": "central-trinomial-least-prime",
+        "title": "Does each central-trinomial section have a small irreducible-reduction prime?",
+        "status": "Conjecture in cited source",
+        "scope": "Every n≥1; central-trinomial coefficients T_j=[z^j](z²+z+1)^j.",
+        "body": "<p>Sun asks whether</p>\\[U_n(x)=\\sum_{j=0}^n T_jx^{n-j}\\]<p>is irreducible modulo some prime \\(p\\le n^2+n+5\\). This would imply rational irreducibility and an \\(n\\)-cycle in the Galois group. It is a separate conjecture from the Catalan and central-binomial statements.</p>",
+        "citations": [
+          {
+            "key": "Sun2013CatalanGroups",
+            "locator": "OEIS A224416, Comments, conjecture (iii)"
+          }
+        ]
+      }
+    ]
+  }
+]

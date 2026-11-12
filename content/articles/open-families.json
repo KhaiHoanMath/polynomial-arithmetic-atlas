@@ -219,13 +219,44 @@
         ]
       },
       {
+        "id": "explicit-degree-bound",
+        "title": "An explicit degree bound",
+        "body": "<p>Jindal–Laishram–Sarma prove both conjectures for \\(0\\le r\\le60\\). They also give the sufficient bound</p>\\[n>\\exp\\!\\left(r\\left(1+\\frac{1.2762}{\\log r}\\right)\\right),\\qquad r\\ge2.\\]<p>The cases \\(r=0,1\\) are already known in every degree. Their method combines restrictions on factor degrees with Newton polygons and estimates for primes. The bound is effective but depends strongly on \\(r\\); it is distinct from a uniform bound independent of the parameter.</p>",
+        "citations": [
+          {
+            "key": "JindalLaishramSarma2018",
+            "locator": "Theorems 1.1–1.2 and §6",
+            "note": "The logarithmic bound is written only for r≥2; its printed formula is undefined at r=0,1."
+          }
+        ]
+      },
+      {
+        "id": "pade-approximants",
+        "title": "Padé approximants",
+        "body": "<p>The same family occurs in rational approximation to the exponential function. For positive integers \\(u,v\\),</p>\\[\\frac{F_{u,v}(x)}{F_{v,u}(-x)}=e^x+O(x^{u+v+1})\\qquad(x\\to0).\\]<p>Thus arithmetic questions about the numerator and denominator are Laguerre questions. Cullinan–Scheel use this identity to study their irreducibility and Galois groups. When \\(u=v=m\\), reversal identifies the polynomials with the Bessel family, so both have group \\(S_m\\). Their near-diagonal group theorem assumes irreducibility; that hypothesis is explicit in the source.</p>",
+        "citations": [
+          {
+            "key": "CullinanScheel2022",
+            "locator": "Equations (1.0.1)–(1.0.6), Theorems 1.0.8–1.0.9 (arXiv version)",
+            "note": "The source uses monic polynomials u!F_(u,v) and v!F_(v,u)(−x); the displayed ratio removes the scalar mismatch."
+          },
+          {
+            "key": "FilasetaTrifonov2002",
+            "locator": "Main theorem"
+          },
+          {
+            "key": "Grosswald1978"
+          }
+        ]
+      },
+      {
         "id": "recent",
         "title": "Recent preprint",
         "body": "<p>The November 2026 preprint uses \\(H_{n,s}=n!F_{n,s-1}\\), with \\(s\\ge1\\). It claims a degree threshold independent of \\(s\\), together with an effective finite exceptional set. This is a claim about uniform eventual behavior, not a proof that every pair satisfies the conjectures. Its full argument has not been verified here.</p>",
         "citations": [
           {
             "key": "NguyenDang2026UniformLaguerre",
-            "locator": "Abstract; version 1, 4 November 2026"
+            "locator": "Equation (1.4), Theorem 1.1 and Corollary 1.2; version 1, 4 November 2026"
           }
         ]
       },
@@ -660,6 +691,17 @@
             "note": "The discriminant criterion for an irreducible cubic."
           }
         ]
+      },
+      {
+        "id": "embedded-graphs",
+        "title": "Embedded graphs",
+        "body": "<p>For a graph embedded in an orientable surface, put \\(\\sigma(A)=r(A)+\\gamma(A)/2\\), where \\(\\gamma(A)\\) is the Euler genus of the spanning ribbon subgraph. Its ribbon graph polynomial is</p>\\[R_G(x,y)=\\sum_{A\\subseteq E}(x-1)^{\\sigma(E)-\\sigma(A)}(y-1)^{|A|-\\sigma(A)}.\\]<p>For a graph with an edge and no isolated vertices, Ellis-Monaghan and collaborators prove that \\(R_G\\) is irreducible over \\(\\mathbb C\\) precisely when the embedded graph is connected and is not a nontrivial join. A join identifies one vertex of each of two embedded graphs in separate surface pieces. Their more general theorem treats connected even delta-matroids. This is an irreducibility result; it does not determine the full Galois group.</p>",
+        "citations": [
+          {
+            "key": "EllisMonaghanEtAl2022EmbeddedTutte",
+            "locator": "Equation (2), Theorems 1.1–1.2; definition of join preceding Theorem 1.1"
+          }
+        ]
       }
     ],
     "related": [
@@ -772,6 +814,21 @@
           {
             "key": "Buff2018PCF",
             "locator": "Proposition 5"
+          }
+        ]
+      },
+      {
+        "id": "curves-and-parameters",
+        "title": "Dynatomic curves and parameter polynomials",
+        "body": "<p>There are two different irreducibility questions. For \\(f_c(z)=z^2+c\\), the curve</p>\\[\\Phi_n(c,z)=\\prod_{d\\mid n}(f_c^{\\circ d}(z)-z)^{\\mu(n/d)}=0\\]<p>is irreducible over \\(\\mathbb C\\). Buff–Tan give a proof using kneading sequences, and also prove that the affine curve is smooth. These are statements about the two-variable polynomial. Intersecting this curve with \\(z=0\\) leads to the critical-parameter problem; geometric irreducibility of the curve does not imply irreducibility of that intersection over \\(\\mathbb Q\\).</p><p>Doyle–Poonen study the irreducible components of preperiodic-point curves for \\(z^d+c\\). Over a field containing the \\(d\\)-th roots of unity, with characteristic not dividing \\(d\\), each such component is geometrically irreducible and their gonalities tend to infinity. The characteristic-zero proof uses the Castelnuovo–Severi inequality. This connects the geometry of the curves with bounds on rational preperiodic points.</p>",
+        "citations": [
+          {
+            "key": "BuffTan2014Dynatomic",
+            "locator": "Theorems 1.1–1.2 and §2"
+          },
+          {
+            "key": "DoylePoonen2020Gonality",
+            "locator": "Theorem 1.1 and §§3–5; dynatomic curves are defined as irreducible components"
           }
         ]
       }
@@ -1008,6 +1065,21 @@
           {
             "key": "Altizio2025Stern",
             "locator": "§1, Theorem 2 and Corollary 1"
+          },
+          {
+            "key": "DilcherKidwaiTomkins2017Stern",
+            "locator": "§1; Conjecture 3.1"
+          }
+        ]
+      },
+      {
+        "id": "stern-number-coefficients",
+        "title": "Stern numbers as coefficients",
+        "body": "<p>A third construction uses the Stern numbers \\(s(0)=0,s(1)=1\\), \\(s(2n)=s(n)\\), \\(s(2n+1)=s(n)+s(n+1)\\), as coefficients:</p>\\[P_n(x)=\\sum_{j=0}^{n}s(j+1)x^{n-j}.\\]<p>Dilcher–Ericksen study this sequence separately. Their examples include \\(\\Phi_7\\mid P_{62}\\), \\(\\Phi_{11}\\mid P_{1022}\\), and \\(\\Phi_{13}\\mid P_{4094}\\). Proposition 21 turns the relevant divisibility into equality of Stern-number sums in residue classes. These examples rule out a blanket irreducibility assertion for \\(P_n\\).</p>",
+        "citations": [
+          {
+            "key": "DilcherEricksen2021SternCoefficients",
+            "locator": "Equation (3), §5.3, Table 5 and Proposition 21"
           }
         ]
       }
@@ -1087,6 +1159,23 @@
           {
             "key": "Altizio2025Stern",
             "locator": "§1, Conjecture 1 and Theorem 2"
+          },
+          {
+            "key": "DilcherKidwaiTomkins2017Stern",
+            "locator": "Conjecture 3.1, p. 413"
+          }
+        ]
+      },
+      {
+        "id": "stern-unimodality",
+        "title": "Are the coefficients of every \\(S_n\\) unimodal?",
+        "status": "Conjecture in cited source",
+        "scope": "The recurrence-defined sequence S_n in this article; n≥1.",
+        "body": "<p>Dilcher–Kidwai–Tomkins ask whether the coefficients increase and then decrease, allowing equalities. This is a coefficient-shape question, separate from prime-index irreducibility and from the \\((0,1)\\)-sequence \\(a_n\\).</p>",
+        "citations": [
+          {
+            "key": "DilcherKidwaiTomkins2017Stern",
+            "locator": "Conjecture 3.15, p. 421"
           }
         ]
       }
@@ -1411,6 +1500,17 @@
             "locator": "Theorem 1.1(a)"
           }
         ]
+      },
+      {
+        "id": "local-orbits",
+        "title": "Local invariants",
+        "body": "<p>For prime-power or squarefree \\(N\\), Dieulefait–Pacetti–Tsaknias prove, for sufficiently large even \\(k\\),</p>\\[\\mathrm{NCM}(N,k)\\ge\\prod_{p\\mid N}\\mathrm{LO}(p^{v_p(N)}).\\]<p>Here \\(\\mathrm{LO}\\) counts local Galois orbits with compatible minimal Atkin–Lehner signs. Equality is asked in Question 4.5. Their level-256 computations give 12 non-CM orbits against a bound of 10, through weight 28. The authors therefore warn that additional invariants may be needed.</p>",
+        "citations": [
+          {
+            "key": "DieulefaitPacettiTsaknias2021",
+            "locator": "Theorem 4.3; Question 4.5; Example 4.7"
+          }
+        ]
       }
     ],
     "related": [
@@ -1453,15 +1553,19 @@
         "title": "Do non-CM Galois orbit counts stabilize with the weight?",
         "status": "Open in cited source",
         "scope": "Fixed N≥1; even weights k→∞; trivial nebentypus; the new subspace.",
-        "body": "<p>Tsaknias asks whether the number \\(\\mathrm{NCM}(N,k)\\) of non-CM newform Galois orbits is eventually constant, and whether the resulting function of \\(N\\) is multiplicative. At squarefree level, Question 2.3 predicts \\(2^{\\omega(N)}\\) total orbits for all sufficiently large weights.</p>",
+        "body": "<p>Tsaknias asks whether \\(\\mathrm{NCM}(N,k)\\) is eventually constant. At squarefree level, Question 2.3 predicts \\(2^{\\omega(N)}\\) orbits. His additional multiplicativity proposal requires caution: Dieulefait–Pacetti–Tsaknias explain why local Galois actions need not vary independently and do not expect multiplicativity in general.</p>",
         "citations": [
           {
             "key": "Tsaknias2012",
             "locator": "Questions 2.2–2.3"
           },
           {
+            "key": "DieulefaitPacettiTsaknias2021",
+            "locator": "Introduction, p. 2836; Remark 4.4"
+          },
+          {
             "key": "BanerjeeEtAl2026",
-            "locator": "§1, summary of the fixed-level conjecture"
+            "locator": "§1"
           }
         ]
       }
@@ -1580,6 +1684,19 @@
           {
             "key": "Gonzalez2022",
             "locator": "Theorem 1"
+          }
+        ]
+      },
+      {
+        "id": "eisenstein-zero-coprimality",
+        "title": "Can two distinct Eisenstein zero polynomials share a root?",
+        "status": "Conjecture in cited source",
+        "scope": "Distinct even weights k, ℓ≥4; the polynomials φ_k and φ_ℓ defined above.",
+        "body": "<p>Griffin and collaborators conjecture \\(\\gcd(\\varphi_k,\\varphi_\\ell)=1\\). Equivalently, the two Eisenstein series have no common non-elliptic zero modulo \\(\\mathrm{SL}_2(\\mathbb Z)\\). Their Conjecture 3.1 is weaker than the general irreducibility conjecture and is stated separately.</p>",
+        "citations": [
+          {
+            "key": "GriffinEtAl2021Monomials",
+            "locator": "Conjecture 3.1 and the preceding paragraph, p. 454"
           }
         ]
       }

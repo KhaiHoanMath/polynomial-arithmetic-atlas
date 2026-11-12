@@ -1,0 +1,189 @@
+[
+  {
+    "id": "sparse-factorization",
+    "title": "Factoring sparse polynomials",
+    "kind": "method",
+    "subject": "algorithms",
+    "summary": "Sparse input can have very large degree or dense factors. The available algorithms depend on the degree bound and the required output.",
+    "level": "Research",
+    "field": "number fields and general coefficient fields",
+    "status": "Published results and 2026 preprints",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How does sparse encoding change factorization complexity?",
+      "Which bounded-degree factors can be found efficiently?",
+      "What do recent bounded-individual-degree algorithms return?"
+    ],
+    "prerequisites": [
+      "factorization-algorithms",
+      "sparse-gaps"
+    ],
+    "sections": [
+      {
+        "id": "input",
+        "title": "Input and output",
+        "body": "<p>A sparse polynomial is stored by listing its nonzero coefficients and exponent vectors. Exponents may be written in binary. Thus \\(x^N-1\\) has input length of order \\(\\log N\\), apart from coefficient encoding. For a prime \\(\\ell\\), its factor \\(\\Phi_\\ell(x)=1+x+\\cdots+x^{\\ell-1}\\) has \\(\\ell\\) terms. An algorithm that prints every factor densely cannot always run in time polynomial in sparse input length.</p><p>In several variables, <em>individual degree at most \\(d\\)</em> means \\(\\deg_{x_i}f\\le d\\) for every variable. This differs from allowing one variable an arbitrarily large binary exponent.</p>",
+        "citations": [
+          {
+            "key": "Lenstra1999Lacunary",
+            "locator": "§1, pp. 267–268"
+          },
+          {
+            "key": "ChuyoonShpilka2026",
+            "locator": "Definition 1.6"
+          }
+        ]
+      },
+      {
+        "id": "small-degree",
+        "title": "Factors of bounded degree",
+        "body": "<p>Lenstra gives a deterministic algorithm which, for a number field \\(K\\), a nonzero sparse \\(f\\in K[x]\\), and \\(d\\ge1\\), finds all monic irreducible factors of degree at most \\(d\\), with multiplicities. Its running time is polynomial in the encoded lengths of \\(K,f\\) and in \\(d\\), not in \\(\\log d\\).</p><p>Cyclotomic factors are treated separately. For other factors, a lower bound for the height of a root shows that a sufficiently large gap splits a vanishing sum into two vanishing blocks. Factoring shorter blocks then finds the required factors.</p>",
+        "citations": [
+          {
+            "key": "Lenstra1999Lacunary",
+            "locator": "Main theorem, p. 268; Corollary 2.3, p. 271"
+          }
+        ]
+      },
+      {
+        "id": "factor-sparsity",
+        "title": "How many terms can a factor have?",
+        "body": "<p>If \\(f\\) has \\(n\\) variables, at most \\(s\\) terms, and individual degree at most \\(d\\), Bhargava–Saraf–Volkovich prove that every factor has at most \\(s^{O(d^2\\log n)}\\) terms. Their proof uses Newton polytopes. It yields deterministic quasipolynomial factorization when \\(d\\) is fixed.</p><p>This bounds the number of terms in factors, not just their degrees. The cost of univariate factorization over the coefficient field must also be included.</p>",
+        "citations": [
+          {
+            "key": "BhargavaSarafVolkovich2020",
+            "locator": "Theorems 1 and 2 of the arXiv manuscript"
+          }
+        ]
+      },
+      {
+        "id": "sparse-divisors",
+        "title": "Sparse divisors",
+        "body": "<p>Chuyoon–Shpilka’s 2026 preprint lists all \\(s\\)-sparse divisors not divisible by a nonconstant monomial in time \\(\\operatorname{poly}(n,d!,s^d)\\), up to nonzero scalar multiples. It also gives full factorization in time \\(\\operatorname{poly}(n,s^{d^2\\log n})\\). These bounds suppress univariate-factorization and field-arithmetic costs.</p><p>Finding sparse divisors does not settle irreducibility: a proper factor may have more terms than the input.</p>",
+        "citations": [
+          {
+            "key": "ChuyoonShpilka2026",
+            "locator": "Theorems 1.9 and 1.12; Remark 1.7"
+          }
+        ]
+      },
+      {
+        "id": "candidate-lists",
+        "title": "Lists of candidate factors",
+        "body": "<p>The June 2026 preprint of Bhattacharjee–Kothary–Rai–Saraf gives a different output. In characteristic zero or greater than \\(d\\), it constructs at most \\(s^d\\) constant-depth circuits containing every factor not divisible by a nonconstant monomial, up to scalar multiples, in time \\(\\operatorname{poly}(n,d!,s^d)\\). The maximal monomial divisor is returned separately.</p><p>Some circuits may represent polynomials which do not divide \\(f\\). Small coefficient fields may require an extension, and univariate-factorization costs are suppressed. Thus the list alone is not a factorization certificate. Interpolation and divisibility tests give complete factorization with the known quasipolynomial bound.</p>",
+        "citations": [
+          {
+            "key": "BhattacharjeeKotharyRaiSaraf2026",
+            "locator": "Theorem 1.1; Remarks 1.2–1.4; Corollary 4.5"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "factorization-algorithms",
+        "relation": "Refines",
+        "why": "The input representation and output size affect complexity."
+      },
+      {
+        "id": "sparse-gaps",
+        "relation": "Uses",
+        "why": "Large exponent gaps separate factors with roots of positive height."
+      },
+      {
+        "id": "multivariate-irreducibility",
+        "relation": "Connects to",
+        "why": "Newton polytopes constrain possible factors."
+      }
+    ],
+    "questions": [
+      {
+        "id": "sparse-bounded-individual-irreducibility",
+        "title": "Can bounded individual degree give a faster irreducibility test?",
+        "status": "Open in cited source",
+        "scope": "An n-variable, s-sparse polynomial of individual degree at most d; field costs stated separately",
+        "body": "<p>Chuyoon–Shpilka ask for an irreducibility test in time \\(\\operatorname{poly}(n,s^d)\\). A proper factor may be denser than the input. This is the question stated in their March 2026 preprint; the later candidate-list algorithm still requires verification of its candidates.</p>",
+        "citations": [
+          {
+            "key": "ChuyoonShpilka2026",
+            "locator": "§10, irreducibility-testing question"
+          },
+          {
+            "key": "BhattacharjeeKotharyRaiSaraf2026",
+            "locator": "Theorem 1.1; §1.1, spurious candidates"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ehrhart-polynomials",
+    "title": "Ehrhart polynomials",
+    "kind": "family",
+    "subject": "families",
+    "summary": "Counting lattice points gives rational polynomials. Their factorization and Galois groups connect polyhedral geometry with arithmetic.",
+    "level": "Research",
+    "field": "Q",
+    "status": "Published computations and a cited open question",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Which polynomial counts the lattice points in integral dilates?",
+      "Which Galois groups can occur in this class?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "galois-computation"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition and example",
+        "body": "<p>For a lattice polytope \\(P\\subset\\mathbb R^m\\), the function \\(L_P(t)=|tP\\cap\\mathbb Z^m|\\), for integers \\(t\\ge0\\), is a polynomial in \\(\\mathbb Q[t]\\) of degree \\(\\dim P\\). Its constant term is \\(1\\).</p><p>For \\(P=[-1,1]^m\\), coordinate counting gives \\(L_P(t)=(2t+1)^m\\). Its splitting field is \\(\\mathbb Q\\), and its Galois group is trivial. Ehrhart polynomials need not be irreducible or squarefree.</p>",
+        "citations": [
+          {
+            "key": "FiekerHofmannJoswig2022",
+            "locator": "§1; §3, Example 2"
+          }
+        ]
+      },
+      {
+        "id": "computations",
+        "title": "Computing the group",
+        "body": "<p>Fieker–Hofmann–Joswig apply subgroup descent in OSCAR to Ehrhart polynomials. They combine permutation groups, relative invariants, and certified root approximations. Their software comparisons concern the 2022 versions.</p>",
+        "citations": [
+          {
+            "key": "FiekerHofmannJoswig2022",
+            "locator": "§2"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "galois-computation",
+        "relation": "Uses",
+        "why": "Subgroup descent determines the root permutation group."
+      },
+      {
+        "id": "inverse-galois",
+        "relation": "Restricts",
+        "why": "The defining polynomial must arise from lattice-point counting."
+      }
+    ],
+    "questions": [
+      {
+        "id": "ehrhart-groups",
+        "title": "Which finite groups occur for Ehrhart polynomials?",
+        "status": "Open in cited source",
+        "scope": "Splitting fields of Ehrhart polynomials of arbitrary lattice polytopes over Q",
+        "body": "<p>Question 6 asks which groups occur, and specifically whether every finite cyclic group occurs. No irreducibility assumption is imposed. The question restricts inverse Galois theory to polynomials arising from lattice-point counts.</p>",
+        "citations": [
+          {
+            "key": "FiekerHofmannJoswig2022",
+            "locator": "§4, Question 6, p. 7 of the published version"
+          }
+        ]
+      }
+    ]
+  }
+]
