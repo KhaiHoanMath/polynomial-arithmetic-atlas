@@ -240,6 +240,15 @@ The edition contains @@ARTICLE_COUNT@@ articles and @@REFERENCE_COUNT@@ annotate
 \item[Example.] A computation concerns the stated polynomial. A finite sample does not prove a result for an entire family.
 \end{description}
 
+\section*{Question status}
+\begin{description}
+\item[Settled.] Proved in published work.
+\item[Claimed.] A proof is given or claimed in a preprint or unpublished work.
+\item[Open.] An unresolved question or conjecture in published work or a preprint.
+\item[Research direction.] A suggested topic for further study.
+\end{description}
+Status reflects the cited sources; later work may change it.
+
 \section*{Editions}
 The literature review is dated @@REVIEW_DATE@@. The earlier @@ORIGINAL_COUNT@@-source bibliography is a separate fixed edition. The current handbook includes later additions and corrections. Linked books and papers remain with their authors or publishers; this bibliography provides publication details, annotations, and links.
 

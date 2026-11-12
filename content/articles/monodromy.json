@@ -130,7 +130,7 @@
       {
         "id": "generic-versus-fiber",
         "title": "Do separable specializations retain the generic group?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "The characteristic-zero Morse family X³−3X−T over Q",
         "body": "<p>No. At \\(T=0\\) the polynomial is reducible, and at \\(T=1\\) it is irreducible with group \\(C_3\\). Both fibers are separable. Hilbert irreducibility gives many full-group fibers, with possible exceptional specializations.</p>",
         "citations": [

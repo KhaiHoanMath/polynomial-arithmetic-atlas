@@ -100,7 +100,7 @@
       {
         "id": "sparse-bounded-individual-irreducibility",
         "title": "Can bounded individual degree give a faster irreducibility test?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "An n-variable, s-sparse polynomial of individual degree at most d; field costs stated separately",
         "body": "<p>Chuyoon–Shpilka ask for an irreducibility test in time \\(\\operatorname{poly}(n,s^d)\\). A proper factor may be denser than the input. This is the question stated in their March 2026 preprint; the later candidate-list algorithm still requires verification of its candidates.</p>",
         "citations": [
@@ -174,7 +174,7 @@
       {
         "id": "ehrhart-groups",
         "title": "Which finite groups occur for Ehrhart polynomials?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Splitting fields of Ehrhart polynomials of arbitrary lattice polytopes over Q",
         "body": "<p>Question 6 asks which groups occur, and specifically whether every finite cyclic group occurs. No irreducibility assumption is imposed. The question restricts inverse Galois theory to polynomials arising from lattice-point counts.</p>",
         "citations": [

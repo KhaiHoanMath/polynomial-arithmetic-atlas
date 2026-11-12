@@ -139,7 +139,7 @@
       {
         "id": "composition-preserves-irreducibility",
         "title": "Does composition preserve irreducibility?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "Nonconstant polynomials over Q",
         "body": "<p>No. The pair \\(x^2-8\\), \\(x^2-3\\) above is a counterexample. Capelli identifies the missing condition: the inner polynomial minus a root of the outer one must remain irreducible over that root field.</p>",
         "citations": [
@@ -266,13 +266,13 @@
       {
         "id": "prime-values-incomplete",
         "title": "Must an irreducible integer polynomial take a prime or unit value?",
-        "status": "Settled in stated scope",
+        "status": "Claimed",
         "scope": "Primitive polynomials in Z[x], with integer arguments and without changing variables",
         "body": "<p>No. The primitive irreducible polynomial \\(x^2+x+4\\) has only positive even values at integers, all at least \\(4\\). Thus the prime-value criterion is not necessary for irreducibility.</p>",
         "citations": [
           {
             "key": "ConradIrredQ",
-            "note": "The same explicit obstruction is recorded after the prime-value criterion.",
+            "note": "The same explicit obstruction is recorded after the prime-value criterion. Proof in expository notes; this status records the unpublished source.",
             "locator": "§5, p. 5"
           }
         ]

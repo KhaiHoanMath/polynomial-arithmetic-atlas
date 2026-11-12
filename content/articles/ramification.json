@@ -117,14 +117,14 @@
       {
         "id": "ramification-repeated-root-test",
         "title": "Does a repeated root modulo p imply nontrivial inertia?",
-        "status": "Settled in stated scope",
+        "status": "Claimed",
         "scope": "Monic integral polynomials over Q",
         "body": "<p>No: \\(x^2-18\\) modulo \\(3\\) is a counterexample, because its root field is unramified at \\(3\\). The order index can account for repeated reduction; the valuation-one theorem excludes this obstruction.</p>",
         "citations": [
           {
             "key": "Milne2020ANT",
             "locator": "Remark 2.25",
-            "note": "The index-squared discriminant identity explains the obstruction."
+            "note": "The index-squared discriminant identity explains the obstruction. Proof in expository notes; this status records the unpublished source."
           }
         ]
       }

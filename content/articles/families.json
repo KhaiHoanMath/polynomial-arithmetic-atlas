@@ -259,7 +259,7 @@
       {
         "id": "eulerian-all-indices",
         "title": "Is the normalized Eulerian polynomial irreducible for every index n≥3?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "The classical r=1 Euler–Frobenius specialization over Q; remove x+1 at even indices.",
         "body": "<p>The prime and prime-plus-one cases and the general large-factor bound are proved above. The all-index statement is a conjecture in the cited 1974 source; this status does not exclude subsequent advances.</p>",
         "citations": [
@@ -782,7 +782,7 @@
       {
         "id": "laguerre-finite-exceptions",
         "title": "Are there only finitely many exceptional parameters in fixed degree \\(n\\ge10\\)?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "Any fixed number field \\(K\\) and fixed \\(n\\ge10\\).",
         "body": "<p>Yes: the parameters in \\(K\\) for which the polynomial is reducible or has Galois group different from \\(S_n\\) form a finite set. The theorem does not automatically provide an effective list of those parameters.</p>",
         "citations": [
@@ -958,7 +958,7 @@
       {
         "id": "fekete-prime-irreducible",
         "title": "Is every normalized prime-conductor Fekete polynomial irreducible?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Primes p≥7; the normalized polynomial f_p defined above, over Q.",
         "body": "<p>The question is whether \\(f_p\\) is always irreducible, equivalently whether its trace polynomial \\(g_p\\) is irreducible. Mináč–Nguyen–Tân verify both for \\(p<10^4\\). This is weaker than their full wreath-product conjecture. Varjú–Xu still describe the all-prime irreducibility assertion as conjectural in 2026.</p>",
         "citations": [
@@ -977,7 +977,7 @@
       {
         "id": "fekete-full-wreath",
         "title": "Does every normalized prime-conductor Fekete polynomial have the full wreath-product group?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "Odd primes p≥7, the normalization f_p above, and m=deg(g_p).",
         "body": "<p>The cited conjecture predicts \\(\\operatorname{Gal}(f_p/\\mathbb Q)=C_2\\wr S_m\\). This predicts both irreducibility and a maximal quadratic kernel. It remains a conjecture in the cited version; finite computations do not prove the statement for all primes.</p>",
         "citations": [
@@ -990,7 +990,7 @@
       {
         "id": "fekete-principal-cyclotomic",
         "title": "Which cyclotomic factors occur for principal characters?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "Squarefree n>1; d>1 with d not dividing n.",
         "body": "<p>Set \\(d_1=\\gcd(d,n)\\). The conjecture says that \\(\\Phi_d\\mid F_n^{\\mathrm{prin}}\\) exactly when the numbers</p>\\[\\#\\{1\\le a\\le n:\\gcd(a,n)=1,\\ a\\equiv r\\pmod d\\}\\]<p>are equal for all residue classes \\(r\\pmod d\\) with \\(\\gcd(r,d_1)=1\\). Equal counts imply divisibility; the converse is conjectural.</p>",
         "citations": [
@@ -1003,7 +1003,7 @@
       {
         "id": "fekete-principal-irreducible",
         "title": "Is the semiprime remainder irreducible?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "Principal-character normalization above; n=pq, odd primes p>q.",
         "body": "<p>Conjecture 6.9 asserts that \\(f_n\\) is irreducible over \\(\\mathbb Q\\). The source verifies all such \\(n<10^4\\).</p>",
         "citations": [
@@ -1016,7 +1016,7 @@
       {
         "id": "fekete-principal-galois",
         "title": "What is the semiprime Galois group?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Principal-character normalization above; n=pq, odd primes p>q; m=deg(g_n).",
         "body": "<p>The proposed groups are \\(\\operatorname{Gal}(g_n/\\mathbb Q)=S_m\\) and</p>\\[\\operatorname{Gal}(f_n/\\mathbb Q)=\\begin{cases}C_2^m\\rtimes S_m,&p\\equiv1\\pmod q\\text{ or }p,q\\equiv1\\pmod4,\\\\\\ker(\\Sigma)\\rtimes S_m,&\\text{otherwise},\\end{cases}\\]<p>where \\(\\Sigma:C_2^m\\to C_2\\) adds the coordinates. Both predictions hold for all such \\(n<10^4\\).</p>",
         "citations": [
@@ -1029,7 +1029,7 @@
       {
         "id": "fekete-general-cyclotomic",
         "title": "What are the cyclotomic multiplicities for quadratic characters?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Nontrivial fundamental discriminants Δ; all d≥1.",
         "body": "<p>Determine \\(r_\\Delta(d)\\). This includes factors whose orders do not divide \\(|\\Delta|\\); multiplicities can exceed one.</p>",
         "citations": [
@@ -1042,7 +1042,7 @@
       {
         "id": "fekete-general-remainder",
         "title": "Is the quadratic-character remainder irreducible?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "The remainder R_Δ defined above, when deg(R_Δ)>0.",
         "body": "<p>Conjecture 10.6 predicts one irreducible non-cyclotomic factor. This extends the prime-conductor question to composite conductors.</p>",
         "citations": [
@@ -1056,7 +1056,7 @@
       {
         "id": "fekete-general-even-signed",
         "title": "Does the square discriminant give the only group restriction?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Δ=−3p with p≡5 mod8 prime.",
         "body": "<p>Define</p>\\[h_p=-\\frac{F_{-3p}}{x\\Phi_1\\Phi_3\\Phi_p},\\qquad \\deg h_p=2(p-2).\\]<p>The source proves \\(\\operatorname{Gal}(h_p/\\mathbb Q)\\le\\ker(\\Sigma)\\rtimes S_{p-2}\\), where \\(\\Sigma:C_2^{p-2}\\to C_2\\) is summation. Is this containment always an equality?</p>",
         "citations": [
@@ -1299,7 +1299,7 @@
       {
         "id": "bernoulli-even-irreducibility",
         "title": "Is every even Bernoulli polynomial irreducible over Q?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "The standard Bernoulli polynomial B_n(x), for every even n≥2; explicitly described as a conjecture by Patel–Siksek (2017), §3.",
         "body": "<p>Carlitz’s criterion proves irreducibility for infinite sets of indices. The unconditional derangement theorem does not settle the general question. The statement is a conjecture in the cited paper; this status does not exclude later advances.</p>",
         "citations": [
@@ -1330,7 +1330,7 @@
       {
         "id": "appell-multiplicity",
         "title": "Which Bernoulli or Euler polynomials have repeated roots?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "The standard Appell families B_n and E_n over characteristic zero, n≥1.",
         "body": "<p>None of the Bernoulli polynomials does. The unique Euler exception is \\(E_5\\), with factorization displayed above.</p>",
         "citations": [
@@ -1350,7 +1350,7 @@
       {
         "id": "adelberg-diagonal-bernoulli",
         "title": "Are the diagonal higher-order Bernoulli polynomials irreducible after removing the forced factor?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "B_n^(n) for even n≥2; B_n^(n)/(x−n/2) for odd n≥3, over Q.",
         "body": "<p>This is Adelberg’s conjecture. Degree one is excluded from the quotient formulation because it leaves a constant. The ordinary odd Bernoulli normalization \\(B_n(x)/[x(x-1)(x-1/2)]\\) is a different problem.</p>",
         "citations": [
@@ -1580,7 +1580,7 @@
       {
         "id": "stieltjes-legendre",
         "title": "Are \\(P_{2m}\\) and \\(P_{2m+1}/x\\) always irreducible over \\(\\mathbb Q\\)?",
-        "status": "Resolution claimed in preprint",
+        "status": "Claimed",
         "scope": "The standard Legendre polynomials and all integers m≥1.",
         "body": "<p>This is Stieltjes’ conjecture in the cited 2014 paper. Deng’s September 2026 preprint claims a complete proof. The proof has not been independently verified here, so the result is recorded as a preprint claim.</p>",
         "citations": [
@@ -1598,7 +1598,7 @@
       {
         "id": "bessel-all-degree",
         "title": "Are the Bessel polynomials irreducible in every positive degree?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "\\(y_n(x)=\\sum_{j=0}^n (n+j)!x^j/(2^j(n-j)!j!)\\) over Q, n≥1.",
         "body": "<p>Yes. The Filaseta–Trifonov theorem proves this and permits arbitrary integral intermediate coefficient multipliers with endpoint multipliers ±1.</p>",
         "citations": [
@@ -1611,7 +1611,7 @@
       {
         "id": "legendre-full-group",
         "title": "Are the reduced and full Legendre groups \\(S_m\\) and \\(C_2\\wr S_m\\)?",
-        "status": "Resolution claimed in preprint",
+        "status": "Claimed",
         "scope": "\\(m\\ge1\\), \\(\\delta\\in\\{0,1\\}\\), assuming irreducibility of the degree-\\(m\\) pair polynomial over \\(\\mathbb Q\\).",
         "body": "<p>This is the two-part group conjecture of Cullinan–Hajir. It concerns the Galois groups, separately from Stieltjes’ irreducibility conjecture. A 2026 preprint claims a complete proof.</p>",
         "citations": [
@@ -1628,7 +1628,7 @@
       {
         "id": "hermite-wronskian-simple-zeros",
         "title": "Are all nonzero zeros of every Hermite Wronskian simple?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "Wronskians of Hermite polynomials with distinct nonnegative indices; zeros over \\(\\mathbb C\\).",
         "body": "<p>Veselov’s conjecture permits a multiple zero at the origin. It asks whether the remainder is squarefree; it does not assert irreducibility. Grosu–Grosu prove it for partitions \\((n,k,k-1,\\ldots,1)\\), with \\(n\\ge k\\ge1\\). Felder–Veselov–Nekrasov still state the general problem as open in 2026.</p>",
         "citations": [
@@ -1650,7 +1650,7 @@
       {
         "id": "hermite-wronskian-two-parts",
         "title": "Which two-part Hermite Wronskians have irreducible nonconstant remainders?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "The probabilists’ normalization \\(R_{(n,m)}\\), where \\(n\\ge m\\ge1\\) and \\(\\deg R_{(n,m)}>0\\).",
         "body": "<p>Grosu–Grosu ask to extend their irreducibility results to further two-part partitions. Their results include \\(m=1,2\\) and the diagonal when \\(n+1\\) is a square. The constant remainder at \\((2,1)\\) is excluded. A blanket statement for all partitions would be false.</p>",
         "citations": [

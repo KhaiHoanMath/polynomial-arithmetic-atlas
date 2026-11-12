@@ -197,7 +197,7 @@
       {
         "id": "truncated-fekete-prime-range",
         "title": "How short can the prime interval be?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "A prime P sampled uniformly from (d,H(d)], where this interval contains at least one prime.",
         "body": "<p>Set</p>\\[T_{d,P}(x)=\\sum_{a=1}^d\\left(\\frac aP\\right)x^a.\\]<p>Varjú–Xu ask for the probability that this polynomial is irreducible after its linear factors are removed. Assuming RH for the Dedekind zeta functions of all number fields, they prove</p>\\[\\Pr\\bigl(T_{d,P}/x\\text{ irreducible over }\\mathbb Q\\bigr)\\ge1-O_\\varepsilon(d^{-1/2+\\varepsilon})\\]<p>when \\(H(d)>2^{2\\pi(d)}d^4\\); here \\(\\pi(d)\\) counts primes at most \\(d\\). The behavior in shorter intervals is the open problem. The endpoint \\(d=P-1\\) gives the classical Fekete family, whose additional linear factors must also be removed.</p>",
         "citations": [
@@ -211,7 +211,7 @@
       {
         "id": "function-field-characteristic-two",
         "title": "Does the full symmetric conclusion hold in characteristic two?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Fixed q a power of two and d≥1; independent uniform coefficients in F_q[t] of degree at most d; polynomial degree n→∞.",
         "body": "<p>Does \\(\\Pr(G_f=S_n\\mid f\\text{ irreducible})\\to1\\)? Entin proves this for odd \\(q\\). Remark 1.4 explains why the discriminant argument does not extend to characteristic two.</p>",
         "citations": [
@@ -360,7 +360,7 @@
       {
         "id": "littlewood-all-degrees",
         "title": "Does irreducibility hold with probability tending to one along all degrees?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Fair independent ±1 coefficients over Q, with degree n tending to infinity.",
         "body": "<p>The cited Littlewood paper formulates the all-degree conjecture and proves irreducibility with probability tending to one along a subsequence. The all-degree theorem of Breuillard–Varjú assumes Riemann hypotheses for Dedekind zeta functions.</p>",
         "citations": [
@@ -637,7 +637,7 @@
       {
         "id": "reciprocal-quartic-count",
         "title": "What is the order of the exceptional count for monic reciprocal quartics?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Separable monic reciprocal quartics over Z, with coefficient height H tending to infinity.",
         "body": "<p>The corrected source proves the monic bound for half-degree \\(m\\ge3\\) and leaves \\(m=2\\) open. The nonmonic bound includes quartics.</p>",
         "citations": [
@@ -651,7 +651,7 @@
       {
         "id": "strong-vdw-small-degrees",
         "title": "Are irreducible exceptions negligible in every fixed degree?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Monic integer polynomials of fixed degree 5≤n≤39 and coefficient height H→∞.",
         "body": "<p>Does \\(I_n(H)=o_n(H^{n-1})\\) hold throughout this range? Here \\(I_n\\) excludes reducible polynomials. The cited preprint proves the claim for \\(n\\ge40\\); the cubic and quartic cases were known earlier. Its twisted Chowla conjecture would cover \\(8\\le n\\le39\\), leaving smaller degrees to other arguments.</p>",
         "citations": [
@@ -773,7 +773,7 @@
       {
         "id": "matrix-unconditional-general-law",
         "title": "Does irreducibility hold unconditionally for every fixed entry law?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Independent entries of any fixed nonconstant finitely supported law on Z, with n tending to infinity.",
         "body": "<p>Eberhard’s Conjecture 1.1 concerns irreducibility for arbitrary fixed entry laws. His general theorem assumes ERH, and the unconditional theorem requires uniformity modulo four distinct primes. In particular, the latter theorem does not cover fair signs. Full \\(S_n\\) is a further question.</p>",
         "citations": [
@@ -787,7 +787,7 @@
       {
         "id": "matrix-height-exceptional-count",
         "title": "Are reducible characteristic polynomials the main exception for matrices of bounded height?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "Fixed matrix size n≥2; integer entries of absolute value at most T; T→∞.",
         "body": "<p>Let \\(M_n(T)\\) count matrices whose characteristic polynomial has group different from \\(S_n\\), and \\(R_n(T)\\) those with reducible characteristic polynomial. Anderson–O’Dorney conjecture</p>\\[R_n(T)\\sim M_n(T)\\asymp_n T^{n^2-n+1}\\log T.\\]<p>The lower bound comes from integer eigenvalues. Their general upper bound is \\(M_n(T)\\ll_n T^{n^2-1/2}\\log T\\). The size \\(n\\) is fixed here; this is a different problem from bounded entries and growing dimension.</p>",
         "citations": [

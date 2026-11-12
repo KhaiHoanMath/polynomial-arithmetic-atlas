@@ -23,6 +23,8 @@ Each reference has a stable key, annotation, publication status, exact links, an
 
 ## Questions and conjectures
 
+Use exactly four question statuses: **Settled** (proved in published work), **Claimed** (a proof given or claimed in a preprint or unpublished work), **Open** (an unresolved question or conjecture, whether its source is published or a preprint), and **Research direction** (a suggested topic for further study). Keep publication details and conjecture attribution in the citations and body. The source validator enforces these four labels.
+
 An open problem is scoped to a dated source. A source reporting it open does not establish that no later paper resolves it. Attribute named conjectures, distinguish editorial research directions, and label proposed preprint resolutions without promoting them to settled results.
 
 ## Corrections

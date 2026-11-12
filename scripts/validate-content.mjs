@@ -2,6 +2,8 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
+export const QUESTION_STATUSES = ['Settled', 'Claimed', 'Open', 'Research direction'];
+
 // Validate the reusable knowledge graph, including IDs which never become HTML links.
 export async function validateContent(root) {
  const read = async p => JSON.parse(await readFile(resolve(root,p),'utf8'));
@@ -21,6 +23,7 @@ export async function validateContent(root) {
  for(const a of articles) {
   requireID(subjectIDs,a.subject,a.id+' subject');
   unique(a.sections,'id',a.id+' sections');
+  for(const q of a.questions??[])if(!QUESTION_STATUSES.includes(q.status))errors.push(a.id+'/'+q.id+': invalid question status '+q.status);
   for(const id of a.prerequisites??[])article(id,a.id+' prerequisite');
   for(const r of a.related??[])article(r.id,a.id+' connection');
   for(const s of [...a.sections,...(a.questions??[])])

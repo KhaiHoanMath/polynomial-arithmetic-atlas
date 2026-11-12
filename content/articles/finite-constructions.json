@@ -218,7 +218,7 @@
       {
         "id": "finite-single-coefficient-settled",
         "title": "Can any one coefficient be prescribed?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "Monic degree n≥2 polynomials over every finite field",
         "body": "<p>Yes, with exactly the constant-zero and even-characteristic quadratic exceptions stated above. Primitive-polynomial prescriptions are a different problem with additional multiplicative conditions.</p>",
         "citations": [

@@ -169,7 +169,7 @@
       {
         "id": "katz-rivin-limits",
         "title": "Must all three Taylor Galois proportions converge?",
-        "status": "Resolution claimed in preprint",
+        "status": "Claimed",
         "scope": "Every coefficient is a nonzero rational number; degrees n≥3 and the natural root actions.",
         "body": "<p>Theorem A prescribes the set of symmetric degrees. Choosing a set without a natural density gives the claimed counterexample, even for an entire function with positive rational coefficients and simple negative roots in every section. The structural part of Katz–Rivin’s question remains separate.</p>",
         "citations": [
@@ -186,7 +186,7 @@
       {
         "id": "katz-rivin-zero-one",
         "title": "Must the limiting proportion of other groups be zero or one?",
-        "status": "Resolution claimed in preprint",
+        "status": "Claimed",
         "scope": "A rational-coefficient Taylor sequence for which all three frequencies exist.",
         "body": "<p>Theorem A gives every triple \\((\\delta,0,1-\\delta)\\), \\(0\\le\\delta\\le1\\). Proposition 6.2 gives the rational-function example with triple \\((1/2,0,1/2)\\).</p>",
         "citations": [
@@ -203,7 +203,7 @@
       {
         "id": "taylor-rational-convergence",
         "title": "Do the frequencies converge for every rational generating function?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "A fixed f∈Q(x) regular at zero, with every Taylor coefficient nonzero.",
         "body": "<p>The preprint leaves this question open, including the class \\(P(x)/(1-x)\\). For \\(n\\ge\\deg P\\),</p>\\[(1-x)f_n=P(x)-P(1)x^{n+1}.\\]<p>This identity connects the question to sparse polynomials with a growing exponent. The arbitrary-coefficient construction does not settle it.</p>",
         "citations": [
@@ -216,7 +216,7 @@
       {
         "id": "taylor-irreducible-nonconvergence",
         "title": "Can the frequencies fail to converge when all sufficiently large sections are irreducible?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "A series in Q[[x]] with nonzero coefficients and eventually irreducible sections.",
         "body": "<p>The constructed nonconvergent examples use reducible sections. The preprint asks whether one can instead arrange nonconvergence among transitive groups, for example by alternating between symmetric and alternating groups. Prescribing arbitrary alternating degrees is also left open.</p>",
         "citations": [
@@ -229,7 +229,7 @@
       {
         "id": "catalan-least-prime",
         "title": "Is the least irreducible-reduction prime at most n²+n+5?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "Every n≥1; the monic reciprocal Q_n(x)=Σ_{j=0}^n c_j x^(n−j) of the Catalan section.",
         "body": "<p>Sun conjectures a prime \\(p\\le n^2+n+5\\) for which \\(Q_n\\bmod p\\) is irreducible. Knowing the group is \\(S_n\\) gives infinitely many such primes, but does not give this explicit bound.</p>",
         "citations": [
@@ -246,7 +246,7 @@
       {
         "id": "central-trinomial-least-prime",
         "title": "Does each central-trinomial section have a small irreducible-reduction prime?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "Every n≥1; central-trinomial coefficients T_j=[z^j](z²+z+1)^j.",
         "body": "<p>Sun asks whether</p>\\[U_n(x)=\\sum_{j=0}^n T_jx^{n-j}\\]<p>is irreducible modulo some prime \\(p\\le n^2+n+5\\). This would imply rational irreducibility and an \\(n\\)-cycle in the Galois group. It is a separate conjecture from the Catalan and central-binomial statements.</p>",
         "citations": [

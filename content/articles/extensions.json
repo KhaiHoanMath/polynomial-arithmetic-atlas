@@ -242,7 +242,7 @@
       {
         "id": "dynatomic-finite-exceptions",
         "title": "Are the exceptional dynatomic specializations finite for every period n>4?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Φ_n(T,x) for x²+T; specialization T=c∈Q",
         "body": "<p>Krumm proposes finiteness for every \\(n>4\\) and proves it for \\(5,6,7,9\\). Determining each exceptional set explicitly is a further problem.</p>",
         "citations": [
@@ -390,7 +390,7 @@
       {
         "id": "inverse-galois-q",
         "title": "Does every finite group occur as a Galois group over Q?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Finite Galois extensions of Q; no fixed degree bound",
         "body": "<p>This is the classical inverse Galois problem. The cited monographs describe known realizations. For a specified group, one can also ask for a realization in a prescribed transitive action.</p>",
         "citations": [
@@ -403,7 +403,7 @@
       {
         "id": "regular-inverse-galois",
         "title": "Does every finite group admit a regular realization over Q(T)?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "Regular finite Galois extensions of Q(T)",
         "body": "<p>This is Serre’s Conjecture 4.1.1. A positive answer would imply the ordinary inverse Galois problem by specialization. The conjecture concerns finite groups, not arbitrary profinite groups.</p>",
         "citations": [
@@ -627,7 +627,7 @@
       {
         "id": "uniform-quadratic-level",
         "title": "Can one fixed iterate detect the full arboreal group?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "f_a=x²+a with a∈Q∖{−1,0}; target point 0; Stoll, November 2026.",
         "body": "<p>Let \\(T_n\\) be the binary tree of preimages of \\(0\\) through level \\(n\\), and let \\(T_\\infty\\) be the full tree. Does some integer \\(N\\), independent of \\(a\\), satisfy</p>\\[\\operatorname{Gal}(f_a^{\\circ N}/\\mathbb Q)=\\operatorname{Aut}(T_N)\\quad\\Longrightarrow\\quad G_\\infty(f_a,0)=\\operatorname{Aut}(T_\\infty)?\\]<p>Hindes asks the equivalent question at the end of §3, including the sharper proposal \\(N=4\\). Stoll restates it as Conjecture 8.1. The values \\(a=2/3\\) and \\(a=-6/7\\) have maximal groups at level 3 but not level 4, so \\(N<4\\) cannot work. Proposition 8.2 verifies the implication from level 4 to level 20 for every rational parameter of height at most \\(10^6\\), where \\(H(r/s)=\\max(|r|,s)\\) in lowest terms with \\(s>0\\). This finite computation does not prove the all-level assertion.</p>",
         "citations": [
@@ -645,7 +645,7 @@
       {
         "id": "odoni-base-field",
         "title": "Does every Hilbertian field admit a surjective arboreal representation?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "General Hilbertian fields of characteristic zero",
         "body": "<p>No. Dittmann–Kadets give counterexample fields. These counterexamples are compatible with the positive existence results over number fields and with generic maximality at each fixed finite level.</p>",
         "citations": [
@@ -658,7 +658,7 @@
       {
         "id": "quadratic-four-factors",
         "title": "Do iterates of x²+1/c always have at most four irreducible factors?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "c∈Z∖{0,−1}; factorization over Q; all iterate depths",
         "body": "<p>Conjecture 1.7 predicts this uniform bound and gives a precise list of factor counts. The bound is attained in known cases.</p>",
         "citations": [
@@ -671,7 +671,7 @@
       {
         "id": "quadratic-second-iterate-stability",
         "title": "Does irreducibility of the second iterate imply stability for x²+1/c?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "c∈Z∖{0,−1}; all irreducibility statements over Q",
         "body": "<p>If \\(f^{\\circ2}\\) is irreducible, must every \\(f^{\\circ n}\\) be irreducible? This is Conjecture 1.8, distinct from the conjecture on maximal Galois groups.</p>",
         "citations": [
@@ -684,7 +684,7 @@
       {
         "id": "quadratic-finite-index",
         "title": "Does every quadratic polynomial with infinite critical orbit have finite-index arboreal image?",
-        "status": "Conjecture in cited source",
+        "status": "Open",
         "scope": "f=x²+c over a number field K; the forward orbit of 0 is infinite; target point 0",
         "body": "<p>Let \\(T_\\infty\\) be the full binary tree of preimages of \\(0\\). The polynomial case of Jones’s finite-index conjecture predicts \\([\\operatorname{Aut}(T_\\infty):G_\\infty(f,0)]<\\infty\\). This allows a proper subgroup at early levels. The hypothesis excludes the postcritically finite examples, and it also ensures that every preimage level is separable. The general statement is open in the cited survey.</p>",
         "citations": [

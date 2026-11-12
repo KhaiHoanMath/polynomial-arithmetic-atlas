@@ -114,7 +114,7 @@
       {
         "id": "irreducible-reduction-existence",
         "title": "Does every irreducible rational polynomial remain irreducible modulo some prime?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "Monic irreducible polynomials over Q",
         "body": "<p>No. Such a reduction exists precisely when the Galois group contains a full cycle. The polynomial \\(x^4+1\\) is a counterexample.</p>",
         "citations": [
@@ -263,20 +263,24 @@
       {
         "id": "parity-and-size",
         "title": "When can a discriminant determine the full Galois group?",
-        "status": "Settled in stated scope",
-        "scope": "Separable irreducible cubics; groups already known to contain \\(A_n\\).",
+        "status": "Settled",
+        "scope": "Characteristic different from 2; separable irreducible cubics, or groups already known to contain \\(A_n\\).",
         "body": "<p>It determines the group for irreducible cubics, and whenever an independent argument has proved \\(A_n\\subseteq G\\). In general it determines only whether \\(G\\subseteq A_n\\).</p>",
         "citations": [
           {
             "key": "ConradCubicQuartic",
             "locator": "Theorems 1.3 and 2.1"
+          },
+          {
+            "key": "Milne2022",
+            "locator": "Corollary 4.2(b), p. 58; Example 4.7, p. 60 (published book)"
           }
         ]
       },
       {
         "id": "root-closure-square-alphabets",
         "title": "Does a square discriminant preserve the root-set closure for every coefficient set?",
-        "status": "Open in cited source",
+        "status": "Open",
         "scope": "Sets of integer coefficients containing a nonzero element; nonzero constant term; the degree varies.",
         "body": "<p>Is \\(M^{\\square}(\\mathcal N)=M(\\mathcal N)\\) for every such \\(\\mathcal N\\)? The source asks this after Theorem 1. Its general definition allows zero discriminant; the stronger question with nonzero square discriminant requires a separate argument.</p>",
         "citations": [
@@ -289,7 +293,7 @@
       {
         "id": "double-discriminant-content",
         "title": "Which primes divide the content of a double discriminant?",
-        "status": "Conjecture",
+        "status": "Open",
         "scope": "The generic degree-n polynomial; 1≤k≤n−1; c_n,k is the positive gcd of the integer coefficients of DD_n,k.",
         "body": "<p>The cited conjecture predicts that the prime divisors of \\(c_{n,k}\\) are exactly those of \\(2\\gcd(n,k)\\). Section 4 gives finer conjectures about their valuations. This concerns the universal discriminant polynomial, not the discriminant of one specialization.</p>",
         "citations": [
@@ -463,7 +467,7 @@
       {
         "id": "nonprime-jordan-cycle",
         "title": "Can the prime-length assumption in Jordan’s cycle criterion be removed?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "Primitive finite permutation groups containing a nontrivial cycle with at least three fixed points",
         "body": "<p>Yes: Jones’s Corollary 1.3 gives containment of \\(A_n\\) without that assumption. The stronger theorem uses the classification of finite simple groups; the primitivity and fixed-point conditions remain essential.</p>",
         "citations": [
@@ -611,7 +615,7 @@
       {
         "id": "quartic-cyclic-dihedral",
         "title": "How are cyclic and dihedral quartic groups distinguished?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "Separable irreducible quartics over fields of characteristic not 2",
         "body": "<p>For a reducible cubic resolvent, the discriminant first distinguishes the Klein-four case. In the remaining case, the Kappe–Warren criterion tests whether two specified quadratics split over the discriminant quadratic extension.</p>",
         "citations": [
@@ -836,7 +840,7 @@
       {
         "id": "rational-factorization-decidable",
         "title": "Is irreducibility over Q decidable in polynomial time?",
-        "status": "Settled in stated scope",
+        "status": "Settled",
         "scope": "Dense univariate polynomials given by rational coefficients in binary",
         "body": "<p>Yes. LLL gives polynomial-time factorization in the degree and coefficient bit size. The bound applies to dense binary input; it does not give the same complexity for every sparse encoding or extension-field representation.</p>",
         "citations": [
