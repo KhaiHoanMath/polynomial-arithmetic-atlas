@@ -4,17 +4,16 @@
     "title": "Taylor polynomials and Katz–Rivin questions",
     "kind": "research",
     "subject": "families",
-    "summary": "Galois-group frequencies in Taylor sequences, prescribed symmetric degrees, and arithmetic results for binomial and Catalan sections. The recent results are recorded with their preprint status and precise scope.",
+    "summary": "Katz and Rivin ask about the frequency of symmetric, alternating, and other Galois groups among Taylor polynomials. Recent preprints give constructions and results for arithmetic coefficient families.",
     "level": "Research",
     "field": "Q and number fields",
     "status": "Questions and preprint results",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Do Taylor Galois-group proportions always converge?",
-      "Can the symmetric degrees be prescribed?",
-      "Which coefficient conditions force symmetric groups in density one?",
-      "What is claimed for binomial and Catalan sections?",
-      "Which questions remain after the general counterexamples?"
+      "Must the three Galois-group proportions converge?",
+      "Can the set of degrees with symmetric group be prescribed?",
+      "Which coefficient conditions are claimed to give symmetric group in density one?",
+      "What is claimed for binomial and Catalan sections?"
     ],
     "prerequisites": [
       "taylor",
@@ -40,7 +39,7 @@
       {
         "id": "prescription",
         "title": "Prescribing the symmetric degrees",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Preprint theorem (Nguyen-Dang, Theorem A)</p><p>For any set \\(B\\subseteq\\{3,4,\\ldots\\}\\), there is an entire function</p>\\[f(z)=1+z+\\sum_{n\\ge2}a_nz^n,\\qquad a_n\\in\\mathbb Q_{>0},\\]<p>such that</p>\\[\\operatorname{Gal}(f_n/\\mathbb Q)=\\begin{cases}S_n,&n\\in B,\\\\1\\oplus S_{n-1},&n\\notin B,\\end{cases}\\qquad n\\ge3.\\]<p>The second action fixes one root and permutes the other roots arbitrarily. Its fixed root is a negative integer. Every section has distinct negative real roots, and \\(f\\) has order zero.</p></div><p>If \\(B\\) has density \\(\\delta\\), the frequency triple is \\((\\delta,0,1-\\delta)\\). If \\(B\\) has no density, the first and third proportions fail to converge. Thus the proposed construction answers both universal questions negatively. It does not classify the series for which convergence holds.</p><p>The theorem also controls every consecutive coefficient block after its initial power of \\(x\\) is removed: each proper block of degree at least two has full symmetric group. The splitting fields of these segments and of the full sections of degree at least two are jointly linearly disjoint over \\(\\mathbb Q\\).</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Preprint theorem (Nguyen-Dang, Theorem A)</p><p>For any set \\(B\\subseteq\\{3,4,\\ldots\\}\\), there is an entire function</p>\\[f(z)=1+z+\\sum_{n\\ge2}a_nz^n,\\qquad a_n\\in\\mathbb Q_{>0},\\]<p>such that</p>\\[\\operatorname{Gal}(f_n/\\mathbb Q)=\\begin{cases}S_n,&n\\in B,\\\\1\\oplus S_{n-1},&n\\notin B,\\end{cases}\\qquad n\\ge3.\\]<p>The second action fixes one root and permutes the other roots arbitrarily. Its fixed root is a negative integer. Every section has distinct negative real roots, and \\(f\\) has order zero.</p></div><p>If \\(B\\) has density \\(\\delta\\), the frequency triple is \\((\\delta,0,1-\\delta)\\). If \\(B\\) has no density, the first and third proportions fail to converge. Thus the proposed construction answers both universal questions negatively. It does not classify the series for which convergence holds.</p><p>The preprint also claims control of every consecutive coefficient block after its initial power of \\(x\\) is removed: each proper block of degree at least two has full symmetric group. The splitting fields of these segments and of the full sections of degree at least two are jointly linearly disjoint over \\(\\mathbb Q\\).</p>",
         "citations": [
           {
             "key": "NguyenDang2026Taylor",

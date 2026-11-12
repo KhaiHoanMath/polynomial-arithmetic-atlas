@@ -1,0 +1,841 @@
+[
+  {
+    "id": "finite-field-structure",
+    "title": "Finite fields and Frobenius",
+    "kind": "method",
+    "subject": "finite-fields",
+    "summary": "Every finite field has a unique extension of each degree, up to isomorphism. Frobenius determines conjugates, subfields, and factor degrees.",
+    "level": "Start here",
+    "field": "Finite fields",
+    "status": "Classical theory",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How are finite fields constructed?",
+      "How does Frobenius determine conjugates and subfields?",
+      "How does an irreducible polynomial factor over a larger finite field?",
+      "How do trace, norm, and root order determine polynomial coefficients and degrees?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "construction",
+        "title": "Fields from irreducible polynomials",
+        "body": "<p>Let \\(q=p^r\\), where \\(p\\) is prime. A finite field with \\(q\\) elements is denoted by \\(\\mathbb F_q\\). Its characteristic is \\(p\\); as a vector space over \\(\\mathbb F_p\\), it has dimension \\(r\\).</p><p>If \\(f\\in\\mathbb F_q[x]\\) is monic and irreducible of degree \\(n\\), then \\[K=\\mathbb F_q[x]/(f)\\] is a field with \\(q^n\\) elements. Writing \\(\\alpha=x\\bmod f\\), every element has a unique expression \\(a_0+a_1\\alpha+\\cdots+a_{n-1}\\alpha^{n-1}\\). Addition is coefficientwise; multiplication is followed by reduction modulo \\(f\\).</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>The polynomial \\(x^2+x+1\\) has no root in \\(\\mathbb F_2\\). Thus \\(\\mathbb F_4=\\mathbb F_2(\\alpha)\\), where \\(\\alpha^2=\\alpha+1\\). Its elements are \\(0,1,\\alpha,\\alpha+1\\), and \\(\\alpha^3=1\\). The ring \\(\\mathbb Z/4\\mathbb Z\\) is different: it has characteristic four and is not a field.</p></div>",
+        "citations": [
+          {
+            "key": "ConradFiniteFields",
+            "locator": "§1, Theorems 1.1 and 1.5"
+          }
+        ]
+      },
+      {
+        "id": "classification",
+        "title": "Existence and uniqueness",
+        "body": "<p>In an algebraic closure of \\(\\mathbb F_q\\), the roots of \\(x^{q^n}-x\\) form a field. Indeed, the identity \\((a+b)^{q^n}=a^{q^n}+b^{q^n}\\) gives closure under addition, and multiplication and inversion preserve the equation. The derivative is \\(-1\\), so there are exactly \\(q^n\\) distinct roots.</p><p>Every field with \\(q^n\\) elements is a splitting field of this polynomial over \\(\\mathbb F_q\\). Uniqueness of splitting fields therefore gives uniqueness up to \\(\\mathbb F_q\\)-isomorphism. We may choose all these fields inside one algebraic closure.</p>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Chapter 2, structure of finite fields"
+          }
+        ]
+      },
+      {
+        "id": "frobenius",
+        "title": "Frobenius and conjugates",
+        "body": "<p>The map \\(\\sigma(a)=a^q\\) is an automorphism of \\(\\mathbb F_{q^n}\\) fixing \\(\\mathbb F_q\\). It has order \\(n\\): its \\(n\\)-th power is the identity, while \\(\\sigma^j=1\\) with \\(0<j<n\\) would give \\(q^n\\) roots of \\(x^{q^j}-x\\). Consequently \\[\\operatorname{Gal}(\\mathbb F_{q^n}/\\mathbb F_q)=\\langle\\sigma\\rangle\\cong C_n.\\]</p><p>If \\(\\alpha\\) has degree \\(d\\) over \\(\\mathbb F_q\\), its conjugates are \\(\\alpha,\\alpha^q,\\ldots,\\alpha^{q^{d-1}}\\). They are distinct, and its minimal polynomial is their product \\[m_\\alpha(x)=\\prod_{i=0}^{d-1}(x-\\alpha^{q^i}).\\] Frobenius permutes the roots, so the coefficients belong to its fixed field \\(\\mathbb F_q\\).</p>",
+        "citations": [
+          {
+            "key": "ConradFiniteFields",
+            "locator": "Theorems 5.5 and 5.6 (general finite ground field)"
+          }
+        ]
+      },
+      {
+        "id": "subfields",
+        "title": "Subfields",
+        "body": "<p>There is a subfield \\(\\mathbb F_{q^d}\\subseteq\\mathbb F_{q^n}\\) exactly when \\(d\\mid n\\), and it is unique. It consists of the elements fixed by \\(\\sigma^d\\). This is the Galois correspondence for the subgroups of a cyclic group.</p><p>Inside a fixed algebraic closure, \\[\\mathbb F_{q^a}\\cap\\mathbb F_{q^b}=\\mathbb F_{q^{\\gcd(a,b)}},\\qquad \\mathbb F_{q^a}\\mathbb F_{q^b}=\\mathbb F_{q^{\\operatorname{lcm}(a,b)}}.\\] In particular, an element of \\(\\mathbb F_{q^n}\\) has degree \\(n\\) if and only if it lies in none of the maximal proper subfields \\(\\mathbb F_{q^{n/\\ell}}\\), where \\(\\ell\\) ranges over the prime divisors of \\(n\\).</p>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Chapter 2, subfields and finite extensions"
+          }
+        ]
+      },
+      {
+        "id": "base-extension",
+        "title": "Changing the field",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>Let \\(f\\in\\mathbb F_q[x]\\) be irreducible of degree \\(n\\). Over \\(\\mathbb F_{q^m}\\), it has exactly \\(\\gcd(n,m)\\) distinct irreducible factors, each of degree \\(n/\\gcd(n,m)\\).</p></div><p><strong>Proof.</strong> Frobenius acts on the roots of \\(f\\) as an \\(n\\)-cycle. Over \\(\\mathbb F_{q^m}\\), the relevant Frobenius is \\(\\sigma^m\\). Its orbits have length \\(n/\\gcd(n,m)\\), and each orbit is the root set of one irreducible factor.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>An irreducible polynomial of degree six over \\(\\mathbb F_2\\) remains irreducible over \\(\\mathbb F_{32}\\), splits into two cubics over \\(\\mathbb F_4\\), and into three quadratics over \\(\\mathbb F_8\\). It splits completely over \\(\\mathbb F_{64}\\).</p></div>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Chapter 3, factorization over extension fields"
+          }
+        ]
+      },
+      {
+        "id": "trace-norm",
+        "title": "Trace and norm",
+        "body": "<p>For \\(\\alpha\\in\\mathbb F_{q^n}\\), \\[\\operatorname{Tr}_{q^n/q}(\\alpha)=\\sum_{i=0}^{n-1}\\alpha^{q^i},\\qquad \\operatorname{N}_{q^n/q}(\\alpha)=\\prod_{i=0}^{n-1}\\alpha^{q^i}=\\alpha^{(q^n-1)/(q-1)}.\\] If \\(\\alpha\\) has degree \\(n\\) and minimal polynomial \\(x^n+a_{n-1}x^{n-1}+\\cdots+a_0\\), then \\(a_{n-1}=-\\operatorname{Tr}(\\alpha)\\) and \\(a_0=(-1)^n\\operatorname{N}(\\alpha)\\).</p><p>Thus prescribed trace and norm are prescribed coefficients. The other coefficients are elementary symmetric functions of the conjugates. Newton's identities relate these to the traces of powers, but division by an index divisible by the characteristic is unavailable. This is one reason that prescribed-coefficient arguments require care in small characteristic.</p>",
+        "citations": [
+          {
+            "key": "MullenPanario2013",
+            "locator": "§§2.1.3–2.1.4, pp. 18–21"
+          },
+          {
+            "key": "TuxanidyWang2018",
+            "locator": "§1, coefficient prescriptions and characteristic-dependent methods"
+          }
+        ]
+      },
+      {
+        "id": "roots-of-unity",
+        "title": "Roots of unity",
+        "body": "<p>Suppose \\(m>1\\) and \\(\\gcd(m,q)=1\\), and let \\(\\alpha\\) have multiplicative order \\(m\\). Its degree over \\(\\mathbb F_q\\) is the least \\(d\\ge1\\) with \\(q^d\\equiv1\\pmod m\\), denoted by \\(\\operatorname{ord}_m(q)\\). Hence the reduction of \\(\\Phi_m(x)\\) is a product of \\(\\varphi(m)/\\operatorname{ord}_m(q)\\) distinct irreducibles of that degree.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Since \\(\\operatorname{ord}_7(2)=3\\), the seventh cyclotomic polynomial has two irreducible cubic factors over \\(\\mathbb F_2\\): \\[\\Phi_7(x)=(x^3+x+1)(x^3+x^2+1).\\] Both cubics have roots of multiplicative order seven.</p></div><p>If \\(m=p^a u\\) with \\(p\\nmid u\\), then \\(x^m-1=(x^u-1)^{p^a}\\) in characteristic \\(p\\). Its distinct irreducible factors are therefore those of \\(x^u-1\\).</p>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Theorem 2.47, cyclotomic polynomials"
+          }
+        ]
+      },
+      {
+        "id": "development",
+        "title": "From structure to construction",
+        "body": "<p>The structural theory reduces finite-field irreducibility to Frobenius computations. Berlekamp's factorization algorithm and Rabin's irreducibility test made this viewpoint algorithmic. Later construction problems ask for more: few nonzero terms, prescribed coefficients, or roots that also generate a normal basis. These conditions lead to character sums, sieves, and questions about the distribution of irreducible polynomials.</p>",
+        "citations": [
+          {
+            "key": "Berlekamp1967"
+          },
+          {
+            "key": "Rabin1980"
+          },
+          {
+            "key": "HansenMullen1992"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "finite-field-irreducibility",
+        "relation": "Uses",
+        "why": "Use Frobenius to test and count irreducible polynomials."
+      },
+      {
+        "id": "finite-field-bases",
+        "relation": "Uses",
+        "why": "Distinguish a field generator, a primitive element, and a normal element."
+      },
+      {
+        "id": "finite-field-constructions",
+        "relation": "Uses",
+        "why": "Translate coefficient restrictions into conditions on conjugates."
+      },
+      {
+        "id": "frobenius",
+        "relation": "Uses",
+        "why": "Compare finite-field Frobenius with factorization modulo primes."
+      }
+    ],
+    "questions": []
+  },
+  {
+    "id": "finite-field-irreducibility",
+    "title": "Irreducibility over finite fields",
+    "kind": "method",
+    "subject": "finite-fields",
+    "summary": "Frobenius gives an exact irreducibility test, a counting formula, and a method for constructing irreducible polynomials.",
+    "level": "Start here",
+    "field": "finite fields",
+    "status": "Classical theory",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How can irreducibility be tested without a complete factorization?",
+      "How many monic irreducible polynomials have a given degree?",
+      "How can an irreducible polynomial be constructed and checked?"
+    ],
+    "prerequisites": [
+      "finite-field-structure"
+    ],
+    "sections": [
+      {
+        "id": "frobenius-identity",
+        "title": "The Frobenius identity",
+        "body": "<p>For every \\(m\\ge1\\), \\[x^{q^m}-x=\\prod_{\\substack{P\\text{ monic irreducible in }\\mathbb F_q[x]\\\\ \\deg P\\mid m}}P(x).\\] A root of an irreducible polynomial of degree \\(d\\) belongs to \\(\\mathbb F_{q^m}\\) exactly when \\(d\\mid m\\). The derivative \\(-1\\) ensures that each factor occurs once.</p><p>This identity turns factor degrees into polynomial gcd computations. The required powers are computed modulo the polynomial under study; there is no need to write out \\(x^{q^m}\\).</p>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Chapter 3, irreducible polynomials"
+          }
+        ]
+      },
+      {
+        "id": "rabin",
+        "title": "The irreducibility criterion",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Frobenius-power criterion)</p><p>A monic polynomial \\(f\\in\\mathbb F_q[x]\\) of degree \\(n\\ge1\\) is irreducible if and only if</p>\\[x^{q^n}\\equiv x\\pmod f,\\qquad \\gcd\\bigl(f,x^{q^{n/\\ell}}-x\\bigr)=1\\quad\\text{for every prime }\\ell\\mid n.\\]</div><p>The first condition makes \\(f\\) squarefree and forces every factor degree to divide \\(n\\). If a proper divisor \\(d\\mid n\\) occurred as a factor degree, some prime \\(\\ell\\mid n/d\\) would give \\(d\\mid n/\\ell\\), contradicting the corresponding gcd. The reverse implication follows from the same Frobenius identity. The criterion uses modular exponentiation and Euclidean gcds, without expanding the powers as polynomials.</p>",
+        "citations": [
+          {
+            "key": "Rabin1980",
+            "note": "Irreducibility testing in finite-field algorithms."
+          },
+          {
+            "key": "FLINTFactorizationDocumentation",
+            "locator": "Irreducibility testing over finite fields, Theorem 1",
+            "note": "Official documentation states the criterion and its exact algorithmic use."
+          }
+        ]
+      },
+      {
+        "id": "quartic-certificate",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Take \\(f=x^4+x+1\\in\\mathbb F_2[x]\\). Repeated squaring modulo \\(f\\) gives</p>\\[x^4\\equiv x+1,\\qquad x^8\\equiv x^2+1,\\qquad x^{16}\\equiv x.\\]<p>The only prime divisor of \\(n=4\\) is \\(2\\), and \\(x^4-x\\equiv1\\pmod f\\). Thus the required gcd is one, and \\(f\\) is irreducible. Its splitting field has 16 elements, and the Galois group over \\(\\mathbb F_2\\) has order four.</p><p>The congruence \\(x^{16}\\equiv x\\pmod f\\) alone does not suffice: the reducible quartic \\(x^4+x=x(x+1)(x^2+x+1)\\) also divides \\(x^{16}-x\\). The gcd conditions eliminate smaller-degree factors.</p></div>",
+        "citations": [
+          {
+            "key": "Rabin1980",
+            "note": "Application of the exact criterion; the displayed remainders are direct calculations."
+          }
+        ]
+      },
+      {
+        "id": "counting",
+        "title": "Counting irreducible polynomials",
+        "body": "<p>Let \\(N_q(n)\\) count monic irreducibles of degree \\(n\\) over \\(\\mathbb F_q\\). Taking degrees in the Frobenius identity gives</p><div class=\"math-block proof\"><p class=\"block-label\">Derivation</p>\\[q^m=\\sum_{d\\mid m}dN_q(d),\\qquad N_q(n)=\\frac1n\\sum_{d\\mid n}\\mu(d)q^{n/d}.\\]<p>The second identity is Möbius inversion; \\(\\mu\\) is the Möbius function. Bounding the proper-divisor terms by the geometric sum \\(\\sum_{j=1}^{\\lfloor n/2\\rfloor}q^j\\le2q^{n/2}\\) gives \\(N_q(n)=q^n/n+O(q^{n/2}/n)\\), uniformly for \\(q\\ge2\\). Thus a uniform monic polynomial is irreducible with probability asymptotic to \\(1/n\\) as \\(n\\to\\infty\\), even for fixed \\(q\\).</p></div><div class=\"math-block example\"><p class=\"block-label\">Example</p>\\[N_2(6)=\\frac{64-8-4+2}{6}=9.\\]<p>Thus nine of the 64 monic binary sextics are irreducible. All nine have constant coefficient one, so nine of the 32 constant-one sextics are irreducible.</p></div>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Chapter 3, counting irreducible polynomials"
+          }
+        ]
+      },
+      {
+        "id": "certified-construction",
+        "title": "Construction algorithms",
+        "body": "<p>Choose independent uniform monic polynomials of degree \\(n\\), and apply the Frobenius test until one is irreducible. The output is always correct; only the running time is random. The expected number of trials is \\(q^n/N_q(n)\\), asymptotic to \\(n\\). For \\(n\\ge2\\), sampling only nonzero constant coefficients reduces it to \\((q-1)q^{n-1}/N_q(n)\\). For binary sextics this is exactly \\(32/9\\).</p><p>If \\(\\mathbb F_{q^n}\\) is already represented, choose \\(\\alpha\\) outside every maximal proper subfield: \\(\\alpha^{q^{n/\\ell}}\\ne\\alpha\\) for each prime \\(\\ell\\mid n\\). Its minimal polynomial is \\(\\prod_{i=0}^{n-1}(x-\\alpha^{q^i})\\), of degree \\(n\\).</p><p>Shoup develops deterministic construction algorithms and precise complexity bounds. The dependence on the characteristic matters: a bound polynomial in \\(p\\) is not necessarily polynomial in its bit length \\(\\log p\\).</p>",
+        "citations": [
+          {
+            "key": "Rabin1980"
+          },
+          {
+            "key": "Shoup1990Irreducible",
+            "locator": "Introduction and principal complexity bounds"
+          },
+          {
+            "key": "Shoup1994"
+          }
+        ]
+      },
+      {
+        "id": "primitive-and-prescribed",
+        "title": "Further conditions",
+        "body": "<p>An irreducible polynomial gives a field extension. Requiring its roots to generate the multiplicative group is an additional condition: such a polynomial is called <em>primitive</em>. Normality is another condition, concerning a basis of Frobenius conjugates. See <a href=\"finite-field-bases.html\">primitive and normal elements</a>.</p><p>Prescribing coefficients or requiring few nonzero terms restricts the candidates before the test is applied. Existence theorems for these restrictions are treated in <a href=\"finite-field-constructions.html\">coefficient restrictions</a> and <a href=\"sparse-finite-fields.html\">sparse polynomials</a>.</p>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997"
+          },
+          {
+            "key": "HansenMullen1992"
+          }
+        ]
+      },
+      {
+        "id": "parity-boundary",
+        "title": "Parity of the number of factors",
+        "body": "<p>Let \\(q\\) be odd and let \\(f\\in\\mathbb F_q[x]\\) be squarefree of degree \\(n\\), with \\(r\\) irreducible factors. Frobenius has \\(r\\) cycles on its roots, so its sign is \\((-1)^{n-r}\\). The discriminant is a square in \\(\\mathbb F_q^\\times\\) if and only if this sign is positive. Thus the discriminant determines the parity of \\(r\\), but usually not whether \\(r=1\\).</p><p>In characteristic two, every element of the ground field is a square. Swan's theorem instead uses a discriminant calculation after lifting to characteristic zero. It gives useful obstructions to irreducibility of binary trinomials; see the <a href=\"sparse-finite-fields.html#binary-obstructions\">sparse-polynomial examples</a>.</p>",
+        "citations": [
+          {
+            "key": "Swan1962",
+            "locator": "Theorem 1 and added-in-proof attribution, pp.1099–1100",
+            "note": "The basic theorem is credited by Swan to Stickelberger, with Dalen’s prior proof noted."
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "finite-field-structure",
+        "relation": "Uses",
+        "why": "The test follows from the description of Frobenius orbits."
+      },
+      {
+        "id": "finite-field-constructions",
+        "relation": "Uses",
+        "why": "Construct irreducibles with prescribed coefficients."
+      },
+      {
+        "id": "factorization-algorithms",
+        "relation": "Uses",
+        "why": "Continue from testing to a complete factorization."
+      },
+      {
+        "id": "finite-field-factorization-statistics",
+        "relation": "Uses",
+        "why": "Count all factorization types."
+      },
+      {
+        "id": "sparse-finite-fields",
+        "relation": "Uses",
+        "why": "Apply the test to sparse candidates."
+      }
+    ],
+    "questions": [
+      {
+        "id": "sparse-finite-certificates",
+        "title": "Which prescribed supports admit irreducibles over a fixed finite field?",
+        "status": "Research direction",
+        "scope": "A specified finite field, degree, and support",
+        "body": "<p>The counting formula proves existence without coefficient restrictions. A prescribed support or coefficient pattern may force factors, and existence must then be studied for that pattern. Exact certificates can establish individual cases; a general result requires a uniform argument.</p>",
+        "citations": [
+          {
+            "key": "HansenMullen1992"
+          },
+          {
+            "key": "Swan1962"
+          },
+          {
+            "key": "MullenPanario2013"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finite-field-bases",
+    "title": "Primitive and normal elements",
+    "kind": "method",
+    "subject": "finite-fields",
+    "summary": "A primitive element generates the multiplicative group. The conjugates of a normal element form a basis. Every finite-field extension contains an element with both properties.",
+    "level": "Intermediate",
+    "field": "Finite fields",
+    "status": "Published theorems; preprint claim stated separately",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "What is the difference between a field generator, a primitive element, and a normal element?",
+      "How are primitivity and normality tested?",
+      "When can both conditions hold?",
+      "What is known about the Morgan–Mullen conjecture?"
+    ],
+    "prerequisites": [
+      "finite-field-structure",
+      "finite-field-irreducibility"
+    ],
+    "sections": [
+      {
+        "id": "three-properties",
+        "title": "Three properties of an element",
+        "body": "<p>Fix \\(K=\\mathbb F_{q^n}\\) over \\(\\mathbb F_q\\). An element \\(\\alpha\\) is a <em>field generator</em> if \\(K=\\mathbb F_q(\\alpha)\\); equivalently, its minimal polynomial has degree \\(n\\). It is <em>primitive</em> if it generates \\(K^\\times\\), and <em>normal</em> if \\(\\alpha,\\alpha^q,\\ldots,\\alpha^{q^{n-1}}\\) form an \\(\\mathbb F_q\\)-basis of \\(K\\).</p><p>Primitivity and normality each imply degree \\(n\\), but degree \\(n\\) does not imply either of them. In \\(\\mathbb F_3(\\alpha)\\) with \\(\\alpha^2=-1\\), the element \\(\\alpha\\) has degree two and multiplicative order four; the full multiplicative group has order eight.</p>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Chapter 2, primitive elements and bases"
+          }
+        ]
+      },
+      {
+        "id": "multiplicative-test",
+        "title": "Testing primitivity",
+        "body": "<p>Put \\(N=q^n-1\\). An element \\(\\alpha\\in K^\\times\\) is primitive if and only if \\[\\alpha^{N/\\ell}\\ne1\\quad\\text{for every prime }\\ell\\mid N.\\] Indeed, a proper divisor of \\(N\\) divides \\(N/\\ell\\) for some prime \\(\\ell\\mid N\\). For an irreducible polynomial \\(f\\) of degree \\(n\\), these tests can be performed with \\(\\alpha=x\\bmod f\\).</p><p>The cyclic group \\(K^\\times\\) has \\(\\varphi(N)\\) generators. Frobenius groups them into orbits of length \\(n\\), so the number of monic primitive polynomials of degree \\(n\\) is \\(\\varphi(q^n-1)/n\\).</p>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Chapters 2–3, primitive elements and primitive polynomials"
+          }
+        ]
+      },
+      {
+        "id": "normality-test",
+        "title": "Testing normality",
+        "body": "<p>Choose any \\(\\mathbb F_q\\)-basis of \\(K\\). Form a matrix whose columns are the coordinates of \\(\\alpha,\\alpha^q,\\ldots,\\alpha^{q^{n-1}}\\). The element is normal exactly when this matrix has rank \\(n\\).</p><p>There is also a polynomial formulation. Let \\(\\sigma(\\beta)=\\beta^q\\), and let \\(m_\\alpha(T)\\) be the monic polynomial of least degree such that \\(m_\\alpha(\\sigma)(\\alpha)=0\\). It divides \\(T^n-1\\). Normality is equivalent to \\(m_\\alpha(T)=T^n-1\\), or to \\[\\bigl((T^n-1)/P(T)\\bigr)(\\sigma)(\\alpha)\\ne0\\] for every distinct monic irreducible divisor \\(P\\) of \\(T^n-1\\). Here \\(\\sum b_iT^i\\) acts as the linear map \\(\\beta\\mapsto\\sum b_i\\beta^{q^i}\\).</p><p>The criterion remains valid when the characteristic divides \\(n\\); the multiplicities in \\(T^n-1\\) must be retained.</p>",
+        "citations": [
+          {
+            "key": "CohenHuczynska2010Strong",
+            "locator": "§2, the polynomial module structure and freeness"
+          }
+        ]
+      },
+      {
+        "id": "examples",
+        "title": "Examples",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Let \\(\\alpha\\) be a root of \\(x^3+x^2+1\\) over \\(\\mathbb F_2\\). The polynomial has no root in \\(\\mathbb F_2\\), hence is irreducible. The nonzero element \\(\\alpha\\ne1\\) has order seven, so it is primitive. Also \\(\\alpha^4=\\alpha^2+\\alpha+1\\). Relative to the basis \\(1,\\alpha,\\alpha^2\\), its conjugates have columns \\((0,1,0)^t,(0,0,1)^t,(1,1,1)^t\\), which are independent. Thus \\(\\alpha\\) is normal.</p></div><p>In contrast, a root \\(\\beta\\) of \\(x^4+x+1\\) over \\(\\mathbb F_2\\) is primitive but not normal. Irreducibility is checked in the <a href=\"finite-field-irreducibility.html#quartic-certificate\">quartic example</a>; the tests \\(\\beta^3\\ne1\\) and \\(\\beta^5=\\beta^2+\\beta\\ne1\\) give order fifteen. Its trace is zero because the coefficient of \\(x^3\\) vanishes. Hence its four conjugates are linearly dependent.</p>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Primitive elements, normal bases, and trace; the displayed examples are direct calculations."
+          }
+        ]
+      },
+      {
+        "id": "existence",
+        "title": "The primitive normal basis theorem",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>For every prime power \\(q\\) and every \\(n\\ge1\\), the extension \\(\\mathbb F_{q^n}/\\mathbb F_q\\) contains a primitive normal element.</p></div><p>Lenstra and Schoof proved this in 1987. Cohen and Huczynska later gave a proof without computer calculations. Their method counts elements satisfying multiplicative and additive conditions by character sums, then uses a sieve to show that the count is positive.</p><p>A stronger theorem asks for both \\(\\alpha\\) and \\(\\alpha^{-1}\\) to be normal over \\(\\mathbb F_q\\), with \\(\\alpha\\) primitive. Cohen and Huczynska proved that such an element exists except for \\[(q,n)=(2,3),(2,4),(3,4),(4,3),(5,4).\\] These five pairs are genuine exceptions.</p>",
+        "citations": [
+          {
+            "key": "LenstraSchoof1987PrimitiveNormal",
+            "locator": "Main theorem"
+          },
+          {
+            "key": "CohenHuczynska2003PrimitiveNormal",
+            "locator": "Main theorem"
+          },
+          {
+            "key": "CohenHuczynska2010Strong",
+            "locator": "Theorem 1.4, pp. 299–300"
+          }
+        ]
+      },
+      {
+        "id": "count-normal",
+        "title": "Counting normal elements",
+        "body": "<p>The normal basis theorem identifies \\(K\\), as an \\(\\mathbb F_q[T]\\)-module with \\(T\\) acting by Frobenius, with \\(\\mathbb F_q[T]/(T^n-1)\\). Its generators correspond to the units of this quotient. Therefore the number of normal elements is \\[q^n\\prod_{P\\mid T^n-1}\\left(1-q^{-\\deg P}\\right),\\] where the product is over distinct monic irreducible factors.</p><p>For \\(q=2,n=4\\), one has \\(T^4-1=(T+1)^4\\), giving eight normal elements. In this case normality is equivalent to nonzero trace: \\((\\sigma-1)^3=1+\\sigma+\\sigma^2+\\sigma^3\\), and the normality test has just the factor \\(P=T+1\\).</p>",
+        "citations": [
+          {
+            "key": "GarefalakisKapetanakis2026Translates",
+            "locator": "§3, polynomial Euler function and normal elements"
+          }
+        ]
+      },
+      {
+        "id": "complete-normality",
+        "title": "Complete normality",
+        "body": "<p>An element of \\(\\mathbb F_{q^n}\\) is <em>completely normal</em> over \\(\\mathbb F_q\\) if it is normal over every intermediate field \\(\\mathbb F_{q^d}\\), \\(d\\mid n\\). Morgan and Mullen conjectured that every finite extension has an element that is both primitive and completely normal.</p><p>Write \\(n=p^a m\\), with \\(p\\nmid m\\). A published theorem of Garefalakis and Kapetanakis proves existence when \\(m<q\\), in particular when \\(n\\le q\\). Their 2026 paper develops further constructions using translates of completely normal elements.</p><p><strong>Preprint claim.</strong> Hellwig's October 2026 preprint claims existence for every \\(q,n\\). It combines a decomposition by partial Lagrange resolvents with character sums and finite computations. The author reports a Lean formalization for the new cases and computations, taking two earlier results as axioms and using Lean's compiler and interpreter for large computations.</p>",
+        "citations": [
+          {
+            "key": "MorganMullen1996CompletelyNormal",
+            "locator": "Conjecture"
+          },
+          {
+            "key": "GarefalakisKapetanakis2019PCN",
+            "locator": "Main theorem"
+          },
+          {
+            "key": "GarefalakisKapetanakis2026Translates",
+            "locator": "Theorem 2.6 and §§4–7"
+          },
+          {
+            "key": "Hellwig2026MorganMullen",
+            "locator": "arXiv:2610.36534v1, Theorem 1.2; abstract and formalization statement"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "finite-field-structure",
+        "relation": "Uses",
+        "why": "Frobenius conjugates and trace underlie normality."
+      },
+      {
+        "id": "finite-field-irreducibility",
+        "relation": "Uses",
+        "why": "First certify that a polynomial defines the required extension."
+      },
+      {
+        "id": "finite-field-constructions",
+        "relation": "Uses",
+        "why": "Coefficient conditions can be imposed in addition to degree or primitivity."
+      },
+      {
+        "id": "sparse-finite-fields",
+        "relation": "Uses",
+        "why": "Compare normal bases with sparse polynomial bases."
+      }
+    ],
+    "questions": [
+      {
+        "id": "primitive-normal-existence",
+        "title": "Does every finite extension have a primitive normal element?",
+        "status": "Settled",
+        "scope": "Every prime power \\(q\\) and integer \\(n\\ge1\\).",
+        "body": "<p>Yes. Lenstra and Schoof proved the primitive normal basis theorem; Cohen and Huczynska gave a later proof without computer calculations.</p>",
+        "citations": [
+          {
+            "key": "LenstraSchoof1987PrimitiveNormal",
+            "locator": "Main theorem"
+          },
+          {
+            "key": "CohenHuczynska2003PrimitiveNormal",
+            "locator": "Main theorem"
+          }
+        ]
+      },
+      {
+        "id": "morgan-mullen-existence",
+        "title": "Does every finite extension have a primitive completely normal element?",
+        "status": "Claimed",
+        "scope": "Every prime power \\(q\\) and integer \\(n\\ge1\\); the Morgan–Mullen conjecture.",
+        "body": "<p>Published results include the range in which the largest divisor of \\(n\\) coprime to the characteristic is smaller than \\(q\\). Hellwig claims a proof for all extensions in arXiv:2610.36534v1 (October 2026), using character sums, finite computations, and a reported Lean formalization. The general result is listed as a preprint claim.</p>",
+        "citations": [
+          {
+            "key": "MorganMullen1996CompletelyNormal"
+          },
+          {
+            "key": "GarefalakisKapetanakis2019PCN"
+          },
+          {
+            "key": "Hellwig2026MorganMullen",
+            "locator": "Theorem 1.2 and abstract"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finite-field-factorization-statistics",
+    "title": "Factorization statistics over finite fields",
+    "kind": "method",
+    "subject": "finite-fields",
+    "summary": "Factor degrees follow permutation cycle statistics in several large-field limits. Exact counting explains the unrestricted case; monodromy and point counting handle suitable families.",
+    "level": "Intermediate",
+    "field": "Finite fields",
+    "status": "Published results",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How many polynomials have a specified list of factor degrees?",
+      "Why do permutations give the limiting proportions?",
+      "Which short intervals have the same factorization statistics?",
+      "How can a family have symmetric monodromy when individual splitting fields are cyclic?"
+    ],
+    "prerequisites": [
+      "finite-field-structure",
+      "finite-field-irreducibility"
+    ],
+    "sections": [
+      {
+        "id": "type",
+        "title": "Factorization type",
+        "body": "<p>For a monic squarefree polynomial of degree \\(n\\), let \\(m_j\\) be the number of its irreducible factors of degree \\(j\\). Its factorization type is the partition \\(\\lambda=1^{m_1}2^{m_2}\\cdots\\), where \\(\\sum j m_j=n\\). Frobenius acts on its roots with exactly these cycle lengths.</p><p>Put \\(z_\\lambda=\\prod_{j\\ge1}j^{m_j}m_j!\\). A uniformly chosen permutation in \\(S_n\\) has cycle type \\(\\lambda\\) with probability \\(1/z_\\lambda\\): arrange the symbols into cycles, divide by rotations within each cycle, and divide by the order of cycles of equal length.</p>",
+        "citations": [
+          {
+            "key": "BankBarySorokerRosenzweig2015",
+            "locator": "§2.3, factorization types and permutation types"
+          }
+        ]
+      },
+      {
+        "id": "exact-count",
+        "title": "Exact counting",
+        "body": "<p>Let \\(N_q(j)\\) be the number of monic irreducible polynomials of degree \\(j\\). Unique factorization gives the exact formula \\[\\#\\{f\\text{ monic squarefree of type }\\lambda\\}=\\prod_{j\\ge1}\\binom{N_q(j)}{m_j}.\\] For each degree, choose the required distinct irreducible factors; their product determines \\(f\\).</p><p>Since \\(N_q(j)=q^j/j+O_j(q^{j/2})\\), for fixed \\(n\\) this count is \\(q^n/z_\\lambda+O_n(q^{n-1})\\) as \\(q\\to\\infty\\). Dividing by \\(q^n\\) gives the permutation probability in the limit. If repeated factors are allowed and their degrees are counted with multiplicity, the exact count instead uses \\(\\prod_j\\binom{N_q(j)+m_j-1}{m_j}\\).</p>",
+        "citations": [
+          {
+            "key": "Cohen1970",
+            "locator": "Distribution of factorization patterns; the exact product is derived here."
+          },
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Chapter 3, irreducible-polynomial counts"
+          }
+        ]
+      },
+      {
+        "id": "cubic-example",
+        "title": "Example",
+        "body": "<p>The three squarefree cubic types have counts \\[\\begin{array}{c|c|c}\\text{type}&\\text{count}&\\text{limiting proportion}\\\\\\hline 3&(q^3-q)/3&1/3\\\\2+1&q(q^2-q)/2&1/2\\\\1+1+1&\\binom q3&1/6\\end{array}\\] Their sum is \\(q^3-q^2\\), the number of squarefree monic cubics.</p><p>Over \\(\\mathbb F_2\\), the respective counts are \\(2,2,0\\). Thus the limiting proportions are not exact at a fixed small field. The lack of three distinct elements already excludes the third type.</p>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Counting irreducibles and unique factorization; direct calculation."
+          }
+        ]
+      },
+      {
+        "id": "short-intervals",
+        "title": "Short intervals",
+        "body": "<p>Fix a monic \\(f\\in\\mathbb F_q[x]\\) of degree \\(n\\), and let \\[I(f,m)=\\{f+h:h\\in\\mathbb F_q[x],\\ \\deg h\\le m\\},\\qquad m<n.\\] These \\(q^{m+1}\\) polynomials share their coefficients of degrees greater than \\(m\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>For \\(3\\le m<n\\) and any partition \\(\\lambda\\) of \\(n\\), Bank, Bary-Soroker, and Rosenzweig prove \\[\\#\\{g\\in I(f,m):\\lambda_g=\\lambda\\}=\\frac{q^{m+1}}{z_\\lambda}+O_n(q^{m+1/2}).\\] Here factor degrees are counted with multiplicity. The bound is uniform in \\(q,f,m,\\lambda\\) for fixed \\(n\\).</p></div><p>The same estimate holds for \\(m=1\\) if the characteristic \\(p\\) does not divide \\(n(n-1)\\), and for \\(m=2\\) if \\(p\\ne2\\) or \\(\\deg f'>1\\).</p>",
+        "citations": [
+          {
+            "key": "BankBarySorokerRosenzweig2015",
+            "locator": "Theorem 2.3"
+          }
+        ]
+      },
+      {
+        "id": "monodromy",
+        "title": "Monodromy and specialization",
+        "body": "<p>In a parameterized family, first compute the Galois group over the function field of the parameters. If the geometric group is \\(S_n\\), suitable finite-field point-counting estimates distribute the Frobenius classes according to their sizes in \\(S_n\\). A class with cycle type \\(\\lambda\\) then contributes the proportion \\(1/z_\\lambda\\).</p><p>This group belongs to the whole family. A particular polynomial over \\(\\mathbb F_q\\) has a splitting field that is a finite field, whose Galois group is cyclic. Its Frobenius element contributes one cycle type to the family count. There is no claim that this individual polynomial has Galois group \\(S_n\\) over \\(\\mathbb F_q\\).</p>",
+        "citations": [
+          {
+            "key": "BankBarySorokerRosenzweig2015",
+            "locator": "Proposition 3.1 and §4"
+          }
+        ]
+      },
+      {
+        "id": "restricted-families",
+        "title": "Restricted coefficient families",
+        "body": "<p>Entin gives a quantitative method for counting factorization types in restricted sets of specializations over large finite fields. Its usefulness depends on both the family's monodromy and an estimate measuring the restriction on the parameter set.</p><p>For example, coefficients uniform in the set of squares require additional arguments: the general error estimate need not give a useful bound. Bary-Soroker and Shmueli prove the irreducibility proportion \\(1/n+O_n(q^{-1/2})\\) in that model as \\(q\\to\\infty\\). See <a href=\"finite-field-constructions.html#square-coefficient-model\">square coefficients</a> for the precise probability model.</p>",
+        "citations": [
+          {
+            "key": "Entin2021Restricted",
+            "locator": "Main results on restricted specializations"
+          },
+          {
+            "key": "BarySorokerShmueli2026Squares",
+            "locator": "Theorem 1 and discussion preceding it"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "finite-field-structure",
+        "relation": "Uses",
+        "why": "Factor degrees are Frobenius orbit lengths."
+      },
+      {
+        "id": "finite-field-constructions",
+        "relation": "Uses",
+        "why": "Compare coefficient prescriptions with coefficient sets."
+      },
+      {
+        "id": "specialization",
+        "relation": "Uses",
+        "why": "Study the Galois group before specializing parameters."
+      },
+      {
+        "id": "random-models",
+        "relation": "Uses",
+        "why": "Keep fixed-degree and growing-degree limits distinct."
+      }
+    ],
+    "questions": [
+      {
+        "id": "finite-factorization-uniformity",
+        "title": "How does the error depend on the degree and the coefficient restrictions?",
+        "status": "Research direction",
+        "scope": "Families over \\(\\mathbb F_q\\) in which the degree, field size, or number of free coefficients varies.",
+        "body": "<p>The short-interval theorem above fixes the degree when taking the large-field limit. For a different regime, one must control the degree dependence of the error and compute the relevant monodromy. Establishing a limit for one family does not give a uniform theorem for all coefficient restrictions.</p>",
+        "citations": [
+          {
+            "key": "BankBarySorokerRosenzweig2015",
+            "locator": "Theorem 2.3"
+          },
+          {
+            "key": "Entin2021Restricted"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sparse-finite-fields",
+    "title": "Sparse irreducible polynomials over finite fields",
+    "kind": "research",
+    "subject": "finite-fields",
+    "summary": "Sparse irreducibles give efficient finite-field representations. Their existence depends on the support, while sparse factors of cyclotomic polynomials form a separate classification problem.",
+    "level": "Research",
+    "field": "finite fields",
+    "status": "Conjectures and known obstructions",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Does every degree admit an irreducible polynomial with few nonzero terms?",
+      "How short can the lower-degree part of an irreducible polynomial be?",
+      "Which obstructions exclude binary trinomials?",
+      "When are the irreducible factors of a cyclotomic polynomial sparse?"
+    ],
+    "prerequisites": [
+      "finite-field-structure",
+      "finite-field-irreducibility"
+    ],
+    "sections": [
+      {
+        "id": "sparsity",
+        "title": "Few nonzero coefficients",
+        "body": "<p>Let \\(\\sigma_q(n)\\) be the least number of nonzero coefficients of an irreducible degree-\\(n\\) polynomial over \\(\\mathbb F_q\\). Von zur Gathen–Nöcker conjecture, for \\(n\\ge2\\),</p>\\[\\sigma_2(n)\\le5,\\qquad \\sigma_q(n)\\le4\\quad(q\\ge3).\\]<p>These are existence statements: the support and coefficients may depend on the degree. They do not assert irreducibility for every polynomial of small weight.</p><p>The bounds also hold trivially in degree one, for example using \\(x+1\\). The equivalent binary formulation using trinomials or pentanomials concerns degrees at least two.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.5, author-hosted text p. 6"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjectures 3.4.30–3.4.31; §11.1.1.2"
+          }
+        ]
+      },
+      {
+        "id": "short-tail",
+        "title": "A short lower-degree part",
+        "body": "<p>For \\(n\\ge2\\), define \\(\\tau_q(n)=\\min\\{\\deg h:x^n+h\\text{ is irreducible over }\\mathbb F_q,\\ \\deg h<n\\}\\). A second conjecture is</p>\\[\\tau_q(n)\\le3+\\log_q n.\\]<p>The authors call these polynomials <em>sedimentary</em>. This condition bounds the positions of all nonleading terms, whereas sparsity bounds their number. Both forms allow fast reduction in a polynomial basis of \\(\\mathbb F_{q^n}\\).</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.8, author-hosted text p. 7"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjecture 3.4.35 and Conjecture 11.1.20"
+          }
+        ]
+      },
+      {
+        "id": "binomials",
+        "title": "Irreducible binomials",
+        "body": "<p>There is a complete criterion for the simplest support. Let \\(a\\in\\mathbb F_q^\\times\\) have multiplicative order \\(e\\), and let \\(n\\ge2\\). Then \\(x^n-a\\) is irreducible over \\(\\mathbb F_q\\) if and only if every prime divisor of \\(n\\) divides \\(e\\) but does not divide \\((q-1)/e\\), and \\(q\\equiv1\\pmod4\\) whenever \\(4\\mid n\\).</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Over \\(\\mathbb F_5\\), the element \\(2\\) has order four. Hence \\(x^{2^k}-2\\) is irreducible for every \\(k\\ge1\\). Over \\(\\mathbb F_3\\), \\(x^4+1\\) fails the congruence condition and factors as \\[(x^2+x+2)(x^2+2x+2).\\]</p></div>",
+        "citations": [
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Theorem 3.75, irreducible binomials"
+          }
+        ]
+      },
+      {
+        "id": "binary-obstructions",
+        "title": "Example",
+        "body": "<p>Over \\(\\mathbb F_2\\), any polynomial with an even number of nonzero coefficients vanishes at \\(1\\). Thus an irreducible polynomial of degree greater than one must have odd weight. Swan’s theorem also excludes irreducible trinomials when \\(8\\mid n\\). Five terms are therefore necessary in some degrees.</p><div class=\"math-block example\"><p>For degree eight,</p>\\[x^8+x^4+x^3+x+1\\]<p>is irreducible over \\(\\mathbb F_2\\). Its exact Frobenius certificate is \\(x^{256}\\equiv x\\pmod f\\) and \\(\\gcd(f,x^{16}-x)=1\\). The only prime divisor of eight is two, so these are precisely the required tests.</p></div>",
+        "citations": [
+          {
+            "key": "Swan1962",
+            "note": "Obstruction for binary trinomials in degrees divisible by eight."
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Example 11.1.19"
+          }
+        ]
+      },
+      {
+        "id": "cyclotomic-support",
+        "title": "Sparse cyclotomic factors",
+        "body": "<p>A different problem asks whether <em>every</em> irreducible factor of \\(x^m-1\\), or of a single cyclotomic polynomial \\(\\Phi_m(x)\\), has at most three nonzero terms. For \\(m>1\\) with \\(\\gcd(m,q)=1\\), every irreducible factor of \\(\\Phi_m\\) has degree \\(\\operatorname{ord}_m(q)\\). Factors of \\(x^m-1\\) come from all \\(\\Phi_d\\) with \\(d\\mid m\\). The question is which coefficients of these factors vanish.</p><p>Oliveira and Reis classified the integers \\(m\\) for the \\(x^m-1\\) problem over \\(\\mathbb F_2\\) and \\(\\mathbb F_4\\). Cheng's characteristic-two extension has a published corrigendum and a corrected author version. The correction requires control of orders modulo powers of seven; the earlier implication from \\(7\\nmid q^2-1\\) alone is insufficient. For example, \\(\\operatorname{ord}_{49}(128)=3\\), and \\(x^{49}-1\\) over \\(\\mathbb F_{128}\\) has an irreducible factor with four terms.</p>",
+        "citations": [
+          {
+            "key": "OliveiraReis2021Sparse",
+            "locator": "Abstract and the binary-field classification"
+          },
+          {
+            "key": "Cheng2026SparseCharacteristicTwo",
+            "locator": "Theorem 1.3; use the corrigendum and corrected author version"
+          },
+          {
+            "key": "Cheng2026SparseCorrigendum",
+            "locator": "Correction to Theorem 1.3; arXiv:2507.10779v2, Proposition 3.4 and Example 5.2"
+          }
+        ]
+      },
+      {
+        "id": "one-cyclotomic-layer",
+        "title": "A single cyclotomic polynomial",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Over \\(\\mathbb F_2\\), \\[\\Phi_{15}(x)=(x^4+x+1)(x^4+x^3+1),\\] and both factors are irreducible trinomials. But \\(\\Phi_5(x)=x^4+x^3+x^2+x+1\\) is irreducible because \\(\\operatorname{ord}_5(2)=4\\). Thus every irreducible factor of \\(\\Phi_{15}\\) is a trinomial, while \\(x^{15}-1\\) has a five-term irreducible factor.</p></div><p>Zhu and Wu's November 2026 preprint claims a classification of the pairs \\((q,m)\\), \\(m>1\\), \\(\\gcd(m,q)=1\\), for which every irreducible factor of \\(\\Phi_m\\) has exactly three nonzero terms. It reduces the supports by power substitutions and then studies root orders. This is a preprint result about individual cyclotomic polynomials; it does not settle the bounded-weight conjecture for every degree.</p>",
+        "citations": [
+          {
+            "key": "ZhuWu2026CyclotomicTrinomials",
+            "locator": "arXiv:2611.00647v2, Theorems 1.1 and 1.3; §§1–2"
+          },
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Theorem 2.47; the example follows by multiplication and Frobenius orders"
+          }
+        ]
+      },
+      {
+        "id": "scope",
+        "title": "What the conjectures assert",
+        "body": "<p>The bounded-weight and short-tail conjectures above are recorded in von zur Gathen–Nöcker and the Handbook of Finite Fields. Their universal statements remain listed as open here; no resolution was verified in this review. A calculation proves existence only for the field and degree checked.</p><p>Once irreducibility of a degree-\\(n\\) polynomial over \\(\\mathbb F_q\\) is established, its Galois group over \\(\\mathbb F_q\\) is the cyclic group \\(C_n\\). The remaining difficulty is the prescribed shape of the polynomial.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjectures 2.5 and 2.8"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjectures 3.4.30–3.4.31 and 3.4.35"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "finite-field-structure",
+        "relation": "Uses",
+        "why": "Root orders determine degrees of cyclotomic factors."
+      },
+      {
+        "id": "finite-field-irreducibility",
+        "relation": "Uses",
+        "why": "Check sparse candidates by exact Frobenius tests."
+      },
+      {
+        "id": "finite-field-constructions",
+        "relation": "Uses",
+        "why": "Compare sparse support with arbitrary coefficient prescriptions."
+      },
+      {
+        "id": "finite-field-bases",
+        "relation": "Uses",
+        "why": "Sparse polynomial bases and normal bases serve different computations."
+      },
+      {
+        "id": "sparse-gaps",
+        "relation": "Uses",
+        "why": "Compare sparse polynomials over finite fields with sparse polynomials in characteristic zero."
+      }
+    ],
+    "questions": [
+      {
+        "id": "binary-pentanomial-conjecture",
+        "title": "Does every binary degree admit an irreducible trinomial or pentanomial?",
+        "status": "Open",
+        "scope": "Every degree n≥2 over F_2; the support may depend on n.",
+        "body": "<p>The conjecture is \\(\\sigma_2(n)\\le5\\). Even weights are impossible, and degrees divisible by eight require at least five terms.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.5"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjecture 3.4.30"
+          }
+        ]
+      },
+      {
+        "id": "finite-quadrinomial-conjecture",
+        "title": "Do four nonzero terms suffice over every finite field with more than two elements?",
+        "status": "Open",
+        "scope": "Every prime power q≥3 and degree n≥2.",
+        "body": "<p>The assertion is \\(\\sigma_q(n)\\le4\\). It asks for at least one irreducible polynomial in each degree, without fixing the positions or values of its coefficients.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.5"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjecture 3.4.31"
+          }
+        ]
+      },
+      {
+        "id": "sedimentary-conjecture",
+        "title": "Can the lower-degree part always have degree at most \\(3+\\log_q n\\)?",
+        "status": "Open",
+        "scope": "Every prime power q and degree n≥2.",
+        "body": "<p>The question asks for an irreducible \\(x^n+h\\) with \\(\\deg h\\le3+\\log_q n\\). The degree bound is logarithmic; the coefficients of \\(h\\) are free.</p>",
+        "citations": [
+          {
+            "key": "GathenNocker2005",
+            "locator": "Conjecture 2.8"
+          },
+          {
+            "key": "MullenPanario2013",
+            "locator": "Conjecture 3.4.35"
+          }
+        ]
+      },
+      {
+        "id": "cyclotomic-trinomial-classification",
+        "title": "When are all irreducible factors of a cyclotomic polynomial trinomials?",
+        "status": "Claimed",
+        "scope": "Prime powers \\(q\\), integers \\(m>1\\) with \\(\\gcd(m,q)=1\\), and exactly three nonzero terms in every factor of \\(\\Phi_m\\).",
+        "body": "<p>Zhu and Wu claim a complete classification in arXiv:2611.00647v2 (November 2026). The condition concerns a single cyclotomic polynomial; it is stronger than asking for one sparse irreducible of its degree, and different from requiring all factors of \\(x^m-1\\) to be sparse.</p>",
+        "citations": [
+          {
+            "key": "ZhuWu2026CyclotomicTrinomials",
+            "locator": "Theorems 1.1 and 1.3"
+          }
+        ]
+      }
+    ]
+  }
+]

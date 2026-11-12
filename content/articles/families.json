@@ -4,15 +4,15 @@
     "title": "Reciprocal polynomials",
     "kind": "method",
     "subject": "galois",
-    "summary": "The trace substitution halves the degree of a reciprocal polynomial. Quadratic extensions determine its irreducibility and the kernel of its Galois action on inverse pairs.",
+    "summary": "A reciprocal polynomial of degree \\(2m\\) reduces to a polynomial of degree \\(m\\) in \\(x+x^{-1}\\). Its roots then require quadratic extensions.",
     "level": "Intermediate",
     "field": "Characteristic different from 2",
     "status": "Published results",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "questionsAnswered": [
-      "How can a reciprocal polynomial be reduced to half its degree?",
-      "Why is irreducibility of the trace polynomial insufficient?",
-      "When is the Galois group the full wreath product?"
+      "How does the substitution \\(y=x+x^{-1}\\) reduce the degree?",
+      "When does irreducibility of the polynomial in \\(y\\) imply irreducibility in \\(x\\)?",
+      "When is the Galois group \\(C_2\\wr S_m\\)?"
     ],
     "prerequisites": [
       "foundations"
@@ -45,7 +45,7 @@
       {
         "id": "kernel",
         "title": "Galois group",
-        "body": "<p>Suppose \\(f\\) is separable and \\(f(1)f(-1)\\ne0\\). Let \\(M\\) be the splitting field of \\(q\\), with roots \\(y_1,\\ldots,y_m\\). The splitting field of \\(f\\) is</p>\\[L=M\\bigl(\\sqrt{y_1^2-4},\\ldots,\\sqrt{y_m^2-4}\\bigr).\\]<p>Every Galois automorphism permutes the inverse pairs and may exchange the two roots in each pair. Hence \\(\\operatorname{Gal}(f/K)\\le C_2\\wr S_m=C_2^m\\rtimes S_m\\). Its quotient on pairs is \\(\\operatorname{Gal}(q/K)\\); its kernel has order \\(2^r\\), where \\(r\\) is the dimension of the span of the square classes \\([y_i^2-4]\\) in \\(M^\\times/M^{\\times2}\\). In particular, the full wreath product occurs exactly when the quotient is \\(S_m\\) and all \\(m\\) classes are independent.</p>",
+        "body": "<p>Suppose \\(f\\) is separable. Let \\(M\\) be the splitting field of \\(q\\), with roots \\(y_1,\\ldots,y_m\\). The splitting field of \\(f\\) is</p>\\[L=M\\bigl(\\sqrt{y_1^2-4},\\ldots,\\sqrt{y_m^2-4}\\bigr).\\]<p>Every Galois automorphism permutes the inverse pairs and may exchange the two roots in each pair. Hence \\(\\operatorname{Gal}(f/K)\\le C_2\\wr S_m=C_2^m\\rtimes S_m\\). Its quotient on pairs is \\(\\operatorname{Gal}(q/K)\\); its kernel has order \\(2^r\\), where \\(r\\) is the dimension of the span of the square classes \\([y_i^2-4]\\) in \\(M^\\times/M^{\\times2}\\). In particular, the full wreath product occurs exactly when the quotient is \\(S_m\\) and all \\(m\\) classes are independent.</p>",
         "citations": [
           {
             "key": "AndersonBertelliODorney2026",
@@ -61,7 +61,7 @@
       {
         "id": "examples",
         "title": "Examples",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(q(y)=y^2-5\\), the lift is \\(f=x^4-3x^2+1=(x^2+x-1)(x^2-x-1)\\). The polynomial \\(q\\) is irreducible, but \\(y^2-4=1\\) in \\(\\mathbb Q(y)\\), so the lifting criterion fails.</p></div><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(q(y)=y^2-3\\), the lift is \\(x^4-x^2+1=\\Phi_{12}(x)\\). Its splitting field is \\(\\mathbb Q(\\sqrt3,i)\\), of degree four, and its group is \\(C_2\\times C_2\\). Both radicands equal \\(-1\\), so their square classes span only one dimension. The group is a proper subgroup of the order-eight wreath product.</p></div>",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(q(y)=y^2-5\\), the lift is \\(f=x^4-3x^2+1=(x^2+x-1)(x^2-x-1)\\). The polynomial \\(q\\) is irreducible, but \\(y^2-4=1\\) in \\(\\mathbb Q(y)\\), so the quadratic over the root field splits.</p></div><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(q(y)=y^2-3\\), the lift is \\(x^4-x^2+1=\\Phi_{12}(x)\\). Its splitting field is \\(\\mathbb Q(\\sqrt3,i)\\), of degree four, and its group is \\(C_2\\times C_2\\). Both radicands equal \\(-1\\), so their square classes span only one dimension. The group is a proper subgroup of the order-eight wreath product.</p></div>",
         "citations": [
           {
             "key": "Cox2012",
@@ -130,15 +130,15 @@
     "title": "Eulerian polynomials",
     "kind": "family",
     "subject": "families",
-    "summary": "Eulerian polynomials are reciprocal after removal of a forced linear factor. Shifted Eisenstein and Newton-polygon arguments prove irreducibility at prime and prime-plus-one indices and bound the degree of a largest irreducible factor.",
+    "summary": "Eulerian polynomials count permutations by descents. Their reciprocal symmetry, shifted coefficients, and Newton polygons give irreducibility results and restrictions on the Galois group.",
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Why is x+1 removed at even indices?",
-      "Why does an Eisenstein shift work at prime indices?",
-      "Why is the natural group a wreath product rather than S_(n−1)?"
+      "Why does \\(x+1\\) divide \\(A_n(x)\\) exactly when \\(n\\) is even?",
+      "Why are \\(A_p\\) and \\(A_{p+1}/(x+1)\\) irreducible for odd primes \\(p\\)?",
+      "How does reciprocal symmetry restrict their Galois groups?"
     ],
     "prerequisites": [
       "foundations"
@@ -223,7 +223,7 @@
       {
         "id": "scope",
         "title": "General indices",
-        "body": "<p>The prime and prime-plus-one cases prove transitivity on individual roots. They do not determine the group on inverse pairs or the quadratic kernel. For arbitrary indices, the largest-prime bound supplies a large factor, while the 1974 source presents broader irreducibility conjectures for its Euler–Frobenius family. Finite computations do not settle those conjectures.</p><p>The relevant arithmetic data are \\(\\widetilde A_n\\), its trace polynomial, good-prime factorization patterns, discriminant square classes, and exact certificates.</p>",
+        "body": "<p>The general question is whether \\(\\widetilde A_n\\) is irreducible over \\(\\mathbb Q\\) for every \\(n\\ge3\\). The prime and prime-plus-one cases establish this in two infinite sets of indices. The largest-prime bound gives a large irreducible factor at every index, but can leave room for smaller factors.</p><p>Determining the Galois group requires two further steps: find the group of the trace polynomial, then determine the square-class relations in the quadratic extensions above its roots.</p>",
         "citations": [
           {
             "key": "SharmaStraus1974",
@@ -293,15 +293,15 @@
     "title": "Taylor polynomials",
     "kind": "family",
     "subject": "families",
-    "summary": "Exponential truncations have alternating or symmetric Galois groups. Geometric truncations factor into cyclotomic polynomials. Their proofs use coefficient valuations, discriminants, and explicit factorization.",
+    "summary": "Schur’s theorem determines the groups of exponential truncations. Geometric truncations provide a contrasting family with an explicit cyclotomic factorization.",
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "What are the Galois groups of exponential truncations?",
-      "How does the discriminant computation work?",
-      "Why do geometric truncations behave differently?"
+      "When does \\(\\sum_{j=0}^n x^j/j!\\) have group \\(A_n\\) or \\(S_n\\)?",
+      "How do its coefficient valuations prove irreducibility?",
+      "When is \\(1+x+\\cdots+x^n\\) irreducible?"
     ],
     "prerequisites": [
       "foundations"
@@ -386,6 +386,22 @@
             "locator": "Theorems A–E"
           }
         ]
+      },
+      {
+        "id": "shifted-exponentials",
+        "title": "Shifted exponential polynomials",
+        "body": "<p>For a fixed positive integer \\(a\\), define</p>\\[F_{n,a}(x)=\\sum_{j=0}^n\\frac{x^j}{(a+j)!}.\\]<p>Weinbaum’s 2026 preprint claims that the degrees \\(n\\) for which \\(\\operatorname{Gal}(F_{n,a}/\\mathbb Q)=S_n\\) have natural density one. The argument combines factor-degree bounds, Newton polygons, and a separate estimate for square discriminants. This addresses the positive shifts considered by Katz and Rivin. The parameter \\(a\\) is fixed; the statement allows exceptional degrees.</p><p>For \\(a=0\\), Schur’s theorem instead gives alternating group at every degree divisible by four.</p>",
+        "citations": [
+          {
+            "key": "Weinbaum2026ShiftedExponential",
+            "locator": "Theorem 1.1; §§2–4, arXiv v2",
+            "note": "Preprint claim; the statement and proof outline were checked, not the complete proof."
+          },
+          {
+            "key": "KatzRivinSpeculations",
+            "locator": "§4"
+          }
+        ]
       }
     ],
     "related": [
@@ -432,6 +448,19 @@
             "locator": "Theorem A and §7.16"
           }
         ]
+      },
+      {
+        "id": "shifted-exponential-density",
+        "title": "Do positive shifts of the exponential series have symmetric group in density one?",
+        "status": "Claimed",
+        "scope": "Each fixed integer \\(a\\ge1\\); the polynomials \\(F_{n,a}\\) over \\(\\mathbb Q\\), as \\(n\\to\\infty\\).",
+        "body": "<p>Weinbaum’s preprint claims an affirmative answer. This is a density statement for each fixed shift, not an all-degree result.</p>",
+        "citations": [
+          {
+            "key": "Weinbaum2026ShiftedExponential",
+            "locator": "Theorem 1.1, arXiv:2610.26873v2"
+          }
+        ]
       }
     ]
   },
@@ -440,16 +469,15 @@
     "title": "Trinomials",
     "kind": "family",
     "subject": "families",
-    "summary": "The polynomials xⁿ−x−1 have Galois group Sₙ over Q for every n≥2. Ramification proves this uniformly; power compositions require other group classifications.",
+    "summary": "The polynomial \\(x^n-x-1\\) is irreducible over \\(\\mathbb Q\\) with group \\(S_n\\) for every \\(n\\ge2\\). Its ramification gives a proof valid in every degree.",
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Which trinomial has group S_n in every degree n≥2?",
-      "How can two primes certify the quintic case?",
-      "Why does the all-degree proof use ramification?",
-      "How can a degree-twelve trinomial be classified using lower-degree polynomials?"
+      "Why is \\(x^n-x-1\\) irreducible, and why is its group \\(S_n\\)?",
+      "How do reductions modulo two primes determine the quintic group?",
+      "How does a power composition restrict the group of a trinomial?"
     ],
     "prerequisites": [
       "foundations"
@@ -489,7 +517,7 @@
       {
         "id": "quintic",
         "title": "Example",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(x^5-x-1\\), reduction modulo \\(5\\) gives a 5-cycle. Modulo \\(2\\),</p>\\[x^5+x+1=(x^2+x+1)(x^3+x^2+1),\\]<p>where the two factors are irreducible. The group therefore contains an element of type \\((2,3)\\), whose cube is a transposition. Label the roots by \\(\\mathbb Z/5\\mathbb Z\\) so that the 5-cycle adds one. Conjugating the transposition by its powers gives all edges with a fixed nonzero difference. These edges form a connected graph. Edge transpositions of a connected graph generate \\(S_5\\), proving the claim.</p></div><p>The conclusion uses this connectivity argument. A transitive subgroup containing one transposition need not be symmetric in general.</p>",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(x^5-x-1\\), reduction modulo \\(5\\) gives a 5-cycle. Modulo \\(2\\),</p>\\[x^5+x+1=(x^2+x+1)(x^3+x^2+1),\\]<p>where the two factors are irreducible. The group therefore contains an element of type \\((2,3)\\), whose cube is a transposition. Label the roots by \\(\\mathbb Z/5\\mathbb Z\\) so that the 5-cycle adds one. Conjugating the transposition by its powers gives all edges with a fixed nonzero difference. These edges form a connected graph. Edge transpositions of a connected graph generate \\(S_5\\), proving the claim.</p></div>",
         "citations": [
           {
             "key": "ConradModP",
@@ -504,7 +532,7 @@
       {
         "id": "inertia",
         "title": "Ramification",
-        "body": "<p>For \\(f_n\\), the simultaneous equations \\(f_n(a)=f_n'(a)=0\\) modulo a prime give \\(na^{n-1}=1\\) and \\((n-1)a=-n\\). They force a unique possible multiple root. Such a prime divides neither \\(n\\) nor \\(n-1\\), and \\(f_n''(a)=n(n-1)a^{n-2}\\ne0\\), so that root is double. Every nontrivial inertia element therefore exchanges just the two roots that coalesce.</p><p>The normal subgroup generated by the finite inertia groups fixes an extension of \\(\\mathbb Q\\) unramified at all finite primes. Minkowski's discriminant bound implies that this extension is trivial. Hence the whole Galois group is generated by transpositions. Selmer's irreducibility makes its action transitive, and the connected-graph argument now gives \\(S_n\\).</p>",
+        "body": "<p>For \\(f_n\\), the simultaneous equations \\(f_n(a)=f_n'(a)=0\\) modulo a prime give \\(na^{n-1}=1\\) and \\((n-1)a=-n\\). They force a unique possible multiple root. Such a prime divides neither \\(n\\) nor \\(n-1\\), and \\(f_n''(a)=n(n-1)a^{n-2}\\ne0\\), so that root is double. An inertia element fixes each root with simple reduction and can only exchange the two roots above the double root. Thus every nontrivial inertia group is generated by a transposition.</p><p>The normal subgroup generated by the finite inertia groups fixes an extension of \\(\\mathbb Q\\) unramified at all finite primes. Minkowski's discriminant bound implies that this extension is trivial. Hence the whole Galois group is generated by transpositions. Selmer's irreducibility makes its action transitive, and the connected-graph argument now gives \\(S_n\\).</p>",
         "citations": [
           {
             "key": "Osada1987",
@@ -546,7 +574,7 @@
       {
         "id": "nonic-connection",
         "title": "Cubic power compositions",
-        "body": "<p>For \\(g=x^3+ax^2+bx+c\\in\\mathbb Q[x]\\) and irreducible \\(f=g(x^3)\\), Awtrey–Patane–Toone classify 11 possible transitive groups in degree nine. They use the discriminants of \\(f\\) and \\(g\\), together with two further resolvents. Their work also addresses the converse problem: whether a given number field admits a defining polynomial of this compositional shape. These polynomials usually have four terms. Their relation to trinomials is the root partition induced by power composition.</p>",
+        "body": "<p>For \\(g=x^3+ax^2+bx+c\\in\\mathbb Q[x]\\) and irreducible \\(f=g(x^3)\\), Awtrey–Patane–Toone classify 11 possible transitive groups in degree nine. They use the discriminants of \\(f\\) and \\(g\\), together with two further resolvents. Their work also addresses the converse problem: whether a given number field admits a defining polynomial of this compositional shape. As in the degree-twelve case, the power composition partitions the roots into blocks.</p>",
         "citations": [
           {
             "key": "AwtreyPataneToone2025",
@@ -615,16 +643,15 @@
     "title": "Generalized Laguerre polynomials",
     "kind": "family",
     "subject": "families",
-    "summary": "Arithmetic-progression products determine coefficient valuations and constrain Galois groups. The main theorems distinguish a fixed rational parameter from a fixed degree.",
+    "summary": "Generalized Laguerre polynomials provide explicit applications of Newton polygons and discriminants. The principal results treat either a fixed parameter or a fixed degree.",
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "What changes when the parameter is fixed instead of the degree?",
-      "Why do primes in arithmetic progressions appear?",
-      "Which negative integer parameters force reducibility?",
-      "Which small rational parameters admit an all-degree irreducibility theorem?"
+      "For fixed rational \\(\\alpha\\), what is known about \\(L_n^{(\\alpha)}\\) as \\(n\\) grows?",
+      "For fixed \\(n\\), how many parameters give a group smaller than \\(S_n\\)?",
+      "Which parameters force a zero root or a square discriminant?"
     ],
     "prerequisites": [
       "foundations"
@@ -645,7 +672,7 @@
       {
         "id": "fixed-alpha",
         "title": "Fixed parameter",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Filaseta–Lam; Hajir)</p><p>Fix \\(\\alpha\\in\\mathbb Q\\setminus\\mathbb Z_{<0}\\). For every sufficiently large \\(n\\), depending on \\(\\alpha\\), the polynomial \\(L_n^{(\\alpha)}\\) is irreducible over \\(\\mathbb Q\\) and its group contains \\(A_n\\). It equals \\(A_n\\) or \\(S_n\\) according to whether its discriminant is a rational square.</p></div><p>Filaseta–Lam supply eventual irreducibility. Hajir obtains a large prime divisor of a Newton-slope denominator, then uses a permutation-group criterion. The irreducibility input is essential to that group argument.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Filaseta–Lam; Hajir)</p><p>Fix \\(\\alpha\\in\\mathbb Q\\setminus\\mathbb Z_{<0}\\). For every sufficiently large \\(n\\), depending on \\(\\alpha\\), the polynomial \\(L_n^{(\\alpha)}\\) is irreducible over \\(\\mathbb Q\\) and its group contains \\(A_n\\). It equals \\(A_n\\) or \\(S_n\\) according to whether its discriminant is a rational square.</p></div><p>Filaseta–Lam supply eventual irreducibility. Hajir obtains a large prime divisor of a Newton-slope denominator, then uses a permutation-group criterion. Irreducibility supplies the transitivity required by that criterion.</p>",
         "citations": [
           {
             "key": "FilasetaLam2002",
@@ -673,7 +700,7 @@
       {
         "id": "fixed-degree",
         "title": "Fixed degree",
-        "body": "<p>Fix a number field \\(K\\) and a degree \\(n\\ge10\\). Then all but finitely many \\(\\alpha\\in K\\) give an irreducible polynomial \\(L_n^{(\\alpha)}\\) with Galois group \\(S_n\\) over \\(K\\). Hajir–Wong prove this using intermediate covers and finiteness of rational points on curves of sufficiently high genus.</p><p>This does not assert a common threshold in \\(n\\) for every rational \\(\\alpha\\); nor does ordinary Hilbert irreducibility by itself make the exceptional set finite. A varying sequence \\(\\alpha_n\\) requires its own argument.</p>",
+        "body": "<p>Fix a number field \\(K\\) and a degree \\(n\\ge10\\). Then all but finitely many \\(\\alpha\\in K\\) give an irreducible polynomial \\(L_n^{(\\alpha)}\\) with Galois group \\(S_n\\) over \\(K\\). Hajir–Wong prove this using intermediate covers and finiteness of rational points on curves of sufficiently high genus.</p><p>The exceptional set depends on the fixed degree and number field. Its finiteness is stronger than the conclusion of Hilbert irreducibility.</p>",
         "citations": [
           {
             "key": "HajirWong2006",
@@ -799,15 +826,15 @@
     "title": "Fekete polynomials",
     "kind": "family",
     "subject": "families",
-    "summary": "Quadratic characters determine rational factors and reciprocal symmetry. After normalization, trace polynomials and arithmetic special values relate irreducibility to the Galois action on inverse pairs.",
+    "summary": "Fekete polynomials have coefficients given by Dirichlet characters. Removing their known factors exposes reciprocal symmetry and leads to irreducibility and Galois-group conjectures.",
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Which rational factors must be removed?",
-      "Why can half the degree suffice for irreducibility?",
-      "What extra information is needed for the full splitting group?"
+      "Which factors at \\(0\\), \\(1\\), and \\(-1\\) occur in the prime-conductor family?",
+      "Why is irreducibility equivalent to that of its trace polynomial?",
+      "What would prove the conjectured group \\(C_2\\wr S_m\\)?"
     ],
     "prerequisites": [
       "foundations"
@@ -840,7 +867,7 @@
       {
         "id": "example",
         "title": "Example",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>The quadratic residues modulo \\(7\\) are \\(1,2,4\\), so</p>\\[F_7=x+x^2-x^3+x^4-x^5-x^6.\\]<p>Dividing by \\(x(1-x)\\) gives</p>\\[f_7=x^4+2x^3+x^2+2x+1=x^2\\bigl((x+x^{-1})^2+2(x+x^{-1})-1\\bigr).\\]<p>Thus \\(g_7(y)=y^2+2y-1\\), with roots \\(-1\\pm\\sqrt2\\). Their field is \\(M=\\mathbb Q(\\sqrt2)\\), and the quadratic radicands are \\(-1\\mp2\\sqrt2\\). Each has norm \\(-7\\). A square in \\(M\\) has rational norm equal to a rational square, so neither radicand is a square. Their product is \\(-7\\), which is not a square in the real field \\(M\\). The two square classes are independent, giving \\([L:M]=4\\) and \\([L:\\mathbb Q]=8\\). The group of \\(f_7\\) is therefore \\(C_2\\wr S_2\\).</p></div><p>The calculation requires both the splitting field of the trace polynomial and independence of the quadratic lifts.</p>",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>The quadratic residues modulo \\(7\\) are \\(1,2,4\\), so</p>\\[F_7=x+x^2-x^3+x^4-x^5-x^6.\\]<p>Dividing by \\(x(1-x)\\) gives</p>\\[f_7=x^4+2x^3+x^2+2x+1=x^2\\bigl((x+x^{-1})^2+2(x+x^{-1})-1\\bigr).\\]<p>Thus \\(g_7(y)=y^2+2y-1\\), with roots \\(-1\\pm\\sqrt2\\). Their field is \\(M=\\mathbb Q(\\sqrt2)\\), and the quadratic radicands are \\(-1\\mp2\\sqrt2\\). Each has norm \\(-7\\). A square in \\(M\\) has rational norm equal to a rational square, so neither radicand is a square. Their product is \\(-7\\), which is not a square in the real field \\(M\\). The two square classes are independent, giving \\([L:M]=4\\) and \\([L:\\mathbb Q]=8\\). The group of \\(f_7\\) is therefore \\(C_2\\wr S_2\\).</p></div>",
         "citations": [
           {
             "key": "Cox2012",
@@ -867,7 +894,7 @@
       {
         "id": "method",
         "title": "Trace polynomials and square classes",
-        "body": "<p>Character identities determine reciprocal or anti-reciprocal symmetry and help identify the cyclotomic factors. After removing those factors, one studies the trace polynomial. Good-prime cycle types and square classes obtained from special values then constrain the full splitting field. A smaller Galois group may result from an additional cyclotomic factor, a reducible trace polynomial, a smaller group on pairs, or a relation among the quadratic radicands.</p><p>Thus character sums provide arithmetic information about the Galois group. Zero distributions and finite computations do not, by themselves, prove uniform irreducibility.</p>",
+        "body": "<p>For a generalized character, first determine the cyclotomic factors and reciprocal symmetry. The remaining polynomial can then be written in terms of \\(x+x^{-1}\\). This separates the Galois problem into the action on inverse pairs and the quadratic extensions within those pairs. Special values provide square classes; factorizations modulo good primes provide cycle types.</p><p>Additional factors, a smaller group on pairs, or a relation among the quadratic radicands can each force a smaller full group.</p>",
         "citations": [
           {
             "key": "MinacNguyenTan2024",
@@ -1074,18 +1101,16 @@
     "title": "Bernoulli and Euler polynomials",
     "kind": "family",
     "subject": "families",
-    "summary": "Reflection symmetry constrains the Galois action. Bernoulli denominators yield infinite irreducible subfamilies; multiple roots are classified in both families. Even Bernoulli groups contain fixed-point-free elements without an irreducibility assumption.",
+    "summary": "Bernoulli and Euler polynomials arise from sums of powers. Reflection, denominator formulas, and derivative identities control their factors, root multiplicities, and Galois actions.",
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "How do Euler, Bernoulli, and Eulerian polynomials differ?",
-      "Which rational factors are forced by the generating identities?",
-      "Why must repeated factors be checked before describing a root action?",
-      "Which infinite Bernoulli subfamilies are known to be irreducible?",
-      "Is the multiple-root problem settled?",
-      "What can one prove about even Bernoulli Galois groups without assuming irreducibility?"
+      "Which rational factors follow from the generating functions?",
+      "For which indices does Carlitz’s criterion prove irreducibility?",
+      "Which Bernoulli and Euler polynomials have repeated roots?",
+      "How does reflection constrain the Galois group?"
     ],
     "prerequisites": [
       "foundations"
@@ -1179,7 +1204,7 @@
       {
         "id": "multiplicity-classification",
         "title": "Multiple roots",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Brillhart; Dilcher)</p><p>Every \\(B_n(x)\\), \\(n\\ge1\\), is squarefree. Among the Euler polynomials, only \\(E_5(x)\\) has multiple roots; its two irrational roots each have multiplicity two.</p></div><p>Brillhart proved the odd Bernoulli case and restricted any possible even-degree multiple root to a root of \\(x^2-x-b\\), with \\(b\\) a positive odd integer. Dilcher’s Theorem 2 eliminates these remaining possibilities. The method combines centered expansions, Bernoulli denominator congruences, and the requirement that a multiple root also annihilate the adjacent Appell polynomial. Brillhart’s Euler classification is also recorded in Dilcher’s §4.</p><p>The classification of multiple roots is distinct from irreducibility of the normalized factors and determination of their Galois groups.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Brillhart; Dilcher)</p><p>Every \\(B_n(x)\\), \\(n\\ge1\\), is squarefree. Among the Euler polynomials, only \\(E_5(x)\\) has multiple roots; its two irrational roots each have multiplicity two.</p></div><p>Brillhart proved the odd Bernoulli case and restricted any possible even-degree multiple root to a root of \\(x^2-x-b\\), with \\(b\\) a positive odd integer. Dilcher’s Theorem 2 eliminates these remaining possibilities. The method combines centered expansions, Bernoulli denominator congruences, and the requirement that a multiple root also annihilate the adjacent Appell polynomial. Brillhart’s Euler classification is also recorded in Dilcher’s §4.</p>",
         "citations": [
           {
             "key": "Dilcher2008MultipleZeros",
@@ -1212,7 +1237,7 @@
       {
         "id": "questions",
         "title": "Normalized polynomials",
-        "body": "<p>For a fixed parity and choice of removed rational factors, one may study irreducibility of the remaining polynomial in \\(x\\), irreducibility of its polynomial in \\((x-1/2)^2\\), or the Galois action on pairs. These problems are distinct. Taking a squarefree part changes only the exceptional Euler member \\(E_5\\) in the standard families discussed here.</p><p>The Appell identity \\(P_n'=nP_{n-1}\\) turns a multiple-root question into a common-root question for adjacent members. The classification above resolves this question for Bernoulli and Euler polynomials. The same reduction to adjacent polynomials is available for other Appell families.</p>",
+        "body": "<p>After the rational factors are removed, centering at \\(1/2\\) gives an even polynomial. Writing it as \\(Q((x-1/2)^2)\\) separates the action on root pairs from the quadratic extensions within the pairs. The reciprocal-polynomial article explains the same construction with opposite pairs. For the standard Euler family, the repeated factor of \\(E_5\\) must first be removed.</p>",
         "citations": [
           {
             "key": "Dilcher2008MultipleZeros",
@@ -1301,7 +1326,7 @@
         "title": "Is every even Bernoulli polynomial irreducible over Q?",
         "status": "Open",
         "scope": "The standard Bernoulli polynomial B_n(x), for every even n≥2; explicitly described as a conjecture by Patel–Siksek (2017), §3.",
-        "body": "<p>Carlitz’s criterion proves irreducibility for infinite sets of indices. The unconditional derangement theorem does not settle the general question. The statement is a conjecture in the cited paper; this status does not exclude later advances.</p>",
+        "body": "<p>Carlitz’s criterion proves irreducibility for infinite sets of indices. The unconditional derangement theorem does not settle the general question. The cited paper states the general assertion as a conjecture.</p>",
         "citations": [
           {
             "key": "PatelSiksek2017Powers",
@@ -1371,15 +1396,16 @@
     "title": "Hermite, Bessel, and Legendre polynomials",
     "kind": "family",
     "subject": "families",
-    "summary": "Parity and coefficient products constrain irreducibility and Galois groups in these classical families. The results depend on the polynomial normalization and parameter range.",
+    "summary": "Hermite, Bessel, and Legendre polynomials connect differential equations with polynomial arithmetic. Known irreducibility results use coefficient products, valuations, and symmetry.",
     "level": "Intermediate",
     "field": "Q",
     "status": "Research overview",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Why must odd Hermite and Legendre polynomials be normalized?",
-      "Which all-degree result is known for Bessel polynomials?",
-      "Which parts of a local proof can transfer to another classical family?"
+      "Which normalizations of Hermite and Bessel polynomials are irreducible in every degree?",
+      "What do Stieltjes’ conjecture and the Legendre group conjecture assert?",
+      "How do opposite root pairs affect the full Galois group?",
+      "What is known about the nonzero roots of Hermite Wronskians?"
     ],
     "prerequisites": [
       "foundations"
@@ -1388,7 +1414,7 @@
       {
         "id": "overview",
         "title": "Arithmetic properties",
-        "body": "<p>Orthogonal polynomials occur in approximation, differential equations, and spectral problems. Their recurrence and differential identities often give exact coefficients and simple real roots. Neither property alone forces irreducibility over \\(\\mathbb Q\\): a polynomial can have distinct real algebraic roots and still factor rationally.</p><p>Schur's work on Laguerre and Hermite polynomials established local arithmetic methods for such families. The known results differ by family: Bessel irreducibility has an all-degree theorem, whereas the 2014 Legendre paper treats the general factorization statement as a conjecture. The later preprint claims are identified below.</p>",
+        "body": "<p>Orthogonal polynomials occur in approximation, differential equations, and spectral problems. Their recurrence and differential identities often give exact coefficients and simple real roots. Neither property alone forces irreducibility over \\(\\mathbb Q\\): a polynomial can have distinct real algebraic roots and still factor rationally.</p><p>Schur's work on Laguerre and Hermite polynomials established local arithmetic methods for such families. The all-degree irreducibility theorems for Hermite and Bessel polynomials are classical or published results. For Legendre polynomials, the general theorem is claimed in a recent preprint.</p>",
         "citations": [
           {
             "key": "Schur1931",
@@ -1481,7 +1507,7 @@
       {
         "id": "legendre-2026",
         "title": "A claimed proof of Stieltjes’ conjecture",
-        "body": "<div class=\"math-block boundary\"><p class=\"block-label\">Preprint claim</p><p>Zikang Deng’s September 2026 preprint claims a proof of Stieltjes’ irreducibility conjecture in every degree. Version 2 uses local and real estimates for a resultant. The complete proof has not been independently checked here, and no peer-reviewed publication has been verified. The claim is distinct from the published 2014 account.</p></div>",
+        "body": "<div class=\"math-block boundary\"><p class=\"block-label\">Preprint claim</p><p>Zikang Deng’s September 2026 preprint claims a proof of Stieltjes’ irreducibility conjecture in every degree. Version 2 uses local and real estimates for a resultant. This is recorded as a preprint claim; the full proof has not been independently checked.</p></div>",
         "citations": [
           {
             "key": "Deng2026Legendre",
@@ -1493,7 +1519,7 @@
       {
         "id": "transfer",
         "title": "Methods and parameter ranges",
-        "body": "<p>The main arithmetic tools are explicit coefficient products, discriminant formulas, Newton slopes, and the action on root pairs. Their application depends on the polynomial convention, scalar normalization, affine change of variable, removed factors, and base field. Differential equations alone do not determine these arithmetic properties.</p><p>For Jacobi families with a parameter, the results distinguish a fixed parameter with degree growing from a fixed degree with parameter varying. Those regimes lead to different arithmetic and geometric methods.</p>",
+        "body": "<p>The coefficient products of these families give explicit valuations and Newton polygons. Parity gives an action on opposite root pairs, and discriminant formulas can distinguish alternating from symmetric groups on the reduced roots. To transfer an argument between families, the change of variable must be defined over the ground field.</p><p>For Jacobi polynomials, fixing the parameters and letting the degree grow is different from fixing the degree and specializing a parameter. The former uses uniform arithmetic estimates; the latter can use covers and rational points.</p>",
         "citations": [
           {
             "key": "CullinanHajirSell2009",

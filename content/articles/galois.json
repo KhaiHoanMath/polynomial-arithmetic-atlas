@@ -4,15 +4,15 @@
     "title": "Frobenius and factorization modulo primes",
     "kind": "method",
     "subject": "galois",
-    "summary": "Squarefree factorization modulo a prime determines a cycle type in the Galois group. Group-theoretic criteria then convert these cycle types into group containments.",
+    "summary": "Factor degrees modulo a good prime give cycle lengths in the Galois group. Combining these cycles can determine the group.",
     "level": "Intermediate",
     "field": "Q and number fields",
     "status": "Classical theory",
     "checked": "2026-11-11",
     "questionsAnswered": [
-      "What does a squarefree reduction say about the Galois group?",
-      "When can irreducibility be witnessed by one prime?",
-      "How do two primes prove that a quintic has group S5?"
+      "Which cycle type follows from factorization modulo a prime?",
+      "When does a polynomial have an irreducible reduction?",
+      "How do modular factorizations prove that a quintic has group S₅?"
     ],
     "prerequisites": [
       "foundations",
@@ -79,7 +79,7 @@
       {
         "id": "limits",
         "title": "Limits of modular tests",
-        "body": "<div class=\"math-block boundary\"><p class=\"block-label\">Remark</p><p>The theorem requires squarefree reduction. Failure to observe a cycle type in a finite search does not exclude it. A finite list of factorizations determines the group only if a recognition theorem or a complete subgroup analysis excludes every other compatible group.</p></div><p>At primes of repeated reduction, ramification and Newton polygons may give further permutations. Resolvents can distinguish groups with the same observed cycle types.</p>",
+        "body": "<p>Each squarefree reduction proves that its cycle type occurs in the Galois group. Failure to observe a cycle type in a finite search does not prove its absence. To exclude a type, one needs a group-theoretic restriction or another exact argument.</p><p>For example, if the Galois group contains no \\(n\\)-cycle, every good reduction of a degree-\\(n\\) polynomial is reducible. If modular cycle types leave several possible groups, ramification, the discriminant or a resolvent may distinguish them.</p>",
         "citations": [
           {
             "key": "ConradSnAn",
@@ -133,15 +133,15 @@
     "title": "Discriminants, parity, and ramification",
     "kind": "method",
     "subject": "galois",
-    "summary": "The discriminant vanishes precisely when roots repeat. For a separable polynomial in characteristic different from two, its square class determines the sign character of the Galois group.",
+    "summary": "The discriminant detects repeated roots. For a separable polynomial in characteristic different from two, its square class determines whether every Galois permutation is even.",
     "level": "Intermediate",
     "field": "Fields of characteristic not 2; Q",
     "status": "Classical theory",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Why does a square discriminant put the group inside A_n?",
-      "What distinguishes polynomial and number-field discriminants?",
-      "When does parity finish a Galois-group proof?"
+      "When does a square discriminant imply G ⊆ Aₙ?",
+      "How do polynomial and number-field discriminants differ?",
+      "How does the discriminant complete a proof that G = Sₙ?"
     ],
     "prerequisites": [
       "foundations"
@@ -187,7 +187,7 @@
       {
         "id": "nonconverses",
         "title": "Quartic examples",
-        "body": "<p>The polynomial \\(x^4+1\\) is irreducible over \\(\\mathbb Q\\), since replacing \\(x\\) by \\(x+1\\) makes it Eisenstein at \\(2\\). Its discriminant is \\(256\\), but its splitting field is \\(\\mathbb Q(\\zeta_8)\\), whose group is \\((\\mathbb Z/8\\mathbb Z)^\\times\\simeq C_2\\times C_2\\), strictly smaller than \\(A_4\\).</p><p>For a nonsquare example, \\(x^4-2\\) is Eisenstein at \\(2\\) and has nonsquare discriminant \\(-2048\\). Its splitting field is \\(\\mathbb Q(\\sqrt[4]{2},i)\\), of degree eight: the real field \\(\\mathbb Q(\\sqrt[4]{2})\\) has degree four and does not contain \\(i\\). The group is dihedral of order eight, not \\(S_4\\).</p><div class=\"math-block boundary\"><p class=\"block-label\">Remark</p><p>If \\(A_n\\subseteq G\\) is known, a square discriminant gives \\(G=A_n\\), and a nonsquare discriminant gives \\(G=S_n\\). The containment is essential.</p></div>",
+        "body": "<p>The polynomial \\(x^4+1\\) is irreducible over \\(\\mathbb Q\\), since replacing \\(x\\) by \\(x+1\\) makes it Eisenstein at \\(2\\). Its discriminant is \\(256\\), but its splitting field is \\(\\mathbb Q(\\zeta_8)\\), whose group is \\((\\mathbb Z/8\\mathbb Z)^\\times\\simeq C_2\\times C_2\\), strictly smaller than \\(A_4\\).</p><p>For a nonsquare example, \\(x^4-2\\) is Eisenstein at \\(2\\) and has nonsquare discriminant \\(-2048\\). Its splitting field is \\(\\mathbb Q(\\sqrt[4]{2},i)\\), of degree eight: the real field \\(\\mathbb Q(\\sqrt[4]{2})\\) has degree four and does not contain \\(i\\). The group is dihedral of order eight, not \\(S_4\\).</p><div class=\"math-block boundary\"><p class=\"block-label\">Remark</p><p>If \\(A_n\\subseteq G\\) is known, a square discriminant gives \\(G=A_n\\), and a nonsquare discriminant gives \\(G=S_n\\).</p></div>",
         "citations": [
           {
             "key": "Cox2012",
@@ -310,15 +310,15 @@
     "title": "Transitivity, primitivity, and cycle criteria",
     "kind": "method",
     "subject": "galois",
-    "summary": "Blocks, transpositions, and long cycles give criteria for alternating-group containment and equality with the symmetric group.",
+    "summary": "Primitivity and cycle structure give criteria for G ⊇ Aₙ and G = Sₙ.",
     "level": "Intermediate",
     "field": "Permutation groups; polynomial Galois groups",
     "status": "Classical theory",
     "checked": "2026-11-12",
     "questionsAnswered": [
       "How can primitivity be proved?",
-      "Why does a primitive group with a transposition equal S_n?",
-      "Which single cycles force containment of A_n?"
+      "Why does a primitive group with a transposition equal Sₙ?",
+      "Which single cycles force containment of Aₙ?"
     ],
     "prerequisites": [
       "foundations",
@@ -374,7 +374,7 @@
       {
         "id": "one-fixed-point",
         "title": "Double transitivity",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>For \\(n\\ge3\\), a transitive subgroup \\(G\\le S_n\\) containing an \\((n-1)\\)-cycle is doubly transitive. If it also contains a transposition, then \\(G=S_n\\).</p></div><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>If the cycle fixes \\(a\\), its powers act transitively on the other \\(n-1\\) points. Thus the stabilizer \\(G_a\\) is transitive there. Transitivity of \\(G\\) now moves any ordered pair of distinct points to any other: first move the first point, then use its stabilizer to move the second. This is double transitivity. Conjugating one transposition by these elements supplies every transposition, which generates \\(S_n\\).</p></div><p>No primality condition on \\(n-1\\) is needed. In arithmetic applications, a good reduction of factor degrees \\((1,n-1)\\) supplies the long cycle. Irreducibility supplies transitivity. A second squarefree pattern with one 2-cycle and all other cycles of odd lengths supplies a transposition by taking an odd power. These conditions depend only on cycle types and therefore require no common labeling of roots across primes.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>For \\(n\\ge3\\), a transitive subgroup \\(G\\le S_n\\) containing an \\((n-1)\\)-cycle is doubly transitive. If it also contains a transposition, then \\(G=S_n\\).</p></div><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>If the cycle fixes \\(a\\), its powers act transitively on the other \\(n-1\\) points. Thus the stabilizer \\(G_a\\) is transitive there. Transitivity of \\(G\\) now moves any ordered pair of distinct points to any other: first move the first point, then use its stabilizer to move the second. This is double transitivity. Conjugating one transposition by these elements supplies every transposition, which generates \\(S_n\\).</p></div><p>No primality condition on \\(n-1\\) is needed. In arithmetic applications, a good reduction of factor degrees \\((1,n-1)\\) supplies the long cycle. Irreducibility supplies transitivity. A second squarefree pattern with one 2-cycle and all other cycles of odd lengths supplies a transposition by taking an odd power. The primes need not give compatible labelings of the roots: only the cycle types are used.</p>",
         "citations": [
           {
             "key": "DixonMortimer1996",
@@ -391,7 +391,7 @@
       {
         "id": "jordan",
         "title": "Jordan's theorem and Jones's extension",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Jordan)</p><p>If a primitive subgroup \\(G\\le S_n\\) contains a \\(q\\)-cycle with \\(q\\) prime and \\(q\\le n-3\\), then \\(A_n\\subseteq G\\).</p></div><p>Combining this with the preceding argument gives the following criterion: transitivity plus a prime cycle with \\(n/2\\lt q\\le n-3\\) forces \\(A_n\\). Newton polygons often produce just such a prime divisor of the group order; the inequality \\(q\\gt n/2\\) ensures an element of order \\(q\\) is one cycle.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Jones)</p><p>A primitive subgroup containing a nontrivial single cycle that fixes at least three points contains \\(A_n\\). The cycle length need not be prime.</p></div><p>This stronger result follows from the classification in Jones's paper and uses the classification of finite simple groups. The classical prime-cycle theorem does not require that classification. Both theorems assume primitivity.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Jordan)</p><p>If a primitive subgroup \\(G\\le S_n\\) contains a \\(q\\)-cycle with \\(q\\) prime and \\(q\\le n-3\\), then \\(A_n\\subseteq G\\).</p></div><p>Combining this with the preceding argument gives the following criterion: transitivity plus a prime cycle with \\(n/2\\lt q\\le n-3\\) forces \\(A_n\\). A Newton-slope denominator divisible by such a prime \\(q\\) forces \\(q\\mid |G|\\). Cauchy’s theorem then gives an element of order \\(q\\); because \\(q>n/2\\), it has exactly one nontrivial cycle.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Jones)</p><p>A primitive subgroup containing a nontrivial single cycle that fixes at least three points contains \\(A_n\\). The cycle length need not be prime.</p></div><p>This stronger result follows from the classification in Jones's paper and uses the classification of finite simple groups. The classical prime-cycle theorem does not require that classification. Both theorems assume primitivity.</p>",
         "citations": [
           {
             "key": "Jordan1871",
@@ -421,7 +421,7 @@
       {
         "id": "hyperelliptic-jacobians",
         "title": "Hyperelliptic Jacobians",
-        "body": "<p>Large polynomial groups also constrain algebraic curves. Let \\(K\\) have characteristic zero, let \\(f\\in K[x]\\) have degree \\(n\\ge5\\), and suppose \\(\\operatorname{Gal}(f/K)=S_n\\) or \\(A_n\\). For the smooth projective curve \\(C:y^2=f(x)\\), Zarhin proves</p>\\[\\operatorname{End}_{\\overline K}(\\operatorname{Jac} C)=\\mathbb Z.\\]<p>Thus its Jacobian is absolutely simple. For example, \\(y^2=x^5-x-1\\) has a genus-two Jacobian with no geometric endomorphisms beyond integer multiplication.</p><p>The proof uses the Galois action on the Jacobian’s 2-torsion, which is obtained from the permutation module on the roots. Irreducibility of \\(f\\) alone does not give this conclusion. In positive characteristic other than 2, the theorem allows a supersingular exception.</p>",
+        "body": "<p>Large polynomial groups also constrain algebraic curves. Let \\(K\\) have characteristic zero, let \\(f\\in K[x]\\) be separable of degree \\(n\\ge5\\), and suppose \\(\\operatorname{Gal}(f/K)=S_n\\) or \\(A_n\\). For the smooth projective curve \\(C:y^2=f(x)\\), Zarhin proves</p>\\[\\operatorname{End}_{\\overline K}(\\operatorname{Jac} C)=\\mathbb Z.\\]<p>Thus its Jacobian is absolutely simple. For example, \\(y^2=x^5-x-1\\) has a genus-two Jacobian with no geometric endomorphisms beyond integer multiplication.</p><p>The proof uses the Galois action on the Jacobian’s 2-torsion, which is obtained from the permutation module on the roots. Irreducibility of \\(f\\) alone does not give this conclusion. In positive characteristic other than 2, the theorem allows a supersingular exception.</p>",
         "citations": [
           {
             "key": "Zarhin2000Hyperelliptic",
@@ -484,15 +484,15 @@
     "title": "Resolvents and subgroup tests",
     "kind": "method",
     "subject": "galois",
-    "summary": "Resolvent factorization describes Galois orbits of expressions in the roots. A simple rational root detects containment in a conjugate of the corresponding stabilizer.",
+    "summary": "Resolvents convert the Galois action on expressions in the roots into factorization tests for subgroups.",
     "level": "Intermediate",
     "field": "Q; fields of characteristic not 2 for quartics",
     "status": "Classical theory",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "How does a polynomial in the roots detect a subgroup?",
+      "How does a simple resolvent root prove subgroup containment?",
       "How is the cubic resolvent of a quartic constructed?",
-      "What distinguishes S4, A4, V4, and the C4/D4 cases?"
+      "How are the five transitive quartic groups distinguished?"
     ],
     "prerequisites": [
       "foundations",
@@ -502,7 +502,7 @@
       {
         "id": "idea",
         "title": "Invariant polynomials and coset actions",
-        "body": "<p>Let \\(f\\in K[x]\\) be separable, with roots \\(\\alpha_1,\\ldots,\\alpha_n\\); suppose its Galois group is contained in \\(G_0\\le S_n\\). Choose \\(\\Phi\\in K[X_1,\\ldots,X_n]\\) with formal stabilizer \\(H\\) in \\(G_0\\). Evaluate its orbit to obtain values \\(\\beta_1,\\ldots,\\beta_m\\), where \\(m=[G_0:H]\\), and form</p>\\[R_\\Phi(T)=\\prod_{j=1}^m(T-\\beta_j).\\]<p>The actual Galois group permutes these values, so \\(R_\\Phi\\) has coefficients in the ground field. If the values are distinct, its irreducible factor degrees are the orbit sizes for this new action. A root in the ground field gives a fixed coset, hence containment of the Galois group in a conjugate of \\(H\\).</p><p>Distinctness is essential: equal evaluated invariants can otherwise give a false subgroup containment. A nonzero resolvent discriminant certifies distinctness; if it vanishes, different root expressions may be needed.</p>",
+        "body": "<p>Let \\(f\\in K[x]\\) be separable, with roots \\(\\alpha_1,\\ldots,\\alpha_n\\); suppose its Galois group is contained in \\(G_0\\le S_n\\). Choose \\(\\Phi\\in K[X_1,\\ldots,X_n]\\) with formal stabilizer \\(H\\) in \\(G_0\\). Evaluate its orbit to obtain values \\(\\beta_1,\\ldots,\\beta_m\\), where \\(m=[G_0:H]\\), and form</p>\\[R_\\Phi(T)=\\prod_{j=1}^m(T-\\beta_j).\\]<p>The actual Galois group permutes these values, so \\(R_\\Phi\\) has coefficients in the ground field. If the values are distinct, its irreducible factor degrees are the orbit sizes for this new action. A root in the ground field gives a fixed coset, hence containment of the Galois group in a conjugate of \\(H\\). More generally, a simple root in the ground field suffices even if other resolvent values coincide.</p><p>Simplicity is essential for this subgroup test: several cosets can have the same value without any one of them being fixed. A nonzero resolvent discriminant certifies distinctness; if it vanishes, different root expressions may be needed.</p>",
         "citations": [
           {
             "key": "FiekerKlueners2014",
@@ -532,7 +532,7 @@
       {
         "id": "quartic-table",
         "title": "Quartic Galois groups",
-        "body": "<p>Assume \\(\\operatorname{char}K\\ne2\\) and \\(f\\) is a separable irreducible quartic over \\(K\\). Then:</p><div class=\"table-wrap\"><table><thead><tr><th>Resolvent over \\(K\\)</th><th>Discriminant of \\(f\\)</th><th>Galois group</th></tr></thead><tbody><tr><td>Irreducible</td><td>Nonsquare</td><td>\\(S_4\\)</td></tr><tr><td>Irreducible</td><td>Square</td><td>\\(A_4\\)</td></tr><tr><td>Splits completely</td><td>Square</td><td>\\(V_4\\)</td></tr><tr><td>One linear factor and one irreducible quadratic</td><td>Nonsquare</td><td>\\(C_4\\) or \\(D_4\\)</td></tr></tbody></table></div><p>Here \\(D_4\\) denotes the dihedral group of order eight. The last row requires an additional test. If \\(r\\in K\\) is the unique root of \\(R_f\\), they are separated by the following test: the group is \\(C_4\\) precisely when both \\(T^2+aT+(b-r)\\) and \\(T^2-rT+d\\) split over \\(K(\\sqrt{\\Delta(f)})\\); otherwise it is \\(D_4\\).</p>",
+        "body": "<p>Assume \\(\\operatorname{char}K\\ne2\\) and \\(f\\) is a separable irreducible quartic over \\(K\\). Then:</p><div class=\"table-wrap\"><table><thead><tr><th>Resolvent over \\(K\\)</th><th>Discriminant of \\(f\\)</th><th>Galois group</th></tr></thead><tbody><tr><td>Irreducible</td><td>Nonsquare</td><td>\\(S_4\\)</td></tr><tr><td>Irreducible</td><td>Square</td><td>\\(A_4\\)</td></tr><tr><td>Splits completely</td><td>Square</td><td>\\(V_4\\)</td></tr><tr><td>One linear factor and one irreducible quadratic</td><td>Nonsquare</td><td>\\(C_4\\) or \\(D_4\\)</td></tr></tbody></table></div><p>Here \\(D_4\\) denotes the dihedral group of order eight. In the last row, let \\(r\\in K\\) be the unique root of \\(R_f\\). Then the group is \\(C_4\\) precisely when both \\(T^2+aT+(b-r)\\) and \\(T^2-rT+d\\) split over \\(K(\\sqrt{\\Delta(f)})\\); otherwise it is \\(D_4\\).</p>",
         "citations": [
           {
             "key": "KappeWarren1989Quartic",
@@ -636,17 +636,15 @@
     "title": "Polynomial factorization algorithms",
     "kind": "algorithm",
     "subject": "algorithms",
-    "summary": "Finite-field factorization uses Frobenius maps and linear algebra. Factorization over the rationals combines modular factorization, Hensel lifting, and lattice reduction.",
+    "summary": "Algorithms over finite fields use Frobenius and linear algebra. Over the rationals, modular factorization, Hensel lifting and lattice reduction recover exact factors.",
     "level": "Intermediate",
     "field": "Finite fields, Q, and p-adic fields",
     "status": "Published results",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Which methods underlie exact polynomial factorization?",
-      "Why is modular factorization followed by recombination?",
-      "How can a randomized computation still produce exact factors?",
-      "How do recent modular-composition advances relate to factorization?",
-      "How are local factors found when reduction has repeated factors?"
+      "How does Frobenius separate factors over a finite field?",
+      "How are modular factors lifted and recombined over the rationals?",
+      "What do modular-composition bounds imply for factorization?"
     ],
     "prerequisites": [
       "modular-irreducibility",
@@ -869,15 +867,15 @@
     "title": "Algorithms for Galois groups",
     "kind": "algorithm",
     "subject": "algorithms",
-    "summary": "Exact factorization, modular cycle types, and relative resolvents determine Galois groups. A certified computation records the permutation action and the data for its decisive tests.",
+    "summary": "Galois-group algorithms combine local factorizations, permutation groups and resolvents. Certification proves that the resulting subgroup is the full group.",
     "level": "Intermediate",
     "field": "Q, number fields, and p-adic fields",
     "status": "Published results",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "What data certify a computed Galois group?",
-      "How are resolvents combined with modular factorizations?",
-      "What are the software limits and certification requirements?"
+      "What does it mean to compute a Galois group?",
+      "How do local factorizations and resolvents determine it?",
+      "Which software outputs require a separate proof step?"
     ],
     "prerequisites": [
       "frobenius",
@@ -927,7 +925,7 @@
       {
         "id": "software",
         "title": "Software",
-        "body": "<div class=\"table-wrap\"><table><thead><tr><th>Tool</th><th>Scope</th><th>Verification data</th></tr></thead><tbody><tr><td>Magma</td><td>Native <code>GaloisGroup</code> accepts integer, rational, and number-field polynomials without a fixed degree cap, but does not automatically prove its conditional steps. The documented <code>GaloisProof(f,S)</code> function covers integer polynomials; an absolute number-field overload is also available.</td><td>Input, options, <code>GaloisData</code>, successful proof result, and version.</td></tr><tr><td>PARI/GP 2.19</td><td><code>polgalois</code> requires irreducible input over \\(\\mathbb Q\\), of degree at most seven, or eleven with <code>galdata</code>. Its resolvent method can rarely return a wrong answer when initial numerical precision is insufficient.</td><td>Polynomial, precision, complete output, numbering convention, and version.</td></tr><tr><td>SageMath 10.10</td><td>The rational-polynomial <code>galois_group</code> interface requires irreducible input. It uses PARI through degree eleven and attempts GAP above that; GAP's documented algorithm range is through degree fifteen, with some higher cases possible. The Magma wrapper identifies groups only through degree thirty.</td><td>Routine, algorithm, backend version, permutation action, and separate certification outcome.</td></tr></tbody></table></div><p>Native Magma's degree-independent algorithm and Sage's wrapper have different limits. A database containing transitive groups of a given degree does not guarantee that the group-computation algorithm handles every polynomial of that degree. Runtime and memory can be decisive even without a formal degree cap.</p><p>For Sage number fields, <code>gc_numbering</code> controls whether permutations act on roots of the original defining polynomial or of the Galois closure's defining polynomial. The documentation also warns that calling <code>galois_group</code> on a relative extension currently computes its absolute Galois closure over \\(\\mathbb Q\\); the intended ground field must therefore be specified explicitly.</p><p>Sage also documents <code>galois_group_davenport_smith_test</code>: return values \\(1\\) and \\(2\\) certify \\(S_n\\) and \\(A_n\\), while \\(0\\) means inconclusive. Its default checks irreducibility; setting <code>assume_irreducible=True</code> requires an independently established hypothesis. This specialized test is different from unrestricted group determination.</p>",
+        "body": "<div class=\"table-wrap\"><table><thead><tr><th>Tool</th><th>Scope</th><th>Verification data</th></tr></thead><tbody><tr><td>Magma</td><td>Native <code>GaloisGroup</code> accepts integer, rational, and number-field polynomials without a fixed degree cap, but does not automatically prove its conditional steps. The documented <code>GaloisProof(f,S)</code> function covers integer polynomials; an absolute number-field overload is also available.</td><td>Input, options, <code>GaloisData</code>, successful proof result, and version.</td></tr><tr><td>PARI/GP 2.19</td><td><code>polgalois</code> requires irreducible input over \\(\\mathbb Q\\), of degree at most seven, or eleven with <code>galdata</code>. Its resolvent method can rarely return a wrong answer when initial numerical precision is insufficient.</td><td>Polynomial, precision, complete output, numbering convention, and version.</td></tr><tr><td>SageMath 10.10</td><td>The rational-polynomial <code>galois_group</code> interface requires irreducible input. It uses PARI through degree eleven and attempts GAP above that; GAP's documented algorithm range is through degree fifteen, with some higher cases possible. The Magma wrapper identifies groups only through degree thirty.</td><td>Routine, algorithm, backend version, permutation action, and separate certification outcome.</td></tr></tbody></table></div><p>Native Magma's degree-independent algorithm and Sage's wrapper have different limits. A database containing transitive groups of a given degree does not guarantee that the group-computation algorithm handles every polynomial of that degree. Runtime and memory can be decisive even without a formal degree cap.</p><p>For Sage number fields, <code>gc_numbering</code> controls whether permutations act on roots of the original defining polynomial or of the Galois closure's defining polynomial. For a relative number field, this interface currently computes the absolute Galois closure over \\(\\mathbb Q\\) and emits a deprecation warning. It does not compute the group over the intermediate base field.</p><p>Sage also documents <code>galois_group_davenport_smith_test</code>: return values \\(1\\) and \\(2\\) certify \\(S_n\\) and \\(A_n\\), while \\(0\\) means inconclusive. Its default checks irreducibility; setting <code>assume_irreducible=True</code> requires an independently established hypothesis. This specialized test is different from unrestricted group determination.</p>",
         "citations": [
           {
             "key": "MagmaGaloisDocumentation",
@@ -949,7 +947,7 @@
       {
         "id": "example",
         "title": "Example",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(f=x^4+2x+2\\), the following data determine the group:</p><ol><li>Eisenstein at \\(2\\), proving irreducibility.</li><li>The resolvent \\(R=T^3-8T-4\\), with no rational root among \\(\\pm1,\\pm2,\\pm4\\).</li><li>The discriminant \\(\\Delta(f)=1616=16\\cdot101\\), a nonsquare.</li></ol><p>The quartic classification proves the group is \\(S_4\\). The companion script verifies these identities and root tests by exact arithmetic.</p></div><p>A corresponding Magma command sequence is:</p><pre><code>Zx&lt;x&gt; := PolynomialRing(Integers());\nf := x^4 + 2*x + 2;\nG, roots, S := GaloisGroup(f);\nassert GaloisProof(f, S);\nOrder(G);</code></pre><p>These commands are a template; no Magma execution is claimed here. The algebraic proof above establishes \\(|G|=24\\) without relying on that execution.</p>",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(f=x^4+2x+2\\), the following data determine the group:</p><ol><li>Eisenstein at \\(2\\), proving irreducibility.</li><li>The resolvent \\(R=T^3-8T-4\\), with no rational root among \\(\\pm1,\\pm2,\\pm4\\).</li><li>The discriminant \\(\\Delta(f)=1616=16\\cdot101\\), a nonsquare.</li></ol><p>The quartic classification proves the group is \\(S_4\\). These three exact tests form a certificate for the group.</p></div><p>A corresponding Magma command sequence is:</p><pre><code>Zx&lt;x&gt; := PolynomialRing(Integers());\nf := x^4 + 2*x + 2;\nG, roots, S := GaloisGroup(f);\nassert GaloisProof(f, S);\nOrder(G);</code></pre><p>The commands illustrate the documented interface; they were not executed for this example. The preceding proof gives \\(|G|=24\\).</p>",
         "citations": [
           {
             "key": "ConradCubicQuartic",
@@ -979,7 +977,7 @@
       {
         "id": "data",
         "title": "Computations in families",
-        "body": "<p>A computation for a parameterized family specifies the parameter range, normalization, exceptions, and input polynomials. A finite verified range does not establish a result for all parameters; numerical experiments require a separate certification step.</p><p>Factor degrees usually identify the Frobenius cycle type rather than its precise conjugacy class in the group. Dokchitser and Dokchitser give finer invariants for distinguishing classes when cycle type is insufficient. This matters when arithmetic applications require more than the abstract group or its order.</p><p>A reproducible record includes exact coefficients, ground field, source theorem or algorithm, witness primes, discriminant, group action, certification outcome, and the date of the run. Databases supply comparison examples; the original computation or theorem supplies the proof.</p>",
+        "body": "<p>For a parameterized family, state the parameter range and exceptional cases. A computation proves only the tested cases unless a theorem reduces the whole family to that finite calculation.</p><p>Factor degrees identify the Frobenius cycle type, which may correspond to several conjugacy classes in the Galois group. Dokchitser and Dokchitser construct invariants that distinguish these classes when the arithmetic application requires them.</p><p>A reproducible group computation records the exact polynomial, ground field, permutation action, algorithm and verification data. Witness primes, resolvents and the discriminant often give a short proof that can be checked independently of the original software.</p>",
         "citations": [
           {
             "key": "DokchitserDokchitser2013",

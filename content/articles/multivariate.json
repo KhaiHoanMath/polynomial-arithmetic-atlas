@@ -1,0 +1,641 @@
+[
+  {
+    "id": "multivariate-irreducibility",
+    "title": "Polynomials in several variables",
+    "kind": "method",
+    "subject": "multivariate",
+    "summary": "Irreducibility over a field, absolute irreducibility, and the geometry of polynomial equations.",
+    "level": "Intermediate",
+    "field": "arbitrary fields",
+    "status": "Published results",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How does absolute irreducibility differ from irreducibility over the ground field?",
+      "When can a polynomial be treated as a polynomial in one variable?",
+      "When do specialization or smoothness prove irreducibility?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "absolute",
+        "title": "Irreducibility and the ground field",
+        "body": "<p>Let \\(K\\) be a field and let \\(F\\in K[x_1,\\ldots,x_r]\\) be nonconstant. It is irreducible over \\(K\\) if every factorization \\(F=GH\\) in this ring has a constant factor. It is <em>absolutely irreducible</em> if the same holds over an algebraic closure \\(\\overline K\\).</p><p>The distinction matters even for quadratic polynomials. The polynomial \\(x^2+y^2\\) is irreducible over \\(\\mathbb Q\\), but over \\(\\mathbb Q(i)\\) it equals \\((x+iy)(x-iy)\\). In contrast, \\(y-x^2\\) is absolutely irreducible: its quotient ring is \\(\\overline K[x,y]/(y-x^2)\\simeq\\overline K[x]\\), a domain.</p><p>More generally, absolute irreducibility says that the hypersurface has an integral coordinate ring after extending the field. The geometric term is <em>geometrically integral</em>. This includes both irreducibility and reducedness. In characteristic \\(p\\), the polynomial \\(x^p-t\\) over \\(K=\\mathbb F_p(t)\\) is irreducible but becomes \\((x-t^{1/p})^p\\) over \\(\\overline K\\). Its zero set has one component, but its coordinate ring is not reduced.</p>",
+        "citations": [
+          {
+            "key": "StacksGeometricIntegrality",
+            "locator": "Tags 05DW and 038K"
+          },
+          {
+            "key": "Lang2002",
+            "locator": "Chapter IV, polynomial rings"
+          }
+        ]
+      },
+      {
+        "id": "gauss",
+        "title": "One variable over a function field",
+        "body": "<p>Write \\(F\\in K[x_1,\\ldots,x_{r-1}][y]\\). Its content in \\(y\\) is a greatest common divisor of its coefficients in \\(K[x_1,\\ldots,x_{r-1}]\\). If the content is a unit, \\(F\\) is primitive in \\(y\\). Gauss’s lemma gives, for \\(\\deg_yF>0\\),</p>\\[F\\text{ primitive}\\quad\\Longrightarrow\\quad\\bigl(F\\text{ irreducible in }K[\\mathbf x,y]\\iff F\\text{ irreducible in }K(\\mathbf x)[y]\\bigr).\\]<p>This reduces many questions in several variables to familiar tests over a field. To prove absolute irreducibility, make the same argument over \\(\\overline K(\\mathbf x)\\). The coefficient field here is a rational function field; it is not the algebraic closure of that function field.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>If \\(A,B\\in K[x]\\), \\(A\\ne0\\), and \\(\\gcd(A,B)=1\\), then \\(A(x)y+B(x)\\) is absolutely irreducible. The identity \\(UA+VB=1\\) persists over \\(\\overline K\\), and a polynomial of degree one in \\(y\\) is irreducible over \\(\\overline K(x)\\). Thus \\((x^2+1)y+x\\) is absolutely irreducible over every field.</p></div>",
+        "citations": [
+          {
+            "key": "Lang2002",
+            "locator": "Chapter IV, §2: polynomials over a factorial ring"
+          }
+        ]
+      },
+      {
+        "id": "eisenstein",
+        "title": "Eisenstein over a polynomial ring",
+        "body": "<p>The prime in Eisenstein’s criterion can be an irreducible polynomial. Let \\(A=K[x_1,\\ldots,x_{r-1}]\\), let \\(\\pi\\in A\\) be irreducible, and write \\(F=a_ny^n+\\cdots+a_0\\), primitive in \\(y\\). If \\(\\pi\\nmid a_n\\), \\(\\pi\\mid a_i\\) for \\(i<n\\), and \\(\\pi^2\\nmid a_0\\), then \\(F\\) is irreducible in \\(A[y]\\).</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>For \\(n\\ge2\\), the polynomial \\(y^n+xy+x\\) is Eisenstein at \\(x\\) over \\(\\overline K[x]\\). It is therefore absolutely irreducible in every characteristic.</p></div>",
+        "citations": [
+          {
+            "key": "Lang2002",
+            "locator": "Chapter IV, Eisenstein’s criterion"
+          }
+        ]
+      },
+      {
+        "id": "specialization",
+        "title": "Specializing a variable",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Proposition</p><p>Let \\(F\\in K[x][y]\\) be primitive in \\(y\\), and let \\(a\\in K\\). If its leading coefficient in \\(y\\) does not vanish at \\(a\\) and \\(F(a,y)\\) is irreducible in \\(K[y]\\), then \\(F\\) is irreducible in \\(K[x,y]\\).</p></div><div class=\"math-block proof\"><p>In a nontrivial factorization, primitivity forces both factors to have positive \\(y\\)-degree. The product of their leading coefficients is the leading coefficient of \\(F\\), so neither leading coefficient vanishes at \\(a\\). Specialization would give two nonconstant factors of \\(F(a,y)\\), a contradiction.</p></div><p>Both hypotheses have a purpose. The polynomial \\((xy+1)(y+1)\\) specializes at \\(x=0\\) to the irreducible polynomial \\(y+1\\), because one factor loses degree. Likewise, \\((x+1)(y^2+1)\\) specializes to \\(y^2+1\\) over \\(\\mathbb Q\\) at \\(x=0\\), but is not primitive in \\(y\\).</p><p>For example, \\(y^2-x\\) is irreducible over \\(\\mathbb Q[x,y]\\) because its specialization at \\(x=2\\) is irreducible. Its absolute irreducibility follows instead from the linear-variable argument. Over an algebraically closed field, a specialized univariate polynomial of degree greater than one always factors.</p>",
+        "citations": [
+          {
+            "key": "Lang2002",
+            "locator": "Chapter IV; the specialization proposition follows from Gauss’s lemma"
+          }
+        ]
+      },
+      {
+        "id": "projective",
+        "title": "Smooth projective curves",
+        "body": "<p>For a bivariate polynomial \\(F\\) of total degree \\(d\\), its homogenization is \\(F^{\\mathrm h}(X,Y,Z)=Z^dF(X/Z,Y/Z)\\). It defines the projective closure of the affine curve \\(F=0\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Proposition</p><p>If the projective plane curve \\(F^{\\mathrm h}=0\\) is smooth over \\(\\overline K\\), then \\(F\\) is absolutely irreducible.</p></div><div class=\"math-block proof\"><p>Two distinct projective plane components meet by Bézout’s theorem. At such an intersection, all partial derivatives of their product vanish. A repeated component also gives singular points. Thus a smooth projective plane curve has a single reduced component.</p></div><p>For \\(\\operatorname{char}K\\ne2\\), the conic \\(X^2+Y^2+Z^2=0\\) is smooth: its three partial derivatives cannot vanish at a projective point. Hence \\(x^2+y^2+1\\) is absolutely irreducible.</p><p>Affine smoothness alone does not suffice. The curve \\(x(x-1)=0\\) consists of two disjoint smooth affine lines. Their projective closures meet at infinity. Conversely, an irreducible curve may be singular: \\(y^2-x^3\\) is irreducible over \\(\\mathbb C\\) and has a cusp at the origin.</p>",
+        "citations": [
+          {
+            "key": "Fulton2008Curves",
+            "locator": "Chapters 3–5; especially §5.3, Bézout’s theorem"
+          }
+        ]
+      },
+      {
+        "id": "methods",
+        "title": "Support, fibers, and factorization",
+        "body": "<span id=\"polytope\"></span><span id=\"criterion\"></span><span id=\"triangle-example\"></span><span id=\"failures\"></span><span id=\"beyond-shape\"></span><p>Newton polytopes constrain factor supports. The fibers \\(F-\\lambda\\) connect irreducibility with polynomial composition. Factorization algorithms recover factors from coefficient equations, lifting, or differential identities.</p><p>These methods developed along different lines: elimination theory gives Noether’s coefficient criteria; Ostrowski’s product formula leads to the polytope method; the study of curves \\(f(x)=g(y)\\) connects ramification and permutation groups with factorization. Modern algorithms often combine these viewpoints.</p><p>The following articles give the statements and examples: <a href=\"multivariate-newton-polytopes.html\">Newton polytopes</a>, <a href=\"separated-variable-polynomials.html\">separated variables</a>, <a href=\"polynomial-fibers.html\">polynomial fibers and Bertini’s theorem</a>, and <a href=\"multivariate-factorization.html\">factorization in several variables</a>.</p>",
+        "citations": [
+          {
+            "key": "GaoLauder2001",
+            "locator": "§§1–2"
+          },
+          {
+            "key": "Kaltofen1995",
+            "locator": "§§1 and 5"
+          },
+          {
+            "key": "DavenportLewisSchinzel1961"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "multivariate-newton-polytopes",
+        "relation": "Related to",
+        "why": "Exponent supports constrain possible factor supports."
+      },
+      {
+        "id": "separated-variable-polynomials",
+        "relation": "Related to",
+        "why": "Differences f(x)−g(y) connect multivariate irreducibility with monodromy."
+      },
+      {
+        "id": "polynomial-fibers",
+        "relation": "Related to",
+        "why": "Composition controls the irreducibility of general fibers."
+      },
+      {
+        "id": "multivariate-factorization",
+        "relation": "Related to",
+        "why": "Coefficient equations and local expansions give effective methods."
+      }
+    ],
+    "questions": [
+      {
+        "id": "beyond-newton-support",
+        "title": "Which coefficient conditions imply absolute irreducibility when the Newton polytope decomposes?",
+        "status": "Research direction",
+        "scope": "A fixed multivariate support and a specified coefficient field",
+        "body": "<p>A decomposition of the polytope gives possible supports of factors, but does not determine whether those factors exist. For a specified family, one can study the reducibility locus in coefficient space or combine the support conditions with differential or lifting methods. The question concerns criteria adapted to that family, rather than a general factorization algorithm.</p>",
+        "citations": [
+          {
+            "key": "GaoLauder2001",
+            "locator": "§5"
+          },
+          {
+            "key": "Kaltofen1995"
+          },
+          {
+            "key": "Gao2003PDE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "multivariate-newton-polytopes",
+    "title": "Newton polytopes and irreducibility",
+    "kind": "method",
+    "subject": "multivariate",
+    "summary": "Factorization gives a Minkowski decomposition of the exponent polytope. A positive-dimensional, integrally indecomposable polytope proves absolute irreducibility when monomial factors are excluded.",
+    "level": "Intermediate",
+    "field": "arbitrary fields",
+    "status": "Published results",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "When does the Newton polytope prove absolute irreducibility?",
+      "How are monomial factors detected?",
+      "What can be concluded when the polytope decomposes?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "polytope",
+        "title": "Newton polytopes and products",
+        "body": "<p>For \\(f=\\sum_{\\mathbf a}c_{\\mathbf a}x^{\\mathbf a}\\), its Newton polytope is</p>\\[\\operatorname{Newt}(f)=\\operatorname{conv}\\{\\mathbf a\\in\\mathbb Z_{\\ge0}^{r}:c_{\\mathbf a}\\ne0\\}.\\]<p>For a product, \\(\\operatorname{Newt}(gh)=\\operatorname{Newt}(g)+\\operatorname{Newt}(h)\\), where the right side is the Minkowski sum. For a linear weight with unique maxima on the two factor polytopes, the product of the highest-weight terms is nonzero and is the unique highest-weight term of the product. Varying the weight determines the polytope and proves the identity.</p><p>A lattice polytope is integrally indecomposable if every expression as a sum of two lattice polytopes has a point as one summand. A point polytope corresponds to a monomial, not necessarily to a constant.</p>",
+        "citations": [
+          {
+            "key": "GaoLauder2001",
+            "locator": "§2, Lemma 1 and Corollary 2",
+            "note": "Product formula, with its origin attributed to Ostrowski, and the monomial caveat."
+          }
+        ]
+      },
+      {
+        "id": "criterion",
+        "title": "The indecomposability criterion",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Newton-polytope criterion)</p><p>Let \\(f\\in K[x_1,\\ldots,x_r]\\) be nonconstant and divisible by no variable \\(x_i\\). If \\(\\operatorname{Newt}(f)\\) is integrally indecomposable, then \\(f\\) is absolutely irreducible.</p></div><div class=\"math-block proof\"><p>Any factorization over \\(\\overline K\\) decomposes the same lattice polytope. One factor must therefore have point support and be a monomial. Since no variable divides \\(f\\), that factor is a nonzero constant. This excludes every nontrivial factorization.</p></div><p>The criterion depends only on the support. It remains valid after changing the nonzero coefficients, over any field, provided the support is unchanged.</p>",
+        "citations": [
+          {
+            "key": "Gao2001Polytopes",
+            "note": "Integral indecomposability criterion; the elementary proof is included."
+          },
+          {
+            "key": "GaoLauder2001",
+            "locator": "Corollary 2",
+            "note": "Explicit statement excluding divisibility by any variable."
+          }
+        ]
+      },
+      {
+        "id": "triangle-example",
+        "title": "Example",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Consider \\(f=1+x^2y+xy^3\\) over any field. Its Newton polygon has vertices \\((0,0),(2,1),(1,3)\\). The oriented edge vectors are \\((2,1),(-1,2),(-1,-3)\\), all primitive integer vectors.</p><p>A nontrivial Minkowski summand of a triangle must itself be a triangle with parallel corresponding edges; a segment summand would introduce another edge direction. The two triangular summands would therefore divide each edge into two positive integral lengths. A primitive edge has lattice length one, so this is impossible. The polygon is integrally indecomposable. The nonzero constant term excludes nonconstant monomial factors. The criterion therefore proves absolute irreducibility in every characteristic.</p></div>",
+        "citations": [
+          {
+            "key": "Gao2001Polytopes",
+            "note": "Triangle indecomposability criteria; this particular support is checked explicitly here."
+          }
+        ]
+      },
+      {
+        "id": "failures",
+        "title": "Limitations",
+        "body": "<div class=\"math-block boundary\"><p><strong>Monomial factors.</strong> The polynomial \\(x(1+x+y)\\) has a translated indecomposable triangle as its Newton polygon, but has a nonconstant monomial factor. The hypothesis excluding variable divisors is essential.</p><p><strong>The converse is false.</strong> Over a field of characteristic different from two, \\(x^2+y^2+1\\) is absolutely irreducible, although its polygon is twice the standard simplex and hence decomposable. Its projective homogenization \\(X^2+Y^2+Z^2\\) is nonsingular; a reducible projective conic over an algebraically closed field is a pair of lines, possibly repeated, and is singular. In characteristic two this example becomes \\((x+y+1)^2\\), so the characteristic restriction is necessary.</p></div>",
+        "citations": [
+          {
+            "key": "GaoLauder2001",
+            "locator": "§5",
+            "note": "A decomposable polytope makes the shape test inconclusive; the examples are direct checks."
+          }
+        ]
+      },
+      {
+        "id": "laurent",
+        "title": "Laurent polynomials and changes of exponents",
+        "body": "<p>In the Laurent polynomial ring \\(K[x_1^{\\pm1},\\ldots,x_r^{\\pm1}]\\), every nonzero scalar times a monomial is a unit. Thus the polytope criterion has a simpler form: a Laurent polynomial with at least two terms and an integrally indecomposable Newton polytope is absolutely irreducible in the Laurent ring.</p><p>A matrix in \\(\\mathrm{GL}_r(\\mathbb Z)\\) defines an invertible monomial substitution. It preserves Laurent irreducibility and takes Newton polytopes to their images under the corresponding lattice map. For ordinary polynomials, any common monomial factor must be removed separately.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>The polynomial \\(x^ay^b-1\\), with \\(a,b\\ge0\\) and \\((a,b)\\ne(0,0)\\), is absolutely irreducible exactly when \\(\\gcd(a,b)=1\\). If the gcd is one, a lattice change sends its exponent vector to \\((1,0)\\). If the gcd is \\(e>1\\), it is \\((x^{a/e}y^{b/e})^e-1\\), which factors over \\(\\overline K\\), possibly with repeated factors.</p></div>",
+        "citations": [
+          {
+            "key": "GaoLauder2001",
+            "locator": "§2, lattice polytopes and polynomial factors"
+          }
+        ]
+      },
+      {
+        "id": "decomposable",
+        "title": "When the polytope decomposes",
+        "body": "<p>A possible Minkowski decomposition is a necessary condition on the supports of two factors. The coefficients must still satisfy their product equations. Thus the polytope can rule out a factorization without solving for any coefficients, but a decomposition does not construct factors.</p><p>For example, \\((1+x)(1+y)\\) and \\(1+x+y+2xy\\) have the same square Newton polygon over \\(\\mathbb Q\\). The first factors. The second is absolutely irreducible: as a polynomial in \\(y\\), it is \\((1+2x)y+(1+x)\\), and these two coefficients are coprime even over \\(\\overline{\\mathbb Q}\\).</p><p>When the polygon has few possible summands, its geometry can also reduce the work needed by a factorization algorithm. Weimann’s published 2025 method uses such information under explicit nondegeneracy and characteristic assumptions.</p>",
+        "citations": [
+          {
+            "key": "GaoLauder2001",
+            "locator": "§5"
+          },
+          {
+            "key": "Weimann2025ConvexDense",
+            "locator": "Definition 1.1 and Theorem 1.2"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "multivariate-irreducibility",
+        "relation": "Related to",
+        "why": "Gauss’s lemma and linear-variable tests complement the support test."
+      },
+      {
+        "id": "newton-polygons",
+        "relation": "Related to",
+        "why": "Valuation polygons use coefficient valuations; these polytopes use exponent support."
+      },
+      {
+        "id": "multivariate-factorization",
+        "relation": "Related to",
+        "why": "Polytope constraints can reduce lifting and recombination work."
+      }
+    ],
+    "questions": []
+  },
+  {
+    "id": "separated-variable-polynomials",
+    "title": "Polynomials with separated variables",
+    "kind": "method",
+    "subject": "multivariate",
+    "summary": "Criteria for f(x)−g(y), sums in independent variables, and the Davenport–Lewis–Schinzel problem.",
+    "level": "Intermediate",
+    "field": "arbitrary fields for coprime degrees; characteristic zero for the classification",
+    "status": "Published results and a preprint claim",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Why do coprime degrees imply absolute irreducibility of f(x)−g(y)?",
+      "When is a sum of three nonconstant univariate polynomials irreducible?",
+      "What is known about the classification of reducible pairs f(x)−g(y)?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "coprime",
+        "title": "Coprime degrees",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>Let \\(f,g\\in K[t]\\) be nonconstant, of degrees \\(m,n\\). If \\(\\gcd(m,n)=1\\), then \\(f(x)-g(y)\\) is absolutely irreducible. The field may have any characteristic.</p></div><div class=\"math-block proof\"><p>Work over \\(\\overline K(x)\\) with the valuation \\(v_\\infty(A/B)=\\deg B-\\deg A\\). As a polynomial in \\(y\\), \\(g(y)-f(x)\\) has constant coefficient of valuation \\(-m\\), leading coefficient of valuation zero, and all intermediate nonzero coefficients of valuation zero. Its lower Newton polygon is one segment from \\((0,-m)\\) to \\((n,0)\\). Since its slope is \\(m/n\\) in lowest terms, the degree in \\(y\\) of every nonconstant factor is divisible by \\(n\\). The polynomial is therefore irreducible over \\(\\overline K(x)\\). Its leading coefficient is constant, so Gauss’s lemma gives absolute irreducibility in two variables.</p></div><p>For example, \\(x^3+x-y^2-1\\) is absolutely irreducible over every field. When the degrees have a common divisor, this argument is inconclusive: \\(x^2-y^2\\) factors, whereas \\(x^2-y^2-1\\) is absolutely irreducible in characteristic different from two.</p>",
+        "citations": [
+          {
+            "key": "PanaitopolStefanescu1990",
+            "locator": "Corollary 3; apply the degree-index criterion to f(x)−g(y)"
+          }
+        ]
+      },
+      {
+        "id": "degree-index",
+        "title": "A degree criterion",
+        "body": "<p>The same proof applies to</p>\\[F(x,y)=cy^n+a_1(x)y^{n-1}+\\cdots+a_n(x),\\qquad c\\in K^\\times.\\]<p>Put \\(m=\\deg a_n>0\\). If</p>\\[\\deg a_i\\le\\frac{im}{n}\\quad(1\\le i<n),\\qquad \\gcd(m,n)=1,\\]<p>then \\(F\\) is absolutely irreducible. The inequalities place every intermediate valuation point on or above the segment joining \\((0,-m)\\) and \\((n,0)\\).</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>The polynomial \\(y^3+xy^2+x^3y+x^5+1\\) satisfies the inequalities with \\((m,n)=(5,3)\\): \\(1\\le5/3\\) and \\(3\\le10/3\\). It is absolutely irreducible in every characteristic.</p></div>",
+        "citations": [
+          {
+            "key": "PanaitopolStefanescu1990",
+            "locator": "Proposition 2 and Corollary 3"
+          }
+        ]
+      },
+      {
+        "id": "three-variables",
+        "title": "Sums in three or more variables",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Tverberg)</p><p>Let \\(K\\) have characteristic zero, let \\(r\\ge3\\), and let each \\(f_i\\in K[x_i]\\) be nonconstant. Then \\(f_1(x_1)+\\cdots+f_r(x_r)\\) is absolutely irreducible.</p></div><p>No coprimality condition on the degrees is required. For instance, \\(x^4+y^4+z^4\\) is absolutely irreducible over \\(\\mathbb Q\\). The characteristic assumption cannot be dropped: in characteristic \\(p\\), \\(x^p+y^p+z^p=(x+y+z)^p\\).</p><p>Tverberg also studied the positive-characteristic exceptions for three variables. Singh and Khanduja extended this work to any number of variables at least three. Their result concerns additive-polynomial obstructions.</p>",
+        "citations": [
+          {
+            "key": "Schinzel2000",
+            "locator": "§1.7, Corollaries 2–3"
+          },
+          {
+            "key": "Tverberg1966",
+            "locator": "pp. 364–366"
+          },
+          {
+            "key": "SinghKhanduja2004",
+            "locator": "Introduction and main theorem"
+          }
+        ]
+      },
+      {
+        "id": "critical-values",
+        "title": "Critical values",
+        "body": "<p>For \\(f,g\\in\\mathbb C[t]\\), the roots of \\(\\operatorname{disc}_t(f(t)+\\lambda)\\) are the negatives of the critical values of \\(f\\). They record where the roots merge as the value of the polynomial changes.</p><p>A criterion of Davenport–Lewis–Schinzel, stated as Theorem A by Brindza–Pintér, is the following. For \\(f,g\\in\\mathbb Z[t]\\), if \\(\\deg f=n>1\\), \\(\\deg g=m>1\\), and at least \\(\\lfloor n/2\\rfloor\\) distinct roots of \\(D(\\lambda)=\\operatorname{disc}(f+\\lambda)\\) are not roots of \\(E(\\lambda)=\\operatorname{disc}(g+\\lambda)\\), then \\(f(x)-g(y)\\) is irreducible over \\(\\mathbb C\\). Brindza–Pintér apply the criterion to products of consecutive linear factors.</p><p>This uses the positions of branch values, rather than only the degrees. The associated monodromy actions explain why two polynomials with equal degrees can behave quite differently.</p>",
+        "citations": [
+          {
+            "key": "DavenportLewisSchinzel1961"
+          },
+          {
+            "key": "BrindzaPinter1997",
+            "locator": "p. 303, Theorem A"
+          }
+        ]
+      },
+      {
+        "id": "composition",
+        "title": "Composition and reducible pairs",
+        "body": "<p>A common left composition factor gives a direct factorization. If \\(f=h\\circ u\\), \\(g=h\\circ v\\), and \\(\\deg h>1\\), then \\(u(x)-v(y)\\) divides \\(f(x)-g(y)\\), because \\(U-V\\) divides \\(h(U)-h(V)\\). Both resulting factors are nonconstant.</p><p>There are also exceptional pairs without a common left factor. Cassou-Noguès and Couveignes give explicit families in degrees \\(7,11,13,15,21,31\\), linked to different permutation actions of the same monodromy group.</p><p><strong>Claimed in a 2026 preprint.</strong> Behajaina–König–Neftin’s Theorem 1.1 classifies all reducible pairs over \\(\\mathbb C\\): they arise from a common left factor, the listed exceptional pairs, or the Chebyshev pair \\((T_4,-T_4)\\), with \\(T_4(t)=t^4-4t^2+2\\), by the compositions specified in the theorem.</p>",
+        "citations": [
+          {
+            "key": "CassouNoguesCouveignes1999",
+            "locator": "§5"
+          },
+          {
+            "key": "BehajainaKonigNeftin2026DLS",
+            "locator": "Theorem 1.1, arXiv v1 (29 March 2026)"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "multivariate-newton-polytopes",
+        "relation": "Related to",
+        "why": "A valuation at infinity gives a complementary Newton-polygon test."
+      },
+      {
+        "id": "polynomial-decomposition",
+        "relation": "Related to",
+        "why": "Common composition factors account for many reducible pairs."
+      },
+      {
+        "id": "critical-points-monodromy",
+        "relation": "Related to",
+        "why": "Branch values and permutation actions describe separated-variable curves."
+      },
+      {
+        "id": "polynomial-fibers",
+        "relation": "Related to",
+        "why": "The curves f(x)=g(y) are fiber products of polynomial maps."
+      }
+    ],
+    "questions": [
+      {
+        "id": "davenport-lewis-schinzel-classification",
+        "title": "Which pairs f(x)−g(y) are reducible over the complex numbers?",
+        "status": "Claimed",
+        "scope": "Nonconstant complex polynomials of degree at least two",
+        "body": "<p>A full classification is claimed in Behajaina–König–Neftin’s March 2026 preprint, Theorem 1.1. The published exceptional families are described by Cassou-Noguès and Couveignes.</p>",
+        "citations": [
+          {
+            "key": "BehajainaKonigNeftin2026DLS",
+            "locator": "Theorem 1.1"
+          },
+          {
+            "key": "CassouNoguesCouveignes1999",
+            "locator": "§5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polynomial-fibers",
+    "title": "Polynomial fibers and Bertini’s theorem",
+    "kind": "method",
+    "subject": "multivariate",
+    "summary": "Composition, exceptional reducible fibers, and the irreducibility of general sections.",
+    "level": "Intermediate",
+    "field": "complex numbers for the initial statements; other fields as specified",
+    "status": "Published results",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "When are only finitely many fibers F−λ reducible?",
+      "How does a composition F=h(H) affect its fibers?",
+      "What does Bertini’s theorem say over infinite and finite fields?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "fibers",
+        "title": "Fibers and composition",
+        "body": "<p>A nonconstant polynomial \\(F\\in\\mathbb C[x_1,\\ldots,x_r]\\), with \\(r\\ge2\\), defines a map to the affine line. The fiber over \\(\\lambda\\) is the hypersurface \\(F-\\lambda=0\\). Call \\(F\\) <em>composite</em> if \\(F=h(H)\\) for a polynomial \\(H\\in\\mathbb C[\\mathbf x]\\) and a univariate polynomial \\(h\\) of degree at least two.</p><p>If \\(F=h(H)\\), then every \\(F-\\lambda\\) factors over \\(\\mathbb C\\): factor \\(h(T)-\\lambda\\) into linear factors and substitute \\(H\\). Repeated factors count as reducibility. Thus composition explains a whole family of reducible fibers, rather than a single exceptional value.</p><p>The converse holds: if \\(F\\) is not composite, all but finitely many \\(F-\\lambda\\) are irreducible. Equivalently, \\(F-t\\) is irreducible over \\(\\overline{\\mathbb C(t)}\\).</p>",
+        "citations": [
+          {
+            "key": "BodinDebesNajib2009Spectrum",
+            "locator": "§1, statements (1)–(2)"
+          }
+        ]
+      },
+      {
+        "id": "generic",
+        "title": "The generic fiber and its field",
+        "body": "<p>For every nonconstant \\(F\\), the polynomial \\(F-t\\) is already irreducible over \\(\\mathbb C(t)\\): the quotient \\(\\mathbb C[\\mathbf x,t]/(F-t)\\) is \\(\\mathbb C[\\mathbf x]\\), and localization in the nonzero polynomials in \\(t\\) remains a domain. This ordinary irreducibility does not imply that general complex fibers are irreducible.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Take \\(F=(xy)^2\\). The polynomial \\((xy)^2-t\\) is irreducible over \\(\\mathbb C(t)\\), but over its algebraic closure it factors as \\((xy-\\sqrt t)(xy+\\sqrt t)\\). Every complex fiber is reducible, and the fiber over zero is nonreduced. In contrast, \\(xy-\\lambda\\) is irreducible for every \\(\\lambda\\ne0\\), by Gauss’s lemma applied in \\(y\\).</p></div>",
+        "citations": [
+          {
+            "key": "BodinDebesNajib2009Spectrum",
+            "locator": "§1; the distinction between k(t) and its algebraic closure"
+          }
+        ]
+      },
+      {
+        "id": "spectrum",
+        "title": "The spectrum and Stein’s bound",
+        "body": "<p>The <em>spectrum</em> of \\(F\\) is the set of \\(\\lambda\\) for which \\(F-\\lambda\\) is reducible. For a non-composite \\(F\\in\\mathbb C[x,y]\\) of total degree \\(d\\), let \\(r_\\lambda\\) be the number of distinct irreducible factors of \\(F-\\lambda\\). Stein’s theorem gives</p>\\[\\sum_{\\lambda\\in\\mathbb C}(r_\\lambda-1)\\le d-1.\\]<p>In particular, there are at most \\(d-1\\) reducible fibers. For \\(F=xy\\), the only such value is zero, where \\(xy\\) has two components; equality holds.</p><p>Lorenzini extended the theorem to algebraically closed fields of arbitrary characteristic and refined the bound. Bodin–Dèbes–Najib study how the spectrum changes under specialization and reduction. For a rational function \\(P/Q\\), the corresponding family is \\(P-\\lambda Q\\), with a separate fiber at infinity; its bounds and hypotheses differ from the polynomial case. Benelmekki–Najib give a later proof of a rational-function bound using Lüroth’s theorem.</p>",
+        "citations": [
+          {
+            "key": "Stein1989",
+            "locator": "Main theorem"
+          },
+          {
+            "key": "Lorenzini1993"
+          },
+          {
+            "key": "BodinDebesNajib2009Spectrum",
+            "locator": "Theorem 2.1"
+          },
+          {
+            "key": "BenelmekkiNajib2023",
+            "locator": "Introduction; proof using Lüroth’s theorem"
+          }
+        ]
+      },
+      {
+        "id": "bertini",
+        "title": "General linear sections",
+        "body": "<p>Bertini’s theorem concerns a different variation: intersect a fixed variety with a varying hyperplane. Over an algebraically closed field, a smooth irreducible projective variety of dimension at least two has a smooth irreducible general hyperplane section. Here “general” means that the hyperplanes lie in a nonempty Zariski open subset of the parameter space.</p><p>The dimension assumption matters. A general hyperplane meets a projective curve in finitely many points, and this intersection need not be irreducible. The theorem also concerns varying hyperplanes: it does not say that every section in a chosen pencil is irreducible.</p><p>There are quantitative versions. Poonen–Slavov bound the dimension of the exceptional hyperplanes for suitable morphisms to projective space. Kmentt–Shute extend the dimension estimate to linear sections of higher codimension.</p>",
+        "citations": [
+          {
+            "key": "StacksBertini",
+            "locator": "Tag 0G4C, Remark 37.32.4"
+          },
+          {
+            "key": "PoonenSlavov2022",
+            "locator": "Theorems 1.1 and 1.5"
+          },
+          {
+            "key": "KmenttShute2022",
+            "locator": "Theorem 1.2"
+          }
+        ]
+      },
+      {
+        "id": "finite-fields",
+        "title": "Sections over finite fields",
+        "body": "<p>Over a finite field, a nonempty open subset of the parameter space need not contain a rational point. The usual existence argument for a general hyperplane therefore does not apply directly.</p><p>Charles–Poonen prove the following replacement. Let \\(X\\subseteq\\mathbb P^N_{\\mathbb F_q}\\) be geometrically irreducible with \\(\\dim X\\ge2\\). Among all degree-\\(d\\) homogeneous polynomials over \\(\\mathbb F_q\\), the proportion whose hypersurfaces meet \\(X\\) in a geometrically irreducible scheme tends to one as \\(d\\to\\infty\\). This is a statement about geometric irreducibility; reducedness is a separate property.</p><p>The published erratum corrects part of the proof and leaves the main results unchanged.</p>",
+        "citations": [
+          {
+            "key": "CharlesPoonen2016",
+            "locator": "Theorem 1.1"
+          },
+          {
+            "key": "CharlesPoonen2019Erratum",
+            "locator": "Correction to Lemma 5.1"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "multivariate-irreducibility",
+        "relation": "Related to",
+        "why": "Ground-field and geometric irreducibility are different properties."
+      },
+      {
+        "id": "specialization",
+        "relation": "Related to",
+        "why": "Hilbert irreducibility concerns arithmetic specializations over the ground field."
+      },
+      {
+        "id": "polynomial-decomposition",
+        "relation": "Related to",
+        "why": "Composition determines whether general geometric fibers are irreducible."
+      },
+      {
+        "id": "finite-field-irreducibility",
+        "relation": "Related to",
+        "why": "Finite fields require separate existence and counting arguments."
+      }
+    ],
+    "questions": []
+  },
+  {
+    "id": "multivariate-factorization",
+    "title": "Factorization in several variables",
+    "kind": "method",
+    "subject": "multivariate",
+    "summary": "Coefficient equations, local factorization, differential methods, and algorithms that use sparse support.",
+    "level": "Advanced",
+    "field": "arbitrary fields",
+    "status": "Published results",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How can absolute irreducibility be expressed by equations in the coefficients?",
+      "Why must local factors be recombined?",
+      "How do derivatives and Newton polytopes help compute factors?"
+    ],
+    "prerequisites": [
+      "foundations"
+    ],
+    "sections": [
+      {
+        "id": "noether",
+        "title": "Noether forms",
+        "body": "<p>Fix a number of variables \\(r\\ge2\\) and a total degree \\(d\\ge2\\). Noether forms are finitely many polynomials with integer coefficients in the coefficients of a general polynomial \\(F\\) of degree at most \\(d\\). Their simultaneous vanishing means that \\(F\\) is reducible over the algebraic closure or has degree less than \\(d\\). Thus, for an input of exact degree \\(d\\), one nonzero form proves absolute irreducibility. Kaltofen gives effective degree and coefficient bounds valid in arbitrary characteristic.</p><p>In a family, substituting the parameter-dependent coefficients into these forms gives equations for the reducible members and degree drops. This explains why the exceptional set is algebraic.</p>",
+        "citations": [
+          {
+            "key": "Kaltofen1995",
+            "locator": "§5, Theorem 7"
+          }
+        ]
+      },
+      {
+        "id": "lifting",
+        "title": "Lifting and recombination",
+        "body": "<p>A common factorization method starts with \\(F(0,y)\\). When the relevant factors are coprime and the leading coefficient is suitable, Hensel lifting extends them to factors in \\(K[[x]][y]\\), to a chosen precision. Products of these local factors are then tested for being polynomial factors of \\(F\\). This second step is called recombination.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Over \\(\\mathbb C\\), the polynomial \\(y^2-(1+x)\\) is absolutely irreducible: it is linear in \\(x\\). In \\(\\mathbb C[[x]][y]\\), however, it factors as</p>\\[(y-\\sqrt{1+x})(y+\\sqrt{1+x}),\\qquad \\sqrt{1+x}=1+\\tfrac12x-\\tfrac18x^2+\\cdots.\\]<p>These formal factors are not polynomial factors.</p></div>",
+        "citations": [
+          {
+            "key": "Lecerf2013",
+            "locator": "§§5.1–5.3 and 5.7"
+          }
+        ]
+      },
+      {
+        "id": "differential",
+        "title": "Differential methods",
+        "body": "<p>If \\(F=\\prod_iF_i\\), its logarithmic differential is \\(dF/F=\\sum_i dF_i/F_i\\). The form \\((G/F)\\,dx+(H/F)\\,dy\\) is closed precisely when</p>\\[F(G_y-H_x)=G F_y-H F_x.\\]<p>Fix \\(F\\in K[x,y]\\) of bidegree \\((m,n)\\), with \\(m,n\\ge1\\) and \\(\\gcd(F,F_x)=1\\). Let \\(V\\) consist of the polynomials \\(G\\) for which this equation has a solution \\(H\\) satisfying</p>\\[\\deg_xG\\le m-1,\\quad\\deg_yG\\le n,\\qquad\\deg_xH\\le m,\\quad\\deg_yH\\le n-1.\\]<div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Gao)</p><p>If \\(\\operatorname{char}K=0\\) or \\(\\operatorname{char}K>(2m-1)n\\), then \\(\\dim_KV\\) equals the number of absolutely irreducible factors of \\(F\\). In particular, \\(F\\) is absolutely irreducible if and only if \\(\\dim_KV=1\\).</p></div><p>The equation is linear in the coefficients of \\(G,H\\). It therefore turns the factor-counting problem into exact linear algebra. A basis also yields factors through gcd computations.</p><p>In smaller characteristic, the dimension can exceed the number of absolute factors. Hoppen–Rodrigues–Trevisan identify a subspace with the required dimension in every characteristic. Their result also shows that \\(\\dim_KV=1\\) remains a sufficient certificate under \\(\\gcd(F,F_x)=1\\), even when the converse fails.</p>",
+        "citations": [
+          {
+            "key": "Gao2003PDE",
+            "locator": "§2, Theorem 2.3 and Corollary 2.5"
+          },
+          {
+            "key": "HoppenRodriguesTrevisan2011",
+            "locator": "Theorems 1.1–1.3; §2"
+          }
+        ]
+      },
+      {
+        "id": "differential-example",
+        "title": "Example",
+        "body": "<p>Take \\(F_c=x^2+y^2+c\\) over \\(\\mathbb Q\\), with \\(c=0\\) or \\(1\\). Its bidegree is \\((2,2)\\), and \\(\\gcd(F_c,(F_c)_x)=1\\). The degree bounds allow six terms in each numerator:</p>\\[\\begin{aligned}G&=a_{00}+a_{01}y+a_{02}y^2+a_{10}x+a_{11}xy+a_{12}xy^2,\\\\H&=b_{00}+b_{01}y+b_{10}x+b_{11}xy+b_{20}x^2+b_{21}x^2y.\\end{aligned}\\]<p>Substitute these expressions into \\(F_c(G_y-H_x)=2yG-2xH\\). Comparing the coefficients of \\(x^3y,xy^3,x^3,y^3\\) first gives \\(a_{12}=b_{21}=a_{11}=b_{11}=0\\). The remaining equations reduce to</p>\\[\\begin{gathered}a_{00}=a_{02}=b_{00}=b_{20}=0,\\\\a_{10}=b_{01},\\qquad a_{01}=-b_{10},\\qquad c\\,a_{01}=0.\\end{gathered}\\]<p>Thus every solution has the form</p>\\[G=ux+vy,\\qquad H=uy-vx,\\qquad cv=0.\\]<p>For \\(c=1\\), this gives \\(V=\\mathbb Q x\\), of dimension one. Gao’s theorem proves that \\(x^2+y^2+1\\) is absolutely irreducible. For \\(c=0\\), it gives \\(V=\\mathbb Q x+\\mathbb Q y\\), of dimension two. Accordingly,</p>\\[x^2+y^2=(x+iy)(x-iy)\\]<p>has two absolute factors, although it is irreducible over \\(\\mathbb Q\\). Their logarithmic differentials give the numerator pairs \\((x-iy,\\,y+ix)\\) and \\((x+iy,\\,y-ix)\\). These span the same two-dimensional solution space after extending the coefficient field to \\(\\mathbb Q(i)\\). The linear system counts absolute factors without first finding their coefficients.</p>",
+        "citations": [
+          {
+            "key": "Gao2003PDE",
+            "locator": "§2, Theorem 2.3; the two linear systems are computed here"
+          }
+        ]
+      },
+      {
+        "id": "fields",
+        "title": "Fields of factors",
+        "body": "<p>Over a perfect field \\(K\\), each irreducible factor over \\(K\\) is, up to a scalar, the product of one Galois orbit of absolute factors. For example, \\(x+iy\\) and \\(x-iy\\) form one orbit over \\(\\mathbb Q\\); their product \\(x^2+y^2\\) is one irreducible rational factor. An absolute factorization must specify the extension containing the factor coefficients as well as the factors themselves.</p>",
+        "citations": [
+          {
+            "key": "Gao2003PDE",
+            "locator": "§3, representation of absolute factors"
+          }
+        ]
+      },
+      {
+        "id": "support",
+        "title": "Algorithms that use the support",
+        "body": "<p>A dense representation records every coefficient up to a degree bound. A sparse representation records only nonzero terms. A convex-dense representation records the lattice points of the Newton polytope, including zero coefficients. Complexity bounds for these representations measure different input sizes.</p><p>Weimann’s published 2025 algorithm factors bivariate polynomials using the area and lattice lengths of their Newton polygons. Its hypotheses include separability of the relevant edge polynomials. Theorem 1.2 gives separate bounds in characteristic zero or sufficiently large characteristic, and over finite fields of arbitrary characteristic. Its cost includes univariate factorizations in addition to arithmetic operations.</p><p>Demin–van der Hoeven’s 2025 paper develops randomized sparse factorization methods based on sparse interpolation, with bounds that also account for evaluation and the factor supports. These are results on factorization over the coefficient field; they are not unconditional support-only tests for absolute irreducibility.</p>",
+        "citations": [
+          {
+            "key": "Weimann2025ConvexDense",
+            "locator": "Definition 1.1 and Theorem 1.2"
+          },
+          {
+            "key": "DeminHoeven2025Sparse",
+            "locator": "Introduction and algorithmic complexity statements"
+          }
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "What a computation proves",
+        "body": "<p>Exact multiplication verifies a proposed factorization. Irreducibility requires a further argument: for example, a one-dimensional differential solution space under the theorem’s hypotheses, a certified factorization algorithm, or an indecomposable Newton polytope after removal of monomial factors.</p><p>A numerical approximation to complex factors can suggest the answer, but does not by itself prove an exact factorization over an algebraic number field. Likewise, failure to find factors in a bounded search is not an irreducibility proof. The field, input representation, and exact certificate determine the conclusion.</p>",
+        "citations": [
+          {
+            "key": "Kaltofen1995",
+            "locator": "§8, approximate absolute factors"
+          },
+          {
+            "key": "Lecerf2013",
+            "locator": "Chapters 5–6"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "multivariate-newton-polytopes",
+        "relation": "Related to",
+        "why": "Support constraints restrict candidate factors and guide algorithms."
+      },
+      {
+        "id": "factorization-algorithms",
+        "relation": "Related to",
+        "why": "Multivariate algorithms often reduce to univariate factorizations."
+      },
+      {
+        "id": "polynomial-fibers",
+        "relation": "Related to",
+        "why": "Noether forms describe reducible members of parameterized families."
+      }
+    ],
+    "questions": []
+  }
+]

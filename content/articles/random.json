@@ -4,15 +4,15 @@
     "title": "Random polynomials: models and methods",
     "kind": "research",
     "subject": "random",
-    "summary": "Irreducibility and Galois groups in fixed-degree and growing-degree models, with applications of Fourier analysis, sieves, and discriminants.",
+    "summary": "Random-polynomial theorems depend on the coefficient law and on whether degree or height grows. Irreducibility, alternating-group containment and the full symmetric group require different estimates.",
     "level": "Research",
     "field": "Q",
     "status": "Research overview",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Which parameters are fixed in each model?",
-      "What conditions distinguish irreducibility, A_n-containment, and the full group S_n?",
-      "How do Fourier estimates, sieves, and discriminants enter the proofs?"
+      "Which coefficient laws give irreducibility as degree grows?",
+      "When is Aₙ contained in the group, and when is the group Sₙ?",
+      "How do modular factorization and discriminant estimates enter the proofs?"
     ],
     "prerequisites": [
       "foundations",
@@ -22,7 +22,7 @@
       {
         "id": "models",
         "title": "Probability models",
-        "body": "<p>We consider three models with different limiting parameters.</p><div class=\"table-wrap\"><table><thead><tr><th>Model</th><th>Fixed data</th><th>Limit</th></tr></thead><tbody><tr><td>Monic coefficient box</td><td>Degree \\(n\\)</td><td>Height \\(H\\to\\infty\\)</td></tr><tr><td>Independent bounded coefficients</td><td>A probability measure \\(\\mu\\) on \\(\\mathbb Z\\)</td><td>Degree \\(n\\to\\infty\\)</td></tr><tr><td>Widening coefficient box</td><td>A sequence \\(L(n)\\)</td><td>\\(n\\to\\infty\\), \\(L(n)\\to\\infty\\)</td></tr></tbody></table></div><p>In the second model, let \\(F_n=x^n+\\sum_{j=0}^{n-1}\\xi_jx^j\\), with independent coefficients of common law \\(\\mu\\). If \\(\\mu(0)>0\\), then \\(x\\mid F_n\\) with probability \\(\\mu(0)\\). To allow irreducibility with probability tending to one, one may condition on \\(\\xi_0\\ne0\\), fix a nonzero constant term, or choose a law with no atom at zero.</p><p>To use a bound for fixed \\(n\\) as the degree grows, one needs control of its dependence on \\(n\\). A theorem for \\(L(n)\\to\\infty\\) gives no conclusion for a fixed two-point law.</p>",
+        "body": "<p>The following models have different limiting parameters.</p><div class=\"table-wrap\"><table><thead><tr><th>Model</th><th>Fixed data</th><th>Limit</th></tr></thead><tbody><tr><td>Monic coefficient box</td><td>Degree \\(n\\)</td><td>Height \\(H\\to\\infty\\)</td></tr><tr><td>Independent bounded coefficients</td><td>A probability measure \\(\\mu\\) on \\(\\mathbb Z\\)</td><td>Degree \\(n\\to\\infty\\)</td></tr><tr><td>Widening coefficient box</td><td>A sequence \\(L(n)\\)</td><td>\\(n\\to\\infty\\), \\(L(n)\\to\\infty\\)</td></tr></tbody></table></div><p>In the second model, let \\(F_n=x^n+\\sum_{j=0}^{n-1}\\xi_jx^j\\), with independent coefficients of common law \\(\\mu\\). If \\(\\mu(0)>0\\), then \\(x\\mid F_n\\) with probability \\(\\mu(0)\\). To allow irreducibility with probability tending to one, one may condition on \\(\\xi_0\\ne0\\), fix a nonzero constant term, or choose a law with no atom at zero.</p><p>To use a bound for fixed \\(n\\) as the degree grows, one needs control of its dependence on \\(n\\). A theorem for \\(L(n)\\to\\infty\\) gives no conclusion for a fixed two-point law.</p>",
         "citations": [
           {
             "key": "Bhargava2025",
@@ -107,7 +107,7 @@
       {
         "id": "parity",
         "title": "The square-discriminant probability",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Reported preprint result · Blachar–Breuillard–Kozma, v1</p><p>Let \\(F_n=x^n+\\sum_{j=1}^{n-1}\\xi_jx^j+1\\), where \\(\\xi_1,\\ldots,\\xi_{n-1}\\) are independent with a fixed finitely supported integer law \\(\\mu\\). If</p>\\[H_2(\\mu):=-\\log\\!\\sum_{a\\in\\mathbb Z}\\mu(a)^2>12,\\]<p>the preprint reports \\(\\Pr(\\operatorname{disc}F_n\\text{ is a square})=O_\\mu(1/\\log n)\\). This is the constant-term-one case of its stated Theorem 1.1.</p><p>Corollary 1.2 states that when all \\(\\xi_0,\\ldots,\\xi_{n-1}\\) are independent and uniform on a fixed interval of \\(N>e^{12}\\) integers, \\(x^n+\\sum_{j=0}^{n-1}\\xi_jx^j\\) is irreducible with group \\(S_n\\), conditional on \\(\\xi_0\\ne0\\), with probability \\(1-O_\\mu(1/\\log n)\\).</p></div><div class=\"math-block caution\"><p class=\"block-label\">Remark on the scope of Theorem 1.1</p><p>The unqualified square-discriminant bound in v1 fails for some permitted constant-term laws. For \\(R_n=x^n+\\sum_{j=0}^{n-1}\\xi_jx^j\\), if \\(\\xi_0,\\xi_1\\) are independent with law \\(\\mu\\) and \\(\\mu(0)>0\\), then</p>\\[\\Pr(\\operatorname{disc}R_n=0)\\ge\\Pr(\\xi_0=\\xi_1=0)=\\mu(0)^2.\\]<p>On this event, \\(x^2\\mid R_n\\) and the discriminant is the square zero. The obstruction occurs even for a uniform interval with \\(N>e^{12}\\) containing zero. The \\(O(1/n)\\) repeated-root estimate invoked at the start of Section 8 cannot hold in that setting. The restrictions in the displayed claims remove this obstruction. The remaining proof has not been independently verified here.</p></div><p>The argument studies double roots modulo primes and their lifts modulo prime squares to bound discriminant valuations. Once \\(A_n\\)-containment is known, a nonsquare discriminant forces \\(S_n\\). For a uniform law on \\(N\\) values, \\(H_2=\\log N\\). The fair-sign law has \\(H_2=\\log2\\), below the required threshold.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Reported preprint result · Blachar–Breuillard–Kozma, v1</p><p>Let \\(F_n=x^n+\\sum_{j=1}^{n-1}\\xi_jx^j+1\\), where \\(\\xi_1,\\ldots,\\xi_{n-1}\\) are independent with a fixed finitely supported integer law \\(\\mu\\). If</p>\\[H_2(\\mu):=-\\log\\!\\sum_{a\\in\\mathbb Z}\\mu(a)^2>12,\\]<p>the preprint reports \\(\\Pr(\\operatorname{disc}F_n\\text{ is a square})=O_\\mu(1/\\log n)\\). This is the constant-term-one case of its stated Theorem 1.1.</p><p>Corollary 1.2 states that when all \\(\\xi_0,\\ldots,\\xi_{n-1}\\) are independent and uniform on a fixed interval of \\(N>e^{12}\\) integers, \\(x^n+\\sum_{j=0}^{n-1}\\xi_jx^j\\) is irreducible with group \\(S_n\\), conditional on \\(\\xi_0\\ne0\\), with probability \\(1-O_\\mu(1/\\log n)\\).</p></div><div class=\"math-block caution\"><p class=\"block-label\">Remark on the scope of Theorem 1.1</p><p>The unqualified square-discriminant bound in v1 fails for some permitted constant-term laws. For \\(R_n=x^n+\\sum_{j=0}^{n-1}\\xi_jx^j\\), if \\(\\xi_0,\\xi_1\\) are independent with law \\(\\mu\\) and \\(\\mu(0)>0\\), then</p>\\[\\Pr(\\operatorname{disc}R_n=0)\\ge\\Pr(\\xi_0=\\xi_1=0)=\\mu(0)^2.\\]<p>On this event, \\(x^2\\mid R_n\\) and the discriminant is the square zero. The obstruction occurs even for a uniform interval with \\(N>e^{12}\\) containing zero. The \\(O(1/n)\\) repeated-root estimate invoked at the start of Section 8 cannot hold in that setting. Fixing a nonzero constant term removes this particular obstruction. The restricted statements above remain reported preprint claims; this observation does not verify the rest of their proof.</p></div><p>The argument studies double roots modulo primes and their lifts modulo prime squares to bound discriminant valuations. Once \\(A_n\\)-containment is known, a nonsquare discriminant forces \\(S_n\\). For a uniform law on \\(N\\) values, \\(H_2=\\log N\\). The fair-sign law has \\(H_2=\\log2\\), below the required threshold.</p>",
         "citations": [
           {
             "key": "BlacharBreuillardKozma2026",
@@ -119,7 +119,7 @@
       {
         "id": "worked-model",
         "title": "Example",
-        "body": "<div class=\"math-block example\"><p>For coefficients uniform on \\(\\{-17,\\ldots,17\\}\\), the 35-point theorem gives irreducibility and \\(A_n\\)-containment with probability tending to one conditional on \\(\\xi_0\\ne0\\). Without conditioning, \\(x\\) is a factor with probability \\(1/35\\).</p><p>For coefficients uniform on \\(\\{-1,1\\}\\), the constant term is nonzero. The 35-consecutive-integer theorem and the entropy bound both require larger supports. For coefficients uniform on \\([-L(n),L(n)]\\cap\\mathbb Z\\) with \\(L(n)\\to\\infty\\), Bary-Soroker–Goldgraber give full \\(S_n\\) with probability tending to one. In this last model the probability of a zero constant term tends to zero.</p></div><p>In numerical experiments, specify the coefficient law, degree, constant-term convention, sample size, and certification method for the group. A frequency of \\(S_n\\) concerns the sampled polynomials.</p>",
+        "body": "<div class=\"math-block example\"><p>For coefficients uniform on \\(\\{-17,\\ldots,17\\}\\), the 35-point theorem gives irreducibility and \\(A_n\\)-containment with probability tending to one conditional on \\(\\xi_0\\ne0\\). Without conditioning, \\(x\\) is a factor with probability \\(1/35\\).</p><p>For coefficients uniform on \\(\\{-1,1\\}\\), the constant term is nonzero. The 35-consecutive-integer theorem and the entropy bound both require larger supports. For coefficients uniform on \\([-L(n),L(n)]\\cap\\mathbb Z\\) with \\(L(n)\\to\\infty\\), Bary-Soroker–Goldgraber give full \\(S_n\\) with probability tending to one. In this last model the probability of a zero constant term tends to zero.</p></div><p>An experiment should record the coefficient law, degree, sample size and group-certification method. It estimates a probability for that model; it does not prove the limiting theorem.</p>",
         "citations": [
           {
             "key": "BarySorokerGoldgraber2025",
@@ -142,7 +142,7 @@
       {
         "id": "function-field-model",
         "title": "Polynomials over a function field",
-        "body": "<p>Fix a prime power \\(q\\) and set</p>\\[f(x,y)=y^n+\\sum_{i=0}^{n-1}a_i(x)y^i,\\qquad a_i\\text{ independent and uniform in }\\{a\\in\\mathbb F_q[x]:\\deg a\\le d\\}.\\]<p>Entin–Popov take the splitting field over \\(\\mathbb F_q(x)\\). For fixed \\(n,q\\) and \\(d\\to\\infty\\), the probability of irreducibility, separability, and Galois group \\(S_n\\) tends to one. For fixed \\(d\\ge1,q\\) and \\(n\\to\\infty\\),</p>\\[\\Pr(f\\text{ irreducible})\\longrightarrow1-q^{-d},\\qquad\\Pr(G_f\\in\\{A_n,S_n\\}\\mid f\\text{ irreducible})\\longrightarrow1.\\]<p>Entin subsequently removed the Chowla hypothesis for odd \\(q\\): with fixed \\(d\\ge1\\), the conditional probability \\(\\Pr(G_f=S_n\\mid f\\text{ irreducible})\\) tends to one. His method does not treat characteristic two. In the finite-field setting, an irreducible polynomial over \\(\\mathbb F_q\\) has cyclic Galois group.</p>",
+        "body": "<p>Fix a prime power \\(q\\) and set</p>\\[f(x,y)=y^n+\\sum_{i=0}^{n-1}a_i(x)y^i,\\qquad a_i\\text{ independent and uniform in }\\{a\\in\\mathbb F_q[x]:\\deg a\\le d\\}.\\]<p>Entin–Popov take the splitting field over \\(\\mathbb F_q(x)\\). For fixed \\(n,q\\) and \\(d\\to\\infty\\), the probability of irreducibility, separability, and Galois group \\(S_n\\) tends to one. For fixed \\(d\\ge1,q\\) and \\(n\\to\\infty\\),</p>\\[\\Pr(f\\text{ irreducible})\\longrightarrow1-q^{-d},\\qquad\\Pr(G_f\\in\\{A_n,S_n\\}\\mid f\\text{ irreducible})\\longrightarrow1.\\]<p>Entin subsequently removed the Chowla hypothesis for odd \\(q\\): with fixed \\(d\\ge1\\), the conditional probability \\(\\Pr(G_f=S_n\\mid f\\text{ irreducible})\\) tends to one. His method does not treat characteristic two. The base field here is \\(\\mathbb F_q(x)\\). Over the finite field \\(\\mathbb F_q\\) itself, every irreducible degree-\\(n\\) polynomial has cyclic Galois group of order \\(n\\).</p>",
         "citations": [
           {
             "key": "EntinPopov2024",
@@ -233,15 +233,15 @@
     "title": "Littlewood polynomials",
     "kind": "family",
     "subject": "random",
-    "summary": "Irreducibility for random sign coefficients, with deterministic criteria modulo two and a theorem in special degrees.",
+    "summary": "Littlewood polynomials have coefficients ±1. Reduction modulo two gives deterministic criteria; Newton polygons prove high-probability irreducibility along special degrees.",
     "level": "Research",
     "field": "Q",
     "status": "Research overview",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "When does reduction modulo two prove irreducibility?",
-      "Which degree sequences have unconditional high-probability irreducibility?",
-      "How does a Newton polygon rule out all but small factors?"
+      "Which degrees force every Littlewood polynomial to be irreducible modulo two?",
+      "What is proved for random Littlewood polynomials in degrees 2ʳ − 1?",
+      "What remains open when the degree is unrestricted?"
     ],
     "prerequisites": [
       "foundations",
@@ -286,7 +286,7 @@
       {
         "id": "special-degrees",
         "title": "Irreducibility in special degrees",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bary-Soroker–Hokken–Kozma–Poonen</p><p>There is an absolute \\(c>0\\) such that, for \\(n=2^r-1\\) with \\(r\\ge1\\),</p>\\[\\Pr(L_n\\text{ irreducible over }\\mathbb Q)\\ge1-n^{-c}.\\]<p>In particular, \\(\\limsup_{n\\to\\infty}\\Pr(L_n\\text{ irreducible})=1\\). The paper also treats degrees \\(n=p^r-1\\) when \\(p\\ge7\\) is prime and \\(2\\) generates \\( (\\mathbb Z/p^2\\mathbb Z)^\\times\\).</p></div><p>For \\(g(x)=L_n(x+1)\\), every coefficient below the leading one is even. Their residues modulo \\(4\\) are independent and uniform in \\(\\{0,2\\}\\). With probability tending to one, a coefficient near the constant term has valuation exactly one. The 2-adic Newton polygon then gives a local irreducible factor of degree close to \\(n\\). If the polynomial factors over the rationals, a remaining factor must have small degree. The separate small-factor theorem excludes such a factor with probability tending to one.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bary-Soroker–Hokken–Kozma–Poonen</p><p>There is an absolute \\(c>0\\) such that, for \\(n=2^r-1\\) with \\(r\\ge1\\),</p>\\[\\Pr(L_n\\text{ irreducible over }\\mathbb Q)\\ge1-n^{-c}.\\]<p>In particular, \\(\\limsup_{n\\to\\infty}\\Pr(L_n\\text{ irreducible})=1\\). The paper also treats degrees \\(n=p^r-1\\) when \\(p\\ge7\\) is prime and \\(2\\) generates \\( (\\mathbb Z/p^2\\mathbb Z)^\\times\\).</p></div><p>For \\(n=2^r-1\\) and \\(g(x)=L_n(x+1)\\), every coefficient below the leading one is even. Their residues modulo \\(4\\) are independent and uniform in \\(\\{0,2\\}\\). With probability tending to one, a coefficient near the constant term has valuation exactly one. The 2-adic Newton polygon then gives a local irreducible factor of degree close to \\(n\\). If the polynomial factors over the rationals, a remaining factor must have small degree. The separate small-factor theorem excludes such a factor with probability tending to one.</p>",
         "citations": [
           {
             "key": "BarySorokerHokkenKozmaPoonen2025",
@@ -320,7 +320,7 @@
       {
         "id": "boundary",
         "title": "The all-degree problem",
-        "body": "<p>Breuillard–Varjú prove high-probability irreducibility along all degrees under Riemann hypotheses for Dedekind zeta functions. The published unconditional result above gives a subsequence. An unconditional all-degree theorem with group \\(S_n\\) requires more than either statement.</p><p>Kogler’s 2026 preprint concerns monic \\(0/1\\) polynomials with constant term \\(1\\). In that model, the internal coefficients remain random after reduction modulo \\(2\\). Reduction of sign coefficients modulo two is deterministic.</p>",
+        "body": "<p>Breuillard–Varjú prove high-probability irreducibility along all degrees under Riemann hypotheses for Dedekind zeta functions. The published unconditional result above gives a subsequence. Unconditional irreducibility along all degrees remains open in the cited sources; determining \\(S_n\\) is a further problem.</p><p>Kogler’s 2026 preprint concerns monic \\(0/1\\) polynomials with constant term \\(1\\). In that model, the internal coefficients remain random after reduction modulo \\(2\\). Reduction of sign coefficients modulo two is deterministic.</p>",
         "citations": [
           {
             "key": "BreuillardVarju2019",
@@ -378,15 +378,15 @@
     "title": "Factor reversal for random binary polynomials",
     "kind": "research",
     "subject": "random",
-    "summary": "Reversing a factor of a binary polynomial preserves its reciprocal product. Kogler’s preprint bounds the probability of a polynomial with the same product other than the original and its reversal.",
+    "summary": "Reversing one factor preserves the reciprocal product. This identity underlies Kogler’s preprint on random binary polynomials.",
     "level": "Research",
     "field": "Q",
     "status": "Preprint boundary",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "What does reversing a factor preserve?",
-      "Why do the coefficients remain binary?",
-      "Which additional estimates are needed for irreducibility?"
+      "Why does reversing one factor preserve PP*?",
+      "Why is the resulting polynomial still binary?",
+      "Which exceptional factors must be treated separately?"
     ],
     "prerequisites": [
       "foundations",
@@ -408,7 +408,7 @@
       {
         "id": "identity",
         "title": "The reciprocal product",
-        "body": "<p>For a polynomial \\(P\\) with nonzero constant term, let \\(P^*(x)=x^{\\deg P}P(1/x)\\). Suppose a binary polynomial with leading and constant coefficients \\(1\\) factors as \\(P=AB\\), with \\(A,B\\in\\mathbb Z[x]\\) monic. Put \\(Q=AB^*\\). Then</p>\\[QQ^*=PP^*.\\]<p>The new polynomial is binary.</p><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>The identity follows because reversal is multiplicative and involutive on polynomials with nonzero constant term.</p><p>Write \\(P=\\sum p_jx^j\\) and \\(Q=\\sum q_jx^j\\). The central coefficient of the identity gives \\(\\sum q_j^2=\\sum p_j^2\\). Reversal preserves evaluation at \\(1\\), so \\(Q(1)=P(1)\\). Since \\(p_j^2=p_j\\),</p>\\[\\sum_jq_j(q_j-1)=0.\\]<p>Each summand is a nonnegative integer. Thus each \\(q_j\\) equals \\(0\\) or \\(1\\), and its leading and constant coefficients equal \\(1\\).</p></div><p>To deduce irreducibility with high probability, one must bound the probability of a polynomial with the same reciprocal product other than the original and its reversal. Factorizations that produce only these two polynomials require separate estimates.</p>",
+        "body": "<p>For a polynomial \\(P\\) with nonzero constant term, let \\(P^*(x)=x^{\\deg P}P(1/x)\\). Suppose a binary polynomial with leading and constant coefficients \\(1\\) factors as \\(P=AB\\), with \\(A,B\\in\\mathbb Z[x]\\) monic. Put \\(Q=AB^*\\). Then</p>\\[QQ^*=PP^*.\\]<p>Then \\(Q\\) also has coefficients in \\(\\{0,1\\}\\), with leading and constant coefficients one.</p><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>The identity follows because reversal is multiplicative and involutive on polynomials with nonzero constant term.</p><p>Write \\(P=\\sum p_jx^j\\) and \\(Q=\\sum q_jx^j\\). The central coefficient of the identity gives \\(\\sum q_j^2=\\sum p_j^2\\). Reversal preserves evaluation at \\(1\\), so \\(Q(1)=P(1)\\). Since \\(p_j^2=p_j\\),</p>\\[\\sum_jq_j(q_j-1)=0.\\]<p>Each summand is a nonnegative integer. Thus each \\(q_j\\) equals \\(0\\) or \\(1\\), and its leading and constant coefficients equal \\(1\\).</p></div><p>A factorization with neither factor reciprocal gives \\(Q\\notin\\{P,P^*\\}\\). Thus one bounds such pairs \\(P,Q\\), and treats reciprocal factors separately.</p>",
         "citations": [
           {
             "key": "Ljunggren1960",
@@ -492,15 +492,15 @@
     "title": "Height bounds for exceptional Galois groups",
     "kind": "research",
     "subject": "random",
-    "summary": "Counts of polynomials with exceptional Galois group at fixed degree, including sharp bounds for monic and reciprocal families.",
+    "summary": "For fixed degree and growing coefficient height, almost all polynomials have the largest group permitted by the family. The exceptional counts differ for ordinary and reciprocal polynomials.",
     "level": "Research",
     "field": "Q",
     "status": "Research overview",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "What is the exceptional proportion in a monic coefficient box?",
-      "Which polynomials give the lower bound?",
-      "What is the corresponding order for reciprocal polynomials?"
+      "How many monic polynomials of bounded height have group different from Sₙ?",
+      "Are irreducible exceptions fewer than reducible polynomials?",
+      "Why does the reciprocal exceptional count contain a logarithm?"
     ],
     "prerequisites": [
       "foundations",
@@ -510,7 +510,7 @@
       {
         "id": "height-model",
         "title": "Monic polynomials",
-        "body": "<p>Fix \\(n\\ge3\\) and consider the monic polynomials</p>\\[f=x^n+a_1x^{n-1}+\\cdots+a_n,\\qquad |a_i|\\le H.\\]<p>There are \\((2\\lfloor H\\rfloor+1)^n\\) choices. Let \\(E_n(H)\\) count the polynomials with repeated roots, together with the separable polynomials whose Galois group on the \\(n\\) roots is not \\(S_n\\). Thus reducible polynomials are included. The degree is fixed, and implied constants may depend on it.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bhargava</p><p>For fixed \\(n\\ge3\\),</p>\\[E_n(H)=O_n(H^{n-1}).\\]</div><p>The \\((2\\lfloor H\\rfloor+1)^{n-1}\\) choices with \\(a_n=0\\) all have the factor \\(x\\) and give a lower bound of the same order. The exceptional proportion therefore has order \\(H^{-1}\\).</p>",
+        "body": "<p>Fix \\(n\\ge3\\) and consider the monic polynomials</p>\\[f=x^n+a_1x^{n-1}+\\cdots+a_n,\\qquad |a_i|\\le H.\\]<p>There are \\((2\\lfloor H\\rfloor+1)^n\\) choices. Let \\(E_n(H)\\) count the polynomials with repeated roots, together with the separable polynomials whose Galois group on the \\(n\\) roots is not \\(S_n\\). Thus reducible polynomials are included. Throughout this section, the degree is fixed as the height grows.</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Bhargava</p><p>For fixed \\(n\\ge3\\),</p>\\[E_n(H)=O_n(H^{n-1}).\\]</div><p>The \\((2\\lfloor H\\rfloor+1)^{n-1}\\) choices with \\(a_n=0\\) all have the factor \\(x\\) and give a lower bound of the same order. The exceptional proportion therefore has order \\(H^{-1}\\).</p>",
         "citations": [
           {
             "key": "Bhargava2025",
@@ -528,7 +528,7 @@
       {
         "id": "strong-van-der-waerden",
         "title": "Irreducible exceptions",
-        "body": "<p>Let \\(I_n(H)\\) count only the irreducible polynomials in the monic box whose Galois group is not \\(S_n\\). The strong van der Waerden conjecture asks whether \\(I_n(H)=o_n(H^{n-1})\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Preprint result · Anderson and collaborators (2026)</p>\\[I_n(H)=O_n(H^{n-1-1/440})\\qquad(n\\ge40).\\]</div><p>The degree is fixed as \\(H\\to\\infty\\). Version 2 proves the required twisted Möbius-correlation estimate in this range. Its stronger correlation conjecture would extend the conclusion to \\(n\\ge8\\). The argument uses a square sieve, differencing and finite-field estimates.</p>",
+        "body": "<p>Let \\(I_n(H)\\) count only the irreducible polynomials in the monic box whose Galois group is not \\(S_n\\). The strong van der Waerden conjecture asks whether \\(I_n(H)=o_n(H^{n-1})\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Preprint result · Anderson et al. (2026)</p>\\[I_n(H)=O_n(H^{n-1-1/440})\\qquad(n\\ge40).\\]</div><p>The degree is fixed as \\(H\\to\\infty\\). Version 2 proves the required twisted Möbius-correlation estimate in this range. Its stronger correlation conjecture would extend the conclusion to \\(n\\ge8\\). The argument uses a square sieve, differencing and finite-field estimates.</p>",
         "citations": [
           {
             "key": "AndersonEtAl2026StrongVdW",
@@ -568,7 +568,7 @@
       {
         "id": "smallest-defining-polynomial",
         "title": "Counting fields by polynomial height",
-        "body": "<p>For a degree-\\(n\\) number field \\(K\\), define \\(H_{\\min}(K)\\) as the least coefficient height of an integral degree-\\(n\\) polynomial defining \\(K\\), with no monicity condition. Arango-Piñeros and collaborators prove in a preprint that</p>\\[\\#\\{K/\\mathbb Q:[K:\\mathbb Q]=n,\\ H_{\\min}(K)<X\\}\\sim C_nX^{n+1}\\quad(n\\ge3),\\]<p>where fields are counted up to isomorphism and \\(C_n>0\\). For \\(n=2\\), the asymptotic is \\((27/\\pi^2)X^2\\). The proof controls when two small defining polynomials give the same field, using the action of rational linear fractional transformations.</p><p>Counting by field discriminant is a separate problem; Chow–Dietmann give bounds for prescribed even permutation groups in that setting.</p>",
+        "body": "<p>For a degree-\\(n\\) number field \\(K\\), define \\(H_{\\min}(K)\\) as the least coefficient height of an integral degree-\\(n\\) polynomial defining \\(K\\), with no monicity condition. Arango-Piñeros et al. state the following preprint asymptotic:</p>\\[\\#\\{K/\\mathbb Q:[K:\\mathbb Q]=n,\\ H_{\\min}(K)<X\\}\\sim C_nX^{n+1}\\quad(n\\ge3),\\]<p>where fields are counted up to isomorphism and \\(C_n>0\\). For \\(n=2\\), the asymptotic is \\((27/\\pi^2)X^2\\). The proof controls when two small defining polynomials give the same field, using the action of rational linear fractional transformations.</p><p>Counting by field discriminant is a separate problem; Chow–Dietmann give bounds for prescribed even permutation groups in that setting.</p>",
         "citations": [
           {
             "key": "ArangoPinerosEtAl2026SmallestPolynomial",
@@ -672,14 +672,14 @@
     "title": "Characteristic polynomials of random matrices",
     "kind": "research",
     "subject": "random",
-    "summary": "Irreducibility and Galois groups of characteristic polynomials of random integer matrices, using finite-field rank estimates.",
+    "summary": "Characteristic polynomials have dependent coefficients. Their irreducibility and Galois groups are studied through finite-field rank estimates.",
     "level": "Research",
     "field": "Q",
     "status": "Research overview",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "How are the characteristic coefficients dependent?",
-      "Which entry laws admit an unconditional theorem?",
+      "Which entry laws give unconditional irreducibility?",
+      "How do matrix ranks determine root counts modulo primes?",
       "What does irreducibility imply about rational invariant subspaces?"
     ],
     "prerequisites": [
@@ -724,7 +724,7 @@
       {
         "id": "other-ensembles",
         "title": "Other matrix ensembles",
-        "body": "<div class=\"table-wrap\"><table><thead><tr><th>Ensemble</th><th>Result</th><th>Source</th></tr></thead><tbody><tr><td>Symmetric fair-sign matrices</td><td>High-probability irreducibility under ERH, using finite-field rank estimates.</td><td>Ferber–Jain–Sah–Sawhney</td></tr><tr><td>Symmetric tridiagonal matrices with iid bounded, nonconstant integer diagonal entries and adjacent off-diagonal entries equal to 1</td><td>Irreducibility with exponentially small failure probability and alternating or symmetric Galois group, under the stated Dedekind RH assumptions.</td><td>Bary-Soroker–Garzoni–Sodin</td></tr><tr><td>Fixed-size matrices with entries bounded by height</td><td>Counts of exceptional groups as the height tends to infinity at fixed size.</td><td>Anderson–O’Dorney</td></tr></tbody></table></div><p>The tridiagonal paper also gives a smaller group for a related ensemble. The allowed group can depend on the matrix structure.</p>",
+        "body": "<div class=\"table-wrap\"><table><thead><tr><th>Ensemble</th><th>Result</th><th>Source</th></tr></thead><tbody><tr><td>Symmetric fair-sign matrices</td><td>High-probability irreducibility under ERH, using finite-field rank estimates.</td><td>Ferber–Jain–Sah–Sawhney</td></tr><tr><td>Symmetric tridiagonal matrices with iid bounded, nonconstant integer diagonal entries and adjacent off-diagonal entries equal to 1</td><td>Irreducibility with exponentially small failure probability and alternating or symmetric Galois group, under the stated Dedekind RH assumptions.</td><td>Bary-Soroker–Garzoni–Sodin</td></tr><tr><td>Fixed-size matrices with entries bounded by height</td><td>Counts of exceptional groups as the height tends to infinity at fixed size.</td><td>Anderson–O’Dorney</td></tr></tbody></table></div><p>The tridiagonal paper also treats a different ensemble whose symmetry forces a smaller group.</p>",
         "citations": [
           {
             "key": "FerberJainSahSawhney2023",
@@ -744,7 +744,7 @@
       {
         "id": "consequence",
         "title": "Rational invariant subspaces",
-        "body": "<p>An irreducible characteristic polynomial excludes nonzero proper rational invariant subspaces.</p><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>If \\(W\\subset\\mathbb Q^n\\) is \\(M\\)-invariant and \\(0<\\dim W<n\\), a basis adapted to \\(W\\) puts \\(M\\) in block upper-triangular form. Then \\(\\chi_M\\) is the product of the characteristic polynomials on \\(W\\) and \\(\\mathbb Q^n/W\\), both of positive degree.</p></div><p>The nonsingular matrix \\(\\operatorname{diag}(1,2)\\) has distinct eigenvalues and two rational invariant lines.</p>",
+        "body": "<p>An irreducible characteristic polynomial excludes nonzero proper rational invariant subspaces.</p><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>If \\(W\\subset\\mathbb Q^n\\) is \\(M\\)-invariant and \\(0<\\dim W<n\\), a basis adapted to \\(W\\) puts \\(M\\) in block upper-triangular form. Then \\(\\chi_M\\) is the product of the characteristic polynomials on \\(W\\) and \\(\\mathbb Q^n/W\\), both of positive degree.</p></div><p>Nonsingularity and distinct eigenvalues are insufficient: \\(\\operatorname{diag}(1,2)\\) has both properties and preserves two rational lines.</p>",
         "citations": []
       }
     ],
@@ -810,15 +810,15 @@
     "title": "Random reciprocal polynomials of growing degree",
     "kind": "research",
     "subject": "random",
-    "summary": "Irreducibility and Galois groups for reciprocal polynomials with independent free coefficients, in the limit of growing degree.",
+    "summary": "Inverse pairs restrict the group of a reciprocal polynomial to a wreath product. A recent preprint claims irreducibility and three possible groups with high probability for uniform interval coefficients.",
     "level": "Research",
     "field": "Q",
     "status": "Preprint boundary",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Which permutation group acts on the inverse pairs?",
-      "How does the trace change of variables affect coefficient independence?",
-      "Which group alternatives remain when the discriminant is nonsquare?"
+      "Why does the group act on inverse pairs?",
+      "Why do trace-polynomial coefficients become dependent?",
+      "Which group alternatives remain after the discriminant test?"
     ],
     "prerequisites": [
       "foundations",
@@ -828,7 +828,7 @@
       {
         "id": "model",
         "title": "The reciprocal model",
-        "body": "<p>For a positive integer \\(m\\), let</p>\\[F_m(x)=x^{2m}+1+a_0x^m+\\sum_{j=1}^{m-1}a_j(x^{m-j}+x^{m+j}),\\]<p>where \\(a_0,\\ldots,a_{m-1}\\) are independent. The two coefficients at reflected exponents share a single random variable. The ordinary model uses \\(2m\\) independent coefficients.</p><p>When \\(F_m\\) is separable, its roots form \\(m\\) inverse pairs. Galois automorphisms permute the pairs and can exchange the two roots within a pair. The group therefore embeds in \\(W_m=C_2^m\\rtimes S_m\\), of order \\(2^m m!\\), in its action on \\(2m\\) roots. In degree at least four, this is a proper subgroup of \\(S_{2m}\\).</p>",
+        "body": "<p>For a positive integer \\(m\\), let</p>\\[F_m(x)=x^{2m}+1+a_0x^m+\\sum_{j=1}^{m-1}a_j(x^{m-j}+x^{m+j}),\\]<p>where \\(a_0,\\ldots,a_{m-1}\\) are independent. The two coefficients at reflected exponents share a single random variable. An ordinary monic degree-\\(2m\\) polynomial can instead have \\(2m\\) independent nonleading coefficients.</p><p>When \\(F_m\\) is separable, its roots form \\(m\\) inverse pairs. Galois automorphisms permute the pairs and can exchange the two roots within a pair. The group therefore embeds in \\(W_m=C_2^m\\rtimes S_m\\), of order \\(2^m m!\\), in its action on \\(2m\\) roots. In degree at least four, this is a proper subgroup of \\(S_{2m}\\).</p>",
         "citations": [
           {
             "key": "HokkenKoukoulopoulos2025",
@@ -930,15 +930,15 @@
     "title": "Twisted reciprocity and square discriminants",
     "kind": "research",
     "subject": "random",
-    "summary": "A discriminant formula for polynomials whose roots are paired by x↦b/x, and its use in counting exceptional Galois groups.",
+    "summary": "The pairing α ↦ b/α gives a trace polynomial. A discriminant identity then reduces the sign of the Galois action to a square-value condition.",
     "level": "Research",
     "field": "Q",
     "status": "Preprint boundary",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "What is the trace variable for x↦b/x?",
-      "How is the discriminant expressed in terms of the trace polynomial?",
-      "Which square-value condition detects even permutations?"
+      "How does the substitution y = x + b/x describe the root pairs?",
+      "What is the discriminant in terms of the trace polynomial?",
+      "How does this identity enter counts of exceptional groups?"
     ],
     "prerequisites": [
       "foundations",
@@ -948,7 +948,7 @@
       {
         "id": "involution",
         "title": "The trace substitution",
-        "body": "<p>Fix an integer \\(b\\ne0\\). A rational polynomial \\(F\\) of degree \\(2m\\) is \\(b\\)-reciprocal if</p>\\[F(x)=\\frac{x^{2m}}{b^m}F(b/x).\\]<p>Its nonzero roots are paired by \\(\\alpha\\mapsto b/\\alpha\\). In the trace expression below, a fixed point \\(\\alpha^2=b\\) would be a repeated root. For separable \\(F\\), the group therefore acts on distinct pairs and embeds in \\(W_m=C_2\\wr S_m\\).</p><p>The invariant variable is \\(y=x+b/x\\), and \\(F(x)=x^mQ(x+b/x)\\) for a degree-\\(m\\) polynomial \\(Q\\). Each trace root \\(y_i\\) corresponds to the quadratic \\(x^2-y_ix+b\\).</p>",
+        "body": "<p>Fix an integer \\(b\\ne0\\). A rational polynomial \\(F\\) of degree \\(2m\\) is \\(b\\)-reciprocal if</p>\\[F(x)=\\frac{x^{2m}}{b^m}F(b/x).\\]<p>Its nonzero roots are paired by \\(\\alpha\\mapsto b/\\alpha\\). A fixed point \\(\\alpha^2=b\\) is a repeated root: the corresponding quadratic \\(x^2-2\\alpha x+b\\) equals \\((x-\\alpha)^2\\). For separable \\(F\\), the group therefore acts on distinct pairs and embeds in \\(W_m=C_2\\wr S_m\\).</p><p>The invariant variable is \\(y=x+b/x\\), and \\(F(x)=x^mQ(x+b/x)\\) for a degree-\\(m\\) polynomial \\(Q\\). Each trace root \\(y_i\\) corresponds to the quadratic \\(x^2-y_ix+b\\).</p>",
         "citations": [
           {
             "key": "ODorney2026Twisted",

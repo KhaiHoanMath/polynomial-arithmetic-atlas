@@ -4,15 +4,15 @@
     "title": "Factoring sparse polynomials",
     "kind": "method",
     "subject": "algorithms",
-    "summary": "Sparse input can have very large degree or dense factors. The available algorithms depend on the degree bound and the required output.",
+    "summary": "Sparse polynomials are encoded by their nonzero terms. Large exponents and dense factors make this a different algorithmic problem from dense factorization.",
     "level": "Research",
     "field": "number fields and general coefficient fields",
     "status": "Published results and 2026 preprints",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "How does sparse encoding change factorization complexity?",
-      "Which bounded-degree factors can be found efficiently?",
-      "What do recent bounded-individual-degree algorithms return?"
+      "Why can sparse input have a factor too large to print efficiently?",
+      "How are factors of bounded degree found?",
+      "What improves when each variable has bounded degree?"
     ],
     "prerequisites": [
       "factorization-algorithms",
@@ -30,7 +30,7 @@
           },
           {
             "key": "ChuyoonShpilka2026",
-            "locator": "Definition 1.6"
+            "locator": "Definition 6, published CCC 2026 version"
           }
         ]
       },
@@ -42,6 +42,17 @@
           {
             "key": "Lenstra1999Lacunary",
             "locator": "Main theorem, p. 268; Corollary 2.3, p. 271"
+          }
+        ]
+      },
+      {
+        "id": "irreducibility-complexity",
+        "title": "Complexity of irreducibility",
+        "body": "<p>For univariate integer polynomials with binary exponents, a 2026 preprint of Cao–Gao–Huang–Nie claims that irreducibility is coNP-hard under deterministic polynomial-time many-one reductions. Their construction gives monic polynomials. Equivalently, reducibility is NP-hard under these reductions. The title’s NP-hardness assertion for irreducibility uses a different notion: a polynomial-time Turing reduction with one oracle query.</p><p>The preprint also claims membership in \\(\\mathsf{PP}\\subseteq\\mathsf{PSPACE}\\). Here \\(\\mathsf{PP}\\) allows an arbitrarily small advantage over probability \\(1/2\\); it does not give a bounded-error randomized polynomial-time algorithm. The upper bound assumes a fixed positive zero-free gap for Dedekind zeta functions of all number fields, together with a uniform effective prime-ideal estimate. The authors invoke recent preprints for these analytic inputs; Appendix A.4–A.5 retains them as hypotheses of the formalized theorem. Both complexity results are recorded as unpublished claims. They concern unbounded binary exponents, so they do not settle the bounded-individual-degree question below.</p>",
+        "citations": [
+          {
+            "key": "CaoGaoHuangNie2026SparseIrreducibility",
+            "locator": "Version 1, Theorems 4 and 10; Remark 3; §3.1; Appendix A.4–A.5"
           }
         ]
       },
@@ -60,11 +71,11 @@
       {
         "id": "sparse-divisors",
         "title": "Sparse divisors",
-        "body": "<p>Chuyoon–Shpilka’s 2026 preprint lists all \\(s\\)-sparse divisors not divisible by a nonconstant monomial in time \\(\\operatorname{poly}(n,d!,s^d)\\), up to nonzero scalar multiples. It also gives full factorization in time \\(\\operatorname{poly}(n,s^{d^2\\log(n+1)})\\). These bounds suppress univariate-factorization and field-arithmetic costs.</p><p>Finding sparse divisors does not settle irreducibility: a proper factor may have more terms than the input.</p>",
+        "body": "<p>Chuyoon–Shpilka’s CCC 2026 paper lists all \\(s\\)-sparse divisors not divisible by a nonconstant monomial in time \\(\\operatorname{poly}(n,d!,s^d)\\), up to nonzero scalar multiples. It also gives full factorization in time \\(\\operatorname{poly}(n,s^{d^2\\log(n+1)})\\). These bounds suppress univariate-factorization and field-arithmetic costs.</p><p>Finding sparse divisors does not settle irreducibility: a proper factor may have more terms than the input.</p>",
         "citations": [
           {
             "key": "ChuyoonShpilka2026",
-            "locator": "Theorems 1.9 and 1.12; Remark 1.7",
+            "locator": "Theorems 9 and 12; Remark 7, published CCC 2026 version",
             "note": "The input is the nonzero polynomial defined above; log(n+1) gives a bound valid also for n=1."
           }
         ]
@@ -104,7 +115,7 @@
         "title": "Can bounded individual degree give a faster irreducibility test?",
         "status": "Open",
         "scope": "An n-variable, s-sparse polynomial of individual degree at most d; field costs stated separately",
-        "body": "<p>Chuyoon–Shpilka ask for an irreducibility test in time \\(\\operatorname{poly}(n,s^d)\\). A proper factor may be denser than the input. This is the question stated in their March 2026 preprint; the later candidate-list algorithm still requires verification of its candidates.</p>",
+        "body": "<p>Chuyoon–Shpilka ask for a deterministic irreducibility test in time \\(\\operatorname{poly}(n,s^d)\\). Their full manuscript states this question in §10; the published conference paper gives the sparse-divisor and full-factorization algorithms discussed above. A proper factor may be denser than the input, and a list of circuits containing all factors can also contain polynomials that do not divide the input.</p>",
         "citations": [
           {
             "key": "ChuyoonShpilka2026",
@@ -123,14 +134,15 @@
     "title": "Ehrhart polynomials",
     "kind": "family",
     "subject": "families",
-    "summary": "Counting lattice points gives rational polynomials. Their factorization and Galois groups connect polyhedral geometry with arithmetic.",
+    "summary": "Ehrhart polynomials count lattice points in dilated polytopes. Their factors and Galois groups connect polyhedral geometry with arithmetic.",
     "level": "Research",
     "field": "Q",
     "status": "Published computations and a cited open question",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "Which polynomial counts the lattice points in integral dilates?",
-      "Which Galois groups can occur in this class?"
+      "What is the Ehrhart polynomial of a lattice polytope?",
+      "How do simple polytopes give different Galois groups?",
+      "Which finite groups can occur?"
     ],
     "prerequisites": [
       "foundations",
@@ -145,6 +157,17 @@
           {
             "key": "FiekerHofmannJoswig2022",
             "locator": "§1; §3, Example 2"
+          }
+        ]
+      },
+      {
+        "id": "simplex-example",
+        "title": "Example",
+        "body": "<p>For the standard simplex \\(\\operatorname{conv}(0,e_1,\\ldots,e_d)\\), lattice points in its \\(t\\)-th dilate are nonnegative integer vectors with sum at most \\(t\\). Counting them gives</p>\\[L_P(t)=\\binom{t+d}{d}=\\frac{(t+1)\\cdots(t+d)}{d!}.\\]<p>Thus the polynomial splits over \\(\\mathbb Q\\). This follows directly from the lattice-point count.</p><p>For the different simplex \\(S=\\operatorname{conv}(e_1,\\ldots,e_d,-e_1-\\cdots-e_d)\\), Fieker–Hofmann–Joswig give</p>\\[L_S(t)=\\binom{t+d+1}{d+1}-\\binom{t}{d+1}.\\]<p>In dimension two this is \\((3t^2+3t+2)/2\\), with discriminant \\(-15/4\\). Its group is \\(C_2\\). Their Theorem 4 describes the group for this family in every dimension.</p>",
+        "citations": [
+          {
+            "key": "FiekerHofmannJoswig2022",
+            "locator": "§3, Example 3 and Theorem 4"
           }
         ]
       },

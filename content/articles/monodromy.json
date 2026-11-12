@@ -4,15 +4,16 @@
     "title": "Critical points and polynomial monodromy",
     "kind": "method",
     "subject": "specialization",
-    "summary": "In characteristic zero, simple critical points with distinct critical values give full symmetric monodromy. Specialization can reduce the group.",
+    "summary": "In characteristic zero, simple critical points with distinct critical values force the generic Galois group to be symmetric.",
     "level": "Advanced",
     "field": "Characteristic zero; specializations over Q",
     "status": "Classical theory",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "How can derivatives determine a generic Galois group?",
-      "Why do simple critical points with distinct values give transpositions?",
-      "When do rational specializations retain the generic group?"
+      "When do critical points determine the Galois group of f(x)−T?",
+      "Why do simple critical values give transpositions?",
+      "Why is the generic group symmetric for xⁿ−x−T?",
+      "How can the group change after specialization?"
     ],
     "prerequisites": [
       "foundations",
@@ -24,7 +25,7 @@
       {
         "id": "morse-hypotheses",
         "title": "Morse polynomials",
-        "body": "<p>Let \\(K\\) have characteristic zero and let \\(F\\in K[X]\\) have degree \\(n\\ge2\\). The family \\(F(X)-T\\) is a polynomial over \\(K(T)\\), with \\(T\\) an indeterminate. A <strong>critical point</strong> is a root \\(c\\) of \\(F'\\), and its <strong>critical value</strong> is \\(F(c)\\). We call \\(F\\) Morse when \\(F'\\) has \\(n-1\\) distinct roots over \\(\\overline K\\) and their critical values are pairwise distinct.</p><p>For example, for \\(F=X^4-2X^2\\), the critical points \\(0,1,-1\\) are simple, but \\(F(1)=F(-1)=-1\\). Thus simple critical points need not have distinct critical values. Composition \\(F=(X^2)^2-2X^2\\) also gives an intermediate cover and a block system on the four generic roots.</p><p>The geometric group is the splitting-field group over \\(\\overline K(T)\\); the arithmetic group is over \\(K(T)\\). Both act on the same \\(n\\) roots. A theorem about these groups does not assert the same group for every specialization \\(T=t\\).</p>",
+        "body": "<p>Let \\(K\\) have characteristic zero and let \\(f\\in K[x]\\) have degree \\(n\\ge2\\). A <em>critical point</em> is a root \\(c\\) of \\(f'\\); its <em>critical value</em> is \\(f(c)\\). The polynomial is called <em>Morse</em> if it has \\(n-1\\) distinct critical points and their critical values are pairwise distinct.</p><p>Both conditions matter. For \\(f=x^4-2x^2\\), the critical points \\(0,1,-1\\) are simple, but \\(f(1)=f(-1)=-1\\). Moreover, \\(f=(x^2)^2-2x^2\\) is a composition of two quadratic polynomials. This decomposition gives a block system on the four roots of \\(f(x)-T\\).</p><p>The geometric Galois group is taken over \\(\\overline K(T)\\); the arithmetic Galois group is taken over \\(K(T)\\). The theorem below determines both.</p>",
         "citations": [
           {
             "key": "Serre2007Topics",
@@ -36,7 +37,7 @@
       {
         "id": "morse-theorem",
         "title": "The Morse criterion",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Hilbert’s Morse criterion</p><p>If \\(F\\in K[X]\\) is Morse and \\(\\operatorname{char}K=0\\), then</p>\\[\\begin{aligned}\\operatorname{Gal}(F(X)-T/\\overline K(T))&=S_n,\\\\\\operatorname{Gal}(F(X)-T/K(T))&=S_n.\\end{aligned}\\]<p>The splitting field over \\(K(T)\\) is regular over \\(K\\): it introduces no new algebraic constants.</p></div><p>The geometric group is \\(S_n\\) and is a subgroup of the arithmetic group, which already lies in \\(S_n\\). Equality follows, and the arithmetic/geometric quotient, which measures the constant extension, is trivial.</p><p>This is a sufficient criterion. Polynomials failing one of the Morse conditions can still have full symmetric monodromy; a separate argument is then needed.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>If \\(f\\in K[x]\\) is Morse and \\(\\operatorname{char}K=0\\), then the geometric and arithmetic Galois groups of \\(f(x)-T\\) are both \\(S_n\\), where \\(n=\\deg f\\). Its splitting field over \\(K(T)\\) is regular over \\(K\\).</p></div><p>Once the geometric group is \\(S_n\\), the arithmetic assertion follows: it contains the geometric group and is itself a subgroup of \\(S_n\\). Equality of the groups means that the splitting field introduces no new algebraic constants.</p>",
         "citations": [
           {
             "key": "Serre2007Topics",
@@ -47,8 +48,8 @@
       },
       {
         "id": "branch-proof",
-        "title": "Proof sketch",
-        "body": "<div class=\"math-block proof\"><p class=\"block-label\">Proof sketch</p><p>Over \\(\\overline K\\), the degree-\\(n\\) cover \\(X\\mapsto F(X)\\) is connected, so its monodromy group \\(G\\) is transitive. Equivalently, \\(F(X)-T\\) is irreducible over \\(\\overline K(T)\\): in \\(\\overline K[X,T]\\), a factor independent of \\(T\\) would have to divide the coefficient \\(-1\\) of \\(T\\).</p><p>At a simple critical point \\(c\\), the local expansion begins \\(F(c)+a(X-c)^2+\\cdots\\), with \\(a\\ne0\\). The distinct-value hypothesis ensures that only these two sheets meet over \\(F(c)\\). Its inertia generator is therefore a single transposition.</p><p>Let \\(H\\) be the normal subgroup generated by inertia at all finite branch values. The quotient of the Galois closure by \\(H\\) gives a connected degree-\\(d\\) cover of the projective line, unramified away from infinity. In characteristic zero all ramification is tame. If \\(r\\ge1\\) points lie above infinity, Riemann–Hurwitz reads \\(2g-2=-2d+(d-r)=-d-r\\). Since \\(g\\ge0\\), necessarily \\(d=r=1\\). Thus \\(H=G\\): the finite transpositions generate the whole group.</p><p>Consider the graph whose vertices are the roots and whose edges are these transpositions, including their conjugates. Its connected components are the orbits of the generated group. Transitivity makes the graph connected, and edge transpositions of a connected graph generate every permutation. Hence \\(G=S_n\\).</p></div><p>A transitive group containing one transposition need not be symmetric; here the transpositions generate the group.</p>",
+        "title": "Proof",
+        "body": "<p>Work over \\(\\overline K\\). The polynomial \\(f(x)-T\\) is irreducible over \\(\\overline K(T)\\): a factor independent of \\(T\\) would divide its coefficient \\(-1\\) of \\(T\\). Hence its group \\(G\\) is transitive.</p><p>At a simple critical point \\(c\\), the expansion has the form \\(f(c)+a(x-c)^2+\\cdots\\), with \\(a\\ne0\\). The ramification index at \\(c\\) is two. Since no other critical point has value \\(f(c)\\), all other points of this fiber are unramified. An inertia generator therefore exchanges exactly two roots and fixes the rest: it is a transposition.</p><p>Let \\(H\\) be the normal subgroup generated by inertia at the finite branch values. The quotient of the Galois closure by \\(H\\) is a connected degree-\\(d\\) cover of \\(\\mathbb P^1\\), unramified except possibly at infinity. If \\(r\\) points lie above infinity, Riemann–Hurwitz gives</p>\\[2g-2=-2d+(d-r)=-d-r.\\]<p>Since \\(g\\ge0\\) and \\(d,r\\ge1\\), we get \\(d=r=1\\). Thus \\(H=G\\): the transpositions generate the whole group.</p><p>Make a graph whose vertices are the roots and whose edges are the generating transpositions. Transitivity says that this graph is connected. Edge transpositions of a connected graph generate \\(S_n\\), so \\(G=S_n\\).</p>",
         "citations": [
           {
             "key": "Serre2007Topics",
@@ -60,7 +61,7 @@
       {
         "id": "all-degrees",
         "title": "Example",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example · \\(F(X)=X^n-X\\)</p><p>For \\(n\\ge2\\), the critical points satisfy \\(nc^{n-1}=1\\). They are nonzero and distinct, and</p>\\[F(c)=-\\frac{n-1}{n}c.\\]<p>The critical values are therefore distinct. It follows that \\(X^n-X-T\\) has geometric and arithmetic group \\(S_n\\) in characteristic zero. Over \\(\\mathbb Q\\), Hilbert irreducibility then supplies infinitely many rational parameters \\(t\\) for which \\(X^n-X-t\\) has group \\(S_n\\).</p></div><p>Derivatives and inertia determine the generic group, and Hilbert irreducibility gives full-group fibers. For a specified \\(t\\), factorization, discriminants, or resolvents can determine its group.</p>",
+        "body": "<p>Take \\(f(x)=x^n-x\\), with \\(n\\ge2\\). Its critical points satisfy \\(nc^{n-1}=1\\), so they are nonzero and distinct. At such a point,</p>\\[f(c)=-\\frac{n-1}{n}c.\\]<p>The critical values are therefore distinct. The Morse criterion gives group \\(S_n\\) for \\(x^n-x-T\\) in characteristic zero. Over \\(\\mathbb Q\\), Hilbert irreducibility then gives infinitely many rational \\(t\\) for which \\(x^n-x-t\\) also has group \\(S_n\\).</p>",
         "citations": [
           {
             "key": "Serre2007Topics",
@@ -72,7 +73,7 @@
       {
         "id": "four-fibers",
         "title": "Specializations of a cubic",
-        "body": "<p>For \\(F=X^3-3X\\), the critical points are \\(\\pm1\\), with values \\(\\mp2\\). Thus \\(F(X)-T\\) has generic group \\(S_3\\). Its discriminant is</p>\\[\\Delta(X^3-3X-T)=27(4-T^2).\\]<div class=\"math-block example\"><p class=\"block-label\">Examples over \\(\\mathbb Q\\)</p><ul><li><strong>\\(t=0\\):</strong> \\(X(X^2-3)\\) is reducible; its splitting-field group is \\(C_2\\), fixing the rational root.</li><li><strong>\\(t=1\\):</strong> \\(X^3-3X-1\\) has no rational root and discriminant \\(81\\), so its group is \\(A_3=C_3\\).</li><li><strong>\\(t=2\\):</strong> \\((X-2)(X+1)^2\\) has a repeated root. This is a branch value, outside the separable-fiber setting.</li><li><strong>\\(t=3\\):</strong> \\(X^3-3X-3\\) is Eisenstein at \\(3\\), and its discriminant is \\(-135\\), a nonsquare. Its group is \\(S_3\\).</li></ul></div><p>Even away from the branch values, specialization can lower the group or destroy irreducibility. A generic monodromy calculation does not by itself determine the group of an individual fiber.</p>",
+        "body": "<p>For \\(F=X^3-3X\\), the critical points are \\(\\pm1\\), with values \\(\\mp2\\). Thus \\(F(X)-T\\) has generic group \\(S_3\\). Its discriminant is</p>\\[\\Delta(X^3-3X-T)=27(4-T^2).\\]<div class=\"math-block example\"><p class=\"block-label\">Examples over \\(\\mathbb Q\\)</p><ul><li><strong>\\(t=0\\):</strong> \\(X(X^2-3)\\) is reducible; its splitting-field group is \\(C_2\\), fixing the rational root.</li><li><strong>\\(t=1\\):</strong> \\(X^3-3X-1\\) has no rational root and discriminant \\(81\\), so its group is \\(A_3=C_3\\).</li><li><strong>\\(t=2\\):</strong> \\((X-2)(X+1)^2\\) has a repeated root. This is a branch value, outside the separable-fiber setting.</li><li><strong>\\(t=3\\):</strong> \\(X^3-3X-3\\) is Eisenstein at \\(3\\), and its discriminant is \\(-135\\), a nonsquare. Its group is \\(S_3\\).</li></ul></div>",
         "citations": [
           {
             "key": "ConradCubicQuartic",
@@ -89,7 +90,7 @@
       {
         "id": "scope",
         "title": "Positive characteristic",
-        "body": "<p>The characteristic-zero hypothesis avoids wild ramification. In characteristic \\(p\\), the polynomial \\(X^p-X\\) has derivative \\(-1\\); its cover \\(X^p-X=T\\) is unramified at finite points, and its geometric group is the additive cyclic group of order \\(p\\), acting by \\(X\\mapsto X+a\\) for \\(a\\in\\mathbb F_p\\). Ramification at infinity is wild. The tame Riemann–Hurwitz argument used above therefore does not apply.</p><p>There are positive-characteristic versions of the Morse theorem, but their hypotheses must be stated separately. The theorem above concerns characteristic zero.</p>",
+        "body": "<p>In characteristic \\(p\\), the polynomial \\(x^p-x\\) has derivative \\(-1\\). The cover \\(x^p-x=T\\) is unramified at finite points and has geometric group \\(C_p\\), acting by \\(x\\mapsto x+a\\) for \\(a\\in\\mathbb F_p\\). It is wildly ramified at infinity, so the tame Riemann–Hurwitz calculation in the proof does not apply. Positive-characteristic versions of the Morse criterion require separate hypotheses.</p>",
         "citations": [
           {
             "key": "Serre2007Topics",
@@ -124,6 +125,11 @@
         "id": "inverse-galois",
         "relation": "Constructs examples for",
         "why": "The family X^n−X−T gives regular symmetric-group extensions of Q(T)."
+      },
+      {
+        "id": "branched-covers",
+        "relation": "Develops",
+        "why": "Branch cycles and rigidity extend the connection between ramification and Galois groups."
       }
     ],
     "questions": [

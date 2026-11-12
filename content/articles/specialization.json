@@ -1,0 +1,858 @@
+[
+  {
+    "id": "specialization",
+    "title": "Specialization and Hilbert irreducibility",
+    "kind": "method",
+    "subject": "specialization",
+    "summary": "Hilbert irreducibility preserves the Galois group for many parameter values. Exceptional values are studied through resolvents, rational points, and local conditions.",
+    "level": "Intermediate",
+    "field": "number fields",
+    "status": "Classical theory",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "When does specialization preserve irreducibility and the Galois group?",
+      "How do arithmetic and geometric Galois groups differ?",
+      "When are the exceptional parameters finite?",
+      "What changes for powers, units, or algebraic parameters?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "frobenius"
+    ],
+    "sections": [
+      {
+        "id": "generic-and-special",
+        "title": "From a family to a polynomial",
+        "body": "<p>A polynomial \\(F(T,x)\\) describes a family: choosing \\(T=t\\) gives one polynomial \\(F(t,x)\\). Its group over the function field \\(K(T)\\) is called the <em>generic Galois group</em>. The main question is which values \\(t\\) preserve this group.</p><p>Let \\(K\\) be a number field and let \\(F\\in K(T)[x]\\) be monic, irreducible, and separable. Write \\(G\\) for its Galois group on the roots. Away from poles of the coefficients and zeros of the discriminant, the specialized group \\(G_t\\) embeds in \\(G\\), with the same action on the specialized roots, up to relabelling. A specialization may introduce a factor or reduce the group without introducing repeated roots.</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "§3.3, Proposition 3.3.5"
+          }
+        ]
+      },
+      {
+        "id": "arithmetic-geometric-constants",
+        "title": "Arithmetic and geometric groups",
+        "body": "<p>Let \\(K\\) have characteristic zero and let \\(L/K(T)\\) be a finite Galois extension. Its <em>constant field</em> is \\(C=L\\cap\\overline K\\). The arithmetic group and geometric group fit into</p>\\[1\\longrightarrow \\operatorname{Gal}(L\\overline K/\\overline K(T))\\longrightarrow \\operatorname{Gal}(L/K(T))\\longrightarrow \\operatorname{Gal}(C/K)\\longrightarrow1.\\]<p>The first group is naturally isomorphic to \\(\\operatorname{Gal}(L/C(T))\\). The extension is <em>regular over \\(K\\)</em> when \\(C=K\\); in that case the two groups coincide. The exact sequence need not split.</p><p>For \\(x^3-T\\) over \\(\\mathbb Q(T)\\), the roots are \\(\\sqrt[3]T,\\zeta_3\\sqrt[3]T,\\zeta_3^2\\sqrt[3]T\\). The arithmetic group is \\(S_3\\), the geometric group is \\(C_3\\), and the constant field is \\(\\mathbb Q(\\zeta_3)\\). For \\(x^3-x-T\\), the polynomial is irreducible over \\(\\overline{\\mathbb Q}(T)\\), and its discriminant \\(4-27T^2\\) is not a square there. Both groups are \\(S_3\\), so this splitting field is regular.</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§3.3, Proposition 3.3.6, pp. 74–75"
+          },
+          {
+            "key": "Milne2022",
+            "locator": "Version 5.10, Propositions 7.7 and 7.15"
+          },
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Equation (1.1) and Theorem 2.1"
+          }
+        ]
+      },
+      {
+        "id": "hilbert",
+        "title": "Hilbert irreducibility",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>Let \\(K\\) be a number field and let \\(F\\in K(T)[x]\\) be monic, irreducible, and separable, with Galois group \\(G\\). Outside a thin subset of \\(K\\), the polynomial \\(F(t,x)\\) is irreducible and has Galois group \\(G\\).</p></div><p>On the parameter line, a thin set is contained in the union of a finite set and finitely many images \\(\\pi_i(C_i(K))\\), where \\(C_i\\) are geometrically integral curves and \\(\\pi_i:C_i\\to\\mathbb A^1\\) are dominant maps of degree at least two. For example, rational squares form a thin set through the map \\(u\\mapsto u^2\\). Such a set can be infinite.</p><p>Hilbert's theorem, proved in 1892, says that \\(K\\) itself is not thin. Thus infinitely many specializations preserve the generic group. The theorem concerns the arithmetic group over \\(K(T)\\); regularity is not required.</p>",
+        "citations": [
+          {
+            "key": "Hilbert1892",
+            "locator": "Original irreducibility theorem"
+          },
+          {
+            "key": "Serre2007Topics",
+            "locator": "§§3.1–3.4; Proposition 3.3.5 and Theorem 3.4.1"
+          }
+        ]
+      },
+      {
+        "id": "cubic-example",
+        "title": "Example",
+        "body": "<p>Consider \\(F(T,x)=x^3-x-T\\), with generic group \\(S_3\\). Three specializations show different possibilities.</p><ul><li>At \\(t=1\\), reduction modulo \\(2\\) is \\(x^3+x+1\\), which has no root in \\(\\mathbb F_2\\). Thus \\(F(1,x)\\) is irreducible. Its discriminant is \\(-23\\), so its group is \\(S_3\\).</li><li>If \\(t=u^3-u\\) with \\(u\\in\\mathbb Q\\), then \\(u\\) is a root. Conversely, every reducible rational cubic in this family has such a parameter.</li><li>At \\(t=1/7\\), the primitive integral polynomial \\(7x^3-7x-1\\) again reduces to \\(x^3+x+1\\) modulo \\(2\\). It is irreducible, but the monic cubic has discriminant \\(169/49=(13/7)^2\\), so its group is \\(C_3\\).</li></ul><p>Reducibility and a drop in the Galois group are therefore different kinds of exception.</p>",
+        "citations": [
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorem 2.1; the specializations and modular checks are calculated here"
+          },
+          {
+            "key": "Serre2007Topics",
+            "locator": "§3.3, example with G=S₃"
+          }
+        ]
+      },
+      {
+        "id": "finite-exceptions",
+        "title": "Finite exceptional sets",
+        "body": "<p>The exceptional parameters can sometimes be described by rational points on finitely many curves. If each relevant smooth projective curve has genus at least two, Faltings's theorem makes the exceptional set finite. Curves of genus zero or one require separate analysis.</p><p>For generalized Laguerre polynomials, Hajir–Wong prove the following. Fix a number field \\(K\\) and an integer \\(n\\ge5\\). For all but finitely many \\(\\alpha\\in K\\), the polynomial \\(L_n^{(\\alpha)}\\) is irreducible over \\(K\\), and its group contains \\(A_n\\). If \\(n\\ge10\\), its group equals \\(S_n\\) outside a finite set. The degree and the ground field are fixed; the exceptional set need not be effectively known.</p><p>The article <a href=\"exceptional-specializations.html\">Exceptional specializations</a> explains the curves, counting bounds, and recent results for algebraic parameters.</p>",
+        "citations": [
+          {
+            "key": "HajirWong2006",
+            "locator": "Theorem 1(a), p. 1129, and Remark 1"
+          }
+        ]
+      },
+      {
+        "id": "power-parameters",
+        "title": "Power parameters",
+        "body": "<p>Hilbert irreducibility over all rational parameters does not by itself control a prescribed sequence such as \\(2^n\\). For \\(X^2-t\\), exactly the odd integers \\(n\\) make \\(X^2-2^n\\) irreducible over \\(\\mathbb Q\\); their density is \\(1/2\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem (Bary-Soroker–Garzoni–Matei, conditional on GRH)</p><p>Let \\(f(\\mathbf t,X)\\in\\mathbb Z[t_1,\\ldots,t_r,X]\\), with \\(\\deg_Xf\\ge1\\), satisfy the pullback condition: for every tuple \\(m_i\\ge1\\),</p>\\[f(t_1^{m_1},\\ldots,t_r^{m_r},X)\\text{ is irreducible in }\\overline{\\mathbb Q}[\\mathbf t,X].\\]<p>Fix \\(a_i\\in\\mathbb Z\\setminus\\{0,1,-1\\}\\). Assuming GRH, the proportion of exponent vectors \\(\\mathbf n\\in([-N,N]\\cap\\mathbb Z)^r\\) for which \\(f(a_1^{n_1},\\ldots,a_r^{n_r},X)\\) is irreducible over \\(\\mathbb Q\\) tends to one as \\(N\\to\\infty\\).</p></div><p>For \\(X^2-t\\), the substitution \\(t=u^2\\) produces a factorization, so the pullback condition fails. The theorem concerns irreducibility; preserving the full group also requires control of resolvents.</p><p>For one parameter, Dèbes proves a stronger unconditional result: under the same pullback condition, \\(f(a^n,X)\\) is irreducible for all but finitely many integers \\(n\\). The proof uses Siegel’s theorem on integral points; it does not determine the exceptional exponents effectively.</p>",
+        "citations": [
+          {
+            "key": "BarySorokerGarzoniMatei2025Powers",
+            "locator": "§1, condition (PB), Theorem 1.1, and the following examples",
+            "note": "Published theorem; GRH and absolute irreducibility of every power pullback are essential."
+          },
+          {
+            "key": "Debes1992Powers",
+            "locator": "Theorem 1.2, p. 144; see also Bary-Soroker–Garzoni–Matei, §1 after Theorem 1.1",
+            "note": "The original theorem characterizes infinitely many reducible power specializations; geometric (PB) rules out its scaled power-pullback obstruction."
+          }
+        ]
+      },
+      {
+        "id": "units-update",
+        "title": "Unit parameters",
+        "body": "<p><strong>Claimed in a preprint, 3 September 2026.</strong> Let \\(\\pi:X\\to\\mathbb P^1\\) be a nonconstant morphism from a smooth projective irreducible curve over a number field \\(K\\), let \\(S\\) be a finite set of non-archimedean places of \\(K\\), and put \\(U=\\mathcal O_S^\\times\\). Let \\(\\operatorname{Red}(\\pi)\\) be the set of \\(K\\)-rational parameters with a reducible fiber, together with all \\(K\\)-rational branch values. Siksek–Stoll state</p>\\[U\\cap\\operatorname{Red}(\\pi)=I\\cup\\bigcup_{j=1}^{k}\\gamma_j U^{r_j},\\qquad |I|<\\infty,\\quad \\gamma_j\\in U,\\quad r_j\\ge2.\\]<p>The power cosets are effectively computable; the proof does not make the finite remainder \\(I\\) effective. This describes the exceptional unit parameters more precisely than thinness alone. For \\(x^2-T\\), the exceptional unit parameters are simply the squares \\(U^2\\): if a square in \\(K\\) is an \\(S\\)-unit, its square root is also an \\(S\\)-unit.</p>",
+        "citations": [
+          {
+            "key": "SiksekStoll2026",
+            "locator": "Theorem 3 and following remark",
+            "note": "Version 1; this is a preprint theorem, not a complete effective algorithm."
+          }
+        ]
+      },
+      {
+        "id": "boundaries",
+        "title": "Finite and infinite families",
+        "body": "<p>Hilbert irreducibility also applies to finitely many polynomial families at once: take the union of their thin exceptional sets. For an infinite tower, the statement “each finite level has many good specializations” does not imply that one parameter works at every level. Simultaneous control of all levels requires an additional argument, as in questions about arboreal Galois representations.</p>",
+        "citations": [
+          {
+            "key": "FriedJarden2023",
+            "locator": "Hilbertian fields and simultaneous irreducible specializations"
+          },
+          {
+            "key": "DittmannKadets2022",
+            "locator": "Introduction and Theorem 1.2"
+          }
+        ]
+      },
+      {
+        "id": "dynatomic-specialization",
+        "title": "Dynatomic specializations",
+        "body": "<p>For \\(f_T(x)=x^2+T\\) and \\(n\\ge1\\), put</p>\\[\\Phi_n(T,x)=\\prod_{d\\mid n}(f_T^{\\circ d}(x)-x)^{\\mu(n/d)}.\\]<p>Over \\(\\mathbb Q(T)\\), this polynomial is irreducible and its group is \\(C_n\\wr S_r\\), where \\(nr=\\deg_x\\Phi_n\\). The action must commute with the permutation given by iteration, whose cycles all have length \\(n\\). This gives the upper bound \\(C_n\\wr S_r\\); the generic group attains it. Let \\(E_n\\) be the rational parameters where the specialized group differs from the generic group. Krumm proves \\(E_n\\) finite for \\(n=5,6,7,9\\), whereas it is infinite for \\(n\\le4\\). These finiteness proofs do not list all exceptional parameters.</p>",
+        "citations": [
+          {
+            "key": "Krumm2019Dynatomic",
+            "locator": "Equation (1.1), Problems 1.2–1.3, Theorem 1.4 and Proposition 2.2"
+          }
+        ]
+      },
+      {
+        "id": "dynatomic-period-four",
+        "title": "Period four",
+        "body": "<p>For every quadratic \\(f\\in\\mathbb Q[x]\\), Krumm determines the Galois group and the degrees of the irreducible factors of its fourth dynatomic polynomial. Thus period four has an explicit classification, while the finiteness question above concerns larger periods. The proof uses subgroup computations and rational points on the corresponding specialization curves.</p>",
+        "citations": [
+          {
+            "key": "Krumm2018DynatomicFour",
+            "locator": "Abstract and classification of fourth dynatomic polynomials"
+          }
+        ]
+      },
+      {
+        "id": "specialization-local-groups",
+        "title": "Local groups under specialization",
+        "body": "<p>Hilbert irreducibility controls the global group. Ramification imposes additional local conditions. Let \\(E/K(T)\\) be a finite Galois extension, regular over a number field \\(K\\), and let \\(t_i\\in K\\) be a finite branch point. Write \\(I_i\\triangleleft D_i\\) for its inertia and decomposition groups and \\(\\pi_i:D_i\\to D_i/I_i\\) for the quotient map. The residue extension at \\(t_i\\) has group \\(D_i/I_i\\).</p><p>Let \\(t_0\\in K\\) be a nonbranch specialization point. Outside a finite set of primes, suppose \\(t_0,t_i\\) are integral at \\(\\mathfrak p\\), \\(a=v_{\\mathfrak p}(t_0-t_i)>0\\), and \\(\\gcd(a,|I_i|)=1\\). If \\(D_{i,\\mathfrak p}\\) denotes the decomposition group in the branch-point residue extension, then the decomposition group of the specialization at \\(\\mathfrak p\\) is conjugate to \\(\\pi_i^{-1}(D_{i,\\mathfrak p})\\). This gives a method for prescribing local behavior while seeking specializations with the full global group.</p>",
+        "citations": [
+          {
+            "key": "KoenigLegrandNeftin2019Local",
+            "locator": "Theorem 1.1; Theorem 4.1 for the more general statement"
+          }
+        ]
+      },
+      {
+        "id": "compute-geometric-group",
+        "title": "Computing the two groups",
+        "body": "<p>Computations over \\(\\mathbb Q(T)\\) must identify both the Galois group and its constant field. Fieker–Sutherland give algorithms for these tasks. The constant field determines the quotient of the arithmetic group by the geometric group in the exact sequence above.</p>",
+        "citations": [
+          {
+            "key": "FiekerSutherland2023",
+            "locator": "arXiv version 3, §6.3, Algorithm 7 and Theorem 10"
+          }
+        ]
+      },
+      {
+        "id": "exceptional-curves",
+        "title": "Resolvent curves",
+        "body": "<p>Let \\(L/\\mathbb Q(T)\\) be the generic splitting field. For each maximal proper subgroup \\(M\\) of \\(G\\), a defining polynomial for \\(L^M\\) gives a resolvent curve. Outside finitely many excluded parameters, \\(G_t\\) lies in a conjugate of \\(M\\) exactly when this resolvent has a rational root at \\(t\\). This turns group determination into a problem about rational points.</p><p>Krumm–Sutherland implement this method and determine all exceptions in several examples. For instance, \\(x^6+c^6-1\\), with \\(c\\in\\mathbb Q\\), is reducible exactly for \\(c\\in\\{0,1,-1\\}\\).</p>",
+        "citations": [
+          {
+            "key": "KrummSutherland2021",
+            "locator": "arXiv version 2, Theorem 2.7, §4.1 and Proposition 4.3"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "inverse-galois",
+        "relation": "Applies to",
+        "why": "A regular realization over K(T) specializes to realizations over K."
+      },
+      {
+        "id": "resolvents",
+        "relation": "Uses",
+        "why": "Proper-subgroup fixed fields describe possible drops of Galois group."
+      },
+      {
+        "id": "laguerre",
+        "relation": "Supplies examples for",
+        "why": "Laguerre specializations illustrate finite exceptional sets."
+      },
+      {
+        "id": "composition-iteration",
+        "relation": "Contrasts with",
+        "why": "Separate results at every finite depth need not give a single parameter valid throughout the infinite tower."
+      },
+      {
+        "id": "height-counting",
+        "relation": "Generalizes",
+        "why": "Counting points in thin exceptional sets gives quantitative specialization theorems."
+      },
+      {
+        "id": "exceptional-specializations",
+        "relation": "Develops",
+        "why": "Resolvents, rational points, and quantitative bounds for exceptional parameters."
+      },
+      {
+        "id": "generic-polynomials",
+        "relation": "Distinguishes",
+        "why": "A generic Galois group and a generic polynomial have different meanings."
+      },
+      {
+        "id": "critical-points-monodromy",
+        "relation": "Uses",
+        "why": "Critical points can determine the group before specialization."
+      }
+    ],
+    "questions": [
+      {
+        "id": "effective-specialization-exceptions",
+        "title": "Can the finite exceptional parameters be determined effectively?",
+        "status": "Research direction",
+        "scope": "A specified one-parameter family over a fixed number field",
+        "body": "<p>A finiteness theorem need not determine the exceptional parameters effectively. Hajir–Wong discuss this difficulty for their curves; the 2026 unit-specialization theorem also leaves a finite set ineffective. For a given family, the problem reduces to determining rational or integral points on the associated curves.</p>",
+        "citations": [
+          {
+            "key": "HajirWong2006",
+            "locator": "Remark 1"
+          },
+          {
+            "key": "SiksekStoll2026",
+            "locator": "Remark following Theorem 3"
+          }
+        ]
+      },
+      {
+        "id": "dynatomic-finite-exceptions",
+        "title": "Are the exceptional dynatomic specializations finite for every period n>4?",
+        "status": "Open",
+        "scope": "Φ_n(T,x) for x²+T; specialization T=c∈Q",
+        "body": "<p>Krumm proposes finiteness for every \\(n>4\\) and proves it for \\(5,6,7,9\\). Determining each exceptional set explicitly is a further problem.</p>",
+        "citations": [
+          {
+            "key": "Krumm2019Dynatomic",
+            "locator": "Problem 1.3, discussion before Theorem 1.4, and §9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "inverse-galois",
+    "title": "Inverse Galois theory and generic polynomials",
+    "kind": "foundation",
+    "subject": "specialization",
+    "summary": "The inverse Galois problem asks which finite groups occur over a given field. Regular covers and generic polynomials give stronger forms of realization.",
+    "level": "Intermediate",
+    "field": "Q and number fields",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Does every finite group occur over the rational numbers?",
+      "How does a regular cover produce number fields?",
+      "What is the difference between a realization and a generic polynomial?",
+      "Which groups are known to occur?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "specialization"
+    ],
+    "sections": [
+      {
+        "id": "four-problems",
+        "title": "Four realization questions",
+        "body": "<p>Fix a field \\(K\\) and a finite group \\(G\\).</p><ul><li><strong>Inverse Galois problem.</strong> Does some finite Galois extension \\(L/K\\) have group \\(G\\)?</li><li><strong>Regular inverse Galois problem.</strong> Does some finite Galois extension \\(E/K(T)\\) have group \\(G\\) and satisfy \\(E\\cap\\overline K=K\\)?</li><li><strong>Parametric polynomial.</strong> Is there one polynomial family whose specializations give every \\(G\\)-extension of \\(K\\) as a splitting field?</li><li><strong>Generic polynomial.</strong> Is there such a family that works over every extension field \\(K'/K\\)?</li></ul><p>These are different requirements. The word “generic” in <em>generic Galois group</em> only refers to a group over a function field; it does not assert that the polynomial parametrizes every extension.</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§0.1, Definition 0.1.1"
+          },
+          {
+            "key": "DebesKonigLegrandNeftin2021Generic",
+            "locator": "Definition 1.1"
+          }
+        ]
+      },
+      {
+        "id": "realization-method",
+        "title": "Regular extensions and specialization",
+        "body": "<p>Let \\(K\\) be a number field and let \\(E/K(T)\\) be a regular Galois extension with nontrivial finite group \\(G\\). Hilbert irreducibility produces specializations with group \\(G\\). More precisely, for every finite extension \\(L/K\\), one can choose a specialization field linearly disjoint from \\(L\\). Repeating this construction gives infinitely many linearly disjoint \\(G\\)-extensions.</p><p>Regularity is essential for this conclusion. If \\(E=L(T)\\) is a constant extension, every unramified specialization gives the same field \\(L\\).</p><p>One approach is therefore to construct a regular cover first and then specialize. Critical points, invariant theory, branch cycles, rigidity, and embedding problems provide different constructions.</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "§3.3, Proposition 3.3.3 and Corollary 3.3.4"
+          },
+          {
+            "key": "MalleMatzat2018",
+            "locator": "Regular realizations and specialization"
+          }
+        ]
+      },
+      {
+        "id": "small-example",
+        "title": "Examples",
+        "body": "<p>In characteristic different from \\(2\\), every quadratic extension of a field \\(K\\) is \\(K(\\sqrt a)\\) for some nonsquare \\(a\\in K\\). Thus \\(x^2-T\\) is a generic polynomial for \\(C_2\\).</p><p>For a cyclic cubic over \\(\\mathbb Q\\), take</p>\\[x^3+x^2-2x-1.\\]<p>Neither \\(1\\) nor \\(-1\\) is a root, so the polynomial is irreducible. Its discriminant is \\(49\\), hence its group is \\(A_3=C_3\\). A root is \\(\\zeta_7+\\zeta_7^{-1}\\), so its splitting field is the real cubic subfield of \\(\\mathbb Q(\\zeta_7)\\).</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§0.1 and §2.1"
+          },
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorem 2.1; discriminant and cyclotomic identity calculated here"
+          }
+        ]
+      },
+      {
+        "id": "abelian-realizations",
+        "title": "Abelian groups",
+        "body": "<p>There is a direct cyclotomic construction for finite abelian groups. Write \\(G=C_{m_1}\\times\\cdots\\times C_{m_r}\\). Choose distinct primes \\(p_i\\equiv1\\pmod{m_i}\\). Then</p>\\[\\operatorname{Gal}(\\mathbb Q(\\zeta_{p_1\\cdots p_r})/\\mathbb Q)\\cong\\prod_i(\\mathbb Z/p_i\\mathbb Z)^\\times\\]<p>has \\(G\\) as a quotient, because each factor is cyclic and \\(m_i\\mid p_i-1\\). The fixed field of the kernel realizes \\(G\\). This argument uses Dirichlet's theorem to choose the primes.</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§0.2, cyclotomic realizations of abelian groups"
+          }
+        ]
+      },
+      {
+        "id": "known-landscape",
+        "title": "Known realizations",
+        "body": "<p>Hilbert proved that every symmetric group \\(S_n\\) and alternating group \\(A_n\\) occurs over \\(\\mathbb Q\\). Regular realizations are also known for these groups. Shafarevich's theorem realizes every finite solvable group over \\(\\mathbb Q\\). Many finite simple groups and their extensions have also been realized, but no theorem realizes every finite group over \\(\\mathbb Q\\).</p><p>The methods differ. Solvable realizations use embedding problems and arithmetic of number fields. Many nonsolvable realizations come from regular covers and rigidity. A list of computed polynomials supplies examples for particular groups; it does not settle the unrestricted problem.</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§0.2, Theorems 0.2.1 and 0.2.4"
+          },
+          {
+            "key": "Serre2007Topics",
+            "locator": "§§4.4–4.5 and Chapters 7–8"
+          },
+          {
+            "key": "MalleMatzat2018",
+            "locator": "Known realizations and the inverse Galois problem"
+          }
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "The degree of a realizing polynomial",
+        "body": "<p>A Galois extension \\(L/K\\) with group \\(G\\) can be described by many polynomials. If \\(H\\le G\\) and \\(\\alpha\\) generates \\(L^H/K\\), then the minimal polynomial of \\(\\alpha\\) has degree \\([G:H]\\). Its normal closure is \\(L\\) precisely when</p>\\[\\bigcap_{g\\in G}gHg^{-1}=1.\\]<p>This intersection is the <em>core</em> of \\(H\\). Equivalently, the action of \\(G\\) on the cosets of \\(H\\) must be faithful. Thus a degree-\\(n\\) realization asks for a faithful transitive action of degree \\(n\\), in addition to the abstract group.</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§0.1 and Chapter 1, permutation representations"
+          },
+          {
+            "key": "KluenersMalle2000",
+            "locator": "Database organization by transitive permutation groups"
+          }
+        ]
+      },
+      {
+        "id": "beyond-existence",
+        "title": "Parametrization",
+        "body": "<p>Realizing a group once need not give a generic polynomial. For example, \\(C_8\\) occurs over \\(\\mathbb Q\\), but has no generic polynomial over \\(\\mathbb Q\\), even with several parameters. For one parameter, the nontrivial groups admitting a generic polynomial over \\(\\mathbb Q\\) are exactly \\(C_2,C_3,S_3\\). The article <a href=\"generic-polynomials.html\">Generic polynomials and invariant fields</a> gives the definitions, examples, and precise classification.</p>",
+        "citations": [
+          {
+            "key": "DebesKonigLegrandNeftin2021Generic",
+            "locator": "Introduction and Corollary 1.3"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "specialization",
+        "relation": "Uses",
+        "why": "Hilbert irreducibility transfers a regular function-field construction to number fields."
+      },
+      {
+        "id": "galois-computation",
+        "relation": "Uses",
+        "why": "An explicit realization requires a proof of its Galois group."
+      },
+      {
+        "id": "resolvents",
+        "relation": "Uses",
+        "why": "Resolvents distinguish candidate permutation groups."
+      },
+      {
+        "id": "finite-field-irreducibility",
+        "relation": "Contrasts with",
+        "why": "Over a finite base field, every finite Galois group is cyclic."
+      },
+      {
+        "id": "composition-iteration",
+        "relation": "Applies to",
+        "why": "Arboreal existence problems prescribe an entire compatible tower of groups."
+      },
+      {
+        "id": "hecke-polynomials",
+        "relation": "Related family",
+        "why": "Maeda’s conjecture has conditional inverse Galois consequences."
+      },
+      {
+        "id": "branched-covers",
+        "relation": "Uses",
+        "why": "Branch cycles and rigidity construct regular Galois extensions."
+      },
+      {
+        "id": "generic-polynomials",
+        "relation": "Develops",
+        "why": "Universal parametrization is stronger than existence."
+      },
+      {
+        "id": "galois-correspondence",
+        "relation": "Uses",
+        "why": "Core-free subgroups determine faithful transitive realizations."
+      }
+    ],
+    "questions": [
+      {
+        "id": "inverse-galois-q",
+        "title": "Does every finite group occur as a Galois group over Q?",
+        "status": "Open",
+        "scope": "Finite Galois extensions of Q; no fixed degree bound",
+        "body": "<p>This is the classical inverse Galois problem. The cited monographs describe known realizations. For a specified group, one can also ask for a realization in a prescribed transitive action.</p>",
+        "citations": [
+          {
+            "key": "MalleMatzat2018",
+            "note": "Inverse Galois problem and known realizations."
+          }
+        ]
+      },
+      {
+        "id": "regular-inverse-galois",
+        "title": "Does every finite group admit a regular realization over Q(T)?",
+        "status": "Open",
+        "scope": "Regular finite Galois extensions of Q(T)",
+        "body": "<p>This is Serre’s Conjecture 4.1.1. A positive answer would imply the ordinary inverse Galois problem by specialization. The conjecture concerns finite groups, not arbitrary profinite groups.</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "Conjecture 4.1.1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "exceptional-specializations",
+    "title": "Exceptional specializations",
+    "kind": "foundation",
+    "subject": "specialization",
+    "summary": "Resolvent curves describe parameters where a Galois group decreases. Their rational points control the size and structure of the exceptional set.",
+    "level": "Advanced",
+    "field": "Number fields and characteristic-zero function fields",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How do proper subgroups give equations for exceptional parameters?",
+      "When does geometry imply finitely many exceptions?",
+      "How many exceptional integral parameters can there be?",
+      "What is known for algebraic parameters of bounded degree?"
+    ],
+    "prerequisites": [
+      "field-extensions",
+      "galois-correspondence",
+      "specialization"
+    ],
+    "sections": [
+      {
+        "id": "resolvents",
+        "title": "From subgroups to curves",
+        "body": "<p>Let \\(P(T,x)\\in\\mathbb Q[T,x]\\) be separable over \\(\\mathbb Q(T)\\), with splitting field \\(L\\) and nontrivial Galois group \\(G\\). Choose one representative \\(M_i\\) of each conjugacy class of maximal proper subgroups of \\(G\\). A primitive element for \\(L^{M_i}/\\mathbb Q(T)\\) gives a resolvent polynomial \\(R_i(T,y)\\), which can be chosen monic in \\(y\\) with coefficients in \\(\\mathbb Q[T]\\).</p><p>Exclude the finitely many parameters where the chosen equations have poles, a vanishing leading coefficient, or a vanishing discriminant. Then</p>\\[G_t\\ne G\\quad\\Longleftrightarrow\\quad R_i(t,y)\\text{ has a root in }\\mathbb Q\\text{ for some }i.\\]<p>Indeed, a proper subgroup lies in a maximal subgroup, and a root of the resolvent is a fixed point for the action on \\(G/M_i\\). The equations \\(R_i(T,y)=0\\) therefore describe all remaining exceptions.</p>",
+        "citations": [
+          {
+            "key": "KrummSutherland2021",
+            "locator": "Theorem 2.7"
+          }
+        ]
+      },
+      {
+        "id": "cubic-resolvents",
+        "title": "Example",
+        "body": "<p>For \\(x^3-x-T\\), the maximal subgroups of \\(S_3\\) have orders \\(2\\) and \\(3\\). The first gives the original cubic curve</p>\\[t=u^3-u,\\]<p>which describes reducible fibers. The second gives the discriminant curve</p>\\[v^2=4-27t^2.\\]<p>Every rational point on either curve gives a parameter with group smaller than \\(S_3\\). Both curves have genus zero. The second has the point \\((t,v)=(0,2)\\); intersecting with the line \\(v=2+mt\\) gives</p>\\[t=\\frac{-4m}{m^2+27},\\qquad v=\\frac{2(27-m^2)}{m^2+27}.\\]<p>At \\(m=-1\\) this gives \\(t=1/7\\), where the irreducible cubic has group \\(C_3\\).</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "§3.3, S₃ specialization criterion"
+          },
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorem 2.1; the conic parametrization is calculated here"
+          }
+        ]
+      },
+      {
+        "id": "genus",
+        "title": "Genus and finiteness",
+        "body": "<p>Pass from each resolvent equation to its smooth projective curve. If these curves are geometrically integral and have genus at least two, each has finitely many rational points by Faltings's theorem. The exceptional parameter set is then finite. A smooth curve with nontrivial algebraic constants has no rational point and contributes no exceptions.</p><p>The genus is decisive, but a low genus alone does not settle the question. A genus-zero curve may have no rational point; with one rational point it is parametrizable. A genus-one curve may have finitely or infinitely many rational points, depending on its rational points and Mordell–Weil rank. Integral parameters can impose additional restrictions through Siegel's theorem.</p><p>Hajir–Wong use quotient curves and ramification to prove finiteness for generalized Laguerre families. Krumm–Sutherland compute fixed-field curves to determine exceptional sets in explicit families. The latter work separates the group computation from the arithmetic of the resulting curves.</p>",
+        "citations": [
+          {
+            "key": "HajirWong2006",
+            "locator": "§2 and Theorem 1"
+          },
+          {
+            "key": "KrummSutherland2021",
+            "locator": "§§2–4"
+          }
+        ]
+      },
+      {
+        "id": "counting",
+        "title": "Counting integral parameters",
+        "body": "<p>For a fixed family over \\(\\mathbb Q\\), Hilbert irreducibility also has quantitative forms. If \\(A\\subset\\mathbb A^r(\\mathbb Q)\\) is thin, the classical large-sieve estimate is</p>\\[\\#\\bigl(A\\cap[-B,B]^r\\cap\\mathbb Z^r\\bigr)\\ll_A B^{r-1/2}\\log B.\\]<p>The constant depends on the thin set. Applied to the group-dropping parameters, this shows that the generic group occurs with density one among integral tuples in expanding boxes. It does not give a finite exceptional set.</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "Theorem 3.4.4 and §3.3"
+          }
+        ]
+      },
+      {
+        "id": "effective-counting",
+        "title": "An effective bound",
+        "body": "<p>Cluckers–Dèbes–Hendel–Nguyen–Vermeulen give a bound that displays the dependence on the polynomial. Let \\(\\mathbf T\\) contain \\(r\\) variables, let \\(\\mathbf Y\\) contain \\(n\\) variables, and let \\(F\\in\\mathbb Z[\\mathbf T,\\mathbf Y]\\) be irreducible over \\(\\mathbb Q\\), of total degree \\(d\\), with \\(\\deg_{\\mathbf Y}F\\ge1\\). Write \\(\\|F\\|\\) for the projective height of its coefficient vector. If \\(S_F(B)\\) counts integral \\(\\mathbf t\\in[-B,B]^r\\) for which \\(F(\\mathbf t,\\mathbf Y)\\) is reducible over \\(\\mathbb Q\\), then for \\(B\\ge2\\),</p>\\[S_F(B)\\ll_{n,r}2^{(118+10(r-1))(d+1)^n}(1+\\log\\|F\\|)^{10}B^{r-1/2}(\\log B)^{10(r-1)}.\\]<p>The result was published in 2025. It applies when several polynomial variables remain after specialization. Its bound concerns reducibility; full Galois-group preservation requires applying irreducibility arguments to suitable resolvents as well.</p>",
+        "citations": [
+          {
+            "key": "CluckersDebesHendelNguyenVermeulen2025",
+            "locator": "Theorem 1.10 and Corollary 1.11"
+          }
+        ]
+      },
+      {
+        "id": "algebraic-parameters",
+        "title": "Algebraic parameters",
+        "body": "<p>For \\(t\\in\\overline K\\), the relevant ground field is \\(K(t)\\). A bound on \\([K(t):K]\\) permits infinitely many fields, so this problem is stronger than studying parameters in one fixed number field.</p><p><strong>Claimed in a preprint, 9 June 2026.</strong> Kadets–Neftin state the following for a number field \\(K\\). Let \\(\\phi\\in K[x]\\) be indecomposable, with \\(b\\ge12\\) finite geometric branch values, and put \\(n=\\deg\\phi\\). For all but finitely many algebraic \\(t\\) satisfying</p>\\[[K(t):K]<\\frac b4-\\sqrt{\\frac b2}+\\frac12,\\]<p>the polynomial \\(\\phi(x)-t\\) is either irreducible over \\(K(t)\\), or is the product of one linear factor and one irreducible factor of degree \\(n-1\\). The linear-factor alternative is necessary: values \\(t=\\phi(u)\\) have the root \\(u\\).</p>",
+        "citations": [
+          {
+            "key": "KadetsNeftin2026Algebraic",
+            "locator": "Version 1, Corollary 3.14 and §1.2"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "specialization",
+        "relation": "Develops",
+        "why": "Hilbert irreducibility and arithmetic versus geometric groups."
+      },
+      {
+        "id": "resolvents",
+        "relation": "Uses",
+        "why": "Fixed-point tests detect containment in proper subgroups."
+      },
+      {
+        "id": "polynomial-fibers",
+        "relation": "Connects",
+        "why": "Geometric reducibility of a fiber and arithmetic reducibility after specializing are distinct."
+      },
+      {
+        "id": "height-counting",
+        "relation": "Connects",
+        "why": "Both questions count exceptional polynomials, but with different parameter spaces."
+      }
+    ],
+    "questions": [
+      {
+        "id": "bounded-degree-specialization",
+        "title": "Which covers have only finitely many reducible fibers at algebraic points of bounded degree?",
+        "status": "Research direction",
+        "scope": "A fixed cover over a number field, with a specified bound on the degree of the parameter",
+        "body": "<p>One must account for fibers with a rational point over the parameter field. Kadets–Neftin study finiteness after these unavoidable exceptions are removed, and give bounds in terms of branching and monodromy. Their 2026 preprint provides a starting point for sharper bounds and explicit exceptional sets in particular families.</p>",
+        "citations": [
+          {
+            "key": "KadetsNeftin2026Algebraic",
+            "locator": "Introduction, Theorems 1.1–1.3, and §1.2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "generic-polynomials",
+    "title": "Generic polynomials and invariant fields",
+    "kind": "foundation",
+    "subject": "specialization",
+    "summary": "A generic polynomial describes every extension with a given group over every extension of the base field. Invariant theory constructs some examples and explains important obstructions.",
+    "level": "Advanced",
+    "field": "Number fields and characteristic-zero function fields",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "What does a generic polynomial parametrize?",
+      "Why is a regular realization not necessarily generic?",
+      "Which groups have a one-parameter generic polynomial over the rationals?",
+      "How does Noether’s problem enter inverse Galois theory?"
+    ],
+    "prerequisites": [
+      "field-extensions",
+      "galois-correspondence",
+      "specialization"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "The definition",
+        "body": "<p>Let \\(K\\) be a field and \\(P(\\mathbf T,x)\\in K(\\mathbf T)[x]\\) a monic separable polynomial with Galois group \\(G\\). It is <em>generic for \\(G\\) over \\(K\\)</em> if, for every extension field \\(E/K\\), every Galois extension of \\(E\\) with group \\(G\\) is the splitting field of some specialization \\(P(\\mathbf t,x)\\), with \\(\\mathbf t\\in E^r\\) where the coefficients are defined.</p><p>If this property is required only for \\(E=K\\), the family is called \\(K\\)-parametric. A regular \\(G\\)-extension of \\(K(T)\\) makes neither assertion: it provides a family of realizations, but need not contain every \\(G\\)-extension among its fibers.</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "Definition 0.1.1"
+          },
+          {
+            "key": "DebesKonigLegrandNeftin2021Generic",
+            "locator": "Definition 1.1"
+          }
+        ]
+      },
+      {
+        "id": "quadratic",
+        "title": "Example",
+        "body": "<p>Assume \\(\\operatorname{char}K\\ne2\\). Every quadratic extension of every field \\(E/K\\) is \\(E(\\sqrt a)\\) for a nonsquare \\(a\\in E\\). Therefore \\(x^2-T\\) is generic for \\(C_2\\). Two nonsquare parameters \\(a,b\\) define the same quadratic extension exactly when \\(a/b\\) is a square in \\(E\\).</p><p>Square parameters give reducible fibers.</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§0.1"
+          }
+        ]
+      },
+      {
+        "id": "symmetric",
+        "title": "The general polynomial",
+        "body": "<p>Let \\(X_1,\\ldots,X_n\\) be algebraically independent. Permuting these variables gives</p>\\[K(X_1,\\ldots,X_n)^{S_n}=K(e_1,\\ldots,e_n),\\]<p>where the \\(e_i\\) are elementary symmetric functions. The polynomial with roots \\(X_i\\) is therefore a generic polynomial for \\(S_n\\):</p>\\[x^n-e_1x^{n-1}+e_2x^{n-2}-\\cdots+(-1)^ne_n.\\]<p>To see the parametrization, let \\(L/E\\) be an \\(S_n\\)-extension. The fixed field of a point stabilizer has degree \\(n\\). A primitive element has a degree-\\(n\\) minimal polynomial whose splitting field is \\(L\\); its coefficients supply the required parameters.</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§0.1 and §1.1"
+          }
+        ]
+      },
+      {
+        "id": "one-parameter",
+        "title": "One parameter over the rationals",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>The nontrivial finite groups with a one-parameter generic polynomial over \\(\\mathbb Q\\) are exactly \\(C_2,C_3,S_3\\).</p></div><p>Representatives are</p><ul><li>\\(C_2:\\quad x^2-T\\);</li><li>\\(C_3:\\quad x^3-Tx^2+(T-3)x+1\\);</li><li>\\(S_3:\\quad x^3+Tx+T\\).</li></ul><p>Dèbes–König–Legrand–Neftin classify the corresponding splitting fields up to a fractional linear change of parameter.</p>",
+        "citations": [
+          {
+            "key": "DebesKonigLegrandNeftin2021Generic",
+            "locator": "Corollary 1.3; Corollary 3.6 for characteristic-zero base fields"
+          }
+        ]
+      },
+      {
+        "id": "noether",
+        "title": "Noether’s problem",
+        "body": "<p>Let a finite group \\(G\\) act faithfully by permuting independent variables \\(X_1,\\ldots,X_m\\). Noether's problem asks whether the invariant field \\(K(X_1,\\ldots,X_m)^G\\) is purely transcendental over \\(K\\). A positive answer gives a regular \\(G\\)-extension over a rational function field. Over a number field, Hilbert irreducibility then gives \\(G\\)-extensions of the base field. Invariant-theoretic constructions also produce generic polynomials.</p><p>The rationality question can fail even when the group is realizable. Swan's counterexample for \\(C_{47}\\) over \\(\\mathbb Q\\) concerns the invariant field for its regular permutation action. The cyclic group itself is realized by a subfield of a cyclotomic field. Failure of this construction is not a counterexample to the inverse Galois problem.</p>",
+        "citations": [
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§0.3 and §1.1"
+          },
+          {
+            "key": "Swan1969Invariants",
+            "locator": "Invariant rational functions and the C₄₇ counterexample"
+          }
+        ]
+      },
+      {
+        "id": "obstructions",
+        "title": "Limits of parametrization",
+        "body": "<p>Some groups have no generic polynomial over a given field. In particular, \\(C_8\\) has no generic polynomial over \\(\\mathbb Q\\), regardless of the number of parameters. This does not prevent regular realizations or individual number-field realizations.</p><p>When generic polynomials exist, one can ask for the fewest parameters. This leads to essential dimension and generic dimension, which measure universal parametrization rather than the degree of one realizing polynomial.</p>",
+        "citations": [
+          {
+            "key": "DebesKonigLegrandNeftin2021Generic",
+            "locator": "Introduction, p. 2"
+          },
+          {
+            "key": "JensenLedetYui2002",
+            "locator": "§2.6 and Chapter 8"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "inverse-galois",
+        "relation": "Develops",
+        "why": "Universal parametrization is stronger than realizing a group."
+      },
+      {
+        "id": "specialization",
+        "relation": "Uses",
+        "why": "Specialization turns function-field constructions into number fields."
+      },
+      {
+        "id": "galois-correspondence",
+        "relation": "Uses",
+        "why": "Point stabilizers recover a degree-n polynomial from an S_n-extension."
+      }
+    ],
+    "questions": [
+      {
+        "id": "one-parameter-generic-q",
+        "title": "Which nontrivial groups have a one-parameter generic polynomial over Q?",
+        "status": "Settled",
+        "scope": "Generic polynomials over Q, with one parameter and universality over every extension field",
+        "body": "<p>Exactly \\(C_2,C_3,S_3\\). The published classification also identifies the possible splitting fields up to a fractional linear change of parameter.</p>",
+        "citations": [
+          {
+            "key": "DebesKonigLegrandNeftin2021Generic",
+            "locator": "Corollary 1.3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "branched-covers",
+    "title": "Branched covers and rigidity",
+    "kind": "foundation",
+    "subject": "specialization",
+    "summary": "Branch cycles describe covers over the complex numbers. Rationality and rigidity can descend a cover to the rationals and produce a regular Galois realization.",
+    "level": "Advanced",
+    "field": "Number fields and characteristic-zero function fields",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How do permutations describe a branched cover?",
+      "What does the Riemann–Hurwitz formula tell us?",
+      "Which hypotheses make the rigidity method work over the rationals?",
+      "How does a cover lead to a polynomial with a prescribed group?"
+    ],
+    "prerequisites": [
+      "field-extensions",
+      "galois-correspondence",
+      "specialization"
+    ],
+    "sections": [
+      {
+        "id": "covers",
+        "title": "Covers and Galois groups",
+        "body": "<p>A finite separable extension of \\(K(T)\\) is the function field of a curve with a finite map to the projective line. The Galois closure gives a Galois cover. Over \\(\\mathbb C\\), moving the parameter around a branch value permutes the points in a fiber; these permutations form the monodromy group.</p><p>Over \\(\\mathbb C\\), a polynomial \\(f\\) of degree \\(n\\ge2\\) defines the cover \\(f:\\mathbb P^1_x\\to\\mathbb P^1_T\\). Its finite branch values are the critical values \\(f(c)\\), where \\(f'(c)=0\\). Infinity is a branch value with ramification index \\(n\\), so its branch cycle is an \\(n\\)-cycle.</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "§§4.4 and 6.1–6.3"
+          }
+        ]
+      },
+      {
+        "id": "branch-cycles",
+        "title": "Branch cycles",
+        "body": "<p>Choose loops around distinct branch values \\(t_1,\\ldots,t_r\\) on the complex projective line. Their branch cycles \\(\\sigma_1,\\ldots,\\sigma_r\\in S_n\\) satisfy</p>\\[\\sigma_1\\cdots\\sigma_r=1,\\qquad\\langle\\sigma_1,\\ldots,\\sigma_r\\rangle\\text{ is transitive}.\\]<p>Conversely, the Riemann existence theorem constructs a connected degree-\\(n\\) cover from such a tuple. Its geometric Galois group is the subgroup generated by the cycles. The cover is constructed over \\(\\mathbb C\\); a model over \\(\\mathbb Q\\) requires an arithmetic descent argument.</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "Chapter 6, especially Theorem 6.3.1"
+          }
+        ]
+      },
+      {
+        "id": "genus",
+        "title": "The genus formula",
+        "body": "<p>For \\(\\sigma\\in S_n\\), put \\(\\operatorname{ind}(\\sigma)=n-\\#\\{\\text{cycles of }\\sigma\\}\\), counting fixed points as cycles. The Riemann–Hurwitz formula becomes</p>\\[2g(X)-2=-2n+\\sum_{i=1}^r\\operatorname{ind}(\\sigma_i).\\]<p>This is a necessary condition on branch-cycle data. For example, a polynomial of degree \\(n\\) with \\(n-1\\) distinct simple critical values has \\(n-1\\) finite transpositions and an \\(n\\)-cycle at infinity. The total index is \\((n-1)+(n-1)=2n-2\\), giving \\(g(X)=0\\), as it must for \\(X=\\mathbb P^1\\).</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "§4.4 and Chapter 6"
+          }
+        ]
+      },
+      {
+        "id": "rigidity",
+        "title": "Rational rigidity",
+        "body": "<p>Let \\(G\\) be a finite group with trivial center, and let \\(C_1,\\ldots,C_r\\) be conjugacy classes. Consider the generating tuples</p>\\[\\{(g_1,\\ldots,g_r):g_i\\in C_i,\\ g_1\\cdots g_r=1,\\ \\langle g_1,\\ldots,g_r\\rangle=G\\}.\\]<p>The classes are <em>rigid</em> if this set is nonempty and consists of one orbit under simultaneous conjugation by \\(G\\). A class is <em>rational</em> if it contains \\(g^a\\) whenever it contains \\(g\\) and \\(\\gcd(a,|g|)=1\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>If the classes are rigid and rational, then for any distinct rational points \\(t_1,\\ldots,t_r\\) there is a regular \\(G\\)-cover of \\(\\mathbb P^1_{\\mathbb Q}\\), unramified outside those points, with inertia generators in the specified classes.</p></div><p>Rigidity supplies uniqueness of the geometric cover; rationality makes its branch data compatible with the action of the absolute Galois group. The trivial-center hypothesis is part of this form of the theorem.</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "§7.3 and Theorem 8.1.1"
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "title": "Example",
+        "body": "<p>In \\(S_3\\), take \\(C_1=C_2\\) to be the transposition class and \\(C_3\\) the class of 3-cycles. If the transpositions \\(a,b\\) are distinct, then \\(ab\\) is a 3-cycle, and</p>\\[(a,b,(ab)^{-1})\\]<p>is a generating tuple with product one. There are six ordered pairs of distinct transpositions. Simultaneous conjugation acts transitively on these pairs, with trivial stabilizer. Both conjugacy classes are rational, so the rigidity criterion applies.</p><p>The polynomial cover \\(x^3-3x=T\\) gives the same branch-cycle types: transpositions at \\(T=-2,2\\) and a 3-cycle at infinity. Its Galois closure is a regular \\(S_3\\)-extension of \\(\\mathbb Q(T)\\). Specializing at \\(T=3\\) gives \\(x^3-3x-3\\), irreducible by Eisenstein at \\(3\\), with nonsquare discriminant \\(-135\\), hence group \\(S_3\\).</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "§§4.4, 7.4.1 and Theorem 8.1.1"
+          },
+          {
+            "key": "ConradCubicQuartic",
+            "locator": "Theorem 2.1; S₃ tuple and discriminant computed here"
+          }
+        ]
+      },
+      {
+        "id": "method",
+        "title": "Using the method",
+        "body": "<p>For a proposed group, first find conjugacy classes that generate it and admit product-one tuples. Compute their genus constraints, then check rigidity and rationality. The number of tuples can often be obtained from the character table; proving that they generate the full group may require knowledge of maximal subgroups.</p><p>Rigidity is a sufficient construction method. Covers with several conjugacy orbits are studied through Hurwitz spaces, which parametrize covers with fixed branching data. Constructing rational points on those spaces is a separate arithmetic problem. A complex cover alone does not solve the regular inverse Galois problem over \\(\\mathbb Q\\).</p>",
+        "citations": [
+          {
+            "key": "Serre2007Topics",
+            "locator": "§7.2 and Chapter 8"
+          },
+          {
+            "key": "MalleMatzat2018",
+            "locator": "Rigidity, Hurwitz spaces, and regular realizations"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "critical-points-monodromy",
+        "relation": "Develops",
+        "why": "Derivatives determine branch cycles of polynomial covers."
+      },
+      {
+        "id": "inverse-galois",
+        "relation": "Applies",
+        "why": "A regular cover can be specialized to number fields."
+      },
+      {
+        "id": "permutation-groups",
+        "relation": "Uses",
+        "why": "Generating tuples and subgroup tests determine monodromy."
+      },
+      {
+        "id": "exceptional-specializations",
+        "relation": "Connects",
+        "why": "Quotient covers detect parameters with a smaller group."
+      }
+    ],
+    "questions": []
+  }
+]

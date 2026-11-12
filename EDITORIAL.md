@@ -79,3 +79,9 @@ Corrected the higher-level Maeda multiplicativity discussion and recorded the or
 Read all 53 articles and their 107 questions, along with reading paths and method summaries. Clarified separability and degree-preserving reduction, sparse input and output conventions, reciprocal and dynatomic group bounds, fixed-degree limits, and the precise ensembles in random-matrix statements. Preprint claims retain version-specific attribution; question statuses remain Settled, Claimed, Open, or Research direction.
 
 The release includes canonical page URLs and sharing metadata. Exact example checks, formula rendering, citation IDs, internal links, and representative browser controls were checked. This is a statement and exposition review, not an independent proof verification of every source.
+
+## Foundations and subject expansion · 12 November 2026
+
+The current edition contains 68 articles, 116 questions, and 370 references. This revision adds 15 articles and 44 references, with extended treatments of field extensions, the Galois correspondence, several variables, composition and iteration, finite fields, and specialization. Every article overview and the reading and method guides were reviewed for direct, precise prose.
+
+New exact checks cover finite-field arithmetic and bases, decomposition and iteration, Newton polytopes, specialization, and Gao’s differential equations. Existing article, question, and section links are preserved. Recent preprints remain identified as claims. The review checks statements, sources, and selected examples; it does not certify the proofs of all cited works or claim an exhaustive bibliography.

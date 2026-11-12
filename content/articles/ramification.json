@@ -4,15 +4,15 @@
     "title": "Ramification and inertia",
     "kind": "method",
     "subject": "galois",
-    "summary": "Inertia describes the action on roots at ramified primes. For a monic integral polynomial, an odd prime dividing its discriminant exactly once gives a transposition.",
+    "summary": "Inertia describes the Galois action at ramified primes. An odd prime dividing a monic integer polynomial’s discriminant exactly once gives a transposition.",
     "level": "Intermediate",
     "field": "Q and local fields",
     "status": "Classical theory",
     "checked": "2026-11-12",
     "questionsAnswered": [
-      "How does inertia act at a ramified prime?",
-      "When does a discriminant valuation force a transposition?",
-      "Can repeated reduction occur without ramification?"
+      "How do decomposition and inertia groups act on roots?",
+      "Why does discriminant valuation one give a transposition?",
+      "Why can a repeated reduction occur at an unramified prime?"
     ],
     "prerequisites": [
       "foundations",
@@ -35,7 +35,7 @@
       {
         "id": "tame-cycles",
         "title": "Tame inertia",
-        "body": "<p>In residue characteristic \\(p\\), inertia has a normal wild \\(p\\)-subgroup and a cyclic quotient of order prime to \\(p\\). If the extension is <strong>tame</strong>, wild inertia is trivial, so inertia itself is cyclic.</p><p>For irreducible \\(f\\), put \\(K=\\mathbb Q(\\alpha)\\). If its splitting field is tame at \\(p\\), write \\(p\\mathcal O_K=\\prod_i\\mathfrak p_i^{e_i}\\), with residue degrees \\(f_i\\). A generator of inertia acts on the roots with an \\(e_i\\)-cycle repeated \\(f_i\\) times for each \\(i\\). Indeed, the decomposition orbit for \\(\\mathfrak p_i\\) has size \\(e_if_i\\), and splits into \\(f_i\\) inertia orbits of size \\(e_i\\); a cyclic generator traverses each orbit. These are ramification indices in the ring of integers, not automatically exponents in \\(f\\bmod p\\).</p><p>For example, \\(x^3-5\\) is Eisenstein over \\(\\mathbb Q_5\\). Its root has valuation \\(1/3\\), forcing ramification index three. Adjoining a primitive cube root of unity is unramified at \\(5\\), since \\(x^2+x+1\\) has squarefree reduction. The splitting field therefore has cyclic inertia of order three, acting as a three-cycle. Here \\(\\Delta(x^3-5)=-675\\) has valuation two at \\(5\\): tame inertia gives a 3-cycle although the discriminant valuation is not one.</p>",
+        "body": "<p>In residue characteristic \\(p\\), inertia has a normal wild \\(p\\)-subgroup and a cyclic quotient of order prime to \\(p\\). If the extension is <strong>tame</strong>, wild inertia is trivial, so inertia itself is cyclic.</p><p>For irreducible \\(f\\), put \\(K=\\mathbb Q(\\alpha)\\). If its splitting field is tame at \\(p\\), write \\(p\\mathcal O_K=\\prod_i\\mathfrak p_i^{e_i}\\), with residue degrees \\(f_i\\). A generator of inertia acts on the roots with an \\(e_i\\)-cycle repeated \\(f_i\\) times for each \\(i\\). Indeed, the decomposition orbit for \\(\\mathfrak p_i\\) has size \\(e_if_i\\), and splits into \\(f_i\\) inertia orbits of size \\(e_i\\); a cyclic generator traverses each orbit. The integers \\(e_i\\) come from factorization in \\(\\mathcal O_K\\). Repeated factors of \\(f\\bmod p\\) can also arise from the index \\([\\mathcal O_K:\\mathbb Z[\\alpha]]\\).</p><p>For example, \\(x^3-5\\) is Eisenstein over \\(\\mathbb Q_5\\). Its root has valuation \\(1/3\\), forcing ramification index three. Adjoining a primitive cube root of unity is unramified at \\(5\\), since \\(x^2+x+1\\) has squarefree reduction. The splitting field therefore has cyclic inertia of order three, acting as a three-cycle. Here \\(\\Delta(x^3-5)=-675\\) has valuation two at \\(5\\): tame inertia gives a 3-cycle although the discriminant valuation is not one.</p>",
         "citations": [
           {
             "key": "Serre1979",
@@ -81,7 +81,7 @@
       {
         "id": "index-boundary",
         "title": "The index of an order",
-        "body": "<div class=\"math-block boundary\"><p class=\"block-label\">Remark</p><p>For monic irreducible \\(f\\) with root \\(\\alpha\\) and \\(K=\\mathbb Q(\\alpha)\\),</p>\\[\\Delta(f)=\\operatorname{disc}(K)\\,[\\mathcal O_K:\\mathbb Z[\\alpha]]^2.\\]<p>Consider \\(x^2-18\\), with root \\(3\\sqrt2\\). Modulo \\(3\\) it becomes \\(x^2\\), yet \\(K=\\mathbb Q(\\sqrt2)\\) has discriminant \\(8\\), so \\(3\\) is unramified and its inertia group is trivial. The polynomial discriminant is \\(72=8\\cdot3^2\\): the repeated reduction comes from the index \\(3\\). Conversely, valuation one excludes any index contribution at that prime.</p></div><p>A primitive subgroup containing a transposition is \\(S_n\\). Transitivity alone does not suffice.</p>",
+        "body": "<div class=\"math-block boundary\"><p class=\"block-label\">Remark</p><p>For monic irreducible \\(f\\) with root \\(\\alpha\\) and \\(K=\\mathbb Q(\\alpha)\\),</p>\\[\\Delta(f)=\\operatorname{disc}(K)\\,[\\mathcal O_K:\\mathbb Z[\\alpha]]^2.\\]<p>Consider \\(x^2-18\\), with root \\(3\\sqrt2\\). Modulo \\(3\\) it becomes \\(x^2\\), yet \\(K=\\mathbb Q(\\sqrt2)\\) has discriminant \\(8\\), so \\(3\\) is unramified and its inertia group is trivial. The polynomial discriminant is \\(72=8\\cdot3^2\\): the repeated reduction comes from the index \\(3\\). If the polynomial discriminant has valuation one, the index is prime to \\(p\\).</p></div><p>A primitive subgroup containing a transposition is \\(S_n\\). Transitivity alone does not suffice.</p>",
         "citations": [
           {
             "key": "Milne2020ANT",
@@ -117,14 +117,19 @@
       {
         "id": "ramification-repeated-root-test",
         "title": "Does a repeated root modulo p imply nontrivial inertia?",
-        "status": "Claimed",
+        "status": "Settled",
         "scope": "Monic integral polynomials over Q",
         "body": "<p>No: \\(x^2-18\\) modulo \\(3\\) is a counterexample, because its root field is unramified at \\(3\\). The order index can account for repeated reduction; the valuation-one theorem excludes this obstruction.</p>",
         "citations": [
           {
+            "key": "Serre1979",
+            "locator": "Discriminant and Different, pp. 47–60",
+            "note": "The published discriminant and ramification theory proves the distinction used in this counterexample."
+          },
+          {
             "key": "Milne2020ANT",
-            "locator": "Remark 2.25",
-            "note": "The index-squared discriminant identity explains the obstruction. Proof in expository notes; this status records the unpublished source."
+            "locator": "Remark 2.25; Theorem 3.35",
+            "note": "Index-squared identity and the ramification criterion."
           }
         ]
       }

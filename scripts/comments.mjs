@@ -90,7 +90,7 @@ export function renderComments(config, { id, title, url, threads } = {}) {
     ).join('')}</select></label>` : '';
   return `<section id="comments" class="comments-section container narrow" data-comments data-shortname="${escapeHTML(config.shortname)}" data-moderation-verified="true" data-thread-id="${escapeHTML(context.id)}" data-thread-title="${escapeHTML(context.title)}" data-thread-url="${escapeHTML(context.url)}" aria-labelledby="comments-heading">
     <h2 id="comments-heading">${threads !== undefined ? 'Discussion' : 'Comments'}</h2>
-    <p id="comments-notice" class="comments-notice">Corrections, references, and questions are welcome. Comments appear after the site owner approves them. Showing comments connects to GraphComment. <a href="https://www.graphcomment.com/en/commenter-privacy" rel="noopener noreferrer">Privacy policy</a>.</p>
+    <p id="comments-notice" class="comments-notice">Any comments are welcome. Comments appear after the site owner approves them. <a href="https://www.graphcomment.com/en/commenter-privacy" rel="noopener noreferrer">Privacy policy</a>.</p>
     ${selector}
     <button class="button button-outline comments-load" type="button" data-comments-load aria-describedby="comments-notice" aria-controls="comments-mount">Show comments</button>
     <p class="comments-status" data-comments-status role="status" aria-live="polite" aria-atomic="true"></p>

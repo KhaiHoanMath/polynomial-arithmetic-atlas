@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "composition-iteration",
+    "title": "Composition and iteration",
+    "kind": "method",
+    "subject": "dynamics",
+    "summary": "Composition gives towers of field extensions. Iteration leads to irreducibility questions at every depth and Galois actions on trees of preimages.",
+    "level": "Intermediate",
+    "field": "general fields and number fields",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "When is a composition irreducible?",
+      "When are all iterates irreducible?",
+      "How large are the Galois groups of iterates?",
+      "How do critical orbits affect these questions?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "permutation-groups"
+    ],
+    "sections": [
+      {
+        "id": "two-decompositions",
+        "title": "Composition and factorization",
+        "body": "<p>For polynomials \\(f,g\\in K[x]\\), their composition is \\((f\\circ g)(x)=f(g(x))\\). A decomposition \\(F=f\\circ g\\), with both degrees greater than one, is different from a factorization \\(F=uv\\). For example, \\(x^4-2=(x^2-2)\\circ x^2\\) is decomposable but irreducible over \\(\\mathbb Q\\) by Eisenstein’s criterion. Conversely, \\(x^2-1\\) is reducible but cannot be decomposed into two polynomials of smaller positive degree.</p><p>Ritt’s 1922 work describes decompositions over \\(\\mathbb C\\). Its connection with Galois theory is the correspondence between right composition factors, intermediate function fields, and blocks in the action on the roots of \\(F(x)-t\\). The <a href=\"polynomial-decomposition.html\">article on polynomial decomposition</a> develops this correspondence.</p>",
+        "citations": [
+          {
+            "key": "Ritt1922",
+            "locator": "pp. 51–66; erratum, p. 431"
+          }
+        ]
+      },
+      {
+        "id": "capelli",
+        "title": "Irreducibility of a composition",
+        "body": "<p>Let \\(F\\in K[x]\\) be irreducible, let \\(g\\in K[x]\\) have degree at least one, and let \\(\\alpha\\) be a root of \\(F\\). Capelli’s lemma reduces the composition problem to one extension field:</p>\\[F(g(x))\\text{ is irreducible over }K\\quad\\Longleftrightarrow\\quad g(x)-\\alpha\\text{ is irreducible over }K(\\alpha).\\]<p>Thus a degree-\\(md\\) problem can become a degree-\\(d\\) problem over a field of degree \\(m\\). For quadratics, the latter is a square test; norms can then give a sufficient condition in the ground field. See <a href=\"polynomial-stability.html#capelli\">the proof and examples</a>.</p>",
+        "citations": [
+          {
+            "key": "Schinzel2000",
+            "locator": "Chapter 1, composition and Capelli’s theorem"
+          }
+        ]
+      },
+      {
+        "id": "stability",
+        "title": "Irreducibility of iterates",
+        "body": "<span id=\"eventual-stability\"></span><span id=\"local-eventual-stability\"></span><span id=\"nonperiodic-counterexample\"></span><p>Write \\(f^{\\circ0}(x)=x\\) and \\(f^{\\circ(n+1)}=f\\circ f^{\\circ n}\\). A polynomial is <em>stable over \\(K\\)</em> if every \\(f^{\\circ n}\\), \\(n\\ge1\\), is irreducible over \\(K\\). It is <em>eventually stable</em> if the numbers of irreducible factors of these iterates, counted with multiplicity, are bounded.</p><p>Stability concerns one factor at every depth. Eventual stability allows several factors, but bounds their number. Both depend on the field and, for the equations \\(f^{\\circ n}(x)-a=0\\), on the target \\(a\\). The <a href=\"polynomial-stability.html\">stability article</a> treats Capelli’s lemma, critical-orbit tests, local criteria, and open cases.</p>",
+        "citations": [
+          {
+            "key": "JonesLevy2017Eventual",
+            "locator": "Definition 1.1 and §2"
+          }
+        ]
+      },
+      {
+        "id": "root-tree",
+        "title": "Galois groups on a tree",
+        "body": "<p>Fix \\(a\\in K\\) and let \\(d=\\deg f\\ge2\\). Assume that every \\(f^{\\circ n}(x)-a\\) is separable. Place its roots at level \\(n\\), using a separate copy at each level, and join \\(\\beta\\) to \\(f(\\beta)\\). This gives a regular rooted tree with \\(d\\) children at each vertex. Galois automorphisms preserve these edges.</p><p>The resulting group lies in the automorphism group of the tree. Through level \\(n\\), this is the \\(n\\)-fold iterated wreath product of \\(S_d\\), of order</p>\\[|\\operatorname{Aut}(T_{d,n})|=(d!)^{1+d+\\cdots+d^{n-1}}.\\]<p>Irreducibility at every level means transitivity on every level. Equality with the full tree group is a stronger condition. See <a href=\"arboreal-galois.html\">arboreal Galois groups</a>.</p>",
+        "citations": [
+          {
+            "key": "Odoni1985",
+            "locator": "Introduction and the Galois groups of iterates"
+          },
+          {
+            "key": "Jones2013Arboreal",
+            "locator": "§1.1"
+          }
+        ]
+      },
+      {
+        "id": "quadratic-example",
+        "title": "Example",
+        "body": "<p>For \\(f=x^2+1\\), the adjusted critical values begin</p>\\[-1,\\quad 2,\\quad 5,\\quad 26,\\ldots.\\]<p>Stoll’s criterion expresses maximality through level \\(n\\) as independence of the first \\(n\\) values in \\(\\mathbb Q^\\times/\\mathbb Q^{\\times2}\\). In particular, \\(-1\\) and \\(2\\) are independent, so the second iterate has group \\(C_2\\wr C_2\\), the dihedral group of order \\(8\\). Stoll also proves maximality at every level for this polynomial; the calculation above illustrates the finite-level criterion.</p>",
+        "citations": [
+          {
+            "key": "Stoll1992",
+            "locator": "Theorem in §1, equivalence of (a) and (b)"
+          }
+        ]
+      },
+      {
+        "id": "pcf-counterexample",
+        "title": "Critical orbits",
+        "body": "<p>A polynomial is <em>postcritically finite</em> if every critical point has finite forward orbit. The polynomial \\(x^2-2\\) has the critical orbit \\(0\\mapsto-2\\mapsto2\\mapsto2\\). Its iterates are all irreducible over \\(\\mathbb Q\\), but their Galois groups are cyclic of order \\(2^n\\), far smaller than the full binary tree groups. The <a href=\"arboreal-galois.html#chebyshev\">cyclotomic calculation</a> proves both assertions.</p><p>Critical-orbit equations also define polynomials in the parameter. For \\(x^2+c\\), periodic critical points give <a href=\"critical-parameter-polynomials.html\">Gleason polynomials</a>; strictly preperiodic critical points give Misiurewicz polynomials. Their irreducibility is a separate arithmetic problem.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGhiocaJuulTucker2026Preperiodic",
+            "locator": "§1.4, the Chebyshev case"
+          },
+          {
+            "key": "Ramadas2024Moduli",
+            "locator": "Introduction"
+          }
+        ]
+      },
+      {
+        "id": "generic-and-arithmetic",
+        "title": "Development of the subject",
+        "body": "<p>Odoni proved that a generic monic polynomial in characteristic zero has the full iterated wreath product at every finite level. Arithmetic specialization asks for one polynomial over a number field that retains this property at all levels simultaneously. Looper proved existence in every prime degree over \\(\\mathbb Q\\). Benedetto–Juul prove existence over a number field \\(K\\) when \\(d\\) is even, or when \\(d\\) and \\(d-2\\) are not both squares in \\(K\\). In particular, all degrees are covered when \\([K:\\mathbb Q]\\) is odd. Specter’s preprint gives every degree over every number field.</p><p>The base field matters: Dittmann–Kadets construct Hilbertian fields of characteristic zero over which no polynomial of degree at least two has finite-index arboreal image. This does not contradict the number-field results.</p>",
+        "citations": [
+          {
+            "key": "Odoni1985",
+            "locator": "Generic polynomial theorem"
+          },
+          {
+            "key": "Looper2019",
+            "locator": "Theorem 1.1"
+          },
+          {
+            "key": "BenedettoJuul2019",
+            "locator": "Theorem 1.1 in the author manuscript; Theorem 1.2 in arXiv:1803.01987v1"
+          },
+          {
+            "key": "Specter2018",
+            "locator": "Theorem 1.2; arXiv:1803.00434v2, preprint"
+          },
+          {
+            "key": "DittmannKadets2022",
+            "locator": "Theorem 1.2"
+          }
+        ]
+      },
+      {
+        "id": "current-boundary",
+        "title": "Current questions",
+        "body": "<p>The main open problems ask when finitely many iterates certify stability or maximality, and when the arboreal image has finite index.</p><p>Recent work includes explicit quadratic representations at strictly preperiodic targets, descriptions of postcritically finite groups, and Stoll’s November 2026 finite-level criteria. See <a href=\"arboreal-galois.html#recent-work\">Arboreal Galois groups</a>.</p>",
+        "citations": [
+          {
+            "key": "HendersonJuulLattinMercadoSchaefer2026",
+            "locator": "Theorems 1–2; arXiv:2603.25899v1"
+          },
+          {
+            "key": "BenedettoGhiocaJuulTucker2025Periodic",
+            "locator": "Theorem 1.5"
+          },
+          {
+            "key": "Stoll2026Arboreal",
+            "locator": "Theorem 6.1 and Conjecture 8.1; arXiv:2611.14014v1"
+          }
+        ]
+      },
+      {
+        "id": "further-reading",
+        "title": "Further reading",
+        "body": "<p>Silverman’s <em>The Arithmetic of Dynamical Systems</em> develops the background on critical points, reduction, heights, and dynatomic polynomials. Jones’s 2013 survey organizes the arboreal questions and their arithmetic applications. His <em>2007: An Arboreal Odyssey</em>, posted in 2026, is an unchanged historical manuscript; its open questions describe the subject as it stood in 2007.</p>",
+        "citations": [
+          {
+            "key": "Silverman2007Dynamics",
+            "locator": "Chapters 1–4; §§3.9 and 4.1–4.2"
+          },
+          {
+            "key": "Jones2013Arboreal",
+            "locator": "Introduction and §§1–5"
+          },
+          {
+            "key": "Jones2026HistoricalOdyssey",
+            "locator": "Abstract and §§2–8; manuscript written in 2007, posted 20 May 2026"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "polynomial-decomposition",
+        "relation": "Related",
+        "why": "Composition, intermediate fields, and blocks."
+      },
+      {
+        "id": "polynomial-stability",
+        "relation": "Related",
+        "why": "Irreducibility of successive iterates."
+      },
+      {
+        "id": "arboreal-galois",
+        "relation": "Related",
+        "why": "Galois actions on preimage trees."
+      },
+      {
+        "id": "critical-parameter-polynomials",
+        "relation": "Related",
+        "why": "Parameters defined by critical-orbit relations."
+      },
+      {
+        "id": "specialization",
+        "relation": "Related",
+        "why": "Passing from a generic polynomial to arithmetic examples."
+      }
+    ],
+    "questions": [
+      {
+        "id": "uniform-quadratic-level",
+        "title": "Can one fixed iterate detect the full arboreal group?",
+        "status": "Open",
+        "scope": "f_a=x²+a with a∈Q∖{−1,0}; target point 0; Stoll, November 2026.",
+        "body": "<p>Is there a fixed \\(N\\) such that maximality of \\(\\operatorname{Gal}(f_a^{\\circ N}/\\mathbb Q)\\) implies maximality at every level, for every \\(a\\in\\mathbb Q\\setminus\\{-1,0\\}\\)? Hindes proposed \\(N=4\\); Stoll repeats this as Conjecture 8.1. The values \\(a=2/3\\) and \\(-6/7\\) rule out \\(N<4\\). Stoll reports the implication from level \\(4\\) to level \\(20\\) for all \\(a=r/s\\) of height \\(\\max(|r|,s)\\le10^6\\), in lowest terms with \\(s>0\\). The conjecture concerns every level and every rational parameter.</p>",
+        "citations": [
+          {
+            "key": "Hindes2015IterationCurves",
+            "locator": "§3, Remark 3.4 and following discussion, p. 26",
+            "note": "Asks whether the first failure of maximality can occur at arbitrarily large levels, and whether all first failures occur before level 5."
+          },
+          {
+            "key": "Stoll2026Arboreal",
+            "locator": "Conjecture 8.1, Proposition 8.2, and Remark 8.5; arXiv:2611.14014v1 (10 November 2026)"
+          }
+        ]
+      },
+      {
+        "id": "odoni-base-field",
+        "title": "Does every Hilbertian field admit a surjective polynomial arboreal representation of degree at least two?",
+        "status": "Settled",
+        "scope": "Polynomials of degree d≥2 over Hilbertian fields of characteristic zero",
+        "body": "<p>No. Dittmann–Kadets give counterexample fields. These counterexamples are compatible with the positive existence results over number fields and with generic maximality at each fixed finite level.</p>",
+        "citations": [
+          {
+            "key": "DittmannKadets2022",
+            "locator": "Theorem 1.2"
+          }
+        ]
+      },
+      {
+        "id": "quadratic-four-factors",
+        "title": "Do iterates of x²+1/c always have at most four irreducible factors?",
+        "status": "Open",
+        "scope": "c∈Z∖{0,−1}; factorization over Q; all iterate depths",
+        "body": "<p>Conjecture 1.7 predicts this uniform bound and gives a precise list of factor counts. The bound is attained in known cases.</p>",
+        "citations": [
+          {
+            "key": "DeMarkEtAl2020Stability",
+            "locator": "Conjecture 1.7 and Theorem 1.5"
+          }
+        ]
+      },
+      {
+        "id": "quadratic-second-iterate-stability",
+        "title": "Does irreducibility of the second iterate imply stability for x²+1/c?",
+        "status": "Open",
+        "scope": "c∈Z∖{0,−1}; all irreducibility statements over Q",
+        "body": "<p>If \\(f^{\\circ2}\\) is irreducible, must every \\(f^{\\circ n}\\) be irreducible? This is Conjecture 1.8, distinct from the conjecture on maximal Galois groups.</p>",
+        "citations": [
+          {
+            "key": "DeMarkEtAl2020Stability",
+            "locator": "Conjecture 1.8"
+          }
+        ]
+      },
+      {
+        "id": "quadratic-finite-index",
+        "title": "Does every quadratic polynomial with infinite critical orbit have finite-index arboreal image?",
+        "status": "Open",
+        "scope": "f=x²+c over a number field K; the forward orbit of 0 is infinite; target point 0",
+        "body": "<p>Jones’s conjecture predicts \\([\\operatorname{Aut}(T_\\infty):G_\\infty(f,0)]<\\infty\\) when \\(f=x^2+c\\) over a number field has infinite critical orbit. It allows a proper group at early levels. This is the polynomial case of Conjecture 3.11; the 2026 quadratic preprint still cites the finite-index problem as conjectural.</p>",
+        "citations": [
+          {
+            "key": "Jones2013Arboreal",
+            "locator": "Conjecture 3.11, specialized to x²+c"
+          },
+          {
+            "key": "HendersonJuulLattinMercadoSchaefer2026",
+            "locator": "Introduction; arXiv:2603.25899v1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polynomial-decomposition",
+    "title": "Polynomial decomposition",
+    "kind": "method",
+    "subject": "dynamics",
+    "summary": "Ritt’s theorems describe factorizations under composition. Intermediate fields and blocks connect these decompositions with monodromy.",
+    "level": "Intermediate",
+    "field": "C; characteristic-zero function fields; tame and wild algorithms",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How does composition differ from multiplication?",
+      "How do intermediate fields give decompositions?",
+      "When is the monodromy group primitive?",
+      "How can two complete decompositions differ?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "permutation-groups"
+    ],
+    "sections": [
+      {
+        "id": "definitions",
+        "title": "Composition factors",
+        "body": "<p>A polynomial \\(f\\in K[x]\\) of degree greater than one is <em>indecomposable over \\(K\\)</em> if it cannot be written as \\(g\\circ h\\) with \\(g,h\\in K[x]\\) and \\(\\deg g,\\deg h>1\\). A complete decomposition writes \\(f=f_1\\circ\\cdots\\circ f_r\\) with every \\(f_i\\) indecomposable.</p><p>Linear polynomials are the invertible elements for composition. Thus \\(g\\circ h=(g\\circ\\ell^{-1})\\circ(\\ell\\circ h)\\) for every \\(\\ell=ax+b\\), \\(a\\ne0\\). Such changes give equivalent decompositions. Unlike multiplication, composition is usually not commutative, and distinct complete decompositions need not differ only by linear changes.</p>",
+        "citations": [
+          {
+            "key": "Ritt1922",
+            "locator": "Definitions and complete decompositions, pp. 51–53"
+          }
+        ]
+      },
+      {
+        "id": "fields",
+        "title": "Intermediate fields",
+        "body": "<p>Let \\(K\\) be algebraically closed of characteristic zero and let \\(x\\) be transcendental over \\(K\\). A decomposition \\(f=g\\circ h\\) gives</p>\\[K(f(x))\\subseteq K(h(x))\\subseteq K(x),\\qquad [K(x):K(h(x))]=\\deg h.\\]<p>Conversely, Lüroth’s theorem says that every intermediate field is \\(K(h(x))\\) for a rational function \\(h\\). Because a polynomial has only one pole, at infinity, a linear fractional change of \\(h\\) makes it polynomial; then \\(f=g\\circ h\\) with \\(g\\) polynomial. Right factors, up to linear changes, therefore correspond to intermediate fields.</p>",
+        "citations": [
+          {
+            "key": "ZieveMueller2008",
+            "locator": "Lemma 2.2 and Corollary 2.3; author manuscript dated 23 July 2009"
+          }
+        ]
+      },
+      {
+        "id": "blocks",
+        "title": "Blocks and primitivity",
+        "body": "<p>Let \\(L\\) be the splitting field of \\(f(X)-t\\) over \\(K(t)\\), and let \\(G\\) act on its roots. This action is transitive. If \\(f=g\\circ h\\), the roots with the same value under \\(h\\) form blocks of size \\(\\deg h\\), permuted by \\(G\\).</p><p>For the converse, fix a root \\(x\\). Blocks containing \\(x\\) correspond to subgroups between the point stabilizer \\(G_x\\) and \\(G\\). Galois correspondence and the preceding field argument convert these subgroups into decompositions. Hence</p>\\[f\\text{ indecomposable over }K\\quad\\Longleftrightarrow\\quad\\operatorname{Gal}(f(X)-t/K(t))\\text{ primitive}.\\]<p>This is a statement about the polynomial with variable target \\(t\\). A special value of \\(t\\) can have a smaller Galois group.</p>",
+        "citations": [
+          {
+            "key": "Mueller1995Monodromy",
+            "locator": "Introduction: primitive monodromy and indecomposable polynomials"
+          },
+          {
+            "key": "ZieveMueller2008",
+            "locator": "§2.1 and Remark 2.14"
+          }
+        ]
+      },
+      {
+        "id": "ritt-first",
+        "title": "Ritt’s first theorem",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>Let \\(f\\in\\mathbb C[x]\\) have degree greater than one. Any two complete decompositions have the same length and the same multiset of degrees. One can pass between them by successive replacements of two adjacent factors by two factors with the same composition.</p></div><p>The theorem gives a controlled form of nonuniqueness. It does not say that the factors themselves are uniquely determined. At the field level, a complete decomposition is a maximal chain of intermediate fields. The proof uses the cyclic inertia group above infinity to compare these chains.</p>",
+        "citations": [
+          {
+            "key": "Ritt1922",
+            "locator": "Main decomposition theorem, pp. 51–66; erratum, p. 431"
+          },
+          {
+            "key": "ZieveMueller2008",
+            "locator": "Theorem 2.1 and Corollary 2.12"
+          }
+        ]
+      },
+      {
+        "id": "ritt-second",
+        "title": "Ritt’s second theorem",
+        "body": "<p>Over \\(\\mathbb C\\), suppose \\(A\\circ B=C\\circ D\\) with all four polynomials nonconstant and</p>\\[\\gcd(\\deg A,\\deg C)=\\gcd(\\deg B,\\deg D)=1.\\]<p>Up to linear changes and exchanging the two decompositions, Ritt’s second theorem reduces the identity to one of two forms:</p>\\[T_m\\circ T_n=T_n\\circ T_m\\qquad(\\gcd(m,n)=1),\\]\\[x^n\\circ\\bigl(x^sH(x^n)\\bigr)=\\bigl(x^sH(x)^n\\bigr)\\circ x^n\\qquad(\\gcd(s,n)=1).\\]<p>Here \\(H(0)\\ne0\\), \\(s\\ge0\\), and \\(T_n\\) is a Chebyshev polynomial, characterized by \\(T_n(\\cos\\theta)=\\cos(n\\theta)\\). The displayed identities explain the basic changes between decompositions; the coprimality assumptions belong to the classification.</p>",
+        "citations": [
+          {
+            "key": "Ritt1922",
+            "locator": "Classification of composition identities; erratum, p. 431"
+          },
+          {
+            "key": "ZieveMueller2008",
+            "locator": "Theorem 2.17"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<p>The degree-six polynomial \\(x^6+2x^4+x^2\\) has two complete decompositions:</p>\\[x^2\\circ(x^3+x)=\\bigl(x(x+1)^2\\bigr)\\circ x^2.\\]<p>Indeed, both sides expand to \\((x^3+x)^2=x^2(x^2+1)^2=x^6+2x^4+x^2\\). The degree sequences are \\((2,3)\\) and \\((3,2)\\). Every component is indecomposable: its degree is prime, whereas a nontrivial composition has composite degree. This is the monomial case of Ritt’s second theorem with \\(n=2\\), \\(s=1\\), and \\(H=x+1\\).</p>",
+        "citations": [
+          {
+            "key": "ZieveMueller2008",
+            "locator": "Theorem 2.17; the displayed identity is verified by expansion"
+          }
+        ]
+      },
+      {
+        "id": "computation",
+        "title": "Computing a decomposition",
+        "body": "<p>For a proposed factorization \\(\\deg f=rs\\), normalize the right factor to be monic with zero constant term. Comparing the leading coefficients of \\(f=g(h(x))\\) then determines successive coefficients of \\(h\\), provided the characteristic does not divide the outer degree \\(r\\). One finally checks the exact identity \\(f=g\\circ h\\).</p><p>Von zur Gathen gives algorithms and uniqueness results in this tame case. When the characteristic divides \\(r\\), the coefficient equations lose information, and different methods are needed. The two papers on tame and wild decomposition treat these cases separately.</p>",
+        "citations": [
+          {
+            "key": "VonZurGathen1990Tame",
+            "locator": "§§2–3, univariate decomposition"
+          },
+          {
+            "key": "VonZurGathen1990Wild",
+            "locator": "Introduction and decomposition algorithm"
+          }
+        ]
+      },
+      {
+        "id": "further-connections",
+        "title": "Further connections",
+        "body": "<p>Composition also constrains the factorization of \\(f(X)-g(Y)\\). For example, a common left factor \\(h\\), with \\(\\deg h>1\\), gives a factor \\(f_1(X)-g_1(Y)\\) of \\(h(f_1(X))-h(g_1(Y))\\). The <a href=\"separated-variable-polynomials.html\">article on separated variables</a> studies this problem and its connection with monodromy.</p><p>The repeated composition \\(f^{\\circ n}=f\\circ\\cdots\\circ f\\) gives nested block partitions, according to the common ancestors of roots in the preimage tree. The Galois group therefore embeds in an iterated wreath product, even when \\(f^{\\circ n}\\) is irreducible.</p>",
+        "citations": [
+          {
+            "key": "Odoni1985",
+            "locator": "Composites and iterates"
+          },
+          {
+            "key": "BehajainaKonigNeftin2026DLS",
+            "locator": "Introduction; arXiv:2603.27728v1, preprint"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "composition-iteration",
+        "relation": "Related",
+        "why": "Introduction to composition and iteration."
+      },
+      {
+        "id": "permutation-groups",
+        "relation": "Related",
+        "why": "Blocks and primitive actions."
+      },
+      {
+        "id": "arboreal-galois",
+        "relation": "Related",
+        "why": "Repeated composition produces a tree of blocks."
+      },
+      {
+        "id": "separated-variable-polynomials",
+        "relation": "Related",
+        "why": "Reducibility of f(X)−g(Y)."
+      },
+      {
+        "id": "critical-points-monodromy",
+        "relation": "Related",
+        "why": "Branch points and monodromy."
+      }
+    ],
+    "questions": []
+  },
+  {
+    "id": "polynomial-stability",
+    "title": "Irreducibility of iterates",
+    "kind": "method",
+    "subject": "dynamics",
+    "summary": "Capelli’s lemma, norms, and valuations prove irreducibility at successive depths. Eventual stability asks for a bounded number of factors.",
+    "level": "Intermediate",
+    "field": "General fields; quadratic criteria in characteristic ≠2; Q",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "How does Capelli’s lemma reduce irreducibility of a composition?",
+      "Which critical-orbit conditions imply stability?",
+      "Can irreducibility fail after several successful iterates?",
+      "When is the number of irreducible factors bounded?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "permutation-groups"
+    ],
+    "sections": [
+      {
+        "id": "definitions",
+        "title": "Stability and eventual stability",
+        "body": "<p>Fix a field \\(K\\), a polynomial \\(f\\in K[x]\\) of degree \\(d\\ge2\\), and a target \\(a\\in K\\). The pair \\((f,a)\\) is stable if \\(f^{\\circ n}(x)-a\\) is irreducible over \\(K\\) for every \\(n\\ge1\\). It is eventually stable if the number of irreducible factors, counted with multiplicity, is bounded independently of \\(n\\). When \\(a=0\\), one speaks of stability of \\(f\\).</p><p>If \\(f^{\\circ n}(x)-a=\\prod_i g_i(x)\\), then \\(f^{\\circ(n+1)}(x)-a=\\prod_i g_i(f(x))\\). Each old factor contributes at least one new factor. The factor count is therefore nondecreasing; boundedness means it eventually becomes constant.</p>",
+        "citations": [
+          {
+            "key": "JonesLevy2017Eventual",
+            "locator": "Definition 1.1 and Proposition 2.1"
+          }
+        ]
+      },
+      {
+        "id": "capelli",
+        "title": "Capelli’s lemma",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Lemma</p><p>Let \\(F\\in K[x]\\) be irreducible of degree \\(m\\), let \\(g\\in K[x]\\) have degree \\(d\\ge1\\), and let \\(\\alpha\\) be a root of \\(F\\). Then \\(F(g(x))\\) is irreducible over \\(K\\) if and only if \\(g(x)-\\alpha\\) is irreducible over \\(K(\\alpha)\\).</p></div><p><strong>Proof.</strong> Choose \\(\\beta\\) with \\(g(\\beta)=\\alpha\\). Since \\(\\alpha\\in K(\\beta)\\),</p>\\[[K(\\beta):K]=[K(\\beta):K(\\alpha)]\\,[K(\\alpha):K]=m[K(\\beta):K(\\alpha)].\\]<p>The right side equals \\(md=\\deg(F\\circ g)\\) exactly when \\(\\beta\\) has degree \\(d\\) over \\(K(\\alpha)\\). This is the required equivalence.</p>",
+        "citations": [
+          {
+            "key": "Schinzel2000",
+            "locator": "Chapter 1, Capelli’s theorem"
+          }
+        ]
+      },
+      {
+        "id": "critical-values",
+        "title": "A quadratic criterion",
+        "body": "<p>Assume \\(\\operatorname{char}K\\ne2\\) and put \\(f=x^2+c\\). If</p>\\[-c,\\quad f^{\\circ2}(0),\\quad f^{\\circ3}(0),\\ldots\\]<p>are all nonsquares in \\(K\\), then \\(f\\) is stable over \\(K\\).</p><p>To prove this, the first condition makes \\(f\\) irreducible. Suppose \\(F=f^{\\circ(n-1)}\\) is irreducible, with \\(n\\ge2\\), and let \\(\\alpha\\) be a root. Capelli’s lemma asks whether \\(x^2-(\\alpha-c)\\) is irreducible over \\(K(\\alpha)\\). Since \\(\\deg F\\) is even,</p>\\[N_{K(\\alpha)/K}(\\alpha-c)=F(c)=f^{\\circ n}(0).\\]<p>A square has square norm. A nonsquare value on the right therefore proves the required irreducibility. Over general fields this is a sufficient criterion; a square norm alone does not prove that \\(\\alpha-c\\) is a square.</p>",
+        "citations": [
+          {
+            "key": "Jones2012EveryPrime",
+            "locator": "Theorem 2.2; arXiv:1012.2857v4"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<p>For \\(f=x^2+1\\), let \\(a_n=f^{\\circ n}(0)\\). Then \\(a_1=1\\) and \\(a_n=a_{n-1}^2+1\\). Since \\(a_{n-1}\\ge1\\), for every \\(n\\ge2\\) we have</p>\\[a_{n-1}^2<a_n<(a_{n-1}+1)^2.\\]<p>The second inequality follows from \\((a_{n-1}+1)^2-a_n=2a_{n-1}>0\\). Thus \\(a_n\\) lies strictly between consecutive integer squares. An integer that is a square in \\(\\mathbb Q\\) is already a square in \\(\\mathbb Z\\), so every \\(a_n\\), \\(n\\ge2\\), is a nonsquare in \\(\\mathbb Q\\). Together with the nonsquare \\(-1\\), the quadratic criterion proves that all iterates of \\(x^2+1\\) are irreducible over \\(\\mathbb Q\\).</p>",
+        "citations": [
+          {
+            "key": "Jones2012EveryPrime",
+            "locator": "Theorem 2.2; applied here using the inequalities above"
+          }
+        ]
+      },
+      {
+        "id": "eisenstein",
+        "title": "Eisenstein’s criterion at every level",
+        "body": "<p>Let \\(p\\) be prime and \\(f=x^d+p\\), with \\(d\\ge2\\). Modulo \\(p\\),</p>\\[f^{\\circ n}(x)\\equiv x^{d^n}.\\]<p>Also \\(f^{\\circ n}(0)\\equiv p\\pmod{p^2}\\): this holds at \\(n=1\\), and follows at the next step from \\((pk)^d+p\\equiv p\\pmod{p^2}\\). Every iterate is therefore Eisenstein at \\(p\\). This proves stability over \\(\\mathbb Q\\), and even irreducibility of every iterate over \\(\\mathbb Q_p\\).</p>",
+        "citations": [
+          {
+            "key": "JonesLevy2017Eventual",
+            "locator": "Introduction before Theorem 1.7, Eisenstein stability"
+          }
+        ]
+      },
+      {
+        "id": "delayed-factorization",
+        "title": "Irreducibility can fail later",
+        "body": "<p>For \\(f=x^2-x-1\\), the first two iterates reduce modulo \\(2\\) to \\(x^2+x+1\\) and \\(x^4+x+1\\), both irreducible. But</p>\\[\\begin{aligned}f^{\\circ3}(x)={}&(x^4-3x^3+4x-1)\\\\&\\cdot(x^4-x^3-3x^2+x+1).\\end{aligned}\\]<p>The quadratic reduction has no root. The quartic reduction has no root and is not divisible by the only irreducible binary quadratic, \\(x^2+x+1\\); hence it is irreducible. Expanding the displayed product verifies the third-iterate factorization. Two successful levels do not prove stability for an arbitrary quadratic polynomial.</p>",
+        "citations": [
+          {
+            "key": "Jones2013Arboreal",
+            "locator": "§5, p. 132; example x²−x−1",
+            "note": "The reductions and factorization are computed here."
+          }
+        ]
+      },
+      {
+        "id": "local-criteria",
+        "title": "Local criteria for eventual stability",
+        "body": "<p>Jones–Levy prove a useful extension of the Eisenstein argument. Let \\(v\\) be a discrete valuation on \\(K\\), let \\(f\\) have good reduction at \\(v\\), and suppose that the reduction has only one geometric preimage of the reduction of \\(a\\), namely \\(\\bar a\\). If \\(f(a)\\ne a\\), then \\((f,a)\\) is eventually stable over \\(K\\). Good reduction means that the degree does not fall after reduction.</p><p>In particular, if \\(f=x^d+c\\), \\(c\\ne0\\), and \\(v(c)>0\\), then the reduction is \\(x^d\\) and the criterion applies at \\(a=0\\). For quadratic maps \\(x^2+1/c\\) over \\(\\mathbb Q\\), with odd integer \\(c\\ne-1\\), their finite-residue-field criterion also proves eventual stability at \\(0\\).</p>",
+        "citations": [
+          {
+            "key": "JonesLevy2017Eventual",
+            "locator": "Theorem 1.7 and Corollary 1.5"
+          }
+        ]
+      },
+      {
+        "id": "rational-quadratics",
+        "title": "Quadratic polynomials over Q",
+        "body": "<p>For \\(x^2+r\\), with nonzero \\(r\\in\\mathbb Q\\) not the reciprocal of an integer, eventual stability is known. The remaining family is \\(x^2+1/c\\), where \\(c\\in\\mathbb Z\\setminus\\{0,-1\\}\\). DeMark–Hindes–Jones–Misplon–Stoll–Stoneman prove that all iterates have at most four irreducible factors when \\(|c|\\le10^9\\). Their argument also verifies, for \\(|c|\\le10^{1000}\\), that irreducibility of the second iterate implies stability.</p><p>The all-parameter statements remain conjectural in that work. The bound four is attained: for \\(c=-64\\), every iterate of depth at least three has four irreducible factors. The methods combine critical values, Diophantine equations, and bounds that reduce infinitely many depths to finitely many checks.</p>",
+        "citations": [
+          {
+            "key": "HamblenJonesMadhu2015",
+            "locator": "Eventual-stability theorem and corollary; arXiv:1303.6513v1, Theorem 5 and Corollary 6"
+          },
+          {
+            "key": "DeMarkEtAl2020Stability",
+            "locator": "Theorems 1.2–1.5, Conjectures 1.7–1.8, and §5"
+          }
+        ]
+      },
+      {
+        "id": "nonperiodic-counterexample",
+        "title": "A nonperiodic target need not suffice",
+        "body": "<p>The 2017 eventual-stability conjecture asked whether nonperiodicity of the target suffices over number fields. Tucker–Zhu’s October 2026 preprint gives a counterexample with \\(f=x^6\\) and target \\(-1\\). Here \\(-1\\mapsto1\\mapsto1\\), so the target is not periodic. Yet</p>\\[f^{\\circ n}(x)+1=x^{6^n}+1=\\prod_{j=0}^{n}\\Phi_{2^{n+1}3^j}(x),\\]<p>where \\(\\Phi_m\\) is the \\(m\\)-th cyclotomic polynomial. The \\(n+1\\) factors are distinct and irreducible over \\(\\mathbb Q\\). The identity follows from the divisors of \\(2\\cdot6^n\\) that do not divide \\(6^n\\), and proves unbounded factor count directly.</p><p>This example concerns a strictly preperiodic target. It does not disprove a statement restricted to targets with infinite forward orbit.</p>",
+        "citations": [
+          {
+            "key": "JonesLevy2017Eventual",
+            "locator": "Conjecture 1.2"
+          },
+          {
+            "key": "TuckerZhu2026Counterexample",
+            "locator": "arXiv:2610.28688v1, counterexample",
+            "note": "The cyclotomic factorization is verified directly here."
+          }
+        ]
+      },
+      {
+        "id": "reducible-fibers",
+        "title": "New reducible fibers under iteration",
+        "body": "<p>Write \\(\\operatorname{Red}_f(\\mathbb Z)=\\{a\\in\\mathbb Z:f(x)-a\\text{ is reducible over }\\mathbb Q\\}\\). Behajaina–König–Neftin’s March 2026 preprint claims that, if \\(f\\in\\mathbb Q[x]\\), \\(\\deg f>1\\), and \\(f\\) has no composition factor of degree \\(2\\) or \\(4\\), then for each fixed \\(n\\ge2\\),</p>\\[\\operatorname{Red}_{f^{\\circ n}}(\\mathbb Z)\\setminus\\operatorname{Red}_f(\\mathbb Z)\\quad\\text{is finite}.\\]<p>The finite exceptional set may depend on \\(n\\). This statement does not assert stability for a fixed target at every depth.</p>",
+        "citations": [
+          {
+            "key": "BehajainaKonigNeftin2026DLS",
+            "locator": "Corollary 1.3; arXiv:2603.27728v1"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "composition-iteration",
+        "relation": "Related",
+        "why": "Overview and open questions."
+      },
+      {
+        "id": "eisenstein-dumas",
+        "relation": "Related",
+        "why": "Local irreducibility criteria."
+      },
+      {
+        "id": "arboreal-galois",
+        "relation": "Related",
+        "why": "Stability gives transitivity, while maximality requires more."
+      },
+      {
+        "id": "separated-variable-polynomials",
+        "relation": "Related",
+        "why": "Composition controls exceptional reducible fibers."
+      },
+      {
+        "id": "finite-field-constructions",
+        "relation": "Related",
+        "why": "Irreducible polynomials and iteration over finite fields."
+      }
+    ],
+    "questions": []
+  },
+  {
+    "id": "arboreal-galois",
+    "title": "Arboreal Galois groups",
+    "kind": "method",
+    "subject": "dynamics",
+    "summary": "The Galois groups of iterated preimage equations act on rooted trees. Critical values can detect maximal groups and explain smaller ones.",
+    "level": "Intermediate",
+    "field": "General preimage trees; quadratic square-class criterion over Q",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Why do iterated Galois groups lie in wreath products?",
+      "How are stability and maximality different?",
+      "How do square classes determine quadratic groups?",
+      "When can a finite level determine the infinite group?"
+    ],
+    "prerequisites": [
+      "foundations",
+      "permutation-groups"
+    ],
+    "sections": [
+      {
+        "id": "preimage-tree",
+        "title": "The preimage tree",
+        "body": "<p>Let \\(f\\in K[x]\\) have degree \\(d\\ge2\\), and fix \\(a\\in K\\). Suppose \\(f^{\\circ n}(x)-a\\) has \\(d^n\\) distinct roots for every \\(n\\). Make these roots the vertices at level \\(n\\), keep separate copies at different levels, and join \\(\\beta\\) to \\(f(\\beta)\\). Level zero consists of \\(a\\). Each vertex has \\(d\\) children.</p><p>If \\(L_n\\) is the splitting field of \\(f^{\\circ n}(x)-a\\), then \\(L_{n-1}\\subseteq L_n\\). Every element of \\(G_n=\\operatorname{Gal}(L_n/K)\\) preserves the tree because \\(\\sigma(f(\\beta))=f(\\sigma(\\beta))\\). Passing to all levels gives the <em>arboreal representation</em></p>\\[\\rho_{f,a}:\\operatorname{Gal}(\\overline K/K)\\longrightarrow\\operatorname{Aut}(T_{d,\\infty}).\\]<p>In characteristic zero, the separability assumption is equivalent to saying that \\(a\\) is not a positive iterate of any critical point of \\(f\\).</p>",
+        "citations": [
+          {
+            "key": "Odoni1985",
+            "locator": "Galois theory of iterates"
+          },
+          {
+            "key": "Jones2013Arboreal",
+            "locator": "§1.1"
+          }
+        ]
+      },
+      {
+        "id": "wreath-product",
+        "title": "The largest possible tree group",
+        "body": "<p>A tree automorphism may permute the \\(d\\) branches at the root and act independently on each branch. Consequently,</p>\\[\\operatorname{Aut}(T_{d,n})\\cong\\operatorname{Aut}(T_{d,n-1})^d\\rtimes S_d,\\qquad |\\operatorname{Aut}(T_{d,n})|=(d!)^{(d^n-1)/(d-1)}.\\]<p>This is the iterated wreath product of \\(S_d\\). For \\(n\\ge2\\), the tree group \\(\\operatorname{Aut}(T_{d,n})\\) is a proper subgroup of \\(S_{d^n}\\). For example, a quadratic second iterate has a group inside the order-eight group \\(C_2\\wr C_2\\).</p><p>Transitivity of \\(G_n\\) is equivalent to irreducibility of \\(f^{\\circ n}(x)-a\\). Surjectivity of \\(\\rho_{f,a}\\) means equality with the full tree group at every level. Finite index permits some failure of maximality but bounds the indices \\([\\operatorname{Aut}(T_{d,n}):G_n]\\) independently of \\(n\\).</p>",
+        "citations": [
+          {
+            "key": "Jones2013Arboreal",
+            "locator": "§1.1; tree automorphisms and finite index"
+          }
+        ]
+      },
+      {
+        "id": "square-classes",
+        "title": "A quadratic maximality criterion",
+        "body": "<p>For \\(f=x^2+c\\) over \\(\\mathbb Q\\), set</p>\\[b_1=-c,\\qquad b_n=f^{\\circ n}(0)\\quad(n\\ge2).\\]<p>Assume \\(b_1,\\ldots,b_n\\ne0\\). Then \\(G_n=\\operatorname{Aut}(T_{2,n})\\) if and only if the classes of \\(b_1,\\ldots,b_n\\) are linearly independent in the \\(\\mathbb F_2\\)-vector space \\(\\mathbb Q^\\times/\\mathbb Q^{\\times2}\\). Equivalently, no nonempty product of these values is a square in \\(\\mathbb Q\\).</p><p>At the next level, one adjoins square roots of \\(\\alpha-c\\), where \\(\\alpha\\) runs over the preceding roots. Kummer theory describes the relations between these square roots. When the preceding tree action is full, the product relation is controlled by the new critical value. Induction gives the criterion.</p>",
+        "citations": [
+          {
+            "key": "Stoll1992",
+            "locator": "Theorem in §1, equivalence of (a) and (b)"
+          },
+          {
+            "key": "Stoll2026Arboreal",
+            "locator": "Proposition 1.7; arXiv:2611.14014v1"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<p>For \\(x^2+1\\), the first three adjusted critical values are \\(-1,2,5\\). A product containing \\(-1\\) is negative; the remaining nonempty products \\(2,5,10\\) are nonsquares. Hence the Galois group through level three is the full binary tree group, of order \\(2^{1+2+4}=128\\). Stoll’s theorem proves maximality at every level for this polynomial.</p><p>A useful sufficient condition for independence is the following: for each \\(b_j\\), find a prime \\(p_j\\) such that \\(v_{p_j}(b_j)\\) is odd and \\(v_{p_j}(b_i)\\) is even for every \\(i<j\\). In a nonempty product, the prime belonging to the largest index then has odd valuation. This explains why new prime divisors of critical values often prove maximality.</p>",
+        "citations": [
+          {
+            "key": "Stoll1992",
+            "locator": "Square-class criterion"
+          }
+        ]
+      },
+      {
+        "id": "even-degree",
+        "title": "An even-degree criterion",
+        "body": "<p>Kadets extends the square-class approach to even degree. Assume \\(\\operatorname{char}K\\ne2\\), \\(\\deg f=d\\) is even, the target \\(a\\) is not periodic, and all preimage equations are separable. Suppose that, for every \\(n\\ge0\\) and every \\(\\alpha\\in f^{-n}(a)\\), the polynomial \\(f(x)-\\alpha\\) has Galois group \\(S_d\\) over \\(K(\\alpha)\\). If</p>\\[\\operatorname{disc}(f^{\\circ n}(x)-a),\\qquad n\\ge1,\\]<p>are independent in \\(K^\\times/K^{\\times2}\\), then the arboreal representation is surjective. Both assumptions matter: the square classes control how the extensions fit together, while the fiber groups supply the full symmetric action at each vertex.</p>",
+        "citations": [
+          {
+            "key": "Kadets2020LargeArboreal",
+            "locator": "Theorem 1.2 and §2"
+          }
+        ]
+      },
+      {
+        "id": "chebyshev",
+        "title": "A stable polynomial with cyclic groups",
+        "body": "<p>Let \\(f=x^2-2\\). The identity</p>\\[f(z+z^{-1})=z^2+z^{-2}\\]<p>gives an exact description of the roots of every iterate. If \\(\\zeta\\) is a primitive \\(2^{n+2}\\)-th root of unity, then \\(\\zeta+\\zeta^{-1}\\) is a root of \\(f^{\\circ n}\\) and has degree \\(\\varphi(2^{n+2})/2=2^n\\). Thus \\(f^{\\circ n}\\) is irreducible over \\(\\mathbb Q\\).</p><p>All its roots lie in \\(\\mathbb Q(\\zeta+\\zeta^{-1})\\), so this is also its splitting field. Therefore</p>\\[G_n\\cong(\\mathbb Z/2^{n+2}\\mathbb Z)^\\times/\\{\\pm1\\}\\cong C_{2^n}.\\]<p>The group is transitive at every level but has infinite index in the full binary tree group. The critical orbit \\(0\\mapsto-2\\mapsto2\\mapsto2\\) is finite.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGhiocaJuulTucker2026Preperiodic",
+            "locator": "§1.4, Chebyshev polynomials",
+            "note": "The cyclotomic calculation is given here."
+          }
+        ]
+      },
+      {
+        "id": "generic-specialization",
+        "title": "Generic groups and arithmetic examples",
+        "body": "<p>For a generic monic polynomial \\(F=x^d+t_{d-1}x^{d-1}+\\cdots+t_0\\) over a characteristic-zero coefficient field, Odoni proves that every iterate has the full \\(n\\)-fold wreath product. Juul extends the generic theorem to positive characteristic, with the exception \\((d,\\operatorname{char}K)=(2,2)\\).</p><p>A fixed finite level can be studied by Hilbert irreducibility. Obtaining one specialization that works at every level requires further arithmetic: infinitely many separate applications of Hilbert irreducibility do not by themselves produce a common specialization. Looper, Benedetto–Juul, and Specter construct arithmetic examples using local conditions that persist through the tower.</p>",
+        "citations": [
+          {
+            "key": "Odoni1985",
+            "locator": "Generic polynomial theorem"
+          },
+          {
+            "key": "Juul2019",
+            "locator": "Theorem 1.1"
+          },
+          {
+            "key": "Looper2019",
+            "locator": "Theorem 1.1"
+          },
+          {
+            "key": "BenedettoJuul2019",
+            "locator": "Theorem 1.1 in the author manuscript; Theorem 1.2 in arXiv:1803.01987v1"
+          },
+          {
+            "key": "Specter2018",
+            "locator": "Theorem 1.2; arXiv:1803.00434v2, preprint"
+          }
+        ]
+      },
+      {
+        "id": "recent-work",
+        "title": "Recent work",
+        "body": "<p>For targets outside the forward critical orbit, the periodic and strictly preperiodic postcritically finite quadratic cases are treated by Benedetto–Ghioca–Juul–Tucker in papers published in 2025 and 2026. Their groups record the critical-orbit relations; maximality in those descriptions is relative to the specified constrained group.</p><p>A March 2026 preprint by Henderson–Juul–Lattin–Mercado–Schaefer gives new surjective representations for quadratic polynomials with specified strictly preperiodic targets. For example, their Theorem 2 applies to</p>\\[f=x^2-\\frac{13}{16},\\qquad a=\\frac14,\\]<p>since \\(a-(-13/16)=17/16\\) is a nonsquare and the denominator \\(4\\) satisfies the stated condition. Here \\(a\\mapsto-3/4\\mapsto-1/4\\mapsto-3/4\\). The claimed surjectivity concerns the polynomials \\(f^{\\circ n}(x)-a\\), with this target.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGhiocaJuulTucker2025Periodic",
+            "locator": "Theorem 1.5"
+          },
+          {
+            "key": "BenedettoGhiocaJuulTucker2026Preperiodic",
+            "locator": "Theorems 1.2 and 7.6; §1.4 for the exceptional Chebyshev case"
+          },
+          {
+            "key": "HendersonJuulLattinMercadoSchaefer2026",
+            "locator": "Theorem 2(1) and Example 3; arXiv:2603.25899v1, preprint"
+          }
+        ]
+      },
+      {
+        "id": "finite-level",
+        "title": "Finite-level detection",
+        "body": "<p>For \\(f=x^2+c\\), \\(c\\in\\mathbb Q\\setminus\\{-1,0\\}\\), Stoll’s November 2026 preprint proves that maximality at level two implies maximality at all levels in explicitly specified regions and congruence classes of \\(c\\). It also records the general conjecture that level four suffices.</p><p>The fourth level cannot be replaced by the third. For \\(c=2/3\\),</p>\\[(b_1,b_2,b_3,b_4)=\\left(-\\frac23,\\frac{10}{9},\\frac{154}{81},\\frac{28090}{6561}\\right).\\]<p>The first three classes are independent: the sign detects the first, the prime \\(5\\) detects the second, and the prime \\(7\\) detects the third. But</p>\\[b_2b_4=\\left(\\frac{530}{243}\\right)^2.\\]<p>Thus the first three groups are maximal and the fourth is not.</p>",
+        "citations": [
+          {
+            "key": "Stoll2026Arboreal",
+            "locator": "Theorem 6.1, Conjecture 8.1 and Remark 8.5; arXiv:2611.14014v1"
+          },
+          {
+            "key": "Hindes2015IterationCurves",
+            "locator": "§3, Remark 3.4 and final discussion, p. 26"
+          }
+        ]
+      },
+      {
+        "id": "primes-in-orbits",
+        "title": "Primes in polynomial orbits",
+        "body": "<p>These groups also help study a recurrence \\(u_{n+1}=f(u_n)\\) with \\(f\\in\\mathbb Z[x]\\). If a prime divides some nonzero \\(u_m\\), then, apart from finitely many early terms, a reduction of \\(f^{\\circ n}\\) has a root modulo that prime. At unramified primes, Frobenius must therefore fix a root of \\(f^{\\circ n}\\).</p><p>Chebotarev turns the proportion of such group elements into a density bound for primes. If the proportion with a fixed point tends to zero as \\(n\\to\\infty\\), then the primes dividing the orbit have density zero. Jones applies this method to several infinite families of integral quadratic polynomials.</p>",
+        "citations": [
+          {
+            "key": "Jones2008PrimeDivisors",
+            "locator": "Theorems 1.1–1.2 and Galois/probability method"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "composition-iteration",
+        "relation": "Related",
+        "why": "Overview and open questions."
+      },
+      {
+        "id": "polynomial-stability",
+        "relation": "Related",
+        "why": "Irreducibility and factor counts."
+      },
+      {
+        "id": "polynomial-decomposition",
+        "relation": "Related",
+        "why": "Composition gives the blocks of the tree."
+      },
+      {
+        "id": "critical-parameter-polynomials",
+        "relation": "Related",
+        "why": "Critical-orbit relations in parameter space."
+      },
+      {
+        "id": "frobenius",
+        "relation": "Related",
+        "why": "Fixed points of Frobenius and prime divisors of orbits."
+      },
+      {
+        "id": "specialization",
+        "relation": "Related",
+        "why": "Generic groups and specializations."
+      }
+    ],
+    "questions": []
+  },
+  {
+    "id": "critical-parameter-polynomials",
+    "title": "Gleason and Misiurewicz polynomials",
+    "kind": "family",
+    "subject": "dynamics",
+    "summary": "Gleason and Misiurewicz polynomials record periodic and strictly preperiodic critical points. Their irreducibility asks whether the corresponding parameters form one Galois orbit.",
+    "level": "Intermediate",
+    "field": "Q and cyclotomic fields",
+    "status": "Research overview",
+    "checked": "2026-11-12",
+    "questionsAnswered": [
+      "Which polynomial records an exact critical period or tail?",
+      "Which irreducibility cases are known?",
+      "How do these parameter polynomials relate to dynatomic curves?",
+      "What changes in higher degree?"
+    ],
+    "prerequisites": [
+      "composition-iteration",
+      "discriminants"
+    ],
+    "sections": [
+      {
+        "id": "background",
+        "title": "Critical points and parameters",
+        "body": "<p>For \\(f_c(z)=z^2+c\\), the finite critical point is \\(0\\). As \\(c\\) varies, its orbit is</p>\\[0\\longmapsto c\\longmapsto c^2+c\\longmapsto(c^2+c)^2+c\\longmapsto\\cdots.\\]<p>It is periodic if it returns to \\(0\\), and strictly preperiodic if it enters a cycle without returning to \\(0\\). The <em>tail length</em> \\(m\\) is the first time it enters the cycle; the <em>period</em> \\(n\\) is the cycle length. For a strictly preperiodic critical point in this family, \\(m\\ge2\\).</p><p>These conditions are polynomial equations in \\(c\\). To obtain exact period and tail, one removes the factors belonging to shorter orbits. The resulting arithmetic questions concern the parameters \\(c\\), rather than roots of an iterate for a fixed parameter.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2026NonUnit",
+            "locator": "Introduction and equation (1)"
+          }
+        ]
+      },
+      {
+        "id": "gleason",
+        "title": "Gleason polynomials",
+        "body": "<p>Set \\(a_0(c)=0\\) and \\(a_{j+1}(c)=a_j(c)^2+c\\). The Gleason polynomial is</p>\\[G_n(c)=\\prod_{d\\mid n}a_d(c)^{\\mu(n/d)}\\in\\mathbb Z[c].\\]<p>Its roots are exactly the parameters for which \\(0\\) has exact period \\(n\\). Möbius inversion gives \\(a_n=\\prod_{d\\mid n}G_d\\), and hence</p>\\[\\deg G_n=\\sum_{d\\mid n}\\mu(n/d)\\,2^{d-1}.\\]<p>The conjecture that every \\(G_n\\) is irreducible over \\(\\mathbb Q\\) says that the exact-period parameters form one Galois orbit. Ramadas records verification for \\(n\\le19\\). The 2026 necklace paper still states the general conjecture.</p>",
+        "citations": [
+          {
+            "key": "Ramadas2024Moduli",
+            "locator": "Introduction"
+          },
+          {
+            "key": "BakerChenLiQian2026Necklaces",
+            "locator": "Introduction, footnote 1"
+          }
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Example",
+        "body": "<p>The first three polynomials are</p>\\[G_1=c,\\qquad G_2=c+1,\\qquad G_3=c^3+2c^2+c+1.\\]<p>The reduction \\(G_3\\bmod2=c^3+c+1\\) has no root in \\(\\mathbb F_2\\), so it is irreducible. Its discriminant is \\(-23\\); therefore its Galois group over \\(\\mathbb Q\\) is \\(S_3\\).</p><p>At period four,</p>\\[G_4=c^6+3c^5+3c^4+3c^3+2c^2+1,\\]\\[G_4\\bmod2=(c^2+c+1)(c^4+c+1).\\]<p>The two factors are irreducible over \\(\\mathbb F_2\\). Thus this prime gives the cycle type \\((2)(4)\\), but does not prove irreducibility over \\(\\mathbb Q\\). Baker–Chen–Li–Qian describe the factors modulo \\(2\\) using binary necklaces and construct a bijection with the real roots of \\(G_n\\).</p>",
+        "citations": [
+          {
+            "key": "BakerChenLiQian2026Necklaces",
+            "locator": "Introduction and Theorem A",
+            "note": "The cubic discriminant and small factorizations are checked directly."
+          }
+        ]
+      },
+      {
+        "id": "misiurewicz",
+        "title": "Misiurewicz polynomials",
+        "body": "<p>For \\(f_{d,c}(z)=z^d+c\\), let \\(a_j=f_{d,c}^{\\circ j}(0)\\). Fix \\(d,m\\ge2\\), \\(n\\ge1\\), and a nontrivial \\(d\\)-th root of unity \\(\\zeta\\). The normalized Misiurewicz polynomial is</p>\\[G_{d,m,n}^{\\zeta}(c)=\\frac{\\prod_{k\\mid n}(a_{m+k-1}-\\zeta a_{m-1})^{\\mu(n/k)}}{\\left(\\prod_{k\\mid n}a_k^{\\mu(n/k)}\\right)^{\\epsilon}},\\qquad \\epsilon=\\begin{cases}1&n\\mid m-1,\\\\0&n\\nmid m-1.\\end{cases}\\]<p>It is monic in \\(\\mathbb Z[\\zeta][c]\\). Its roots have exact critical tail \\(m\\), period \\(n\\), and collision relation \\(a_{m+n-1}=\\zeta a_{m-1}\\). The factor in the denominator removes periodic critical parameters.</p><p>Conjecture 1.1 of Benedetto–Goksel predicts irreducibility over \\(\\mathbb Q(\\zeta)\\). The known cases they record include \\(d=2,n\\le3\\); \\(d=3,n=2\\); and prime-power \\(d\\) with \\(n=1\\). For \\(d=2\\), write \\(G_{m,n}=G_{2,m,n}^{\\zeta}\\big|_{\\zeta=-1}\\). For example, \\(G_{2,1}=c+2\\), whose root gives the orbit \\(0\\mapsto-2\\mapsto2\\mapsto2\\).</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2024UnitsII",
+            "locator": "Equation (2), Conjecture 1.1 and the following paragraph"
+          }
+        ]
+      },
+      {
+        "id": "units",
+        "title": "Polynomial values and algebraic units",
+        "body": "<p>Let \\(c_0\\) be a root of \\(G_{m,n}\\) for the quadratic family \\(z^2+c\\), with \\(m\\ge2\\), and suppose \\(1\\le\\ell<n\\) divides \\(n\\). The non-unit conjecture predicts that \\(G_{m,\\ell}(c_0)\\) is not an algebraic unit. Benedetto–Goksel prove this when \\(\\ell\\) is a prime at most \\(1024\\), assuming both \\(G_{m,\\ell}\\) and \\(G_{m,n}\\) are irreducible over \\(\\mathbb Q\\).</p><p>The value is a product of differences between \\(c_0\\) and roots of \\(G_{m,\\ell}\\). A non-unit product shows that at least one difference is a non-unit. To conclude this for every difference, one needs further Galois information, such as irreducibility over \\(\\mathbb Q(c_0)\\).</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2026NonUnit",
+            "locator": "Introduction, Questions 1.1–1.2 and Theorem 1.3"
+          }
+        ]
+      },
+      {
+        "id": "higher-degree",
+        "title": "A higher-degree exception",
+        "body": "<p>The quadratic conjecture does not extend unchanged to every degree. Buff uses the family \\(f_a(z)=az^D+1\\), \\(D\\ge2\\). Its exact-period-three parameter polynomial is reducible over \\(\\mathbb Q\\) if and only if \\(D\\equiv1\\pmod6\\). In that case it has exactly two irreducible factors, one equal to \\(a^2+a+1\\).</p><p>This is a statement in the parameter \\(a\\) for the displayed normalization. For \\(D=2\\) and \\(a\\ne0\\), the change \\(w=az\\) conjugates \\(az^2+1\\) to \\(w^2+a\\), linking Buff’s normalization to the quadratic family above.</p>",
+        "citations": [
+          {
+            "key": "Buff2018PCF",
+            "locator": "Proposition 5"
+          }
+        ]
+      },
+      {
+        "id": "curves-and-parameters",
+        "title": "Dynatomic curves and parameter polynomials",
+        "body": "<p>For \\(f_c(z)=z^2+c\\), define the dynatomic polynomial</p>\\[\\Phi_n(c,z)=\\prod_{d\\mid n}(f_c^{\\circ d}(z)-z)^{\\mu(n/d)}.\\]<p>The affine curve \\(\\Phi_n(c,z)=0\\) is smooth and irreducible over \\(\\mathbb C\\). Buff–Tan give proofs of these results. Its intersection with \\(z=0\\) is the equation \\(G_n(c)=0\\). Irreducibility of the curve does not imply irreducibility of this intersection over \\(\\mathbb Q\\).</p><p>A different curve, \\(\\operatorname{Per}_n(0)\\), parametrizes quadratic rational maps with an \\(n\\)-periodic critical point. Ramadas proves, for \\(n\\ge4\\), that irreducibility of \\(G_n\\) over \\(\\mathbb Q\\) implies irreducibility of \\(\\operatorname{Per}_n(0)\\) over \\(\\mathbb C\\). Her argument uses a smooth rational point on a suitable projective completion.</p>",
+        "citations": [
+          {
+            "key": "BuffTan2014Dynatomic",
+            "locator": "Theorems 1.1–1.2"
+          },
+          {
+            "key": "Ramadas2024Moduli",
+            "locator": "Theorems 1.1 and 1.3"
+          }
+        ]
+      },
+      {
+        "id": "gonality",
+        "title": "Preperiodic curves and rational points",
+        "body": "<p>For \\(z^d+c\\), the irreducible factors of \\(f_c^{\\circ n}(z)-f_c^{\\circ m}(z)\\), \\(n>m\\), define curves parametrizing preperiodic points. Doyle–Poonen prove that, over a field \\(k\\) containing all \\(d\\)-th roots of unity and with characteristic not dividing \\(d\\), each such irreducible component is geometrically irreducible.</p><p>They also prove that the gonalities of these distinct curves tend to infinity: for each bound, only finitely many have gonality below it. Here gonality is the least degree of a nonconstant map over \\(k\\) from the smooth projective curve to \\(\\mathbb P^1\\). Over a function field \\(K/k\\), this gives a uniform bound for preperiodic points in extensions of bounded degree when \\(c\\) is not algebraic over \\(k\\); for finite \\(k\\), that restriction on \\(c\\) can be removed. Over number fields of bounded degree, a uniform bound holds for preperiodic points of bounded eventual period.</p>",
+        "citations": [
+          {
+            "key": "DoylePoonen2020Gonality",
+            "locator": "Theorems 1.1, 1.7, and 1.8; §1.1 defines the curves as irreducible components"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "id": "composition-iteration",
+        "relation": "Related",
+        "why": "Critical-orbit equations arise from iteration."
+      },
+      {
+        "id": "arboreal-galois",
+        "relation": "Related",
+        "why": "Critical orbits also govern Galois groups of preimages."
+      },
+      {
+        "id": "multivariate-irreducibility",
+        "relation": "Related",
+        "why": "Irreducibility of a curve differs from irreducibility of a section."
+      },
+      {
+        "id": "specialization",
+        "relation": "Related",
+        "why": "A parameter polynomial differs from a specialized dynatomic polynomial."
+      },
+      {
+        "id": "modular-irreducibility",
+        "relation": "Related",
+        "why": "Reduction certifies individual examples."
+      }
+    ],
+    "questions": [
+      {
+        "id": "gleason-irreducibility",
+        "title": "Are all quadratic Gleason polynomials irreducible?",
+        "status": "Open",
+        "scope": "G_n(c) over Q, for every integer n≥1",
+        "body": "<p>The conjecture asks whether the exact-period parameters form a single Galois orbit for every \\(n\\). Verification through \\(n=19\\) is recorded by Ramadas; the 2026 necklace paper still states the general conjecture.</p>",
+        "citations": [
+          {
+            "key": "Ramadas2024Moduli",
+            "locator": "Introduction"
+          },
+          {
+            "key": "BakerChenLiQian2026Necklaces",
+            "locator": "Introduction, footnote 1"
+          }
+        ]
+      },
+      {
+        "id": "misiurewicz-irreducibility",
+        "title": "Are the normalized Misiurewicz polynomials irreducible?",
+        "status": "Open",
+        "scope": "d,m≥2; n≥1; ζ≠1 a d-th root of unity; base field Q(ζ)",
+        "body": "<p>Conjecture 1.1 asserts irreducibility of \\(G_{d,m,n}^{\\zeta}\\). Even the full quadratic family remains unresolved in the cited 2026 paper. Removing lower-period factors and fixing \\(\\zeta\\) are part of the statement.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2024UnitsII",
+            "locator": "Conjecture 1.1"
+          },
+          {
+            "key": "BenedettoGoksel2026NonUnit",
+            "locator": "Introduction before Question 1.1"
+          }
+        ]
+      },
+      {
+        "id": "misiurewicz-nonunit",
+        "title": "Are the remaining Misiurewicz values always non-units?",
+        "status": "Open",
+        "scope": "m≥2; 1≤ℓ<n with ℓ|n; c₀ a root of quadratic G_{m,n}",
+        "body": "<p>Must \\(G_{m,\\ell}(c_0)\\) fail to be an algebraic unit? The 2026 result covers prime \\(\\ell\\le1024\\) under irreducibility assumptions, and leaves the general case open.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2026NonUnit",
+            "locator": "Introduction and Theorem 1.3"
+          },
+          {
+            "key": "BenedettoGoksel2024UnitsII",
+            "locator": "Conjecture 1.3"
+          }
+        ]
+      },
+      {
+        "id": "critical-parameter-groups",
+        "title": "Determine the Galois groups of critical-parameter polynomials.",
+        "status": "Research direction",
+        "scope": "Quadratic Gleason polynomials over Q; normalized Misiurewicz polynomials over Q(ζ)",
+        "body": "<p>Beyond irreducibility, determine the permutation groups acting on the parameters with a prescribed critical orbit. The period-three Gleason polynomial has group \\(S_3\\). A general answer must account for the unresolved irreducibility questions and for the chosen normalization; no assertion that all these groups are symmetric is made here.</p>",
+        "citations": [
+          {
+            "key": "BenedettoGoksel2024UnitsII",
+            "locator": "Introduction after Conjecture 1.1, arithmetic of fields generated by parameters"
+          },
+          {
+            "key": "Ramadas2024Moduli",
+            "locator": "Introduction"
+          }
+        ]
+      }
+    ]
+  }
+]
