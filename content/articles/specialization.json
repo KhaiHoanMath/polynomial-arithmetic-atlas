@@ -138,11 +138,20 @@
       {
         "id": "dynatomic-specialization",
         "title": "Dynatomic specializations",
-        "body": "<p>For \\(f_T(x)=x^2+T\\) and \\(n\\ge1\\), put</p>\\[\\Phi_n(T,x)=\\prod_{d\\mid n}(f_T^{\\circ d}(x)-x)^{\\mu(n/d)}.\\]<p>Over \\(\\mathbb Q(T)\\), this polynomial is irreducible and its group is \\(C_n\\wr S_r\\), where \\(nr=\\deg_x\\Phi_n\\). The action must commute with the permutation given by iteration, whose cycles all have length \\(n\\). This gives the upper bound \\(C_n\\wr S_r\\); the generic group attains it. Let \\(E_n\\) be the rational parameters where the specialized group differs from the generic group. Krumm proves \\(E_n\\) finite for \\(n=5,6,7,9\\), whereas it is infinite for \\(n\\le4\\). These finiteness proofs do not list all exceptional parameters.</p>",
+        "body": "<p>For \\(f_T(x)=x^2+T\\) and \\(n\\ge1\\), put</p>\\[\\Phi_n(T,x)=\\prod_{d\\mid n}(f_T^{\\circ d}(x)-x)^{\\mu(n/d)}.\\]<p>Bousch proved that over \\(\\mathbb Q(T)\\) this polynomial is irreducible and its group is \\(C_n\\wr S_r\\), where \\(nr=\\deg_x\\Phi_n\\). The action must commute with the permutation given by iteration, whose cycles all have length \\(n\\). This gives the upper bound \\(C_n\\wr S_r\\); the generic group attains it. Schleicher gives another treatment through analytic continuation and internal addresses. Let \\(E_n\\) be the rational parameters where the specialized group differs from the generic group. Krumm proves \\(E_n\\) finite for \\(n=5,6,7,9\\), whereas it is infinite for \\(n\\le4\\). These finiteness proofs do not list all exceptional parameters.</p>",
         "citations": [
           {
             "key": "Krumm2019Dynatomic",
             "locator": "Equation (1.1), Problems 1.2–1.3, Theorem 1.4 and Proposition 2.2"
+          },
+          {
+            "key": "Bousch1992Thesis",
+            "locator": "Chapter 3, Theorem 3",
+            "note": "Attribution and locator checked in Krumm, Proposition 2.2; original thesis not retrieved."
+          },
+          {
+            "key": "Schleicher2017Galois",
+            "locator": "Theorem 7.1, pp. 27–28"
           }
         ]
       },

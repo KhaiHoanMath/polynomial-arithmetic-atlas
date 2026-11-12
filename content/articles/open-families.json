@@ -43,11 +43,12 @@
       {
         "id": "known",
         "title": "Known cases",
-        "body": "<p>For \\(n=2^a\\) and every integer \\(n\\le t<2n\\), Cullinan proves irreducibility by a single-edge 2-adic Newton polygon. The parameter range is essential to this result.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · Cullinan</p><p>Let \\(n=2^a\\), with \\(a\\ge0\\), and let \\(t\\) be an integer with \\(n\\le t<2n\\). Then \\(\\mathcal K_n^{(t)}\\) is irreducible over \\(\\mathbb Q\\).</p></div><div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>Write \\((x)_j=x(x-1)\\cdots(x-j+1)\\). For \\(j>0\\),</p>\\[(-2)^j\\binom{x}{j}=\\frac{(-2)^j}{j!}(x)_j,\\qquad v_2(2^j/j!)=s_2(j)\\ge1,\\]<p>where \\(s_2(j)\\) is the sum of the binary digits of \\(j\\). Since \\(\\binom{t-j}{n-j}\\) is an integer, every nonconstant coefficient belongs to \\(2\\mathbb Z_2\\). The leading coefficient has valuation \\(s_2(n)=1\\). The constant coefficient is \\(\\binom tn\\), which is odd by Lucas’s theorem because \\(n\\le t<2n\\) and \\(n\\) is a power of two. Thus the reciprocal polynomial \\(x^n\\mathcal K_n^{(t)}(x^{-1})\\) is Eisenstein at \\(2\\). It is irreducible over \\(\\mathbb Q_2\\), and hence so is \\(\\mathcal K_n^{(t)}\\) over \\(\\mathbb Q\\).</p></div>",
         "citations": [
           {
             "key": "Cullinan2024",
-            "locator": "Corollary 1.2.3; arXiv:2212.07539v1"
+            "locator": "Corollary 1.2.3 and its proof in §3, arXiv:2212.07539v1",
+            "note": "The displayed argument applies Eisenstein to the reciprocal in the normalization used here."
           }
         ]
       }
@@ -158,8 +159,8 @@
         "id": "kaneko-zagier-mahlburg-ono",
         "title": "Are all four Kaneko–Zagier families irreducible with symmetric Galois group?",
         "status": "Claimed",
-        "scope": "\\(n\\ge1\\), \\(\\alpha=\\pm1/3\\), \\(\\beta=\\pm1/2\\), over \\(\\mathbb Q\\).",
-        "body": "<p>The conjecture asks for irreducibility and group \\(S_n\\) for every polynomial defined above. Degree-zero members are excluded. The 2026 preprint claims the full result; it is not used here as an established theorem.</p>",
+        "scope": "Integers \\(n\\ge1\\), \\(\\alpha\\in\\{-1/3,1/3\\}\\), \\(\\beta\\in\\{-1/2,1/2\\}\\), over \\(\\mathbb Q\\).",
+        "body": "<p>Define the shifted Jacobi polynomial</p>\\[J_n^{(\\alpha,\\beta)}(x)=\\sum_{j=0}^n\\binom{n+\\alpha}{n-j}\\binom{n+\\alpha+\\beta+j}{j}x^j.\\]<p>The conjecture asks whether every \\(J_n^{(\\alpha,\\beta)}\\) in these four families is irreducible with Galois group \\(S_n\\). These are the <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/kaneko-zagier.html#definition\">Jacobi normalizations of the Kaneko–Zagier families after their forced elliptic factors are removed</a>. The 2026 preprint claims the full result; it is not used here as an established theorem.</p>",
         "citations": [
           {
             "key": "MahlburgOno2004",
@@ -310,8 +311,8 @@
         "id": "hajir-negative-irreducibility",
         "title": "Is \\(F_{n,r}\\) irreducible for every \\(n\\ge1\\) and \\(r\\ge0\\)?",
         "status": "Open",
-        "scope": "\\(n\\ge1\\), \\(r\\ge0\\), and the displayed positive-coefficient normalization over \\(\\mathbb Q\\).",
-        "body": "<p>This is Hajir’s first conjecture. The ranges proved above and the recent uniform preprint claim do not by themselves settle every pair.</p>",
+        "scope": "Integers \\(n\\ge1\\) and \\(r\\ge0\\), over \\(\\mathbb Q\\).",
+        "body": "<p>Set</p>\\[F_{n,r}(x)=\\sum_{j=0}^n\\binom{n-j+r}{n-j}\\frac{x^j}{j!}=(-1)^nL_n^{(-n-r-1)}(x).\\]<p>Hajir’s first conjecture asks whether this polynomial is irreducible for every such pair. The <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/laguerre-negative-parameters.html#known\">published ranges</a> and the <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/laguerre-negative-parameters.html#recent\">recent uniform preprint claim</a> do not by themselves settle every pair.</p>",
         "citations": [
           {
             "key": "Hajir2009",
@@ -344,8 +345,8 @@
         "id": "laguerre-admissible-modifications",
         "title": "Which Laguerre polynomials remain irreducible under every admissible coefficient modification?",
         "status": "Open",
-        "scope": "\\(F_{n,r}\\), \\(n\\ge1\\), \\(r\\ge0\\), with the endpoint conditions defined above.",
-        "body": "<p>Hajir asks for a classification of the pairs. Later work gives eventual results for each fixed parameter and explicit small-parameter results; the displayed quadratic example rules out an unrestricted affirmative answer.</p>",
+        "scope": "Integers \\(n\\ge1\\), \\(r\\ge0\\); all \\(b_0,\\ldots,b_n\\in\\mathbb Z\\) with \\(b_0=\\pm1\\) and \\(b_n=1\\); irreducibility over \\(\\mathbb Q\\).",
+        "body": "<p>Classify the pairs \\((n,r)\\) for which every polynomial</p>\\[G_{n,r,\\mathbf b}(x)=\\sum_{j=0}^n b_j\\binom{n-j+r}{n-j}\\frac{x^j}{j!}\\]<p>with the stated endpoint conditions is irreducible. This is the <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/laguerre-negative-parameters.html#modifications\">admissible modification problem for Hajir’s family</a>. The pair \\((2,3)\\) is excluded: taking \\(b_0=-1\\) and \\(b_1=b_2=1\\) gives \\(2G_{2,3,\\mathbf b}(x)=x^2+8x-20=(x-2)(x+10)\\). Later work proves eventual results for each fixed \\(r\\) and further explicit small-parameter results; the full classification remains open.</p>",
         "citations": [
           {
             "key": "Hajir2009",
@@ -993,8 +994,8 @@
         "id": "stern-half-plane",
         "title": "Do all zeros of \\(S_n\\) have real part less than 1?",
         "status": "Open",
-        "scope": "The sequence \\(S_n\\) above, \\(n\\ge1\\).",
-        "body": "<p>The preprint proves the weaker exclusion \\(|z-2|\\le1\\). The half-plane conjecture remains stated separately.</p>",
+        "scope": "Integers \\(n\\ge1\\); complex zeros of the recurrence-defined polynomial \\(S_n\\).",
+        "body": "<p>Define \\(S_0(x)=0\\), \\(S_1(x)=1\\), and, for integers \\(k\\ge1\\),</p>\\[S_{2k}(x)=xS_k(x),\\qquad S_{2k+1}(x)=S_k(x)+S_{k+1}(x).\\]<p>Must every zero \\(z\\) of every \\(S_n\\), \\(n\\ge1\\), satisfy \\(\\operatorname{Re}z<1\\)? The preprint proves the weaker exclusion of zeros from \\(|z-2|\\le1\\). The half-plane conjecture remains stated separately. See <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/stern-polynomials.html#other-sequence\">this Stern sequence and its distinction from the (0,1)-polynomials</a>.</p>",
         "citations": [
           {
             "key": "Altizio2025Stern",

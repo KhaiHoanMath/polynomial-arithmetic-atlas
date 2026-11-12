@@ -26,7 +26,7 @@ if(form){
  for(const c of controls)c.addEventListener(c.tagName==='INPUT'?'input':'change',()=>apply(true));
  form.addEventListener('submit',e=>{e.preventDefault();apply(true);});
  form.addEventListener('reset',()=>{requestAnimationFrame(()=>{apply(true);query.focus();});});
- function revealHash(){if(!location.hash)return;let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}const target=document.getElementById(id);if(target?.matches('[data-filter-item]')){for(const c of controls)c.value=c.name==='sort'?'default':'';apply(true,true);requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));}}
+ function revealHash(){if(!location.hash)return;let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}const target=document.getElementById(id)?.closest('[data-filter-item]');if(target){for(const c of controls)c.value=c.name==='sort'?'default':'';apply(true,true);requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));}}
  apply();revealHash();window.addEventListener('hashchange',revealHash);
 }
 for(const button of document.querySelectorAll('[data-copy]'))button.addEventListener('click',async()=>{

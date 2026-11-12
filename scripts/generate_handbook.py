@@ -2,9 +2,10 @@
 """Create an optional author-only handbook from the site's final JSON.
 
 Write standalone TeX and a source manifest under author-only/. This script does
-not compile a PDF or place files in the published website.
+not place files in the published website. With --compile, run XeLaTeX twice
+and reject missing-character diagnostics.
 """
-import json, re, html, hashlib, argparse
+import json, re, html, hashlib, argparse, subprocess
 from html.parser import HTMLParser
 from pathlib import Path
 from datetime import date
@@ -13,6 +14,7 @@ HERE=Path(__file__).resolve().parent
 arguments=argparse.ArgumentParser(description=__doc__)
 arguments.add_argument('--site-root',type=Path,default=HERE.parent, help='Repository root; defaults to the parent of the script directory.')
 arguments.add_argument('--output-dir',type=Path, help='Output directory under the repository author-only/ directory (default: author-only/handbook).')
+arguments.add_argument('--compile', action='store_true', help='Compile the author-only PDF twice and reject missing glyphs.')
 options=arguments.parse_args()
 REPO=options.site_root.resolve()
 AUTHOR_ONLY=REPO/'author-only'
@@ -38,6 +40,9 @@ review_date=date.fromisoformat(catalogue['checked_through'])
 review_date_long=f'{review_date.day} {review_date.strftime("%B")} {review_date.year}'
 navigation=read('content/navigation.json')
 articles=[a for f in sorted((REPO/'content/articles').glob('*.json')) for a in json.loads(f.read_text())]
+questions_by_id={q['id']:q for a in articles for q in a.get('questions',[])}
+for a in articles:
+    a['questions']=[{**questions_by_id[q['aliasOf']],**q} if q.get('aliasOf') else q for q in a.get('questions',[])]
 byid={a['id']:a for a in articles}; byref={r['id']:r for r in refs}
 order=['foundations','modular-irreducibility','eisenstein-dumas','newton-polygons','archimedean-criteria','integer-values','sparse-gaps','capelli-composition','frobenius','discriminants','ramification-inertia','permutation-groups','resolvents','reciprocity','trinomials','taylor','taylor-prescriptions','laguerre','orthogonal-families','krawtchouk','kaneko-zagier','laguerre-negative-parameters','eulerian','bernoulli-euler','fekete','truncated-binomial','stern-polynomials','newman-pentanomials','touchard','chromatic-polynomials','tutte-polynomials','ehrhart-polynomials','hecke-polynomials','eisenstein-zero-polynomials','height-counting','random-models','littlewood','factor-reversal','random-matrices','random-reciprocal','twisted-reciprocity','specialization','critical-points-monodromy','inverse-galois','composition-iteration','critical-parameter-polynomials','finite-field-irreducibility','finite-field-constructions','sparse-finite-fields','factorization-algorithms','sparse-factorization','galois-computation','multivariate-irreducibility']
 articles.sort(key=lambda a:order.index(a['id']) if a['id'] in order else 999)
@@ -46,6 +51,7 @@ MATH=re.compile(r'\\\[([\s\S]*?)\\\]|\\\(([\s\S]*?)\\\)')
 math_count=0
 unicode_math={'≥':r'\ge','≤':r'\le','−':'-','↦':r'\mapsto','±':r'\pm','μ':r'\mu','∈':r'\in','→':r'\to','∞':r'\infty','α':r'\alpha','δ':r'\delta','ℤ':r'\mathbb Z','ε':r'\varepsilon','√':r'\surd','⋯':r'\cdots','≠':r'\ne','²':'{}^2','⁴':'{}^4','⁶':'{}^6','ⁿ':'{}^n','₂':'{}_2','₃':'{}_3','₄':'{}_4','₅':'{}_5','ₙ':'{}_n'}
 unicode_math.update({'≡':r'\equiv','₆':'{}_6','φ':r'\varphi','∖':r'\setminus','ζ':r'\zeta','ℓ':r'\ell','₀':'{}_0'})
+unicode_math.update({'⊆':r'\subseteq','⊇':r'\supseteq','ʳ':'{}^r','₇':'{}_7','λ':r'\lambda','π':r'\pi'})
 def plain(s):
     s=str(s or '').replace('–','-').replace('—','-').replace('‑','-').replace('’',"'").replace('“','``').replace('”',"''").replace('·', ' / ')
     escaped=[]
@@ -275,6 +281,9 @@ for route in navigation['routes']:
         parts.append(r'\item \textbf{'+link+'}. '+text(step.get('note',''))+'\\par\n')
         if step.get('references'):parts.append(r'{\footnotesize References: '+', '.join(r'\hyperlink{ref:'+k+'}{'+plain(k)+'}' for k in step['references'])+'}\\par\n')
     parts.append(r'\end{enumerate}'+'\n')
+    step_refs={k for step in route.get('steps',[]) for k in step.get('references',[])}
+    route_refs=list(dict.fromkeys(k for k in route.get('references',[]) if k not in step_refs))
+    if route_refs:parts.append(r'{\footnotesize References: '+', '.join(r'\hyperlink{ref:'+k+'}{'+plain(k)+'}' for k in route_refs)+'}\\par\n')
 parts.append(r'\section*{Books}'+'\n')
 for book in navigation['books']:
     r=byref[book['key']]
@@ -336,7 +345,7 @@ for gi in sorted({r.get('group_index') for r in refs}):
             details.append('Edition '+edition if edition.isdecimal() else edition)
         if r.get('publisher') and r.get('publisher')!=r.get('venue'):details.append(r['publisher'])
         if r.get('series'):details.append(r['series'])
-        if r.get('editor'):details.append('Edited by '+display_creators(r['editor']))
+        if (r.get('editors') or r.get('editor')) and r.get('author_role')!='editors':details.append('Edited by '+display_creators(r.get('editors') or r['editor']))
         if r.get('report_number'):details.append('Report no. '+str(r['report_number']))
         if r.get('article'):details.append('Article '+str(r['article']))
         parts.append(r'\color{black} '+text('. '.join(str(v).rstrip('. ') for v in details if v))+'.\\par\n')
@@ -353,3 +362,13 @@ manifest={'author':AUTHOR,'copyright':COPYRIGHT,'distribution':'Author-only expo
 MANIFEST_OUTPUT.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({k:manifest[k] for k in ['articles','sections','questions','references','math_expressions']},indent=2))
 print(TEX_OUTPUT)
+
+if options.compile:
+    for pass_number in (1,2):
+        process=subprocess.run(['xelatex','-no-shell-escape','-halt-on-error','-interaction=nonstopmode',TEX_OUTPUT.name],cwd=OUT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
+        if process.returncode:
+            raise SystemExit(f'XeLaTeX pass {pass_number} failed:\n'+process.stdout[-12000:])
+        log=TEX_OUTPUT.with_suffix('.log').read_text(errors='replace')
+        missing=[line for line in log.splitlines() if 'Missing character:' in line]
+        if missing:raise SystemExit('Handbook contains missing glyphs:\n'+'\n'.join(missing))
+    print('Compiled author-only PDF with no missing-character diagnostics: '+str(TEX_OUTPUT.with_suffix('.pdf')))

@@ -33,14 +33,16 @@ def render(records, checked):
     output=[f'% Polynomial Arithmetic Atlas. Literature checked through {checked}.\n% {COPYRIGHT}\n% Author-only export. Original annotations and compilation; cited works retain their own rights.\n% Selective bibliography; preprints and source limitations are recorded.\n']
     for r in records:
         kind=r.get('type','misc')
-        if kind not in ['article','book','incollection','inproceedings','techreport','misc']:kind='misc'
+        if kind not in ['article','book','incollection','inproceedings','techreport','phdthesis','mastersthesis','misc']:kind='misc'
         fields={}
-        if r.get('editors'):fields['editor']=r['editors']
-        else:fields['author']=r['authors']
-        if r.get('editor'):fields['editor']=r['editor']
-        fields['title']=r['title']
+        # Authored chapters keep both roles; edited books have no author field.
+        if r.get('author_role')!='editors' and r.get('authors'):
+            fields['author']=r['authors']
+        editors=r.get('editors') or r.get('editor')
+        if editors:fields['editor']=editors
+        fields['title']=r.get('title_tex',r['title'])
         if r.get('year'):fields['year']=str(r['year'])
-        fields['publisher' if kind=='book' else 'booktitle' if kind in ['incollection','inproceedings'] else 'journal' if kind=='article' else 'institution' if kind=='techreport' else 'howpublished']=r.get('venue','')
+        fields['publisher' if kind=='book' else 'booktitle' if kind in ['incollection','inproceedings'] else 'journal' if kind=='article' else 'institution' if kind=='techreport' else 'school' if kind in ['phdthesis','mastersthesis'] else 'howpublished']=r.get('school',r.get('venue','')) if kind in ['phdthesis','mastersthesis'] else r.get('venue','')
         for k in ['volume','pages','edition','series','isbn','publisher']:
             if r.get(k):fields[k]=str(r[k]).replace('–','--')
         if r.get('issue'):fields['number']=r['issue']
@@ -54,7 +56,7 @@ def render(records, checked):
         fields['urldate']=r.get('accessed','2026-11-11')
         notes=[r.get('note',''),r.get('metadata_note','')]
         if r.get('article') and r.get('pages'):notes.append('Article '+str(r['article'])+'.')
-        if r['kind'] in ['Preprint','Exposition','Resource'] or 'conditional' in r.get('status','').lower():notes.append(r.get('status',''))
+        if r['kind'] in ['Preprint','Notes','Exposition','Resource'] or 'conditional' in r.get('status','').lower():notes.append(r.get('status',''))
         if any(notes):fields['note']=' '.join(n for n in notes if n)
         fields['annote']=r['annotation'];fields['keywords']=r.get('group',r.get('section',''))
         lines=['@'+kind+'{'+r['id']+',']
@@ -62,7 +64,7 @@ def render(records, checked):
             if not v:continue
             v=str(v) if k in ['url','doi','eprint','urldate'] else tex(v)
             if k=='title':v='{'+v+'}'
-            if k=='author' and ',' not in r['authors'] and ' and ' not in r['authors'] and any(w in r['authors'] for w in ['NIST','LMFDB','Developers','Team']):v='{'+v+'}'
+            if k=='author' and r.get('creator_type')=='corporate':v='{'+v+'}'
             lines.append('  '+k+' = {'+v+'},')
         output.append('\n'.join(lines+['}\n']))
     return '\n'.join(output)

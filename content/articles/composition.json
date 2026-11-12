@@ -642,13 +642,39 @@
         ]
       },
       {
+        "id": "implications",
+        "title": "Stability and the size of the image",
+        "body": "<p>Let \\(H\\) be the closed arboreal image in \\(W=\\operatorname{Aut}(T_{d,\\infty})\\), with the regular, separable preimage tree defined above. The pair \\(f,a\\) is <em>stable</em> if every \\(f^{\\circ n}(x)-a\\) is irreducible over \\(K\\), and <em>eventually stable</em> if the number of irreducible factors is bounded independently of \\(n\\). Then</p>\\[H=W\\Longrightarrow\\text{stability}\\Longrightarrow\\text{eventual stability},\\]\\[H=W\\Longrightarrow[W:H]<\\infty\\Longrightarrow\\text{eventual stability}.\\]<p>If \\([W:H]=I\\), then \\(H\\) has at most \\(I\\) orbits on each level: if \\(W=\\bigcup_{j=1}^I Hw_j\\) and \\(v\\) is any vertex on the level, then its vertices lie in the orbits \\(H(w_jv)\\). These orbits are the irreducible factors of the corresponding preimage polynomial.</p><table><thead><tr><th>Polynomial and base field; target \\(0\\)</th><th>Factorization of iterates</th><th>Arboreal image</th></tr></thead><tbody><tr><td>\\(x^2+1\\) over \\(\\mathbb Q\\)</td><td>Every iterate is irreducible.</td><td>Full image, by Stoll.</td></tr><tr><td>\\(x^2-2\\) over \\(\\mathbb Q\\)</td><td>Every iterate is irreducible.</td><td>Infinite index; the level-\\(n\\) group is \\(C_{2^n}\\).</td></tr><tr><td>\\(x^2+1\\) over \\(\\mathbb Q(i)\\)</td><td>Exactly two irreducible factors at every positive level.</td><td>Index two.</td></tr></tbody></table><p>The cyclotomic calculation for \\(x^2-2\\) is given below. For the last row, the first splitting field over \\(\\mathbb Q\\) is \\(\\mathbb Q(i)\\). Base change therefore replaces the full binary tree group by the kernel of its action on level one. This subgroup has index two and acts transitively on each of the two branches. Thus finite index need not imply stability, and stability need not imply finite index.</p>",
+        "citations": [
+          {
+            "key": "Jones2013Arboreal",
+            "locator": "§1.1, tree actions and factorization"
+          },
+          {
+            "key": "Stoll1992",
+            "locator": "Theorem in §1",
+            "note": "Surjectivity for x²+1; the base-change example follows directly."
+          },
+          {
+            "key": "Kadets2020LargeArboreal",
+            "locator": "Example 1.1"
+          }
+        ]
+      },
+      {
         "id": "square-classes",
         "title": "A quadratic maximality criterion",
-        "body": "<p>For \\(f=x^2+c\\) over \\(\\mathbb Q\\), set</p>\\[b_1=-c,\\qquad b_n=f^{\\circ n}(0)\\quad(n\\ge2).\\]<p>Assume \\(b_1,\\ldots,b_n\\ne0\\). Then \\(G_n=\\operatorname{Aut}(T_{2,n})\\) if and only if the classes of \\(b_1,\\ldots,b_n\\) are linearly independent in the \\(\\mathbb F_2\\)-vector space \\(\\mathbb Q^\\times/\\mathbb Q^{\\times2}\\). Equivalently, no nonempty product of these values is a square in \\(\\mathbb Q\\).</p><p>At the next level, one adjoins square roots of \\(\\alpha-c\\), where \\(\\alpha\\) runs over the preceding roots. Kummer theory describes the relations between these square roots. When the preceding tree action is full, the product relation is controlled by the new critical value. Induction gives the criterion.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>Let \\(K\\) have characteristic different from two, let \\(f=x^2+c\\in K[x]\\), and set</p>\\[a_j=f^{\\circ j}(0),\\qquad b_1=-c,\\qquad b_j=a_j\\quad(j\\ge2).\\]<p>Fix \\(n\\ge1\\) and suppose \\(a_1\\cdots a_n\\ne0\\). Then the splitting field of \\(f^{\\circ n}\\) has group \\(W_n=\\operatorname{Aut}(T_{2,n})\\) if and only if \\([b_1],\\ldots,[b_n]\\) are linearly independent in \\(K^\\times/K^{\\times2}\\). Thus no nonempty product of the \\(b_j\\) may be a square in \\(K\\).</p></div>\n<div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>For \\(1\\le j\\le n\\), let \\(\\epsilon_j:W_n\\to\\{\\pm1\\}\\) be the sign of the permutation on level \\(j\\). The decomposition \\(W_n=(W_{n-1}\\times W_{n-1})\\rtimes C_2\\) gives \\(W_n^{\\mathrm{ab}}\\cong C_2^n\\): in the abelianization, the top swap identifies the two branch copies of \\(W_{n-1}^{\\mathrm{ab}}\\). A swap at one vertex of level \\(j-1\\) has negative sign on level \\(j\\) and positive sign at every other level. Hence the \\(\\epsilon_j\\) form a basis of the quadratic characters of \\(W_n\\).</p><p>Every proper subgroup of the finite 2-group \\(W_n\\) lies in a subgroup of index two. Therefore \\(G\\le W_n\\) is all of \\(W_n\\) exactly when no nontrivial product of the \\(\\epsilon_j\\) is trivial on \\(G\\).</p><p>Put \\(F_j=f^{\\circ j}\\). The derivative and resultant formulas give</p>\\[F_j'=2^j\\prod_{r=0}^{j-1}f^{\\circ r},\\qquad \\operatorname{disc}(F_j)=(-1)^{2^j(2^j-1)/2}2^{j2^j}\\prod_{k=1}^j a_k^{2^{j-k}}.\\]<p>Indeed, \\(\\operatorname{Res}(F_j,f^{\\circ r})=a_{j-r}^{2^r}\\). The discriminant classes are consequently \\([-c]\\) for \\(j=1\\), and \\([a_j]\\) for \\(j\\ge2\\). The discriminants are nonzero by hypothesis, so all these polynomials are separable.</p><p>The action on a square root of a discriminant is the sign character on the roots. Kummer theory identifies products of these characters with products of the corresponding square classes. The preceding subgroup criterion now gives the equivalence.</p></div>",
         "citations": [
           {
             "key": "Stoll1992",
-            "locator": "Theorem in §1, equivalence of (a) and (b)"
+            "locator": "Theorem in §1, equivalence of (a) and (b)",
+            "note": "The rational-parameter criterion."
+          },
+          {
+            "key": "Kadets2020LargeArboreal",
+            "locator": "§2, Proposition 2.5 and Corollary 2.6",
+            "note": "Discriminant characters and maximal tree actions; the quadratic proof is given here."
           },
           {
             "key": "Stoll2026Arboreal",
@@ -832,7 +858,7 @@
       {
         "id": "gleason",
         "title": "Gleason polynomials",
-        "body": "<p>Set \\(a_0(c)=0\\) and \\(a_{j+1}(c)=a_j(c)^2+c\\). The Gleason polynomial is</p>\\[G_n(c)=\\prod_{d\\mid n}a_d(c)^{\\mu(n/d)}\\in\\mathbb Z[c].\\]<p>Its roots are exactly the parameters for which \\(0\\) has exact period \\(n\\). Möbius inversion gives \\(a_n=\\prod_{d\\mid n}G_d\\), and hence</p>\\[\\deg G_n=\\sum_{d\\mid n}\\mu(n/d)\\,2^{d-1}.\\]<p>The conjecture that every \\(G_n\\) is irreducible over \\(\\mathbb Q\\) says that the exact-period parameters form one Galois orbit. Ramadas records verification for \\(n\\le19\\). The 2026 necklace paper still states the general conjecture.</p>",
+        "body": "<p>Set \\(a_0(c)=0\\) and \\(a_{j+1}(c)=a_j(c)^2+c\\). The Gleason polynomial is</p>\\[G_n(c)=\\prod_{d\\mid n}a_d(c)^{\\mu(n/d)}\\in\\mathbb Z[c].\\]<p>Its roots are exactly the parameters for which \\(0\\) has exact period \\(n\\). Möbius inversion gives \\(a_n=\\prod_{d\\mid n}G_d\\), and hence</p>\\[\\deg G_n=\\sum_{d\\mid n}\\mu(n/d)\\,2^{d-1}.\\]<p>The conjecture that every \\(G_n\\) is irreducible over \\(\\mathbb Q\\) says that the exact-period parameters form one Galois orbit. Ramadas records verification for \\(n\\le19\\). The 2026 necklace paper still states the general conjecture.</p><p>A stronger conjecture asks whether \\(\\operatorname{Gal}(G_n/\\mathbb Q)=S_{\\deg G_n}\\) for every \\(n\\ge1\\). Schleicher states the symmetric-group conjecture for centers of fixed period.</p><details id=\"gleason-source-normalization\"><summary>Normalization in Schleicher’s statement</summary><p>The displayed definition before Conjecture 7.2 uses \\(f_c^{\\circ n}(c)-c=a_n(c)^2\\). Its recursively defined exact-period factors are therefore \\(G_n^2\\), which are not irreducible. We interpret the conjecture as concerning the reduced polynomial \\(G_n\\), in accordance with the accompanying description of the centers. This is an explicit interpretation of the source, not its literal polynomial formula.</p></details>",
         "citations": [
           {
             "key": "Ramadas2024Moduli",
@@ -841,18 +867,49 @@
           {
             "key": "BakerChenLiQian2026Necklaces",
             "locator": "Introduction, footnote 1"
+          },
+          {
+            "key": "Schleicher2017Galois",
+            "locator": "Conjecture 7.2 and the preceding definition, p. 28",
+            "note": "The stated conjecture is interpreted for the reduced exact-period polynomial; see the normalization note."
           }
         ]
       },
       {
         "id": "example",
         "title": "Example",
-        "body": "<p>The first three polynomials are</p>\\[G_1=c,\\qquad G_2=c+1,\\qquad G_3=c^3+2c^2+c+1.\\]<p>The reduction \\(G_3\\bmod2=c^3+c+1\\) has no root in \\(\\mathbb F_2\\), so it is irreducible. Its discriminant is \\(-23\\); therefore its Galois group over \\(\\mathbb Q\\) is \\(S_3\\).</p><p>At period four,</p>\\[G_4=c^6+3c^5+3c^4+3c^3+2c^2+1,\\]\\[G_4\\bmod2=(c^2+c+1)(c^4+c+1).\\]<p>The two factors are irreducible over \\(\\mathbb F_2\\). Thus this prime gives the cycle type \\((2)(4)\\), but does not prove irreducibility over \\(\\mathbb Q\\). Baker–Chen–Li–Qian describe the factors modulo \\(2\\) using binary necklaces and construct a bijection with the real roots of \\(G_n\\).</p>",
+        "body": "<p>The first three polynomials are</p>\\[G_1=c,\\qquad G_2=c+1,\\qquad G_3=c^3+2c^2+c+1.\\]<p>The reduction \\(G_3\\bmod2=c^3+c+1\\) has no root in \\(\\mathbb F_2\\), so it is irreducible. Its discriminant is \\(-23\\); therefore its Galois group over \\(\\mathbb Q\\) is \\(S_3\\).</p><p>At period four,</p>\\[G_4=c^6+3c^5+3c^4+3c^3+2c^2+1,\\]\\[G_4\\bmod2=(c^2+c+1)(c^4+c+1).\\]<p>The two factors are irreducible over \\(\\mathbb F_2\\). Thus this prime gives the cycle type \\((2)(4)\\), but does not prove irreducibility over \\(\\mathbb Q\\). Buff–Floyd–Koch–Parry prove that the number of irreducible factors modulo \\(2\\) equals the number of real roots. Baker–Chen–Li–Qian give a later description using binary necklaces and construct a bijection. The group at period four can nevertheless be determined by combining other primes, as follows.</p>",
         "citations": [
+          {
+            "key": "BuffFloydKochParry2022",
+            "locator": "Theorems 1.5–1.6, p. 789",
+            "note": "The real-root count in Theorem 1.5 is attributed there to Lutzky."
+          },
           {
             "key": "BakerChenLiQian2026Necklaces",
             "locator": "Introduction and Theorem A",
             "note": "The cubic discriminant and small factorizations are checked directly."
+          }
+        ]
+      },
+      {
+        "id": "period-four-group",
+        "title": "The Galois group at period four",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>The polynomial \\(G_4=c^6+3c^5+3c^4+3c^3+2c^2+1\\) has Galois group \\(S_6\\) over \\(\\mathbb Q\\).</p><p>Modulo \\(3\\), write \\(g=c^6-c^2+1\\). Direct reduction gives</p>\\[c^9\\equiv c^5-c^3,\\qquad c^{27}\\equiv-c,\\qquad c^{729}\\equiv c\\pmod g.\\]<p>Also \\(\\gcd(g,c^{27}-c)=\\gcd(g,c)=1\\), and the identity</p>\\[(-c^4-c^2+1)g+(c^5-c^3+c)(c^5-c^3-c)=1\\]<p>holds in \\(\\mathbb F_3[c]\\). Thus \\(\\gcd(g,c^9-c)=1\\). The finite-field irreducibility criterion proves that \\(g\\), and hence \\(G_4\\), is irreducible.</p><p>At two further primes the factorizations into distinct irreducibles are</p>\\[G_4\\equiv(c-1)(c^5+4c^4-6c^3-3c^2-c-1)\\pmod{13},\\]\\[G_4\\equiv(c+7)(c^2-13c+4)(c^3+9c^2-11c+10)\\pmod{31}.\\]<p>Frobenius supplies a 5-cycle and an element of cycle type \\((1)(2)(3)\\). In a transitive degree-six action, the 5-cycle makes the stabilizer of its fixed point transitive on the other points. Thus the group is doubly transitive, hence primitive. Cubing the \\((1)(2)(3)\\) element gives a transposition. A primitive group containing a transposition is \\(S_6\\).</p></div><details id=\"period-four-certificate\"><summary>Finite-field checks</summary><p>The non-linear factors at \\(13\\) and \\(31\\) all have prime degree \\(d\\). For each factor \\(h\\), the identities below give \\(r=c^p\\bmod h\\) and polynomials \\(u,v\\) satisfying \\(uh+v(r-c)=1\\) in \\(\\mathbb F_p[c]\\). Repeated modular powering gives \\(c^{p^d}\\equiv c\\pmod h\\). These two conditions prove irreducibility.</p><h3>Modulo 13</h3>\\[h=c^{5} + 4 c^{4} - 6 c^{3} - 3 c^{2} - c - 1.\\]\\[r=- 3 c^{4} + 4 c^{3} - c^{2} + c + 1.\\]\\[u=- 5 c^{3} - 3 c^{2} + 5 c - 5.\\]\\[v=- 6 c^{4} + 6 c^{3} - 4 c^{2} - 4.\\]<h3>Cubic factor modulo 31</h3>\\[h=c^{3} + 9 c^{2} - 11 c + 10.\\]\\[r=14 c^{2} - 13 c - 6.\\]\\[u=12 c + 9.\\]\\[v=8 c^{2} - 7 c - 11.\\]<h3>Quadratic factor modulo 31</h3>\\[h=c^{2} - 13 c + 4.\\]\\[r=13 - c.\\]\\[u=2.\\]\\[v=c + 9.\\]<p>The displayed products equal \\(G_4\\) modulo their primes. Distinct irreducible factors of different degrees are coprime, so both reductions are squarefree.</p></details>",
+        "citations": [
+          {
+            "key": "ConradModP",
+            "locator": "Factorization and Frobenius cycle types",
+            "note": "The arithmetic for G₄ is displayed here."
+          },
+          {
+            "key": "LidlNiederreiter1997",
+            "locator": "Chapter 3, irreducible polynomials",
+            "note": "Frobenius and gcd criterion used in the finite-field checks."
+          },
+          {
+            "key": "ConradSnAn",
+            "note": "Primitive groups containing a transposition."
           }
         ]
       },
@@ -892,8 +949,25 @@
       {
         "id": "curves-and-parameters",
         "title": "Dynatomic curves and parameter polynomials",
-        "body": "<p>For \\(f_c(z)=z^2+c\\), define the dynatomic polynomial</p>\\[\\Phi_n(c,z)=\\prod_{d\\mid n}(f_c^{\\circ d}(z)-z)^{\\mu(n/d)}.\\]<p>The affine curve \\(\\Phi_n(c,z)=0\\) is smooth and irreducible over \\(\\mathbb C\\). Buff–Tan give proofs of these results. Its intersection with \\(z=0\\) is the equation \\(G_n(c)=0\\). Irreducibility of the curve does not imply irreducibility of this intersection over \\(\\mathbb Q\\).</p><p>A different curve, \\(\\operatorname{Per}_n(0)\\), parametrizes quadratic rational maps with an \\(n\\)-periodic critical point. Ramadas proves, for \\(n\\ge4\\), that irreducibility of \\(G_n\\) over \\(\\mathbb Q\\) implies irreducibility of \\(\\operatorname{Per}_n(0)\\) over \\(\\mathbb C\\). Her argument uses a smooth rational point on a suitable projective completion.</p>",
+        "body": "<p>For \\(f_c(z)=z^2+c\\), define the dynatomic polynomial</p>\\[\\Phi_n(c,z)=\\prod_{d\\mid n}(f_c^{\\circ d}(z)-z)^{\\mu(n/d)}.\\]<p>The affine curve \\(\\Phi_n(c,z)=0\\) is smooth and irreducible over \\(\\mathbb C\\). Smoothness is due to Douady–Hubbard; irreducibility was proved by Bousch and independently by Lau–Schleicher. Buff–Tan give accessible new proofs using quadratic differentials and kneading sequences. Its intersection with \\(z=0\\) is the equation \\(G_n(c)=0\\). Irreducibility of the curve does not imply irreducibility of this intersection over \\(\\mathbb Q\\).</p><p>A different curve, \\(\\operatorname{Per}_n(0)\\), parametrizes quadratic rational maps with an \\(n\\)-periodic critical point. Ramadas proves, for \\(n\\ge4\\), that irreducibility of \\(G_n\\) over \\(\\mathbb Q\\) implies irreducibility of \\(\\operatorname{Per}_n(0)\\) over \\(\\mathbb C\\). Her argument uses a smooth rational point on a suitable projective completion.</p>",
         "citations": [
+          {
+            "key": "DouadyHubbard1984",
+            "note": "Part I of the original notes; background on the quadratic family."
+          },
+          {
+            "key": "DouadyHubbard1985",
+            "note": "Part II; original smoothness attribution is recorded in Buff–Tan, Theorem 1.1."
+          },
+          {
+            "key": "Bousch1992Thesis",
+            "locator": "Chapter 3",
+            "note": "Original thesis attribution via Buff–Tan and Krumm; full thesis not retrieved in this review."
+          },
+          {
+            "key": "LauSchleicher1994",
+            "note": "Original independent approach to irreducibility; see also Schleicher 2017."
+          },
           {
             "key": "BuffTan2014Dynatomic",
             "locator": "Theorems 1.1–1.2"
@@ -962,6 +1036,20 @@
         ]
       },
       {
+        "id": "gleason-symmetric-group",
+        "title": "Do all quadratic Gleason polynomials have full symmetric Galois group?",
+        "status": "Open",
+        "scope": "Every integer n≥1; the reduced exact-period polynomial G_n over Q",
+        "body": "<p>Define \\(a_0(c)=0\\), \\(a_{j+1}(c)=a_j(c)^2+c\\), and \\(G_n(c)=\\prod_{d\\mid n}a_d(c)^{\\mu(n/d)}\\). The conjecture asserts that \\(G_n\\) is irreducible and</p>\\[\\operatorname{Gal}(G_n/\\mathbb Q)=S_{\\deg G_n}.\\]<p>Schleicher’s Conjecture 7.2 is interpreted here for these reduced polynomials. Its preceding displayed definition introduces squares; the article gives the normalization calculation. Periods three and four have groups \\(S_3\\) and \\(S_6\\), respectively, by the displayed examples.</p>",
+        "citations": [
+          {
+            "key": "Schleicher2017Galois",
+            "locator": "Conjecture 7.2 and preceding definition, p. 28",
+            "note": "Reduced-polynomial interpretation, not a literal repetition of the source formula."
+          }
+        ]
+      },
+      {
         "id": "misiurewicz-irreducibility",
         "title": "Are the normalized Misiurewicz polynomials irreducible?",
         "status": "Open",
@@ -997,18 +1085,14 @@
       },
       {
         "id": "critical-parameter-groups",
-        "title": "Determine the Galois groups of critical-parameter polynomials.",
+        "title": "Determine the Galois groups of Misiurewicz polynomials.",
         "status": "Research direction",
-        "scope": "Quadratic Gleason polynomials over Q; normalized Misiurewicz polynomials over Q(ζ)",
-        "body": "<p>Beyond irreducibility, determine the permutation groups acting on the parameters with a prescribed critical orbit. The period-three Gleason polynomial has group \\(S_3\\). A general answer must account for the unresolved irreducibility questions and for the chosen normalization; no assertion that all these groups are symmetric is made here.</p>",
+        "scope": "Normalized G_{d,m,n}^ζ over Q(ζ), with d,m≥2, n≥1, ζ^d=1 and ζ≠1",
+        "body": "<p>For \\(f_{d,c}(z)=z^d+c\\), let \\(G_{d,m,n}^{\\zeta}\\) be the monic polynomial whose roots have exact critical tail \\(m\\), period \\(n\\), and collision relation \\(a_{m+n-1}=\\zeta a_{m-1}\\), where \\(a_j=f_{d,c}^{\\circ j}(0)\\). Determine its permutation group over \\(\\mathbb Q(\\zeta)\\). The article gives the normalization removing periodic critical parameters. The general irreducibility problem remains open; the symmetric-group conjecture for quadratic Gleason polynomials is a separate question.</p>",
         "citations": [
           {
             "key": "BenedettoGoksel2024UnitsII",
-            "locator": "Introduction after Conjecture 1.1, arithmetic of fields generated by parameters"
-          },
-          {
-            "key": "Ramadas2024Moduli",
-            "locator": "Introduction"
+            "locator": "Equation (2), Conjecture 1.1 and the following discussion"
           }
         ]
       }

@@ -57,7 +57,13 @@
           },
           {
             "key": "Lang2002",
-            "note": "The field-theoretic treatment of irreducible binomials and the norm argument."
+            "note": "Locator corroborated by Milne, Aside 5.29; the original Lang page was not independently inspected.",
+            "locator": "Chapter VI, §9, Theorem 9.1, p. 297"
+          },
+          {
+            "key": "Milne2022",
+            "locator": "Aside 5.29(a), p. 95 (2022 book); p. 75 in course notes v5.10",
+            "note": "States the binomial criterion and gives the exact Lang reference."
           }
         ]
       },
@@ -174,7 +180,7 @@
       {
         "id": "schur-unit-values",
         "title": "Schur’s theorem",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · the minus-one case of Schur's problem</p><p>For distinct integers \\(a_1,\\ldots,a_m\\), with \\(m\\ge1\\), the polynomial</p>\\[P(x)=\\prod_{i=1}^{m}(x-a_i)-1\\]<p>is irreducible over \\(\\mathbb Q\\).</p></div>\n<div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>A nontrivial factorization gives monic \\(g,h\\in\\mathbb Z[x]\\) of positive degrees with \\(P=gh\\). At each \\(a_i\\), the integers \\(g(a_i),h(a_i)\\) multiply to \\(-1\\), so \\(g(a_i)+h(a_i)=0\\). The polynomial \\(g+h\\) has degree less than \\(m\\) and at least \\(m\\) distinct roots. It must vanish identically, contradicting the monicity of both factors.</p></div>\n<p>For the plus-one polynomial, two exceptions are</p>\n\\[x(x-2)+1=(x-1)^2,\\qquad x(x-1)(x-2)(x-3)+1=(x^2-3x+1)^2.\\]\n<p>Westlund and Flügel's classical solution, recalled in Győry–Hajdu–Tijdeman, shows that these are the only reducible plus-one cases, up to an integer translation of the variable. Schur posed the question in 1908.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem · the minus-one case of Schur's problem</p><p>For distinct integers \\(a_1,\\ldots,a_m\\), with \\(m\\ge1\\), the polynomial</p>\\[P(x)=\\prod_{i=1}^{m}(x-a_i)-1\\]<p>is irreducible over \\(\\mathbb Q\\).</p></div>\n<div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>A nontrivial factorization gives monic \\(g,h\\in\\mathbb Z[x]\\) of positive degrees with \\(P=gh\\). At each \\(a_i\\), the integers \\(g(a_i),h(a_i)\\) multiply to \\(-1\\), so \\(g(a_i)+h(a_i)=0\\). The polynomial \\(g+h\\) has degree less than \\(m\\) and at least \\(m\\) distinct roots. It must vanish identically, contradicting the monicity of both factors.</p></div>\n<p>Schur posed this problem in 1908. Westlund and Flügel gave the solution in 1909, including the plus-one case below.</p>",
         "citations": [
           {
             "key": "schur1908problem226",
@@ -182,8 +188,20 @@
           },
           {
             "key": "gyoryhajdutijdeman2011",
-            "note": "The minus-one theorem, the complete plus-one exception list, and attribution of the 1909 solution.",
+            "note": "The minus-one theorem and attribution of the 1909 solution.",
             "locator": "§1, p. 416"
+          }
+        ]
+      },
+      {
+        "id": "schur-plus-one",
+        "title": "The plus-one case",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>For distinct integers \\(a_1,\\ldots,a_m\\), with \\(m\\ge1\\), the polynomial \\(P(x)=\\prod_{i=1}^m(x-a_i)+1\\) is irreducible over \\(\\mathbb Q\\), except for integer translates of</p>\n\\[x(x-2)+1=(x-1)^2,\\qquad x(x-1)(x-2)(x-3)+1=(x^2-3x+1)^2.\\]</div>\n<div class=\"math-block proof\"><p class=\"block-label\">Proof</p><p>If \\(P=gh\\) with monic integral factors of positive degree, then \\(g(a_i)h(a_i)=1\\), so \\(g(a_i)=h(a_i)=\\pm1\\). The polynomial \\(g-h\\) has degree less than \\(m\\) and vanishes at all \\(a_i\\); hence \\(g=h\\). Thus \\(m=2d\\), where \\(d=\\deg g\\), and \\(g^2-1\\) has \\(2d\\) distinct integer roots.</p>\n<p>Let \\(a\\) be the least root. One of \\(g-1,g+1\\) vanishes at \\(a\\); the other has \\(d\\) distinct integer roots \\(b_1,\\ldots,b_d>a\\). Its value at \\(a\\) has absolute value two, giving</p>\n\\[2=\\prod_{j=1}^{d}(b_j-a)\\ge d!.\\]\n<p>Therefore \\(d\\le2\\). For \\(d=1\\), the two roots differ by two. For \\(d=2\\), the positive differences are \\(1,2\\), so the opposite factor is \\((x-a-1)(x-a-2)\\). Subtracting two gives the other factor \\((x-a)(x-a-3)\\). These are exactly the two displayed cases, and their factorizations prove reducibility.</p></div>",
+        "citations": [
+          {
+            "key": "gyoryhajdutijdeman2011",
+            "locator": "§1, p. 416 in the published article; p. 2 in the author manuscript",
+            "note": "The classical exception list and attribution to Westlund and Flügel; an elementary proof is given here."
           }
         ]
       },
@@ -268,11 +286,11 @@
         "title": "Must an irreducible integer polynomial take a prime or unit value?",
         "status": "Claimed",
         "scope": "Primitive polynomials in Z[x], with integer arguments and without changing variables",
-        "body": "<p>No. The primitive irreducible polynomial \\(x^2+x+4\\) has only positive even values at integers, all at least \\(4\\). Thus the prime-value criterion is not necessary for irreducibility.</p>",
+        "body": "<p>No. The polynomial \\(f=x^2+x+4\\) is primitive and has discriminant \\(-15\\), so it is irreducible over \\(\\mathbb Q\\). For every integer \\(a\\), the product \\(a(a+1)\\) is nonnegative and even; hence \\(f(a)\\) is even and at least four. Thus the prime-value criterion is not necessary for irreducibility.</p>",
         "citations": [
           {
             "key": "ConradIrredQ",
-            "note": "The same explicit obstruction is recorded after the prime-value criterion. Proof in expository notes; this status records the unpublished source.",
+            "note": "Elementary counterexample, proved here. The Claimed label records that the cited source is unpublished exposition.",
             "locator": "§5, p. 5"
           }
         ]

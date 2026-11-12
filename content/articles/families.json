@@ -72,7 +72,7 @@
       {
         "id": "discriminant",
         "title": "Discriminant",
-        "body": "<p>For monic \\(q\\), the quadratic-factor decomposition gives</p>\\[\\operatorname{disc}(f)=q(2)q(-2)\\operatorname{disc}(q)^2=(-1)^m f(1)f(-1)\\operatorname{disc}(q)^2.\\]<p>Indeed, the factors \\(x^2-y_i x+1\\) have discriminants \\(y_i^2-4\\), and the resultant of the factors indexed by \\(i,j\\) is \\((y_i-y_j)^2\\). Multiplying the discriminants and the squares of these resultants proves the identity. When \\(f\\) is separable, its discriminant is a square in \\(K\\) exactly when the group on its \\(2m\\) roots lies in \\(A_{2m}\\). This does not determine the entire kernel.</p><p>The same construction applies to even polynomials \\(q(x^2)\\), with pairs \\(\\{\\alpha,-\\alpha\\}\\) and radicands \\(y_i\\). Affine reflection \\(x\\mapsto1-x\\) becomes this situation after centering at \\(1/2\\).</p>",
+        "body": "<p>For monic \\(q\\), the quadratic-factor decomposition gives</p>\\[\\operatorname{disc}(f)=q(2)q(-2)\\operatorname{disc}(q)^2=(-1)^m f(1)f(-1)\\operatorname{disc}(q)^2.\\]<p>Indeed, the factors \\(x^2-y_i x+1\\) have discriminants \\(y_i^2-4\\), and the resultant of the factors indexed by \\(i,j\\) is \\((y_i-y_j)^2\\). Multiplying the discriminants and the squares of these resultants proves the identity. When \\(f\\) is separable, its discriminant is a square in \\(K\\) exactly when the group on its \\(2m\\) roots lies in \\(A_{2m}\\). This does not determine the entire kernel.</p><p>The same construction applies to even polynomials \\(q(x^2)\\), with pairs \\(\\{\\alpha,-\\alpha\\}\\) and radicands \\(y_i\\). Affine reflection \\(x\\mapsto1-x\\) becomes this situation after centering at \\(1/2\\).</p><p>A nonsquare norm proves that a radicand is nonsquare. The converse fails: a <a href=\"field-extensions.html#trace-norm\">square norm need not come from a square</a>.</p>",
         "citations": [
           {
             "key": "AndersonBertelliODorney2026",
@@ -83,6 +83,42 @@
             "key": "CullinanHajir2014",
             "locator": "§1",
             "note": "The analogous signed action for even Legendre polynomials."
+          }
+        ]
+      },
+      {
+        "id": "paired-families",
+        "title": "Normalizations for paired roots",
+        "body": "<p>The following conventions are over \\(\\mathbb Q\\). The table lists specified algebraic factors; it does not claim that every remaining polynomial is irreducible. If the remainder is separable and has no root fixed by the indicated involution, its \\(2m\\) roots give an embedding into \\(C_2\\wr S_m\\).</p><div class=\"table-wrap\"><table><thead><tr><th>Family</th><th>Normalization</th><th>Degree of the remainder</th><th>Pair variable</th></tr></thead><tbody><tr><td>Eulerian</td><td>\\(A_n\\), \\(n\\ge3\\); remove \\(x+1\\) exactly when \\(n\\) is even.</td><td>\\(2\\lfloor(n-1)/2\\rfloor\\)</td><td>\\(x+x^{-1}\\)</td></tr><tr><td>Prime quadratic Fekete</td><td>Use \\(f_p\\), \\(p\\ge7\\), as defined in <a href=\"fekete.html#normalization\">the Fekete normalization</a>.</td><td>\\(p-3\\) or \\(p-5\\)</td><td>\\(x+x^{-1}\\)</td></tr><tr><td>Physicists’ Hermite</td><td>\\(H_n/x^\\delta\\), \\(n\\ge2\\), \\(\\delta=n\\bmod2\\).</td><td>\\(2\\lfloor n/2\\rfloor\\)</td><td>\\(x^2\\)</td></tr><tr><td>Legendre</td><td>\\(P_n/x^\\delta\\), \\(n\\ge2\\), \\(\\delta=n\\bmod2\\).</td><td>\\(2\\lfloor n/2\\rfloor\\)</td><td>\\(x^2\\)</td></tr><tr><td>Binary Krawtchouk</td><td>\\(\\mathcal K_n^{(t)}(x+t/2)/x^\\delta\\), \\(n\\ge2\\), \\(t\\in\\mathbb Q\\), \\(\\delta=n\\bmod2\\).</td><td>\\(2\\lfloor n/2\\rfloor\\); exclude repeated or zero roots before using the pair action.</td><td>\\(x^2\\)</td></tr><tr><td>Bernoulli</td><td>\\(B_n\\), even \\(n\\ge2\\); \\(B_n/[x(x-1)(x-1/2)]\\), odd \\(n\\ge3\\).</td><td>\\(n\\) or \\(n-3\\)</td><td>\\((x-1/2)^2\\)</td></tr><tr><td>Appell Euler</td><td>\\(E_n/(x-1/2)\\), odd \\(n\\ge3\\); \\(E_n/[x(x-1)]\\), even \\(n\\ge4\\).</td><td>\\(n-1\\) or \\(n-2\\)</td><td>\\((x-1/2)^2\\)</td></tr></tbody></table></div><p>For inverse pairs the radicands are \\(y_i^2-4\\); for opposite pairs they are \\(y_i\\). The pair group, irreducibility of the lift, and the rank of the quadratic kernel require separate arguments. Repeated factors must be removed when describing the action on distinct roots.</p>",
+        "citations": [
+          {
+            "key": "AndersonBertelliODorney2026",
+            "locator": "§2",
+            "note": "Reciprocal root pairs and their permutation groups."
+          },
+          {
+            "key": "CullinanHajir2014",
+            "locator": "§1 and §4",
+            "note": "Parity-normalized Legendre polynomials."
+          },
+          {
+            "key": "Cullinan2024",
+            "locator": "Equations (1.2.4)–(1.2.5), arXiv v1",
+            "note": "Centered binary Krawtchouk normalization."
+          },
+          {
+            "key": "FoataSchutzenberger1970",
+            "locator": "Eulerian generating functions and reciprocity"
+          },
+          {
+            "key": "CullinanHajirSell2009",
+            "locator": "§1",
+            "note": "Physicists’ Hermite–Laguerre identities."
+          },
+          {
+            "key": "DLMFBernoulliEuler",
+            "locator": "§§24.2 and 24.4",
+            "note": "Reflection identities and the specified rational factors."
           }
         ]
       }
@@ -195,7 +231,7 @@
       {
         "id": "large-factor",
         "title": "A large irreducible factor",
-        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>For \\(n\\ge3\\), let \\(p\\) be the largest prime at most \\(n\\). The normalized polynomial \\(\\widetilde A_n\\) has an irreducible factor over \\(\\mathbb Q\\) of degree at least \\(p-1\\). In particular, \\(\\widetilde A_p\\) and \\(\\widetilde A_{p+1}\\) are irreducible for every odd prime \\(p\\).</p></div><div class=\"math-block proof\"><p>Put \\(r=n-p+1\\). Bertrand's postulate gives \\(1\\le r<p\\) and \\(n<2p\\). Fermat's congruence and the generating identity imply</p>\\[A_n(1+t)\\equiv t^{p-1}A_r(1+t)\\pmod p.\\]<p>Since \\(A_r(1)=r!\\) is a p-adic unit, the coefficient of \\(t^{p-1}\\) is a unit and every preceding coefficient is divisible by \\(p\\). The constant term \\(n!\\) has valuation one. The first Newton edge is therefore from \\((0,1)\\) to \\((p-1,0)\\). It gives an irreducible factor of degree \\(p-1\\) over \\(\\mathbb Q_p\\). Some rational irreducible factor must contain it, hence has at least this degree. At even \\(n\\), removing \\(x+1\\) removes only a local linear factor with slope zero, because \\(p\\) is odd.</p></div><p>This bound is associated with Heidrich's work. It does not exclude an additional smaller factor at every composite index.</p>",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Theorem</p><p>For \\(n\\ge3\\), let \\(p\\) be the largest prime at most \\(n\\). The normalized polynomial \\(\\widetilde A_n\\) has an irreducible factor over \\(\\mathbb Q\\) of degree at least \\(p-1\\). In particular, \\(\\widetilde A_p\\) and \\(\\widetilde A_{p+1}\\) are irreducible for every odd prime \\(p\\).</p></div><div class=\"math-block proof\"><p>Put \\(r=n-p+1\\). Bertrand's postulate gives \\(1\\le r<p\\) and \\(n<2p\\). Fermat's congruence and the generating identity imply</p>\\[A_n(1+t)\\equiv t^{p-1}A_r(1+t)\\pmod p.\\]<p>Since \\(A_r(1)=r!\\) is a p-adic unit, the coefficient of \\(t^{p-1}\\) is a unit and every preceding coefficient is divisible by \\(p\\). The constant term \\(n!\\) has valuation one. The first Newton edge is therefore from \\((0,1)\\) to \\((p-1,0)\\). It gives an irreducible factor of degree \\(p-1\\) over \\(\\mathbb Q_p\\). Some rational irreducible factor must contain it, hence has at least this degree. At even \\(n\\), removing \\(x+1\\) removes only a local linear factor with slope zero, because \\(p\\) is odd.</p></div><p>Ta Thi Hoai An and Ngo Quoc Hoan attribute this bound to Heidrich; the original full text was not accessible in this review. It does not exclude an additional smaller factor at every composite index.</p>",
         "citations": [
           {
             "key": "Heidrich1984Eulerian",
@@ -205,6 +241,11 @@
             "key": "FoataSchutzenberger1970",
             "locator": "Chapter IV",
             "note": "Generating identity used in the displayed proof."
+          },
+          {
+            "key": "TaNgo2026MultipleEulerian",
+            "locator": "Introduction, p. 2 of the institutional manuscript",
+            "note": "Secondary attribution to Heidrich; the proof above is given directly. The corresponding locator in the final journal version was not checked."
           }
         ]
       },
@@ -929,12 +970,32 @@
       {
         "id": "generalized-quadratic-definition",
         "title": "Generalized quadratic characters",
-        "body": "<p>For a nontrivial fundamental discriminant \\(\\Delta\\), write \\(D=|\\Delta|\\) and</p>\\[F_\\Delta(x)=\\sum_{a=1}^{D-1}\\left(\\frac{\\Delta}{a}\\right)x^a.\\]<p>The symbol is the Kronecker symbol. Let \\(r_\\Delta(d)\\) be the multiplicity of \\(\\Phi_d\\) in \\(F_\\Delta/x\\). The monic non-cyclotomic remainder is</p>\\[R_\\Delta=\\pm\\frac{F_\\Delta}{x\\prod_{d\\ge1}\\Phi_d^{r_\\Delta(d)}}.\\]<p>It may be constant for small conductors; irreducibility is asked only when its degree is positive.</p>",
+        "body": "<p>For a nontrivial fundamental discriminant \\(\\Delta\\), write \\(D=|\\Delta|\\) and</p>\\[F_\\Delta(x)=\\sum_{a=1}^{D-1}\\left(\\frac{\\Delta}{a}\\right)x^a.\\]<p>The symbol is the Kronecker symbol. Let \\(r_\\Delta(d)\\) be the multiplicity of \\(\\Phi_d\\) in \\(F_\\Delta/x\\). The monic non-cyclotomic remainder is</p>\\[R_\\Delta=\\pm\\frac{F_\\Delta}{x\\prod_{d\\ge1}\\Phi_d^{r_\\Delta(d)}}.\\]<p>It may be constant for small conductors; irreducibility is asked only when its degree is positive.</p><p>The character identity \\(\\chi_\\Delta(D-a)=\\chi_\\Delta(-1)\\chi_\\Delta(a)\\) pairs the nonzero roots by inversion. After all cyclotomic factors are removed, no fixed root \\(\\pm1\\) remains. Thus a nonconstant \\(R_\\Delta\\) is reciprocal of even degree.</p>",
         "citations": [
           {
             "key": "MinacNguyenTan2024",
             "locator": "Definitions 3.1–3.2, Question 3.9, and Conjecture 10.6 in arXiv:2206.11778v2",
             "note": "The nonconstant restriction excludes the elementary cases with only cyclotomic factors."
+          }
+        ]
+      },
+      {
+        "id": "family-comparison",
+        "title": "Comparison of the three families",
+        "body": "<p>All three families are defined over \\(\\mathbb Q\\), but their quotients remove different factors.</p><div class=\"table-wrap\"><table><thead><tr><th>Family and parameter</th><th>Polynomial and removed factors</th><th>Degree and pair polynomial</th><th>Scope of the removal</th></tr></thead><tbody><tr><td>Quadratic character, prime \\(p\\ge7\\)</td><td>\\(F_p=\\sum_{a=1}^{p-1}(a/p)x^a\\); divide by \\(x(1-x)\\) if \\(p\\equiv3\\pmod4\\), and by \\(x(1-x)^2(x+1)\\) if \\(p\\equiv1\\pmod4\\).</td><td>\\(f_p=x^m g_p(x+x^{-1})\\); \\(m=(p-3)/2\\) or \\((p-5)/2\\), respectively.</td><td>The multiplicities of the displayed factors are exact. Irreducibility of this quotient is the conjecture; it is not defined by removing all cyclotomic factors.</td></tr><tr><td>Principal character, \\(n=pq\\), odd primes \\(p>q\\)</td><td>\\(F_n^{\\mathrm{prin}}=\\sum_{(a,n)=1,\\,1\\le a\\le n}x^a\\); divide by \\(x\\prod_{d\\in S_n}\\Phi_d\\), with \\(S_n\\) defined above.</td><td>\\(2m=n-2-\\sum_{d\\in S_n}\\varphi(d)\\); \\(f_n=x^m g_n(x+x^{-1})\\).</td><td>Divisibility is proved. Completeness of the listed cyclotomic factors remains conditional on the source conjecture.</td></tr><tr><td>Quadratic character, nontrivial fundamental discriminant \\(\\Delta\\)</td><td>\\(F_\\Delta=\\sum_{a=1}^{|\\Delta|-1}(\\Delta/a)x^a\\); divide by \\(x\\) and every actual cyclotomic factor, with full multiplicity.</td><td>\\(2m=|\\Delta|-2-\\sum_d r_\\Delta(d)\\varphi(d)\\); when nonconstant, \\(R_\\Delta=x^m q_\\Delta(x+x^{-1})\\).</td><td>The removal is complete by definition. Determining its factors and multiplicities is a separate problem.</td></tr></tbody></table></div><p>For a separable quotient of degree \\(2m\\), reciprocity gives an ambient group \\(C_2\\wr S_m\\); extra symmetries can force a smaller group. Three questions remain distinct: is the pair polynomial irreducible, is its reciprocal lift irreducible, and are the quadratic square classes independent over the pair splitting field? For the prime quadratic family, Corollary 4.2 proves the first two equivalent using special values. It does not settle the third. See the <a href=\"reciprocity.html#criterion\">lift criterion</a> and the <a href=\"reciprocity.html#kernel\">quadratic kernel</a>.</p>",
+        "citations": [
+          {
+            "key": "MinacNguyenTan2023",
+            "locator": "Definition 3.2; Corollary 4.2; Conjectures 4.9 and 4.13"
+          },
+          {
+            "key": "ChidambaramMinacNguyenTan2025",
+            "locator": "Proposition 3.1, Theorem 3.2, Definitions 3.3 and 3.6; published version",
+            "note": "Completeness of the semiprime cyclotomic divisor is conditional."
+          },
+          {
+            "key": "MinacNguyenTan2024",
+            "locator": "Definitions 3.1–3.2 and Conjectures 10.6, 11.14; arXiv:2206.11778v2"
           }
         ]
       },
@@ -986,8 +1047,8 @@
         "id": "fekete-prime-irreducible",
         "title": "Is every normalized prime-conductor Fekete polynomial irreducible?",
         "status": "Open",
-        "scope": "Primes p≥7; the normalized polynomial f_p defined above, over Q.",
-        "body": "<p>The question is whether \\(f_p\\) is always irreducible, equivalently whether its trace polynomial \\(g_p\\) is irreducible. Mináč–Nguyen–Tân verify both for \\(p<10^4\\). This is weaker than their full wreath-product conjecture. Varjú–Xu still describe the all-prime irreducibility assertion as conjectural in 2026.</p>",
+        "scope": "Primes \\(p\\ge7\\); the quadratic-character quotient \\(f_p\\) specified in the linked normalization; base field \\(\\mathbb Q\\).",
+        "body": "<p>For a prime \\(p\\ge7\\), set \\(F_p(x)=\\sum_{a=1}^{p-1}(a/p)x^a\\), where \\((a/p)\\) is the Legendre symbol, and let \\(f_p\\) be the <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/fekete.html#normalization\">specified monic reciprocal quotient of this quadratic-character polynomial</a>. Write \\(f_p(x)=x^m g_p(x+x^{-1})\\), where \\(m=(p-3)/2\\) for \\(p\\equiv3\\pmod4\\) and \\(m=(p-5)/2\\) for \\(p\\equiv1\\pmod4\\).</p><p>Is \\(f_p\\) always irreducible over \\(\\mathbb Q\\)? For this family, Corollary 4.2 proves that this is equivalent to irreducibility of \\(g_p\\). Mináč–Nguyen–Tân verify both for \\(p<10^4\\). This is weaker than their full wreath-product conjecture. Varjú–Xu still describe the all-prime irreducibility assertion as conjectural in 2026.</p>",
         "citations": [
           {
             "key": "MinacNguyenTan2023",
@@ -1005,8 +1066,8 @@
         "id": "fekete-full-wreath",
         "title": "Does every normalized prime-conductor Fekete polynomial have the full wreath-product group?",
         "status": "Open",
-        "scope": "Odd primes p≥7, the normalization f_p above, and m=deg(g_p).",
-        "body": "<p>The cited conjecture predicts \\(\\operatorname{Gal}(f_p/\\mathbb Q)=C_2\\wr S_m\\). This predicts both irreducibility and a maximal quadratic kernel. It remains a conjecture in the cited version; finite computations do not prove the statement for all primes.</p>",
+        "scope": "Primes \\(p\\ge7\\); the quadratic-character quotient \\(f_p\\) specified in the linked normalization; \\(m=\\deg g_p=\\tfrac12\\deg f_p\\); base field \\(\\mathbb Q\\).",
+        "body": "<p>For a prime \\(p\\ge7\\), set \\(F_p(x)=\\sum_{a=1}^{p-1}(a/p)x^a\\), where \\((a/p)\\) is the Legendre symbol, and let \\(f_p\\) be the <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/fekete.html#normalization\">specified monic reciprocal quotient of this quadratic-character polynomial</a>. Write \\(f_p(x)=x^m g_p(x+x^{-1})\\), where \\(m=(p-3)/2\\) for \\(p\\equiv3\\pmod4\\) and \\(m=(p-5)/2\\) for \\(p\\equiv1\\pmod4\\).</p><p>The cited conjecture predicts \\(\\operatorname{Gal}(f_p/\\mathbb Q)=C_2\\wr S_m\\), acting on the \\(2m\\) roots arranged in \\(m\\) inverse pairs. This predicts both irreducibility and a maximal quadratic kernel. It remains a conjecture in the cited version; finite computations do not prove the statement for all primes.</p>",
         "citations": [
           {
             "key": "MinacNguyenTan2023",
@@ -1031,8 +1092,8 @@
         "id": "fekete-principal-irreducible",
         "title": "Is the semiprime remainder irreducible?",
         "status": "Open",
-        "scope": "Principal-character normalization above; n=pq, odd primes p>q.",
-        "body": "<p>Conjecture 6.9 asserts that \\(f_n\\) is irreducible over \\(\\mathbb Q\\). The source verifies all such \\(n<10^4\\).</p>",
+        "scope": "Principal characters; \\(n=pq\\) with odd primes \\(p>q\\); the specified quotient \\(f_n\\); base field \\(\\mathbb Q\\).",
+        "body": "<p>Let \\(n=pq\\) for odd primes \\(p>q\\), and put \\(F_n^{\\mathrm{prin}}(x)=\\sum_{1\\le a\\le n,\\,(a,n)=1}x^a\\). Use the quotient</p>\\[f_n(x)=\\frac{F_n^{\\mathrm{prin}}(x)}{x\\prod_{d\\in S_n}\\Phi_d(x)},\\]<p>with the explicit set \\(S_n\\) in <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/fekete.html#principal-semiprime-normalization\">the semiprime normalization</a>. The indicated divisibility is proved; whether these are all cyclotomic factors is conjectural.</p><p>Conjecture 6.9 asserts that this \\(f_n\\) is irreducible over \\(\\mathbb Q\\). The source verifies all such \\(n<10^4\\).</p>",
         "citations": [
           {
             "key": "ChidambaramMinacNguyenTan2025",
@@ -1044,8 +1105,8 @@
         "id": "fekete-principal-galois",
         "title": "What is the semiprime Galois group?",
         "status": "Open",
-        "scope": "Principal-character normalization above; n=pq, odd primes p>q; m=deg(g_n).",
-        "body": "<p>The proposed groups are \\(\\operatorname{Gal}(g_n/\\mathbb Q)=S_m\\) and</p>\\[\\operatorname{Gal}(f_n/\\mathbb Q)=\\begin{cases}C_2^m\\rtimes S_m,&p\\equiv1\\pmod q\\text{ or }p,q\\equiv1\\pmod4,\\\\\\ker(\\Sigma)\\rtimes S_m,&\\text{otherwise},\\end{cases}\\]<p>where \\(\\Sigma:C_2^m\\to C_2\\) adds the coordinates. Both predictions hold for all such \\(n<10^4\\).</p>",
+        "scope": "Principal characters; \\(n=pq\\) with odd primes \\(p>q\\); the specified quotient \\(f_n(x)=x^m g_n(x+x^{-1})\\); \\(m=\\deg g_n=\\tfrac12\\deg f_n\\); base field \\(\\mathbb Q\\).",
+        "body": "<p>Let \\(n=pq\\) for odd primes \\(p>q\\), and put \\(F_n^{\\mathrm{prin}}(x)=\\sum_{1\\le a\\le n,\\,(a,n)=1}x^a\\). Use the quotient</p>\\[f_n(x)=\\frac{F_n^{\\mathrm{prin}}(x)}{x\\prod_{d\\in S_n}\\Phi_d(x)},\\]<p>with the explicit set \\(S_n\\) in <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/fekete.html#principal-semiprime-normalization\">the semiprime normalization</a>. The indicated divisibility is proved; whether these are all cyclotomic factors is conjectural.</p><p>Define \\(g_n\\) by \\(f_n(x)=x^m g_n(x+x^{-1})\\), with \\(2m=\\deg f_n\\). The proposed groups are \\(\\operatorname{Gal}(g_n/\\mathbb Q)=S_m\\) and</p>\\[\\operatorname{Gal}(f_n/\\mathbb Q)=\\begin{cases}C_2^m\\rtimes S_m,&p\\equiv1\\pmod q\\text{ or }p,q\\equiv1\\pmod4,\\\\\\ker(\\Sigma)\\rtimes S_m,&\\text{otherwise},\\end{cases}\\]<p>where \\(\\Sigma:C_2^m\\to C_2\\) adds the coordinates. Both predictions hold for all such \\(n<10^4\\).</p>",
         "citations": [
           {
             "key": "ChidambaramMinacNguyenTan2025",
@@ -1070,8 +1131,8 @@
         "id": "fekete-general-remainder",
         "title": "Is the quadratic-character remainder irreducible?",
         "status": "Open",
-        "scope": "The remainder R_Δ defined above, when deg(R_Δ)>0.",
-        "body": "<p>Conjecture 10.6 predicts one irreducible non-cyclotomic factor. This extends the prime-conductor question to composite conductors.</p>",
+        "scope": "Nontrivial fundamental discriminants \\(\\Delta\\); \\(\\deg R_\\Delta>0\\); base field \\(\\mathbb Q\\).",
+        "body": "<p>For \\(D=|\\Delta|\\), put</p>\\[F_\\Delta(x)=\\sum_{a=1}^{D-1}\\left(\\frac{\\Delta}{a}\\right)x^a,\\]<p>where the symbol is the Kronecker symbol. Let \\(R_\\Delta\\) be the monic polynomial obtained from \\(F_\\Delta/x\\) by removing every actual cyclotomic factor with its full multiplicity; see the <a href=\"https://khaihoanmath.github.io/polynomial-arithmetic-atlas/articles/fekete.html#generalized-quadratic-definition\">exact remainder definition</a>. When \\(\\deg R_\\Delta>0\\), is \\(R_\\Delta\\) irreducible over \\(\\mathbb Q\\)? Conjecture 10.6 predicts one irreducible non-cyclotomic factor. This extends the prime-conductor question to composite conductors.</p>",
         "citations": [
           {
             "key": "MinacNguyenTan2024",
@@ -1405,7 +1466,8 @@
       "Which normalizations of Hermite and Bessel polynomials are irreducible in every degree?",
       "What do Stieltjes’ conjecture and the Legendre group conjecture assert?",
       "How do opposite root pairs affect the full Galois group?",
-      "What is known about the nonzero roots of Hermite Wronskians?"
+      "What is known about the nonzero roots of Hermite Wronskians?",
+      "Can distinct Legendre polynomials share a nonzero root?"
     ],
     "prerequisites": [
       "foundations"
@@ -1495,12 +1557,22 @@
       {
         "id": "legendre",
         "title": "Legendre polynomials",
-        "body": "<p>Define \\(P_n(x)=\\frac1{2^n n!}(d/dx)^n(x^2-1)^n\\). Since \\(P_n(-x)=(-1)^nP_n(x)\\), the factor \\(x\\) is forced at odd indices. Stieltjes' conjecture, as presented by Cullinan–Hajir, asks whether \\(P_{2m}\\) and \\(P_{2m+1}/x\\) are irreducible over \\(\\mathbb Q\\) for every \\(m\\ge1\\). Their Galois-group questions concern these even polynomials and the corresponding signed-permutation action.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>After scaling, \\(8P_4=35x^4-30x^2+3\\), which is Eisenstein at \\(3\\). Its pair polynomial \\(35y^2-30y+3\\) has discriminant \\(480\\). Thus its pair field is \\(\\mathbb Q(\\sqrt{30})\\). This calculation proves irreducibility in degree four only.</p></div>",
+        "body": "<p>Define \\(P_n(x)=\\frac1{2^n n!}(d/dx)^n(x^2-1)^n\\). Since \\(P_n(-x)=(-1)^nP_n(x)\\), the factor \\(x\\) is forced at odd indices. Stieltjes' conjecture, as presented by Cullinan–Hajir, asks whether \\(P_{2m}\\) and \\(P_{2m+1}/x\\) are irreducible over \\(\\mathbb Q\\) for every \\(m\\ge1\\). Their Galois-group questions concern these even polynomials and the corresponding signed-permutation action.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>After scaling, \\(8P_4=35x^4-30x^2+3\\), which is Eisenstein at \\(3\\). Its pair polynomial \\(35y^2-30y+3\\) has discriminant \\(480\\). Thus its pair field is \\(\\mathbb Q(\\sqrt{30})\\). This calculation proves irreducibility in degree four only.</p></div><div class=\"math-block example\"><p class=\"block-label\">Finite check</p><p>Exact modular certificates for the pair polynomials, together with norm witnesses for their quadratic lifts, verify that \\(P_n(x)/x^{n\\bmod2}\\) is irreducible over \\(\\mathbb Q\\) for \\(2\\le n\\le255\\). An independent verifier reconstructed the coefficients from the Legendre recurrence and checked the certificates. This finite range does not establish an all-degree theorem or determine the Galois groups.</p></div>",
         "citations": [
           {
             "key": "CullinanHajir2014",
             "locator": "§1",
             "note": "Stieltjes’ irreducibility conjecture and parity-reduced Galois groups."
+          },
+          {
+            "key": "CullinanHajir2014",
+            "locator": "Lemma 1.3",
+            "note": "Norm criterion used to pass from pair irreducibility to lift irreducibility. The stated finite range was separately checked for this atlas on 12 November 2026."
+          },
+          {
+            "key": "Deng2026Legendre",
+            "locator": "Lemma 6.2, arXiv:2609.22336v2",
+            "note": "The same finite range, 2≤n≤255, is stated here. The atlas checked this range independently by modular and norm certificates; it did not verify the preprint’s all-degree argument or Galois groups."
           }
         ]
       },
@@ -1513,6 +1585,23 @@
             "key": "Deng2026Legendre",
             "locator": "Theorem 1.1, arXiv:2609.22336v2 (27 September 2026)",
             "note": "A preprint claims a complete resolution; this atlas has not independently verified the full proof."
+          }
+        ]
+      },
+      {
+        "id": "legendre-root-sharing",
+        "title": "Common roots of Legendre polynomials",
+        "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Preprint theorem · Kadets–Mangoubi</p><p>If \\(\\alpha\\ne0\\) is a root of \\(P_\\ell\\), then</p>\\[\\#\\{n\\ge0:P_n(\\alpha)=0\\}\\le2\\ell.\\]</div><p>Their argument interpolates related polynomials 2-adically and bounds the zeros of the resulting analytic functions. The source conjectures that two distinct Legendre polynomials have no common nonzero root. This is a different question from irreducibility of each parity-normalized polynomial. The proposed all-degree irreducibility theorem would imply the common-root conjecture; Kadets–Mangoubi explicitly record that proposed theorem as a claim.</p><p>Indeed, a common nonzero root of two irreducible normalized members would force them to have the same degree. Only consecutive even and odd indices can have that degree; consecutive Legendre polynomials are coprime by their three-term recurrence.</p>",
+        "citations": [
+          {
+            "key": "KadetsMangoubi2026Legendre",
+            "locator": "Conjecture 1.1, Theorem 1.2, and the remark in §1.5; arXiv:2611.09312v1, 6 November 2026",
+            "note": "Statement and version checked; the complete preprint proof has not been independently audited."
+          },
+          {
+            "key": "Deng2026Legendre",
+            "locator": "Theorem 1.1, arXiv:2609.22336v2",
+            "note": "The stronger irreducibility statement remains listed separately as a preprint claim."
           }
         ]
       },
@@ -1683,6 +1772,24 @@
           {
             "key": "GrosuGrosu2021",
             "locator": "Introduction, Theorems 1–3, and §10; arXiv:2007.00065v1"
+          }
+        ]
+      },
+      {
+        "id": "legendre-common-nonzero-roots",
+        "title": "Can distinct Legendre polynomials share a nonzero root?",
+        "status": "Open",
+        "scope": "Integers \\(m,n\\ge1\\), \\(m\\ne n\\); the Legendre polynomials \\(P_n(x)=(2^n n!)^{-1}(d/dx)^n(x^2-1)^n\\).",
+        "body": "<p>The conjecture is that \\(P_m\\) and \\(P_n\\) have no common root other than the forced root \\(0\\) at odd indices. Kadets–Mangoubi prove in their version-1 preprint that a fixed nonzero root of \\(P_\\ell\\) belongs to at most \\(2\\ell\\) members of the sequence. Their Conjecture 1.1 asks for the stronger pairwise statement. The separate all-degree irreducibility claim would imply it; its full proof has not been independently verified here.</p>",
+        "citations": [
+          {
+            "key": "KadetsMangoubi2026Legendre",
+            "locator": "Conjecture 1.1, Theorem 1.2, and §1.5 remark; v1"
+          },
+          {
+            "key": "Deng2026Legendre",
+            "locator": "Theorem 1.1; v2",
+            "note": "Proposed stronger result, not treated as settled."
           }
         ]
       }

@@ -50,6 +50,33 @@
         ]
       },
       {
+        "id": "coefficient-regimes",
+        "title": "Ranges of the coefficient theorems",
+        "body": "<p>Write \\(f=x^n+\\sum_{i=0}^{n-1}a_ix^i\\). Prescribing values at a few positions and restricting every coefficient to a large set are different problems.</p><div class=\"table-wrap\"><table><thead><tr><th>Restriction</th><th>Fixed and varying parameters</th><th>Conclusion and exceptions</th><th>Source</th></tr></thead><tbody><tr><td>One coefficient \\(a_j=c\\)</td><td>Every \\(q\\), \\(n\\ge2\\), and \\(0\\le j<n\\)</td><td>Existence, except \\(j=0,c=0\\), or even \\(q\\) with \\((n,j,c)=(2,1,0)\\)</td><td>Tuxanidy–Wang, Theorem 1.1</td></tr><tr><td>Any \\(r\\) prescribed positions</td><td>Fixed \\(\\varepsilon>0\\); \\(n\\to\\infty\\); \\(r\\le(1-\\varepsilon)\\sqrt n\\); uniform in \\(q\\)</td><td>Asymptotic count \\(\\sigma N_q(n)\\), with \\(\\sigma\\) defined below</td><td>Pollack, Corollary 2</td></tr><tr><td>Any \\(r\\) prescribed positions</td><td>Every \\(q\\); \\(n\\ge52\\), \\(r\\le n/10\\)</td><td>Existence</td><td>Ha, Theorem 1.3</td></tr><tr><td>Any \\(r\\) prescribed positions</td><td>Fixed \\(0<\\varepsilon<1/4\\); \\(q\\ge q_0(\\varepsilon)\\), \\(n\\ge8\\), \\(r\\le\\lfloor(1/4-\\varepsilon)n\\rfloor\\)</td><td>Existence</td><td>Ha, Corollary 1.2(2)</td></tr><tr><td>Each \\(a_i\\in A_i\\), with \\(|\\mathbb F_q\\setminus A_i|\\le\\sqrt q/2\\)</td><td>Fixed \\(q\\ge300\\); \\(n\\to\\infty\\); sets may depend on \\(i,n\\)</td><td>Asymptotic count with a separate constant-term factor; effective range below</td><td>Cheng, Theorem 1.1</td></tr><tr><td>Coefficients independent and uniform among squares, including zero</td><td>Fixed \\(n\\); \\(q\\to\\infty\\)</td><td>Irreducibility probability \\(1/n+O_n(q^{-1/2})\\)</td><td>Bary-Soroker–Shmueli, Theorem 1</td></tr></tbody></table></div><p>In the Pollack and Ha rows, a prescribed constant coefficient must be nonzero. The square-coefficient estimate concerns growing field size; it gives no corresponding fixed-field, growing-degree estimate.</p>",
+        "citations": [
+          {
+            "key": "TuxanidyWang2018",
+            "locator": "Theorem 1.1"
+          },
+          {
+            "key": "Pollack2013Prescribed",
+            "locator": "Theorem 1 and Corollary 2"
+          },
+          {
+            "key": "Ha2016",
+            "locator": "Corollary 1.2(2) and Theorem 1.3"
+          },
+          {
+            "key": "Cheng2025Restricted",
+            "locator": "Theorem 1.1"
+          },
+          {
+            "key": "BarySorokerShmueli2026Squares",
+            "locator": "Theorem 1"
+          }
+        ]
+      },
+      {
         "id": "one-coefficient",
         "title": "One prescribed coefficient",
         "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Hansen–Mullen theorem</p><p>Let \\(n\\ge2\\), \\(0\\le j<n\\), and \\(c\\in\\mathbb F_q\\). There is a monic irreducible polynomial of degree \\(n\\) whose coefficient of \\(x^j\\) is \\(c\\), except in the following cases:</p><ul><li>\\(j=0\\) and \\(c=0\\);</li><li>\\(q\\) is even and \\((n,j,c)=(2,1,0)\\).</li></ul></div><p>The first exception forces a root at zero. In the second, \\(x^2+a\\) is a square in characteristic two, because every element of a finite field of characteristic two has a square root.</p><p>Wan proved the theorem when \\(n\\ge36\\) or \\(q>19\\), and Ham and Mullen checked the remaining cases. Tuxanidy and Wang gave a later proof using periods of discrete Fourier transforms. The corresponding theorem for <em>primitive</em> polynomials has a different list of exceptions.</p>",
@@ -88,7 +115,7 @@
       {
         "id": "restricted-coefficient-sets",
         "title": "Allowed sets of coefficients",
-        "body": "<p>Now let \\(a_i\\) range over an allowed set \\(A_i\\subseteq\\mathbb F_q\\), possibly different for each position. This is different from fixing a small number of coefficients. Porritt treats one common allowed set; Cheng allows the sets to vary with the position.</p><p>A consequence of Cheng's theorem is the following. Fix \\(q\\ge300\\), and suppose \\(A_i=\\mathbb F_q\\setminus R_i\\) with \\(|R_i|\\le\\sqrt q/2\\). As \\(n\\to\\infty\\), \\[\\#\\{f\\text{ monic irreducible}:a_i\\in A_i\\}=\\frac{q}{n(q-1)}\\prod_{i=0}^{n-1}|A_i|\\left(\\frac{|A_0\\setminus\\{0\\}|}{|A_0|}+O(q^{-\\sqrt{n/45}})\\right).\\] The paper gives an explicit lower bound on \\(n\\) for this estimate.</p><p>For instance, requiring every nonleading coefficient to be nonzero gives the main term \\(q(q-1)^{n-1}/n\\). The constant coefficient enters separately because a zero there always makes a polynomial of degree at least two reducible.</p>",
+        "body": "<p>Now let \\(a_i\\) range over an allowed set \\(A_i\\subseteq\\mathbb F_q\\), possibly different for each position. This is different from fixing a small number of coefficients. Porritt treats one common allowed set; Cheng allows the sets to vary with the position.</p><p>A consequence of Cheng's theorem is the following. Fix \\(q\\ge300\\), and suppose \\(A_i=\\mathbb F_q\\setminus R_i\\) with \\(|R_i|\\le\\sqrt q/2\\). As \\(n\\to\\infty\\), \\[\\#\\{f\\text{ monic irreducible}:a_i\\in A_i\\}=\\frac{q}{n(q-1)}\\prod_{i=0}^{n-1}|A_i|\\left(\\frac{|A_0\\setminus\\{0\\}|}{|A_0|}+O(q^{-\\sqrt{n/45}})\\right).\\] </p><p>For instance, requiring every nonleading coefficient to be nonzero gives the main term \\(q(q-1)^{n-1}/n\\). The constant coefficient enters separately because a zero there always makes a polynomial of degree at least two reducible.</p><details><summary>Effective range</summary><p>Cheng’s Theorem 1.1 gives the displayed estimate for</p>\\[q\\ge300,\\qquad n\\ge\\max\\left\\{\\frac1{40}\\left(\\frac{\\log q}{\\log\\delta}\\right)^2,5000\\right\\},\\qquad \\delta=\\frac{2q-\\sqrt q}{\\sqrt2\\,q+2q^{3/4}}.\\]<p>The factor \\(|A_0\\setminus\\{0\\}|/|A_0|\\) equals one if zero is forbidden at the constant position, and \\(1-|A_0|^{-1}\\) otherwise.</p></details>",
         "citations": [
           {
             "key": "Porritt2019Restricted",
@@ -185,8 +212,8 @@
         "id": "finite-single-coefficient-settled",
         "title": "Can any one coefficient be prescribed?",
         "status": "Settled",
-        "scope": "Monic degree n≥2 polynomials over every finite field",
-        "body": "<p>Yes, with exactly the constant-zero and even-characteristic quadratic exceptions stated above. Primitive-polynomial prescriptions are a different problem with additional multiplicative conditions.</p>",
+        "scope": "Every prime power \\(q\\), degree \\(n\\ge2\\), position \\(0\\le j<n\\), and value \\(c\\in\\mathbb F_q\\).",
+        "body": "<p>There is a monic irreducible polynomial of degree \\(n\\) over \\(\\mathbb F_q\\) with coefficient \\(c\\) at \\(x^j\\), except when \\(j=0,c=0\\), or when \\(q\\) is even and \\((n,j,c)=(2,1,0)\\). These are the only exceptions. Requiring a primitive root is a different problem with additional multiplicative conditions.</p>",
         "citations": [
           {
             "key": "TuxanidyWang2018",

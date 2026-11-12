@@ -4,6 +4,18 @@ import { resolve } from 'node:path';
 
 export const QUESTION_STATUSES = ['Settled', 'Claimed', 'Open', 'Research direction'];
 
+// Local aliases retain their anchors and comment threads while sharing one statement.
+export function resolveQuestionAliases(articles) {
+ const byQuestion=new Map(articles.flatMap(a=>(a.questions??[]).map(q=>[q.id,{question:q,article:a.id}])));
+ return articles.map(a=>({...a,questions:(a.questions??[]).map(q=>{
+  if(!q.aliasOf)return q;
+  const target=byQuestion.get(q.aliasOf);
+  if(!target||target.question.aliasOf)throw Error(`Invalid canonical question for ${q.id}: ${q.aliasOf}`);
+  return {...target.question,...q,canonicalArticle:target.article};
+ })}));
+}
+
+
 // Validate the reusable knowledge graph, including IDs which never become HTML links.
 export async function validateContent(root) {
  const read = async p => JSON.parse(await readFile(resolve(root,p),'utf8'));
@@ -11,7 +23,7 @@ export async function validateContent(root) {
   read('content/references.json'),read('content/subjects.json'),read('content/navigation.json'),
   read('content/data/laboratory.json'),readdir(resolve(root,'content/articles'))
  ]);
- const articles=(await Promise.all(files.filter(f=>f.endsWith('.json')).map(f=>read('content/articles/'+f)))).flat();
+ const articles=resolveQuestionAliases((await Promise.all(files.filter(f=>f.endsWith('.json')).map(f=>read('content/articles/'+f)))).flat());
  const errors=[];
  const unique=(items,field,label)=>{const seen=new Set();for(const item of items){const id=item[field];if(!id||seen.has(id))errors.push(label+': missing or duplicate '+field+' '+id);seen.add(id);}return seen;};
  const articleIDs=unique(articles,'id','articles'),referenceIDs=unique(catalogue.references,'id','references'),subjectIDs=unique(subjects,'id','subjects');

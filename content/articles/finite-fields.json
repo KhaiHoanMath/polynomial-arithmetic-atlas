@@ -357,7 +357,7 @@
       {
         "id": "examples",
         "title": "Examples",
-        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Let \\(\\alpha\\) be a root of \\(x^3+x^2+1\\) over \\(\\mathbb F_2\\). The polynomial has no root in \\(\\mathbb F_2\\), hence is irreducible. The nonzero element \\(\\alpha\\ne1\\) has order seven, so it is primitive. Also \\(\\alpha^4=\\alpha^2+\\alpha+1\\). Relative to the basis \\(1,\\alpha,\\alpha^2\\), its conjugates have columns \\((0,1,0)^t,(0,0,1)^t,(1,1,1)^t\\), which are independent. Thus \\(\\alpha\\) is normal.</p></div><p>In contrast, a root \\(\\beta\\) of \\(x^4+x+1\\) over \\(\\mathbb F_2\\) is primitive but not normal. Irreducibility is checked in the <a href=\"finite-field-irreducibility.html#quartic-certificate\">quartic example</a>; the tests \\(\\beta^3\\ne1\\) and \\(\\beta^5=\\beta^2+\\beta\\ne1\\) give order fifteen. Its trace is zero because the coefficient of \\(x^3\\) vanishes. Hence its four conjugates are linearly dependent.</p>",
+        "body": "<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Let \\(\\alpha\\) be a root of \\(x^3+x^2+1\\) over \\(\\mathbb F_2\\). The polynomial has no root in \\(\\mathbb F_2\\), hence is irreducible. The nonzero element \\(\\alpha\\ne1\\) has order seven, so it is primitive. Also \\(\\alpha^4=\\alpha^2+\\alpha+1\\). Relative to the basis \\(1,\\alpha,\\alpha^2\\), its conjugates have columns \\((0,1,0)^t,(0,0,1)^t,(1,1,1)^t\\), which are independent. Thus \\(\\alpha\\) is normal.</p></div><p>In contrast, a root \\(\\beta\\) of \\(x^4+x+1\\) over \\(\\mathbb F_2\\) is primitive but not normal. Irreducibility is checked in the <a href=\"finite-field-irreducibility.html#quartic-certificate\">quartic example</a>; the tests \\(\\beta^3\\ne1\\) and \\(\\beta^5=\\beta^2+\\beta\\ne1\\) give order fifteen. Its trace is zero because the coefficient of \\(x^3\\) vanishes. Hence its four conjugates are linearly dependent.</p><p>Conversely, let \\(\\gamma\\) be a root of \\(x^4+x^3+x^2+x+1\\) over \\(\\mathbb F_2\\). Since \\(\\operatorname{ord}_5(2)=4\\), this polynomial is irreducible and \\(\\gamma\\) has multiplicative order five. It is not primitive in \\(\\mathbb F_{16}^{\\times}\\), whose order is fifteen. Its trace is one, so it is normal by the <a href=\"#count-normal\">trace criterion below</a>. Thus neither primitivity nor normality implies the other.</p>",
         "citations": [
           {
             "key": "LidlNiederreiter1997",
@@ -398,8 +398,12 @@
       {
         "id": "complete-normality",
         "title": "Complete normality",
-        "body": "<p>An element of \\(\\mathbb F_{q^n}\\) is <em>completely normal</em> over \\(\\mathbb F_q\\) if it is normal over every intermediate field \\(\\mathbb F_{q^d}\\), \\(d\\mid n\\). Morgan and Mullen conjectured that every finite extension has an element that is both primitive and completely normal.</p><p>Write \\(n=p^a m\\), with \\(p\\nmid m\\). A published theorem of Garefalakis and Kapetanakis proves existence when \\(m<q\\), in particular when \\(n\\le q\\). Their 2026 paper develops further constructions using translates of completely normal elements.</p><p><strong>Preprint claim.</strong> Hellwig's October 2026 preprint claims existence for every \\(q,n\\). It combines a decomposition by partial Lagrange resolvents with character sums and finite computations. The author reports a Lean formalization for the new cases and computations, taking two earlier results as axioms and using Lean's compiler and interpreter for large computations.</p>",
+        "body": "<p>An element of \\(\\mathbb F_{q^n}\\) is <em>completely normal</em> over \\(\\mathbb F_q\\) if it is normal over every intermediate field \\(\\mathbb F_{q^d}\\), \\(d\\mid n\\).</p><div class=\"math-block theorem\"><p class=\"block-label\">Completely normal basis theorem · Blessenohl–Johnsen</p><p>For every prime power \\(q\\) and integer \\(n\\ge1\\), the extension \\(\\mathbb F_{q^n}/\\mathbb F_q\\) has a completely normal element.</p></div><p>Primitive elements, normal elements, primitive normal elements, and completely normal elements therefore exist in every finite extension. Morgan and Mullen ask for the additional simultaneous condition: an element that is both primitive and completely normal.</p><p>Write \\(n=p^a m\\), with \\(p\\nmid m\\). A published theorem of Garefalakis and Kapetanakis proves this when \\(m<q\\), in particular when \\(n\\le q\\). Their 2026 paper develops further constructions using translates of completely normal elements.</p><p><strong>Preprint claim.</strong> Hellwig's October 2026 preprint claims existence for every \\(q,n\\), using partial Lagrange resolvents, character sums, and finite computations. The author reports a Lean formalization of the new cases and computations.</p><details><summary>Formalization and dependencies</summary><p>The author’s <a href=\"https://doi.org/10.5281/zenodo.23661993\">version 1.0 archive</a> corresponds to commit <code>09291f9dbd175ffdd8c22cddcbaff7152c516272</code>. The pinned <a href=\"https://github.com/florian-hellwig/morgan-mullen/blob/09291f9dbd175ffdd8c22cddcbaff7152c516272/README.md#building-and-checking\">build instructions</a>, <a href=\"https://github.com/florian-hellwig/morgan-mullen/blob/09291f9dbd175ffdd8c22cddcbaff7152c516272/lake-manifest.json\">dependency manifest</a>, and <a href=\"https://github.com/florian-hellwig/morgan-mullen/blob/09291f9dbd175ffdd8c22cddcbaff7152c516272/AXIOMS_AUDIT.txt\">reported axiom audit</a> identify the computational assumptions.</p><p>The two imported mathematical axioms are the Garefalakis–Kapetanakis theorem for \\(n\\le q\\) and a Rosser–Schoenfeld estimate. Compiled computations additionally use <code>Lean.ofReduceBool</code> and <code>Lean.trustCompiler</code>. These records were inspected; the Lean project and its proof dependencies have not been independently audited here.</p></details>",
         "citations": [
+          {
+            "key": "BlessenohlJohnsen1986",
+            "note": "Original attribution; the finite-field statement is recorded in Garefalakis–Kapetanakis, Theorem 1.3. The original proof was not retrieved in this review."
+          },
           {
             "key": "MorganMullen1996CompletelyNormal",
             "locator": "Conjecture"
@@ -410,11 +414,16 @@
           },
           {
             "key": "GarefalakisKapetanakis2026Translates",
-            "locator": "Theorem 2.6 and §§4–7"
+            "locator": "Theorems 1.3 and 2.6; §§4–7"
           },
           {
             "key": "Hellwig2026MorganMullen",
             "locator": "arXiv:2610.36534v1, Theorem 1.2; abstract and formalization statement"
+          },
+          {
+            "key": "Hellwig2026Formalization",
+            "locator": "Release v1.0; README, AXIOMS_AUDIT.txt, and lake-manifest.json",
+            "note": "Repository records checked; no independent Lean build or formal proof audit."
           }
         ]
       }
@@ -697,7 +706,7 @@
       {
         "id": "cyclotomic-support",
         "title": "Sparse cyclotomic factors",
-        "body": "<p>A different problem asks whether <em>every</em> irreducible factor of \\(x^m-1\\), or of a single cyclotomic polynomial \\(\\Phi_m(x)\\), has at most three nonzero terms. For \\(m>1\\) with \\(\\gcd(m,q)=1\\), every irreducible factor of \\(\\Phi_m\\) has degree \\(\\operatorname{ord}_m(q)\\). Factors of \\(x^m-1\\) come from all \\(\\Phi_d\\) with \\(d\\mid m\\). The question is which coefficients of these factors vanish.</p><p>Oliveira and Reis classified the integers \\(m\\) for the \\(x^m-1\\) problem over \\(\\mathbb F_2\\) and \\(\\mathbb F_4\\). Cheng's characteristic-two extension has a published corrigendum and a corrected author version. The correction requires control of orders modulo powers of seven; the earlier implication from \\(7\\nmid q^2-1\\) alone is insufficient. For example, \\(\\operatorname{ord}_{49}(128)=3\\), and \\(x^{49}-1\\) over \\(\\mathbb F_{128}\\) has an irreducible factor with four terms.</p>",
+        "body": "<p>A different problem asks whether <em>every</em> irreducible factor of \\(x^m-1\\), or of a single cyclotomic polynomial \\(\\Phi_m(x)\\), has at most three nonzero terms. For \\(m>1\\) with \\(\\gcd(m,q)=1\\), every irreducible factor of \\(\\Phi_m\\) has degree \\(\\operatorname{ord}_m(q)\\). Factors of \\(x^m-1\\) come from all \\(\\Phi_d\\) with \\(d\\mid m\\). The question is which coefficients of these factors vanish.</p><p>Oliveira and Reis classified the integers \\(m\\) for the \\(x^m-1\\) problem over \\(\\mathbb F_2\\) and \\(\\mathbb F_4\\). Cheng's characteristic-two extension has a published corrigendum and a corrected author version. The correction requires control of orders modulo powers of seven; the earlier implication from \\(7\\nmid q^2-1\\) alone is insufficient. For example, \\(\\operatorname{ord}_{49}(128)=3\\), and \\(x^{49}-1\\) over \\(\\mathbb F_{128}\\) has an irreducible factor with four terms.</p><div class=\"math-block example\"><p class=\"block-label\">Example</p><p>Use \\(\\mathbb F_{128}=\\mathbb F_2[\\eta]\\), where</p>\\[\\eta^7+\\eta^5+\\eta^3+\\eta+1=0.\\]<p>The defining polynomial \\(M(t)=t^7+t^5+t^3+t+1\\) is irreducible: repeated squaring gives \\(t^{128}\\equiv t\\pmod M\\), and \\(\\gcd(M,t^2-t)=1\\). Now put</p>\\[h(X)=X^3+(\\eta^3+\\eta)X^2+(\\eta^5+\\eta^4+\\eta)X+1.\\]<p>Reduction using the two displayed relations gives \\(X^{49}\\equiv1\\pmod h\\). Thus \\(h\\mid X^{49}-1\\). Since \\(\\gcd(49,127)=1\\), the only root of \\(X^{49}-1\\) in \\(\\mathbb F_{128}\\) is one. But \\(h(1)=\\eta^5+\\eta^4+\\eta^3\\ne0\\), because \\(\\eta\\) has degree seven. Hence \\(h\\) is a cubic with no root in the field, so it is irreducible. All four coefficients are nonzero.</p></div>",
         "citations": [
           {
             "key": "OliveiraReis2021Sparse",

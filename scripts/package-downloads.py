@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 AUTHOR_ONLY = ROOT / 'author-only'
 COPYRIGHT = '© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.'
 SOURCE_FOLDERS = ('content', 'scripts', 'static', '.github')
-SOURCE_FILES = ('README.md', 'EDITORIAL.md', 'LICENSE', 'package.json', 'package-lock.json', '.gitignore')
+SOURCE_FILES = ('README.md', 'EDITORIAL.md', 'COMMENTS.md', 'LICENSE', 'package.json', 'package-lock.json', '.gitignore')
 
 
 def main():

@@ -363,19 +363,7 @@
       {
         "id": "modular-test-complete",
         "title": "Does every irreducible rational polynomial have an irreducible reduction?",
-        "status": "Settled",
-        "scope": "Separable irreducible polynomials over Q",
-        "body": "<p>No. The precise condition is that the Galois group contain a full-length cycle. The polynomial \\(x^4+1\\) is a counterexample.</p>",
-        "citations": [
-          {
-            "key": "StevenhagenLenstra1996",
-            "note": "Chebotarev gives primes in each available conjugacy class."
-          },
-          {
-            "key": "ConradAllPrimes",
-            "note": "An explicit failure of the converse."
-          }
-        ]
+        "aliasOf": "irreducible-reduction-existence"
       }
     ]
   },
@@ -482,7 +470,7 @@
       {
         "id": "limits",
         "title": "Limitations and translation",
-        "body": "<p>A Newton polygon with several slopes proves reducibility over \\(\\mathbb Q_p\\), but not necessarily over \\(\\mathbb Q\\). A single edge whose horizontal and vertical increments have a common divisor may correspond to either an irreducible or a reducible polynomial over \\(\\mathbb Q_p\\). Other primes, residual polynomials, or a change of variable can give further information. Local irreducibility alone does not determine the global Galois group.</p>\n<p>Even allowing every integral translation does not make the elementary Eisenstein test complete. Conrad proves that \\(x^4-10x^2+1\\) is irreducible over \\(\\mathbb Q\\), but \\((x+c)^4-10(x+c)^2+1\\) is never Eisenstein for any \\(c\\in\\mathbb Z\\). Thus translated Eisenstein criteria do not characterize irreducibility.</p>\n<p>The stronger one-edge criterion succeeds after translation: at \\(c=1\\) the polynomial becomes \\(x^4+4x^3-4x^2-16x-8\\). Its \\(2\\)-adic coefficient valuations are \\(3,4,2,2,0\\), and the lower polygon is a single edge of slope \\(-3/4\\). Dumas therefore proves irreducibility even over \\(\\mathbb Q_2\\).</p>",
+        "body": "<p>A Newton polygon with several slopes proves reducibility over \\(\\mathbb Q_p\\), but not necessarily over \\(\\mathbb Q\\). A single edge whose horizontal and vertical increments have a common divisor may correspond to either an irreducible or a reducible polynomial over \\(\\mathbb Q_p\\). Other primes, residual polynomials, or a change of variable can give further information. Local irreducibility alone does not determine the global Galois group.</p>\n<div class=\"math-block example\"><p class=\"block-label\">Example</p><p>The polynomial \\(F=x^4-10x^2+1\\) is irreducible: a root \\(\\sqrt2+\\sqrt3\\) generates the degree-four field \\(\\mathbb Q(\\sqrt2,\\sqrt3)\\), as shown in <a href=\"field-extensions.html#primitive-element\">Field extensions</a>. No integral translation makes \\(F\\) Eisenstein, since</p>\n\\[F(x+c)=x^4+4cx^3+(6c^2-10)x^2+(4c^3-20c)x+c^4-10c^2+1.\\]\n<p>For an odd prime \\(p\\), divisibility of the cubic coefficient forces \\(p\\mid c\\), while the constant coefficient is then \\(1\\pmod p\\). At \\(p=2\\), the constant coefficient is odd for even \\(c\\), and divisible by eight for odd \\(c\\). In each case an Eisenstein hypothesis fails.</p></div>\n<p>The stronger one-edge criterion succeeds after translation: at \\(c=1\\) the polynomial becomes \\(x^4+4x^3-4x^2-16x-8\\). Its \\(2\\)-adic coefficient valuations are \\(3,4,2,2,0\\), and the lower polygon is a single edge of slope \\(-3/4\\). Dumas therefore proves irreducibility even over \\(\\mathbb Q_2\\).</p>",
         "citations": [
           {
             "key": "ConradAllPrimes",
@@ -529,11 +517,11 @@
         "title": "Can an integral translation always make an irreducible polynomial Eisenstein?",
         "status": "Claimed",
         "scope": "Translations x↦x+c with c∈Z",
-        "body": "<p>No. The irreducible polynomial \\(x^4-10x^2+1\\) is a counterexample. The counterexample concerns integral translations, and does not exclude other changes of variable or valuation criteria.</p>",
+        "body": "<p>No. The irreducible polynomial \\(F=x^4-10x^2+1\\) is a counterexample. If \\(F(x+c)\\) were Eisenstein at an odd prime \\(p\\), its cubic coefficient would force \\(p\\mid c\\), but its constant coefficient would be \\(1\\pmod p\\). At two, the constant coefficient is odd when \\(c\\) is even and divisible by eight when \\(c\\) is odd. This rules out every integral translation; other changes of variable or valuation criteria may still apply.</p>",
         "citations": [
           {
             "key": "ConradAllPrimes",
-            "note": "Explicit counterexample. Proof in expository notes; this status records the unpublished source.",
+            "note": "Explicit counterexample, proved in the article. The Claimed label records that the cited source is unpublished exposition.",
             "locator": "Theorems 1 and 2"
           }
         ]
