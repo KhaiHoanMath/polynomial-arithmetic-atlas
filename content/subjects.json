@@ -56,6 +56,13 @@
     "referenceGroup": 7
   },
   {
+    "id": "multivariate",
+    "title": "Several variables",
+    "summary": "Absolute irreducibility and geometric methods.",
+    "question": "When does a polynomial remain irreducible over an algebraic closure?",
+    "referenceGroup": 10
+  },
+  {
     "id": "algorithms",
     "title": "Algorithms and certificates",
     "summary": "Factorization, resolvents, and exact computation.",
@@ -68,13 +75,6 @@
     "summary": "Computational tools, data, and documented limitations.",
     "question": "Where can examples be found and results reproduced?",
     "referenceGroup": 9
-  },
-  {
-    "id": "multivariate",
-    "title": "Several variables",
-    "summary": "Absolute irreducibility and geometric methods.",
-    "question": "When does a polynomial remain irreducible over an algebraic closure?",
-    "referenceGroup": 10
   },
   {
     "id": "courses",
