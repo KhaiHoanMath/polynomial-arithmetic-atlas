@@ -1,6 +1,20 @@
 # Comments
 
-The atlas uses GraphComment Basic for discussions on articles, questions, and general pages. The integration is prepared but disabled until the owner supplies a site shortname and verifies moderation. Preparing these files does not create an account or enable posting.
+The atlas has a registered GraphComment Basic site with the public shortname `Polynomial-Arithmetic-Atlas`. The integration remains disabled until the live moderation tests are complete.
+
+## Account setup status — 12 November 2026
+
+The owner approved the site-registration agreement. The dashboard confirms the **Basic Free** plan. The following settings are saved:
+
+- **Pre-moderation** for the whole site, plus **Pre-moderate all guest comments**.
+- Links are pre-moderated; the good-reputation exception is unchecked.
+- The owner is the sole administrator; no other moderators are assigned.
+- AI moderation assistance is off. Email notifications to the page manager are on.
+- Oldest-first, flat display; text formatting and links are allowed. Media, image uploads, emoticons, and rewards are off.
+
+The real widget loads successfully in the local site preview. A guest test is prepared but has not been submitted: GraphComment requires a separate commenter agreement and an email address. Owner consent for that agreement is pending. Submission, approval, replies, repeat authors, and edited comments have not yet been tested.
+
+Manage comments under **Moderation → Comments → Pending** in the [site dashboard](https://graphcomment.com/admin/#/website/6af587de0d90fa8f5b1d455b/graphcomment). Keep pre-moderation enabled under **Settings → Graphcomment → Website settings**. The public site identifier is not an account credential.
 
 ## Owner setup
 
@@ -36,7 +50,7 @@ The committed configuration is disabled:
 {
   "enabled": false,
   "provider": "graphcomment",
-  "shortname": "",
+  "shortname": "Polynomial-Arithmetic-Atlas",
   "moderation_verified": false
 }
 ```
@@ -62,6 +76,6 @@ Run `node --test scripts/comments.test.mjs`, `npm run build`, and `npm run check
 - [Reader privacy](https://www.graphcomment.com/en/commenter-privacy)
 - [Data-processing terms](https://www.graphcomment.com/en/dpa)
 
-Documentation checked on 12 November 2026. Account setup and live moderation tests remain necessary before activation.
+Documentation and account settings checked on 12 November 2026. Live moderation tests remain necessary before activation.
 
 Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
