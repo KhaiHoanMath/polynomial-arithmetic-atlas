@@ -1,81 +1,81 @@
 # Comments
 
-The atlas has a registered GraphComment Basic site with the public shortname `Polynomial-Arithmetic-Atlas`. The integration remains disabled until the live moderation tests are complete.
+The atlas uses **GraphComment Basic** with the public site identifier `Polynomial-Arithmetic-Atlas`. The account is on the free Basic plan. This identifier is safe to include in the website; passwords and account tokens must never be committed.
 
-## Account setup status — 12 November 2026
+## Review comments
 
-The owner approved the site-registration agreement. The dashboard confirms the **Basic Free** plan. The following settings are saved:
+Open the [site dashboard](https://graphcomment.com/admin/#/website/6af587de0d90fa8f5b1d455b/graphcomment), then choose **Moderation → Comments → Pending**. Review each submission and approve or reject it. Email notifications to the page manager are enabled.
 
-- **Pre-moderation** for the whole site, plus **Pre-moderate all guest comments**.
-- Links are pre-moderated; the good-reputation exception is unchecked.
-- The owner is the sole administrator; no other moderators are assigned.
-- AI moderation assistance is off. Email notifications to the page manager are on.
-- Oldest-first, flat display; text formatting and links are allowed. Media, image uploads, emoticons, and rewards are off.
+Under **Settings → Graphcomment → Website settings**, keep **Pre-moderation** and **Pre-moderate all guest comments** enabled. Links are also pre-moderated, with the good-reputation exception unchecked. The owner is the sole administrator; no other moderators are assigned. AI moderation assistance is off.
 
-The real widget loads successfully in the local site preview. A guest test is prepared but has not been submitted: GraphComment requires a separate commenter agreement and an email address. Owner consent for that agreement is pending. Submission, approval, replies, repeat authors, and edited comments have not yet been tested.
+Comments appear oldest first in a flat layout. Text formatting and links are allowed; media, image uploads, emoticons, and rewards are off.
 
-Manage comments under **Moderation → Comments → Pending** in the [site dashboard](https://graphcomment.com/admin/#/website/6af587de0d90fa8f5b1d455b/graphcomment). Keep pre-moderation enabled under **Settings → Graphcomment → Website settings**. The public site identifier is not an account credential.
+## Checks completed — 12 November 2026
 
-## Owner setup
+The real widget loaded in the site preview. The guest workflow was tested:
 
-1. Open the [GraphComment back office](https://graphcomment.com/admin/) and sign in or create your own account. Add the atlas at `https://khaihoanmath.github.io/polynomial-arithmetic-atlas/`. Choose **Basic**. The [current plan](https://www.graphcomment.com/en/products/graphcomment/pricing) is free, without ads, up to 1,000,000 data loads per month. This is a usage limit, not a promise of unlimited hosting. No paid subscription is needed for this integration.
-2. Select **Pre-moderation** for the whole site: the owner must approve each comment before publication. Do not select Post-moderation or Smart moderation; Smart moderation can approve established authors automatically. Inspect any per-page settings and automatic approval or trusted-user exceptions. Keep the owner as the only moderator if every approval must be yours.
-3. Check how author edits are handled. The public documentation reviewed does not establish that edited approved comments return for review. Test this below. If edits bypass approval, disable author editing if GraphComment provides a server-side setting. Do not enable the integration if the required policy cannot be enforced.
-4. Optional AI assistance is not owner approval. For a wholly manual review process, disable AI moderation. The [data-processing terms](https://www.graphcomment.com/en/dpa) document the option to disable it. Do not enable any automatic publication workflow.
-5. Under the site's **Setup** tab, copy its public **shortname**, called `graphcommentId`. Store it as `shortname` in `content/comments.json`. It is an identifier, not a password. Never add account passwords, access tokens or API secrets to this repository.
-6. Review the [reader privacy policy](https://www.graphcomment.com/en/commenter-privacy) and your account's privacy options. Readers see a notice before **Show comments** connects them to GraphComment. No GraphComment script or iframe loads before that click. We do not describe the service as cookie-free.
+- A new comment entered the pending queue and was absent from a fresh anonymous view.
+- Owner approval made it public.
+- A second comment from the same guest remained pending; rejection kept it out of the public thread.
+- A reply remained pending until owner approval, then appeared publicly.
+- A fourth guest comment tested a separate question thread: it entered the pending queue and appeared after approval. A neighboring question remained empty, confirming that the discussions were separate.
+- A real question-comment permalink was followed through the repaired routing to the correct discussion. No GraphComment iframe loaded before **Show comments**.
+- All four test comments were moved to **Deleted**. The dashboard showed 0 pending, 0 approved, and 4 deleted comments.
 
-The exact dashboard location of the moderation controls must be checked in the owner's account. Public documentation confirms pre-moderation but does not establish every current menu label or exception.
+The guest interface offered no author edit action. An ordinary signed-in account and edits to approved comments by registered users have **not** been tested. The saved site-wide pre-moderation setting and the exercised guest workflow support activation; they do not establish every behavior of GraphComment's service.
 
-## Verify before enabling
+Follow up with a registered reader: test a new comment, a reply, a second submission after approval, and an edit to an approved comment. An edited contribution should require review before the changed text becomes public. If any tested posting route bypasses the intended approval policy, disable comments while correcting the provider settings or choosing another service. Public API and feed visibility have not been independently tested.
 
-Use an owner session, an ordinary commenter session, and a separate anonymous viewing session. These tests require an actual owner-controlled GraphComment website.
+## Website configuration
 
-- Submit an ordinary comment and a reply. Both must remain absent from the anonymous view and appear in the owner's pending queue.
-- Approve them as owner and check that they then become visible. Submit another comment from the same reader to rule out automatic approval after the first accepted comment.
-- Repeat with each enabled posting method, including guests if allowed.
-- Edit an approved comment. The changed text must remain invisible until the owner approves it, or the service must prevent ordinary authors from editing it. Hiding an Edit button with CSS is not enforcement.
-- Reject a pending comment and verify it never appears publicly. Keep all unapproved content out of public APIs and public comment feeds too.
-- Test an article and two separate questions. Confirm that each thread is distinct and links point to the intended page or exact question anchor.
-- Check that a fresh visit and a discussion selection make no GraphComment request before **Show comments**. Check a failed provider request and its retry control.
-- Check keyboard navigation, narrow screens and ordinary mathematical discussion. Native LaTeX/KaTeX support has not been verified; the widget is in an iframe and does not inherit the atlas's KaTeX renderer. Do not promise math rendering without testing it.
-
-`moderation_verified` records completion of these checks; it does not enforce GraphComment's server settings. Maintain those settings after activation. If they change or cease to meet the policy, disable comments and rebuild.
-
-## Configuration
-
-The committed configuration is disabled:
+`content/comments.json` controls the integration:
 
 ```json
 {
-  "enabled": false,
+  "enabled": true,
   "provider": "graphcomment",
   "shortname": "Polynomial-Arithmetic-Atlas",
-  "moderation_verified": false
+  "moderation_verified": true
 }
 ```
 
-Only after the live checks pass, enter the real shortname and set both booleans to `true`. Build and publish through the normal GitHub Pages workflow. To disable comments, set `enabled` to `false` and publish again. Invalid settings stop the build.
+This is the active configuration. `moderation_verified` records the account-setting review and guest tests described above. It is not a security control, a claim that all posting methods were tested, or a guarantee of provider behavior. GraphComment's server settings enforce moderation.
 
-## Threads and loading
+To disable comments, set `enabled` to `false`, rebuild, and publish through the GitHub Pages workflow. Invalid configuration stops the build. Keep the moderation settings above after activation, and repeat the relevant checks after changing them.
 
-Each article has a stable `article:ID` thread, each question a `question:ID` thread, and each general page a `page:ID` thread. Questions link to `questions.html#question-ID`. The Comments page groups the available discussions; its query parameter can select only a known thread. Changing titles or the site domain does not change thread IDs.
+## Threads and privacy
 
-GraphComment strips query strings when inferring a thread from a URL, so the integration always passes both `behaviour.uid` and `behaviour.url`. Never reuse an ID for an unrelated topic. The browser uses the official standard loader, `gc_graphlogin.js`, and the documented `__semio__gc_graphlogin` initializer. No account secret is needed in the browser.
+Each article uses a stable `article:ID`, each question a `question:ID`, and each general page a `page:ID`. The Comments page groups the discussions. Question links retain their exact `questions.html#question-ID` anchor. Changing a title or domain does not change a thread ID; never reuse an ID for a different topic.
 
-The build publishes local comment assets and controls only while enabled. It never publishes this configuration file, source documentation, or private bibliography exports. Local tests exercise configuration, escaping, thread selection, lazy loading and failure handling with a mock provider. They do not prove real account moderation.
+Question comment permalinks and notifications are routed to the matching discussion in `comments.html`. The redirect accepts a known question-card anchor and one valid 24-digit hexadecimal `comment_id`, whether the provider puts it before or after the hash. Ordinary question links stay on the questions page. The redirect makes no GraphComment request; the reader still chooses **Show comments**.
 
-Run `node --test scripts/comments.test.mjs`, `npm run build`, and `npm run check` after changes.
+The integration passes both `behaviour.uid` and the canonical `behaviour.url`, since GraphComment strips query strings when inferring thread identity. It uses the official `gc_graphlogin.js` loader and `__semio__gc_graphlogin` initializer.
+
+No GraphComment script or iframe loads until the reader clicks **Show comments**. A notice links to the [reader privacy policy](https://www.graphcomment.com/en/commenter-privacy). The widget runs in an iframe and does not inherit the atlas's KaTeX renderer; native LaTeX support has not been verified.
+
+The build publishes comment controls and their local assets only while enabled. It does not include this guide, the configuration file, editable sources, or withdrawn downloadable exports in the deployed site.
+
+## Code checks
+
+All 13 comment tests pass. The enabled preview passed the site check: 77 pages and 5,624 local links/assets. A separate HTML audit confirmed 184 unique discussion IDs, consistent mappings for all 53 articles, and valid links and anchors for all 107 questions. Each page has one comment section and no duplicate HTML IDs.
+
+The tests cover configuration, escaping, thread selection, question permalink routing, loading on request, and failure recovery with a mock provider. They complement the live guest tests; they do not test GraphComment's server implementation.
+
+After changes, run:
+
+```sh
+node --test scripts/comments.test.mjs
+npm run build
+npm run check
+```
 
 ## Official sources
 
-- [Free plan and moderation features](https://www.graphcomment.com/en/products/graphcomment/pricing)
-- [Definition of pre-moderation](https://blog.graphcomment.com/en/freedom-of-expression-responsibility-and-moderation/)
+- [Basic plan and usage limits](https://www.graphcomment.com/en/products/graphcomment/pricing)
+- [Pre-moderation](https://blog.graphcomment.com/en/freedom-of-expression-responsibility-and-moderation/)
 - [Installation and stable thread IDs](https://developers.graphcomment.com/docs/getting-started)
-- [Widget configuration and events](https://developers.graphcomment.com/docs/widget-configuration)
+- [Widget configuration](https://developers.graphcomment.com/docs/widget-configuration)
 - [Reader privacy](https://www.graphcomment.com/en/commenter-privacy)
 - [Data-processing terms](https://www.graphcomment.com/en/dpa)
-
-Documentation and account settings checked on 12 November 2026. Live moderation tests remain necessary before activation.
 
 Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.

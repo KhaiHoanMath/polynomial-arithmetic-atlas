@@ -132,15 +132,19 @@ async function browserHarness(search = '', options = {}) {
   const document = {
     head,
     querySelectorAll: () => [section],
-    createElement: name => new Element(name)
+    createElement: name => new Element(name),
+    getElementById: id => (options.questionAnchors ?? ['question-fekete-prime']).includes(id)
+      ? { matches: selector => selector === 'article.question-card' && options.questionCardMatch !== false }
+      : null
   };
   const timers = new Map();
   let timerId = 0;
   const fakeTimeout = callback => { timers.set(++timerId, callback); return timerId; };
   const window = { location: {
     search,
-    href: 'https://example.test/atlas/comments.html' + search,
+    href: options.href ?? 'https://example.test/atlas/comments.html' + search,
     assign: value => navigations.push(value),
+    replace: value => navigations.push(value),
     reload: () => { reloads++; }
   } };
   const sandbox = { document, window, URL, URLSearchParams,
@@ -159,6 +163,51 @@ async function browserHarness(search = '', options = {}) {
   return { section, button, status, mount, select, head, initializations, navigations, window,
     load, flush, timers, expire, get reloads() { return reloads; } };
 }
+
+test('question comment permalinks reach the exact thread without a provider request', async () => {
+  const commentId = '6af58c5db8e92d7f22db6a66';
+  for (const href of [
+    `https://example.test/atlas/questions.html#question-fekete-prime?comment_id=${commentId}`,
+    `https://example.test/atlas/questions.html?comment_id=${commentId}#question-fekete-prime`
+  ]) {
+    const h = await browserHarness('', { href });
+    assert.deepEqual(h.navigations, [
+      `https://example.test/atlas/comments.html?thread=question%3Afekete-prime&comment_id=${commentId}#comments`
+    ]);
+    assert.equal(h.head.children.length, 0);
+    assert.equal(h.initializations.length, 0);
+    h.button.dispatch('click');
+    assert.equal(h.head.children.length, 0, 'redirect stops normal comment initialization');
+  }
+});
+
+test('ordinary anchors and untrusted or ambiguous comment permalinks do not redirect', async () => {
+  const base = 'https://example.test/atlas/questions.html';
+  const id = '6af58c5db8e92d7f22db6a66';
+  const cases = [
+    { href: `${base}#question-fekete-prime` },
+    { href: `${base}?comment_id=${id}` },
+    { href: `${base}#question-unknown?comment_id=${id}` },
+    { href: `${base}#question-fekete-prime?comment_id=not-an-id` },
+    { href: `${base}#question-fekete-prime?comment_id=${id}00` },
+    { href: `${base}#question-fekete-prime?comment_id=javascript%3Aalert(1)` },
+    { href: `${base}#question-..%2Fother?comment_id=${id}` },
+    { href: `${base}#question-fekete-prime?comment_id=${id}?extra=1` },
+    { href: `${base}?comment_id=${id}#question-fekete-prime?comment_id=${id}` },
+    { href: `${base}?comment_id=${id}&comment_id=${id}#question-fekete-prime` },
+    { href: `${base}#question-fekete-prime?comment_id=${id}&comment_id=${id}` },
+    { href: `${base}#question-fekete-prime?comment_id=${id}`, questionAnchors: [] },
+    { href: `${base}#question-fekete-prime?comment_id=${id}`, questionCardMatch: false },
+    { href: `https://example.test/atlas/articles/fekete.html#question-fekete-prime?comment_id=${id}` },
+    { href: `https://example.test/atlas/other-questions.html#question-fekete-prime?comment_id=${id}` }
+  ];
+  for (const options of cases) {
+    const h = await browserHarness('', options);
+    assert.equal(h.navigations.length, 0, options.href);
+    assert.equal(h.head.children.length, 0, options.href);
+    assert.equal(h.initializations.length, 0, options.href);
+  }
+});
 
 test('initialization and whitelisted query selection make no third-party requests', async () => {
   const harness = await browserHarness('?thread=question%3Afekete-prime');
@@ -204,6 +253,7 @@ test('explicit click loads once and initializes only the selected stable thread'
   assert.equal(h.mount.children[0].id, 'graphcomment');
   assert.equal(h.mount.hidden, false);
   assert.equal(h.button.hidden, true);
+  assert.equal(h.status.textContent, `Comments for ${question.title}`);
   h.select.value = context.id;
   h.select.dispatch('change');
   assert.equal(h.navigations.length, 1);

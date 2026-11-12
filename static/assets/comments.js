@@ -1,6 +1,30 @@
 // Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 (() => {
   'use strict';
+  // GraphComment can append ?comment_id after a question's fragment. Route
+  // those permalinks to the question thread before any provider request.
+  function redirectQuestionPermalink() {
+    const source = new URL(window.location.href);
+    if (!/^https?:$/.test(source.protocol) || !source.pathname.endsWith('/questions.html')) return false;
+    const [anchor, fragmentQuery = '', ...extra] = source.hash.slice(1).split('?');
+    const match = /^question-([a-z0-9]+(?:[._:-][a-z0-9]+)*)$/.exec(anchor);
+    if (!match || extra.length) return false;
+    const card = document.getElementById(anchor);
+    if (!card?.matches('article.question-card')) return false;
+    const ids = [...source.searchParams.getAll('comment_id'),
+      ...new URLSearchParams(fragmentQuery).getAll('comment_id')];
+    if (ids.length !== 1 || !/^[a-f0-9]{24}$/i.test(ids[0])) return false;
+    const destination = new URL('comments.html', source);
+    destination.search = '';
+    destination.searchParams.set('thread', `question:${match[1]}`);
+    destination.searchParams.set('comment_id', ids[0]);
+    destination.hash = 'comments';
+    window.location.replace(destination.href);
+    return true;
+  }
+
+  if (redirectQuestionPermalink()) return;
+
   const scriptURL = 'https://integration.graphcomment.com/gc_graphlogin.js';
   const timeoutMs = 20000;
   let providerReady;
@@ -151,7 +175,7 @@
         });
         await ready;
         button.hidden = true;
-        status.textContent = `Comments for ${current.title}.`;
+        status.textContent = `Comments for ${current.title}`;
       } catch {
         finishEmbed?.(new Error('Comments could not load.'));
         mount.hidden = true;

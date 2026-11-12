@@ -66,4 +66,4 @@ visibility so the website remains available.
 
 ## Moderated comments
 
-The prepared GraphComment Basic integration is disabled until the owner supplies the site's public shortname and verifies approval before publication in GraphComment. See [COMMENTS.md](COMMENTS.md) for setup and acceptance checks. No third-party comment script loads while disabled. When enabled, comments load only when a reader selects “Show comments”; article and question threads use stable IDs.
+GraphComment Basic is registered with site-wide pre-moderation. Guest submission, approval, replies, and rejection have been tested. Registered-user posting and edits remain untested; see [COMMENTS.md](COMMENTS.md) for the owner guide, verification scope, and configuration. When enabled, comments load only after a reader selects “Show comments”; articles and questions have separate, stable discussion IDs.

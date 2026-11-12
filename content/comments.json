@@ -1,6 +1,6 @@
 {
-  "enabled": false,
+  "enabled": true,
   "provider": "graphcomment",
   "shortname": "Polynomial-Arithmetic-Atlas",
-  "moderation_verified": false
+  "moderation_verified": true
 }
