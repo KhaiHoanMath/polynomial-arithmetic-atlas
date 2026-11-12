@@ -1,0 +1,45 @@
+/* Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved. */
+.comments-section {
+  max-width: 800px;
+  margin-block: 3rem;
+  padding-block: 2rem;
+  border-top: 1px solid var(--line, #cbd5c1);
+}
+.comments-section h2 {
+  margin: 0 0 1rem;
+  color: var(--ink, #112e2a);
+  font-size: 2.3rem;
+  line-height: 1.15;
+}
+.comments-notice, .comments-status, .comments-section noscript {
+  font-size: .88rem;
+  line-height: 1.6;
+}
+.comments-notice { margin-bottom: 1.25rem; }
+.comments-notice a { text-decoration: underline; text-underline-offset: .16em; }
+.comments-topic { display: grid; gap: .4rem; margin-bottom: 1rem; font-size: .85rem; }
+.comments-topic select {
+  width: 100%;
+  min-width: 0;
+  padding: .65rem;
+  border: 1px solid var(--line, #cbd5c1);
+  border-radius: 3px;
+  background: var(--paper, #f7f8f2);
+  color: var(--ink, #112e2a);
+  font: inherit;
+}
+.comments-topic select:focus-visible, .comments-load:focus-visible {
+  outline: 2px solid var(--ink, #112e2a);
+  outline-offset: 3px;
+}
+.comments-load:disabled { cursor: wait; opacity: .65; }
+.comments-status { margin-block: .8rem; color: var(--muted, #56634f); }
+.comments-status:empty { display: none; }
+.comments-mount { margin-top: 1.5rem; min-width: 0; }
+.question-card > .question-discuss { display: table; margin-top: .75rem; }
+.comments-section [hidden] { display: none !important; }
+@media (max-width: 520px) {
+  .comments-section { margin-block: 2rem; padding-block: 1.5rem; }
+  .comments-section h2 { font-size: 2rem; }
+}
+@media print { .comments-section { display: none; } }

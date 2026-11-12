@@ -63,3 +63,7 @@ copies already downloaded. A public repository exposes its source and history.
 Keeping the author repository private while using GitHub Pages requires an
 eligible GitHub plan; check the account's Pages eligibility before changing
 visibility so the website remains available.
+
+## Moderated comments
+
+The prepared Hyvor Talk integration is disabled until the owner supplies a website ID and verifies approval-before-publication in the service dashboard. See [COMMENTS.md](COMMENTS.md) for setup and acceptance checks. No third-party comment script loads while disabled. When enabled, comments load only when a reader selects “Show comments”; article and question threads use stable IDs.

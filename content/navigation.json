@@ -3,8 +3,6 @@
     {
       "id": "first-proof",
       "title": "From a polynomial to its Galois group",
-      "audience": "A first course in field theory",
-      "goal": "Prove irreducibility and determine the Galois group from its permutation action.",
       "articles": [
         "foundations",
         "modular-irreducibility",
@@ -19,7 +17,6 @@
         "ConradModP",
         "ConradSnAn"
       ],
-      "checkpoint": "For \\(f(x)=x^5-x-1\\), prove \\(\\operatorname{Gal}(f/\\mathbb Q)=S_5\\) and state what each prime contributes.",
       "steps": [
         {
           "article": "foundations",
@@ -56,18 +53,12 @@
             "ConradModP",
             "ConradSnAn"
           ]
-        },
-        {
-          "title": "Exercise",
-          "note": "For \\(f(x)=x^5-x-1\\), prove \\(\\operatorname{Gal}(f/\\mathbb Q)=S_5\\) and state what each prime contributes."
         }
       ]
     },
     {
       "id": "valuation-methods",
       "title": "From valuations to large groups",
-      "audience": "Readers comfortable with valuations and finite permutation groups",
-      "goal": "Use coefficient divisibility to restrict factor degrees and obtain long prime cycles.",
       "articles": [
         "eisenstein-dumas",
         "newton-polygons",
@@ -82,7 +73,6 @@
         "Hajir2005",
         "FilasetaLam2002"
       ],
-      "checkpoint": "Separate the irreducibility input, the Newton-polygon input, Jordan's theorem, and the discriminant step.",
       "steps": [
         {
           "article": "eisenstein-dumas",
@@ -119,18 +109,12 @@
             "Hajir2005",
             "FilasetaLam2002"
           ]
-        },
-        {
-          "title": "Exercise",
-          "note": "Separate the irreducibility input, the Newton-polygon input, Jordan's theorem, and the discriminant step."
         }
       ]
     },
     {
       "id": "structured-families",
       "title": "Irreducibility and Galois groups in families",
-      "audience": "Researchers moving from examples to a family theorem",
-      "goal": "Identify forced factors and symmetries, then determine the ambient permutation group.",
       "articles": [
         "reciprocity",
         "sparse-gaps",
@@ -148,7 +132,6 @@
         "CullinanHajir2014",
         "FiekerHofmannJoswig2022"
       ],
-      "checkpoint": "State the normalization, the ambient permutation group, a proved result, and an unresolved question with its source and stated range.",
       "steps": [
         {
           "article": "reciprocity",
@@ -199,18 +182,12 @@
           "references": [
             "FiekerHofmannJoswig2022"
           ]
-        },
-        {
-          "title": "Exercise",
-          "note": "State the normalization, the ambient permutation group, a proved result, and an unresolved question with its source and stated range."
         }
       ]
     },
     {
       "id": "taylor-frequencies",
       "title": "Taylor polynomials and Katz–Rivin questions",
-      "audience": "Readers with a background in Galois theory",
-      "goal": "Distinguish arbitrary coefficient constructions from fixed arithmetic families.",
       "articles": [
         "taylor",
         "taylor-prescriptions",
@@ -224,7 +201,6 @@
         "Seki2026Catalan",
         "Sun2013CatalanGroups"
       ],
-      "checkpoint": "Explain why a nonconvergent prescribed sequence does not settle the rational-function convergence question.",
       "steps": [
         {
           "article": "taylor",
@@ -245,18 +221,12 @@
           "article": "newton-polygons",
           "title": "Arithmetic methods",
           "note": "Use valuations and inertia to study a fixed coefficient family."
-        },
-        {
-          "title": "Exercise",
-          "note": "Explain why a nonconvergent prescribed sequence does not settle the rational-function convergence question."
         }
       ]
     },
     {
       "id": "random-regimes",
       "title": "Models and asymptotic regimes for random polynomials",
-      "audience": "Researchers reading counting and random-polynomial papers",
-      "goal": "Specify the asymptotic parameter, coefficient law, conditioning, and analytic hypotheses.",
       "articles": [
         "height-counting",
         "random-models",
@@ -271,7 +241,6 @@
         "BarySorokerHokkenKozmaPoonen2025",
         "Eberhard2022"
       ],
-      "checkpoint": "Explain why a fixed-degree height theorem does not imply a growing-degree fair-sign theorem.",
       "steps": [
         {
           "article": "height-counting",
@@ -308,18 +277,12 @@
             "BarySorokerHokkenKozmaPoonen2025",
             "Eberhard2022"
           ]
-        },
-        {
-          "title": "Exercise",
-          "note": "Explain why a fixed-degree height theorem does not imply a growing-degree fair-sign theorem."
         }
       ]
     },
     {
       "id": "families-and-specialization",
       "title": "From generic families to arithmetic specializations",
-      "audience": "Graduate readers interested in arithmetic geometry and inverse Galois theory",
-      "goal": "Relate generic monodromy to arithmetic specialization, with the quantifiers in each conclusion stated explicitly.",
       "articles": [
         "critical-points-monodromy",
         "specialization",
@@ -334,7 +297,6 @@
         "JensenLedetYui2002",
         "Jones2013Arboreal"
       ],
-      "checkpoint": "Distinguish infinitely many good specializations, all but finitely many, density one, and an infinite tower.",
       "steps": [
         {
           "article": "critical-points-monodromy",
@@ -373,18 +335,12 @@
             "JensenLedetYui2002",
             "Jones2013Arboreal"
           ]
-        },
-        {
-          "title": "Exercise",
-          "note": "Distinguish infinitely many good specializations, all but finitely many, density one, and an infinite tower."
         }
       ]
     },
     {
       "id": "exact-computation",
       "title": "Exact computation and certificates",
-      "audience": "Readers using computer algebra in proofs",
-      "goal": "Study factorization and Galois-group algorithms and identify the steps that certify their outputs.",
       "articles": [
         "finite-field-irreducibility",
         "factorization-algorithms",
@@ -401,7 +357,6 @@
         "PARIDocumentation",
         "Lenstra1999Lacunary"
       ],
-      "checkpoint": "Record the exact input, software version, field, factorization or resolvent certificate, and certification step.",
       "steps": [
         {
           "article": "finite-field-irreducibility",
@@ -441,10 +396,6 @@
           "references": [
             "Lenstra1999Lacunary"
           ]
-        },
-        {
-          "title": "Exercise",
-          "note": "Record the exact input, software version, field, factorization or resolvent certificate, and certification step."
         }
       ]
     }
