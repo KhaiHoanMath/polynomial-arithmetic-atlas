@@ -34,12 +34,22 @@ for(const button of document.querySelectorAll('[data-copy]'))button.addEventList
  try{if(!navigator.clipboard?.writeText)throw Error('clipboard unavailable');await navigator.clipboard.writeText(button.dataset.copy);button.textContent='Copied';setTimeout(()=>button.textContent=original,2000);}
  catch{let box=button.closest('.reference-content').querySelector('.copy-fallback');if(!box){box=document.createElement('textarea');box.className='copy-fallback';box.readOnly=true;box.setAttribute('aria-label','Citation text: select and copy');box.value=button.dataset.copy;button.closest('.reference-content').append(box);}box.focus();box.select();button.textContent='Select and copy below';}
 });
-const labButtons=[...document.querySelectorAll('[data-lab-select]')];
-const labExamples=[...document.querySelectorAll('[data-lab-example]')];
-function showExample(id,update=false){if(!labExamples.some(e=>e.dataset.labExample===id))return;for(const e of labExamples)e.hidden=e.dataset.labExample!==id;for(const b of labButtons)b.setAttribute('aria-pressed',String(b.dataset.labSelect===id));if(update&&location.protocol!=='file:')history.replaceState(null,'','#'+id);}
-for(const b of labButtons)b.addEventListener('click',()=>showExample(b.dataset.labSelect,true));
-for(const example of labExamples){const buttons=[...example.querySelectorAll('[data-prime-select]')];for(const b of buttons)b.addEventListener('click',()=>{for(const other of buttons)other.setAttribute('aria-pressed',String(other===b));for(const panel of example.querySelectorAll('[data-prime-panel]'))panel.hidden=panel.dataset.primePanel!==b.dataset.primeSelect;});}
-if(labExamples.length){showExample(location.hash.slice(1));window.addEventListener('hashchange',()=>showExample(location.hash.slice(1)));}
+// Prime controls are independent, including when an article has two examples.
+for(const example of document.querySelectorAll('[data-lab-example]')){
+ const buttons=[...example.querySelectorAll('[data-prime-select]')];
+ for(const button of buttons)button.addEventListener('click',()=>{
+  for(const other of buttons)other.setAttribute('aria-pressed',String(other===button));
+  for(const panel of example.querySelectorAll('[data-prime-panel]'))panel.hidden=panel.dataset.primePanel!==button.dataset.primeSelect;
+ });
+}
+// Preserve bookmarked laboratory fragments without duplicating the examples.
+function followExampleLink(){
+ let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}
+ const link=[...document.querySelectorAll('[data-example-destination]')].find(a=>a.id===id);
+ if(link)location.replace(link.href);
+}
+followExampleLink();
+window.addEventListener('hashchange',followExampleLink);
 // All content remains available without JavaScript. Make collapsed source details
 // available to printed copies, and restore each reader's state afterward.
 let printDetails=[];

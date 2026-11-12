@@ -153,7 +153,8 @@
       -1,
       -1
     ],
-    "discriminant": "2869"
+    "discriminant": "2869",
+    "section": "quintic"
   },
   {
     "id": "cyclotomic",
@@ -401,7 +402,8 @@
       0,
       1
     ],
-    "discriminant": "256"
+    "discriminant": "256",
+    "section": "all-primes-limit"
   },
   {
     "id": "eulerian",
@@ -587,7 +589,9 @@
       26,
       1
     ],
-    "discriminant": "338688000"
+    "discriminant": "338688000",
+    "section": "quartic",
+    "includeAlternativeProof": true
   },
   {
     "id": "exponential",
@@ -880,7 +884,8 @@
           ]
         ]
       }
-    ]
+    ],
+    "section": "exponential-six"
   },
   {
     "id": "residual",
@@ -1062,6 +1067,7 @@
           ]
         ]
       }
-    ]
+    ],
+    "section": "residual-polynomial"
   }
 ]

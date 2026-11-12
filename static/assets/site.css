@@ -65,3 +65,12 @@
 .problem-family > h2{font-size:2rem;line-height:1.2;margin:.45rem 0 1.35rem}
 .problem-family .question-body + .question-body{border-top:1px solid var(--line);padding-top:1.25rem;margin-top:1.25rem}
 .problem-family .question-body h3{font-size:1.4rem;line-height:1.35;margin:.65rem 0}
+
+/* Calculations sit beside the proof in each article. */
+.article-example{margin-block:24px;padding:22px;border:1px solid #c5d2ba;border-radius:5px;background:var(--card);min-width:0}
+.article-example>h3:first-child{margin-top:0}.article-example .newton-section{margin:0 0 28px;padding:0;border:0}
+.article-newton-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:18px}
+.article-example .newton-card{display:block;width:auto;min-width:0;margin:16px 0 0;padding:16px}
+.article-example .lab-equation{min-width:0;overflow-x:auto}.article-example .lab-facts{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+@media(max-width:600px){.article-example{padding:16px 12px}.article-example .lab-facts{font-size:.76rem;gap:10px}}
+@media print{.article-example{border:0;padding:0}.prime-panel[hidden]{display:block!important;margin-top:24px}}
