@@ -1,6 +1,6 @@
 # Literature watch
 
-Last attempted scan: 2026-11-13T05:27:43Z
+Last attempted scan: 2026-11-13T20:10:38Z
 
 Metadata leads for editorial review. A match or changed file does not verify a mathematical claim. Baselines record existing sources; they are not new publications.
 
@@ -8,1244 +8,1244 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 
 | Source / query | Result | Items | Last complete check | Detail |
 |---|---|---:|---|---|
-| arxiv/dynamics\-finite\-multivariate | failed | 0 | never | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: export\.arxiv\.org |
-| arxiv/irreducibility\-galois | failed | 0 | never | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: export\.arxiv\.org |
-| arxiv/named\-families | failed | 0 | never | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: export\.arxiv\.org |
-| conrad\-notes/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| arxiv/dynamics\-finite\-multivariate | ok | 107 | 2026-11-13T20:10:38Z |  |
+| arxiv/irreducibility\-galois | ok | 149 | 2026-11-13T20:10:38Z |  |
+| arxiv/named\-families | ok | 126 | 2026-11-13T20:10:38Z |  |
+| conrad\-notes/page | ok | 1 | 2026-11-13T20:10:38Z |  |
 | crossref/arboreal | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/galois | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/irreducibility | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| existing\-arxiv | failed | 0 | never | Rotating batch: 100 attempted of 143 registered\. 2008\.05815, 2010\.01281, 2012\.03076, 2102\.07465, 2106\.04049, 2110\.08354, 2110\.08587, 2111\.05256, 2111\.06507, 2111\.06697, 2202\.08122, 2203\.10287, 2203\.11302, 2205\.07349, 2206\.11778, 2207\.12493, 2212\.07539, 2212\.10920, 2301\.05656, 2304\.11991, 2304\.12658, 2305\.09227, 2305\.12022, 2307\.14896, 2308\.04878, 2311\.14862, 2311\.16871, 2402\.06643, 2403\.11943, 2404\.13559, 2405\.04058, 2406\.18970, 2410\.16814, 2411\.06745, 2412\.08815, 2501\.06028, 2502\.17218, 2505\.02723, 2506\.05254, 2506\.12206: HTTPError: HTTP Error 429: Unknown Error; 2507\.08347, 2507\.10779, 2507\.15908, 0707\.1835, 0807\.2620, 0807\.3578, 0811\.4029, 0911\.0286, 1001\.3079, 1004\.3813, 1005\.2695, 1006\.3869, 1009\.5388, 1010\.5341, 1012\.2857, 1106\.6151, 1205\.3420, 1209\.5169, 1210\.7157, 1211\.3588, 1302\.0625, 1303\.6513, 1304\.0874, 1305\.0222, 1402\.6018, 1409\.2034, 1410\.3814, 1508\.01870, 1601\.06867, 1603\.00673, 1603\.03811, 1604\.04023, 1605\.01068, 1606\.04592, 1608\.01938, 1609\.03398, 1610\.00424, 1705\.03709, 1707\.02501, 1708\.04932: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: export\.arxiv\.org; 1709\.03094, 1710\.05165, 1711\.06243, 1802\.09074, 1803\.00434, 1803\.01987, 1803\.02823, 1803\.10811, 1805\.10361, 1805\.111 |
-| existing\-corrections | failed | 2 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 281 registered\. 10\.1017/cbo9780511542916: HTTPError: HTTP Error 429: Too Many Requests; 10\.1017/cbo9780511721274\.008: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/cbo9781139856065: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/fms\.2025\.10096: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s000497271300049x: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0004972719000339: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0004972725000048: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0305004122000226: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0305004126102126: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0963548300000869: RuntimeError: Host temporarily skipped |
-| existing\-doi | ok | 50 | 2026-11-13T05:27:43Z | Rotating batch: 50 attempted of 281 registered\. |
+| existing\-arxiv | ok | 100 | 2026-11-13T20:10:38Z | Rotating batch: 100 attempted of 143 registered\. |
+| existing\-corrections | failed | 3 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 281 registered\. 10\.1112/jlms\.70257: HTTPError: HTTP Error 429: Too Many Requests; 10\.1112/jlms/jdn034: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/jlms/s1\-38\.1\.183: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/plms/pdq009: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/plms/s3\-43\.2\.227: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/plms/s3\-51\.3\.385: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/s0010437x20007022: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/s0024610702003782: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/s0025579300011931: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/s0025579311002105: RuntimeError: Host temporarily skipped after network failu |
+| existing\-doi | ok | 50 | 2026-11-13T20:10:38Z | Rotating batch: 50 attempted of 281 registered\. |
 | existing\-non\-crossref | not-covered | 0 | never | 12 known non\-Crossref DOIs excluded from Crossref checks; arXiv identifiers are checked separately; other repository updates require editorial follow\-up |
-| filaseta\-preprints/page | ok | 1 | 2026-11-13T05:27:43Z |  |
-| hal/dynamics\-finite\-multivariate | ok | 2 | 2026-11-13T05:27:43Z |  |
-| hal/families | ok | 7 | 2026-11-13T05:27:43Z |  |
-| hal/irreducibility\-galois | ok | 11 | 2026-11-13T05:27:43Z |  |
-| hexagon/polynomial\-arithmetic | ok | 0 | 2026-11-13T05:27:43Z |  |
+| filaseta\-preprints/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| hal/dynamics\-finite\-multivariate | ok | 2 | 2026-11-13T20:10:38Z |  |
+| hal/families | ok | 7 | 2026-11-13T20:10:38Z |  |
+| hal/irreducibility\-galois | ok | 17 | 2026-11-13T20:10:38Z |  |
+| hexagon/polynomial\-arithmetic | ok | 0 | 2026-11-13T20:10:38Z |  |
 | journal\-finite\-fields/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | journal\-number\-theory/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| juul\-research/page | ok | 1 | 2026-11-13T05:27:43Z |  |
-| milne\-course\-errata/page | ok | 1 | 2026-11-13T05:27:43Z |  |
-| milne\-course\-notes/page | ok | 1 | 2026-11-13T05:27:43Z |  |
-| milne\-galois\-errata/page | ok | 1 | 2026-11-13T05:27:43Z |  |
-| pdf\-conradfinitetests/page | ok | 1 | 2026-11-13T05:27:43Z |  |
-| pdf\-conradirredq/page | ok | 1 | 2026-11-13T05:27:43Z |  |
-| pdf\-conradsnan/page | ok | 1 | 2026-11-13T05:27:43Z |  |
-| pdf\-milne2020ant/page | ok | 1 | 2026-11-13T05:27:43Z |  |
-| zenodo/dynamics\-finite\-multivariate | ok | 0 | 2026-11-13T05:27:43Z |  |
-| zenodo/families | ok | 1 | 2026-11-13T05:27:43Z |  |
-| zenodo/irreducibility\-galois | ok | 0 | 2026-11-13T05:27:43Z |  |
+| juul\-research/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| milne\-course\-errata/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| milne\-course\-notes/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| milne\-galois\-errata/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| pdf\-conradfinitetests/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| pdf\-conradirredq/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| pdf\-conradsnan/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| pdf\-milne2020ant/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| zenodo/dynamics\-finite\-multivariate | ok | 0 | 2026-11-13T20:10:38Z |  |
+| zenodo/families | ok | 1 | 2026-11-13T20:10:38Z |  |
+| zenodo/irreducibility\-galois | ok | 0 | 2026-11-13T20:10:38Z |  |
 
 ## Unreviewed discoveries and changes
 
-### Matrix elements of SO\(3\) in sl 3 representations as bispectral multivariate functions
-
-- Event: `ecf0d9244707658b5104` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-04738429v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Computation of a 30 750\-Bit Binary Field Discrete Logarithm
-
-- Event: `df897e09d6df946ada9b` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-02945361v1>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Brauer groups, Hopf algebras and Galois theory
-
-- Event: `d64f259732f18e318ae2` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1016/s0898-1221(98)90198-5>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Computational Semantic Analysis of Arboreal Imagery in Uzbek Literary Texts: A Distributional and Topic\-Modeling Approach
-
-- Event: `c45dfb06354f8ab2e58f` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1109/ubmk71847.2026.11745307>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Racah problems for the oscillator algebra, the Lie algebra sl\(n\), and multivariate Krawtchouk polynomials
-
-- Event: `a2a4616ff700609ccb26` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-02885779v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The role of algebraic solutions in planar polynomial differential systems
-
-- Event: `9ac797495a03ca2e416e` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-01170955v1>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Representations of the rank two Racah algebra and orthogonal multivariate polynomials
-
-- Event: `84c9605ed3c623c50825` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-03700687v1>
-- Possible affected pages: `articles/multivariate-factorization.html`, `articles/multivariate-irreducibility.html`, `articles/multivariate-newton-polytopes.html`, `articles/polynomial-fibers.html`, `articles/separated-variable-polynomials.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Introduction: Shakespeare’s Arboreal Ovidianism
-
-- Event: `80fbf631cb468bb36470` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1515/9781501787317-001>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal and Terrestrial Frugivore Vertebrate Assemblage Diversity and Composition Vary With Disturbance Histories in Guianan Forests
-
-- Event: `75ccb478ac6fef111718` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1002/ece3.74374>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Irreducibility, Smoothness, and Connectivity of Realization Spaces of Matroids and Hyperplane Arrangements
-
-- Event: `62ab6750311b93ab9b85` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1137/25m1811938>
-- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/specialization.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Correction: Molecular phylogeny of rare arboreal rats from SE Asia, genera Pithecheir and Pithecheirops
-
-- Event: `5d46a65884a1cce2958b` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/s42991-026-00611-5>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Shifted Legendre Polynomials algorithm used to the dynamic analysis of viscoelastic pipes conveying fluid with the variable fractional order model $
-
-- Event: `5a55854da75b6e166ab6` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-02884951v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### KEANEKARAGAMAN SERANGGA ARBOREAL DIKAWASAN KEBUN SAYUR DAN DANAU BUATAN TANJUNG SIDOREJO LEMPAKE SAMARINDA UTARA
-
-- Event: `56e2a6b0688081daa39d` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.30872/bp.v18i1.1796>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Molecular phylogeny of rare arboreal rats from SE Asia, genera Pithecheir and Pithecheirops
-
-- Event: `5039dc9c4683e5280063` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/s42991-026-00610-6>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Classifying families of orthogonal polynomials having Galois group the alternating group
-
-- Event: `4cf8878abfd658b65310` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1016/j.jnt.2021.12.009>
-- Existing reference keys: BanerjeeBera2022
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/laguerre.html#alternating-realizations`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Parity Families of Lattice Paths and Real\-Rooted Signed Eulerian Polynomials
-
-- Event: `2fb8c865e18b6c23a472` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: zenodo; version: 3\.0\.0
-- Link: <https://zenodo.org/records/24169702>
-- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Eulerian polynomials and the g\-indices of Young tableaux
-
-- Event: `2bcceedf07c09762fd84` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: hal; version: 1
-- Link: <https://cnrs.hal.science/hal-04287082v1>
-- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Composición florística arbórea e interpretación sucesional de un fragmento agroambiental tropical universitario en El Salvador; Arboreal Floristic Composition and Successional Interpretation of a Tropical University Agroenvironmental Fragment in El Salvador
-
-- Event: `24221c4a9306837ae6ae` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.46380/ecotemas-2026-4-93>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Two Decades of Non\-Monotonic Arboreal Canopy Change and Spatial Reconfiguration in an Urban Mangrove Remnant of Guayaquil, Ecuador
-
-- Event: `1b2ae4200de8916506ea` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.3390/coasts6040050>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On the Galois Group of $x^p\+p^\{t\}b\(x\+1\)=0$
-
-- Event: `ff6b3f6e5ab5cdd9b7db` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.3836/tjm/1270129460>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Effective descent for differential operators
-
-- Event: `fee65f1ad266d3151720` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://unilim.hal.science/hal-00637676v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/eisenstein-zero-polynomials.html`, `articles/fekete.html`, `articles/frobenius.html`, `articles/hecke-polynomials.html`, `articles/kaneko-zagier.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/taylor-prescriptions.html`, `articles/taylor.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Computation of a 30 750\-Bit Binary Field Discrete Logarithm
-
-- Event: `fe1afd00b7ad92bb7cb8` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-02945361v1>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Hyperbolicity of Jensen Polynomials for the Riemann Ξ\-Function via Hermite–Stiffness Duality, Laguerre–Samuelson Root Bounds, and Complex Cauchy–Hermitian Shifts
-
-- Event: `fd7ebb3bf0bd748429d6` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23915351
-- Link: <https://zenodo.org/records/23915351>
-- Possible affected pages: `articles/archimedean-criteria.html`, `articles/eisenstein-dumas.html`, `articles/integer-values.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### A modular obstruction to the $P$\-adic Leopoldt conjecture for the Carlitz module
-
-- Event: `fcf5eb73ecae896d4436` (new, detected 2026-11-13T05:12:43Z)
-- Source: hexagon; version: v1
-- Link: <https://hexagonmath.org/abs/2610.00525v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Hopf algebroids and Galois extensions
-
-- Event: `fb012eb31dc7c986d90c` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.36045/bbms/1117805089>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### FINITE OUTER GALOIS THEORY OF NON\-COMMUTATIVE RINGS
-
-- Event: `fa98a506114142ed0c80` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.14492/hokmj/1530518424>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Mt\. Åreskutan Nunatak: An Arboreal “Roadmap” to the Paleobiogeograpy of the Swedish Scandes and a Possible Pointer Towards a Future Revival of a Richer and More Biodiverse Mountainscape
-
-- Event: `fa56ef2da4f18a91b623` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.14738/aivp.121.16320>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The Pointwise View of Determinacy: Arboreal Forcings, Measurability, and Weak Measurability
-
-- Event: `fa4df1770a5f9d503edb` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1216/rmjm/1181069686>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On the modularity of certain 2\-adic Galois representations
-
-- Event: `f89c31a67a2dfa948a43` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1215/s0012-7094-01-10923-x>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Quantum Galois theory for finite groups
-
-- Event: `f69e122d9d9f3a45bbe5` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1215/s0012-7094-99-09720-x>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Monotonicity of Turán determinants for binary Krawtchouk polynomials
-
-- Event: `f675efaf0a343b7686de` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 2\.0\.3
-- Link: <https://zenodo.org/records/23382987>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On Krawtchouk polynomials
-
-- Event: `f64ee5e18183e0c5ebad` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-00554167v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
-
-- Event: `f5eea724c787026638e4` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v2
-- Link: <https://zenodo.org/records/23604795>
+### Delocalized region of bipartite Erdős\-Rényi graphs
+
+- Event: `fc183e4e2a4bd77b4462` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.42088v1>
 - Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Bromeliad Sampling: A Passive Technique for Arboreal Amphibians across Ecosystems in the Neotropics
-
-- Event: `f5d93a34e7bde2cd1c63` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1643/h2019277>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On the Galois group of the MHD boundary\-layer collocation quintic: A rigorous treatment and computational verification
-
-- Event: `f5c4dd19b4df86a86a9d` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.22271/maths.2026.v11.i11a.89993>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The Galois group of local fields
-
-- Event: `f2be4800220bae6d7bea` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.2748/tmj/1178240606>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Shifted Legendre polynomials algorithm used for the dynamic analysis of PMMA viscoelastic beam with an improved fractional model
-
-- Event: `f1028b4fe0d12381a06c` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-02967992v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Algorithmes symboliques\-numériques en algèbre différentielle; Symbolic\-numeric algorithms in differential algebra
-
-- Event: `f0bdc38ed22987c63ce7` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://theses.hal.science/tel-05473922v1>
-- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/factorization-algorithms.html`, `articles/field-extensions.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-computation.html`, `articles/galois-correspondence.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Self\-dual and complementary dual abelian codes over Galois rings
-
-- Event: `f048c1675953e1f9f291` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.13069/jacodesmath.560406>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### SOME THEOREMS ON GALOIS THEORY OF SIMPLE RINGS
-
-- Event: `edf1a086532eecb7c1f5` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.14492/hokmj/1530691415>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Height one separability and Galois theory in semi\-Krull domains
-
-- Event: `ed802e480eebcd2de59b` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1216/rmj-1986-16-1-173>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Río Gálvez Arboreal Rice Rat Oecomys galvez Voss, Fleck &amp; Giarla, 2024
-
-- Event: `ed6a4ed20dedb2acfb2c` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/978-3-031-45537-7_266-1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Note on 2\-rational fields
-
-- Event: `ed44bcdc9d3269bd40f4` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-00278094v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Uniform distribution of Galois conjugates and beta\-conjugates of a Parry number near the unit circle and dichotomy of Perron numbers
-
-- Event: `ece3c85b9e6a2099c166` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-00341880v1>
-- Possible affected pages: `articles/newman-pentanomials.html`, `articles/sparse-factorization.html`, `articles/sparse-gaps.html`, `articles/trinomials.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### DEFICIENCY OF p\-CLASS TOWER GROUPS AND MINKOWSKI UNITS
-
-- Event: `eb9195e1a328819aa85e` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-03168009v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal Methodologies: Getting Lost to Explore the Potential of the Non\-innocence of Nature
-
-- Event: `eb67e90cf56d53f8bb7e` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.58295/2375-3668.1499>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Linked collectors and determiners for: A review of the arboreal Afrotropical ant genus Axinidris\.\.
-
-- Event: `eb456abfbef2aab3481f` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23786919
-- Link: <https://zenodo.org/records/23786919>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Stability in Witt rings and abelian subgroups of pro\-2\-galois groups
-
-- Event: `ea09b1899ffa0964be8c` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1216/rmj-1989-19-3-985>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### A note on the Hilbert irreducibility theorem\. The irreducibility theorem and the strong approximation theorem
-
-- Event: `ea0916e49838b01f2309` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.3792/pjaa.66.101>
-- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/specialization.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Prime polynomials in Legendre intervals over F\_\{2^k\}\[t\], IV: point counts on hexad modular curves, Brown invariants of Witt sheaves, and the constant X
-
-- Event: `e80fed64362799f11147` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: Version 2
-- Link: <https://zenodo.org/records/23308682>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Tchebotarev theorems for function fields
-
-- Event: `e74690ccda8e05a9c2c2` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-01623558v1>
-- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/field-extensions.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-correspondence.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/sparse-finite-fields.html`, `articles/specialization.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On a Galois property of fields generated by the torsion of an abelian variety
-
-- Event: `e491258ed376316936fe` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-04148573v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal Pollen
-
-- Event: `e42996af4146aa62508d` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/978-3-030-58292-0_10713>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Eulerian polynomials and the g\-indices of Young tableaux
-
-- Event: `e1d309ba290794b38cb3` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://cnrs.hal.science/hal-04287082v1>
-- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On Galois correspondence between intermediate fields and closed derivation subalgebras
-
-- Event: `e11c65049249c0f0cc82` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1215/kjm/1250521560>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The Mathieu Group M₂₃ as a Galois Group over ℚ:
-
-- Event: `dcca023004d27f9e2e06` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 22971752
-- Link: <https://zenodo.org/records/22971752>
-- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/field-extensions.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-correspondence.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Recent and Past Arboreal Change: Observational and Retrospective Studies Within a Subalpine, Birch\-Dominated \(Betula Pubescens Ssp\. Czerepanovii\) Mountain Valley in the Southern Swedish Scandes\-Responses to Climate Change and Land Use
-
-- Event: `dbd7999117a8742edc81` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.14738/aivp.106.13467>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### A Bit\-Serial Multiplier Architecture for Finite Fields Over Galois Fields
-
-- Event: `db05cc3c8842259fce19` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.3844/jcssp.2010.1237.1246>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Long\-Furred Arboreal Rice Rat Oecomys trinitatis \(Allen &amp; Chapman, 1893\)
-
-- Event: `da6ee24b27a2c403109b` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/978-3-031-45537-7_212-2>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Distribution and Numbers of Arboreal Birds between the Hyper\-Arid Sahara and the Hyper\-Humid Guinea Forests
-
-- Event: `da4768d2845333c20be4` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.5253/arde.2022.a17>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Canonical decomposition of irreducible linear differential operators with symplectic or orthogonal differential Galois groups
-
-- Event: `da462f185373806ba112` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1088/1751-8113/48/10/105202>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Composición florística arbórea e interpretación sucesional de un fragmento agroambiental tropical universitario en El Salvador; Arboreal Floristic Composition and Successional Interpretation of a Tropical University Agroenvironmental Fragment in El Salvador
-
-- Event: `d7ddfbacd1ec66a94c1e` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.46380/ecotemas-2026-4-93>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### ON THE HEIGHT OF SOME GENERATORS OF GALOIS EXTENSIONS WITH BIG GALOIS GROUP
-
-- Event: `d7263e592a180ecc1c95` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 2
-- Link: <https://hal.science/hal-04485372v2>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The role of algebraic solutions in planar polynomial differential systems
-
-- Event: `d568ed05714d15dbee48` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-01170955v1>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The dihedral Lie algebras and Galois symmetries of $\\pi\_1^\{\(l\)\}\(\\mathbb\{P\}\-\(\\\{0,\\infty\\\}\\cup \\mu\_N\)\)$
-
-- Event: `d564a88540f13b83937f` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1215/s0012-7094-01-11031-4>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Hyperbolicity of Jensen Polynomials for the Riemann Ξ\-Function via Hermite–Stiffness Duality, Laguerre–Samuelson Root Bounds, and Complex Cauchy–Hermitian Shifts
-
-- Event: `d53a6a0bc24c12bf8ef9` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23987495
-- Link: <https://zenodo.org/records/23987495>
-- Possible affected pages: `articles/archimedean-criteria.html`, `articles/eisenstein-dumas.html`, `articles/integer-values.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Monotonicity of Turán determinants for binary Krawtchouk polynomials
-
-- Event: `d4c3eb76796e23819e8f` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 2\.0\.3 \(with source archive\)
-- Link: <https://zenodo.org/records/23384880>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
-
-- Event: `d4a7061613d87f0d275b` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v5
-- Link: <https://zenodo.org/records/23745389>
+### Eigenvalue Crossings and Discontinuous BBP Transitions in Spiked Euclidean Random Matrices
+
+- Event: `fbe04a22a23808ef3d3c` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.15927v1>
 - Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### A note on pseudo\-CM representations and differential Galois groups
-
-- Event: `d31f6464d679a04dbec0` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1215/s0012-7094-87-05405-6>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal height of integer\-interlaced cubic squares
-
-- Event: `d2ae183485847ab3b958` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 1\.1
-- Link: <https://zenodo.org/records/23779412>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/discriminants.html`, `articles/field-extensions.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-correspondence.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Matrix elements of SO\(3\) in sl 3 representations as bispectral multivariate functions
-
-- Event: `d28c0b9e563c78c70534` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-04738429v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Degenerate fourfold Massey products over arbitrary fields
-
-- Event: `d1a85ef72cbd34b5ab43` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-05373694v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### How far automorphisms of a p\-adic absolute Galois group move the ring of integers: to the edge of the log\-shell, with an application to Step \(v\) of IUT IV
-
-- Event: `d05dd6cefb0b275edc3d` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 1\.1\.0
-- Link: <https://zenodo.org/records/24057859>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arithmetic Primitive\-Orbit Rigidity in Stationary CCR Polynomials: Shift Companions, Prime Divisors, and Bernoulli Ladders
-
-- Event: `cfe080b98a9bd5017f5d` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23670946
-- Link: <https://zenodo.org/records/23670946>
-- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal microhabitats associated with phlebotomine sand flies in Caribbean Colombia: Integrative identification using COI barcoding
-
-- Event: `cea734b63c1910193535` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1016/j.parint.2026.103405>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Homomorphisms of Galois groups of solvably closed Galois extensions
-
-- Event: `ce6b9adcae621d59e25a` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.2969/jmsj/03340595>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
-
-- Event: `ccb9a75a8241def00cee` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v10
-- Link: <https://zenodo.org/records/23842825>
-- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### A Galois theory for differential fields
-
-- Event: `cbda63cfb2b843d71ff6` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1215/s0012-7094-43-01071-3>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Global irreducibility and Galois groups of Chebyshev–Lucas level polynomials
-
-- Event: `cb317f45a12585d174f9` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23355688
-- Link: <https://zenodo.org/records/23355688>
-- Possible affected pages: `articles/archimedean-criteria.html`, `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/eisenstein-dumas.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/integer-values.html`, `articles/inverse-galois.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Hecke eigenvalues in level 1 modulo powers of 2 and 3: Hatada's question \(1981\) and the Coleman\-Stein conjecture
-
-- Event: `cb1404b6c4a904fada66` (new, detected 2026-11-13T05:12:43Z)
-- Source: hexagon; version: v1
-- Link: <https://hexagonmath.org/abs/2611.00035v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Shifted Bernstein–Legendre polynomial collocation algorithm for numerical analysis of viscoelastic Euler–Bernoulli beam with variable order fractional model
-
-- Event: `cab86a387ef25f4dc2f8` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-04444998v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Tree Day: A Story of 24 Hours and 24 Arboreal Lives
-
-- Event: `ca9cfdf1bf94b5a9e0ba` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.3375/2162-4399-46.4.12>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### A Galois tower attached to the polynomials x^\(2^k\)\+1 and x^\(2^k\)\+3: structure, characters, ramification and the quotient modulo 12
-
-- Event: `c957119555c1dce1952f` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.2139/ssrn.7606969>
-- Possible affected pages: `articles/discriminants.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### A New Experimental Protocol for Assessing Hominoid Assisted Arboreal Bipedalism
-
-- Event: `c8f41f1c8afea0e7b816` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-05458063v1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Galois theory for uni\-serial rings\.
-
-- Event: `c84b3689e565a6a8c2b3` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.2969/jmsj/00120130>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On the extension theorem of the Galois theory for finite factors
-
-- Event: `c7c0ad9c4d6b3ee54704` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.3792/pja/1195523811>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The Distribution of $x^\{p^n\}\+x^\{\-1\}$ over Finite Fields and Self\-Adjoint Irreducible Polynomials
-
-- Event: `c770413af69bc572304a` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23878333
-- Link: <https://zenodo.org/records/23878333>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/newman-pentanomials.html`, `articles/sparse-factorization.html`, `articles/sparse-finite-fields.html`, `articles/sparse-gaps.html`, `articles/trinomials.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On Galois theory of central separable algebras over Artinian rings
-
-- Event: `c76e1f061650acb8495f` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.2996/kmj/1138846721>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Families of Galois representations and $\(\\varphi,\\tau\)$\-modules
-
-- Event: `c74cfe6f4174a2f846a8` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-05612849v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Mechanisms of Forest Clearing Affecting Arboreal Snake Habitat Utilization
-
-- Event: `c6a9bd078b199bb078c7` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.61173/f2ahzc67>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Molecular phylogeny of South\-East Asian arboreal murine rodents
-
-- Event: `c4bb989a81e33cbc4a8b` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-01606856v1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Mike Boyle \- Nonnegative matrices : Perron Frobenius theory and related algebra \(Part 2\)
-
-- Event: `c3ca5142bd4285af83a4` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/medihal-01319259v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
-
-- Event: `c36eeb0f7a8ab87c67af` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v9
-- Link: <https://zenodo.org/records/23840826>
-- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Toward a queer arboreal heritage
-
-- Event: `c2dd64bf8a05adcbaf43` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-05402019v1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Hyperbolicity of Jensen Polynomials for the Riemann Ξ\-Function via Hermite–Stiffness Duality, Laguerre–Samuelson Root Bounds, and Complex Cauchy–Hermitian Shifts
-
-- Event: `c2807350ea4abbb38b8d` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23731064
-- Link: <https://zenodo.org/records/23731064>
-- Possible affected pages: `articles/archimedean-criteria.html`, `articles/eisenstein-dumas.html`, `articles/integer-values.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The Galois groups of the polynomials $x^n\+ax^s\+b$, II
-
-- Event: `c1ee9111a981b035f722` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.2748/tmj/1178228289>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Long Term Arboreal Change in a Landscaped Urban Park: Central Park, New York
-
-- Event: `bf62181231e0a70204d9` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.48044/jauf.1993.038>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Dynamic analysis of variable fractional order cantilever beam based on shifted Legendre polynomials algorithm
-
-- Event: `bf525f436b34a4d8068d` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-04445071v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Prime polynomials in Legendre intervals over F\_\{2^k\}\[t\], IV: point counts on hexad modular curves, Brown invariants of Witt sheaves, and the constant X
-
-- Event: `bb97f86b88b574f79580` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23299284
-- Link: <https://zenodo.org/records/23299284>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Galois groups of Taylor polynomials: prescriptions and arithmetic families
-
-- Event: `bb6aab8545bd773e7777` (new, detected 2026-11-13T05:12:43Z)
-- Source: hexagon; version: v3
-- Link: <https://hexagonmath.org/abs/2610.00527v3>
-- Possible affected pages: `articles/discriminants.html`, `articles/eisenstein-zero-polynomials.html`, `articles/fekete.html`, `articles/frobenius.html`, `articles/hecke-polynomials.html`, `articles/kaneko-zagier.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/taylor-prescriptions.html`, `articles/taylor.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Parity Families of Lattice Paths and Real\-Rooted Signed Eulerian Polynomials
-
-- Event: `b8ddacbd043acf7d6209` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 3\.0\.0
-- Link: <https://zenodo.org/records/24169702>
-- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal Prey\-Handling of Endothermic Prey by Captive Boa Constrictors
-
-- Event: `b8ad9357085ed24c6238` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1670/20-039>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On the irreducibility and monodromy of Tutte polynomials
-
-- Event: `b89c65e4aded0672380f` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-05299433v1>
-- Possible affected pages: `articles/bernoulli-euler.html`, `articles/branched-covers.html`, `articles/chromatic-polynomials.html`, `articles/critical-points-monodromy.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/multivariate-factorization.html`, `articles/multivariate-irreducibility.html`, `articles/multivariate-newton-polytopes.html`, `articles/polynomial-fibers.html`, `articles/separated-variable-polynomials.html`, `articles/specialization.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Preperiodic dynatomic curves for z\-&gt;z^d\+c
-
-- Event: `b6e7ea7c7404c4f7812c` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 2
-- Link: <https://hal.science/hal-00814548v2>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal
-
-- Event: `b689d7da8730d7aa1c7d` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/978-3-030-58292-0_10712>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### GALOIS GROUPS OF DIFFERENCE EQUATIONS OF ORDER TWO ON ELLIPTIC CURVES
-
-- Event: `b5e682fbf69030e90d2b` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-01897304v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On Galois theory of division rings
-
-- Event: `b5e2bcd90b2e484a0086` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.3792/pja/1195525432>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On Closure Properties of Read\-Once Oblivious Algebraic Branching Programs
-
-- Event: `b5b29c0750cd11f6aa17` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-05252464v1>
-- Possible affected pages: `articles/newman-pentanomials.html`, `articles/sparse-factorization.html`, `articles/sparse-gaps.html`, `articles/trinomials.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Reproduction and growth in a Neotropical arboreal mouse: Oecomys rutilus \(Sigmodontinae: Cricetidae\) in French Guiana
-
-- Event: `b4c8c94ffd1ad21c2112` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-02944513v1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Periods of Eisenstein series: The Galois case
-
-- Event: `b4adaa8052534c162785` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1215/s0012-7094-03-12016-5>
-- Possible affected pages: `articles/eisenstein-zero-polynomials.html`, `articles/fekete.html`, `articles/hecke-polynomials.html`, `articles/kaneko-zagier.html`, `articles/taylor-prescriptions.html`, `articles/taylor.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal Agency and the Decentering of the Human: Posthuman Ethics in Richard Powers' The Overstory
-
-- Event: `b11986f525444241c931` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.63797/n9gvxe31>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Tapajós Arboreal Rice Rat Oecomys tapajinus Thomas, 1909
-
-- Event: `b0ede0b002b3cb08a6a6` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/978-3-031-45537-7_211-1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Anabelian presentation of the motivic Galois group in characteristic zero
-
-- Event: `b0dc2cd877d1700bdf0f` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1017/fms.2026.10289>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arithmetic Dynamics as the Seventh World: The Law of Forgetting for z^2\+c
-
-- Event: `abb199752d5a5f27465b` (new, detected 2026-11-13T05:12:43Z)
-- Source: hexagon; version: v1
-- Link: <https://hexagonmath.org/abs/2610.00691v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Analytic lie extensions of number fields with cyclic fixed points and tame ramification
-
-- Event: `aafe7220369601cc15f5` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-01622014v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
-
-- Event: `aa9c964e0bb4080be14c` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v12
-- Link: <https://zenodo.org/records/23870936>
-- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The Galois group of xn\+x−t
-
-- Event: `a9cea1022e3d5e029d3a` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1215/s0012-7094-73-04039-8>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### LOCALLY FINITE OUTER GALOIS THEORY
-
-- Event: `a9b5fd2030e057f6b672` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.14492/hokmj/1530064827>
-- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Linked collectors and determiners for: First record in Canada for the bicolored arboreal carpenter ant Camponotus discolor Buckley \(Hymenoptera: Formicidae\)\.
-
-- Event: `a86ca75367f2ef7cd98f` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23795952
-- Link: <https://zenodo.org/records/23795952>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Galois representations modulo $p$ that do not lift modulo $p^2$
-
-- Event: `a7ab491c2fa9fd657332` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-05373722v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
-
-- Event: `a48990a9101a49d622c6` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v4
-- Link: <https://zenodo.org/records/23717550>
-- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/factor-reversal.html`, `articles/generic-polynomials.html`, `articles/height-counting.html`, `articles/inverse-galois.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/specialization.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### An arboreal and folivorous monkey, the endangered ashy red colobus \(Piliocolobus tephrosceles\) exists across dry deciduous savanna woodland in Tanzania
-
-- Event: `a40a62fb527d18211cbb` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1016/j.gecco.2026.e04323>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal life supports slow and steady pace of life in the Pacific dry forest of Ecuador
-
-- Event: `a305a8db016b962da5c8` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1038/s41598-026-77798-7>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The distribution of the Galois groups of integral polynomials
-
-- Event: `a24d7058045abdd9fa67` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1215/ijm/1256048323>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Compensators Design using Laguerre Polynomials Applied to a Real Steer\-by\-Wire System of Autonomous Vehicle
-
-- Event: `a22af189c8a44dbd6ede` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-04735234v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Calculs explicites dans les groupes de Grotendieck et de Chow des variétés homogènes projectives; Explicit computations of Chow and Grothendieck groups for projective homogeneous varieties
-
-- Event: `a1b098911be5f1718c23` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://theses.hal.science/tel-00120949v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Real fields with small Galois groups
-
-- Event: `a15606bc62df0d8c5f48` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1216/rmj-1984-14-4-817>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Franciscos’ Arboreal Rice Rat Oecomys franciscorum Pardiñas, Teta, Salazar\-Bravo, Myers &amp; Galliari, 2016
-
-- Event: `a144f4df0648691211dd` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/978-3-031-45537-7_200-1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
-
-- Event: `a0f0cc08a4279ed60789` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v11
-- Link: <https://zenodo.org/records/23846732>
-- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### KEANEKARAGAMAN SERANGGA ARBOREAL DIKAWASAN KEBUN SAYUR DAN DANAU BUATAN TANJUNG SIDOREJO LEMPAKE SAMARINDA UTARA
-
-- Event: `a035fc9c06366055b617` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.30872/ztzxz606>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### ON A SIMPLE RING WITH A GALOIS GROUP OF ORDER $p^\{e\}$
-
-- Event: `9f6586ef44993997a109` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.14492/hokmj/1530756195>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### E\. Yasinsky \- Equivariant Birational Geometry of Surfaces
-
-- Event: `9e8b83a5c6cf3c38f7df` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-05483366v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal signals in the skeletal proportions of the Gorilla foot
-
-- Event: `9d806f3e9d5ac64d2c16` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1111/joa.70259>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Uniform irreducibility and Galois groups of generalized Laguerre polynomials
-
-- Event: `9b9f7d27d9efe57fee1a` (new, detected 2026-11-13T05:12:43Z)
-- Source: hexagon; version: v1
-- Link: <https://hexagonmath.org/abs/2611.00087v1>
+### Asymptotic Root Dynamics under Repeated and Fractional Integration
+
+- Event: `fb448a1d86f36ff83482` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.12498v2>
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Racah problems for the oscillator algebra, the Lie algebra sl\(n\), and multivariate Krawtchouk polynomials
+### A Dynamical Néron\-\-Ogg\-\-Shafarevich Criterion via Orbital Arboreal Representations
 
-- Event: `9ad21794eae635e81c5b` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-02885779v1>
+- Event: `faf8fc9126e28cf16c08` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v4
+- Link: <https://arxiv.org/abs/2510.23097v4>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### $R$\-trivial Galois cohomology classes and cohomological $p$\-dimension
+
+- Event: `faf58a4c122471f34a2a` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.22758v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Monotonicity and bounded variation for harmonic mappings with applications to special functions
+
+- Event: `fa283e3eda0bd79f934a` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.02290v1>
 - Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Galois groups of polynomials
+### Dynamics and non\-integrability of the Swinging Atwood Machine with a massive string: chaos, periodic orbits and resonance structures
 
-- Event: `99b30307ad25d73f2661` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.3792/pjaa.60.127>
+- Event: `f7e3a80e29c384f05c35` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2608.09310v2>
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### An effective\-conductance bound for the arboreal gas
+### Entanglement for elliptic curve group orders
 
-- Event: `998a6ef2142a83c629d0` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v1
-- Link: <https://zenodo.org/records/24047743>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### On the structure of the Galois group of the Abelian closure of a number field
-
-- Event: `97fce9bc48c718e600aa` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 4
-- Link: <https://hal.science/hal-00764649v4>
+- Event: `f792dd53a4d6da00aff3` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.01204v1>
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
+### Counting irreducible skew polynomials $x^\{2n\}\+ax^n\+1$
 
-- Event: `97a7b62ac7e10d5b46e8` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v6
-- Link: <https://zenodo.org/records/23748602>
+- Event: `f69c037d8225562b8289` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.04767v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Universality transitions in the logarithmic law of random determinants beyond the fourth moment
+
+- Event: `f52b61713c54d0404c4b` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.11688v2>
 - Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Cleber’s Arboreal Rice Rat Oecomys cleberi Locks, 1981
+### TorchCurves: Differentiable Parametric Curves
 
-- Event: `966e82f33a3f3f9cf477` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/978-3-031-45537-7_197-1>
+- Event: `f4dbfc11572d9bb10b3e` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.14516v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Finite Cotangent Power Sums Weighted by Additive Characters With Application to Mean Values of Additive\-and\-Multiplicatively Twisted $L$\-Functions
+
+- Event: `f3f8662090bff31d1779` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.01801v1>
+- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Sharp singularity asymptotics for discrete random matrices
+
+- Event: `f2e2d18f2c6af19f4034` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.39463v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### From Inverse Vandermonde Matrices to the Shift Structure of the Dirichlet Eta and Beta Functions
+
+- Event: `f2daca1afa637c87a471` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.26408v2>
+- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Primitive Polynomials of the Form $g\(x\)\+λ$ over Finite Fields: Non\-Existence Results and Conjectures
+
+- Event: `f2b1a7f77a24eaded18a` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2608.07262v3>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Quantum synchronizable codes, polynomial and quasi\-polynomial shifts
+
+- Event: `f25f1d3195c383f5ac89` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.10903v1>
+- Possible affected pages: `articles/newman-pentanomials.html`, `articles/sparse-factorization.html`, `articles/sparse-gaps.html`, `articles/trinomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Shift\-Invariant Permutations with Polynomial Composition: Construction and Algebraic Structure
+
+- Event: `f18730bd1a800854141c` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.31174v2>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/newman-pentanomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/sparse-factorization.html`, `articles/sparse-gaps.html`, `articles/trinomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Scott\-type inequalities for trinomial $h^\*$\-polynomials
+
+- Event: `f171c55c0b5be19d27b7` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.35287v1>
+- Possible affected pages: `articles/newman-pentanomials.html`, `articles/sparse-factorization.html`, `articles/sparse-gaps.html`, `articles/trinomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Old structures, a vanishing formula
+
+- Event: `ef5502fdc89542cd975a` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.20192v1>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/sparse-finite-fields.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Non\-liftability of the field of norms of the $p$\-adic false Tate curve extension
+
+- Event: `ef4f3562713531e929bd` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.35006v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Logarithmic corrections to massive particle trajectories for the classical soft log theorems at leading order in $G$
+
+- Event: `eec8084890437e53bad4` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.09216v2>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Evaluation of a Double Integral with Exponentials and Two Generalized Laguerre Polynomials and Its Associated Moments
+
+- Event: `ee4fb261c949ce990120` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.35995v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### An Equivariant Main Conjecture for Branched $\\mathbb Z\_p$\-Towers of Finite Graphs and Applications
+
+- Event: `ed98ce4eafcdf1ea91bd` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.27551v2>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### The Legendre potential and the gradient case of the differential Galois criterion for the Jacobian Conjecture
+
+- Event: `ec1513abd1f735773a58` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.36736v1>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Edge universality of sparse Erdős\-Rényi digraphs
+
+- Event: `e918b62f49f4021200fd` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v7
+- Link: <https://arxiv.org/abs/2304.04723v7>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Reflection equations and Littlewood identities for spin Hall\-Littlewood and $q$\-Whittaker functions
+
+- Event: `e7526cce91ce63d819ac` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.36644v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Equidistribution, multipliers, and moving targets in polynomial families
+
+- Event: `e71e8c38eec48c6b2472` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.25509v1>
 - Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Hyperbolicity of Jensen Polynomials for the Riemann Ξ\-Function via Hermite–Stiffness Duality, Laguerre–Samuelson Root Bounds, and Complex Cauchy–Hermitian Shifts
+### The bigraded Frobenius series of the wreath product superspace coinvariant rings
 
-- Event: `953a9df3fffc3367833e` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23977400
-- Link: <https://zenodo.org/records/23977400>
-- Possible affected pages: `articles/archimedean-criteria.html`, `articles/eisenstein-dumas.html`, `articles/eisenstein-zero-polynomials.html`, `articles/fekete.html`, `articles/hecke-polynomials.html`, `articles/integer-values.html`, `articles/kaneko-zagier.html`, `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`, `articles/orthogonal-families.html`, `articles/taylor-prescriptions.html`, `articles/taylor.html`
+- Event: `e6f8de9a998e566f2d47` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.38875v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### 4\-Dimensional Chess: Acoustic Localisation Reveals Nested Spatio\-temporal Strategies in an Arboreal Communication Network
+### Enhanced Dissipation by Transport Noise for Stochastic $p\(x\)$\-Laplace Equations
 
-- Event: `942a5c060070377c3b45` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.64898/2026.09.21.752596>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
+- Event: `e5d00bb1028a24c24c40` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.21242v2>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Irreducibility over valued fields in the presence of a secondary valuation
+### Invariant pseudo\-unitary matrix ensembles and local statistics and conductance fluctuations of the DMPK ensemble
 
-- Event: `942a1dc9ba27822934fd` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.32917/hmj/1150998160>
-- Possible affected pages: `articles/archimedean-criteria.html`, `articles/eisenstein-dumas.html`, `articles/integer-values.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`
+- Event: `e522f91f5d4612c6da44` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.27532v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Invariance in inseparable Galois theory
+### Whittaker groups and hyperelliptic curves
 
-- Event: `934217951a2c4ee7739d` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1216/rmj-1979-9-3-395>
+- Event: `e46191b4582b0b1786e6` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2605.22406v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Harper's beyond square\-root conjecture for random matrices
+
+- Event: `e38731386d2b04d1c6c2` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2611.09753v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Measures and Models of Non\-Monotonic Dependence
+
+- Event: `e320139c9289679669bb` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2512.10828v3>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### The distribution of $απ$ modulo one in $\\mathbb\{F\}q\(T\)$: beyond Matomäki's exponent
+
+- Event: `e3074e708d6323ad4b1e` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2611.00623v2>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Zeros of Katz's p\-adic Eisenstein series E2
+
+- Event: `e1466d4d5e2ff081a528` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.14502v1>
+- Possible affected pages: `articles/eisenstein-zero-polynomials.html`, `articles/fekete.html`, `articles/hecke-polynomials.html`, `articles/kaneko-zagier.html`, `articles/taylor-prescriptions.html`, `articles/taylor.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Quantum Control Geometry as a Metric of Chaos
+
+- Event: `deab2fe34e2d172452c4` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.13101v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### The ultraspherical background of the Jacobi phase expansion, in closed form
+
+- Event: `db8a485c1c444fd2f73b` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.29531v2>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Monitoring for a Phase Transition in a Time Series of Wigner Matrices
+
+- Event: `db714d24a2e281451dcc` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2507.04983v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Almost all graphs are determined by their generalized spectrum
+
+- Event: `db6efb5d19d09681ce05` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.11047v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/sparse-finite-fields.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Finite Fields: Root Sets, Frobenius, and Algebraic Structure
+
+- Event: `db12fb8e457e42a05f68` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.36727v2>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/discriminants.html`, `articles/field-extensions.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-correspondence.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Support periods of polynomials and support\-primitive decomposition of constacyclic codes over Galois rings
+
+- Event: `d99c63f09357e852c599` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.29284v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### A Dynamical Fekete\-Szegő Theorem
+
+- Event: `d8da29cb79131eb6ca16` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2603.01684v2>
 - Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Bernoulli Transport Sieves and Finite\-Range Integer\-Source Triple\-Zero Exclusion in Stationary CCR Polynomials
+### Landau\-Siegel zeros over a base field and effective Brauer\-Siegel
 
-- Event: `92715126ec857804cc8e` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23670863
-- Link: <https://zenodo.org/records/23670863>
+- Event: `d865863a66917145c232` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.31402v2>
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Arboreal height of integer\-interlaced cubic squares
+### On the asymptotic distribution of the largest eigenvalue of unbalanced complex Jacobi ensembles
 
-- Event: `8fe5bedfeea5161a6988` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 1\.0
-- Link: <https://zenodo.org/records/23479534>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/discriminants.html`, `articles/field-extensions.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-correspondence.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Mike Boyle \- Nonnegative matrices : Perron Frobenius theory and related algebra \(Part 1\)
-
-- Event: `8fa35eb4073ed1452236` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/medihal-01319245v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Tree diversity, not tree density, predicts abundance of an endemic arboreal gecko on restored tropical islands
-
-- Event: `8effcbe683c722a28aa1` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 23191899
-- Link: <https://zenodo.org/records/23191899>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Assessing the impact of forest structure disturbances on the arboreal movement and energetics of orangutans—An agent\-based modeling approach
-
-- Event: `8ef5b2f7d9f5418bfc6a` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/hal-03885024v1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Almost\-Sure Radial Laws for Nested Random Polynomials and Erdős Problem \#522
-
-- Event: `89405bb521e7fbe3845c` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: 22970145
-- Link: <https://zenodo.org/records/22970145>
+- Event: `d68204fc632dc483d922` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.00577v1>
 - Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-Showing the latest 150 of 276 events; state.json retains the complete queue.
+### Geometric characterization of $p$\-exceptional monomial GAPN functions
+
+- Event: `d6515929f9b047b6c679` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2608.08969v2>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Differential Recursions, Projective Discriminants, and Algebraic Generating Functions
+
+- Event: `d5d6dcb058408675c3e7` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.31189v2>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Beyond Polynomials: Optimal Locally Recoverable Codes from Good Rational Functions
+
+- Event: `d29bc7a5e2ee481ccb38` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2605.11465v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/field-extensions.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-correspondence.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Retriangular numbers and affine maps between polygonal numbers
+
+- Event: `d1985a70632064bda23d` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.36284v1>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### The smallest singular value for rectangular random matrices with Lévy entries
+
+- Event: `d1220efe95f0edf0505d` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2412.06246v3>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Excluding 54 of the 76 Nontrivial Factorization Patterns of the Cuboid Polynomial $P\_\{a,b,u\}\(t\)$
+
+- Event: `d0e3c01e476743924a9d` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.10012v1>
+- Possible affected pages: `articles/archimedean-criteria.html`, `articles/eisenstein-dumas.html`, `articles/integer-values.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### The permutation automorphism groups of irreducible cyclic codes
+
+- Event: `d010b5aa4269558411bb` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2603.01904v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### The fixed\-point proportion of Lattès maps
+
+- Event: `cece3f43e841ad083eff` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2611.07816v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### A sharp weighted $L^2$ Bernstein inequality for partial derivatives on the unit ball
+
+- Event: `ce49e33d2e137fa93208` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.09306v1>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Good rational functions up to degree six
+
+- Event: `ce1e9fa46536ebfbbf07` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.03368v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### PIT and Reconstruction for Sums of Powers
+
+- Event: `ce1628b8acd3effc8ea8` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.07106v1>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Newforms as test vectors for representations of Saito\-Kurokawa type
+
+- Event: `cd17555849386b26ddae` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.15483v1>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Actions of the absolute Galois group
+
+- Event: `cd0c53b283cc278a9791` (new, detected 2026-11-13T20:10:38Z)
+- Source: hal; version: 1
+- Link: <https://hal.science/hal-01381981v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Permutation symmetries and characteristic polynomials
+
+- Event: `cc74440cdb1666b46db9` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.12606v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Trivial Iwasawa modules and arithmetic linking numbers
+
+- Event: `cc6a0c831db18bf487f2` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.31965v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Schur positivity of the nabla operator on two\-column modified Hall\-\-Littlewood polynomials
+
+- Event: `cc22d725f88c63f69ee7` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2605.20954v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Galois Action and Localization in Number Fields
+
+- Event: `c93d1545242a64a60218` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v6
+- Link: <https://arxiv.org/abs/2510.10018v6>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Actions of the absolute Galois group
+
+- Event: `c8a56d0b107c7976e190` (new, detected 2026-11-13T20:10:38Z)
+- Source: hal; version: 1
+- Link: <https://hal.science/hal-01286494v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Weak Hurwitz stability of extended Turán expressions for Stirling\-\-Whitney\-\-Riordan and Laguerre polynomials
+
+- Event: `c7938ffed7d407ff8e8c` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.35783v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Remarks on prescribed scalar curvature functions
+
+- Event: `c49f62ff79c342cb862d` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.19667v1>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Iterative Orthogonalization Scaling Laws
+
+- Event: `c44e093e1fc34128bd3d` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2505.04005v3>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Discontinuity at the Pole
+
+- Event: `c44d6b3fabfd421cd496` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.31759v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### A unified approach to fluctuations of LES of time\-dependent generalized patterned random matrices
+
+- Event: `c447d0f6d0e265dfe520` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.06686v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Real\-rooted Eulerian polynomials from permutations, words, and paths
+
+- Event: `c4251a44bb200a2a0da3` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.07325v2>
+- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Counting Nilpotent Galois extensions with prescribed genus number
+
+- Event: `c36b4bcec525e5d0931c` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.01556v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Operator limits of random matrices: Edge universality and sharp approximations
+
+- Event: `c32f0707654420abf587` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.35808v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/factor-reversal.html`, `articles/frobenius.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Edge universality in Floquet sideband spectra
+
+- Event: `c2860ba19fb69f15ee33` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2604.05244v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Petersson\-rigid lattices of signature \(2,1\) and their harmonic weak Maass forms
+
+- Event: `c197929ee84be933cb09` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.40519v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Twisted $\\mathbb\{A\}^1$\-degrees of Wronski maps
+
+- Event: `bfbab32e02a054a87b14` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.23816v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Taylor Positivity of Ehrhart Polynomials
+
+- Event: `bf9d87af9df07d8d70bc` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.03327v2>
+- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On Modelling the Scattering of Highly Nonlinear Transient Water Waves Due to Surface\-Piercing Cylinder\. Part I: Formulations and Verifications
+
+- Event: `be072c7c34a3163b2d44` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.02369v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Eremenko's conjecture on higher\-order Briot\-\-Bouquet equations
+
+- Event: `bc7a7617a5aa1f84f7f0` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.19243v1>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/branched-covers.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### CM Elliptic Analogue of the Coleman\-\-Ihara Formula
+
+- Event: `bb3a715a9368011ab916` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.21052v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Poly Versus Polyval
+
+- Event: `bad3a0fbde907557cce7` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.41565v1>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Multilevel limits of spiked random matrix corners processes
+
+- Event: `b900cc8c6914a66cb172` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2608.01531v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Second order Recurrences, quadratic number fields and cyclic codes
+
+- Event: `b7962b8526790632f919` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2603.25343v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Impact of metric characteristics of the matrix graph on the convergence of the conjugate gradient method
+
+- Event: `b56fe00784b64d45dc58` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.15393v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Étale Fundamental Groups: a geometric and topological approach to fundamental groups in algebraic geometry
+
+- Event: `b505c11e98e718460724` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2606.23906v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/field-extensions.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-correspondence.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Extreme values of Artin $L$\-functions at $s=1$
+
+- Event: `b32b29c285c64dc6a17c` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.40267v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Galois groups of polynomials over a fixed number field: determinant methods in general boxes, resolvents, and quantitative counting
+
+- Event: `b213ffb789414c372ae6` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.35030v1>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/field-extensions.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-correspondence.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On the dimension conjecture for global Galois deformation rings in characteristic two
+
+- Event: `b0ea2d4d5fb04d0d971d` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.21298v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Multivariate $P$\- and $Q$\-polynomial structures of generalized Johnson association schemes
+
+- Event: `b0e42cb59beed1100578` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.22058v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Spectrum of non\-Hermitian self\-normalized random matrices with heavy tails
+
+- Event: `af923fa2b64ebdc2e1d3` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.17064v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/factor-reversal.html`, `articles/frobenius.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Postcritically Finite Unicritical Polynomials over CM Fields
+
+- Event: `ae27401fe231c8b24725` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.16354v1>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Faster Linear Algebra Algorithms with Structured Random Matrices
+
+- Event: `ad92fe59b7a454015bdf` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2508.21189v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### A Discontinuous Galerkin Framework for Efficient Simulation of Cyclic Voltammetry Models
+
+- Event: `ad3d944be2a9e531578a` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.04718v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Irreducibility of the Cuboid Polynomial $P\_\{a,u\}\(t\)$ via a Rank\-Zero Elliptic Curve
+
+- Event: `ac0a0108c24b3e086237` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v4
+- Link: <https://arxiv.org/abs/2510.11768v4>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On Lehmer's Problem
+
+- Event: `abc9e8a82689f707fdb0` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.33631v1>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Integral Specializations of Polynomials: Hilbert Irreducibility, Coprimality, and Density
+
+- Event: `ab3dad17c1c8c2ea5bf6` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.20165v1>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Optimal Rates for Adaptive Private $k$\-PCA
+
+- Event: `aa3df49b636bd175c1ec` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.12419v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Arbitrarily Many Primitive Prime Divisors in an Iterate of $x^d\+c$
+
+- Event: `a93e02fa1a1a7da5d09b` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2209.07624v3>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Moment representations for generalized Lehmer polynomials
+
+- Event: `a8bb79bfa55b7bcac867` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.36409v1>
+- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Bounds for Orthogonal Expansion Coefficients via Weighted Primitives
+
+- Event: `a6d8e0fe94ec46db1a58` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.04067v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Characterization of the Tau Spectrum for Eigenvalue Problems
+
+- Event: `a65afd2a7acae87b1087` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.40307v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Improved Training of Strong Stochastic Flow Maps
+
+- Event: `a5548c72744cd8730030` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.29605v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Towards a recursive construction of string scattering amplitudes
+
+- Event: `a44f4539ba4f376be15e` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.09398v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On some stochastic evolutions on Laguerre\-Polya functions
+
+- Event: `a3d823ce3916de4b8db0` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.08073v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Dark Subspaces and Invariant Measures of Quantum Trajectories
+
+- Event: `a1d6361fbb26981450c0` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2409.18655v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Projective Variety Recovery from Unknown Linear Projections
+
+- Event: `a1b0263f89b4903cd46e` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v4
+- Link: <https://arxiv.org/abs/2504.16771v4>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Reductions of Galois representations of slope $2$
+
+- Event: `a043a055cbda0c7ce672` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.19293v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Monogenic Fields from Polynomial Compositions with Applications
+
+- Event: `9f7e1968cca4f4968b02` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2605.00949v2>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/discriminants.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Maximum\-Entropy Ensemble of Quantum Subsystems with a Fixed Average State
+
+- Event: `9ddb2da573b63eafb790` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.39712v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Forcing ramification in the relative deformation method
+
+- Event: `9dbff1acdb3b46ec2409` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2410.03903v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Another Application of the Alternating Map: Time\-and\-Band Limiting
+
+- Event: `9ccbc8be0bc932368d4e` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2611.01839v3>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Galois lines for the maximal curve with the second largest genus in characteristic two
+
+- Event: `9ca60a336c8e336b4d3a` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.08810v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Transforms between multivariate Laguerre and Meixner polynomials and their applications to gateways
+
+- Event: `9b2942647602f3e1a72f` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.13932v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Diamonds: Homology and the Central Series of Groups
+
+- Event: `9a8f55c4dfd32c2b2266` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2310.08283v3>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### $\(r,s\)$\-Designs in the Nonbinary Johnson Scheme: Constructions and Linear Codes
+
+- Event: `98f6bf3729ff40551cb0` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.16256v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On the real\-rootedness of Ehrhart $h^\*$\-polynomials of $\(132,213\)$\-avoiding permutahedra
+
+- Event: `985a2fba93447fd9f945` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.06096v2>
+- Possible affected pages: `articles/bernoulli-euler.html`, `articles/chromatic-polynomials.html`, `articles/discriminants.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/frobenius.html`, `articles/multivariate-factorization.html`, `articles/multivariate-irreducibility.html`, `articles/multivariate-newton-polytopes.html`, `articles/permutation-groups.html`, `articles/polynomial-fibers.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/separated-variable-polynomials.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On an irreducibility theorem of A\. Schinzel associated with coverings of the integers
+
+- Event: `94a65d645a8a56f49380` (collector-schema-enriched, detected 2026-11-13T20:10:38Z)
+- Source: crossref; version: metadata only
+- Link: <https://doi.org/10.1215/ijm/1256060421>
+- Existing reference keys: filasetafordkonyagin2000
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/newman-pentanomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/sparse-factorization.html`, `articles/sparse-gaps.html`, `articles/sparse-gaps.html#schinzel`, `articles/trinomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Para families of orthogonal polynomials
+
+- Event: `931255c9f2022f2d6ca0` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.38211v2>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On multiply induced characters
+
+- Event: `92e0099094c9ec1133dd` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2609.04764v3>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On the average\-case complexity landscape for Tensor\-Isomorphism\-complete problems over finite fields
+
+- Event: `91a4bf68b150f096a990` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2604.00591v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/sparse-finite-fields.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Kernelised covariance matrices, dimension reduction and imbalanced spectral clustering
+
+- Event: `8f4d99d1077229b13fd0` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.33177v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Non\-Asymptotic Confidence Regions for Separable Nonlinear Models
+
+- Event: `8afe802c9df393504507` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.39549v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### A conjecture on Galois groups and large fields
+
+- Event: `8a9d05fe1438219855e2` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.41843v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Partition Functions of Two\-Dimensional Coulomb Gases with Circular Root\- and Jump\-Type Singularities
+
+- Event: `8a808b304451707b9f18` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2510.00843v3>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Coefficientwise Hankel\-total positivity from a universal cumulant lifting
+
+- Event: `89c9e587ff3b1ac4d801` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.01172v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### New bounds for the integer Chebyshev constant of \[0,1\]
+
+- Event: `878c32b49149d5d51e2f` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2610.00386v3>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Spectra of Random Polynomial Matrices: the Petaloid Law
+
+- Event: `8384eb44046ae1f0b757` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.40232v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Certified Monodromy Groups for Families of Hypersurfaces
+
+- Event: `8347705018067563b83b` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2509.06785v2>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Moments of Random Permanents and Hafnians: A Replica Approach
+
+- Event: `8216fe539030e4b86773` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.27872v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Double sums involving quotients of binomial coefficients
+
+- Event: `81a4b90a8b60947db6a5` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.10072v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### A Legendre\-Based Modified Extreme Learning Machine for Convection\-Diffusion Equations: Steady\-State, Continuous\-Time, and Discrete\-Time Formulations
+
+- Event: `7e22ebb73497051fc319` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.02800v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On the maximum of Poissonian log\-correlated fields
+
+- Event: `7c4e76a5605df96174b6` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.17236v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### The Richelot isogeny graph and paramodular forms of weight 3: Atkin\-Lehner signs and certified spectra
+
+- Event: `7a680f5742256fdc0c68` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2608.14145v3>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### On Boston's Unramified Conjecture for $\\mathrm\{GL\}\_2$ and McLeman's $\(3,3\)$\-Conjecture
+
+- Event: `7a0c8b7640db0e98bd35` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.37252v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Uncountably many settled elements are never Frobenius elements
+
+- Event: `7916441990b7b7b90030` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.27997v1>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Large Growth Happens: Gaussian Elimination with Partial Pivoting on Random Matrices
+
+- Event: `78f777042124f71b85be` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2610.08701v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Universality of approximate message passing under a fourth\-moment tail condition
+
+- Event: `7550cf61adf5b5ccac33` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.28971v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Van der Waerden's Problem for Cubic Surfaces
+
+- Event: `72dddf25d4c35c1b6c87` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.37945v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Darboux transformations of linear birth\-death processes
+
+- Event: `727c7d4205f58c0b06f5` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.07974v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Representation Theory and the Algebraic K\-Theory of Geometric Fields
+
+- Event: `708c6b4f2f240a24f28f` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.15605v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Degree\-one cohomology of metacyclic $2$\-groups: a low\-bit dichotomy
+
+- Event: `6e84c2c7683ce9f495a5` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.36401v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Real\-time spectral combs from delayed quantum feedback in multimode cavity QED
+
+- Event: `6e7b7c8d4ea5e83c0417` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.13465v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### A log\-concavity criterion for finite nonnegative linearization
+
+- Event: `6baf58f468ba1366da2f` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.01561v1>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Relative Tate\-Shafarevich kernel of a reductive group over a global field
+
+- Event: `696ecfa23fb68a28cd9f` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2611.04773v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Analysis of The Limiting Spectral Distribution of Large Random Matrices of The Marčenko\-Pastur Type
+
+- Event: `6953e0890955f2654405` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2408.10068v2>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Finite groups with consistent subgroup lattices
+
+- Event: `665ba435bb2574f2f14c` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.11154v1>
+- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Intersection multiplicity of a sparse curve and a trinomial curve
+
+- Event: `63c23b0efe13a2511154` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2610.35037v3>
+- Possible affected pages: `articles/multivariate-factorization.html`, `articles/multivariate-irreducibility.html`, `articles/multivariate-newton-polytopes.html`, `articles/newman-pentanomials.html`, `articles/polynomial-fibers.html`, `articles/separated-variable-polynomials.html`, `articles/sparse-factorization.html`, `articles/sparse-gaps.html`, `articles/trinomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Galois Groups of Trinomials with Small Coefficients
+
+- Event: `63670b626dd5057b897c` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2610.22764v3>
+- Possible affected pages: `articles/discriminants.html`, `articles/factor-reversal.html`, `articles/frobenius.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/newman-pentanomials.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/sparse-factorization.html`, `articles/sparse-gaps.html`, `articles/trinomials.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Distribution of mixed character sums and extremal problems for Littlewood polynomials
+
+- Event: `62259864e3b5ba533776` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2510.06161v3>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Low\-degree polynomials lower bounds for clustering in small dimension
+
+- Event: `5fe982bac928b9cf3843` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2610.37272v1>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Rubik's as Galois': the inverse Galois problem for the Rubik's Cube group
+
+- Event: `5dce35ffcf64a5610b48` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2411.11566v3>
+- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Backward log orthogonal functions and their approximation theory
+
+- Event: `5af8df1a792c357b3071` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2609.20901v2>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Equal Hamming Weights at Fixed Root Order and Applications to Constacyclic MDS Codes
+
+- Event: `56ab3b2c122c8abb4b66` (new, detected 2026-11-13T20:10:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.00637v1>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+Showing the latest 150 of 497 events; state.json retains the complete queue.
 
 ## Record totals
 
-437 source records; 410 groups linked by exact identifiers. Similar titles alone are not merged.
+806 source records; 759 groups linked by exact identifiers. Similar titles alone are not merged.
 19 records screened out of the current review queue; their observation history is retained.
 
 Metadata and webpage monitoring are selective. Failed or truncated scans retain their previous checkpoint. The weekly editor also searches outside this source register.
