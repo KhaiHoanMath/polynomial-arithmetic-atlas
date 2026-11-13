@@ -1,0 +1,42 @@
+name: Validate proposed atlas updates
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: node --test scripts/comments.test.mjs scripts/content-validation.test.mjs
+      - run: python -m unittest discover -s scripts -p 'test_literature*.py' -v
+      - run: npm run build
+      - run: npm run check
+      - run: python -m pip install sympy==1.14.0
+      - name: Verify exact examples
+        run: |
+          python scripts/atlas_certificates.py --check
+          python scripts/review_certificates.py
+          python scripts/open_problem_certificates.py
+          python scripts/literature_certificates.py
+          python scripts/generate_eulerian.py --check

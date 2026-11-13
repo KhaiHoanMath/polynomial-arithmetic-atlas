@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "initial_lookback_days": 30,
+  "overlap_days": 3,
+  "request_budget": 180,
+  "max_pages": 5,
+  "page_size": 50,
+  "existing_doi_budget": 50,
+  "existing_arxiv_budget": 100,
+  "topics": [
+    {
+      "id": "foundations",
+      "terms": [
+        "minimal polynomial",
+        "field extension",
+        "Galois correspondence",
+        "Galois theory"
+      ],
+      "articles": [
+        "foundations",
+        "field-extensions",
+        "galois-correspondence"
+      ]
+    },
+    {
+      "id": "criteria",
+      "terms": [
+        "irreducibility criterion",
+        "irreducibility criteria",
+        "Eisenstein criterion",
+        "Newton polygon",
+        "Dumas criterion",
+        "integer values",
+        "prime values",
+        "root bounds"
+      ],
+      "articles": [
+        "integer-values",
+        "modular-irreducibility",
+        "eisenstein-dumas",
+        "newton-polygons",
+        "archimedean-criteria"
+      ]
+    },
+    {
+      "id": "galois",
+      "terms": [
+        "Galois group",
+        "permutation group",
+        "Frobenius",
+        "discriminant",
+        "inertia",
+        "resolvent",
+        "reciprocal polynomial"
+      ],
+      "articles": [
+        "frobenius",
+        "discriminants",
+        "permutation-groups",
+        "resolvents",
+        "ramification-inertia",
+        "reciprocity"
+      ]
+    },
+    {
+      "id": "sparse",
+      "terms": [
+        "sparse polynomial",
+        "lacunary polynomial",
+        "trinomial",
+        "pentanomial",
+        "Newman polynomial",
+        "factor reversal",
+        "nonreciprocal",
+        "non-reciprocal"
+      ],
+      "articles": [
+        "sparse-gaps",
+        "trinomials",
+        "newman-pentanomials",
+        "sparse-factorization"
+      ]
+    },
+    {
+      "id": "orthogonal",
+      "terms": [
+        "Laguerre polynomial",
+        "Legendre polynomial",
+        "Hermite polynomial",
+        "Bessel polynomial",
+        "Krawtchouk polynomial"
+      ],
+      "articles": [
+        "laguerre",
+        "laguerre-negative-parameters",
+        "orthogonal-families",
+        "krawtchouk"
+      ]
+    },
+    {
+      "id": "combinatorial",
+      "terms": [
+        "Eulerian polynomial",
+        "Bernoulli polynomial",
+        "Euler polynomial",
+        "Touchard polynomial",
+        "chromatic polynomial",
+        "Tutte polynomial",
+        "Ehrhart polynomial",
+        "Stern polynomial",
+        "truncated binomial"
+      ],
+      "articles": [
+        "eulerian",
+        "bernoulli-euler",
+        "touchard",
+        "chromatic-polynomials",
+        "tutte-polynomials",
+        "ehrhart-polynomials",
+        "stern-polynomials",
+        "truncated-binomial"
+      ]
+    },
+    {
+      "id": "arithmetic-families",
+      "terms": [
+        "Fekete polynomial",
+        "Taylor polynomial",
+        "Katz",
+        "Rivin",
+        "Hecke polynomial",
+        "Maeda",
+        "Kaneko",
+        "Zagier",
+        "Eisenstein series",
+        "truncated exponential"
+      ],
+      "articles": [
+        "fekete",
+        "taylor",
+        "taylor-prescriptions",
+        "hecke-polynomials",
+        "kaneko-zagier",
+        "eisenstein-zero-polynomials"
+      ]
+    },
+    {
+      "id": "finite-fields",
+      "terms": [
+        "finite field",
+        "irreducible polynomial",
+        "primitive polynomial",
+        "primitive element",
+        "normal basis",
+        "normal bases",
+        "prescribed coefficient",
+        "factorization statistics"
+      ],
+      "articles": [
+        "finite-field-structure",
+        "finite-field-irreducibility",
+        "finite-field-bases",
+        "finite-field-factorization-statistics",
+        "finite-field-constructions",
+        "sparse-finite-fields"
+      ]
+    },
+    {
+      "id": "random",
+      "terms": [
+        "random polynomial",
+        "Littlewood polynomial",
+        "random matrix",
+        "random matrices",
+        "characteristic polynomial",
+        "random reciprocal",
+        "square discriminant",
+        "binary polynomial",
+        "exceptional Galois"
+      ],
+      "articles": [
+        "random-models",
+        "littlewood",
+        "factor-reversal",
+        "height-counting",
+        "random-matrices",
+        "random-reciprocal",
+        "twisted-reciprocity"
+      ]
+    },
+    {
+      "id": "dynamics",
+      "terms": [
+        "arboreal",
+        "dynamical irreducibility",
+        "iterated polynomial",
+        "polynomial iterate",
+        "polynomial iteration",
+        "polynomial stability",
+        "polynomial decomposition",
+        "polynomial composition",
+        "Capelli",
+        "dynatomic",
+        "Gleason",
+        "Misiurewicz",
+        "postcritically finite"
+      ],
+      "articles": [
+        "capelli-composition",
+        "composition-iteration",
+        "polynomial-decomposition",
+        "polynomial-stability",
+        "arboreal-galois",
+        "critical-parameter-polynomials"
+      ]
+    },
+    {
+      "id": "specialization",
+      "terms": [
+        "Hilbert irreducibility",
+        "inverse Galois",
+        "generic polynomial",
+        "specialization",
+        "specialisation",
+        "branched cover",
+        "monodromy",
+        "rigidity"
+      ],
+      "articles": [
+        "critical-points-monodromy",
+        "specialization",
+        "inverse-galois",
+        "exceptional-specializations",
+        "generic-polynomials",
+        "branched-covers"
+      ]
+    },
+    {
+      "id": "multivariate",
+      "terms": [
+        "multivariate polynomial",
+        "bivariate polynomial",
+        "several variables",
+        "absolute irreducibility",
+        "Newton polytope",
+        "separated variables",
+        "separated-variable",
+        "Bertini",
+        "polynomial fiber",
+        "polynomial fibre"
+      ],
+      "articles": [
+        "multivariate-irreducibility",
+        "multivariate-newton-polytopes",
+        "separated-variable-polynomials",
+        "polynomial-fibers",
+        "multivariate-factorization"
+      ]
+    },
+    {
+      "id": "algorithms",
+      "terms": [
+        "polynomial factorization",
+        "polynomial factorisation",
+        "factorization algorithm",
+        "factorisation algorithm",
+        "Galois computation",
+        "computing Galois",
+        "Galois group computation",
+        "irreducibility testing"
+      ],
+      "articles": [
+        "factorization-algorithms",
+        "galois-computation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "arxiv",
+      "kind": "arxiv",
+      "endpoint": "https://export.arxiv.org/api/query",
+      "enabled": true,
+      "max_pages": 3,
+      "queries": [
+        {
+          "id": "irreducibility-galois",
+          "query": "((all:irreducibility OR all:irreducible) AND (all:polynomial OR all:polynomials)) OR all:\"Galois group\" OR all:\"Galois groups\"",
+          "topics": [
+            "criteria",
+            "galois",
+            "specialization",
+            "algorithms"
+          ]
+        },
+        {
+          "id": "named-families",
+          "query": "(all:polynomial OR all:polynomials) AND (all:Fekete OR all:Littlewood OR all:Laguerre OR all:Legendre OR all:Eulerian OR all:Bernoulli OR all:Krawtchouk OR all:dynatomic OR all:Maeda OR all:trinomials)",
+          "topics": [
+            "sparse",
+            "orthogonal",
+            "combinatorial",
+            "arithmetic-families"
+          ]
+        },
+        {
+          "id": "dynamics-finite-multivariate",
+          "query": "(all:arboreal OR all:\"polynomial decomposition\" OR all:\"absolute irreducibility\" OR all:\"prescribed coefficients\" OR all:\"random polynomials\" OR all:\"random matrices\")",
+          "topics": [
+            "random",
+            "dynamics",
+            "finite-fields",
+            "multivariate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crossref",
+      "kind": "crossref",
+      "endpoint": "https://api.crossref.org/works",
+      "enabled": true,
+      "max_pages": 5,
+      "queries": [
+        {
+          "id": "irreducibility",
+          "query": "irreducibility",
+          "topics": [
+            "criteria",
+            "galois",
+            "specialization",
+            "algorithms",
+            "sparse",
+            "orthogonal",
+            "combinatorial",
+            "arithmetic-families"
+          ]
+        },
+        {
+          "id": "galois",
+          "query": "Galois",
+          "topics": [
+            "criteria",
+            "galois",
+            "specialization",
+            "algorithms",
+            "random"
+          ]
+        },
+        {
+          "id": "arboreal",
+          "query": "arboreal",
+          "topics": [
+            "random",
+            "dynamics",
+            "finite-fields",
+            "multivariate"
+          ]
+        }
+      ],
+      "date_filter": "update",
+      "query_parameter": "query.title"
+    },
+    {
+      "id": "hal",
+      "kind": "hal",
+      "endpoint": "https://api.archives-ouvertes.fr/search/",
+      "enabled": true,
+      "max_pages": 3,
+      "queries": [
+        {
+          "id": "irreducibility-galois",
+          "query": "((title_t:(irreducib* AND polynomial*) OR abstract_t:(irreducib* AND polynomial*)) OR title_t:\"Galois group\" OR abstract_t:\"Galois group\")",
+          "topics": [
+            "criteria",
+            "galois",
+            "specialization",
+            "algorithms"
+          ]
+        },
+        {
+          "id": "families",
+          "query": "title_t:((Fekete OR Littlewood OR Laguerre OR Legendre OR Eulerian OR Bernoulli OR Krawtchouk OR trinomial* OR Maeda) AND (polynomial* OR Galois))",
+          "topics": [
+            "sparse",
+            "orthogonal",
+            "combinatorial",
+            "arithmetic-families"
+          ]
+        },
+        {
+          "id": "dynamics-finite-multivariate",
+          "query": "(title_t:(arboreal OR \"polynomial decomposition\" OR \"prescribed coefficients\" OR \"random polynomials\" OR \"Newton polytope\") OR abstract_t:\"dynamical irreducibility\")",
+          "topics": [
+            "random",
+            "dynamics",
+            "finite-fields",
+            "multivariate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zenodo",
+      "kind": "zenodo",
+      "endpoint": "https://zenodo.org/api/records",
+      "enabled": true,
+      "page_size": 25,
+      "max_pages": 3,
+      "queries": [
+        {
+          "id": "irreducibility-galois",
+          "query": "(title:(irreducib* AND polynomial*) OR title:\"Galois group\")",
+          "topics": [
+            "criteria",
+            "galois",
+            "specialization",
+            "algorithms"
+          ]
+        },
+        {
+          "id": "families",
+          "query": "title:((Fekete OR Littlewood OR Laguerre OR Legendre OR Eulerian OR Bernoulli OR Krawtchouk OR trinomial* OR Maeda) AND (polynomial* OR Galois))",
+          "topics": [
+            "sparse",
+            "orthogonal",
+            "combinatorial",
+            "arithmetic-families"
+          ]
+        },
+        {
+          "id": "dynamics-finite-multivariate",
+          "query": "(title:arboreal OR title:\"polynomial decomposition\" OR title:\"prescribed coefficients\" OR title:\"random polynomials\" OR title:\"absolute irreducibility\")",
+          "topics": [
+            "random",
+            "dynamics",
+            "finite-fields",
+            "multivariate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hexagon",
+      "kind": "arxiv",
+      "endpoint": "https://hexagonmath.org/api/query",
+      "enabled": true,
+      "max_pages": 3,
+      "queries": [
+        {
+          "id": "polynomial-arithmetic",
+          "query": "(((all:irreducibility OR all:irreducible) AND (all:polynomial OR all:polynomials)) OR all:\"Galois group\" OR all:arboreal OR all:\"polynomial factorization\")",
+          "topics": [
+            "criteria",
+            "galois",
+            "specialization",
+            "algorithms",
+            "sparse",
+            "orthogonal",
+            "combinatorial",
+            "arithmetic-families",
+            "random",
+            "dynamics",
+            "finite-fields",
+            "multivariate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "journal-number-theory",
+      "kind": "crossref",
+      "endpoint": "https://api.crossref.org/journals/0022-314X/works",
+      "enabled": true,
+      "max_pages": 2,
+      "queries": [
+        {
+          "id": "polynomial-arithmetic",
+          "query": "polynomial",
+          "topics": [
+            "criteria",
+            "galois",
+            "specialization",
+            "algorithms",
+            "sparse",
+            "orthogonal",
+            "combinatorial",
+            "arithmetic-families",
+            "random",
+            "dynamics",
+            "finite-fields",
+            "multivariate"
+          ]
+        }
+      ],
+      "date_filter": "update",
+      "query_parameter": "query.title"
+    },
+    {
+      "id": "journal-finite-fields",
+      "kind": "crossref",
+      "endpoint": "https://api.crossref.org/journals/1071-5797/works",
+      "enabled": true,
+      "max_pages": 2,
+      "queries": [
+        {
+          "id": "polynomial-arithmetic",
+          "query": "polynomial",
+          "topics": [
+            "finite-fields",
+            "algorithms",
+            "dynamics"
+          ]
+        }
+      ],
+      "date_filter": "update",
+      "query_parameter": "query.title"
+    },
+    {
+      "id": "conrad-notes",
+      "kind": "page",
+      "url": "https://kconrad.math.uconn.edu/blurbs/",
+      "enabled": true,
+      "topics": [
+        "foundations",
+        "criteria",
+        "galois",
+        "finite-fields"
+      ],
+      "text_contains": "Expository papers"
+    },
+    {
+      "id": "milne-course-notes",
+      "kind": "page",
+      "url": "https://www.jmilne.org/math/CourseNotes/index.html",
+      "enabled": true,
+      "topics": [
+        "foundations",
+        "galois"
+      ],
+      "text_contains": "Fields and Galois Theory"
+    },
+    {
+      "id": "milne-course-errata",
+      "kind": "page",
+      "url": "https://www.jmilne.org/math/CourseNotes/errata.html",
+      "enabled": true,
+      "topics": [
+        "foundations",
+        "galois"
+      ],
+      "text_contains": "Errata"
+    },
+    {
+      "id": "milne-galois-errata",
+      "kind": "page",
+      "url": "https://www.jmilne.org/math/Books/fterrata.html",
+      "enabled": true,
+      "topics": [
+        "foundations",
+        "galois",
+        "criteria"
+      ],
+      "text_contains": "Errata for Fields and Galois Theory"
+    },
+    {
+      "id": "filaseta-preprints",
+      "kind": "page",
+      "url": "https://people.math.sc.edu/filaseta/paperindex.html",
+      "enabled": true,
+      "topics": [
+        "criteria",
+        "sparse",
+        "orthogonal",
+        "combinatorial"
+      ],
+      "text_contains": "Some of My Preprints"
+    },
+    {
+      "id": "juul-research",
+      "kind": "page",
+      "url": "https://sites.google.com/view/jamiejuul/research",
+      "enabled": true,
+      "topics": [
+        "dynamics",
+        "specialization",
+        "finite-fields"
+      ],
+      "text_contains": "Papers"
+    },
+    {
+      "id": "pdf-conradirredq",
+      "kind": "page",
+      "url": "https://kconrad.math.uconn.edu/blurbs/ringtheory/irredtestsoverQ.pdf",
+      "title": "Irreducibility tests in Q[T]",
+      "enabled": true,
+      "topics": [
+        "criteria"
+      ],
+      "expected_format": "pdf",
+      "reference": "ConradIrredQ"
+    },
+    {
+      "id": "pdf-conradsnan",
+      "kind": "page",
+      "url": "https://kconrad.math.uconn.edu/blurbs/galoistheory/galoisSnAn.pdf",
+      "title": "Recognizing Galois groups S_n and A_n",
+      "enabled": true,
+      "topics": [
+        "galois"
+      ],
+      "expected_format": "pdf",
+      "reference": "ConradSnAn"
+    },
+    {
+      "id": "pdf-conradfinitetests",
+      "kind": "page",
+      "url": "https://kconrad.math.uconn.edu/blurbs/ugradnumthy/irredtestFpT.pdf",
+      "title": "Irreducibility tests in F_p[T]",
+      "enabled": true,
+      "topics": [
+        "finite-fields"
+      ],
+      "expected_format": "pdf",
+      "reference": "ConradFiniteTests"
+    },
+    {
+      "id": "pdf-milne2020ant",
+      "kind": "page",
+      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+      "title": "Algebraic Number Theory (v3.08)",
+      "enabled": true,
+      "topics": [
+        "foundations",
+        "galois"
+      ],
+      "expected_format": "pdf",
+      "reference": "Milne2020ANT"
+    }
+  ],
+  "existing_correction_budget": 50
+}

@@ -25,7 +25,15 @@ source JSON, CSV tables, or verification scripts. The release check rejects
 these files and download links. Search metadata includes headings and citation
 keys, not duplicate full article bodies.
 
-## Author files
+## Literature updates
+
+Daily collection and a weekly editorial review keep track of new papers, revisions,
+publication changes, and correction leads. See [LITERATURE_WATCH.md](LITERATURE_WATCH.md)
+for the schedules, source coverage, review procedure, and failure reports. Candidate
+records stay separate from website content; substantive changes require the owner's
+review and merge.
+
+## Editing articles
 
 Edit `content/articles/*.json`, `content/references.json`, and the navigation or
 subject records. Keep article and section IDs stable. Read [EDITORIAL.md](EDITORIAL.md)

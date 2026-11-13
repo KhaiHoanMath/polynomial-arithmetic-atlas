@@ -1,0 +1,100 @@
+name: Collect literature for review
+
+on:
+  schedule:
+    # 03:23 China Standard Time; deliberately away from the top of the hour.
+    - cron: '23 19 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/literature-watch.yml'
+      - 'scripts/literature_watch.py'
+      - 'scripts/persist_literature_state.py'
+      - 'scripts/test_literature_watch.py'
+      - 'literature/watchlist.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: literature-state
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.repository == 'KhaiHoanMath/polynomial-arithmetic-atlas' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      ready: ${{ steps.scan.outputs.ready }}
+      scan_status: ${{ steps.scan.outputs.scan_status }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Test collection and persistence invariants
+        run: python scripts/test_literature_watch.py
+      - name: Restore the previous successful checkpoints
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/persist_literature_state.py fetch --state-dir literature-state
+      - name: Collect candidates and source coverage
+        id: scan
+        shell: bash
+        run: |
+          set +e
+          python scripts/literature_watch.py --config literature/watchlist.json --state-dir literature-state
+          status=$?
+          set -e
+          if [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then
+            echo 'Collector failed before a usable scan was produced.' >&2
+            exit "$status"
+          fi
+          python scripts/persist_literature_state.py validate --state-dir literature-state
+          echo "scan_status=$status" >> "$GITHUB_OUTPUT"
+          echo 'ready=true' >> "$GITHUB_OUTPUT"
+          if [ "$status" -eq 2 ]; then
+            echo '::warning::Some literature sources failed or reached a retrieval limit. Their checkpoints were retained; see the saved coverage report.'
+          fi
+      - name: Preserve the scan for the state writer
+        uses: actions/upload-artifact@v4
+        with:
+          name: literature-scan
+          path: |
+            literature-state/state.json
+            literature-state/digest.md
+            literature-state/lease.json
+          if-no-files-found: error
+          retention-days: 14
+
+  persist:
+    needs: collect
+    if: needs.collect.outputs.ready == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: literature-scan
+          path: literature-state
+      - name: Save only candidate records and the digest
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/persist_literature_state.py publish --state-dir literature-state
+      - name: Report incomplete source coverage
+        if: needs.collect.outputs.scan_status != '0'
+        run: |
+          echo '::error::The scan was saved, but some sources failed or were truncated. Inspect literature-state/digest.md and rerun after recovery.'
+          exit 1

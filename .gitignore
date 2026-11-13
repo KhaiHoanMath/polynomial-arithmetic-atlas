@@ -5,3 +5,4 @@ __pycache__/
 build/handbook/
 author-only/
 .openai/
+literature-state/
