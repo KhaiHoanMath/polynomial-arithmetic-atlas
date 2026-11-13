@@ -46,12 +46,19 @@ retain their checkpoint for retry. A failed source does not erase successful
 results from other sources. The source report records coverage gaps, errors,
 last success, and budget limits. After two exhausted retry sequences for a host,
 the collector skips that host for the rest of the run so other sources can
-still be checked. The next run retries it.
+still be checked. HTTP 429 stops requests to that host immediately for the run;
+the collector does not retry before a server's requested delay. The next daily
+run retries it.
 
 Publication checks include volume, issue, pages, publisher, online/print dates,
 and abstract hashes. Full abstracts are not saved. `collector-schema-enriched`
 events mean the collector began tracking additional fields; they do not assert
 that the source changed.
+
+Ambiguous terms such as “arboreal” require mathematical context. Clearly
+ecological matches can be screened out of the current queue while their records,
+event IDs, and observation history remain available. Known atlas references and
+correction leads are protected from this keyword screening.
 
 State is committed atomically to a separate branch, independent of whether an
 editorial pull request is merged. A lease rejects concurrent state changes.

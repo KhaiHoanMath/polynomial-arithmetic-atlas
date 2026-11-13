@@ -134,7 +134,7 @@ class Fetcher:
     def get(self, url):
         host = urllib.parse.urlsplit(url).hostname
         if self.host_failures.get(host, 0) >= 2:
-            raise RuntimeError("Host temporarily skipped after two exhausted request failures: " + str(host))
+            raise RuntimeError("Host temporarily skipped after network failures or a rate-limit response: " + str(host))
         try:
             url = safe_url(url)
         except socket.gaierror:
@@ -163,7 +163,12 @@ class Fetcher:
                     self.host_failures[host] = 0
                     return payload
             except urllib.error.HTTPError as exc:
-                if exc.code not in {429, 500, 502, 503, 504}:
+                if exc.code == 429:
+                    # A daily collector can retry tomorrow. Never shorten Retry-After
+                    # or spend the run hammering a provider that requested a pause.
+                    self.host_failures[host] = 2
+                    raise
+                if exc.code not in {500, 502, 503, 504}:
                     raise
                 if attempt == 2:
                     self.host_failures[host] = self.host_failures.get(host, 0) + 1
@@ -394,11 +399,52 @@ def aliases(record):
     return sorted(set(result))
 
 
+ARBOREAL_CONTEXT = ("galois", "polynomial", "arithmetic", "number field", "iterated monodromy", "rational map", "rational function", "preimage tree")
+ECOLOGICAL_CUES = ("marsupial", "spider", "paleobiogeography", "palaeobiogeography", "primate", "mammal", "forest canopy")
+
+
+def contains_term(text, term):
+    return bool(re.search(r"(?<!\w)" + re.escape(term.casefold()) + r"s?(?!\w)", text.casefold()))
+
+
+def arboreal_context(text):
+    return any(contains_term(text, term) for term in ARBOREAL_CONTEXT)
+
+
+def screen_out(state, key, reason, now):
+    item = state["records"][key]
+    if item.get("references") or item.get("exact_reference") or item["metadata"].get("relations", {}).get("monitored_update_of"):
+        return False
+    if item.get("screening_status") == "screened-out": return False
+    item["screening_status"] = "screened-out"; item["screening_reason"] = reason
+    item.setdefault("screening_history", []).append({"at": now, "status": "screened-out", "reason": reason})
+    for event in state["events"]:
+        if event["record"] == key and event.get("review_status") == "unreviewed":
+            event["review_status"] = "screened-out"; event["screening_reason"] = reason
+    return True
+
+
+def rescreen_legacy(state, config, known, now):
+    """Only reject explicit ecological titles; old abstract evidence is not stored."""
+    count = 0
+    for key, item in state["records"].items():
+        record = item["metadata"]
+        title = clean(record.get("title", "")).casefold()
+        _, _, references = related(record, config, known)
+        if references or item.get("references") or item.get("exact_reference"):
+            continue
+        if (set(item.get("topics", [])) == {"dynamics"} and contains_term(title, "arboreal")
+                and any(contains_term(title, term) for term in ECOLOGICAL_CUES) and not arboreal_context(title)):
+            count += screen_out(state, key, "Ecological title matched only the ambiguous word arboreal; no mathematical context or cited-reference link", now)
+    return count
+
+
 def related(record, config, known, forced_topics=()):
     text = clean(record.get("title", "") + " " + record.get("abstract", ""), 20000).casefold()
     topic_ids, pages, references = set(forced_topics), set(), set()
     for topic in config.get("topics", []):
-        if any(re.search(r"(?<!\w)" + re.escape(term.casefold()) + r"s?(?!\w)", text) for term in topic.get("terms", [])):
+        if any(contains_term(text, term) and (term.casefold() != "arboreal" or arboreal_context(text))
+               for term in topic.get("terms", [])):
             topic_ids.add(topic["id"])
         if topic["id"] in topic_ids:
             pages.update("articles/" + aid + ".html" for aid in topic.get("articles", []))
@@ -415,6 +461,9 @@ def observe(state, record, config, known, now, forced_topics=(), exact_reference
     # Query hints do not bypass relevance screening for broad search APIs.
     topics, pages, references = related(record, config, known, forced_topics if record["provider"] == "page" else ())
     if not topics and not references and not exact_reference:
+        key = record["provider"] + ":" + record["id"]
+        if key in state["records"]:
+            screen_out(state, key, "Refreshed title and abstract do not meet the current topic context rules", now)
         return False
     record = copy.deepcopy(record)
     abstract = clean(record.pop("abstract", ""), MAX_BYTES)
@@ -445,7 +494,13 @@ def observe(state, record, config, known, now, forced_topics=(), exact_reference
         pages = sorted(set(pages + previous.get("affected_pages", [])))
         references = sorted(set(references + previous.get("references", [])))
     changed = previous is None or entry.get("fingerprint") != fingerprint
-    entry.update({"metadata_schema": 2, "fingerprint": fingerprint, "metadata": record, "aliases": aliases(record), "topics": topics, "affected_pages": pages, "references": references, "cited_versions": cited_versions})
+    if entry.get("screening_status") == "screened-out":
+        entry.setdefault("screening_history", []).append({"at": now, "status": "eligible", "reason": "Current metadata or cited-reference link meets the screening rules"})
+        entry.pop("screening_reason", None)
+        for event in state["events"]:
+            if event["record"] == key and event.get("review_status") == "screened-out":
+                event["review_status"] = "unreviewed"; event.pop("screening_reason", None)
+    entry.update({"screening_status": "eligible", "exact_reference": exact_reference or bool(references) or entry.get("exact_reference", False), "metadata_schema": 2, "fingerprint": fingerprint, "metadata": record, "aliases": aliases(record), "topics": topics, "affected_pages": pages, "references": references, "cited_versions": cited_versions})
     state["records"][key] = entry
     if changed:
         event_id = hashlib.sha256((key + ":" + fingerprint).encode()).hexdigest()[:20]
@@ -607,7 +662,8 @@ def digest(state):
         lines += ["- Check the exact statement, definitions, version history and corrections before proposing text.", ""]
     if not events: lines.append("No unreviewed non-baseline events are currently recorded.")
     if len(events) > 150: lines.append("Showing the latest 150 of " + str(len(events)) + " events; state.json retains the complete queue.")
-    lines += ["", "## Record totals", "", str(len(state["records"])) + " source records; " + str(len(grouped_records(state))) + " groups linked by exact identifiers. Similar titles alone are not merged.", "", "Metadata and webpage monitoring are selective. Failed or truncated scans retain their previous checkpoint. The weekly editor also searches outside this source register.", ""]
+    lines += ["", "## Record totals", "", str(len(state["records"])) + " source records; " + str(len(grouped_records(state))) + " groups linked by exact identifiers. Similar titles alone are not merged.",
+              str(sum(item.get("screening_status") == "screened-out" for item in state["records"].values())) + " records screened out of the current review queue; their observation history is retained.", "", "Metadata and webpage monitoring are selective. Failed or truncated scans retain their previous checkpoint. The weekly editor also searches outside this source register.", ""]
     return "\n".join(lines)
 
 
@@ -640,6 +696,7 @@ def main(argv=None):
     if args.validate_only:
         print("Configuration and state schema validated"); return 0
     known = citation_index(root); fetcher = Fetcher(config.get("request_budget", 180)); now = dt.datetime.now(UTC)
+    rescreen_legacy(state, config, known, iso(now))
     outcomes = []
     # Existing reference revisions have priority over broad discovery.
     outcomes.append(check_existing(state, fetcher, config, known, now))

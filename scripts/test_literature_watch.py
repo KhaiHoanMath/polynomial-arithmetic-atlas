@@ -33,6 +33,8 @@ CONFIG = {"initial_lookback_days": 30, "overlap_days": 3, "page_size": 2,
           "topics": [{"id": "galois", "terms": ["Galois group", "Legendre polynomial"],
                       "articles": ["frobenius"]}]}
 KNOWN = {"doi": {}, "arxiv": {}}
+DYNAMICS_CONFIG = {**CONFIG, "topics": [{"id": "dynamics", "terms": ["arboreal", "dynamical irreducibility"],
+                                        "articles": ["arboreal-galois"]}]}
 
 
 def record(identifier="2611.00001", provider="arxiv", version="v1", doi=""):
@@ -377,6 +379,78 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(saved["pending"]["since"], "2026-10-08T00:00:00Z")
 
 
+class RelevanceTests(unittest.TestCase):
+    def legacy_record(self, title="Paleobiogeography of arboreal marsupials"):
+        legacy_config = {**DYNAMICS_CONFIG, "topics": [{"id": "dynamics",
+            "terms": ["marsupial", "spider", "paleobiogeography"], "articles": ["arboreal-galois"]}]}
+        data = record()
+        data["title"] = title
+        state = watch.new_state()
+        watch.observe(state, data, legacy_config, KNOWN, watch.iso(NOW))
+        self.assertEqual(len(state["events"]), 1)
+        return state
+
+    def test_standalone_arboreal_biology_is_not_a_math_match(self):
+        for title in ("Paleobiogeography of arboreal marsupials", "Foraging behavior of arboreal spiders"):
+            with self.subTest(title=title):
+                data = record()
+                data["title"] = title
+                state = watch.new_state()
+                self.assertFalse(watch.observe(state, data, DYNAMICS_CONFIG, KNOWN, watch.iso(NOW)))
+                self.assertEqual(state["records"], {})
+
+    def test_arboreal_mathematics_and_other_dynamics_remain_relevant(self):
+        for title in ("Arboreal Galois representations", "Arboreal groups of iterated polynomials",
+                      "Dynamical irreducibility in quadratic families"):
+            with self.subTest(title=title):
+                data = record()
+                data["title"] = title
+                state = watch.new_state()
+                self.assertTrue(watch.observe(state, data, DYNAMICS_CONFIG, KNOWN, watch.iso(NOW)))
+
+    def test_legacy_biology_leaves_digest_but_preserves_history(self):
+        state = self.legacy_record()
+        before_events = copy.deepcopy(state["events"])
+        before_snapshots = copy.deepcopy(state["records"]["arxiv:2611.00001"]["snapshots"])
+        self.assertEqual(watch.rescreen_legacy(state, DYNAMICS_CONFIG, KNOWN, watch.iso(NOW)), 1)
+        self.assertEqual(len(state["records"]), 1)
+        self.assertEqual(state["records"]["arxiv:2611.00001"]["snapshots"], before_snapshots)
+        self.assertEqual([x["id"] for x in state["events"]], [x["id"] for x in before_events])
+        self.assertEqual(state["events"][0]["review_status"], "screened-out")
+        self.assertNotIn("Paleobiogeography", watch.digest(state))
+
+    def test_existing_reference_is_never_auto_screened_out(self):
+        state = self.legacy_record()
+        known = {"doi": {}, "arxiv": {"2611.00001": {"references": ["Existing"], "pages": []}}}
+        state["records"]["arxiv:2611.00001"]["references"] = ["Existing"]
+        self.assertEqual(watch.rescreen_legacy(state, DYNAMICS_CONFIG, known, watch.iso(NOW)), 0)
+        self.assertEqual(state["events"][0]["review_status"], "unreviewed")
+
+    def test_later_exact_reference_restores_screened_record_to_review(self):
+        state = self.legacy_record()
+        self.assertEqual(watch.rescreen_legacy(state, DYNAMICS_CONFIG, KNOWN, watch.iso(NOW)), 1)
+        saved = state["records"]["arxiv:2611.00001"]
+        snapshots = copy.deepcopy(saved["snapshots"])
+        known = {"doi": {}, "arxiv": {"2611.00001": {"references": ["NewlyCited"], "pages": []}}}
+        watch.observe(state, copy.deepcopy(saved["metadata"]), DYNAMICS_CONFIG, known, "2026-11-14T00:00:00Z")
+        self.assertEqual(saved["screening_status"], "eligible")
+        self.assertEqual(state["events"][0]["review_status"], "unreviewed")
+        self.assertEqual(saved["snapshots"], snapshots)
+        self.assertEqual(len(saved["screening_history"]), 2)
+
+    def test_correction_is_never_auto_screened_out(self):
+        state = self.legacy_record()
+        state["records"]["arxiv:2611.00001"]["metadata"]["relations"]["monitored_update_of"] = "10.1000/original"
+        self.assertEqual(watch.rescreen_legacy(state, DYNAMICS_CONFIG, KNOWN, watch.iso(NOW)), 0)
+        self.assertEqual(state["events"][0]["review_status"], "unreviewed")
+
+    def test_absent_abstract_context_does_not_blanket_remove_old_mathematics(self):
+        state = self.legacy_record()
+        state["records"]["arxiv:2611.00001"]["metadata"]["title"] = "New theorems about arboreal representations"
+        self.assertEqual(watch.rescreen_legacy(state, DYNAMICS_CONFIG, KNOWN, watch.iso(NOW)), 0)
+        self.assertEqual(state["events"][0]["review_status"], "unreviewed")
+
+
 class UntrustedInputTests(unittest.TestCase):
     def test_private_and_credential_destinations_rejected(self):
         for url in ("http://example.com", "https://127.0.0.1/x", "https://[::1]/",
@@ -436,6 +510,21 @@ class UntrustedInputTests(unittest.TestCase):
                     fetcher.get("https://example.com/record/" + str(index))
             self.assertEqual(opener.call_count, 3)
             self.assertEqual(fetcher.host_failures.get("example.com", 0), 0)
+
+    def test_rate_limit_stops_host_without_retrying_early(self):
+        fetcher = watch.Fetcher()
+        error = urllib.error.HTTPError("https://example.com/api", 429, "Too many requests", {"Retry-After": "3600"}, None)
+        with patch.object(watch, "safe_url", side_effect=lambda url: url), patch.object(watch.time, "sleep") as sleep, \
+                patch.object(fetcher.opener, "open", side_effect=error) as opener:
+            with self.assertRaises(urllib.error.HTTPError):
+                fetcher.get("https://example.com/api")
+            self.assertEqual(opener.call_count, 1)
+            with self.assertRaises(RuntimeError):
+                fetcher.get("https://example.com/another-path")
+            self.assertEqual(opener.call_count, 1)
+            sleep.assert_not_called()
+        fresh_run = watch.Fetcher()
+        self.assertEqual(fresh_run.host_failures.get("example.com", 0), 0)
 
     def test_successful_request_resets_host_failure_count(self):
         fetcher = watch.Fetcher()
