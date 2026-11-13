@@ -128,11 +128,18 @@ class Fetcher:
         self.max_bytes = max_bytes
         self.requests = 0
         self.last_request = {}
+        self.host_failures = {}
         self.opener = urllib.request.build_opener(PublicRedirect())
 
     def get(self, url):
-        url = safe_url(url)
         host = urllib.parse.urlsplit(url).hostname
+        if self.host_failures.get(host, 0) >= 2:
+            raise RuntimeError("Host temporarily skipped after two exhausted request failures: " + str(host))
+        try:
+            url = safe_url(url)
+        except socket.gaierror:
+            self.host_failures[host] = self.host_failures.get(host, 0) + 1
+            raise
         interval = 3.1 if host in {"export.arxiv.org", "arxiv.org", "hexagonmath.org"} else 0.6
         for attempt in range(3):
             if time.monotonic() >= self.deadline:
@@ -153,15 +160,20 @@ class Fetcher:
                     payload = response.read(self.max_bytes + 1)
                     if len(payload) > self.max_bytes:
                         raise ValueError("Response exceeds byte limit")
+                    self.host_failures[host] = 0
                     return payload
             except urllib.error.HTTPError as exc:
-                if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
+                if exc.code not in {429, 500, 502, 503, 504}:
+                    raise
+                if attempt == 2:
+                    self.host_failures[host] = self.host_failures.get(host, 0) + 1
                     raise
                 retry = exc.headers.get("Retry-After", "")
                 delay = min(30, max(1, int(retry))) if retry.isdigit() else 2 ** (attempt + 1)
                 time.sleep(delay)
             except (urllib.error.URLError, TimeoutError, OSError):
                 if attempt == 2:
+                    self.host_failures[host] = self.host_failures.get(host, 0) + 1
                     raise
                 time.sleep(2 ** (attempt + 1))
         raise RuntimeError("Request failed")
@@ -196,7 +208,7 @@ def atom_records(payload, provider="arxiv"):
             "doi": canonical_doi(item.findtext("x:doi", "", ATOM)),
             "arxiv": aid if provider == "arxiv" else "",
             "journal": clean(item.findtext("x:journal_ref", "", ATOM)),
-            "abstract": clean(item.findtext("a:summary", "", ATOM), 12000),
+            "abstract": clean(item.findtext("a:summary", "", ATOM), MAX_BYTES),
             "relations": {},
         })
     total = root.findtext("o:totalResults", None, ATOM)
@@ -215,7 +227,11 @@ def crossref_record(item):
             "title": clean(item.get("title", [])), "authors": [clean(" ".join([x.get("given", ""), x.get("family", "")])) for x in item.get("author", [])],
             "url": "https://doi.org/" + doi, "published": date("published"),
             "updated": date("indexed") or date("deposited"), "journal": clean(item.get("container-title", [])),
-            "abstract": clean(item.get("abstract", ""), 12000),
+            "volume": clean(item.get("volume")), "issue": clean(item.get("issue")),
+            "pages": clean(item.get("page")), "article_number": clean(item.get("article-number")),
+            "publisher": clean(item.get("publisher")), "published_online": date("published-online"),
+            "published_print": date("published-print"),
+            "abstract": clean(item.get("abstract", ""), MAX_BYTES),
             "relations": {"relation": item.get("relation", {}), "update-to": item.get("update-to", []), "type": item.get("type", "")}}
 
 
@@ -225,7 +241,7 @@ def hal_record(item):
             "title": clean(item.get("title_s", [])), "authors": [clean(a) for a in item.get("authFullName_s", [])],
             "url": display_url(item.get("uri_s", "https://hal.science/" + ident)), "published": item.get("producedDate_s", ""),
             "updated": item.get("modifiedDate_tdate", item.get("modifiedDate_s", "")), "journal": clean(item.get("journalTitle_s", "")),
-            "abstract": clean(item.get("abstract_s", ""), 12000), "relations": {}}
+            "abstract": clean(item.get("abstract_s", ""), MAX_BYTES), "relations": {}}
 
 
 def zenodo_record(item):
@@ -237,7 +253,7 @@ def zenodo_record(item):
             "authors": [clean(a.get("name", "")) for a in meta.get("creators", [])],
             "url": display_url(item.get("links", {}).get("self_html", "https://zenodo.org/records/" + str(item["id"]))),
             "published": meta.get("publication_date", ""), "updated": item.get("updated", item.get("modified", "")),
-            "journal": clean(meta.get("journal", {}).get("title", "")), "abstract": clean(meta.get("description", ""), 12000),
+            "journal": clean(meta.get("journal", {}).get("title", "")), "abstract": clean(meta.get("description", ""), MAX_BYTES),
             "relations": {"related_identifiers": relation, "conceptrecid": str(item.get("conceptrecid", "")), "files": [{"key": f.get("key"), "checksum": f.get("checksum")} for f in item.get("files", [])]}}
 
 
@@ -400,7 +416,9 @@ def observe(state, record, config, known, now, forced_topics=(), exact_reference
     topics, pages, references = related(record, config, known, forced_topics if record["provider"] == "page" else ())
     if not topics and not references and not exact_reference:
         return False
-    record = copy.deepcopy(record); record.pop("abstract", None)
+    record = copy.deepcopy(record)
+    abstract = clean(record.pop("abstract", ""), MAX_BYTES)
+    if abstract: record["abstract_sha256"] = hashlib.sha256(abstract.encode()).hexdigest()
     record["title"] = clean(record["title"])
     key = record["provider"] + ":" + record["id"]
     substantive = copy.deepcopy(record)
@@ -410,6 +428,13 @@ def observe(state, record, config, known, now, forced_topics=(), exact_reference
     fingerprint = hashlib.sha256(json.dumps(substantive, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
     previous = state["records"].get(key)
     cited_versions = known["arxiv"].get(record.get("arxiv", ""), {}).get("cited_versions", [])
+    enriched_schema = False
+    if previous and previous.get("metadata_schema", 1) < 2:
+        old_substantive = copy.deepcopy(previous["metadata"])
+        if record["provider"] == "crossref":
+            old_substantive.pop("updated", None)
+            old_substantive.get("relations", {}).pop("monitored_update_of", None)
+        enriched_schema = all(substantive.get(k) == v for k, v in old_substantive.items())
     snapshot = {"observed_at": now, "fingerprint": fingerprint, "metadata": record}
     if previous is None:
         entry = {"first_seen": now, "last_seen": now, "snapshots": [snapshot]}
@@ -420,12 +445,13 @@ def observe(state, record, config, known, now, forced_topics=(), exact_reference
         pages = sorted(set(pages + previous.get("affected_pages", [])))
         references = sorted(set(references + previous.get("references", [])))
     changed = previous is None or entry.get("fingerprint") != fingerprint
-    entry.update({"fingerprint": fingerprint, "metadata": record, "aliases": aliases(record), "topics": topics, "affected_pages": pages, "references": references, "cited_versions": cited_versions})
+    entry.update({"metadata_schema": 2, "fingerprint": fingerprint, "metadata": record, "aliases": aliases(record), "topics": topics, "affected_pages": pages, "references": references, "cited_versions": cited_versions})
     state["records"][key] = entry
     if changed:
         event_id = hashlib.sha256((key + ":" + fingerprint).encode()).hexdigest()[:20]
         if not any(e["id"] == event_id for e in state["events"]):
             kind = "baseline" if previous is None and (references or record["provider"] == "page") else "new" if previous is None else "changed"
+            if enriched_schema: kind = "collector-schema-enriched"
             if previous is None and record["provider"] == "arxiv" and cited_versions and record.get("version") and record["version"] not in cited_versions:
                 kind = "cited-version-differs"
             state["events"].append({"id": event_id, "record": key, "detected_at": now, "kind": kind, "fingerprint": fingerprint, "review_status": "unreviewed"})

@@ -44,7 +44,14 @@ Each successful complete query advances its own checkpoint. Retrieval overlaps
 the previous checkpoint to catch boundary updates. Failed or truncated queries
 retain their checkpoint for retry. A failed source does not erase successful
 results from other sources. The source report records coverage gaps, errors,
-last success, and budget limits.
+last success, and budget limits. After two exhausted retry sequences for a host,
+the collector skips that host for the rest of the run so other sources can
+still be checked. The next run retries it.
+
+Publication checks include volume, issue, pages, publisher, online/print dates,
+and abstract hashes. Full abstracts are not saved. `collector-schema-enriched`
+events mean the collector began tracking additional fields; they do not assert
+that the source changed.
 
 State is committed atomically to a separate branch, independent of whether an
 editorial pull request is merged. A lease rejects concurrent state changes.

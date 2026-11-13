@@ -10,6 +10,7 @@ import unittest
 from unittest.mock import patch
 import urllib.parse
 import urllib.request
+import urllib.error
 
 
 HERE = Path(__file__).resolve().parent
@@ -92,6 +93,49 @@ class ParserIdentityTests(unittest.TestCase):
                                      "published": {"date-parts": [[2026, 11, 12]]}})
         self.assertEqual(data["published"], "2026-11-12")
 
+    def test_crossref_bibliographic_changes_generate_events(self):
+        original = {"DOI": "10.1000/test", "title": ["Galois groups of polynomials"],
+                    "volume": "12", "issue": "3", "page": "1-20", "article-number": "e123",
+                    "publisher": "Example publisher", "published-online": {"date-parts": [[2026, 11, 1]]},
+                    "published-print": {"date-parts": [[2026, 12, 1]]}}
+        changes = [("volume", "13", "volume"), ("issue", "4", "issue"),
+                   ("page", "21-40", "pages"), ("article-number", "e124", "article_number"),
+                   ("publisher", "Corrected publisher", "publisher"),
+                   ("published-online", {"date-parts": [[2026, 11, 2]]}, "published_online"),
+                   ("published-print", {"date-parts": [[2027, 1, 1]]}, "published_print")]
+        for field, value, stored_field in changes:
+            with self.subTest(field=field):
+                state = watch.new_state()
+                before = watch.crossref_record(original)
+                watch.observe(state, before, CONFIG, KNOWN, watch.iso(NOW))
+                revised = copy.deepcopy(original)
+                revised[field] = value
+                after = watch.crossref_record(revised)
+                self.assertNotEqual(before[stored_field], after[stored_field])
+                self.assertTrue(watch.observe(state, after, CONFIG, KNOWN, "2026-11-14T00:00:00Z"))
+                self.assertEqual(len(state["events"]), 2)
+
+    def test_abstract_only_change_is_detected_without_storing_abstract(self):
+        original = {"DOI": "10.1000/test", "title": ["Galois groups of polynomials"],
+                    "abstract": "Unshared abstract evidence unique text. We prove the theorem for odd degree."}
+        state = watch.new_state()
+        watch.observe(state, watch.crossref_record(original), CONFIG, KNOWN, watch.iso(NOW))
+        original["abstract"] = "Unshared abstract evidence unique text. We prove the theorem for even degree."
+        self.assertTrue(watch.observe(state, watch.crossref_record(original), CONFIG, KNOWN, "2026-11-14T00:00:00Z"))
+        self.assertNotIn("Unshared abstract evidence unique text", json.dumps(state))
+        self.assertEqual(len(state["events"]), 2)
+        for snapshot in state["records"]["crossref:10.1000/test"]["snapshots"]:
+            self.assertNotIn("abstract", snapshot["metadata"])
+            self.assertEqual(len(snapshot["metadata"]["abstract_sha256"]), 64)
+
+    def test_abstract_markup_and_whitespace_do_not_create_false_change(self):
+        data = record(identifier="10.1000/test", provider="crossref", version="", doi="10.1000/test")
+        data["abstract"] = "A theorem on\nGalois groups."
+        state = watch.new_state()
+        watch.observe(state, data, CONFIG, KNOWN, watch.iso(NOW))
+        data["abstract"] = "<p>A theorem on Galois groups.</p>"
+        self.assertFalse(watch.observe(state, data, CONFIG, KNOWN, "2026-11-14T00:00:00Z"))
+
     def test_zenodo_citation_is_not_work_identity(self):
         data = watch.zenodo_record({"id": 17, "metadata": {"title": "A dataset",
             "related_identifiers": [{"identifier": "https://arxiv.org/abs/2611.00001", "relation": "cites"}]}})
@@ -160,6 +204,25 @@ class ParserIdentityTests(unittest.TestCase):
         data["updated"] = "2026-11-14T00:00:00Z"
         self.assertFalse(watch.observe(state, data, CONFIG, KNOWN, "2026-11-14T00:00:00Z"))
         self.assertEqual(len(state["events"]), 1)
+
+    def test_added_collector_fields_are_marked_as_schema_enrichment(self):
+        data = record(identifier="10.1000/test", provider="crossref", version="", doi="10.1000/test")
+        state = watch.new_state()
+        watch.observe(state, data, CONFIG, KNOWN, watch.iso(NOW))
+        state["records"]["crossref:10.1000/test"]["metadata_schema"] = 1
+        data["volume"] = "12"
+        self.assertTrue(watch.observe(state, data, CONFIG, KNOWN, "2026-11-14T00:00:00Z"))
+        self.assertEqual(state["events"][-1]["kind"], "collector-schema-enriched")
+
+    def test_real_change_during_schema_upgrade_is_not_hidden(self):
+        data = record(identifier="10.1000/test", provider="crossref", version="", doi="10.1000/test")
+        state = watch.new_state()
+        watch.observe(state, data, CONFIG, KNOWN, watch.iso(NOW))
+        state["records"]["crossref:10.1000/test"]["metadata_schema"] = 1
+        data["volume"] = "12"
+        data["title"] = "Corrected Galois groups of polynomials"
+        self.assertTrue(watch.observe(state, data, CONFIG, KNOWN, "2026-11-14T00:00:00Z"))
+        self.assertEqual(state["events"][-1]["kind"], "changed")
 
     def test_correction_annotation_does_not_cause_repeated_change(self):
         data = record(identifier="10.1000/correction", provider="crossref", version="", doi="10.1000/correction")
@@ -346,6 +409,41 @@ class UntrustedInputTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "time budget"):
                 fetcher.get("https://example.com/")
             opener.assert_not_called()
+
+    def test_repeated_host_failure_preserves_budget_for_other_hosts(self):
+        fetcher = watch.Fetcher()
+        with patch.object(watch, "safe_url", side_effect=lambda url: url), patch.object(watch.time, "sleep"), \
+                patch.object(fetcher.opener, "open", side_effect=TimeoutError("unavailable")) as opener:
+            for _ in range(2):
+                with self.assertRaises(TimeoutError):
+                    fetcher.get("https://unavailable.example/api")
+            self.assertEqual(opener.call_count, 6)
+            with self.assertRaisesRegex(RuntimeError, "temporarily skipped"):
+                fetcher.get("https://unavailable.example/another-path")
+            self.assertEqual(opener.call_count, 6)
+            opener.side_effect = None
+            opener.return_value.__enter__.return_value.read.return_value = b"ok"
+            self.assertEqual(fetcher.get("https://available.example/api"), b"ok")
+            self.assertEqual(opener.call_count, 7)
+
+    def test_missing_record_does_not_trip_host_breaker(self):
+        fetcher = watch.Fetcher()
+        error = urllib.error.HTTPError("https://example.com/api", 404, "Not found", {}, None)
+        with patch.object(watch, "safe_url", side_effect=lambda url: url), patch.object(watch.time, "sleep"), \
+                patch.object(fetcher.opener, "open", side_effect=error) as opener:
+            for index in range(3):
+                with self.assertRaises(urllib.error.HTTPError):
+                    fetcher.get("https://example.com/record/" + str(index))
+            self.assertEqual(opener.call_count, 3)
+            self.assertEqual(fetcher.host_failures.get("example.com", 0), 0)
+
+    def test_successful_request_resets_host_failure_count(self):
+        fetcher = watch.Fetcher()
+        fetcher.host_failures["example.com"] = 1
+        with patch.object(watch, "safe_url", side_effect=lambda url: url), patch.object(fetcher.opener, "open") as opener:
+            opener.return_value.__enter__.return_value.read.return_value = b"ok"
+            self.assertEqual(fetcher.get("https://example.com/api"), b"ok")
+            self.assertEqual(fetcher.host_failures["example.com"], 0)
 
     def test_markdown_escapes_remote_control_syntax(self):
         escaped = watch.markdown('<script>alert(1)</script> [click](javascript:evil) @someone | bad\x01')
