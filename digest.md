@@ -1,6 +1,6 @@
 # Literature watch
 
-Last attempted scan: 2026-11-13T05:22:24Z
+Last attempted scan: 2026-11-13T05:27:43Z
 
 Metadata leads for editorial review. A match or changed file does not verify a mathematical claim. Baselines record existing sources; they are not new publications.
 
@@ -8,35 +8,35 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 
 | Source / query | Result | Items | Last complete check | Detail |
 |---|---|---:|---|---|
-| arxiv/dynamics\-finite\-multivariate | failed | 0 | never | RuntimeError: Host temporarily skipped after two exhausted request failures: export\.arxiv\.org |
-| arxiv/irreducibility\-galois | failed | 0 | never | RuntimeError: Host temporarily skipped after two exhausted request failures: export\.arxiv\.org |
-| arxiv/named\-families | failed | 0 | never | RuntimeError: Host temporarily skipped after two exhausted request failures: export\.arxiv\.org |
-| conrad\-notes/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| crossref/arboreal | ok | 11 | 2026-11-13T05:22:24Z |  |
-| crossref/galois | ok | 5 | 2026-11-13T05:22:24Z |  |
-| crossref/irreducibility | ok | 3 | 2026-11-13T05:22:24Z |  |
-| existing\-arxiv | failed | 0 | never | Rotating batch: 100 attempted of 143 registered\. 2507\.16138, 2508\.12924, 2510\.05658, 2510\.18857, 2511\.03847, 2511\.04240, 2511\.10851, 2601\.17422, 2602\.06943, 2603\.07589, 2603\.14617, 2603\.25899, 2603\.27728, 2605\.09738, 2605\.21666, 2605\.26771, 2606\.02324, 2606\.10584, 2606\.27293, 2608\.12019, 2608\.22297, 2609\.04551, 2609\.10526, 2609\.22336, 2609\.26771, 2609\.31613, 2609\.40123, 2610\.18226, 2610\.26873, 2610\.28688, 2610\.36534, 2610\.37179, 2611\.00647, 2611\.09312, 2611\.14014, math/0012099, math/0102232, math/0405139, math/0406307, math/0406308: HTTPError: HTTP Error 429: Unknown Error; math/0612415, math/0703532, math/9909052, 0707\.1835, 0807\.2620, 0807\.3578, 0811\.4029, 0911\.0286, 1001\.3079, 1004\.3813, 1005\.2695, 1006\.3869, 1009\.5388, 1010\.5341, 1012\.2857, 1106\.6151, 1205\.3420, 1209\.5169, 1210\.7157, 1211\.3588, 1302\.0625, 1303\.6513, 1304\.0874, 1305\.0222, 1402\.6018, 1409\.2034, 1410\.3814, 1508\.01870, 1601\.06867, 1603\.00673, 1603\.03811, 1604\.04023, 1605\.01068, 1606\.04592, 1608\.01938, 1609\.03398, 1610\.00424, 1705\.03709, 1707\.02501, 1708\.04932: HTTPError: HTTP Error 429: Unknown Error; 1709\.03094, 1710\.05165, 1711\.06243, 1802\.09074, 1803\.00434, 1803\.01987, 1803\.02823, 1803\.10811, 1805\.10361, 1805\.11152, 1807\.05820, 1808\.06655, 1810\.07512, 1810\.133 |
-| existing\-corrections | ok | 50 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 281 registered\. |
-| existing\-doi | ok | 50 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 281 registered\. |
+| arxiv/dynamics\-finite\-multivariate | failed | 0 | never | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: export\.arxiv\.org |
+| arxiv/irreducibility\-galois | failed | 0 | never | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: export\.arxiv\.org |
+| arxiv/named\-families | failed | 0 | never | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: export\.arxiv\.org |
+| conrad\-notes/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| crossref/arboreal | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
+| crossref/galois | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
+| crossref/irreducibility | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
+| existing\-arxiv | failed | 0 | never | Rotating batch: 100 attempted of 143 registered\. 2008\.05815, 2010\.01281, 2012\.03076, 2102\.07465, 2106\.04049, 2110\.08354, 2110\.08587, 2111\.05256, 2111\.06507, 2111\.06697, 2202\.08122, 2203\.10287, 2203\.11302, 2205\.07349, 2206\.11778, 2207\.12493, 2212\.07539, 2212\.10920, 2301\.05656, 2304\.11991, 2304\.12658, 2305\.09227, 2305\.12022, 2307\.14896, 2308\.04878, 2311\.14862, 2311\.16871, 2402\.06643, 2403\.11943, 2404\.13559, 2405\.04058, 2406\.18970, 2410\.16814, 2411\.06745, 2412\.08815, 2501\.06028, 2502\.17218, 2505\.02723, 2506\.05254, 2506\.12206: HTTPError: HTTP Error 429: Unknown Error; 2507\.08347, 2507\.10779, 2507\.15908, 0707\.1835, 0807\.2620, 0807\.3578, 0811\.4029, 0911\.0286, 1001\.3079, 1004\.3813, 1005\.2695, 1006\.3869, 1009\.5388, 1010\.5341, 1012\.2857, 1106\.6151, 1205\.3420, 1209\.5169, 1210\.7157, 1211\.3588, 1302\.0625, 1303\.6513, 1304\.0874, 1305\.0222, 1402\.6018, 1409\.2034, 1410\.3814, 1508\.01870, 1601\.06867, 1603\.00673, 1603\.03811, 1604\.04023, 1605\.01068, 1606\.04592, 1608\.01938, 1609\.03398, 1610\.00424, 1705\.03709, 1707\.02501, 1708\.04932: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: export\.arxiv\.org; 1709\.03094, 1710\.05165, 1711\.06243, 1802\.09074, 1803\.00434, 1803\.01987, 1803\.02823, 1803\.10811, 1805\.10361, 1805\.111 |
+| existing\-corrections | failed | 2 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 281 registered\. 10\.1017/cbo9780511542916: HTTPError: HTTP Error 429: Too Many Requests; 10\.1017/cbo9780511721274\.008: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/cbo9781139856065: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/fms\.2025\.10096: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s000497271300049x: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0004972719000339: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0004972725000048: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0305004122000226: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0305004126102126: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1017/s0963548300000869: RuntimeError: Host temporarily skipped |
+| existing\-doi | ok | 50 | 2026-11-13T05:27:43Z | Rotating batch: 50 attempted of 281 registered\. |
 | existing\-non\-crossref | not-covered | 0 | never | 12 known non\-Crossref DOIs excluded from Crossref checks; arXiv identifiers are checked separately; other repository updates require editorial follow\-up |
-| filaseta\-preprints/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| hal/dynamics\-finite\-multivariate | ok | 2 | 2026-11-13T05:22:24Z |  |
-| hal/families | ok | 7 | 2026-11-13T05:22:24Z |  |
-| hal/irreducibility\-galois | ok | 11 | 2026-11-13T05:22:24Z |  |
-| hexagon/polynomial\-arithmetic | ok | 0 | 2026-11-13T05:22:24Z |  |
-| journal\-finite\-fields/polynomial\-arithmetic | ok | 0 | 2026-11-13T05:22:24Z |  |
-| journal\-number\-theory/polynomial\-arithmetic | ok | 0 | 2026-11-13T05:22:24Z |  |
-| juul\-research/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| milne\-course\-errata/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| milne\-course\-notes/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| milne\-galois\-errata/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| pdf\-conradfinitetests/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| pdf\-conradirredq/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| pdf\-conradsnan/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| pdf\-milne2020ant/page | ok | 1 | 2026-11-13T05:22:24Z |  |
-| zenodo/dynamics\-finite\-multivariate | ok | 0 | 2026-11-13T05:22:24Z |  |
-| zenodo/families | ok | 1 | 2026-11-13T05:22:24Z |  |
-| zenodo/irreducibility\-galois | ok | 0 | 2026-11-13T05:22:24Z |  |
+| filaseta\-preprints/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| hal/dynamics\-finite\-multivariate | ok | 2 | 2026-11-13T05:27:43Z |  |
+| hal/families | ok | 7 | 2026-11-13T05:27:43Z |  |
+| hal/irreducibility\-galois | ok | 11 | 2026-11-13T05:27:43Z |  |
+| hexagon/polynomial\-arithmetic | ok | 0 | 2026-11-13T05:27:43Z |  |
+| journal\-finite\-fields/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
+| journal\-number\-theory/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
+| juul\-research/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| milne\-course\-errata/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| milne\-course\-notes/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| milne\-galois\-errata/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| pdf\-conradfinitetests/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| pdf\-conradirredq/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| pdf\-conradsnan/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| pdf\-milne2020ant/page | ok | 1 | 2026-11-13T05:27:43Z |  |
+| zenodo/dynamics\-finite\-multivariate | ok | 0 | 2026-11-13T05:27:43Z |  |
+| zenodo/families | ok | 1 | 2026-11-13T05:27:43Z |  |
+| zenodo/irreducibility\-galois | ok | 0 | 2026-11-13T05:27:43Z |  |
 
 ## Unreviewed discoveries and changes
 
@@ -88,14 +88,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Back\-flip bungee\-jump escape maneuver correlates with high silk toughness in arboreal hunting spiders
-
-- Event: `8f56f289e886b385b2cb` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1086/744801>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
 ### Representations of the rank two Racah algebra and orthogonal multivariate polynomials
 
 - Event: `84c9605ed3c623c50825` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
@@ -109,14 +101,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Event: `80fbf631cb468bb36470` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
 - Source: crossref; version: metadata only
 - Link: <https://doi.org/10.1515/9781501787317-001>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Avoidance without flight: actor and timescale in the spatial responses of an arboreal primate to human presence
-
-- Event: `7e9e1747bf7eeb0cb73d` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/s00265-026-03811-8>
 - Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
@@ -177,14 +161,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/laguerre.html#alternating-realizations`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Imaginaires arborés, attentes contrariées et pratiques de la marge : Géographie sociale et historique du Robinia pseudoacacia dans le Sud\-Ouest de la France; Arboreal imaginaries, thwarted expectations and marginal practices : Social and historical Geography of Robinia pseudoacacia in Southwest France
-
-- Event: `40ecb7a3c1a97b1bbe2e` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/tel-05064184v1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
 ### Parity Families of Lattice Paths and Real\-Rooted Signed Eulerian Polynomials
 
 - Event: `2fb8c865e18b6c23a472` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
@@ -214,14 +190,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Event: `1b2ae4200de8916506ea` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
 - Source: crossref; version: metadata only
 - Link: <https://doi.org/10.3390/coasts6040050>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Survey methods in the spotlight: a comparison of two survey methods for estimating the population density of an arboreal marsupial
-
-- Event: `11dc06d2a62799a18344` (collector-schema-enriched, detected 2026-11-13T05:22:24Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/s10531-026-03531-5>
 - Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
@@ -265,14 +233,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Survey methods in the spotlight: a comparison of two survey methods for estimating the population density of an arboreal marsupial
-
-- Event: `fc06203d618286dbed45` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/s10531-026-03531-5>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
 ### Hopf algebroids and Galois extensions
 
 - Event: `fb012eb31dc7c986d90c` (new, detected 2026-11-13T05:12:43Z)
@@ -311,14 +271,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Source: crossref; version: metadata only
 - Link: <https://doi.org/10.1215/s0012-7094-01-10923-x>
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Arboreal Spiders of Native Shrubs in Shortgrass Steppe Ecosystems of Eastern Colorado
-
-- Event: `f848b4e8c102d294bd91` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.3958/059.047.0401>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
 ### Quantum Galois theory for finite groups
@@ -375,14 +327,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Source: crossref; version: metadata only
 - Link: <https://doi.org/10.2748/tmj/1178240606>
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Back\-flip bungee\-jump escape maneuver correlates with high silk toughness in arboreal hunting spiders
-
-- Event: `f23b910998b4f6329927` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1086/744801>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
 ### Shifted Legendre polynomials algorithm used for the dynamic analysis of PMMA viscoelastic beam with an improved fractional model
@@ -495,14 +439,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Source: zenodo; version: Version 2
 - Link: <https://zenodo.org/records/23308682>
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The Spring Phenology of Arboreal Beetles and Spiders and Their Potential as Alternative Prey for Birds Mistimed With Peak Caterpillar Abundance
-
-- Event: `e7b4d84546d6e100bc0c` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1002/ece3.74489>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
 ### Tchebotarev theorems for function fields
@@ -631,14 +567,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Source: zenodo; version: 23987495
 - Link: <https://zenodo.org/records/23987495>
 - Possible affected pages: `articles/archimedean-criteria.html`, `articles/eisenstein-dumas.html`, `articles/integer-values.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Imaginaires arborés, attentes contrariées et pratiques de la marge : Géographie sociale et historique du Robinia pseudoacacia dans le Sud\-Ouest de la France; Arboreal imaginaries, thwarted expectations and marginal practices : Social and historical Geography of Robinia pseudoacacia in Southwest France
-
-- Event: `d5306d9f3297f77593c4` (new, detected 2026-11-13T05:12:43Z)
-- Source: hal; version: 1
-- Link: <https://hal.science/tel-05064184v1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
 ### Monotonicity of Turán determinants for binary Krawtchouk polynomials
@@ -897,14 +825,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Activity patterns of arboreal mammals that move using power lines in a Neotropical urban ecosystem
-
-- Event: `bf3533caa9f34d834994` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/s11252-026-02101-5>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
 ### Prime polynomials in Legendre intervals over F\_\{2^k\}\[t\], IV: point counts on hexad modular curves, Brown invariants of Witt sheaves, and the constant X
 
 - Event: `bb97f86b88b574f79580` (new, detected 2026-11-13T05:12:43Z)
@@ -1033,14 +953,6 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Can camera trap distance sampling outperform line transects for estimating arboreal and semi\-terrestrial primate density?
-
-- Event: `ab07cf4f66bbe7d7f26e` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/s10764-026-00591-w>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
 ### Analytic lie extensions of number fields with cyclic fixed points and tame ramification
 
 - Event: `aafe7220369601cc15f5` (new, detected 2026-11-13T05:12:43Z)
@@ -1073,27 +985,11 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### First Primate Clavicles From Swartkrans Cave: Further Indications of Habitual Arboreal Behavior in Some Early Pleistocene South African Hominins
-
-- Event: `a923330f2a0a4f791453` (new, detected 2026-11-13T05:12:43Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1002/ajpa.70367>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
 ### Linked collectors and determiners for: First record in Canada for the bicolored arboreal carpenter ant Camponotus discolor Buckley \(Hymenoptera: Formicidae\)\.
 
 - Event: `a86ca75367f2ef7cd98f` (new, detected 2026-11-13T05:12:43Z)
 - Source: zenodo; version: 23795952
 - Link: <https://zenodo.org/records/23795952>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### KHMacphie/BeetleSpiderPhenology: "The spring phenology of arboreal beetles and spiders and their potential as alternative prey for birds mistimed with peak caterpillar abundance"
-
-- Event: `a7d50137e2ba4d5b3393` (new, detected 2026-11-13T05:12:43Z)
-- Source: zenodo; version: v1\.0
-- Link: <https://zenodo.org/records/23335990>
 - Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
@@ -1241,10 +1137,115 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-Showing the latest 150 of 299 events; state.json retains the complete queue.
+### On the structure of the Galois group of the Abelian closure of a number field
+
+- Event: `97fce9bc48c718e600aa` (new, detected 2026-11-13T05:12:43Z)
+- Source: hal; version: 4
+- Link: <https://hal.science/hal-00764649v4>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
+
+- Event: `97a7b62ac7e10d5b46e8` (new, detected 2026-11-13T05:12:43Z)
+- Source: zenodo; version: v6
+- Link: <https://zenodo.org/records/23748602>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Cleber’s Arboreal Rice Rat Oecomys cleberi Locks, 1981
+
+- Event: `966e82f33a3f3f9cf477` (new, detected 2026-11-13T05:12:43Z)
+- Source: crossref; version: metadata only
+- Link: <https://doi.org/10.1007/978-3-031-45537-7_197-1>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Hyperbolicity of Jensen Polynomials for the Riemann Ξ\-Function via Hermite–Stiffness Duality, Laguerre–Samuelson Root Bounds, and Complex Cauchy–Hermitian Shifts
+
+- Event: `953a9df3fffc3367833e` (new, detected 2026-11-13T05:12:43Z)
+- Source: zenodo; version: 23977400
+- Link: <https://zenodo.org/records/23977400>
+- Possible affected pages: `articles/archimedean-criteria.html`, `articles/eisenstein-dumas.html`, `articles/eisenstein-zero-polynomials.html`, `articles/fekete.html`, `articles/hecke-polynomials.html`, `articles/integer-values.html`, `articles/kaneko-zagier.html`, `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`, `articles/orthogonal-families.html`, `articles/taylor-prescriptions.html`, `articles/taylor.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### 4\-Dimensional Chess: Acoustic Localisation Reveals Nested Spatio\-temporal Strategies in an Arboreal Communication Network
+
+- Event: `942a5c060070377c3b45` (new, detected 2026-11-13T05:12:43Z)
+- Source: crossref; version: metadata only
+- Link: <https://doi.org/10.64898/2026.09.21.752596>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Irreducibility over valued fields in the presence of a secondary valuation
+
+- Event: `942a1dc9ba27822934fd` (new, detected 2026-11-13T05:12:43Z)
+- Source: crossref; version: metadata only
+- Link: <https://doi.org/10.32917/hmj/1150998160>
+- Possible affected pages: `articles/archimedean-criteria.html`, `articles/eisenstein-dumas.html`, `articles/integer-values.html`, `articles/modular-irreducibility.html`, `articles/newton-polygons.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Invariance in inseparable Galois theory
+
+- Event: `934217951a2c4ee7739d` (new, detected 2026-11-13T05:12:43Z)
+- Source: crossref; version: metadata only
+- Link: <https://doi.org/10.1216/rmj-1979-9-3-395>
+- Possible affected pages: `articles/field-extensions.html`, `articles/foundations.html`, `articles/galois-correspondence.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Bernoulli Transport Sieves and Finite\-Range Integer\-Source Triple\-Zero Exclusion in Stationary CCR Polynomials
+
+- Event: `92715126ec857804cc8e` (new, detected 2026-11-13T05:12:43Z)
+- Source: zenodo; version: 23670863
+- Link: <https://zenodo.org/records/23670863>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Arboreal height of integer\-interlaced cubic squares
+
+- Event: `8fe5bedfeea5161a6988` (new, detected 2026-11-13T05:12:43Z)
+- Source: zenodo; version: 1\.0
+- Link: <https://zenodo.org/records/23479534>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/discriminants.html`, `articles/field-extensions.html`, `articles/foundations.html`, `articles/frobenius.html`, `articles/galois-correspondence.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Mike Boyle \- Nonnegative matrices : Perron Frobenius theory and related algebra \(Part 1\)
+
+- Event: `8fa35eb4073ed1452236` (new, detected 2026-11-13T05:12:43Z)
+- Source: hal; version: 1
+- Link: <https://hal.science/medihal-01319245v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Tree diversity, not tree density, predicts abundance of an endemic arboreal gecko on restored tropical islands
+
+- Event: `8effcbe683c722a28aa1` (new, detected 2026-11-13T05:12:43Z)
+- Source: zenodo; version: 23191899
+- Link: <https://zenodo.org/records/23191899>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Assessing the impact of forest structure disturbances on the arboreal movement and energetics of orangutans—An agent\-based modeling approach
+
+- Event: `8ef5b2f7d9f5418bfc6a` (new, detected 2026-11-13T05:12:43Z)
+- Source: hal; version: 1
+- Link: <https://hal.science/hal-03885024v1>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Almost\-Sure Radial Laws for Nested Random Polynomials and Erdős Problem \#522
+
+- Event: `89405bb521e7fbe3845c` (new, detected 2026-11-13T05:12:43Z)
+- Source: zenodo; version: 22970145
+- Link: <https://zenodo.org/records/22970145>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+Showing the latest 150 of 276 events; state.json retains the complete queue.
 
 ## Record totals
 
-387 source records; 360 groups linked by exact identifiers. Similar titles alone are not merged.
+437 source records; 410 groups linked by exact identifiers. Similar titles alone are not merged.
+19 records screened out of the current review queue; their observation history is retained.
 
 Metadata and webpage monitoring are selective. Failed or truncated scans retain their previous checkpoint. The weekly editor also searches outside this source register.
