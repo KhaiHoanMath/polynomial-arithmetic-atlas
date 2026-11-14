@@ -1,6 +1,6 @@
 # Literature watch
 
-Last attempted scan: 2026-11-13T20:10:38Z
+Last attempted scan: 2026-11-14T19:57:13Z
 
 Metadata leads for editorial review. A match or changed file does not verify a mathematical claim. Baselines record existing sources; they are not new publications.
 
@@ -8,37 +8,69 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 
 | Source / query | Result | Items | Last complete check | Detail |
 |---|---|---:|---|---|
-| arxiv/dynamics\-finite\-multivariate | ok | 107 | 2026-11-13T20:10:38Z |  |
-| arxiv/irreducibility\-galois | ok | 149 | 2026-11-13T20:10:38Z |  |
-| arxiv/named\-families | ok | 126 | 2026-11-13T20:10:38Z |  |
-| conrad\-notes/page | ok | 1 | 2026-11-13T20:10:38Z |  |
+| arxiv/dynamics\-finite\-multivariate | ok | 12 | 2026-11-14T19:57:13Z |  |
+| arxiv/irreducibility\-galois | ok | 8 | 2026-11-14T19:57:13Z |  |
+| arxiv/named\-families | ok | 7 | 2026-11-14T19:57:13Z |  |
+| conrad\-notes/page | ok | 1 | 2026-11-14T19:57:13Z |  |
 | crossref/arboreal | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/galois | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/irreducibility | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| existing\-arxiv | ok | 100 | 2026-11-13T20:10:38Z | Rotating batch: 100 attempted of 143 registered\. |
-| existing\-corrections | failed | 3 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 281 registered\. 10\.1112/jlms\.70257: HTTPError: HTTP Error 429: Too Many Requests; 10\.1112/jlms/jdn034: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/jlms/s1\-38\.1\.183: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/plms/pdq009: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/plms/s3\-43\.2\.227: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/plms/s3\-51\.3\.385: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/s0010437x20007022: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/s0024610702003782: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/s0025579300011931: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1112/s0025579311002105: RuntimeError: Host temporarily skipped after network failu |
-| existing\-doi | ok | 50 | 2026-11-13T20:10:38Z | Rotating batch: 50 attempted of 281 registered\. |
+| existing\-arxiv | ok | 100 | 2026-11-14T19:57:13Z | Rotating batch: 100 attempted of 143 registered\. |
+| existing\-corrections | failed | 6 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 281 registered\. 10\.1515/crll\.2002\.069: HTTPError: HTTP Error 429: Too Many Requests; 10\.1515/ms\-2026\-0503: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.19086/da\.849: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.2140/ant\.2013\.7\.1325: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.2140/ant\.2019\.13\.1039: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.2140/ant\.2019\.13\.963: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.2140/ant\.2026\.20\.603: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.2140/pjm\.1962\.12\.1099: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.2307/1968341: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.2307/1994841: RuntimeError: Host temporarily skipped after network failures or a rate\-limit respo |
+| existing\-doi | failed | 48 | 2026-11-13T20:10:38Z | Rotating batch: 50 attempted of 281 registered\. Provider omitted 10\.2307/2323198; 10\.4064/aa\-11\-4\-491: HTTPError: HTTP Error 404: Not Found |
 | existing\-non\-crossref | not-covered | 0 | never | 12 known non\-Crossref DOIs excluded from Crossref checks; arXiv identifiers are checked separately; other repository updates require editorial follow\-up |
-| filaseta\-preprints/page | ok | 1 | 2026-11-13T20:10:38Z |  |
-| hal/dynamics\-finite\-multivariate | ok | 2 | 2026-11-13T20:10:38Z |  |
-| hal/families | ok | 7 | 2026-11-13T20:10:38Z |  |
-| hal/irreducibility\-galois | ok | 17 | 2026-11-13T20:10:38Z |  |
-| hexagon/polynomial\-arithmetic | ok | 0 | 2026-11-13T20:10:38Z |  |
+| filaseta\-preprints/page | ok | 1 | 2026-11-14T19:57:13Z |  |
+| hal/dynamics\-finite\-multivariate | ok | 1 | 2026-11-14T19:57:13Z |  |
+| hal/families | ok | 0 | 2026-11-14T19:57:13Z |  |
+| hal/irreducibility\-galois | ok | 12 | 2026-11-14T19:57:13Z |  |
+| hexagon/polynomial\-arithmetic | ok | 0 | 2026-11-14T19:57:13Z |  |
 | journal\-finite\-fields/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | journal\-number\-theory/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| juul\-research/page | ok | 1 | 2026-11-13T20:10:38Z |  |
-| milne\-course\-errata/page | ok | 1 | 2026-11-13T20:10:38Z |  |
-| milne\-course\-notes/page | ok | 1 | 2026-11-13T20:10:38Z |  |
-| milne\-galois\-errata/page | ok | 1 | 2026-11-13T20:10:38Z |  |
-| pdf\-conradfinitetests/page | ok | 1 | 2026-11-13T20:10:38Z |  |
-| pdf\-conradirredq/page | ok | 1 | 2026-11-13T20:10:38Z |  |
-| pdf\-conradsnan/page | ok | 1 | 2026-11-13T20:10:38Z |  |
-| pdf\-milne2020ant/page | ok | 1 | 2026-11-13T20:10:38Z |  |
-| zenodo/dynamics\-finite\-multivariate | ok | 0 | 2026-11-13T20:10:38Z |  |
-| zenodo/families | ok | 1 | 2026-11-13T20:10:38Z |  |
-| zenodo/irreducibility\-galois | ok | 0 | 2026-11-13T20:10:38Z |  |
+| juul\-research/page | ok | 1 | 2026-11-14T19:57:13Z |  |
+| milne\-course\-errata/page | ok | 1 | 2026-11-14T19:57:13Z |  |
+| milne\-course\-notes/page | ok | 1 | 2026-11-14T19:57:13Z |  |
+| milne\-galois\-errata/page | ok | 1 | 2026-11-14T19:57:13Z |  |
+| pdf\-conradfinitetests/page | ok | 1 | 2026-11-14T19:57:13Z |  |
+| pdf\-conradirredq/page | ok | 1 | 2026-11-14T19:57:13Z |  |
+| pdf\-conradsnan/page | ok | 1 | 2026-11-14T19:57:13Z |  |
+| pdf\-milne2020ant/page | ok | 1 | 2026-11-14T19:57:13Z |  |
+| zenodo/dynamics\-finite\-multivariate | ok | 0 | 2026-11-14T19:57:13Z |  |
+| zenodo/families | ok | 3 | 2026-11-14T19:57:13Z |  |
+| zenodo/irreducibility\-galois | ok | 0 | 2026-11-14T19:57:13Z |  |
 
 ## Unreviewed discoveries and changes
+
+### Consistent projection reduction of the Yang–Mills equations on a compact layer using Legendre polynomials, and the stabilization threshold for the Nielsen–Olesen instability
+
+- Event: `c5d23a43f5ce899c102c` (new, detected 2026-11-14T19:57:13Z)
+- Source: zenodo; version: 24220765
+- Link: <https://zenodo.org/records/24220765>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Lifting Galois representations via Kummer flags
+
+- Event: `9b764fafed07c037385a` (new, detected 2026-11-14T19:57:13Z)
+- Source: hal; version: 2
+- Link: <https://hal.science/hal-04832165v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Consistent projection reduction of the Yang–Mills equations on a compact layer using Legendre polynomials, and the stabilization threshold for the Nielsen–Olesen instability
+
+- Event: `97470540e1306d8b0f1a` (new, detected 2026-11-14T19:57:13Z)
+- Source: zenodo; version: 24218568
+- Link: <https://zenodo.org/records/24218568>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### An Elementary Test for the Galois Group of a Quartic Polynomial
+
+- Event: `241791f7684645e9c9c8` (new, detected 2026-11-14T19:57:13Z)
+- Source: crossref; version: metadata only
+- Link: <https://doi.org/10.1080/00029890.1989.11972158>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
 
 ### Delocalized region of bipartite Erdős\-Rényi graphs
 
@@ -1209,43 +1241,11 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Low\-degree polynomials lower bounds for clustering in small dimension
-
-- Event: `5fe982bac928b9cf3843` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v1
-- Link: <https://arxiv.org/abs/2610.37272v1>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Rubik's as Galois': the inverse Galois problem for the Rubik's Cube group
-
-- Event: `5dce35ffcf64a5610b48` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v3
-- Link: <https://arxiv.org/abs/2411.11566v3>
-- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Backward log orthogonal functions and their approximation theory
-
-- Event: `5af8df1a792c357b3071` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v2
-- Link: <https://arxiv.org/abs/2609.20901v2>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Equal Hamming Weights at Fixed Root Order and Applications to Constacyclic MDS Codes
-
-- Event: `56ab3b2c122c8abb4b66` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v1
-- Link: <https://arxiv.org/abs/2611.00637v1>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-Showing the latest 150 of 497 events; state.json retains the complete queue.
+Showing the latest 150 of 500 events; state.json retains the complete queue.
 
 ## Record totals
 
-806 source records; 759 groups linked by exact identifiers. Similar titles alone are not merged.
-19 records screened out of the current review queue; their observation history is retained.
+901 source records; 843 groups linked by exact identifiers. Similar titles alone are not merged.
+20 records screened out of the current review queue; their observation history is retained.
 
 Metadata and webpage monitoring are selective. Failed or truncated scans retain their previous checkpoint. The weekly editor also searches outside this source register.
