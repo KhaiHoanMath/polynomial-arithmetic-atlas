@@ -1,0 +1,561 @@
+[
+  {
+    "status": "Classical",
+    "checked": "2026-11-15",
+    "id": "local-factor-degree-intersection",
+    "title": "How can several local tests prove irreducibility?",
+    "summary": "Different local tests constrain the same hypothetical factor degree. Their intersection can be empty even when every modular reduction is reducible.",
+    "scope": "Let \\(f\\in\\mathbb Z[X]\\) be monic and separable, of degree \\(n\\ge2\\), with \\(f(0)\\ne0\\).",
+    "placements": [
+      {
+        "article": "modular-irreducibility",
+        "afterSection": "working-rule"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "mod",
+        "label": "Factor modulo selected primes",
+        "kind": "method",
+        "article": "modular-irreducibility",
+        "section": "several-primes"
+      },
+      {
+        "id": "degrees",
+        "label": "Subset sums of modular degrees",
+        "kind": "result",
+        "article": "modular-irreducibility",
+        "section": "several-primes"
+      },
+      {
+        "id": "newton",
+        "label": "Compute p-adic Newton polygons",
+        "kind": "method",
+        "article": "newton-polygons",
+        "section": "polygon"
+      },
+      {
+        "id": "slopes",
+        "label": "Multiples of slope denominators",
+        "kind": "result",
+        "article": "newton-polygons",
+        "section": "combine"
+      },
+      {
+        "id": "intersection",
+        "label": "Intersect permitted proper degrees",
+        "kind": "method",
+        "article": "newton-polygons",
+        "section": "combine"
+      },
+      {
+        "id": "irreducible",
+        "label": "f is irreducible over ℚ",
+        "kind": "result",
+        "article": "foundations"
+      },
+      {
+        "id": "transitive",
+        "label": "Galois action is transitive",
+        "kind": "result",
+        "article": "galois-correspondence",
+        "section": "stabilizers"
+      }
+    ],
+    "edges": [
+      {
+        "to": "degrees",
+        "type": "deduction",
+        "label": "Reduction of factors",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "Gauss’s lemma and monicity preserve the degree of every rational factor after reduction; its degree is a subset sum, counting modular factors with multiplicity.",
+        "from": "mod"
+      },
+      {
+        "to": "slopes",
+        "type": "deduction",
+        "label": "Root valuations",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "On an edge of reduced slope −a/b, each local factor uses a multiple of b roots, bounded by the edge length.",
+        "from": "newton"
+      },
+      {
+        "to": "intersection",
+        "type": "flow",
+        "label": "Necessary restrictions",
+        "citations": [],
+        "explanation": "Intersect the degree sets supplied by the selected modular factorizations.",
+        "from": "degrees"
+      },
+      {
+        "to": "intersection",
+        "type": "flow",
+        "label": "Necessary restrictions",
+        "citations": [],
+        "explanation": "Include the degree sets supplied by every selected Newton polygon in the same intersection.",
+        "from": "slopes"
+      },
+      {
+        "to": "irreducible",
+        "type": "deduction",
+        "label": "If the intersection is empty",
+        "citations": [
+          "R1",
+          "R3"
+        ],
+        "explanation": "A proper rational factor would have a positive degree below n belonging to every displayed degree set, contradicting an empty intersection.",
+        "from": "intersection"
+      },
+      {
+        "to": "transitive",
+        "type": "equivalence",
+        "label": "Factor–orbit correspondence",
+        "citations": [
+          "R4"
+        ],
+        "explanation": "For a separable polynomial, irreducible factors correspond to Galois orbits on the roots; one factor is equivalent to one orbit.",
+        "from": "irreducible"
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "ConradIrredQ",
+        "locator": "Theorem 3.1 and its proof, p. 3",
+        "url": "https://kconrad.math.uconn.edu/blurbs/ringtheory/irredtestsoverQ.pdf#page=3",
+        "note": "The subset-sum restriction is the direct reduction-of-factors consequence used here."
+      },
+      {
+        "id": "R2",
+        "key": "Hajir2005",
+        "locator": "Theorem 2.1, p. 520",
+        "url": "https://www.numdam.org/item/10.5802/jtnb.505.pdf#page=4",
+        "note": "The root–slope theorem; integrality of a slope factor’s constant-term valuation gives the denominator restriction."
+      },
+      {
+        "id": "R3",
+        "key": "bonciocat2015multiprime",
+        "locator": "Theorem A′, p. 4, arXiv:1304.0874v2",
+        "url": "https://arxiv.org/pdf/1304.0874v2#page=4",
+        "note": "Explicit Newton degree sets and their intersection; the present map also includes modular degree sets."
+      },
+      {
+        "id": "R4",
+        "key": "ConradGaloisPermutation",
+        "locator": "Theorem 2.9(b), p. 3",
+        "url": "https://kconrad.math.uconn.edu/blurbs/galoistheory/galoisaspermgp.pdf#page=3"
+      }
+    ],
+    "body": "<p>If the irreducible modular factor degrees at a prime \\(p\\), repeated according to multiplicity, are \\(d_{p,1},\\ldots,d_{p,r}\\), every proper rational factor has degree in</p>\n\\[D_p=\\left\\{\\sum_{i\\in I}d_{p,i}:I\\subseteq\\{1,\\ldots,r\\}\\right\\}\\cap\\{1,\\ldots,n-1\\}.\\]\n<p>If the Newton edges at a prime \\(q\\) have reduced slopes \\(-a_j/b_j\\), with \\(b_j&gt;0\\), and horizontal lengths \\(L_j\\), the corresponding restriction is</p>\n\\[N_q=\\left\\{\\sum_j b_jk_j: k_j\\in\\mathbb Z,\\ 0\\le k_j\\le L_j/b_j\\right\\}\\cap\\{1,\\ldots,n-1\\}.\\]\n<p>Thus \\(\\bigcap_pD_p\\cap\\bigcap_qN_q=\\varnothing\\) proves irreducibility. One may use either kind of test alone. These are necessary degree restrictions; they do not assert that each permitted degree actually occurs. Squarefree reduction is unnecessary for this argument, but modular multiplicities must be counted.</p>\n<p>The <a href=\"#quartic-example\">quartic example above</a> has \\(D_2=\\{1,3\\}\\) and \\(D_3=\\{2\\}\\). Two reducible reductions therefore certify rational irreducibility. The <a href=\"newton-polygons.html#exponential-six\">degree-six exponential example</a> gives the parallel Newton-polygon certificate \\(N_2=\\{2,4\\}\\), \\(N_3=\\{3\\}\\).</p>",
+    "related": [
+      {
+        "article": "newton-polygons",
+        "section": "combine",
+        "label": "Combine slope restrictions across primes"
+      },
+      {
+        "article": "finite-field-irreducibility",
+        "label": "Verify the modular factors"
+      },
+      {
+        "article": "frobenius",
+        "section": "statement",
+        "label": "Use squarefree reductions to obtain cycle types"
+      }
+    ]
+  },
+  {
+    "status": "Classical",
+    "checked": "2026-11-15",
+    "id": "quintic-modular-galois-certificate",
+    "title": "How do two modular factorizations determine S₅?",
+    "summary": "One prime proves transitivity; another supplies a transposition. Prime degree supplies primitivity, and the two branches together determine the full group.",
+    "scope": "Let \\(f=X^5-X-1\\) and \\(G=\\operatorname{Gal}(f/\\mathbb Q)\\), acting on its five roots.",
+    "placements": [
+      {
+        "article": "frobenius",
+        "afterSection": "quintic"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "mod3",
+        "label": "Irreducible reduction modulo 3",
+        "kind": "hypothesis",
+        "article": "finite-field-irreducibility"
+      },
+      {
+        "id": "irreducible",
+        "label": "f irreducible over ℚ",
+        "kind": "result",
+        "article": "modular-irreducibility",
+        "section": "degree-preserved"
+      },
+      {
+        "id": "transitive",
+        "label": "G transitive on five roots",
+        "kind": "result",
+        "article": "galois-correspondence",
+        "section": "stabilizers"
+      },
+      {
+        "id": "primitive",
+        "label": "G primitive",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "blocks"
+      },
+      {
+        "id": "mod2",
+        "label": "Modulo 2: degrees 2 and 3",
+        "kind": "hypothesis",
+        "article": "frobenius",
+        "section": "statement"
+      },
+      {
+        "id": "cycle",
+        "label": "σ has cycle type (2,3)",
+        "kind": "result",
+        "article": "frobenius",
+        "section": "mechanism"
+      },
+      {
+        "id": "swap",
+        "label": "σ³ is a transposition",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "large-prime"
+      },
+      {
+        "id": "joint",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "s5",
+        "label": "G = S₅",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "transpositions"
+      }
+    ],
+    "edges": [
+      {
+        "to": "irreducible",
+        "type": "deduction",
+        "label": "Reduction criterion",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The monic degree-five polynomial retains its degree modulo 3, so irreducible reduction proves irreducibility over the rationals.",
+        "from": "mod3"
+      },
+      {
+        "to": "transitive",
+        "type": "deduction",
+        "label": "One irreducible factor",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "Irreducibility is equivalent to transitivity of the Galois action on the five roots.",
+        "from": "irreducible"
+      },
+      {
+        "to": "primitive",
+        "type": "deduction",
+        "label": "Prime degree 5",
+        "citations": [
+          "R4"
+        ],
+        "explanation": "In a transitive action block sizes divide the degree; prime degree has no nontrivial block sizes.",
+        "from": "transitive"
+      },
+      {
+        "to": "cycle",
+        "type": "deduction",
+        "label": "Dedekind–Frobenius",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "The reduction modulo 2 is squarefree, and its irreducible factors have degrees 2 and 3; the Galois group therefore contains that cycle type.",
+        "from": "mod2"
+      },
+      {
+        "to": "swap",
+        "type": "deduction",
+        "label": "Cube the permutation",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "The two cycles are disjoint; cubing kills the 3-cycle and leaves the 2-cycle.",
+        "from": "cycle"
+      },
+      {
+        "to": "joint",
+        "type": "flow",
+        "label": "Primitivity",
+        "citations": [],
+        "explanation": "Primitivity is one of the two hypotheses required by the transposition criterion.",
+        "from": "primitive"
+      },
+      {
+        "to": "joint",
+        "type": "flow",
+        "label": "A transposition",
+        "citations": [],
+        "explanation": "The existence of a transposition is the second hypothesis required by the criterion.",
+        "from": "swap"
+      },
+      {
+        "to": "s5",
+        "type": "deduction",
+        "label": "Primitive + transposition",
+        "citations": [
+          "R4"
+        ],
+        "explanation": "A primitive permutation group containing a transposition is the full symmetric group.",
+        "from": "joint"
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "ConradIrredQ",
+        "locator": "Theorem 3.1, p. 3",
+        "url": "https://kconrad.math.uconn.edu/blurbs/ringtheory/irredtestsoverQ.pdf#page=3"
+      },
+      {
+        "id": "R2",
+        "key": "ConradGaloisPermutation",
+        "locator": "Theorem 2.9(b), p. 3; Example 4.17, p. 9",
+        "url": "https://kconrad.math.uconn.edu/blurbs/galoistheory/galoisaspermgp.pdf#page=9",
+        "note": "The factor–orbit theorem and the modular computation for this quintic; taking the cube is also checked directly."
+      },
+      {
+        "id": "R3",
+        "key": "ConradModP",
+        "locator": "Theorem 1, p. 1",
+        "url": "https://kconrad.math.uconn.edu/blurbs/gradnumthy/galois-Q-factor-mod-p.pdf"
+      },
+      {
+        "id": "R4",
+        "key": "Osada1987II",
+        "locator": "Lemmas 6 and 10, p. 440",
+        "url": "https://www.jstage.jst.go.jp/article/tmj1949/39/3/39_3_437/_pdf/-char/ja#page=4",
+        "note": "Lemma 10 gives prime-degree primitivity; Lemma 6 gives the primitive-group transposition criterion."
+      }
+    ],
+    "body": "<p>The complete arithmetic certificate is</p>\n\\[\\begin{aligned}f\\bmod2&amp;=(X^2+X+1)(X^3+X^2+1),\\\\ f\\bmod3&amp;\\text{ is irreducible},\\\\ \\operatorname{disc}(f)&amp;=2869=19\\cdot151.\\end{aligned}\\]\n<p>The two factors modulo \\(2\\) are irreducible: each has degree two or three and neither has a root in \\(\\mathbb F_2\\). Their distinctness makes the reduction squarefree. For an exact check modulo \\(3\\), polynomial arithmetic gives \\(X^{3^5}\\equiv X\\pmod f\\) and \\(\\gcd(f,X^3-X)=1\\). The finite-field irreducibility criterion for prime degree five then applies. The discriminant calculation independently confirms that both primes are good.</p>\n<p>The left branch excludes nontrivial block systems. The right produces a permutation exchanging exactly two roots: if \\(\\sigma=(ab)(cde)\\), then \\(\\sigma^3=(ab)\\). Both properties are needed for the final group criterion. Transitivity and a transposition alone do not suffice in composite degree; the order-eight dihedral action on four points is a counterexample.</p>\n<p>The same group certificate has a geometric consequence: <a href=\"permutation-groups.html#hyperelliptic-jacobians\">Zarhin’s theorem</a> applies to \\(y^2=X^5-X-1\\), whose genus-two Jacobian has geometric endomorphism ring \\(\\mathbb Z\\).</p>",
+    "related": [
+      {
+        "article": "permutation-groups",
+        "section": "transpositions",
+        "label": "Why primitivity and a transposition imply Sₙ"
+      },
+      {
+        "article": "discriminants",
+        "label": "Discriminants and parity"
+      },
+      {
+        "article": "finite-field-irreducibility",
+        "label": "Exact finite-field certificates"
+      },
+      {
+        "article": "permutation-groups",
+        "section": "hyperelliptic-jacobians",
+        "label": "From S₅ to a Jacobian with endomorphism ring ℤ"
+      }
+    ]
+  },
+  {
+    "status": "Classical",
+    "checked": "2026-11-15",
+    "id": "reciprocal-square-class-kernel",
+    "title": "When does a reciprocal polynomial have the full signed group?",
+    "summary": "Passing to inverse pairs halves the degree. Recovering the full group then requires both the permutation group on pairs and independent quadratic extensions.",
+    "scope": "Let \\(K\\) have characteristic different from \\(2\\), and let \\(q\\in K[Y]\\) be monic and separable of degree \\(m\\ge1\\), with \\(q(2)q(-2)\\ne0\\). Put \\(f(X)=X^m q(X+X^{-1})\\).",
+    "placements": [
+      {
+        "article": "reciprocity",
+        "afterSection": "kernel"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "f",
+        "label": "Reciprocal polynomial f",
+        "kind": "object",
+        "article": "reciprocity",
+        "section": "setup"
+      },
+      {
+        "id": "quotient",
+        "label": "Pair quotient Gal(q/K)",
+        "kind": "result",
+        "article": "reciprocity",
+        "section": "kernel"
+      },
+      {
+        "id": "quadratics",
+        "label": "Adjoin √(yᵢ² − 4) to M",
+        "kind": "method",
+        "article": "reciprocity",
+        "section": "kernel"
+      },
+      {
+        "id": "rank",
+        "label": "Kernel order = 2ʳ",
+        "kind": "result",
+        "article": "galois-correspondence",
+        "section": "biquadratic"
+      },
+      {
+        "id": "pairtest",
+        "label": "Pair group is Sₘ",
+        "kind": "hypothesis",
+        "article": "permutation-groups"
+      },
+      {
+        "id": "ranktest",
+        "label": "All m square classes independent",
+        "kind": "hypothesis",
+        "article": "reciprocity",
+        "section": "kernel"
+      },
+      {
+        "id": "joint",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "wreath",
+        "label": "Gal(f/K) = C₂ ≀ Sₘ",
+        "kind": "result",
+        "article": "reciprocity",
+        "section": "kernel"
+      }
+    ],
+    "edges": [
+      {
+        "to": "quotient",
+        "type": "deduction",
+        "label": "Collapse inverse pairs",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The map α↦α+α⁻¹ identifies inverse pairs with roots of q, and restriction surjects onto the Galois group of q.",
+        "from": "f"
+      },
+      {
+        "to": "quadratics",
+        "type": "deduction",
+        "label": "Solve X² − yᵢX + 1",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "Writing M for the splitting field of q, the quadratic formula gives the splitting field L=M(√(y₁²−4),…,√(yₘ²−4)).",
+        "from": "f"
+      },
+      {
+        "to": "rank",
+        "type": "deduction",
+        "label": "Kummer theory",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "If r is the dimension of the span of the radicand square classes in M×/M×², then [L:M]=2ʳ.",
+        "from": "quadratics"
+      },
+      {
+        "to": "pairtest",
+        "type": "flow",
+        "label": "Test the quotient",
+        "citations": [],
+        "explanation": "The condition to verify is that the quotient on the m inverse pairs is the full symmetric group; it is not automatic.",
+        "from": "quotient"
+      },
+      {
+        "to": "ranktest",
+        "type": "flow",
+        "label": "Test r = m",
+        "citations": [],
+        "explanation": "The condition to verify is maximal square-class rank m; it is not automatic from irreducibility.",
+        "from": "rank"
+      },
+      {
+        "to": "joint",
+        "type": "flow",
+        "label": "Full quotient",
+        "citations": [],
+        "explanation": "The full quotient is the first necessary and sufficient condition in the joint criterion.",
+        "from": "pairtest"
+      },
+      {
+        "to": "joint",
+        "type": "flow",
+        "label": "Full kernel",
+        "citations": [],
+        "explanation": "Independent square classes give the full order-2ᵐ kernel, the second condition in the joint criterion.",
+        "from": "ranktest"
+      },
+      {
+        "to": "wreath",
+        "type": "equivalence",
+        "label": "Full quotient and full kernel",
+        "citations": [
+          "R1",
+          "R2"
+        ],
+        "explanation": "The Galois group embeds in C₂≀Sₘ; it equals that group exactly when its quotient has order m! and its kernel has order 2ᵐ.",
+        "from": "joint"
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "AndersonBertelliODorney2026",
+        "locator": "§2 and Lemma 2.1 (arXiv:2406.18970v2)",
+        "url": "https://arxiv.org/html/2406.18970v2#S2",
+        "note": "Trace substitution, quadratic lifting, signed-permutation action, and the discriminant identity. The same algebraic formulas hold over any field of characteristic different from 2."
+      },
+      {
+        "id": "R2",
+        "key": "Milne2022",
+        "locator": "Theorem 5.30 and Remark 5.32, pp. 96–98 (2022 book)",
+        "url": "https://www.jmilne.org/math/Books/FT0.pdf#page=106",
+        "note": "Kummer correspondence, extension degree, and perfect pairing, applied with exponent 2 over the splitting field M."
+      }
+    ],
+    "body": "<p>Let \\(y_1,\\ldots,y_m\\) be the roots of \\(q\\), let \\(M\\) be its splitting field, and put \\(d_i=y_i^2-4\\). The assumptions imply \\(d_i\\ne0\\) and make \\(f\\) separable. Its splitting field is</p>\n\\[L=M(\\sqrt{d_1},\\ldots,\\sqrt{d_m}),\\qquad [L:M]=2^{\\dim_{\\mathbb F_2}\\langle[d_1],\\ldots,[d_m]\\rangle}.\\]\n<p>The square classes are taken in \\(M^\\times/M^{\\times2}\\), not in the base field. Restriction gives an exact sequence</p>\n\\[1\\longrightarrow\\operatorname{Gal}(L/M)\\longrightarrow\\operatorname{Gal}(f/K)\\longrightarrow\\operatorname{Gal}(q/K)\\longrightarrow1.\\]\n<p>Consequently, \\(\\operatorname{Gal}(f/K)=C_2\\wr S_m\\) if and only if \\(\\operatorname{Gal}(q/K)=S_m\\) and all \\(m\\) radicand classes are independent. This follows by comparing orders inside the natural signed-permutation group; no splitting of the displayed exact sequence is assumed in advance.</p>\n<p>For example, \\(q=Y^2-3\\) has group \\(S_2\\), but its lift is \\(f=X^4-X^2+1=\\Phi_{12}\\). Both radicands are \\(-1\\), so the kernel has rank one and \\(\\operatorname{Gal}(f/\\mathbb Q)=C_2\\times C_2\\), of order four rather than eight.</p>\n<p>The identity \\(\\operatorname{disc}(f)=q(2)q(-2)\\operatorname{disc}(q)^2\\) detects parity, not the full kernel. A square discriminant forces even total pair flips. For even polynomials \\(q(X^2)\\), assuming also \\(q(0)\\ne0\\), the same method uses opposite pairs and radicands \\(y_i\\); this connects directly to parity-reduced Legendre and Hermite polynomials.</p>",
+    "related": [
+      {
+        "article": "orthogonal-families",
+        "section": "legendre-group-conjecture",
+        "label": "Opposite-root pairs in Legendre polynomials"
+      },
+      {
+        "article": "fekete",
+        "section": "normalization",
+        "label": "Reciprocal Fekete normalization"
+      },
+      {
+        "article": "eulerian",
+        "section": "definition",
+        "label": "Reciprocity in Eulerian polynomials"
+      },
+      {
+        "article": "random-reciprocal",
+        "section": "theorem",
+        "label": "How often the full signed group occurs"
+      },
+      {
+        "article": "discriminants",
+        "label": "What the discriminant does and does not determine"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1025 @@
+[
+  {
+    "id": "laguerre-negative-complete-strip",
+    "title": "Negative Laguerre parameters: a complete Galois classification",
+    "summary": "Factor exclusion, local permutations, and the discriminant determine every group in the strip \\(61\\le s\\le92\\).",
+    "scope": "Over \\(\\mathbb Q\\), for every integer \\(n\\ge1\\) and every integer \\(61\\le s\\le92\\), with \\(\\alpha=-n-s-1\\).",
+    "status": "Published",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "laguerre-negative-parameters",
+        "afterSection": "known"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "family",
+        "label": "Negative Laguerre family",
+        "kind": "object",
+        "article": "laguerre-negative-parameters",
+        "section": "definition"
+      },
+      {
+        "id": "factor-tests",
+        "label": "Factor-degree and root tests",
+        "kind": "method",
+        "article": "laguerre-negative-parameters",
+        "section": "known"
+      },
+      {
+        "id": "irreducible",
+        "label": "Irreducible in every degree",
+        "kind": "result",
+        "article": "laguerre-negative-parameters",
+        "section": "known"
+      },
+      {
+        "id": "local",
+        "label": "Newton polygons; finite cases",
+        "kind": "method",
+        "article": "newton-polygons",
+        "section": "large-group"
+      },
+      {
+        "id": "group-inputs",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "alternating",
+        "label": "G contains Aₙ",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "jordan"
+      },
+      {
+        "id": "discriminant",
+        "label": "Schur discriminant formula",
+        "kind": "method",
+        "article": "laguerre",
+        "section": "discriminant-example"
+      },
+      {
+        "id": "parity-inputs",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "cases",
+        "label": "OR",
+        "kind": "gate"
+      },
+      {
+        "id": "a-case",
+        "label": "Aₙ: ten explicit pairs",
+        "kind": "result",
+        "article": "discriminants",
+        "section": "parity"
+      },
+      {
+        "id": "s-case",
+        "label": "Sₙ: every other pair",
+        "kind": "result",
+        "article": "laguerre-negative-parameters",
+        "section": "known"
+      }
+    ],
+    "edges": [
+      {
+        "from": "family",
+        "to": "factor-tests",
+        "type": "flow",
+        "label": "Factor exclusions",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "The recalled factor-degree theorem and the rational-root analysis exhaust possible proper factors in this parameter strip."
+      },
+      {
+        "from": "factor-tests",
+        "to": "irreducible",
+        "type": "deduction",
+        "label": "Theorem 1.1",
+        "citations": [
+          "R1",
+          "R2"
+        ],
+        "explanation": "Eliminating the possible linear factor completes irreducibility; degrees one and two are included in the stated theorem."
+      },
+      {
+        "from": "family",
+        "to": "local",
+        "type": "flow",
+        "label": "Local witnesses",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "The proof obtains alternating containment from Newton-index witnesses, with the remaining finite degrees handled separately."
+      },
+      {
+        "from": "irreducible",
+        "to": "group-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "Transitivity is one input to the permutation-group argument."
+      },
+      {
+        "from": "local",
+        "to": "group-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "The local witnesses and finite checks are the other input; irreducibility alone does not determine the group."
+      },
+      {
+        "from": "group-inputs",
+        "to": "alternating",
+        "type": "deduction",
+        "label": "Alternating containment",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "The joint inputs establish alternating containment for every degree in the selected parameter strip."
+      },
+      {
+        "from": "family",
+        "to": "discriminant",
+        "type": "deduction",
+        "label": "Product formula",
+        "citations": [
+          "R4"
+        ],
+        "explanation": "Schur’s formula computes the discriminant of the monic normalization."
+      },
+      {
+        "from": "alternating",
+        "to": "parity-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "For n ≥ 2, alternating containment leaves Aₙ and Sₙ as the two possibilities; in degree one they coincide."
+      },
+      {
+        "from": "discriminant",
+        "to": "parity-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "For n ≥ 2, the discriminant square class distinguishes Aₙ from Sₙ; degree one is handled directly."
+      },
+      {
+        "from": "parity-inputs",
+        "to": "cases",
+        "type": "flow",
+        "label": "Discriminant split",
+        "citations": [
+          "R1",
+          "R4"
+        ],
+        "explanation": "For n ≥ 2, the explicit square-discriminant calculation gives the exceptional pairs; n = 1 belongs to the trivial S₁ branch."
+      },
+      {
+        "from": "cases",
+        "to": "a-case",
+        "type": "deduction",
+        "label": "Pair in the displayed set E",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "For a pair in E, the group is exactly Aₙ."
+      },
+      {
+        "from": "cases",
+        "to": "s-case",
+        "type": "deduction",
+        "label": "Pair outside E",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "For every other pair in the stated strip, the group is exactly Sₙ."
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "JindalNairShorey2024",
+        "locator": "Theorems 1.1 and 1.2(i), pp. 474–475",
+        "url": "https://publi.math.unideb.hu/paper/4289/download/10_5486_PMD_2024_9906.pdf",
+        "note": "The full published text was inspected; the selected classification is unconditional."
+      },
+      {
+        "id": "R2",
+        "key": "JindalNairShorey2024",
+        "locator": "Theorems A and B, pp. 475–476; Theorem 1.3 and §3",
+        "url": "https://publi.math.unideb.hu/paper/4289/download/10_5486_PMD_2024_9906.pdf",
+        "note": "Theorem A recalls the Shorey–Sinha factor restrictions; the linear-factor argument supplies the remaining step."
+      },
+      {
+        "id": "R3",
+        "key": "JindalNairShorey2024",
+        "locator": "Lemmas 2.10–2.13, p. 480; proof of Theorem 1.2 in §4",
+        "url": "https://publi.math.unideb.hu/paper/4289/download/10_5486_PMD_2024_9906.pdf",
+        "note": "Lemma 2.10 recalls Hajir’s Newton-index criterion. The proof also checks degrees outside the prime-interval range."
+      },
+      {
+        "id": "R4",
+        "key": "JindalNairShorey2024",
+        "locator": "Equation (2), p. 474; Lemma 2.11(iii); §4",
+        "url": "https://publi.math.unideb.hu/paper/4289/download/10_5486_PMD_2024_9906.pdf",
+        "note": "Schur’s discriminant formula and the square-class classification are used after alternating containment."
+      }
+    ],
+    "body": "<p>Let \\(M_{n,s}(X)=(-1)^n n!L_n^{(-n-s-1)}(X)\\), with integers \\(n\\ge1\\) and \\(61\\le s\\le92\\). Jindal–Nair–Shorey prove that every member is irreducible over \\(\\mathbb Q\\), and give the complete group classification</p>\\[\\operatorname{Gal}(M_{n,s}/\\mathbb Q)=\\begin{cases}A_n,&(n,s)\\in E,\\\\S_n,&(n,s)\\notin E,\\end{cases}\\]<p>where</p>\\[\\begin{aligned}E=\\{&(60,61),(61,64),(64,65),(68,69),(72,73),\\\\&(76,77),(80,81),(81,80),(84,85),(88,89)\\}.\\end{aligned}\\]<p>The factor-degree restrictions leave only a possible linear factor; the root analysis excludes it. Newton-index arguments and finite checks then give alternating containment. For the monic normalization, Schur’s formula is</p>\\[\\operatorname{disc}(M_{n,s})=\\prod_{j=2}^{n}j^j(-n-s-1+j)^{j-1}.\\]<p>For \\(n\\ge2\\), its square class selects the two branches. Degree one is immediate, with \\(A_1=S_1\\). The adjacent range \\(93\\le s\\le100\\) requires irreducibility separately; see <a href=\"#known\">known ranges</a>.</p>",
+    "related": [
+      {
+        "article": "laguerre",
+        "section": "definition",
+        "label": "Laguerre normalization"
+      },
+      {
+        "article": "newton-polygons",
+        "section": "large-group",
+        "label": "Newton index and large groups"
+      },
+      {
+        "article": "discriminants",
+        "section": "parity",
+        "label": "Discriminants and parity"
+      }
+    ]
+  },
+  {
+    "id": "laguerre-positive-complete-strip",
+    "title": "Positive Laguerre parameters: a proposed complete classification",
+    "summary": "A recent preprint claims every irreducible and reducible case for \\(0\\le a\\le1000\\). The exact exceptions are checkable; a proof-audit concern in the finite-pruning argument is recorded below.",
+    "scope": "Over \\(\\mathbb Q\\), for every integer \\(n\\ge1\\) and integer \\(0\\le a\\le1000\\). The conclusion is an irreducibility classification, not a Galois-group classification.",
+    "status": "Claimed",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "laguerre",
+        "afterSection": "fixed-alpha"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "family",
+        "label": "Lₙ⁽ᵃ⁾ with 0 ≤ a ≤ 1000",
+        "kind": "object",
+        "article": "laguerre",
+        "section": "definition"
+      },
+      {
+        "id": "newton",
+        "label": "Prime products; Newton polygons",
+        "kind": "method",
+        "article": "newton-polygons",
+        "section": "combine"
+      },
+      {
+        "id": "higher",
+        "label": "Exclude factor degrees 2 ≤ k ≤ n/2",
+        "kind": "result",
+        "article": "modular-irreducibility",
+        "section": "several-primes"
+      },
+      {
+        "id": "root-tests",
+        "label": "Integral-root constraints",
+        "kind": "method",
+        "article": "foundations",
+        "section": "gauss"
+      },
+      {
+        "id": "linear",
+        "label": "Classify linear-factor cases",
+        "kind": "result",
+        "article": "laguerre",
+        "section": "fixed-alpha"
+      },
+      {
+        "id": "combine",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "cases",
+        "label": "OR",
+        "kind": "gate"
+      },
+      {
+        "id": "exceptions",
+        "label": "Listed quadratic and quartic cases",
+        "kind": "result",
+        "article": "laguerre",
+        "section": "fixed-alpha"
+      },
+      {
+        "id": "irreducible",
+        "label": "Every other member is irreducible",
+        "kind": "result",
+        "article": "laguerre",
+        "section": "fixed-alpha"
+      }
+    ],
+    "edges": [
+      {
+        "from": "family",
+        "to": "newton",
+        "type": "flow",
+        "label": "Several polygon edges",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "The proof combines earlier small-parameter results with prime-product bounds and several edges of the Newton polygon for the enlarged range.",
+        "preprint": true
+      },
+      {
+        "from": "newton",
+        "to": "higher",
+        "type": "deduction",
+        "label": "Exclude higher factor degrees",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "The preprint claims exclusion of every proper factor degree between two and half the degree; this arrow records its proposed argument.",
+        "preprint": true
+      },
+      {
+        "from": "family",
+        "to": "root-tests",
+        "type": "flow",
+        "label": "Divisibility and root bounds",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "The monic integral normalization makes every rational root integral, and the paper imposes sharper constraints on such a root.",
+        "preprint": true
+      },
+      {
+        "from": "root-tests",
+        "to": "linear",
+        "type": "deduction",
+        "label": "Claimed linear-factor cases",
+        "citations": [
+          "R1",
+          "R3"
+        ],
+        "explanation": "The preprint claims precisely the listed linear-factor cases. The statement/proof mismatch in Lemma 6.1(iii), used for finite pruning, remains a proof-audit boundary.",
+        "preprint": true
+      },
+      {
+        "from": "higher",
+        "to": "combine",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "The higher-degree exclusion must be combined with the linear-factor analysis."
+      },
+      {
+        "from": "linear",
+        "to": "combine",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "Knowing the linear-factor cases alone would not exclude a higher-degree factorization."
+      },
+      {
+        "from": "combine",
+        "to": "cases",
+        "type": "flow",
+        "label": "Claimed classification",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "If both exclusion arguments are complete, they exhaust all possible proper rational factors; the finite-pruning concern is stated below.",
+        "preprint": true
+      },
+      {
+        "from": "cases",
+        "to": "exceptions",
+        "type": "deduction",
+        "label": "Exceptional pair",
+        "citations": [
+          "R1",
+          "R4"
+        ],
+        "explanation": "The displayed quadratic identity and the quartic factorizations verify reducibility of every listed pair directly; this direction does not depend on completeness of the preprint proof.",
+        "preprint": false
+      },
+      {
+        "from": "cases",
+        "to": "irreducible",
+        "type": "deduction",
+        "label": "All other pairs",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "Theorem 1.1 claims irreducibility outside the exception list; this conclusion retains the proof-audit limitation noted below.",
+        "preprint": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "DasDuttaLaishramNair2026Laguerre",
+        "locator": "Theorem 1.1, p. 2; arXiv:2610.10614v1, 7 October 2026",
+        "url": "https://arxiv.org/pdf/2610.10614v1",
+        "note": "The full theorem includes exceptions omitted from the abstract’s abbreviated description."
+      },
+      {
+        "id": "R2",
+        "key": "DasDuttaLaishramNair2026Laguerre",
+        "locator": "§1, earlier range; Lemma 4.1 and §5, factor degrees k ≥ 2",
+        "url": "https://arxiv.org/pdf/2610.10614v1"
+      },
+      {
+        "id": "R3",
+        "key": "DasDuttaLaishramNair2026Laguerre",
+        "locator": "Proposition 1.3; Lemma 6.1(iii), pp. 13–14; Lemmas 6.5–6.6, p. 17, version 1",
+        "url": "https://arxiv.org/pdf/2610.10614v1",
+        "note": "The statement gives simultaneous bounds where its proof derives alternatives; later finite pruning uses this lemma. Exhaustiveness under the weaker conditions has not been verified."
+      },
+      {
+        "id": "R4",
+        "key": "DasDuttaLaishramNair2026Laguerre",
+        "locator": "Theorem 1.2(i), quadratic criterion; Theorem 1.1, quartic exceptions",
+        "url": "https://arxiv.org/pdf/2610.10614v1",
+        "note": "The listed reducible examples are also verified by direct exact factorization in the atlas."
+      }
+    ],
+    "body": "<p>For the <a href=\"#definition\">standard Laguerre polynomial</a> \\(L_n^{(a)}\\), with integers \\(n\\ge1\\) and \\(0\\le a\\le1000\\), Theorem 1.1 of the October 2026 preprint states irreducibility over \\(\\mathbb Q\\) except exactly when</p>\\[\\begin{aligned}n&=2,&a&=m^2-2\\quad(2\\le m\\le31),\\\\n&=4,&a&\\in\\{5,23\\}.\\end{aligned}\\]<p>Each exceptional member has a linear factor. The quadratic family is visible directly:</p>\\[2L_2^{(m^2-2)}(X)=\\bigl(X-m^2+m\\bigr)\\bigl(X-m^2-m\\bigr).\\]<p>The proposed proof treats higher factor degrees and linear factors separately, using several Newton-polygon edges and integral-root constraints. This theorem does not determine the Galois groups.</p><p>The two quartic exceptions can also be checked directly:</p>\\[\\begin{aligned}24L_4^{(5)}(X)&=(X-6)(X^3-30X^2+252X-504),\\\\24L_4^{(23)}(X)&=(X-30)(X^3-78X^2+1872X-14040).\\end{aligned}\\]<p><strong>Proof-audit boundary.</strong> In v1, Lemma 6.1(iii) states simultaneous valuation bounds where its proof gives alternatives, and additional proof branches are absent from the statement. Lemmas 6.5–6.6 use these restrictions to prune finite cases. Exhaustiveness under the weaker conditions has not been verified. This concerns the proof as written; it is not a counterexample to the classification.</p>",
+    "related": [
+      {
+        "article": "laguerre",
+        "section": "fixed-alpha",
+        "label": "Fixed-parameter eventual results"
+      },
+      {
+        "article": "newton-polygons",
+        "section": "combine",
+        "label": "Combining local factor restrictions"
+      },
+      {
+        "article": "laguerre-negative-parameters",
+        "section": "known",
+        "label": "The negative-parameter range"
+      }
+    ]
+  },
+  {
+    "id": "catalan-sections-complete-groups",
+    "title": "Catalan sections: factor reflection, resultants, and full symmetric groups",
+    "summary": "The irreducibility proof combines root geometry with an integer resultant; a later preprint adds the group \\(S_n\\) in every degree.",
+    "scope": "For \\(P_n(X)=\\sum_{j=0}^{n}\\frac{1}{j+1}\\binom{2j}{j}X^j\\), every integer \\(n\\ge1\\), over \\(\\mathbb Q\\). Both all-degree assertions cited here are preprint claims.",
+    "status": "Claimed",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "taylor-prescriptions",
+        "afterSection": "catalan"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "family",
+        "label": "Catalan monic reciprocals Qₙ",
+        "kind": "object",
+        "article": "taylor-prescriptions",
+        "section": "catalan"
+      },
+      {
+        "id": "annulus",
+        "label": "Root annulus for n ≥ 320",
+        "kind": "result",
+        "article": "archimedean-criteria"
+      },
+      {
+        "id": "reflection",
+        "label": "Reflected factor when n ≥ 320",
+        "kind": "result",
+        "article": "taylor-prescriptions",
+        "section": "catalan"
+      },
+      {
+        "id": "resultant-inputs",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "large",
+        "label": "Integer-resultant contradiction",
+        "kind": "method",
+        "article": "foundations",
+        "section": "gauss"
+      },
+      {
+        "id": "small",
+        "label": "Degrees 1–319: exact checks",
+        "kind": "method",
+        "article": "taylor-prescriptions",
+        "section": "catalan"
+      },
+      {
+        "id": "degree-ranges",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "irreducible",
+        "label": "Irreducible in every degree",
+        "kind": "result",
+        "article": "foundations",
+        "section": "orbits"
+      },
+      {
+        "id": "local",
+        "label": "Inertia, block traces, finite checks",
+        "kind": "method",
+        "article": "ramification-inertia",
+        "section": "tame-cycles"
+      },
+      {
+        "id": "group-inputs",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "symmetric",
+        "label": "Galois group Sₙ for every n ≥ 1",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "jordan"
+      }
+    ],
+    "edges": [
+      {
+        "from": "family",
+        "to": "annulus",
+        "type": "deduction",
+        "label": "Seki: Proposition 2.2",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "For n ≥ 320 every root of the monic reciprocal lies strictly between radii 31/8 and 4.",
+        "preprint": true
+      },
+      {
+        "from": "family",
+        "to": "reflection",
+        "type": "deduction",
+        "label": "Conditional factor symmetry",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "For n ≥ 320, a hypothetical proper factorization has a monic factor F satisfying F(4−X)=(−1)^deg(F)F(X).",
+        "preprint": true
+      },
+      {
+        "from": "annulus",
+        "to": "resultant-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "The annulus bounds both a root of F and its reflected partner."
+      },
+      {
+        "from": "reflection",
+        "to": "resultant-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "The reflected factor is obtained only under the temporary assumption of reducibility."
+      },
+      {
+        "from": "resultant-inputs",
+        "to": "large",
+        "type": "deduction",
+        "label": "A nonzero integer below 1",
+        "citations": [
+          "R4"
+        ],
+        "explanation": "The hypothetical factor gives 0 < |Res(F,X²−4X+16)| < 1, contradicting integrality and excluding reducibility for n ≥ 320.",
+        "preprint": true
+      },
+      {
+        "from": "family",
+        "to": "small",
+        "type": "flow",
+        "label": "Degrees below 320",
+        "citations": [
+          "R5"
+        ],
+        "explanation": "The paper combines its large-degree argument with the already computed small-degree irreducibility checks.",
+        "preprint": true
+      },
+      {
+        "from": "large",
+        "to": "degree-ranges",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "The contradiction covers n ≥ 320."
+      },
+      {
+        "from": "small",
+        "to": "degree-ranges",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "The finite checks cover the complementary positive degrees."
+      },
+      {
+        "from": "degree-ranges",
+        "to": "irreducible",
+        "type": "deduction",
+        "label": "Seki: Theorem 1.1",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "Together the two degree ranges give irreducibility for every n ≥ 1.",
+        "preprint": true
+      },
+      {
+        "from": "family",
+        "to": "local",
+        "type": "flow",
+        "label": "Local and group analysis",
+        "citations": [
+          "R6"
+        ],
+        "explanation": "The later proof studies tame inertia, possible block systems and root traces, and supplies small-degree group certificates.",
+        "preprint": true
+      },
+      {
+        "from": "irreducible",
+        "to": "group-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "Irreducibility supplies transitivity for the group argument."
+      },
+      {
+        "from": "local",
+        "to": "group-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "The local permutations and block analysis supply the information beyond transitivity."
+      },
+      {
+        "from": "group-inputs",
+        "to": "symmetric",
+        "type": "deduction",
+        "label": "Theorem E",
+        "citations": [
+          "R6"
+        ],
+        "explanation": "The joint argument establishes primitivity, alternating containment and an odd permutation, with finite certificates in the small degrees.",
+        "preprint": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "Seki2026Catalan",
+        "locator": "Theorem 1.1, p. 1; arXiv:2609.10526v1",
+        "url": "https://arxiv.org/pdf/2609.10526v1",
+        "note": "This source states irreducibility and explicitly leaves the stronger symmetric-group conjecture untreated."
+      },
+      {
+        "id": "R2",
+        "key": "Seki2026Catalan",
+        "locator": "Proposition 2.2, pp. 2–3",
+        "url": "https://arxiv.org/pdf/2609.10526v1"
+      },
+      {
+        "id": "R3",
+        "key": "Seki2026Catalan",
+        "locator": "Proposition 2.3; Claim 3.1; §4",
+        "url": "https://arxiv.org/pdf/2609.10526v1",
+        "note": "The reflection identity is forced on one factor of a hypothetical proper factorization."
+      },
+      {
+        "id": "R4",
+        "key": "Seki2026Catalan",
+        "locator": "§3, the resultant argument following Claim 3.1",
+        "url": "https://arxiv.org/pdf/2609.10526v1"
+      },
+      {
+        "id": "R5",
+        "key": "Seki2026Catalan",
+        "locator": "Introduction, p. 2; beginning of §3, p. 3",
+        "url": "https://arxiv.org/pdf/2609.10526v1",
+        "note": "The paper cites earlier exact computations for the finite small-degree range."
+      },
+      {
+        "id": "R6",
+        "key": "NguyenDang2026Taylor",
+        "locator": "Theorem E, p. 5; §§5.1–5.6, pp. 28–31; Hexagon 2610.00527v3",
+        "url": "https://hexagonmath.org/pdf/2610.00527v3",
+        "note": "The full-group claim uses Seki’s irreducibility theorem; it is not a consequence of irreducibility alone."
+      }
+    ],
+    "body": "<p>For the <a href=\"#catalan\">Catalan sections</a> \\(P_n\\), put \\(Q_n(X)=X^nP_n(1/X)\\). Seki’s Theorem 1.1 states that every \\(P_n\\), \\(n\\ge1\\), is irreducible over \\(\\mathbb Q\\).</p><p>For \\(n\\ge320\\), roots of \\(Q_n\\) satisfy \\(31/8&lt;|\\alpha|&lt;4\\). A proper factorization would supply a monic integral factor \\(F\\) invariant under reflection \\(X\\mapsto4-X\\), up to sign. With \\(W=X^2-4X+16\\), these two facts force</p>\\[0&lt;|\\operatorname{Res}(F,W)|=\\prod_{F(\\alpha)=0}|W(\\alpha)|&lt;1,\\]<p>impossible for a nonzero integer. The complementary degrees are handled by finite checks.</p><p>Theorem E of Nguyen-Dang’s version 3 further claims the complete group result</p>\\[\\operatorname{Gal}(P_n/\\mathbb Q)=S_n\\qquad(n\\ge1).\\]<p>Its proof combines transitivity with local inertia and block-trace arguments.</p>",
+    "related": [
+      {
+        "article": "taylor",
+        "section": "schur",
+        "label": "Schur’s exponential precedent"
+      },
+      {
+        "article": "permutation-groups",
+        "section": "blocks",
+        "label": "Blocks and primitivity"
+      },
+      {
+        "article": "frobenius",
+        "section": "statement",
+        "label": "Finite-field certificates"
+      }
+    ]
+  },
+  {
+    "id": "central-binomial-groups-and-primes",
+    "title": "Central-binomial sections: exact groups and prime reductions",
+    "summary": "A complete degree classification separates \\(A_n\\) from \\(S_n\\) and determines exactly when an irreducible reduction can occur.",
+    "scope": "For \\(C_n(X)=\\sum_{j=0}^{n}\\binom{2j}{j}X^j\\), every integer \\(n\\ge1\\), over \\(\\mathbb Q\\); prime reductions concern the monic reciprocal \\(Q_n=X^nC_n(1/X)\\). The all-degree group classification is a preprint claim.",
+    "status": "Claimed",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "taylor-prescriptions",
+        "afterSection": "central-binomial"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "family",
+        "label": "Central-binomial sections",
+        "kind": "object",
+        "article": "taylor-prescriptions",
+        "section": "central-binomial"
+      },
+      {
+        "id": "irreducible",
+        "label": "All-degree irreducibility",
+        "kind": "result",
+        "article": "foundations",
+        "section": "orbits"
+      },
+      {
+        "id": "inertia",
+        "label": "Half-integral witnesses; finite cases",
+        "kind": "method",
+        "article": "newton-polygons",
+        "section": "large-group"
+      },
+      {
+        "id": "containment-inputs",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "contains",
+        "label": "G contains Aₙ",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "jordan"
+      },
+      {
+        "id": "square-class",
+        "label": "Exact discriminant square class",
+        "kind": "method",
+        "article": "discriminants",
+        "section": "parity"
+      },
+      {
+        "id": "classification-inputs",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "cases",
+        "label": "OR",
+        "kind": "gate"
+      },
+      {
+        "id": "alternating",
+        "label": "n = 2r(r + 1): Aₙ",
+        "kind": "result",
+        "article": "taylor-prescriptions",
+        "section": "central-binomial"
+      },
+      {
+        "id": "symmetric",
+        "label": "Other degrees: Sₙ",
+        "kind": "result",
+        "article": "taylor-prescriptions",
+        "section": "central-binomial"
+      },
+      {
+        "id": "no-prime",
+        "label": "Every prime reduction is reducible",
+        "kind": "result",
+        "article": "modular-irreducibility",
+        "section": "all-primes-limit"
+      },
+      {
+        "id": "prime-density",
+        "label": "Irreducible-prime density 1/n",
+        "kind": "result",
+        "article": "frobenius",
+        "section": "density"
+      }
+    ],
+    "edges": [
+      {
+        "from": "family",
+        "to": "irreducible",
+        "type": "deduction",
+        "label": "Wei: Theorem B(i)",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "Wei’s theorem supplies rational irreducibility in every positive degree.",
+        "preprint": true
+      },
+      {
+        "from": "family",
+        "to": "inertia",
+        "type": "flow",
+        "label": "Half-integral transformation",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "An affine transform has coefficients (−1)^j binomial(n,j)/(2j+1), exposing prime witnesses; the degree-six case is checked separately.",
+        "preprint": true
+      },
+      {
+        "from": "irreducible",
+        "to": "containment-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "Transitivity must be combined with the local witness argument."
+      },
+      {
+        "from": "inertia",
+        "to": "containment-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "The witness argument and its finite cases supply group-theoretic information."
+      },
+      {
+        "from": "containment-inputs",
+        "to": "contains",
+        "type": "deduction",
+        "label": "All-degree containment",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "Proposition 4.13 and the separate degree-six argument yield Aₙ containment for every n ≥ 1.",
+        "preprint": true
+      },
+      {
+        "from": "family",
+        "to": "square-class",
+        "type": "deduction",
+        "label": "Wei: Theorem B(ii)",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "For n ≥ 2 the discriminant is a square exactly when n=2r(r+1), r ≥ 1; degree one is handled directly.",
+        "preprint": true
+      },
+      {
+        "from": "contains",
+        "to": "classification-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "Alternating containment limits the possible groups to Aₙ and Sₙ."
+      },
+      {
+        "from": "square-class",
+        "to": "classification-inputs",
+        "type": "flow",
+        "label": "",
+        "citations": [],
+        "explanation": "The square class decides which group occurs."
+      },
+      {
+        "from": "classification-inputs",
+        "to": "cases",
+        "type": "flow",
+        "label": "Theorem D",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "The selected degree condition separates the two cases in the complete classification.",
+        "preprint": true
+      },
+      {
+        "from": "cases",
+        "to": "alternating",
+        "type": "deduction",
+        "label": "r ≥ 1",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "The exceptional degrees have group Aₙ and are all divisible by four.",
+        "preprint": true
+      },
+      {
+        "from": "cases",
+        "to": "symmetric",
+        "type": "deduction",
+        "label": "Complementary degrees",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "Every other positive degree has group Sₙ, including degree one.",
+        "preprint": true
+      },
+      {
+        "from": "alternating",
+        "to": "no-prime",
+        "type": "deduction",
+        "label": "No n-cycle in Aₙ",
+        "citations": [
+          "R4"
+        ],
+        "explanation": "An irreducible degree-n reduction would give an n-cycle; n is even in this branch, so that cycle would be odd."
+      },
+      {
+        "from": "symmetric",
+        "to": "prime-density",
+        "type": "deduction",
+        "label": "Frobenius and Chebotarev",
+        "citations": [
+          "R4",
+          "R5"
+        ],
+        "explanation": "The n-cycles occupy a proportion 1/n of Sₙ, giving the stated relative natural density among primes."
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "Wei2026JacobiPrimeWitnesses",
+        "locator": "Theorem B(i)–(ii), p. 3; proofs in §§4.2 and 5; second deposited version, 3 October 2026",
+        "url": "https://zenodo.org/api/records/23115023/files/main.pdf/content",
+        "note": "The same theorem gives only an eventual group classification in part (iv); the all-degree group step comes from the later source."
+      },
+      {
+        "id": "R2",
+        "key": "NguyenDang2026Taylor",
+        "locator": "Propositions 4.12–4.13; proof of Theorem D in §4.11, pp. 24–26; version 3",
+        "url": "https://hexagonmath.org/pdf/2610.00527v3",
+        "note": "The degree-six exception to Proposition 4.13 is resolved in the proof of Theorem D."
+      },
+      {
+        "id": "R3",
+        "key": "NguyenDang2026Taylor",
+        "locator": "Theorem D, p. 5; §4.11; Hexagon 2610.00527v3",
+        "url": "https://hexagonmath.org/pdf/2610.00527v3"
+      },
+      {
+        "id": "R4",
+        "key": "ConradModP",
+        "locator": "Theorem 1 and its proof, p. 1",
+        "url": "https://kconrad.math.uconn.edu/blurbs/gradnumthy/galois-Q-factor-mod-p.pdf",
+        "note": "An irreducible reduction is separable, so its prime does not divide the polynomial discriminant."
+      },
+      {
+        "id": "R5",
+        "key": "StevenhagenLenstra1996",
+        "locator": "Chebotarev’s Density Theorem, p. 34 (PDF p. 9)",
+        "url": "https://pub.math.leidenuniv.nl/~lenstrahw/PUBLICATIONS/1996d/art.pdf",
+        "note": "The conjugacy-class density is |C|/|G|; in Sₙ the n-cycles form one class of size (n−1)!."
+      }
+    ],
+    "body": "<p>For the <a href=\"#central-binomial\">central-binomial sections</a> \\(C_n\\), Wei’s preprint states irreducibility in every degree and the exact square-discriminant condition. Theorem D of Nguyen-Dang’s version 3 claims the complete group classification</p>\\[\\operatorname{Gal}(C_n/\\mathbb Q)=\\begin{cases}A_n,&n=2r(r+1),\\ r\\ge1,\\\\S_n,&\\text{otherwise},\\end{cases}\\qquad n\\ge1.\\]<p>For the monic reciprocal \\(Q_n=X^nC_n(1/X)\\), an irreducible reduction modulo a prime exists exactly in the symmetric cases. Such primes have relative natural density \\(1/n\\).</p><p>The distinction has a group-theoretic explanation. An irreducible reduction corresponds to an \\(n\\)-cycle. Every exceptional degree is even, so an \\(n\\)-cycle is odd and cannot lie in \\(A_n\\). In \\(S_n\\), precisely \\((n-1)!\\) of the \\(n!\\) permutations are \\(n\\)-cycles. Thus rational irreducibility can coexist with reducibility modulo every prime.</p>",
+    "related": [
+      {
+        "article": "frobenius",
+        "section": "density",
+        "label": "Chebotarev and cycle densities"
+      },
+      {
+        "article": "modular-irreducibility",
+        "section": "all-primes-limit",
+        "label": "Why modular tests can all fail"
+      },
+      {
+        "article": "discriminants",
+        "section": "parity",
+        "label": "The discriminant parity test"
+      }
+    ]
+  }
+]

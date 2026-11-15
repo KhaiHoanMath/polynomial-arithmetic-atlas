@@ -1,0 +1,654 @@
+[
+  {
+    "id": "legendre-complete-galois",
+    "title": "Legendre polynomials: irreducibility and all signed permutations",
+    "summary": "Two preprints claim all-degree irreducibility and the full group \\(C_2\\wr S_m\\), combining resultant estimates with local cycles and the action on opposite root pairs.",
+    "scope": "Over \\(\\mathbb Q\\), for every \\(m\\ge1\\) and \\(\\delta\\in\\{0,1\\}\\), with the standard normalization \\(P_n(1)=1\\) and \\(L_{2m+\\delta}(x)=P_{2m+\\delta}(x)/x^\\delta\\). Both all-degree inputs remain preprint claims.",
+    "status": "Claimed",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "orthogonal-families",
+        "afterSection": "legendre-group-conjecture"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "legendre",
+        "label": "Parity-normalized Legendre polynomial",
+        "kind": "object",
+        "article": "orthogonal-families",
+        "section": "legendre"
+      },
+      {
+        "id": "resultants",
+        "label": "Resultant bounds and finite degrees",
+        "kind": "method",
+        "article": "orthogonal-families",
+        "section": "legendre-2026"
+      },
+      {
+        "id": "irreducible",
+        "label": "Irreducible in every degree",
+        "kind": "result",
+        "article": "orthogonal-families",
+        "section": "legendre-2026"
+      },
+      {
+        "id": "pairs",
+        "label": "Transitive action on squared roots",
+        "kind": "result",
+        "article": "orthogonal-families",
+        "section": "legendre-group-conjecture"
+      },
+      {
+        "id": "cycles",
+        "label": "Tame cycles and prime estimates",
+        "kind": "method",
+        "article": "newton-polygons",
+        "section": "limits"
+      },
+      {
+        "id": "pair-inputs",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "symmetric",
+        "label": "Full Sₘ on the root pairs",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "jordan"
+      },
+      {
+        "id": "flips",
+        "label": "Odd proper flips; small cases",
+        "kind": "method",
+        "article": "orthogonal-families",
+        "section": "legendre-group-conjecture"
+      },
+      {
+        "id": "full-inputs",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "wreath",
+        "label": "Full C₂ ≀ Sₘ on all 2m roots",
+        "kind": "result",
+        "article": "orthogonal-families",
+        "section": "legendre-group-conjecture"
+      }
+    ],
+    "edges": [
+      {
+        "from": "legendre",
+        "to": "resultants",
+        "type": "flow",
+        "label": "Assume a factorization",
+        "citations": [
+          "L1"
+        ],
+        "explanation": "Deng compares local and real bounds for the odd part of the factor resultant, then handles the remaining degrees.",
+        "preprint": true
+      },
+      {
+        "from": "resultants",
+        "to": "irreducible",
+        "type": "deduction",
+        "label": "Deng: all-degree claim",
+        "citations": [
+          "L1"
+        ],
+        "explanation": "The claimed contradiction and finite-range completion give irreducibility of both parity-normalized families.",
+        "preprint": true
+      },
+      {
+        "from": "irreducible",
+        "to": "pairs",
+        "type": "deduction",
+        "label": "Pass to squared roots",
+        "citations": [
+          "L2"
+        ],
+        "explanation": "Writing L(x)=Q(x²), irreducibility of L implies irreducibility of Q and hence transitivity on its m roots."
+      },
+      {
+        "from": "legendre",
+        "to": "cycles",
+        "type": "flow",
+        "label": "Local Jacobi description",
+        "citations": [
+          "L2",
+          "L3"
+        ],
+        "explanation": "The quadratic Jacobi transformation makes coefficient valuations and selected tame inertia cycles explicit.",
+        "preprint": true
+      },
+      {
+        "from": "pairs",
+        "to": "pair-inputs",
+        "type": "flow",
+        "label": "Transitivity",
+        "citations": [],
+        "explanation": "Transitivity is one input to the group calculation."
+      },
+      {
+        "from": "cycles",
+        "to": "pair-inputs",
+        "type": "flow",
+        "label": "Primitivity and cycles",
+        "citations": [],
+        "explanation": "The local cycles and prime estimates supply the additional group-theoretic input."
+      },
+      {
+        "from": "pair-inputs",
+        "to": "symmetric",
+        "type": "deduction",
+        "label": "All degrees; Thm 5.9",
+        "citations": [
+          "L2",
+          "L3",
+          "L4"
+        ],
+        "explanation": "The preprint combines the published finite range with its large-degree primitivity argument and cycle criterion.",
+        "preprint": true
+      },
+      {
+        "from": "cycles",
+        "to": "flips",
+        "type": "flow",
+        "label": "Lemmas 5.10–5.11",
+        "citations": [
+          "L3"
+        ],
+        "explanation": "For m≥4 a suitable inertia power flips an odd proper set of pairs; the proof treats m≤3 separately.",
+        "preprint": true
+      },
+      {
+        "from": "symmetric",
+        "to": "full-inputs",
+        "type": "flow",
+        "label": "Permute every pair",
+        "citations": [],
+        "explanation": "The full action on pairs is required before conjugating a pair flip."
+      },
+      {
+        "from": "flips",
+        "to": "full-inputs",
+        "type": "flow",
+        "label": "Generate the sign kernel",
+        "citations": [],
+        "explanation": "The pair-flip input, or the explicit small-degree calculation, supplies the missing sign changes."
+      },
+      {
+        "from": "full-inputs",
+        "to": "wreath",
+        "type": "deduction",
+        "label": "Lemma 5.5; Theorem 5.9",
+        "citations": [
+          "L3"
+        ],
+        "explanation": "The pair action and sign-kernel argument together yield the claimed full wreath product.",
+        "preprint": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "L1",
+        "key": "Deng2026Legendre",
+        "locator": "Theorem 1.1; Lemma 2.2; Theorems 3.1, 3.5, 4.1 and 5.1; §6, arXiv:2609.22336v2 (27 September 2026)",
+        "url": "https://arxiv.org/pdf/2609.22336v2",
+        "note": "All-degree irreducibility is a preprint claim. Statements and the indicated proof structure were inspected; the proof was not independently certified."
+      },
+      {
+        "id": "L2",
+        "key": "CullinanHajir2014",
+        "locator": "Lemmas 1.2–1.3; Conjecture 1.5; Theorem 1.9(a)",
+        "url": "https://faculty.bard.edu/cullinan/papers/legendre.pdf",
+        "note": "The published finite group verification assumes irreducibility and concerns the degree-m action on pairs."
+      },
+      {
+        "id": "L3",
+        "key": "NguyenDang2026Jacobi",
+        "locator": "Theorem 1.2; Proposition 5.7; Lemma 5.5; Theorem 5.9 and Lemmas 5.10–5.11, pp. 31–34, Hexagon 2610.00468v1 (22 October 2026)",
+        "url": "https://hexagonmath.org/pdf/2610.00468v1",
+        "note": "The all-degree group conclusion is recorded as a preprint claim; the root-pair action and the full 2m-root action are separate steps."
+      },
+      {
+        "id": "L4",
+        "key": "Jones2014Cycles",
+        "locator": "Corollary 1.3, published version",
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BBF3021D8434AD2C0BB0D3D6CE637008/S000497271300049Xa.pdf/primitive-permutation-groups-containing-a-cycle.pdf",
+        "note": "A primitive group containing a nontrivial single cycle with at least three fixed points contains the alternating group."
+      }
+    ],
+    "body": "<p><strong>Preprint claims in every degree.</strong> Put \\(L_{2m+\\delta}(x)=P_{2m+\\delta}(x)/x^\\delta=Q_{m,\\delta}(x^2)\\), where \\(m\\ge1\\) and \\(\\delta\\in\\{0,1\\}\\). Deng’s version 2 claims that \\(L_{2m+\\delta}\\) is irreducible. Nguyen-Dang’s version 1 claims the complete group determination</p>\\[\\operatorname{Gal}(Q_{m,\\delta}/\\mathbb Q)=S_m,\\qquad \\operatorname{Gal}(L_{2m+\\delta}/\\mathbb Q)=C_2^m\\rtimes S_m.\\]<p>The latter group acts on \\(2m\\) roots: \\(S_m\\) permutes opposite pairs, and \\(C_2^m\\) exchanges their members independently. Irreducibility alone does not determine either group. The two AND nodes show the extra inputs required.</p><p>The resultant comparison excludes factors in large degree; a finite completion is part of the irreducibility claim. On the group side, local cycles first determine the action on pairs. For \\(m\\ge4\\), an odd proper pair flip and its conjugates generate every sign change; the three smaller pair degrees receive explicit checks.</p><details><summary>Why the resultant bounds conflict</summary><p> For \\(n=2m+\\delta\\), write \\(2^{v_2(n!)}P_n(x)/x^\\delta=H(x^2)\\). Deng’s Lemma 2.2 makes every rational factor of \\(2^{v_2(n!)}P_n(x)/x^\\delta\\) even, so every proper factorization descends to \\(H=AB\\). For a nontrivial factorization, take \\(1\\le k=\\deg A\\le m/2\\), and let \\(R_{\\mathrm{odd}}\\) be the positive odd part of \\(|\\operatorname{Res}(A,B)|\\). For \\(n\\ge64\\), the Wronskian identity and orthogonality give the upper bound below; Legendre’s differential equation and Chebyshev–Hadamard estimates give the lower bound:</p>\\[m\\log4-\\log\\!\\frac{4(m+1)^2}{\\sqrt m}<\\frac{\\log R_{\\mathrm{odd}}}{k}<\\bigl(m+\\sqrt{2n-1}\\bigr)\\log3.\\]<p>These bounds contradict each other for \\(n\\ge256\\); the finite completion covers \\(2\\le n\\le255\\) (Deng, Theorems 4.1, 5.1 and §6).</p></details><p>The source statements and these dependencies were checked. The full preprint proofs have not been independently verified, and the all-degree conclusions retain the status <em>Claimed</em>.</p>",
+    "related": [
+      {
+        "article": "orthogonal-families",
+        "section": "legendre-2026",
+        "label": "Stieltjes irreducibility claim"
+      },
+      {
+        "article": "newton-polygons",
+        "section": "limits",
+        "label": "From local slopes to cycle information"
+      },
+      {
+        "article": "permutation-groups",
+        "section": "jordan",
+        "label": "Primitivity and the cycle criterion"
+      },
+      {
+        "article": "galois-correspondence",
+        "section": "blocks",
+        "label": "Root fields and blocks"
+      }
+    ]
+  },
+  {
+    "id": "jacobi-modular-jacobians",
+    "title": "Four Jacobi families: modular forms, symmetric groups, and Jacobians",
+    "summary": "The Kaneko–Zagier families connect modular polynomial factors to an all-degree symmetric-group claim; Zarhin’s published theorem then controls the associated hyperelliptic Jacobians.",
+    "scope": "For \\(f=P_n^{(\\lambda/3,\\mu/2)}\\) over \\(\\mathbb Q\\), \\(n\\ge1\\), \\(\\lambda,\\mu\\in\\{\\pm1\\}\\). The Galois assertion is a preprint claim; the Jacobian consequence requires \\(n\\ge5\\) and that assertion.",
+    "status": "Claimed",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "kaneko-zagier",
+        "afterSection": "status"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "jacobi",
+        "label": "Four Jacobi families: ±1/3, ±1/2",
+        "kind": "object",
+        "article": "kaneko-zagier",
+        "section": "definition"
+      },
+      {
+        "id": "modular",
+        "label": "Modular polynomial factors",
+        "kind": "object",
+        "article": "kaneko-zagier",
+        "section": "definition"
+      },
+      {
+        "id": "symmetric",
+        "label": "Irreducible with Galois group Sₙ",
+        "kind": "result",
+        "article": "kaneko-zagier",
+        "section": "status"
+      },
+      {
+        "id": "curve",
+        "label": "Smooth model of y² = f(x)",
+        "kind": "object",
+        "article": "permutation-groups",
+        "section": "hyperelliptic-jacobians"
+      },
+      {
+        "id": "degree",
+        "label": "Degree n ≥ 5; characteristic zero",
+        "kind": "hypothesis",
+        "article": "permutation-groups",
+        "section": "hyperelliptic-jacobians"
+      },
+      {
+        "id": "inputs",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "endomorphisms",
+        "label": "Geometric endomorphism ring ℤ",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "hyperelliptic-jacobians"
+      },
+      {
+        "id": "simple",
+        "label": "Absolutely simple Jacobian",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "hyperelliptic-jacobians"
+      }
+    ],
+    "edges": [
+      {
+        "from": "jacobi",
+        "to": "modular",
+        "type": "flow",
+        "label": "Rational affine normalization",
+        "citations": [
+          "J1",
+          "J2"
+        ],
+        "explanation": "The four Jacobi polynomials become Kaneko–Zagier modular factors under the stated rational affine substitution and scaling."
+      },
+      {
+        "from": "jacobi",
+        "to": "symmetric",
+        "type": "deduction",
+        "label": "All n ≥ 1; preprint Theorem 1.1",
+        "citations": [
+          "J3"
+        ],
+        "explanation": "The preprint claims irreducibility and the full symmetric group for each of the four families in every positive degree.",
+        "preprint": true
+      },
+      {
+        "from": "jacobi",
+        "to": "curve",
+        "type": "flow",
+        "label": "Construct the double cover",
+        "citations": [
+          "J4"
+        ],
+        "explanation": "The distinct roots of f are the finite branch points of the smooth projective model of y²=f(x)."
+      },
+      {
+        "from": "symmetric",
+        "to": "inputs",
+        "type": "flow",
+        "label": "Large root permutation group",
+        "citations": [],
+        "explanation": "The symmetric-group input is the preprint-dependent hypothesis for this application."
+      },
+      {
+        "from": "curve",
+        "to": "inputs",
+        "type": "flow",
+        "label": "Its Jacobian and 2-torsion",
+        "citations": [],
+        "explanation": "Zarhin’s argument uses the root permutation action on the Jacobian’s 2-torsion."
+      },
+      {
+        "from": "degree",
+        "to": "inputs",
+        "type": "flow",
+        "label": "Required degree and field",
+        "citations": [],
+        "explanation": "The application is over Q and is restricted to n≥5."
+      },
+      {
+        "from": "inputs",
+        "to": "endomorphisms",
+        "type": "deduction",
+        "label": "Zarhin: Theorem 2.1",
+        "citations": [
+          "J4"
+        ],
+        "explanation": "For a characteristic-zero polynomial of degree at least five with group Sₙ or Aₙ, Zarhin proves that every geometric Jacobian endomorphism is integer multiplication."
+      },
+      {
+        "from": "endomorphisms",
+        "to": "simple",
+        "type": "deduction",
+        "label": "No nontrivial idempotent",
+        "citations": [
+          "J4"
+        ],
+        "explanation": "A nontrivial abelian subvariety would give an idempotent in the rational endomorphism algebra, whereas End⁰=Q has only 0 and 1."
+      }
+    ],
+    "sources": [
+      {
+        "id": "J1",
+        "key": "CullinanHajir2017",
+        "locator": "§§1.1–1.2; §2.1 equation (3); Lemma 2.4",
+        "url": "https://faculty.bard.edu/cullinan/papers/supersingular_final.pdf",
+        "note": "These rational affine transformations preserve splitting fields and irreducibility. The paper’s full-group results remain conditional on irreducibility."
+      },
+      {
+        "id": "J2",
+        "key": "KanekoZagier1998Supersingular",
+        "locator": "Theorem 1; §8, Theorem 5(ii)",
+        "url": "https://people.mpim-bonn.mpg.de/zagier/files/ams/stud-adv-math/7/fulltext.pdf",
+        "note": "Reduction to the supersingular polynomial requires prime modular index and inclusion of the prescribed elliptic factors."
+      },
+      {
+        "id": "J3",
+        "key": "NguyenDang2026Jacobi",
+        "locator": "Theorem 1.1; §4, Proposition 4.8 and Appendix B; Theorem 5.12; §6.4, equations (6.4)–(6.5), Hexagon 2610.00468v1",
+        "url": "https://hexagonmath.org/pdf/2610.00468v1",
+        "note": "Preprint claim for all four parameter choices and every n≥1; no proof certification is asserted."
+      },
+      {
+        "id": "J4",
+        "key": "Zarhin2000Hyperelliptic",
+        "locator": "Theorem 2.1; §§3–4, arXiv:math/9909052v2",
+        "url": "https://arxiv.org/pdf/math/9909052",
+        "note": "Use the characteristic-zero conclusion. The positive-characteristic theorem has an additional supersingular alternative."
+      }
+    ],
+    "body": "<p>Let \\(f=P_n^{(\\lambda/3,\\mu/2)}\\), with \\(n\\ge1\\) and \\(\\lambda,\\mu\\in\\{\\pm1\\}\\). Theorem 1.1 of the 2026 Jacobi preprint claims that every such polynomial is irreducible over \\(\\mathbb Q\\) and has group \\(S_n\\).</p><p>The published modular identification is exact. Put \\(\\ell=12n+6+2\\lambda+3\\mu\\). The corresponding Kaneko–Zagier factor is</p>\\[\\widetilde F_{\\ell-1}(Y)=1728^n f(1-Y/864).\\]<p>This rational affine substitution preserves the splitting field. If \\(\\ell\\) is prime, the monic supersingular \\(j\\)-polynomial satisfies</p>\\[S_\\ell(Y)\\equiv Y^{(\\lambda+1)/2}(Y-1728)^{(\\mu+1)/2}\\,\\widetilde F_{\\ell-1}(Y)\\pmod\\ell.\\]<p>The two exponents record whether the supersingular invariants \\(0\\) and \\(1728\\) occur. The prime-index requirement belongs to this modular reduction, not to the characteristic-zero Galois claim.</p><p>Now suppose \\(n\\ge5\\), and let \\(C\\) be the smooth projective model of \\(y^2=f(x)\\). Its genus is \\(\\lfloor(n-1)/2\\rfloor\\). Combining the claimed group \\(S_n\\) with Zarhin’s published theorem gives</p>\\[\\operatorname{End}_{\\overline{\\mathbb Q}}(\\operatorname{Jac}C)=\\mathbb Z.\\]<p>Thus the Jacobian is absolutely simple. This application retains the preprint dependency even though Zarhin’s implication is established. Irreducibility by itself would not provide its group hypothesis.</p>",
+    "related": [
+      {
+        "article": "kaneko-zagier",
+        "section": "definition",
+        "label": "The four normalizations"
+      },
+      {
+        "article": "kaneko-zagier",
+        "section": "known",
+        "label": "Published partial results"
+      },
+      {
+        "article": "permutation-groups",
+        "section": "hyperelliptic-jacobians",
+        "label": "Zarhin’s theorem and its hypotheses"
+      },
+      {
+        "article": "orthogonal-families",
+        "section": "transfer",
+        "label": "Transferring arithmetic between families"
+      }
+    ]
+  },
+  {
+    "id": "legendre-valuations-digits",
+    "title": "Legendre values: from prime divisibility to base-p digits",
+    "summary": "A published all-degree formula expresses \\(v_p(P_n(p))\\) through central binomial coefficients and gives a recurrence that reads the base-p digits of n.",
+    "scope": "Standard Legendre polynomials, every odd prime \\(p\\), and every integer \\(n\\ge0\\). The evaluation point is the same prime p as the valuation; the distinct p=2 formula is stated below.",
+    "status": "Published",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "orthogonal-families",
+        "afterSection": "legendre"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "values",
+        "label": "Legendre values Pₙ(p), odd prime p",
+        "kind": "object",
+        "article": "orthogonal-families",
+        "section": "legendre"
+      },
+      {
+        "id": "coefficients",
+        "label": "A unique term of least valuation",
+        "kind": "method",
+        "article": "newton-polygons",
+        "section": "polygon"
+      },
+      {
+        "id": "binomial",
+        "label": "Central-binomial valuation formula",
+        "kind": "result",
+        "article": "orthogonal-families",
+        "section": "legendre"
+      },
+      {
+        "id": "carries",
+        "label": "Kummer: carries in m + m",
+        "kind": "method",
+        "article": "newton-polygons",
+        "section": "polygon"
+      },
+      {
+        "id": "digits",
+        "label": "Factorial valuations and digit sums",
+        "kind": "method",
+        "article": "newton-polygons",
+        "section": "polygon"
+      },
+      {
+        "id": "recurrence",
+        "label": "Exact base-p digit recurrence",
+        "kind": "result",
+        "article": "orthogonal-families",
+        "section": "legendre"
+      },
+      {
+        "id": "algorithm",
+        "label": "Compute the valuation digit by digit",
+        "kind": "result",
+        "article": "orthogonal-families",
+        "section": "legendre"
+      },
+      {
+        "id": "delannoy",
+        "label": "At p = 3: central Delannoy numbers",
+        "kind": "object",
+        "article": "orthogonal-families",
+        "section": "legendre"
+      }
+    ],
+    "edges": [
+      {
+        "from": "values",
+        "to": "coefficients",
+        "type": "flow",
+        "label": "Expand the coefficients",
+        "citations": [
+          "V1"
+        ],
+        "explanation": "The coefficient estimates identify one summand with strictly smaller p-adic valuation in the relevant parity expansion."
+      },
+      {
+        "from": "coefficients",
+        "to": "binomial",
+        "type": "deduction",
+        "label": "Theorems 3–4",
+        "citations": [
+          "V1"
+        ],
+        "explanation": "The least-valuation term gives the displayed formulas for even and odd degrees without cancellation."
+      },
+      {
+        "from": "binomial",
+        "to": "carries",
+        "type": "deduction",
+        "label": "Kummer’s carry formula",
+        "citations": [
+          "V2"
+        ],
+        "explanation": "The valuation of the central binomial coefficient equals the number of carries in the base-p addition m+m."
+      },
+      {
+        "from": "binomial",
+        "to": "digits",
+        "type": "deduction",
+        "label": "Legendre’s factorial formula",
+        "citations": [
+          "V2"
+        ],
+        "explanation": "Writing factorial valuations as digit sums gives the all-degree digit formula in Theorem 4."
+      },
+      {
+        "from": "digits",
+        "to": "recurrence",
+        "type": "deduction",
+        "label": "Theorem 6",
+        "citations": [
+          "V3"
+        ],
+        "explanation": "Splitting n into its last base-p digit and remaining prefix yields the two-case recurrence."
+      },
+      {
+        "from": "carries",
+        "to": "recurrence",
+        "type": "flow",
+        "label": "Digitwise interpretation",
+        "citations": [
+          "V2",
+          "V3"
+        ],
+        "explanation": "The carry description interprets the same valuation that the recurrence computes; it is not an extra hypothesis."
+      },
+      {
+        "from": "recurrence",
+        "to": "algorithm",
+        "type": "deduction",
+        "label": "Start from fₚ(0) = 0",
+        "citations": [
+          "V3"
+        ],
+        "explanation": "The recurrence evaluates fₚ(n) using the digits of n and the parity of each prefix."
+      },
+      {
+        "from": "values",
+        "to": "delannoy",
+        "type": "deduction",
+        "label": "Specialize p = 3",
+        "citations": [
+          "V4"
+        ],
+        "explanation": "The binomial identity Pₙ(3)=Σⱼ binom(n,j)binom(n+j,j) identifies the central Delannoy sequence."
+      }
+    ],
+    "sources": [
+      {
+        "id": "V1",
+        "key": "AlekseyevAmdeberhanShallitVukusic2026",
+        "locator": "Theorems 3–4; Lemmas 10–11 and §5, author manuscript dated 4 July 2025, pp. 4–9",
+        "url": "https://www.math.tulane.edu/~tamdeberhan/Legendre_polynomials.pdf",
+        "note": "Publication verified in Research in Number Theory 12 (2026), article 52; theorem numbers refer to the open author manuscript."
+      },
+      {
+        "id": "V2",
+        "key": "AlekseyevAmdeberhanShallitVukusic2026",
+        "locator": "§1, equations (1)–(2) and the Kummer paragraph; Theorem 4",
+        "url": "https://www.math.tulane.edu/~tamdeberhan/Legendre_polynomials.pdf",
+        "note": "The classical factorial and carry formulas are recalled explicitly before the new valuation result."
+      },
+      {
+        "id": "V3",
+        "key": "AlekseyevAmdeberhanShallitVukusic2026",
+        "locator": "Theorems 5–6, pp. 5 and 9–10, author manuscript dated 4 July 2025",
+        "url": "https://www.math.tulane.edu/~tamdeberhan/Legendre_polynomials.pdf",
+        "note": "The odd-prime digit recurrence and the separate p=2 formula have different scopes."
+      },
+      {
+        "id": "V4",
+        "key": "AlekseyevAmdeberhanShallitVukusic2026",
+        "locator": "§2, equation (3); §4, equation (5)",
+        "url": "https://www.math.tulane.edu/~tamdeberhan/Legendre_polynomials.pdf",
+        "note": "The central Delannoy specialization provides the concrete example."
+      }
+    ],
+    "body": "<p>Let \\(f_p(n)=v_p(P_n(p))\\), where \\(p\\ge3\\) is prime and \\(P_n(1)=1\\). For every \\(m\\ge0\\), the published theorem gives</p>\\[f_p(2m)=v_p\\binom{2m}{m},\\qquad f_p(2m+1)=1+v_p(2m+1)+v_p\\binom{2m}{m}.\\]<p>Kummer identifies the binomial valuation with carries in \\(m+m\\) in base \\(p\\). Equivalently, if \\(s_p(n)\\) is the sum of the base-\\(p\\) digits,</p>\\[f_p(n)=\\frac{2s_p(\\lfloor n/2\\rfloor)-s_p(n)+(n\\bmod2)p}{p-1}.\\]<p>For every \\(n\\ge0\\) and \\(0\\le a<p\\), this yields the complete recurrence</p>\\[f_p(pn+a)=\\begin{cases}f_p(n)+(n\\bmod2),&a\\text{ even},\\\\f_p(n)+1-(n\\bmod2),&a\\text{ odd}.\\end{cases}\\]<p>At \\(p=3\\), \\(P_n(3)\\) is the central Delannoy number. Since \\(13=(111)_3\\), the recurrence gives \\(f_3(1)=1\\), \\(f_3(4)=1\\), and \\(f_3(13)=2\\); indeed \\(P_{13}(3)=1409933619=9\\cdot156659291\\), with the last factor prime to \\(3\\).</p><p>The prime \\(2\\) has its own formula: \\(v_2(P_n(2))=(n\\bmod2)-v_2(n!)\\). These are valuation theorems in every degree, not irreducibility criteria.</p>",
+    "related": [
+      {
+        "article": "orthogonal-families",
+        "section": "legendre",
+        "label": "Legendre normalization"
+      },
+      {
+        "article": "newton-polygons",
+        "section": "polygon",
+        "label": "Valuations of polynomial coefficients"
+      },
+      {
+        "article": "orthogonal-families",
+        "section": "legendre-2026",
+        "label": "The separate irreducibility question"
+      }
+    ]
+  }
+]

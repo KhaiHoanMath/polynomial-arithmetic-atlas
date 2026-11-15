@@ -1,6 +1,7 @@
 // Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 import { readFile, readdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { loadDiagrams, validateDiagrams } from './validate-diagrams.mjs';
 
 export const QUESTION_STATUSES = ['Settled', 'Claimed', 'Open', 'Research direction'];
 
@@ -42,6 +43,9 @@ export async function validateContent(root) {
  const articleGroups=await Promise.all(articleFiles.map(f=>read('content/articles/'+f)));
  const articles=resolveQuestionAliases(articleGroups.flat());
  const errors=[];
+ const diagrams=await loadDiagrams(root);
+ checkContentStrings(diagrams,'content/diagrams',errors);
+ errors.push(...validateDiagrams(diagrams,articles,catalogue.references));
  for(const [name,data] of [['references.json',catalogue],['subjects.json',subjects],['navigation.json',navigation],['data/laboratory.json',laboratory]])checkContentStrings(data,'content/'+name,errors);
  articleGroups.forEach((data,i)=>checkContentStrings(data,'content/articles/'+articleFiles[i],errors));
  const unique=(items,field,label)=>{const seen=new Set();for(const item of items){const id=item[field];if(!id||seen.has(id))errors.push(label+': missing or duplicate '+field+' '+id);seen.add(id);}return seen;};
@@ -93,5 +97,5 @@ export async function validateContent(root) {
   }
  }
  if(errors.length)throw Error('Content graph validation failed:\n'+errors.join('\n'));
- return {articles:articles.length,references:catalogue.references.length};
+ return {articles:articles.length,references:catalogue.references.length,diagrams:diagrams.length};
 }

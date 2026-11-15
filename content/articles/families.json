@@ -1623,12 +1623,12 @@
       {
         "id": "jacobi-trace-forms",
         "title": "Trace forms",
-        "body": "<p>Let \\(f\\in\\mathbb Q[x]\\) be monic and irreducible, with roots \\(\\theta_1,\\ldots,\\theta_n\\), and let \\(E=\\mathbb Q[x]/(f)\\). The trace form is the quadratic form \\(z\\mapsto\\operatorname{Tr}_{E/\\mathbb Q}(z^2)\\). Put</p>\\[s_k=\\sum_{i=1}^n\\theta_i^k,\\qquad \\Delta_t=\\det(s_{i+j})_{0\\le i,j<t}.\\]<p>Then \\(\\Delta_n=\\operatorname{disc}(f)\\). When all these minors are nonzero, their successive ratios diagonalize the trace form. Cullinan–Hajir–Young’s 2026 preprint computes the Jacobi minors and associated Hasse–Witt invariants using continued fractions. These invariants enter embedding problems for central double covers of alternating groups. They provide arithmetic information beyond the discriminant; they do not establish irreducibility for arbitrary Jacobi parameters.</p>",
+        "body": "<p>Let \\(f\\in\\mathbb Q[x]\\) be monic and irreducible, with roots \\(\\theta_1,\\ldots,\\theta_n\\), and let \\(E=\\mathbb Q[x]/(f)\\). The trace form is the quadratic form \\(z\\mapsto\\operatorname{Tr}_{E/\\mathbb Q}(z^2)\\). Put</p>\\[s_k=\\sum_{i=1}^n\\theta_i^k,\\qquad \\Delta_t=\\det(s_{i+j})_{0\\le i,j<t}.\\]<p>Then \\(\\Delta_n=\\operatorname{disc}(f)\\). When all these minors are nonzero, their successive ratios diagonalize the trace form. Cullinan–Hajir–Young’s 2026 preprint develops continued-fraction formulas for Jacobi power-sum minors (Theorem 13) and applies them to Hasse–Witt invariants (§4). These invariants enter embedding problems for central double covers of alternating groups. They provide arithmetic information beyond the discriminant; they do not establish irreducibility for arbitrary Jacobi parameters.</p><p><strong>Version note.</strong> The displayed formula in Theorem 6 of v1 needs a normalization correction: at \\(t=0\\) it gives \\(n/(\\alpha+\\beta+2n+1)\\), whereas the definition in §1.2 gives \\(D_0=\\Delta_1/\\Delta_0=n\\), with \\(\\Delta_0=1\\). We therefore do not reproduce or use that diagonal formula here.</p>",
         "citations": [
           {
             "key": "CullinanHajirYoung2026",
             "locator": "§1.2, Theorems 6 and 13, and §4; version 1",
-            "note": "The full preprint was read for the stated scope. Rational specializations must avoid degree loss and the denominators in its formulas."
+            "note": "Theorem 13 and §4 give the scope summarized here. The v1 Theorem 6 normalization discrepancy is recorded explicitly; its displayed diagonal formula is not used. Rational specializations must avoid degree loss and denominator zeros."
           }
         ]
       },

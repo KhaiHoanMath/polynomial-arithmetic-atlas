@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
-"""Compare the deployed HTML with the build and check withdrawn file paths."""
+"""Compare deployed pages and diagram assets; check withdrawn file paths."""
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -47,7 +47,7 @@ def check(item):
                 elif actual == expected:
                     return None
                 else:
-                    reason = "deployed HTML differs from the build"
+                    reason = "deployed file differs from the build"
         except HTTPError as error:
             if expected is None and error.code == 404:
                 return None
@@ -61,15 +61,20 @@ def check(item):
 def main():
     pages = [(p.relative_to(DIST).as_posix(), p.read_bytes())
              for p in sorted(DIST.rglob("*.html"))]
+    diagrams = [(p.relative_to(DIST).as_posix(), p.read_bytes())
+                for p in sorted((DIST / "assets" / "diagrams").glob("*.svg"))]
+    diagram_assets = [("assets/" + name, (DIST / "assets" / name).read_bytes())
+                      for name in ("diagrams.css", "site.js")]
     if not pages:
         raise SystemExit("No built HTML to verify.")
-    tasks = pages + [(path, None) for path in REMOVED]
+    tasks = pages + diagrams + diagram_assets + [(path, None) for path in REMOVED]
     with ThreadPoolExecutor(max_workers=6) as pool:
         failures = [result for result in pool.map(check, tasks) if result]
     if failures:
         print("\n".join(failures), file=sys.stderr)
         raise SystemExit(1)
     print(f"Verified {len(pages)} live HTML pages byte for byte; "
+          f"{len(diagrams)} live diagram SVGs, diagram CSS, and site JavaScript match; "
           f"{len(REMOVED)} withdrawn or private file paths returned 404.")
 
 if __name__ == "__main__":

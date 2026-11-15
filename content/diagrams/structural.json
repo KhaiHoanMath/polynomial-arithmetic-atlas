@@ -1,0 +1,725 @@
+[
+  {
+    "id": "composition-fields-blocks-double-transitivity",
+    "title": "Composition, intermediate fields, blocks, and the off-diagonal curve",
+    "summary": "Functional decomposition is equivalent to an intermediate-field obstruction; double transitivity additionally detects irreducibility of \\(Q_f(X,Y)=(f(X)-f(Y))/(X-Y)\\).",
+    "scope": "Let \\(f\\in\\mathbb C[X]\\) have degree \\(n\\ge2\\), and let \\(G=\\operatorname{Gal}(f(X)-t/\\mathbb C(t))\\) act on its \\(n\\) roots. The critical-value implication additionally assumes at least two distinct critical points.",
+    "status": "Published",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "polynomial-decomposition",
+        "afterSection": "blocks"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "critical-points",
+        "label": "At least two critical points",
+        "kind": "hypothesis",
+        "article": "critical-points-monodromy",
+        "section": "morse-hypotheses"
+      },
+      {
+        "id": "critical-values",
+        "label": "Distinct critical values",
+        "kind": "hypothesis",
+        "article": "critical-points-monodromy",
+        "section": "morse-hypotheses"
+      },
+      {
+        "id": "critical-gate",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "double",
+        "label": "Doubly transitive monodromy",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "blocks"
+      },
+      {
+        "id": "off-diagonal",
+        "label": "Irreducible off-diagonal curve",
+        "kind": "result",
+        "article": "separated-variable-polynomials",
+        "section": "critical-values"
+      },
+      {
+        "id": "primitive",
+        "label": "Primitive: no nontrivial blocks",
+        "kind": "result",
+        "article": "polynomial-decomposition",
+        "section": "blocks"
+      },
+      {
+        "id": "fields",
+        "label": "No proper intermediate field",
+        "kind": "result",
+        "article": "polynomial-decomposition",
+        "section": "fields"
+      },
+      {
+        "id": "indecomposable",
+        "label": "Indecomposable polynomial",
+        "kind": "result",
+        "article": "polynomial-decomposition",
+        "section": "definitions"
+      }
+    ],
+    "edges": [
+      {
+        "to": "critical-gate",
+        "type": "flow",
+        "label": "First hypothesis",
+        "citations": [],
+        "explanation": "The distinct roots of the derivative include at least two points; no simplicity assumption is imposed.",
+        "from": "critical-points"
+      },
+      {
+        "to": "critical-gate",
+        "type": "flow",
+        "label": "Second hypothesis",
+        "citations": [],
+        "explanation": "Different critical points have different images under the polynomial.",
+        "from": "critical-values"
+      },
+      {
+        "to": "double",
+        "type": "deduction",
+        "label": "Critical-value criterion",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "Together these hypotheses imply double transitivity by the published Proposition 3.8.",
+        "from": "critical-gate"
+      },
+      {
+        "to": "off-diagonal",
+        "type": "equivalence",
+        "label": "Point-stabilizer orbits",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "Double transitivity is equivalent to irreducibility of \\(Q_f(X,Y)\\) over \\(\\mathbb C\\).",
+        "from": "double"
+      },
+      {
+        "to": "primitive",
+        "type": "deduction",
+        "label": "Stronger group property",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "Every doubly transitive permutation group is primitive.",
+        "from": "double"
+      },
+      {
+        "to": "fields",
+        "type": "equivalence",
+        "label": "Galois correspondence",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The root stabilizer is maximal exactly when \\(\\mathbb C(f(x))\\subset\\mathbb C(x)\\) has no proper intermediate field.",
+        "from": "primitive"
+      },
+      {
+        "to": "indecomposable",
+        "type": "equivalence",
+        "label": "Polynomial Lüroth theorem",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "A proper intermediate field is \\(\\mathbb C(h(x))\\) for a decomposition \\(f=g\\circ h\\) with both degrees greater than one.",
+        "from": "fields"
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "KresoTichy2018Separated",
+        "locator": "§3, correspondence before §3.1; Lemma 3.2 and its proof",
+        "url": "https://link.springer.com/article/10.1007/s10998-017-0195-y"
+      },
+      {
+        "id": "R2",
+        "key": "KresoTichy2018Separated",
+        "locator": "Lemma 3.3 and its proof",
+        "url": "https://link.springer.com/article/10.1007/s10998-017-0195-y"
+      },
+      {
+        "id": "R3",
+        "key": "KresoTichy2018Separated",
+        "locator": "Proposition 3.8",
+        "url": "https://link.springer.com/article/10.1007/s10998-017-0195-y",
+        "note": "Published numbering. The earlier arXiv version 1601.07316v1 has different theorem numbers."
+      }
+    ],
+    "body": "<p>Write \\(f=g\\circ h\\), identifying right components \\(h\\) up to postcomposition by an invertible affine polynomial. These components correspond to the fields \\(\\mathbb C(f(x))\\subseteq\\mathbb C(h(x))\\subseteq\\mathbb C(x)\\), and to blocks containing a chosen root in the monodromy action. A block is a nonempty root subset whose translates are either equal or disjoint. Thus \\(f\\) has no decomposition with \\(\\deg g,\\deg h>1\\) exactly when \\(G\\) is primitive.</p><p>The stronger condition is a separate equivalence:</p>\\[G\\text{ doubly transitive}\\quad\\Longleftrightarrow\\quad Q_f(X,Y)=\\frac{f(X)-f(Y)}{X-Y}\\text{ irreducible in }\\mathbb C[X,Y].\\]<p>Indeed, the stabilizer of one root must act transitively on all remaining roots. Kreso–Tichy, Proposition 3.8, supplies a sufficient condition: \\(f'\\) has at least two distinct roots, and \\(f(a)\\ne f(b)\\) for every pair of distinct critical points \\(a,b\\). Multiple roots of \\(f'\\) are allowed.</p><p>The converse from primitivity to double transitivity fails: \\(f(X)=X^5\\) is indecomposable, but its geometric monodromy is cyclic of order five and \\(Q_f=\\prod_{\\zeta^5=1,\\,\\zeta\\ne1}(X-\\zeta Y)\\). This example also shows why the condition on the number of critical points cannot be dropped. The coefficient field here is \\(\\mathbb C\\); arithmetic and geometric monodromy over a nonclosed field require separate treatment.</p>",
+    "related": [
+      {
+        "article": "critical-points-monodromy",
+        "section": "morse-theorem",
+        "label": "Stronger Morse hypotheses give the full symmetric group"
+      },
+      {
+        "article": "separated-variable-polynomials",
+        "section": "composition",
+        "label": "Composition and reducibility of separated-variable curves"
+      }
+    ]
+  },
+  {
+    "id": "morse-monodromy-hilbert-specialization",
+    "title": "Morse geometry and Hilbert specialization require two different inputs",
+    "summary": "Simple critical points and distinct critical values yield regular \\(S_n\\)-monodromy; the Hilbert property then supplies infinitely many specializations with the same group.",
+    "scope": "Let \\(K\\) be a number field, \\(f\\in K[X]\\) monic of degree \\(n\\ge2\\), and \\(t\\) transcendental. Critical points are taken over \\(\\overline K\\).",
+    "status": "Classical",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "critical-points-monodromy",
+        "afterSection": "branch-proof"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "simple",
+        "label": "All critical points simple",
+        "kind": "hypothesis",
+        "article": "critical-points-monodromy",
+        "section": "morse-hypotheses"
+      },
+      {
+        "id": "distinct",
+        "label": "All critical values distinct",
+        "kind": "hypothesis",
+        "article": "critical-points-monodromy",
+        "section": "morse-hypotheses"
+      },
+      {
+        "id": "morse-gate",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "inertia",
+        "label": "Transposition inertia generates",
+        "kind": "method",
+        "article": "branched-covers",
+        "section": "branch-cycles"
+      },
+      {
+        "id": "generic",
+        "label": "Regular generic group Sₙ",
+        "kind": "result",
+        "article": "specialization",
+        "section": "arithmetic-geometric-constants"
+      },
+      {
+        "id": "hilbertian",
+        "label": "Number field is Hilbertian",
+        "kind": "hypothesis",
+        "article": "specialization",
+        "section": "hilbert"
+      },
+      {
+        "id": "specialization-gate",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "specializations",
+        "label": "Sₙ outside a thin set",
+        "kind": "result",
+        "article": "specialization",
+        "section": "hilbert"
+      },
+      {
+        "id": "disjoint",
+        "label": "Infinitely many disjoint Sₙ fields",
+        "kind": "result",
+        "article": "inverse-galois",
+        "section": "realization-method"
+      }
+    ],
+    "edges": [
+      {
+        "to": "morse-gate",
+        "type": "flow",
+        "label": "First Morse condition",
+        "citations": [],
+        "explanation": "The derivative has exactly \\(n-1\\) distinct roots over \\(\\overline K\\).",
+        "from": "simple"
+      },
+      {
+        "to": "morse-gate",
+        "type": "flow",
+        "label": "Second Morse condition",
+        "citations": [],
+        "explanation": "The images of those critical points are pairwise distinct.",
+        "from": "distinct"
+      },
+      {
+        "to": "inertia",
+        "type": "deduction",
+        "label": "Simple branching",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "Each finite branch inertia group is generated by a transposition, and their conjugates generate geometric monodromy.",
+        "from": "morse-gate"
+      },
+      {
+        "to": "generic",
+        "type": "deduction",
+        "label": "Connected transposition action",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The polynomial cover is transitive, so generation by transpositions yields geometric and arithmetic group \\(S_n\\), with constant field \\(K\\).",
+        "from": "inertia"
+      },
+      {
+        "to": "specialization-gate",
+        "type": "flow",
+        "label": "Generic Galois input",
+        "citations": [],
+        "explanation": "The splitting field is regular over the coefficient field and has full symmetric group.",
+        "from": "generic"
+      },
+      {
+        "to": "specialization-gate",
+        "type": "flow",
+        "label": "Arithmetic input",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "The affine line over a number field has the Hilbert property.",
+        "from": "hilbertian"
+      },
+      {
+        "to": "specializations",
+        "type": "deduction",
+        "label": "Hilbert irreducibility",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "Outside a thin subset of \\(K\\), the polynomial \\(f(X)-a\\) is irreducible with Galois group \\(S_n\\).",
+        "from": "specialization-gate"
+      },
+      {
+        "to": "disjoint",
+        "type": "deduction",
+        "label": "Regular Hilbert specialization",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "Regularity and the Hilbert property jointly allow specializations linearly disjoint from any prescribed finite extension, and hence infinitely many linearly disjoint splitting fields.",
+        "from": "specialization-gate"
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "Serre2007Topics",
+        "locator": "Theorems 4.4.1 and 4.4.5; Lemma 4.4.4; Proposition 4.4.6, printed pp. 39–41",
+        "url": "https://indico.math.cnrs.fr/event/11410/attachments/4760/7351/SerreTopicsGaloisTheory.pdf"
+      },
+      {
+        "id": "R2",
+        "key": "Serre2007Topics",
+        "locator": "Proposition 3.3.5 and Theorem 3.4.1, printed pp. 24–25",
+        "url": "https://indico.math.cnrs.fr/event/11410/attachments/4760/7351/SerreTopicsGaloisTheory.pdf"
+      },
+      {
+        "id": "R3",
+        "key": "Serre2007Topics",
+        "locator": "Proposition 3.3.3 and Corollary 3.3.4, printed p. 24",
+        "url": "https://indico.math.cnrs.fr/event/11410/attachments/4760/7351/SerreTopicsGaloisTheory.pdf"
+      }
+    ],
+    "body": "<p>A polynomial is Morse when the \\(n-1\\) roots of \\(f'\\) are simple and have pairwise distinct images. Under the displayed assumptions, the splitting field \\(L\\) of \\(f(X)-t\\) satisfies</p>\\[\\operatorname{Gal}(L/K(t))=S_n,\\qquad L\\cap\\overline K=K.\\]<p>The proof first works geometrically. Each finite branch point contributes a transposition, and these inertia groups and their conjugates generate the transitive monodromy group. Hence that group is \\(S_n\\). Arithmetic monodromy lies between geometric monodromy and \\(S_n\\), so they coincide and regularity follows.</p><p>Hilbert irreducibility adds a different input: because \\(K\\) is a number field, there is a thin set \\(E\\subset K\\) such that every \\(a\\in K\\setminus E\\) gives an irreducible \\(f(X)-a\\) with group \\(S_n\\). Regularity further permits infinitely many splitting fields that are linearly disjoint. These conclusions concern suitable specializations; the exceptional set need not be finite.</p><p>For example, \\(f=X^3-X\\) is Morse. At \\(a=0\\), its fiber splits completely; at \\(a=1\\), \\(X^3-X-1\\) is irreducible by the rational-root test and has nonsquare discriminant \\(-23\\), so its group is \\(S_3\\). The two fibers illustrate why a generic monodromy theorem alone does not certify a chosen arithmetic fiber.</p>",
+    "related": [
+      {
+        "article": "specialization",
+        "section": "boundaries",
+        "label": "Limits of specialization statements"
+      },
+      {
+        "article": "polynomial-decomposition",
+        "section": "blocks",
+        "label": "Monodromy and decomposability"
+      },
+      {
+        "article": "exceptional-specializations",
+        "section": "resolvents",
+        "label": "Resolvents describe exceptional fibers"
+      }
+    ]
+  },
+  {
+    "id": "dls-complete-complex-classification",
+    "title": "A complete proposed classification of reducible f(X) − g(Y)",
+    "summary": "The 2026 DLS preprint claims an if-and-only-if classification over \\(\\mathbb C\\), including decomposable polynomials: common outer factors, the exact six exceptional families, or the signed quartic Chebyshev pair.",
+    "scope": "Let \\(f,g\\in\\mathbb C[X]\\) have degree greater than one. The classification is Theorem 1.1 of arXiv:2603.27728v1 (29 March 2026), recorded as a preprint claim.",
+    "status": "Claimed",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "separated-variable-polynomials",
+        "afterSection": "composition"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "common",
+        "label": "Common nonlinear outer factor",
+        "kind": "hypothesis",
+        "article": "polynomial-decomposition",
+        "section": "definitions"
+      },
+      {
+        "id": "exceptional",
+        "label": "Exact exceptional pair families",
+        "kind": "hypothesis",
+        "article": "separated-variable-polynomials",
+        "section": "composition"
+      },
+      {
+        "id": "quartic",
+        "label": "Signed quartic Chebyshev pair",
+        "kind": "hypothesis",
+        "article": "separated-variable-polynomials",
+        "section": "composition"
+      },
+      {
+        "id": "classification",
+        "label": "OR",
+        "kind": "gate"
+      },
+      {
+        "id": "reducible",
+        "label": "Reducible separated polynomial",
+        "kind": "result",
+        "article": "separated-variable-polynomials",
+        "section": "composition"
+      },
+      {
+        "id": "fiber-product",
+        "label": "Reducible fiber product of covers",
+        "kind": "object",
+        "article": "branched-covers",
+        "section": "covers"
+      },
+      {
+        "id": "method",
+        "label": "Monodromy and composition factors",
+        "kind": "method",
+        "article": "polynomial-decomposition",
+        "section": "blocks"
+      }
+    ],
+    "edges": [
+      {
+        "to": "classification",
+        "type": "flow",
+        "label": "Case 1",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "There exist nonconstant \\(u,v\\) and \\(h\\) of degree at least two with \\(f=h\\circ u\\) and \\(g=h\\circ v\\).",
+        "from": "common",
+        "preprint": true
+      },
+      {
+        "to": "classification",
+        "type": "flow",
+        "label": "Case 2",
+        "citations": [
+          "R1",
+          "R2"
+        ],
+        "explanation": "There are nonconstant \\(u,v\\), affine \\(\\mu\\), and an exact pair \\((h_1,h_2)\\) from Cassou–Noguès–Couveignes §5 with \\(f=\\mu\\circ h_1\\circ u\\), \\(g=\\mu\\circ h_2\\circ v\\).",
+        "from": "exceptional",
+        "preprint": true
+      },
+      {
+        "to": "classification",
+        "type": "flow",
+        "label": "Case 3",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "There are nonconstant \\(u,v\\) and affine \\(\\mu\\) with \\(f=\\mu\\circ T_4\\circ u\\), \\(g=\\mu\\circ(-T_4)\\circ v\\), where \\(T_4=X^4-4X^2+2\\).",
+        "from": "quartic",
+        "preprint": true
+      },
+      {
+        "to": "reducible",
+        "type": "equivalence",
+        "label": "Claimed exhaustive iff",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The preprint asserts that the union of the three displayed cases is necessary and sufficient for reducibility over the complex numbers.",
+        "from": "classification",
+        "preprint": true
+      },
+      {
+        "to": "fiber-product",
+        "type": "equivalence",
+        "label": "Curve interpretation",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "Reducibility of the separated polynomial is equivalent to reducibility of the fiber product of the two polynomial maps to the projective line.",
+        "from": "reducible"
+      },
+      {
+        "to": "method",
+        "type": "flow",
+        "label": "Galois analysis",
+        "citations": [
+          "R3"
+        ],
+        "explanation": "The proof translates the fiber product into monodromy actions and studies kernels along polynomial decompositions.",
+        "from": "fiber-product"
+      },
+      {
+        "to": "classification",
+        "type": "flow",
+        "label": "Exhaustiveness argument",
+        "citations": [
+          "R4"
+        ],
+        "explanation": "The preprint combines its solvable-case analysis with the established exceptional pairs to rule out additional minimal cases.",
+        "from": "method",
+        "preprint": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "BehajainaKonigNeftin2026DLS",
+        "locator": "Theorem 1.1, arXiv:2603.27728v1, printed p. 2",
+        "url": "https://arxiv.org/html/2603.27728v1",
+        "note": "Full complex classification is a preprint claim; the arithmetic Hilbert–Siegel application has additional hypotheses."
+      },
+      {
+        "id": "R2",
+        "key": "CassouNoguesCouveignes1999",
+        "locator": "§§5.1–5.6, printed pp. 310–315",
+        "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa87/aa8741.pdf",
+        "note": "These are explicit coefficient families, not arbitrary pairs whose degrees lie in the six-number list."
+      },
+      {
+        "id": "R3",
+        "key": "BehajainaKonigNeftin2026DLS",
+        "locator": "Introduction and §2.4 (Reducibility), version 1",
+        "url": "https://arxiv.org/html/2603.27728v1"
+      },
+      {
+        "id": "R4",
+        "key": "BehajainaKonigNeftin2026DLS",
+        "locator": "Theorem 4.1; Theorem 5.1; Theorem 6.1 and its proof, version 1",
+        "url": "https://arxiv.org/html/2603.27728v1"
+      }
+    ],
+    "body": "<p><strong>Preprint claim, exact scope.</strong> Behajaina–König–Neftin, Theorem 1.1, states that \\(f(X)-g(Y)\\) is reducible over \\(\\mathbb C\\) exactly when at least one of the following occurs. All inner polynomials \\(u,v\\) are nonconstant; \\(\\mu(X)=aX+b\\) has \\(a\\ne0\\).</p><ol><li>\\(f=h\\circ u\\) and \\(g=h\\circ v\\), with \\(\\deg h\\ge2\\).</li><li>\\(f=\\mu\\circ h_1\\circ u\\) and \\(g=\\mu\\circ h_2\\circ v\\), for an exact exceptional pair \\((h_1,h_2)\\) in Cassou–Noguès–Couveignes, §5.</li><li>\\(f=\\mu\\circ T_4\\circ u\\) and \\(g=\\mu\\circ(-T_4)\\circ v\\), with \\(T_4=X^4-4X^2+2\\).</li></ol><p>Case 2 refers to the coefficient formulas, parameter families, and coefficient conjugations in the following source locations; the degrees alone are not a criterion.</p><table><thead><tr><th>Degree</th><th>Exact exceptional family</th></tr></thead><tbody><tr><td>7</td><td>§5.1, p. 310</td></tr><tr><td>11</td><td>§5.2, p. 310</td></tr><tr><td>13</td><td>§5.3, p. 311</td></tr><tr><td>15</td><td>§5.4, pp. 311–312</td></tr><tr><td>21</td><td>§5.5, pp. 312–313</td></tr><tr><td>31</td><td>§5.6, pp. 313–315</td></tr></tbody></table><p>The normalization satisfies \\(T_m(z+z^{-1})=z^m+z^{-m}\\). Case 3 is visible directly:</p>\\[T_4(X)+T_4(Y)=(X^2+Y^2-2+\\sqrt2XY)(X^2+Y^2-2-\\sqrt2XY).\\]<p>The claimed advance is exhaustiveness for arbitrary decomposable pairs. It does not by itself classify reducible arithmetic fibers \\(f(X)-a\\), whose Hilbert–Siegel analysis is a separate, more restricted result.</p>",
+    "related": [
+      {
+        "article": "polynomial-decomposition",
+        "section": "ritt-first",
+        "label": "Classical decomposition theory"
+      },
+      {
+        "article": "polynomial-stability",
+        "section": "reducible-fibers",
+        "label": "Arithmetic reducibility and iteration"
+      },
+      {
+        "article": "multivariate-irreducibility",
+        "section": "absolute",
+        "label": "Absolute irreducibility and coefficient fields"
+      }
+    ]
+  },
+  {
+    "id": "finite-field-rabin-complete-certificate",
+    "title": "Rabin’s criterion: a complete finite-field irreducibility certificate",
+    "summary": "One Frobenius congruence and gcd tests at the maximal proper divisors of the degree give a necessary and sufficient test, and a certified construction of \\(\\mathbb F_{q^n}\\).",
+    "scope": "Let \\(q\\) be any prime power and \\(f\\in\\mathbb F_q[X]\\) monic of degree \\(n\\ge1\\). The gcd conditions range over every distinct prime divisor \\(\\ell\\mid n\\); for \\(n=1\\) this list is empty.",
+    "status": "Classical",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "finite-field-irreducibility",
+        "afterSection": "rabin"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "identity",
+        "label": "Frobenius factor-degree identity",
+        "kind": "object",
+        "article": "finite-field-irreducibility",
+        "section": "frobenius-identity"
+      },
+      {
+        "id": "congruence",
+        "label": "Final Frobenius congruence",
+        "kind": "hypothesis",
+        "article": "finite-field-irreducibility",
+        "section": "rabin"
+      },
+      {
+        "id": "gcd",
+        "label": "Every maximal-divisor gcd is 1",
+        "kind": "hypothesis",
+        "article": "finite-field-irreducibility",
+        "section": "rabin"
+      },
+      {
+        "id": "tests",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "irreducible",
+        "label": "f is irreducible over Fq",
+        "kind": "result",
+        "article": "finite-field-irreducibility",
+        "section": "rabin"
+      },
+      {
+        "id": "field",
+        "label": "Quotient is the field Fqⁿ",
+        "kind": "result",
+        "article": "finite-field-structure",
+        "section": "construction"
+      },
+      {
+        "id": "modular",
+        "label": "Modular powering and Euclidean gcd",
+        "kind": "method",
+        "article": "factorization-algorithms",
+        "section": "finite"
+      }
+    ],
+    "edges": [
+      {
+        "to": "congruence",
+        "type": "flow",
+        "label": "Interpret first test",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The congruence \\(X^{q^n}\\equiv X\\pmod f\\) holds exactly when \\(f\\) is squarefree and every irreducible factor degree divides \\(n\\).",
+        "from": "identity"
+      },
+      {
+        "to": "gcd",
+        "type": "flow",
+        "label": "Interpret exclusion tests",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The gcd at \\(n/\\ell\\) is one exactly when no irreducible factor degree divides \\(n/\\ell\\).",
+        "from": "identity"
+      },
+      {
+        "to": "tests",
+        "type": "flow",
+        "label": "Divisibility condition",
+        "citations": [],
+        "explanation": "This condition supplies squarefreeness as well as the allowable factor degrees.",
+        "from": "congruence"
+      },
+      {
+        "to": "tests",
+        "type": "flow",
+        "label": "All exclusion conditions",
+        "citations": [],
+        "explanation": "Every prime divisor of the total degree must be checked, without omitting a gcd test.",
+        "from": "gcd"
+      },
+      {
+        "to": "irreducible",
+        "type": "equivalence",
+        "label": "Rabin criterion",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The conjunction rules out every proper factor degree, and every irreducible polynomial passes all these tests.",
+        "from": "tests"
+      },
+      {
+        "to": "field",
+        "type": "equivalence",
+        "label": "Maximal principal ideal",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The quotient \\(\\mathbb F_q[X]/(f)\\) is a field exactly when \\(f\\) is irreducible, and then it has \\(q^n\\) elements.",
+        "from": "irreducible"
+      },
+      {
+        "to": "congruence",
+        "type": "flow",
+        "label": "Compute in the quotient",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "Repeated modular powering evaluates the final congruence without expanding the enormous Frobenius power.",
+        "from": "modular"
+      },
+      {
+        "to": "gcd",
+        "type": "flow",
+        "label": "Residues and gcd certificates",
+        "citations": [
+          "R2"
+        ],
+        "explanation": "The same modular powers supply each gcd input; the Euclidean algorithm certifies the required coprimality.",
+        "from": "modular"
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "Rabin1979Report",
+        "locator": "§1, Lemma 1 and proof, printed pp. 7–8; quotient construction p. 6",
+        "url": "https://publications.csail.mit.edu/lcs/pubs/pdf/MIT-LCS-TR-213.pdf",
+        "note": "The report states the lemma over a prime field. The same subfield argument gives the displayed prime-power version; the proof is included below."
+      },
+      {
+        "id": "R2",
+        "key": "Rabin1979Report",
+        "locator": "§1, discussion following Lemma 1, printed pp. 8–9",
+        "url": "https://publications.csail.mit.edu/lcs/pubs/pdf/MIT-LCS-TR-213.pdf",
+        "note": "Earlier author report of the work published as Rabin (1980), SIAM Journal on Computing 9, 273–280."
+      }
+    ],
+    "body": "<p>The complete criterion is</p>\\[f\\text{ irreducible}\\quad\\Longleftrightarrow\\quad\\begin{cases}X^{q^n}\\equiv X\\pmod f,\\\\[2pt]\\gcd\\!\\left(f,X^{q^{n/\\ell}}-X\\right)=1&\\text{for every prime }\\ell\\mid n.\\end{cases}\\]<p>Here is the proof for arbitrary prime powers, extending the identical prime-field argument in Rabin’s original report. The roots of \\(X^{q^m}-X\\) form \\(\\mathbb F_{q^m}\\); its derivative is \\(-1\\). Consequently it is the product, once each, of the monic irreducible polynomials over \\(\\mathbb F_q\\) whose degrees divide \\(m\\). The first congruence therefore makes \\(f\\) squarefree with all factor degrees dividing \\(n\\). If a proper factor degree \\(d\\mid n\\) occurred, choose a prime \\(\\ell\\mid n/d\\). Then \\(d\\mid n/\\ell\\), contradicting that gcd test. Conversely, an irreducible degree-\\(n\\) polynomial passes both conditions.</p><p>No preliminary squarefreeness assumption is needed. For \\(n=1\\), the empty gcd list causes no exception. All powers may be reduced modulo \\(f\\) throughout.</p><p>For \\(f=X^4+X+1\\) over \\(\\mathbb F_2\\), the relation \\(X^4\\equiv X+1\\) gives \\(X^8\\equiv X^2+1\\) and \\(X^{16}\\equiv X\\). The only prime divisor of four is two, and \\(X^4-X\\equiv1\\pmod f\\). These computations certify irreducibility and realize the field with sixteen elements as \\(\\mathbb F_2[X]/(f)\\).</p>",
+    "related": [
+      {
+        "article": "finite-field-irreducibility",
+        "section": "quartic-certificate",
+        "label": "The quartic certificate in detail"
+      },
+      {
+        "article": "finite-field-structure",
+        "section": "subfields",
+        "label": "Subfields and divisibility of extension degrees"
+      },
+      {
+        "article": "factorization-algorithms",
+        "section": "certification",
+        "label": "Certificates for polynomial computations"
+      }
+    ]
+  }
+]

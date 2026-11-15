@@ -1,0 +1,77 @@
+/* Copyright © 2026 Khai-Hoan Nguyen-Dang. All rights reserved. */
+.article-diagram{margin-block:32px;padding:25px;border:1px solid #c8d3bf;border-radius:6px;background:var(--card,#fffefa);min-width:0;scroll-margin-top:24px}
+.diagram-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:13px}
+.diagram-heading .eyebrow{font-size:.64rem;margin:0}
+.diagram-status{font-size:.64rem;line-height:1.4;letter-spacing:.02em;border:1px solid #a7bca5;background:#edf3e8;border-radius:3px;padding:4px 7px;color:#345c3d}
+.diagram-status-claimed,.diagram-status-conditional{border-color:#d2b17b;background:#fbf0dc;color:#79551f}
+.article-diagram>h3{margin:0 0 13px!important;font-size:2rem;line-height:1.15}
+.diagram-summary{font-size:.9rem;line-height:1.65;color:var(--muted,#59675e)}
+.diagram-scope{font-size:.8rem;line-height:1.65;margin-top:14px;padding-left:12px;border-left:2px solid #b6c7a9}
+.diagram-figure{margin-top:22px;border:1px solid var(--line,#d9ded2);border-radius:4px;overflow:hidden}
+.diagram-viewport{overflow-x:auto;overscroll-behavior-x:contain;background:#fffefa;scrollbar-width:thin;scrollbar-color:#8fa48d #edf1e7}
+.diagram-viewport:focus-visible,.diagram-evidence-scroll:focus-visible{outline:2px solid #b46b30;outline-offset:3px}
+.diagram-viewport>.diagram-svg{display:block;max-width:none;width:100%;height:auto;margin:auto}
+.diagram-figure figcaption{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line,#d9ded2);padding:12px 14px;background:#f5f6ef;font-size:.69rem;line-height:1.55;color:var(--muted,#59675e)}
+.diagram-figure figcaption>a{font-weight:600;white-space:nowrap}
+.diagram-legend{display:flex;gap:9px 20px;align-items:center;flex-wrap:wrap;margin-top:12px;font-size:.67rem;line-height:1.5;color:#5b6c5a}
+.diagram-legend>span{display:inline-flex;gap:6px;align-items:center}
+.diagram-legend b{color:#345c49;font-weight:600}
+.diagram-dash{display:inline-block;width:22px;border-top:2px dashed #96662d}
+.diagram-theorem{margin-block:23px;font-size:.87rem;line-height:1.75;overflow-wrap:break-word}
+.diagram-theorem :is(h3,h4){font-size:1.1rem;font-family:var(--sans,system-ui,sans-serif);font-weight:600;line-height:1.4;margin-block:18px 10px}
+.diagram-theorem .katex-display{overflow-x:auto;overflow-y:hidden;padding-block:5px}
+.diagram-theorem details{margin-block:18px;padding:12px 14px;border-left:2px solid #b6c7a9;background:#f5f6ef}
+.diagram-theorem details>summary{cursor:pointer;font-weight:600;color:#345c49}
+.diagram-theorem details[open]>summary{margin-bottom:12px}
+.diagram-evidence-scroll{overflow-x:auto;scrollbar-width:thin}
+.diagram-evidence-details{margin-top:20px;border-block:1px solid var(--line,#d9ded2)}
+.diagram-evidence-details>summary{padding:14px 4px;cursor:pointer;font-size:.78rem;font-weight:600;color:var(--green,#245e4b);line-height:1.6;list-style-position:outside;margin-left:16px}
+.diagram-evidence-details>summary::marker{color:#64845d;font-size:.8em}
+.diagram-evidence-details>summary:hover{text-decoration:underline;text-underline-offset:3px}
+.diagram-evidence-details[open]>summary{margin-bottom:8px}
+.diagram-evidence-details .diagram-evidence-scroll{padding-bottom:5px}
+.diagram-evidence{width:100%;font-size:.75rem;line-height:1.65;table-layout:fixed}
+.diagram-evidence caption{text-align:left;font-family:var(--sans,system-ui,sans-serif);font-weight:600;color:var(--ink,#192f2a);font-size:.84rem;padding-bottom:12px}
+.diagram-evidence thead th{font-size:.66rem;letter-spacing:.03em;font-weight:600;background:#eef1e8;border-block:1px solid #ccd7c2;padding:10px 12px}
+.diagram-evidence th:first-child{width:32%}
+.diagram-evidence tbody :is(th,td){padding:15px 12px;vertical-align:top;border-bottom:1px solid var(--line,#d9ded2);overflow-wrap:anywhere}
+.diagram-evidence tbody th{font-weight:500}
+.diagram-evidence tbody th>span:not(.diagram-edge-number){display:block}
+.diagram-edge-number{display:inline-grid;place-items:center;min-width:23px;height:23px;background:#eef1e8;border:1px solid #c6d4bd;border-radius:50%;color:#345c49;font-size:.67rem;font-weight:600;margin-bottom:8px}
+.diagram-edge-kind{font-size:.61rem;font-weight:400;color:var(--muted,#59675e);margin-top:8px}
+.diagram-evidence p{margin:0}
+.diagram-evidence tr:target{background:#fff4dc;outline:2px solid #c79f5e;outline-offset:-2px;scroll-margin-top:30px}
+.diagram-evidence-sources{list-style:none!important;padding:0!important;margin:10px 0 0!important}
+.diagram-evidence-sources>li+li{margin-top:12px}
+.diagram-source-key{font-size:.67rem;font-weight:600}
+.diagram-source-locator,.diagram-source-note{display:block;margin-top:3px}
+.diagram-source-note{color:var(--muted,#59675e)}
+.diagram-primary-source{display:inline-block;margin-top:4px;font-size:.67rem}
+.diagram-related{display:flex;gap:12px 22px;align-items:baseline;flex-wrap:wrap;margin-top:21px;font-size:.74rem}
+.diagram-related>strong{font-size:.69rem;font-weight:600}
+.diagram-related>ul{display:flex;gap:8px 18px;flex-wrap:wrap;list-style:none;padding:0;margin:0}
+.diagram-related li+li{margin:0}
+.diagram-checked{font-size:.64rem;color:var(--muted,#59675e);margin-top:18px!important}
+.diagram-card-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.diagram-card{border:1px solid var(--line,#d9ded2);border-radius:5px;background:var(--card,#fffefa);padding:23px;min-width:0}
+.diagram-card h2,.diagram-card h3{font-size:1.9rem;line-height:1.2;margin-block:13px}
+.diagram-card p{font-size:.85rem;line-height:1.65;color:var(--muted,#59675e)}
+.diagram-card .text-link{display:inline-block;margin-top:18px;font-size:.76rem}
+.article-aside .aside-diagram{font-size:.67rem;line-height:1.5;padding-left:10px;color:#6d775e}
+.diagram-introduction{max-width:850px;padding:22px 25px;border:1px solid #d3ddca;border-radius:5px;background:#eef2e7;font-size:.89rem;line-height:1.75;color:var(--muted,#59675e);margin-bottom:25px}
+.diagram-introduction strong{color:var(--green,#245e4b)}
+.diagram-directory{grid-template-columns:repeat(3,minmax(0,1fr))}
+.diagram-directory .diagram-card h2{font-size:1.8rem;line-height:1.15}
+.diagram-directory .diagram-card-home{font-size:.73rem;margin-top:16px}
+.diagram-backlinks{padding:22px 25px;background:#eef2e7;border:1px solid #d2dcc8;border-radius:5px;margin-bottom:24px}
+.diagram-backlinks h3{margin:0 0 13px!important;font-size:1.7rem}
+.diagram-backlinks ul{font-size:.82rem;padding-left:19px;margin:0 0 14px}
+.diagram-backlinks li>span{font-size:.7rem;color:var(--muted,#59675e)}
+.diagram-backlinks .text-link{font-size:.73rem}
+.diagram-guide-link{padding:15px 19px;border-left:3px solid #94ae83;background:#edf2e7;font-size:.87rem;margin-bottom:27px}
+@media(max-width:980px){.diagram-directory{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.article-diagram{padding:19px 15px;margin-block:26px}.article-diagram>h3{font-size:1.8rem}.diagram-summary{font-size:.85rem}.diagram-scope{font-size:.76rem}.diagram-theorem{font-size:.83rem}.diagram-evidence{table-layout:auto;font-size:.72rem;min-width:430px}.diagram-evidence th:first-child{width:32%}.diagram-evidence tbody :is(th,td){padding:13px 10px}.diagram-card-list{grid-template-columns:1fr}.diagram-figure figcaption{font-size:.65rem}.diagram-legend{font-size:.62rem;gap:8px 14px}}
+@media(max-width:520px){.diagram-directory{grid-template-columns:1fr}.diagram-introduction{padding:19px;font-size:.82rem}.diagram-backlinks{padding:18px}.diagram-guide-link{font-size:.8rem;padding:13px 16px}.article-aside .aside-diagram{font-size:.68rem}}
+@media print{.article-diagram{padding:15px 0;border:0;border-top:1px solid #bbb;break-inside:auto}.diagram-status{background:none}.diagram-figure{break-inside:avoid}.diagram-viewport{overflow:visible}.diagram-viewport>.diagram-svg{min-width:0!important;width:100%;height:auto}.diagram-figure figcaption>a{display:none}.diagram-evidence-scroll{overflow:visible}.diagram-evidence{min-width:0;table-layout:fixed;font-size:8pt}.diagram-evidence tr{break-inside:avoid}.diagram-theorem{font-size:9pt}.diagram-evidence thead{display:table-header-group}.diagram-related{display:none}.diagram-card-list{grid-template-columns:1fr}}
+@media print{.diagram-evidence-details{border:0}.diagram-evidence-details>summary{display:none}.diagram-evidence-details>.diagram-evidence-scroll{display:block!important}.diagram-evidence-details::details-content{display:block!important;content-visibility:visible!important;height:auto!important}}
+@media print{.diagram-theorem details{padding:8px 0;background:none;border:0}.diagram-theorem details::details-content{display:block!important;content-visibility:visible!important;height:auto!important}.diagram-theorem details>:not(summary){display:block!important}}

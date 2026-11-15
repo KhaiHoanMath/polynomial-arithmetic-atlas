@@ -50,6 +50,32 @@ function followExampleLink(){
 }
 followExampleLink();
 window.addEventListener('hashchange',followExampleLink);
+// Numbered diagram links reveal their evidence before the browser follows the
+// fragment. Also handle bookmarks, links from a standalone SVG, and back/forward.
+function revealDiagramEvidence(hash=location.hash,{focus=false}={}){
+ let id;try{id=decodeURIComponent(hash.replace(/^#/,''));}catch{return false;}
+ if(!/^diagram-.+-edge-\d+$/.test(id))return false;
+ const target=document.getElementById(id);
+ const disclosure=target?.closest('details.diagram-evidence-details');
+ if(!disclosure)return false;
+ for(let details=disclosure;details;details=details.parentElement?.closest('details'))details.open=true;
+ requestAnimationFrame(()=>{
+  if(focus)target.focus({preventScroll:true});
+  target.scrollIntoView({block:'start'});
+ });
+ return true;
+}
+document.addEventListener('click',event=>{
+ if(event.defaultPrevented||event.button>0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+ const link=event.target?.closest?.('a[href]');
+ if(!link)return;
+ let url;try{url=new URL(link.getAttribute('href'),location.href);}catch{return;}
+ if(url.href.split('#')[0]!==location.href.split('#')[0])return;
+ revealDiagramEvidence(url.hash,{focus:event.detail===0});
+});
+revealDiagramEvidence();
+window.addEventListener('hashchange',()=>revealDiagramEvidence());
+window.addEventListener('pageshow',()=>revealDiagramEvidence());
 // All content remains available without JavaScript. Make collapsed source details
 // available to printed copies, and restore each reader's state afterward.
 let printDetails=[];

@@ -2,7 +2,7 @@
 
 © 2026 Khai-Hoan Nguyen-Dang. All rights reserved.
 
-The atlas is a curated mathematical handbook, not an exhaustive census of the literature or a certification of every cited proof. The current review date is 12 November 2026.
+The atlas is a curated mathematical handbook, not an exhaustive census of the literature or a certification of every cited proof. The current review date is 15 November 2026.
 
 ## Statements and hypotheses
 
@@ -49,7 +49,7 @@ The laboratory uses exact precomputed data, not a live remote algebra system. Th
 - Check that author-only exports are absent from the deployed artifact.
 - Preserve the existing public audience and URL when deploying an update.
 
-Updates are editorial. The website does not automatically monitor or ingest new papers.
+Substantive updates are editorial. The literature collector prepares candidates separately; it does not change mathematical statements or question statuses automatically.
 
 ## Review of 12 November 2026
 
@@ -85,3 +85,40 @@ The release includes canonical page URLs and sharing metadata. Exact example che
 The current edition contains 68 articles, 116 questions, and 370 references. This revision adds 15 articles and 44 references, with extended treatments of field extensions, the Galois correspondence, several variables, composition and iteration, finite fields, and specialization. Every article overview and the reading and method guides were reviewed for direct, precise prose.
 
 New exact checks cover finite-field arithmetic and bases, decomposition and iteration, Newton polytopes, specialization, and Gao’s differential equations. Existing article, question, and section links are preserved. Recent preprints remain identified as claims. The review checks statements, sources, and selected examples; it does not certify the proofs of all cited works or claim an exhaustive bibliography.
+
+## Connected diagrams · 15 November 2026
+
+Added 19 diagrams with 170 nodes and 170 connections, embedded in 17 articles.
+The catalogue now contains 387 references. Every mathematical arrow has an
+explanation and an exact source locator; definitions and combined inputs are
+distinguished from deductions. Preprint-dependent arrows are dashed, and
+conditional results retain their hypotheses. No question status changed.
+
+The review checked source versions and selected proof bottlenecks, including
+the reciprocal square-class criterion, the fixed-field Fekete equivalence,
+Legendre/Jacobi local arguments, Catalan resultants and finite witnesses, and
+the selected quadratic arboreal family. Exact example checks and bounded
+computations supplement the source readings. They do not amount to a complete
+independent proof audit of every source or an exhaustive literature search.
+
+Two specific proof limitations are recorded publicly:
+
+- `orthogonal-families#jacobi-trace-forms` previously summarized the 2026
+  trace-form formulas without distinguishing the normalization problem. It
+  now cites the power-sum-minor method separately and records that
+  arXiv:2608.12019v1, Theorem 6, gives `D_0=n/(alpha+beta+2n+1)`, whereas its
+  definition in §1.2 gives `D_0=Delta_1/Delta_0=n`. That displayed diagonal
+  formula is not used by the atlas. The reference annotation matches this limit.
+- `laguerre#diagram-laguerre-positive-complete-strip` presents the proposed
+  all-degree classification as a claim. In arXiv:2610.10614v1, Lemma 6.1(iii),
+  pp. 13–14, the statement imposes simultaneous valuation bounds where its
+  proof derives alternatives; further proof branches are absent from the
+  statement. The later finite pruning uses that lemma. Its exhaustiveness
+  under the weaker restrictions has not been verified. The exact reducible
+  examples are checked separately. This is a proof concern, not a counterexample
+  to the classification.
+
+The Fekete fixed-field statement is explicitly presented as an elementary
+corollary of a published recurrence, with its proof supplied. Its “Published”
+label identifies the underlying source; it does not claim that the atlas's
+formulation appeared there as a numbered theorem.

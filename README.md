@@ -3,8 +3,9 @@
 © 2026 Khai-Hoan Nguyen-Dang. All rights reserved. See [LICENSE](LICENSE).
 
 A reference website on polynomial irreducibility and Galois groups, with results,
-methods, examples, and annotated sources. The edition reviewed on 12 November
-2026 contains 68 articles, 116 questions, and 370 references across 12 subjects.
+methods, examples, and annotated sources. The edition reviewed on 15 November
+2026 contains 68 articles, 117 questions, 387 references, and 19 connected diagrams
+across 12 subjects.
 The collection is selective; cited source versions and verification limits are
 recorded in the entries.
 
@@ -19,7 +20,7 @@ npm run check
 ```
 
 Only `dist/` is published. The build includes individual HTML pages, CSS,
-JavaScript, the favicon, fonts, and third-party licence notices. It does not
+JavaScript, linked SVG diagrams, the favicon, fonts, and third-party licence notices. It does not
 publish the complete handbook, PDFs, TeX, archives, bibliographic exports,
 source JSON, CSV tables, or verification scripts. The release check rejects
 these files and download links. Search metadata includes headings and citation
@@ -39,6 +40,10 @@ Edit `content/articles/*.json`, `content/references.json`, and the navigation or
 subject records. Keep article and section IDs stable. Read [EDITORIAL.md](EDITORIAL.md)
 before changing a theorem, source attribution, or problem status.
 
+The diagrams are structured records in `content/diagrams/*.json`. Each has a
+canonical article placement, linked nodes, typed arrows, exact source locators,
+and a statement of scope. See [DIAGRAMS.md](DIAGRAMS.md) for the format and checks.
+
 Optional author exports belong in `author-only/`, which is ignored by git and
 excluded from the deployment. Never copy them into `static/` or `dist/`.
 The generators enforce this separation. Third-party source links remain available
@@ -53,7 +58,14 @@ python3 scripts/atlas_certificates.py --check
 python3 scripts/review_certificates.py
 python3 scripts/open_problem_certificates.py
 python3 scripts/literature_certificates.py
+python3 scripts/diagram_certificates.py
 python3 scripts/generate_eulerian.py --check
+```
+
+Run the rendering, interaction, and content tests with:
+
+```sh
+node --test scripts/comments.test.mjs scripts/content-validation.test.mjs scripts/diagram-validation.test.mjs scripts/diagrams.test.mjs
 ```
 
 The retained Eulerian computation record is `content/data/eulerian.csv`.

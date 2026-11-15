@@ -1,0 +1,684 @@
+[
+  {
+    "id": "binary-factor-reversal-and-phase-retrieval",
+    "title": "Binary factorization, Fourier ambiguity, and irreducibility",
+    "summary": "Factor reversal converts two nonreciprocal factors into a second binary signal with identical Fourier magnitude. A collision bound and two separate divisor estimates give the claimed reducibility asymptotic.",
+    "scope": "\\(P_n=1+\\sum_{j=1}^{n-1}\\xi_jX^j+X^n\\), with independent fair \\(\\xi_j\\in\\{0,1\\}\\), over \\(\\mathbb Q\\); \\(n\\to\\infty\\). Fourier comparisons use binary polynomials of the same degree with both endpoints equal to one.",
+    "status": "Claimed",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "factor-reversal",
+        "afterSection": "probability-step"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "reducible",
+        "label": "Reducible binary polynomial",
+        "kind": "object",
+        "article": "factor-reversal",
+        "section": "binary-model"
+      },
+      {
+        "id": "cases",
+        "label": "OR",
+        "kind": "gate"
+      },
+      {
+        "id": "twin",
+        "label": "Nontrivial binary twin",
+        "kind": "result",
+        "article": "factor-reversal",
+        "section": "identity"
+      },
+      {
+        "id": "reciprocal",
+        "label": "Reciprocal noncyclotomic divisor",
+        "kind": "object",
+        "article": "factor-reversal",
+        "section": "probability-step"
+      },
+      {
+        "id": "cyclotomic",
+        "label": "Cyclotomic divisor",
+        "kind": "object",
+        "article": "random-models",
+        "section": "cyclotomic-errors"
+      },
+      {
+        "id": "fourier",
+        "label": "Nontrivial Fourier ambiguity",
+        "kind": "result",
+        "article": "factor-reversal",
+        "section": "example"
+      },
+      {
+        "id": "collision",
+        "label": "Modulo-4 collision bound",
+        "kind": "method",
+        "article": "factor-reversal",
+        "section": "probability-step"
+      },
+      {
+        "id": "reciprocal-bound",
+        "label": "Reciprocal-divisor bound",
+        "kind": "method",
+        "article": "factor-reversal",
+        "section": "probability-step"
+      },
+      {
+        "id": "cyclotomic-bound",
+        "label": "Cyclotomic estimates",
+        "kind": "method",
+        "article": "random-models",
+        "section": "cyclotomic-errors"
+      },
+      {
+        "id": "combine",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "asymptotic",
+        "label": "Reducibility asymptotic",
+        "kind": "result",
+        "article": "factor-reversal",
+        "section": "binary-model"
+      }
+    ],
+    "edges": [
+      {
+        "from": "reducible",
+        "to": "cases",
+        "type": "deduction",
+        "label": "Exhaustive obstruction split",
+        "citations": [
+          "B1",
+          "B2",
+          "B6"
+        ],
+        "explanation": "Every reducible polynomial in this model has a nontrivial binary twin or a nonconstant reciprocal divisor; the latter is cyclotomic or has a noncyclotomic factor."
+      },
+      {
+        "from": "cases",
+        "to": "twin",
+        "type": "flow",
+        "label": "Possible obstruction",
+        "citations": [],
+        "explanation": "This branch records a possible obstruction, not a conclusion implied separately by reducibility."
+      },
+      {
+        "from": "cases",
+        "to": "reciprocal",
+        "type": "flow",
+        "label": "Possible obstruction",
+        "citations": [],
+        "explanation": "This branch records a reciprocal divisor which is not a product of cyclotomic polynomials."
+      },
+      {
+        "from": "cases",
+        "to": "cyclotomic",
+        "type": "flow",
+        "label": "Possible obstruction",
+        "citations": [],
+        "explanation": "This branch records a cyclotomic divisor; the three obstruction events need not be disjoint."
+      },
+      {
+        "from": "twin",
+        "to": "fourier",
+        "type": "equivalence",
+        "label": "Reciprocal-product identity",
+        "citations": [
+          "B2"
+        ],
+        "explanation": "For binary P and Q of the same degree with Q distinct from P and P*, the identity PP*=QQ* is equivalent to equality of their Fourier magnitudes at every angle."
+      },
+      {
+        "from": "fourier",
+        "to": "collision",
+        "type": "flow",
+        "label": "Bound the ambiguity event",
+        "citations": [
+          "B3"
+        ],
+        "explanation": "Exact reciprocal-product equality is included in congruence modulo four, whose nontrivial collision probability is bounded in Theorem 1.3.",
+        "preprint": true
+      },
+      {
+        "from": "reciprocal",
+        "to": "reciprocal-bound",
+        "type": "flow",
+        "label": "Estimate this divisor event",
+        "citations": [
+          "B4"
+        ],
+        "explanation": "Proposition 3.2 bounds the probability of a monic reciprocal divisor that is not a product of cyclotomic polynomials.",
+        "preprint": true
+      },
+      {
+        "from": "cyclotomic",
+        "to": "cyclotomic-bound",
+        "type": "flow",
+        "label": "Isolate the factor X+1",
+        "citations": [
+          "B5",
+          "B6"
+        ],
+        "explanation": "The factor X-1 is impossible, higher-degree cyclotomic divisors contribute O(1/n), and X+1 supplies the leading term."
+      },
+      {
+        "from": "collision",
+        "to": "combine",
+        "type": "flow",
+        "label": "Joint input",
+        "citations": [],
+        "explanation": "Use the collision estimate together with both divisor estimates."
+      },
+      {
+        "from": "reciprocal-bound",
+        "to": "combine",
+        "type": "flow",
+        "label": "Joint input",
+        "citations": [],
+        "explanation": "Use the reciprocal-divisor estimate together with the collision and cyclotomic estimates."
+      },
+      {
+        "from": "cyclotomic-bound",
+        "to": "combine",
+        "type": "flow",
+        "label": "Joint input",
+        "citations": [],
+        "explanation": "Use both the upper bound for other cyclotomic factors and the exact probability that P_n(-1)=0."
+      },
+      {
+        "from": "combine",
+        "to": "asymptotic",
+        "type": "deduction",
+        "label": "Theorem 1.1",
+        "citations": [
+          "B6"
+        ],
+        "explanation": "The union bound gives the upper estimate, while divisibility by X+1 for n≥2 gives the matching leading lower estimate.",
+        "preprint": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "B1",
+        "key": "filaseta1999smallnorm",
+        "locator": "Lemmas 1 and 3, author manuscript pp. 6 and 11–12",
+        "url": "https://people.math.sc.edu/filaseta/papers/factorpaper.pdf",
+        "note": "Classical factor-reversal and coefficient-norm argument."
+      },
+      {
+        "id": "B2",
+        "key": "Kogler2026",
+        "locator": "Lemma 3.1, p. 7; Fourier-magnitude identity, §1, p. 3; arXiv:2609.26771v2",
+        "url": "https://arxiv.org/pdf/2609.26771v2",
+        "note": "Lemma 3.1 restates the classical binary twin argument and gives its proof."
+      },
+      {
+        "id": "B3",
+        "key": "Kogler2026",
+        "locator": "Theorem 1.3, p. 2; arXiv:2609.26771v2",
+        "url": "https://arxiv.org/pdf/2609.26771v2"
+      },
+      {
+        "id": "B4",
+        "key": "Kogler2026",
+        "locator": "Proposition 3.2, pp. 7–9; arXiv:2609.26771v2",
+        "url": "https://arxiv.org/pdf/2609.26771v2"
+      },
+      {
+        "id": "B5",
+        "key": "BreuillardVarju2019",
+        "locator": "Lemma 45 and §9.2; used explicitly in Kogler v2, proof of Theorem 1.1, p. 9",
+        "url": "https://arxiv.org/pdf/1810.13360v2",
+        "note": "These cyclotomic estimates are unconditional; the general main theorem of this source has an RH hypothesis."
+      },
+      {
+        "id": "B6",
+        "key": "Kogler2026",
+        "locator": "Theorem 1.1, p. 1, and its proof, p. 9; arXiv:2609.26771v2",
+        "url": "https://arxiv.org/pdf/2609.26771v2"
+      }
+    ],
+    "body": "<p>Let \\(\\mathcal P_n=\\{1+\\sum_{j=1}^{n-1}\\xi_jX^j+X^n:\\xi_j\\in\\{0,1\\}\\}\\), and choose \\(P_n\\) uniformly. Write \\(P^*(X)=X^{\\deg P}P(1/X)\\). If \\(P=AB\\) with monic nonconstant integer factors, then \\(Q=AB^*\\) is binary and \\(QQ^*=PP^*\\); it differs from both \\(P\\) and \\(P^*\\) exactly when neither factor is reciprocal. On the unit circle, \\(PP^*(z)=z^n|P(z)|^2\\).</p><p><strong>Preprint claim, Kogler v2.</strong> Theorem 1.3 states</p>\\[\\Pr\\bigl(\\exists Q\\in\\mathcal P_n\\setminus\\{P_n,P_n^*\\}:QQ^*\\equiv P_nP_n^*\\pmod4\\bigr)\\le8(3/4)^{\\lfloor(n-1)/4\\rfloor}.\\]<p>This also bounds nontrivial exact Fourier-magnitude ambiguity. It does not alone control every reducibility event: reciprocal noncyclotomic divisors require Proposition 3.2, while cyclotomic divisors require separate estimates. Reducibility is contained in the union of the three displayed obstruction events.</p><p>The reciprocal-divisor probability is at most \\(C\\exp(-cn/(\\log n)^4)\\) for sufficiently large \\(n\\). Cyclotomic factors of degree at least two have probability \\(O(n^{-1})\\). Since \\(P_n(1)>0\\), the only remaining linear factor is \\(X+1\\). Its probability is \\(\\sqrt{2/(\\pi n)}+O(n^{-3/2})\\). Together these estimates give Theorem 1.1:</p>\\[\\Pr(P_n\\text{ reducible over }\\mathbb Q)=\\sqrt{\\frac{2}{\\pi n}}+O(n^{-1}).\\]<p>The conclusion concerns irreducibility in the binary coefficient model. Galois-group conclusions and other coefficient laws require separate theorems.</p>",
+    "related": [
+      {
+        "article": "factor-reversal",
+        "section": "example",
+        "label": "An exact pair with the same autocorrelation"
+      },
+      {
+        "article": "random-models",
+        "section": "cyclotomic-errors",
+        "label": "Cyclotomic obstructions in random models"
+      },
+      {
+        "article": "littlewood",
+        "section": "boundary",
+        "label": "The distinct fair-sign model"
+      }
+    ]
+  },
+  {
+    "id": "tridiagonal-galois-spectral-uncertainty",
+    "title": "Tridiagonal matrices, Galois groups, and spectral uncertainty",
+    "summary": "Finite-field mixing and Dedekind RH yield an alternating or symmetric Galois group with exponentially high probability. Emmrich’s theorem then turns that arithmetic event into a simultaneous uncertainty inequality for every nonzero vector.",
+    "scope": "\\(n\\ge3\\); \\(H_n\\) is real symmetric tridiagonal with adjacent entries one and iid nonconstant integer diagonal entries \\(V_j\\), satisfying \\(\\Pr(|V_1|\\ge k)\\le B(\\log k)^{-b}\\) for some \\(B,b>0\\), all \\(k\\ge3\\). The root-field Dedekind RH hypothesis stated below is retained.",
+    "status": "Conditional",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "random-matrices",
+        "afterSection": "other-ensembles"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "matrix",
+        "label": "Tridiagonal matrix Hₙ",
+        "kind": "object",
+        "article": "random-matrices",
+        "section": "other-ensembles"
+      },
+      {
+        "id": "transfer",
+        "label": "Transfer-matrix products",
+        "kind": "method",
+        "article": "random-matrices",
+        "section": "other-ensembles"
+      },
+      {
+        "id": "moments",
+        "label": "Root moments and multiplicities",
+        "kind": "method",
+        "article": "random-matrices",
+        "section": "local-global"
+      },
+      {
+        "id": "rh",
+        "label": "Dedekind RH for root fields",
+        "kind": "hypothesis",
+        "article": "random-matrices",
+        "section": "other-ensembles"
+      },
+      {
+        "id": "combine",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "group",
+        "label": "Irreducible; G contains Aₙ",
+        "kind": "result",
+        "article": "permutation-groups",
+        "section": "jordan"
+      },
+      {
+        "id": "minors",
+        "label": "All eigenvector minors nonzero",
+        "kind": "result",
+        "article": "random-matrices",
+        "section": "consequence"
+      },
+      {
+        "id": "uncertainty",
+        "label": "Support uncertainty for every v ≠ 0",
+        "kind": "result",
+        "article": "random-matrices",
+        "section": "consequence"
+      }
+    ],
+    "edges": [
+      {
+        "from": "matrix",
+        "to": "transfer",
+        "type": "deduction",
+        "label": "Determinant recurrence",
+        "citations": [
+          "M2"
+        ],
+        "explanation": "The characteristic polynomial is the upper-left entry of the ordered product of the transfer matrices T(X-V_j)."
+      },
+      {
+        "from": "transfer",
+        "to": "moments",
+        "type": "flow",
+        "label": "Finite-field mixing",
+        "citations": [
+          "M3"
+        ],
+        "explanation": "The transfer-matrix random walk supplies prime-averaged higher root-count moments, together with control of proper powers."
+      },
+      {
+        "from": "moments",
+        "to": "combine",
+        "type": "flow",
+        "label": "Joint input",
+        "citations": [],
+        "explanation": "The quantitative root-count and multiplicity estimates enter the arithmetic argument."
+      },
+      {
+        "from": "rh",
+        "to": "combine",
+        "type": "flow",
+        "label": "Joint input",
+        "citations": [],
+        "explanation": "Dedekind RH supplies the effective prime-ideal estimates needed at the chosen prime range."
+      },
+      {
+        "from": "combine",
+        "to": "group",
+        "type": "deduction",
+        "label": "Failure ≤ C exp(-cn)",
+        "citations": [
+          "M1",
+          "M3"
+        ],
+        "explanation": "Theorem 1 gives irreducibility and alternating-group containment on one event of probability at least 1-C exp(-cn)."
+      },
+      {
+        "from": "group",
+        "to": "minors",
+        "type": "deduction",
+        "label": "Emmrich: Theorem 2",
+        "citations": [
+          "M4",
+          "M6"
+        ],
+        "explanation": "For this diagonalizable rational matrix, alternating-group containment forces every minor of an eigenvector matrix to be nonzero."
+      },
+      {
+        "from": "minors",
+        "to": "uncertainty",
+        "type": "equivalence",
+        "label": "Emmrich: Theorem 10",
+        "citations": [
+          "M5"
+        ],
+        "explanation": "For a real orthogonal eigenvector matrix U, nonvanishing of every minor is equivalent to the support inequality for every nonzero complex vector."
+      }
+    ],
+    "sources": [
+      {
+        "id": "M1",
+        "key": "BarySorokerGarzoniSodin2026",
+        "locator": "Theorem 1 and equations (1)–(4); arXiv:2502.17218v3",
+        "url": "https://arxiv.org/html/2502.17218v3",
+        "note": "Published in Journal of Number Theory 280 (2026), 973–998; the probability statement is conditional."
+      },
+      {
+        "id": "M2",
+        "key": "BarySorokerGarzoniSodin2026",
+        "locator": "Lemma 2.1 and its determinant recurrence; arXiv:2502.17218v3",
+        "url": "https://arxiv.org/html/2502.17218v3"
+      },
+      {
+        "id": "M3",
+        "key": "BarySorokerGarzoniSodin2026",
+        "locator": "§2.2, Lemmas 2.6–2.7 and proof of Theorem 1; arXiv:2502.17218v3",
+        "url": "https://arxiv.org/html/2502.17218v3",
+        "note": "The refined argument gives an exponential error; the earlier argument in §2.1 only gives a stretched-exponential error."
+      },
+      {
+        "id": "M4",
+        "key": "Emmrich2024Minors",
+        "locator": "Theorem 2 and its proof in §3; published version",
+        "url": "https://www.degruyterbrill.com/document/doi/10.1515/spma-2024-0020/html"
+      },
+      {
+        "id": "M5",
+        "key": "Emmrich2024Minors",
+        "locator": "Theorem 10 in §4; published version",
+        "url": "https://www.degruyterbrill.com/document/doi/10.1515/spma-2024-0020/html"
+      },
+      {
+        "id": "M6",
+        "key": "BarySorokerGarzoniSodin2026",
+        "locator": "§1.2, eigenvector-minor and uncertainty corollaries; arXiv:2502.17218v3",
+        "url": "https://arxiv.org/html/2502.17218v3",
+        "note": "The source already makes this connection using Emmrich’s theorem."
+      }
+    ],
+    "body": "<p>Put \\((H_n)_{jj}=V_j\\), \\((H_n)_{j,j+1}=(H_n)_{j+1,j}=1\\), and all other entries zero. The diagonal law is fixed, nonconstant and integer-valued, with the logarithmic tail bound in the scope. Every bounded nonconstant integer law qualifies. Write \\(P_n(X)=\\det(XI-H_n)\\).</p><p><strong>Published theorem, conditional on Dedekind RH.</strong> Assume RH for each Dedekind zeta function of \\(\\mathbb Q(a)\\), where \\(a\\) is a root of the characteristic polynomial of any integer-diagonal matrix of this tridiagonal form. RH for all number fields is sufficient. Bary-Soroker–Garzoni–Sodin prove that there are constants \\(C,c>0\\), depending on the law, such that</p>\\[\\Pr\\bigl(P_n\\text{ irreducible and }\\operatorname{Gal}(P_n/\\mathbb Q)\\in\\{A_n,S_n\\}\\bigr)\\ge1-Ce^{-cn}.\\]<p>The transfer identity is</p>\\[P_n(X)=\\bigl(T(X-V_n)\\cdots T(X-V_1)\\bigr)_{11},\\qquad T(u)=\\begin{pmatrix}u&-1\\\\1&0\\end{pmatrix}.\\]<p>Higher root-count moments, rather than just the expected number of roots, detect the required permutation-group action.</p><p>Let \\(U\\) have real orthonormal eigenvectors of \\(H_n\\) as columns. On the same event, Emmrich’s theorems give nonvanishing of every minor and, simultaneously for all \\(0\\ne v\\in\\mathbb C^n\\),</p>\\[|\\operatorname{supp}v|+|\\operatorname{supp}(U^{\\mathsf T}v)|\\ge n+1.\\]<p>The support is the set of nonzero coordinates. Thus a vector cannot be sparse in both the coordinate and eigenvector bases. No additional union bound over vectors is needed. The authors already record this consequence in §1.2; the hypothesis remains attached to the probability estimate.</p>",
+    "related": [
+      {
+        "article": "frobenius",
+        "section": "density",
+        "label": "Prime averages and Galois actions"
+      },
+      {
+        "article": "permutation-groups",
+        "section": "jordan",
+        "label": "How large actions force alternating groups"
+      },
+      {
+        "article": "random-matrices",
+        "section": "ensemble",
+        "label": "Comparison with independent-entry matrices"
+      }
+    ]
+  },
+  {
+    "id": "quadratic-square-classes-to-all-levels",
+    "title": "From critical square classes to every quadratic iterate",
+    "summary": "At each finite level, square-class independence is equivalent to the full binary-tree Galois group. A 2026 preprint extends a two-level check to every level under explicit parameter conditions.",
+    "scope": "\\(f_c=X^2+c\\) over \\(\\mathbb Q\\), target zero, \\(c\\notin\\{-1,0\\}\\). The finite-to-infinite step here is the positive subfamily \\(c=r/s>0\\), with \\(r,s\\) coprime positive integers, \\(s\\) even and \\(r\\equiv3\\pmod4\\).",
+    "status": "Claimed",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "arboreal-galois",
+        "afterSection": "finite-level"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "orbit",
+        "label": "Critical orbit of x²+c",
+        "kind": "object",
+        "article": "composition-iteration",
+        "section": "quadratic-example"
+      },
+      {
+        "id": "initial",
+        "label": "First two classes independent",
+        "kind": "result",
+        "article": "arboreal-galois",
+        "section": "square-classes"
+      },
+      {
+        "id": "level-two",
+        "label": "Full Galois group at level two",
+        "kind": "result",
+        "article": "arboreal-galois",
+        "section": "wreath-product"
+      },
+      {
+        "id": "parameters",
+        "label": "c > 0; s even; r ≡ 3 mod 4",
+        "kind": "hypothesis",
+        "article": "arboreal-galois",
+        "section": "finite-level"
+      },
+      {
+        "id": "combine",
+        "label": "AND",
+        "kind": "gate"
+      },
+      {
+        "id": "characters",
+        "label": "Characters separate every index",
+        "kind": "method",
+        "article": "arboreal-galois",
+        "section": "square-classes"
+      },
+      {
+        "id": "all-classes",
+        "label": "All critical classes independent",
+        "kind": "result",
+        "article": "arboreal-galois",
+        "section": "square-classes"
+      },
+      {
+        "id": "full-tree",
+        "label": "Full binary-tree group at every level",
+        "kind": "result",
+        "article": "arboreal-galois",
+        "section": "preimage-tree"
+      },
+      {
+        "id": "irreducible",
+        "label": "Every iterate is irreducible",
+        "kind": "result",
+        "article": "polynomial-stability",
+        "section": "definitions"
+      }
+    ],
+    "edges": [
+      {
+        "from": "orbit",
+        "to": "initial",
+        "type": "flow",
+        "label": "Compute the first two values",
+        "citations": [],
+        "explanation": "Compute b₁=-c and b₂=c²+c and test that neither class nor their product is a square."
+      },
+      {
+        "from": "initial",
+        "to": "level-two",
+        "type": "equivalence",
+        "label": "Classical finite-level criterion",
+        "citations": [
+          "D1",
+          "D2"
+        ],
+        "explanation": "The first two adjusted critical classes are independent exactly when the second-level Galois group is the full order-eight binary-tree group."
+      },
+      {
+        "from": "initial",
+        "to": "combine",
+        "type": "flow",
+        "label": "Joint input",
+        "citations": [],
+        "explanation": "The initial independence check is combined with the stated parameter conditions."
+      },
+      {
+        "from": "parameters",
+        "to": "combine",
+        "type": "flow",
+        "label": "Joint input",
+        "citations": [],
+        "explanation": "The congruences are imposed on the coprime positive numerator r and denominator s."
+      },
+      {
+        "from": "combine",
+        "to": "characters",
+        "type": "deduction",
+        "label": "Stoll: Theorem 6.1(1)",
+        "citations": [
+          "D3",
+          "D4",
+          "D6"
+        ],
+        "explanation": "For the stated positive parameter subfamily, the initial conditions and the congruences produce quadratic characters separating every adjusted critical value from all later values.",
+        "preprint": true
+      },
+      {
+        "from": "characters",
+        "to": "all-classes",
+        "type": "equivalence",
+        "label": "Separating-character criterion",
+        "citations": [
+          "D4"
+        ],
+        "explanation": "Characters taking value -1 at one index and +1 at all later indices exist for every index exactly when the critical square classes are independent."
+      },
+      {
+        "from": "all-classes",
+        "to": "full-tree",
+        "type": "equivalence",
+        "label": "Classical criterion at every level",
+        "citations": [
+          "D1",
+          "D2"
+        ],
+        "explanation": "Independence of the infinite family means independence of every finite prefix, hence maximality at every finite level."
+      },
+      {
+        "from": "full-tree",
+        "to": "irreducible",
+        "type": "deduction",
+        "label": "Transitivity on every level",
+        "citations": [
+          "D5"
+        ],
+        "explanation": "The full binary-tree group acts transitively on the roots of each iterate, so each iterate is irreducible over Q."
+      }
+    ],
+    "sources": [
+      {
+        "id": "D1",
+        "key": "Stoll1992",
+        "locator": "Theorem in §1, part 1(a) ⇔ 1(b); restated in Stoll 2026, Proposition 1.7",
+        "url": "https://doi.org/10.1007/BF01197321",
+        "note": "The classical finite-level square-class equivalence; the inspected restatement is supplied separately."
+      },
+      {
+        "id": "D2",
+        "key": "Stoll2026Arboreal",
+        "locator": "Definition 1.2 and Proposition 1.7, pp. 2–3; arXiv:2611.14014v1",
+        "url": "https://arxiv.org/pdf/2611.14014v1",
+        "note": "Proposition 1.7 explicitly attributes the equivalence to Stoll 1992."
+      },
+      {
+        "id": "D3",
+        "key": "Stoll2026Arboreal",
+        "locator": "Lemma 4.3(C3), p. 8; Theorem 6.1(1), p. 11; arXiv:2611.14014v1",
+        "url": "https://arxiv.org/pdf/2611.14014v1",
+        "note": "The map selects the positive rational subfamily with even denominator and numerator congruent to three modulo four."
+      },
+      {
+        "id": "D4",
+        "key": "Stoll2026Arboreal",
+        "locator": "Definition 2.2 and Proposition 2.3, p. 5; proof of Theorem 6.1, p. 11; arXiv:2611.14014v1",
+        "url": "https://arxiv.org/pdf/2611.14014v1",
+        "note": "Separating characters are not assumed to arise from primitive prime divisors with odd valuation."
+      },
+      {
+        "id": "D5",
+        "key": "Jones2013Arboreal",
+        "locator": "§1.1, the preimage-tree action and irreducibility",
+        "url": "https://arxiv.org/pdf/1402.6018"
+      },
+      {
+        "id": "D6",
+        "key": "Stoll2026Arboreal",
+        "locator": "Lemma 3.1(1), p. 7; Proposition 5.1(Z1), pp. 9–10; arXiv:2611.14014v1",
+        "url": "https://arxiv.org/pdf/2611.14014v1",
+        "note": "The sign and valuation characters supply the initial characters used in the expanded proof sketch; Lemma 4.3 supplies the later ones."
+      }
+    ],
+    "body": "<p>For \\(f_c(X)=X^2+c\\), set \\(b_1=-c\\) and \\(b_j=f_c^{\\circ j}(0)\\) for \\(j\\ge2\\). The sign change at the first term is essential. If \\(c\\in\\mathbb Q\\setminus\\{-1,0\\}\\), all these values are nonzero and the preimages of zero form a regular binary tree. Write \\(G_n=\\operatorname{Gal}(f_c^{\\circ n}/\\mathbb Q)\\).</p><p><strong>Classical criterion.</strong> For every \\(n\\ge1\\),</p>\\[G_n=\\operatorname{Aut}(T_n)\\iff[b_1],\\ldots,[b_n]\\text{ are independent in }\\mathbb Q^\\times/\\mathbb Q^{\\times2}.\\]<p>Independence means that no nonempty product is a square.</p><p><strong>Restricted preprint criterion, Stoll v1.</strong> Let \\(c=r/s>0\\) in lowest terms, with \\(r,s>0\\), \\(s\\) even and \\(r\\equiv3\\pmod4\\). Theorem 6.1(1), using Lemma 4.3(C3), implies that independence of \\([-c]\\) and \\([c^2+c]\\) gives \\(G_n=\\operatorname{Aut}(T_n)\\) for every \\(n\\ge1\\). The initial check is automatic: \\(b_1<0\\) and \\(b_1b_2<0\\), while \\(b_2=r(r+s)/s^2\\) is positive and nonsquare. Indeed, \\(r\\equiv3\\pmod4\\) supplies a prime \\(q\\mid r\\) with odd \\(v_q(r)\\), and coprimality gives \\(v_q(b_2)=v_q(r)\\).</p><p>For \\(c=3/2\\), the initial classes are \\([-6]\\) and \\([15]\\). Neither these nor their product is a square. The conclusion is</p>\\[G_n=\\operatorname{Aut}(T_n),\\qquad |G_n|=2^{2^n-1}\\quad(n\\ge1).\\]<p>The proof constructs characters distinguishing each critical value from all later values. The congruence conditions are part of the finite-to-infinite step; level-two maximality alone is insufficient for arbitrary rational parameters.</p><details><summary>Why this parameter family works</summary><p>Following Stoll’s character argument, write</p>\\[b_n=\\frac{rw_n}{s^{2^{n-1}}},\\qquad w_1=-1,\\qquad w_{n+1}=rw_n^2+s^{2^n-1}.\\]<p>The recurrence gives \\(\\gcd(w_n,rs)=\\gcd(w_n,w_{n+1})=1\\). For the prime \\(q\\) above, \\(\\phi_0(x)=(-1)^{v_q(x)}\\) is \\(-1\\) on every \\(b_n\\). The sign character is \\(-1\\) on \\(b_1\\) and \\(+1\\) on all later terms.</p><p>For \\(n\\ge2\\), put \\(v_n=w_{n+1}+w_ns^{2^{n-1}}\\). Positivity and the congruences give \\(v_n>0\\) and \\(v_n\\equiv3\\pmod4\\). Hence a prime \\(p\\equiv3\\pmod4\\) divides \\(v_n\\). The recurrence and coprimalities imply \\(p\\nmid rsw_nw_{n+1}\\), so</p>\\[b_{n+1}\\equiv-b_n\\pmod p,\\qquad b_m\\equiv b_{n+1}\\pmod p\\quad(m>n).\\]<p>The quadratic residue character of the \\(p\\)-adic unit part therefore takes opposite signs on \\(b_n\\) and its entire tail. Either this character or its product with \\(\\phi_0\\) sends \\(b_n\\) to \\(-1\\) and all later terms to \\(+1\\). Such a character at every index excludes a square product by its least index. The classical criterion then gives the stated groups at every level. This is a proof sketch of the selected subfamily; the all-level result remains labelled as a preprint claim.</p></details>",
+    "related": [
+      {
+        "article": "arboreal-galois",
+        "section": "square-classes",
+        "label": "Proof of the finite-level equivalence"
+      },
+      {
+        "article": "arboreal-galois",
+        "section": "finite-level",
+        "label": "A parameter with delayed failure"
+      },
+      {
+        "article": "polynomial-stability",
+        "section": "rational-quadratics",
+        "label": "Stability and eventual stability over Q"
+      }
+    ]
+  }
+]

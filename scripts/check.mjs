@@ -5,30 +5,33 @@ import { fileURLToPath } from 'node:url';
 import { validateContent, resolveQuestionAliases } from './validate-content.mjs';
 await validateContent(fileURLToPath(new URL('../',import.meta.url)));
 const dist=fileURLToPath(new URL('../dist',import.meta.url));
-async function walk(dir){const out=[];for(const entry of await readdir(dir,{withFileTypes:true})){const full=resolve(dir,entry.name);if(entry.isDirectory())out.push(...await walk(full));else if(entry.name.endsWith('.html'))out.push(full);}return out;}
-const pages=new Map(await Promise.all((await walk(dist)).map(async f=>[f,await readFile(f,'utf8')])));
-const ids=new Map([...pages].map(([f,h])=>[f,new Set([...h.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]))]));
+async function walk(dir){const out=[];for(const entry of await readdir(dir,{withFileTypes:true})){const full=resolve(dir,entry.name);if(entry.isDirectory())out.push(...await walk(full));else if(/\.(?:html|svg)$/.test(entry.name))out.push(full);}return out;}
+const documents=new Map(await Promise.all((await walk(dist)).map(async f=>[f,await readFile(f,'utf8')])));
+const pages=new Map([...documents].filter(([f])=>f.endsWith('.html')));
+const ids=new Map([...documents].map(([f,h])=>[f,new Set([...h.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]))]));
 const problems=[];
 const publicBase=new URL(process.env.SITE_URL??'https://khaihoanmath.github.io/polynomial-arithmetic-atlas/');
 if(!publicBase.pathname.endsWith('/'))publicBase.pathname+='/';
 const decode=s=>s.replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&#39;',"'").replaceAll('&lt;','<').replaceAll('&gt;','>');
 let localLinks=0,externalLinks=0;
-for(const[file,html]of pages){
+for(const[file,html]of documents){
  const label=relative(dist,file);
+ const declarations=[...html.matchAll(/\sid="([^"]+)"/g)];
+ if(declarations.length!==ids.get(file).size)problems.push(`Duplicate IDs: ${label}`);
+ if(file.endsWith('.html')){
  const expectedURL=new URL(label==='index.html'?'./':label,publicBase).href;
  const canonical=html.match(/<link rel="canonical" href="([^"]+)"/);
  if(!canonical||decode(canonical[1])!==expectedURL)problems.push(`Missing or incorrect canonical URL: ${label}`);
  for(const field of ['og:title','og:description','og:url'])if(!html.includes(`property="${field}"`))problems.push(`Missing sharing metadata ${field}: ${label}`);
  if(!html.includes('© 2026 Khai-Hoan Nguyen-Dang. All rights reserved.')||!html.includes('name="author" content="Khai-Hoan Nguyen-Dang"'))problems.push(`Missing copyright/author: ${label}`);
  if(/\bdownload(?:\s|=|>)/.test(html)||/href="[^"#]*(?:downloads\/|handbook\.html)/.test(html))problems.push(`Public download link: ${label}`);
- const declarations=[...html.matchAll(/\sid="([^"]+)"/g)];
- if(declarations.length!==ids.get(file).size)problems.push(`Duplicate IDs: ${label}`);
  let previousHeading=0;
  for(const[,level]of html.matchAll(/<h([1-6])(?:\s|>)/g)){if(Number(level)>previousHeading+1)problems.push(`Skipped heading level h${previousHeading} to h${level}: ${label}`);previousHeading=Number(level);}
  if(html.includes('katex-error'))problems.push(`Math rendering error: ${label}`);
  if((html.match(/<h1(?:\s|>)/g)||[]).length!==1)problems.push(`Expected one h1: ${label}`);
  if(!html.includes('lang="en"')||!html.includes('name="viewport"'))problems.push(`Missing document metadata: ${label}`);
  if(/href="(?:https?:)?\/\/[^"]+"[^>]*>\s*<\/a>/.test(html))problems.push(`Empty external link: ${label}`);
+ }
  for(const[,attribute,raw]of html.matchAll(/\s(href|src)="([^"]+)"/g)){
   const value=decode(raw);
   if(/^(?:https?:|mailto:|data:)/.test(value)){externalLinks++;if(value.startsWith('http'))try{new URL(value);}catch{problems.push(`Malformed URL ${value}: ${label}`);}continue;}
@@ -69,4 +72,4 @@ for(const key of ['Tsaknias2012','MullenPanario2013','LagariasOdlyzko1977']){
 }
 async function checkPublicFiles(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=resolve(dir,entry.name);const name=relative(dist,file);if(entry.isDirectory()){if(entry.name==='downloads')problems.push(`Public downloads directory: ${name}`);await checkPublicFiles(file);}else if(/\.(?:pdf|tex|bib|json|csv|zip|py|map)$/i.test(entry.name)||entry.name==='handbook.html')problems.push(`Author file in public build: ${name}`);}}
 await checkPublicFiles(dist);
-if(problems.length){console.error(problems.join('\n'));process.exitCode=1;}else console.log(`Verified ${pages.size} pages, ${localLinks} local links/assets, ${externalLinks} external URL references, all citation keys, and rendered math.`);
+if(problems.length){console.error(problems.join('\n'));process.exitCode=1;}else console.log(`Verified ${pages.size} pages, ${documents.size-pages.size} SVG files, ${localLinks} local links/assets, ${externalLinks} external URL references, all citation keys, and rendered math.`);

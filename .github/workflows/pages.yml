@@ -21,8 +21,8 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Check comments and content validation
-        run: node --test scripts/comments.test.mjs scripts/content-validation.test.mjs
+      - name: Check comments, content, and diagrams
+        run: node --test scripts/comments.test.mjs scripts/content-validation.test.mjs scripts/diagram-validation.test.mjs scripts/diagrams.test.mjs
       - run: npm run build
       - run: npm run check
       - uses: actions/setup-python@v6
@@ -35,6 +35,7 @@ jobs:
           python scripts/review_certificates.py
           python scripts/open_problem_certificates.py
           python scripts/literature_certificates.py
+          python scripts/diagram_certificates.py
           python scripts/generate_eulerian.py --check
       - uses: actions/upload-pages-artifact@v4
         with:
