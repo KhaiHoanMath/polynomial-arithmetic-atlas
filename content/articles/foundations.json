@@ -134,7 +134,7 @@
       {
         "id": "same-splitting-field",
         "title": "The same splitting field in a smaller degree",
-        "body": "<p>A splitting field can be described by irreducible polynomials of different degrees. The bridge is the index of a subgroup: a root field has degree equal to the index of its stabilizer. Keeping the whole splitting field requires that the action on the roots be faithful.</p><p>Pálfy’s 2026 preprint revisits a classical theorem: for a prime \\(p\\ge5\\), the group \\(\\operatorname{PSL}_2(\\mathbb F_p)=\\operatorname{SL}_2(\\mathbb F_p)/\\{\\pm I\\}\\) has a subgroup of index \\(p\\) exactly when \\(p=5,7,11\\). The paper proposes a reconstruction of Galois’s argument; it does not report a recovered manuscript. The diagram gives a consequence for the smallest degree of an equation defining a given splitting field.</p>",
+        "body": "<p>A splitting field can be described by irreducible polynomials of different degrees. The bridge is the index of a subgroup: a root field has degree equal to the index of its stabilizer. Keeping the whole splitting field requires that the action on the roots be faithful.</p><p>Pálfy’s 2026 preprint revisits a classical theorem: for a prime \\(p\\ge5\\), the group \\(\\operatorname{PSL}_2(\\mathbb F_p)=\\operatorname{SL}_2(\\mathbb F_p)/\\{\\pm I\\}\\) has a subgroup of index \\(p\\) exactly when \\(p=5,7,11\\). The paper proposes a reconstruction of Galois’s argument; it does not report a recovered manuscript. The diagram gives a consequence for the smallest degree of an equation defining a given splitting field.</p><p><em>Acknowledgment.</em> I thank Vo Quoc Bao for sending me Pálfy’s paper.</p>",
         "citations": [
           {
             "key": "Palfy2026Galois",
