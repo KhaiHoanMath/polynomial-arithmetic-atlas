@@ -122,3 +122,17 @@ The Fekete fixed-field statement is explicitly presented as an elementary
 corollary of a published recurrence, with its proof supplied. Its “Published”
 label identifies the underlying source; it does not claim that the atlas's
 formulation appeared there as a numbered theorem.
+
+
+## Foundations and navigation follow-up · 15 November 2026
+
+Moved the Diagrams and References catalogue links from the header to the lower-right
+footer. Article diagrams remain beside the results they explain. Added Pálfy’s
+arXiv:2611.06054v1 after the foundations article’s field–subgroup correspondence.
+The classical subgroup theorem is distinguished from the preprint’s proposed
+historical reconstruction. A new diagram proves the exact minimum degree for an
+already-given PSL(2,p) extension, using simplicity, subgroup cores, the primitive
+element theorem, and the natural projective-line action. It excludes p=2,3 and
+does not make an inverse-Galois existence claim. The collection now has 20 diagrams
+in 18 articles and 388 references. Existing preprint cautions and question statuses
+are retained.

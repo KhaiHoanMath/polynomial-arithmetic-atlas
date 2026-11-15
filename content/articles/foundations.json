@@ -8,7 +8,7 @@
     "level": "Start here",
     "field": "general fields",
     "status": "Classical theory",
-    "checked": "2026-11-12",
+    "checked": "2026-11-15",
     "questionsAnswered": [
       "How does an irreducible polynomial define a field extension?",
       "How do irreducible factors correspond to Galois orbits?",
@@ -128,6 +128,21 @@
           {
             "key": "DixonMortimer1996",
             "note": "Blocks in transitive permutation groups and point stabilizers."
+          }
+        ]
+      },
+      {
+        "id": "same-splitting-field",
+        "title": "The same splitting field in a smaller degree",
+        "body": "<p>A splitting field can be described by irreducible polynomials of different degrees. The bridge is the index of a subgroup: a root field has degree equal to the index of its stabilizer. Keeping the whole splitting field requires that the action on the roots be faithful.</p><p>Pálfy’s 2026 preprint revisits a classical theorem: for a prime \\(p\\ge5\\), the group \\(\\operatorname{PSL}_2(\\mathbb F_p)=\\operatorname{SL}_2(\\mathbb F_p)/\\{\\pm I\\}\\) has a subgroup of index \\(p\\) exactly when \\(p=5,7,11\\). The paper proposes a reconstruction of Galois’s argument; it does not report a recovered manuscript. The diagram gives a consequence for the smallest degree of an equation defining a given splitting field.</p>",
+        "citations": [
+          {
+            "key": "Palfy2026Galois",
+            "locator": "Theorems 1–2, p. 1; §3, pp. 3–5; exceptional constructions in §4, pp. 5–6"
+          },
+          {
+            "key": "Milne2022",
+            "locator": "Theorem 3.17(b), p. 47; Remark 3.18(b), p. 48; Theorem 5.1, p. 78"
           }
         ]
       },

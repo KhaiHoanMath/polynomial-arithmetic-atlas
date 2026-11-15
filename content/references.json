@@ -10102,6 +10102,30 @@
       "group_index": 8,
       "kind": "Report",
       "metadata_note": "January 1979 report, distinct from the 1980 SIAM Journal on Computing article Probabilistic algorithms in finite fields (DOI 10.1137/0209024). Lemma and page locators here refer to this report."
+    },
+    {
+      "id": "Palfy2026Galois",
+      "authors": "Pálfy, Péter P.",
+      "title": "Galois’s lost proof on PSL(2,p)",
+      "year": 2026,
+      "type": "misc",
+      "venue": "arXiv:2611.06054v1",
+      "url": "https://arxiv.org/abs/2611.06054v1",
+      "open_url": "https://arxiv.org/html/2611.06054v1",
+      "section": "Foundations and reference books",
+      "annotation": "A possible reconstruction of Galois’s argument for the classical index-p subgroup theorem for PSL(2,p). Theorems 1–2 and §4 give simplicity and the exceptional primes 5, 7, 11. The atlas derives a minimum-degree consequence for an already-given Galois extension.",
+      "status": "Preprint; classical theorem and historical reconstruction",
+      "verification_urls": [
+        "https://arxiv.org/abs/2611.06054v1",
+        "https://arxiv.org/html/2611.06054v1",
+        "https://arxiv.org/pdf/2611.06054v1"
+      ],
+      "source_file": "foundations-diagram-review",
+      "accessed": "2026-11-15",
+      "group": "Foundations and reference books",
+      "group_index": 0,
+      "kind": "Preprint",
+      "metadata_note": "Version 1, submitted 4 November 2026. The historical reconstruction is not a recovered proof manuscript. The geometric verification in §4 is explicitly described as anachronistic by the author."
     }
   ],
   "original_collection_count": 188,

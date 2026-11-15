@@ -64,7 +64,7 @@ def main():
     diagrams = [(p.relative_to(DIST).as_posix(), p.read_bytes())
                 for p in sorted((DIST / "assets" / "diagrams").glob("*.svg"))]
     diagram_assets = [("assets/" + name, (DIST / "assets" / name).read_bytes())
-                      for name in ("diagrams.css", "site.js")]
+                      for name in ("site.css", "diagrams.css", "site.js")]
     if not pages:
         raise SystemExit("No built HTML to verify.")
     tasks = pages + diagrams + diagram_assets + [(path, None) for path in REMOVED]
@@ -74,7 +74,7 @@ def main():
         print("\n".join(failures), file=sys.stderr)
         raise SystemExit(1)
     print(f"Verified {len(pages)} live HTML pages byte for byte; "
-          f"{len(diagrams)} live diagram SVGs, diagram CSS, and site JavaScript match; "
+          f"{len(diagrams)} live diagram SVGs, site and diagram CSS, and site JavaScript match; "
           f"{len(REMOVED)} withdrawn or private file paths returned 404.")
 
 if __name__ == "__main__":

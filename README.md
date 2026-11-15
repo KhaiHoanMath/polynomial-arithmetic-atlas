@@ -4,7 +4,7 @@
 
 A reference website on polynomial irreducibility and Galois groups, with results,
 methods, examples, and annotated sources. The edition reviewed on 15 November
-2026 contains 68 articles, 117 questions, 387 references, and 19 connected diagrams
+2026 contains 68 articles, 117 questions, 388 references, and 20 connected diagrams
 across 12 subjects.
 The collection is selective; cited source versions and verification limits are
 recorded in the entries.

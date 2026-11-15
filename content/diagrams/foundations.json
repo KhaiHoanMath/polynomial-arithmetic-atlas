@@ -1,0 +1,163 @@
+[
+  {
+    "id": "galois-subgroup-index-minimum-degree",
+    "title": "Subgroup index and the smallest defining equation",
+    "summary": "Subgroups, root fields, and faithful permutation actions describe the same degree problem. The equivalences below lead to the complete minimum-degree formula.",
+    "scope": "Fix a finite Galois extension \\(L/K\\) with \\(G=\\operatorname{Gal}(L/K)\\cong\\operatorname{PSL}_2(\\mathbb F_p)\\), where \\(p\\ge5\\) is prime. An equation means a separable irreducible polynomial over \\(K\\) whose splitting field is \\(L\\). Nodes asserting an object mean that such an object exists.",
+    "status": "Classical",
+    "checked": "2026-11-15",
+    "placements": [
+      {
+        "article": "foundations",
+        "afterSection": "same-splitting-field"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "subgroup",
+        "label": "Index-p subgroup of G",
+        "kind": "object",
+        "article": "galois-correspondence",
+        "section": "fixed-fields"
+      },
+      {
+        "id": "field",
+        "label": "Intermediate field of degree p",
+        "kind": "object",
+        "article": "galois-correspondence",
+        "section": "stabilizers"
+      },
+      {
+        "id": "action",
+        "label": "Faithful transitive action on p points",
+        "kind": "object",
+        "article": "permutation-groups",
+        "section": "blocks"
+      },
+      {
+        "id": "polynomial",
+        "label": "Degree-p equation with splitting field L",
+        "kind": "result",
+        "article": "field-extensions",
+        "section": "splitting"
+      },
+      {
+        "id": "exceptions",
+        "label": "p = 5, 7, or 11",
+        "kind": "result",
+        "article": "foundations",
+        "section": "same-splitting-field"
+      }
+    ],
+    "edges": [
+      {
+        "from": "subgroup",
+        "to": "field",
+        "type": "equivalence",
+        "label": "Degree equals index",
+        "citations": [
+          "R1"
+        ],
+        "explanation": "The Galois correspondence sends H to its fixed field E=L^H and gives [E:K]=[G:H]."
+      },
+      {
+        "from": "subgroup",
+        "to": "action",
+        "type": "equivalence",
+        "label": "Cosets and stabilizers",
+        "citations": [
+          "R2",
+          "R3"
+        ],
+        "explanation": "An index-p subgroup gives a transitive action on its p cosets. Its kernel is the core of H; simplicity makes this kernel trivial. Conversely, a point stabilizer in a transitive degree-p action has index p."
+      },
+      {
+        "from": "field",
+        "to": "polynomial",
+        "type": "equivalence",
+        "label": "Primitive element and normal closure",
+        "citations": [
+          "R1",
+          "R2",
+          "R3"
+        ],
+        "explanation": "A primitive element of E has degree p. The normal closure of E in L is fixed by the core of its stabilizer; simplicity makes that core trivial. Conversely, any root of an irreducible degree-p polynomial generates a degree-p intermediate field."
+      },
+      {
+        "from": "action",
+        "to": "polynomial",
+        "type": "equivalence",
+        "label": "Realize the root action",
+        "citations": [
+          "R1",
+          "R2",
+          "R4"
+        ],
+        "explanation": "For the given extension L/K, the fixed field of a point stabilizer has a primitive element whose conjugates give this faithful action. Conversely, an irreducible polynomial with splitting field L gives a faithful transitive action on its roots."
+      },
+      {
+        "from": "polynomial",
+        "to": "exceptions",
+        "type": "equivalence",
+        "label": "Classical classification",
+        "citations": [
+          "R1",
+          "R2",
+          "R3"
+        ],
+        "explanation": "Through the equivalent subgroup condition, Theorem 2 and the constructions in Section 4 give exactly p=5,7,11. The subgroup classification is classical; the cited exposition is a recent preprint."
+      }
+    ],
+    "sources": [
+      {
+        "id": "R1",
+        "key": "Milne2022",
+        "locator": "Theorem 3.17(b), p. 47; Theorem 5.1, p. 78",
+        "url": "https://www.jmilne.org/math/Books/FT0.pdf#page=57",
+        "note": "2022 book: degree–index formula and primitive element theorem. Printed and PDF page numbers differ by ten."
+      },
+      {
+        "id": "R2",
+        "key": "Milne2022",
+        "locator": "Remark 3.18(b), p. 48",
+        "url": "https://www.jmilne.org/math/Books/FT0.pdf#page=58",
+        "note": "The normal closure corresponds to the largest normal subgroup contained in H, its core. The coset-action argument is also given below."
+      },
+      {
+        "id": "R3",
+        "key": "Palfy2026Galois",
+        "locator": "Theorems 1–2, p. 1; §1, pp. 1–2; §4, pp. 5–6 (arXiv:2611.06054v1)",
+        "url": "https://arxiv.org/html/2611.06054v1#Thmtheorem2",
+        "note": "Classical simplicity and subgroup theorem, discussed in a 2026 preprint; exceptional constructions make the index-p statement necessary and sufficient."
+      },
+      {
+        "id": "R4",
+        "key": "ConradGaloisPermutation",
+        "locator": "§2, pp. 1–2; Theorem 2.9(b), p. 3",
+        "url": "https://kconrad.math.uconn.edu/blurbs/galoistheory/galoisaspermgp.pdf#page=3",
+        "note": "Faithful root actions and irreducibility versus transitivity. The order-p lower bound is proved directly below."
+      }
+    ],
+    "body": "<div class=\"math-block theorem\"><p class=\"block-label\">Corollary of classical Galois theory</p><p>For the given extension, let \\(d(L/K)\\) be the smallest degree of a separable irreducible polynomial over \\(K\\) whose splitting field is \\(L\\). Then</p>\\[d(L/K)=\\begin{cases}p,&p\\in\\{5,7,11\\},\\\\p+1,&p>11.\\end{cases}\\]</div>\n<details class=\"diagram-proof\"><summary>Why the degree classification is complete</summary><p>For a subgroup \\(H\\le G\\), put \\(E=L^H\\). The action on \\(G/H\\) has kernel</p>\\[\\operatorname{core}_G(H)=\\bigcap_{g\\in G}gHg^{-1}.\\]<p>The same intersection fixes the normal closure of \\(E/K\\) inside \\(L\\). Every proper subgroup of the simple group \\(G\\) has trivial core. As \\(E/K\\) is finite separable, write \\(E=K(\\alpha)\\). The minimal polynomial of \\(\\alpha\\) has degree \\([G:H]\\) and splitting field \\(L\\). Conversely, a root of any such irreducible polynomial has a stabilizer of index equal to its degree.</p><p>The translation \\(x\\mapsto x+1\\) on \\(\\mathbb P^1(\\mathbb F_p)\\) has order \\(p\\). Any faithful action on \\(d\\) points embeds \\(G\\) into \\(S_d\\), so \\(d\\ge p\\). The natural projective-line action is faithful and transitive, giving degree \\(p+1\\). Thus the minimum is \\(p\\) precisely when an index-\\(p\\) subgroup exists; otherwise it is \\(p+1\\).</p></details>\n<p><strong>Scope.</strong> The extension \\(L/K\\) is given in advance; this does not assert that the group is realizable over every field. The prime restriction matters: for \\(p=2,3\\), index-\\(p\\) subgroups exist but are not core-free, and the corresponding lower-degree equations lose part of the splitting field. The corollary above is deduced from the cited results and the displayed argument; it is not claimed as a new theorem of Pálfy.</p>",
+    "related": [
+      {
+        "article": "galois-correspondence",
+        "section": "stabilizers"
+      },
+      {
+        "article": "field-extensions",
+        "section": "primitive-element"
+      },
+      {
+        "article": "permutation-groups",
+        "section": "blocks"
+      },
+      {
+        "article": "resolvents"
+      },
+      {
+        "article": "inverse-galois"
+      }
+    ]
+  }
+]
