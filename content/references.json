@@ -10126,6 +10126,29 @@
       "group_index": 0,
       "kind": "Preprint",
       "metadata_note": "Version 1, submitted 4 November 2026. The historical reconstruction is not a recovered proof manuscript. The geometric verification in §4 is explicitly described as anachronistic by the author."
+    },
+    {
+      "id": "Garmi2026Trinomials",
+      "authors": "Garmi, Hilel",
+      "title": "Galois Groups of Trinomials with Small Coefficients",
+      "year": 2026,
+      "type": "misc",
+      "venue": "arXiv:2610.22764v3",
+      "url": "https://arxiv.org/abs/2610.22764v3",
+      "open_url": "https://arxiv.org/pdf/2610.22764v3",
+      "arxiv": "2610.22764v3",
+      "section": "Special families: trinomials and sparse families",
+      "annotation": "Version 3, Corollary 1.3, states that the degree-(n−1) signed coefficient polynomial associated with x^n−2x^k+1 has group S_(n−1) over Q for coprime n>k>0 and n>8. The statement and nearby definitions were inspected; the full proof was not independently verified.",
+      "status": "Preprint",
+      "verification_urls": [
+        "https://arxiv.org/abs/2610.22764v3",
+        "https://arxiv.org/pdf/2610.22764v3"
+      ],
+      "accessed": "2026-11-16",
+      "group": "Special polynomial families",
+      "group_index": 3,
+      "kind": "Preprint",
+      "metadata_note": "Version 3 dated 23 October 2026. No journal publication asserted."
     }
   ],
   "original_collection_count": 188,

@@ -514,7 +514,7 @@
     "level": "Intermediate",
     "field": "Q",
     "status": "Published results",
-    "checked": "2026-11-12",
+    "checked": "2026-11-16",
     "questionsAnswered": [
       "Why is \\(x^n-x-1\\) irreducible, and why is its group \\(S_n\\)?",
       "How do reductions modulo two primes determine the quintic group?",
@@ -620,6 +620,17 @@
           {
             "key": "AwtreyPataneToone2025",
             "locator": "Abstract and Introduction"
+          }
+        ]
+      },
+      {
+        "id": "small-coefficients",
+        "title": "Small coefficients: a preprint result",
+        "body": "<p>Garmi’s version 3 preprint gives a uniform symmetric-group claim for a family with coefficients in \\(\\{-1,1\\}\\). For coprime integers \\(n>k>0\\) with \\(n>8\\), it states that</p>\\[P_{n,k}(x)=\\sum_{j=k}^{n-1}x^j-\\sum_{j=0}^{k-1}x^j\\]<p>has Galois group \\(S_{n-1}\\) over \\(\\mathbb Q\\). The identity \\((x-1)P_{n,k}(x)=x^n-2x^k+1\\) connects this claim to trinomials. The coprimality and degree conditions are essential to the cited statement. This is a preprint result; its proof has not been independently verified here.</p>",
+        "citations": [
+          {
+            "key": "Garmi2026Trinomials",
+            "locator": "Corollary 1.3, p. 2; definitions preceding Theorem 1.1, p. 1; arXiv:2610.22764v3"
           }
         ]
       }
