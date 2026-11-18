@@ -8288,9 +8288,145 @@
       "kind": "new",
       "record": "hal:hal-02373439",
       "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "30ab59fb8600ce57e150cd4f29e74932570dc7906de0f2b77545b695abba7529",
+      "id": "7b3be6add5cbd9b203ac",
+      "kind": "changed",
+      "record": "crossref:10.1090/conm/832/16612",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "5cfd5d3dfd022b6f43454d41cd5b6dd4ae2d059ce9102010ce78f88011ef8f06",
+      "id": "e47be18a8dfeeb6e8b55",
+      "kind": "new",
+      "record": "arxiv:2611.23031",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "24860e586aa21a7a439f0d7008f7dd7169944a8e38caa738e1f5aa7e6b842ef3",
+      "id": "28f64575cb3cbb870ef5",
+      "kind": "new",
+      "record": "arxiv:2609.08608",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "9bdfa9a2f23288dfe43a6c0fe97d6f805e44191c6469b5926114e57cc4cb6257",
+      "id": "95c137b1499df4c48bb6",
+      "kind": "new",
+      "record": "arxiv:2611.22365",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "aedaa73e72787d02cabeca5be4efbef2a84af1335778da20be322e50ab01e57d",
+      "id": "728b10269d0d16f8051f",
+      "kind": "new",
+      "record": "arxiv:2611.22194",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "143f70730b843b9ee3dd5992ee4b22824d3b97d8b1eef1c133c4fa670c33b19c",
+      "id": "6ffd47aafe6e647e7a82",
+      "kind": "changed",
+      "record": "arxiv:2610.35783",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "afcae57cf3e18ccff7e895c3dc1925864e83397f652f77530db68fab9ca5387a",
+      "id": "5e8620b113d37a400759",
+      "kind": "new",
+      "record": "arxiv:2611.22110",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "ab8c9a10f26491b0dcaed2632bfc2b5d989bb7a15948814d27e749a7fa0ad42e",
+      "id": "f84e79031d407a9c7da4",
+      "kind": "changed",
+      "record": "arxiv:2610.36736",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "a6d3af88be9e2e97785d545c039b18e79e57317f3308df323efbfe7db1d39e68",
+      "id": "63428cef3e5fa3d56cee",
+      "kind": "new",
+      "record": "hal:hal-01310514",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "e163fda248142e597ea4abd95ac91bff42721eece8ea59002728846c757d82e3",
+      "id": "bd120b88c3d58decc539",
+      "kind": "new",
+      "record": "hal:hal-05777819",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "7b693c6d7fdac9a4fbdd263902371931b276c0164fa226e001c41eddc9d86e19",
+      "id": "39d5f3acc7867a094702",
+      "kind": "baseline",
+      "record": "hal:hal-05871381",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "469f6dd76936d957d571bff739bf88544fef33ebab302c8a8ad3bab78a4f75ad",
+      "id": "fe8b8572bc98bb3342d9",
+      "kind": "new",
+      "record": "hal:hal-00684883",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "77723a66efa18a5e8ecd7fb0a444caedd48c775d80319b5f25d16a6188254817",
+      "id": "7dfdb091ed78c0ce7e94",
+      "kind": "new",
+      "record": "hal:hal-00813684",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "296a943a99c9b179f72bf86a81feece1ec98ec5001d80a480fd11a2f27d19f90",
+      "id": "916dff07c719b5d91645",
+      "kind": "new",
+      "record": "hal:hal-00933051",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "6c5ecda5139de0ef660189218a3312033a24d06fb4eac0cf856fdd55aa73044f",
+      "id": "8b63d9e7b1e1bc2c20c2",
+      "kind": "new",
+      "record": "hal:hal-02315710",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "161805302f6c2a564f8d34d3cd7bd18787fd33a13824015594a64a381585638d",
+      "id": "7323689a309aa95009c1",
+      "kind": "new",
+      "record": "zenodo:24350768",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-18T20:16:06Z",
+      "fingerprint": "c3b4485ed9e71f212310105d134a34491afe9039786596969a732350b135d5e3",
+      "id": "efd0b9f1c772e8323118",
+      "kind": "new",
+      "record": "hexagon:2611.00572",
+      "review_status": "unreviewed"
     }
   ],
-  "last_run": "2026-11-17T20:19:08Z",
+  "last_run": "2026-11-18T20:16:06Z",
   "last_run_complete": false,
   "records": {
     "arxiv:0707.1835": {
@@ -8315,7 +8451,7 @@
       "exact_reference": true,
       "fingerprint": "a7bbf3ef3d4ef0274b46b739a0b96b109f00a1f9f525fd1092a5507c8c535acb",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "f6a933f1fb331e692736e32daede31c59cdaa7b48e97317a83d0506d4f0484b8",
         "arxiv": "0707.1835",
@@ -8394,7 +8530,7 @@
       "exact_reference": true,
       "fingerprint": "dfb494f1000f6dccfaa701465666780252ad1fbad0b19c30b796564502902e2d",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "e8f9e2a1eec708ca385fc246db7f8da36823065caadde27cff49f9d5a3404dd5",
         "arxiv": "0807.2620",
@@ -8470,7 +8606,7 @@
       "exact_reference": true,
       "fingerprint": "7df2b58a7d6b48a21ae171199d411c596020be0404ef2c4fb27ae3eaabff3ac3",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "24c4f4b48f1c9f2b7dcc38e228d1e50b10fbb33649747454de6d713435c46160",
         "arxiv": "0807.3578",
@@ -8548,7 +8684,7 @@
       "exact_reference": true,
       "fingerprint": "5a2ba37bcf3a5ca7dd1e0b84565440b3e5f7764b68fa9fc439dc942fd1c44c7e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "b9d852b361c576b0b9c6423cac2ad6f5c4380207a78c2b3347298d7a63cfea5b",
         "arxiv": "0811.4029",
@@ -8625,7 +8761,7 @@
       "exact_reference": true,
       "fingerprint": "718a47fe8b74946dbe533a77f9bebd0bcbaa3adc803f36c5bd942ac73c715cd8",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "872fa7c4f80ef1bcd45fbd92275f390c448934e043f656788725fab333d669ac",
         "arxiv": "0911.0286",
@@ -8702,7 +8838,7 @@
       "exact_reference": true,
       "fingerprint": "a72676b0a5c0935aa3066e99544203c91c75af2dbdc501bbdec5a0fc8124093e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "8382d860835756644b1f1352012a456a9f2c6a3e921d316b9d7288f44787e499",
         "arxiv": "1001.3079",
@@ -8763,7 +8899,7 @@
       "exact_reference": true,
       "fingerprint": "c455f420fa13faa6985b90d0f46e2bb59c91bfdab8f01f5d09c1a008da602254",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "cd3c7d5b809ec5627afbaf6474e4d95b0b513a4c6d6a4081ad7de872163c59cc",
         "arxiv": "1004.3813",
@@ -8825,7 +8961,7 @@
       "exact_reference": true,
       "fingerprint": "4b18baf631f1d6fcab4e1b99772e5eeafacfb2a8067c1c055c3e56d5d59e07ff",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "be78915880631af76f3af04f9fdc570ec9cb2e27ee934ac57d6179916917dad1",
         "arxiv": "1005.2695",
@@ -8906,7 +9042,7 @@
       "exact_reference": true,
       "fingerprint": "41e24259a0774a7e301efb7149d6a7216872778185e37f194e53f301afb876a2",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "b3956a4ab13909083af9f28033e962a727be144c4d4d61f9eac947e0d1a90ae1",
         "arxiv": "1006.3869",
@@ -8978,7 +9114,7 @@
       "exact_reference": true,
       "fingerprint": "70d937374558a26af2226893b12076063cc617a4f923bfa747b1b309d4fd7293",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a8d85546b6fc25d242d8b8f1841e53c4bc6ca328fbd38f75f54a89a34438a7e2",
         "arxiv": "1009.5388",
@@ -9047,7 +9183,7 @@
       "exact_reference": true,
       "fingerprint": "746e7d157deaaf63e2356377f8d7b93d1b9378970ed5d624c9129802c8d2d367",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "0b85d81d8fc7af9d7e0fc85a4e7381307ee474d11337196b46e63bbfb254a03f",
         "arxiv": "1010.5341",
@@ -9130,7 +9266,7 @@
       "exact_reference": true,
       "fingerprint": "de6c116911a8b35ae203f3c23eacf659e27493afc4b6059d70a50cfa57f58dcc",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "41ac65c3895b288693873d31b90a7a6a88853e654d665d1dae70a863f651ee52",
         "arxiv": "1012.2857",
@@ -9202,7 +9338,7 @@
       "exact_reference": true,
       "fingerprint": "5263ae381af4e2be2398df2f061795048de03c999dc35f82fa9aed2e238aedb1",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "97d3591b220447319506957bf7fd84d7bd1c0c6cd25cc52764ed92c3585ae34f",
         "arxiv": "1106.6151",
@@ -9273,7 +9409,7 @@
       "exact_reference": true,
       "fingerprint": "56afaec2200770512a7d231b2cb0b65e8a4649fee24e816a59b94d1a27e192d7",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "88d43405c9c626c68ce5d6e36b256de27215658d927233957d6f41ca853b7df2",
         "arxiv": "1205.3420",
@@ -9342,7 +9478,7 @@
       "exact_reference": true,
       "fingerprint": "6ba5b37b6f51ddced96888974091bcb28ae1c1e788865d9c39f1bb9f7b52eb51",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "82615af2b47204c1050df2b260c4bf1b7395eda7c91572936d8897afa598993d",
         "arxiv": "1209.5169",
@@ -9421,7 +9557,7 @@
       "exact_reference": true,
       "fingerprint": "da4e889c4b76b7fbf4ec5fd566cffe13e8cf1232f9f58e4013f7a897887cbe14",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "58efd90b7e9d24af16abbe80508619facdc2be73adc82b343f8427a1b4a96a2a",
         "arxiv": "1210.7157",
@@ -9503,7 +9639,7 @@
       "exact_reference": true,
       "fingerprint": "0787b5fc649847a4f1dcfcaaf12cddecb535698e18739c8de5bfda32373a8809",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "c2ea00303d5be8c68259673f5cd6d60ffef1f425d25ca3fee871565a3771dae1",
         "arxiv": "1211.3588",
@@ -9578,7 +9714,7 @@
       "exact_reference": true,
       "fingerprint": "6a8f9adcee9f53e1f53ce592dc93b85a125097437d79d17211c535bc61af2cf6",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "2c301d9995a3e0596670b91a23bfc0ea99d8b710d811be3cf1d6f8c62b9fb308",
         "arxiv": "1302.0625",
@@ -9643,7 +9779,7 @@
       "exact_reference": true,
       "fingerprint": "2548ae83669035891b4dcd60619f70d6f0d67c9d64bec71aefc6675024b6364e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "364da342395e9cbc87f8a85cbbef39547cb0bddf5e8fb9236011f1edd1c6fa1d",
         "arxiv": "1303.6513",
@@ -9716,7 +9852,7 @@
       "exact_reference": true,
       "fingerprint": "224920c250a2d436716eadc6473460e031c9c1b9af88a6c108045ea24849d7d8",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a90c49e11f950b14084f01c1324594e14bd389322f6a680c8e3a8aed519e5d82",
         "arxiv": "1304.0874",
@@ -9795,7 +9931,7 @@
       "exact_reference": true,
       "fingerprint": "da4e55ae7a1217d585c345a22d53bcc303217be61dfd4ae3358410370e9ff4f3",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "354917cb70be045ce71a2bc85e9129028488200c49ba9f37ea7d6d23d98ecb6b",
         "arxiv": "1305.0222",
@@ -9950,7 +10086,7 @@
       "exact_reference": true,
       "fingerprint": "f8abc02b457500ad6a2fde373e6ba2407efe8f54e8b3a99ef9375a5fd48231cd",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "468ed4397d085d2c599d609ba94785341611777e479ed6f56366b39c736b8ea7",
         "arxiv": "1402.6018",
@@ -10019,7 +10155,7 @@
       "exact_reference": true,
       "fingerprint": "8a34693d034e823ff1a537240ba2a6aad7904b0d87311480e8c74236636eb56d",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "9f18e940d66f14206c56ae7e38504b0470fc5292b2cfbd883514420b1742999a",
         "arxiv": "1409.2034",
@@ -10098,7 +10234,7 @@
       "exact_reference": true,
       "fingerprint": "446333ec479ed01941476ec1e3f477bfccaf22cdd251d0337b00cd01ec812450",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "85d85cb277841a9217d486120a0919cd2dc9d21fdf42ab30bd749210c20625e2",
         "arxiv": "1410.3814",
@@ -10166,7 +10302,7 @@
       "exact_reference": true,
       "fingerprint": "d50f604b8e9de545c00e617520f7ebef31da573cd27bd7a492a452e89cb4bb1e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a96626a48aba596967cb761b728454d7072869c0339433a7ba44ddbdb75f94b7",
         "arxiv": "1508.01870",
@@ -10238,7 +10374,7 @@
       "exact_reference": true,
       "fingerprint": "a8bfa88f9729e1ae3fdb110df38c36d6d94410e78760a3fb38b52fb23748f4f6",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "87db9155c81b610a962f1070bbbe2c3cc482ef0b73de51050e34c5e1990bc872",
         "arxiv": "1601.06867",
@@ -10303,7 +10439,7 @@
       "exact_reference": true,
       "fingerprint": "98bb9002d641b6418016afe933c88497d99015e970503d2dd1e2113ea2ca1b74",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "804d7f329d04acb43434bb4c69b648d61cbef2cfd3614903509213a1e3095562",
         "arxiv": "1603.00673",
@@ -10372,7 +10508,7 @@
       "exact_reference": true,
       "fingerprint": "cf37dcf0a8c97b38cd80f782a7a0a414b4b04e6e502c04a19921d62eb2b9925f",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "f8729b73a77ba3a38a07461da8ca45d98fc9fb8a13ad2b24e939d239a8236009",
         "arxiv": "1603.03811",
@@ -10453,7 +10589,7 @@
       "exact_reference": true,
       "fingerprint": "31cbbe9195ad17423562f0f90458dff1bf1e3acab5b39ba2916abe2c7cba5a4e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "8d82207b6cb25cc66f3b30249253486359258fadd0e705acd2426b34041a429e",
         "arxiv": "1604.04023",
@@ -10516,7 +10652,7 @@
       "exact_reference": true,
       "fingerprint": "70adb1bf35e10660f3b4d53b9cacd2a5d47b403566aff8c121bf84bcb69b1c53",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "1ce11e45513d61efffec3927c5bf9567459e218b42c6e2ac4d03bc3ffeae87e8",
         "arxiv": "1605.01068",
@@ -10587,7 +10723,7 @@
       "exact_reference": true,
       "fingerprint": "3d62b9be4a4c7bf7f90bad4ba79c354504313d8cbe4e66608b48cc0fa36af6d7",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "cae1474d3aa1f95d9926db16592a96c7ac61646d1ced8fa023b9f2e438dc9d68",
         "arxiv": "1606.04592",
@@ -10659,7 +10795,7 @@
       "exact_reference": true,
       "fingerprint": "8d174f906c02aafb0dffbba6161d22873cecac77372ff87da499094cbc398345",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "575a2dd76b31fd8981e83c5cd2c39ac1d8b272aef9d8b3df0a9d3ec64685fe0b",
         "arxiv": "1608.01938",
@@ -10740,7 +10876,7 @@
       "exact_reference": true,
       "fingerprint": "e1747d392ddde348ef72c226f83c91247eaf835250adb80cf9c22a64111b8587",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "1a79d98e559905e2f82a0510dcae78d8416dc6d16733fec3a3f812355576d2b6",
         "arxiv": "1609.03398",
@@ -10817,7 +10953,7 @@
       "exact_reference": true,
       "fingerprint": "a70c7fdbbf8f163ca18be73b66826affa53029a98370cc8afdf75ecc5a78f6fb",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "0b33f6f2bfd12ac9c3877aa7cff5a932e491bfb2e1fb0100ab3ba11e76d8a7a9",
         "arxiv": "1610.00424",
@@ -10887,7 +11023,7 @@
       "exact_reference": true,
       "fingerprint": "f9af1eb2769f83892a7b5e06a3d74ad1fc9441c9396d253f45f7721e8a8d7a1c",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "53ba984705685fc3548149576de1afa34aa2ac8de4216da6bb4b28b963f56e3f",
         "arxiv": "1705.03709",
@@ -10970,7 +11106,7 @@
       "exact_reference": true,
       "fingerprint": "2a9679c49dc06e211056ebd95d0e6177f6890e5b5b7aaadce2d5c13d94e36506",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a0d073f2a28a7cfe133c591925030b3adaeb027304c7a117d764a58d56b398c6",
         "arxiv": "1707.02501",
@@ -11047,7 +11183,7 @@
       "exact_reference": true,
       "fingerprint": "320b94b00987611bb119186477b08e6487a9a3729eed64bca0511a41963ffe68",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "33872de53f1a2b5e2a961bbbf1af9207a6da69b908b5824550b42b483eff9305",
         "arxiv": "1708.04932",
@@ -11126,7 +11262,7 @@
       "exact_reference": true,
       "fingerprint": "2d0ce6e84ad6bb570287a149961c6e90859e8ba6e3bce937d2e8795501fb8995",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "f2de143cad842cf9c3041d9f17d464085497897373dad7fdcddb73d28bbdeeb7",
         "arxiv": "1709.03094",
@@ -11212,7 +11348,7 @@
       "exact_reference": true,
       "fingerprint": "6fe911ede2b5d7fef6c31c671670c1a4b6ac7270e81a76916abdaed25a0fe736",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "fd058d21f484e426242a3e955692a1b981b78ca18aaa919b1c8e8f2b367a2d70",
         "arxiv": "1710.05165",
@@ -11284,7 +11420,7 @@
       "exact_reference": true,
       "fingerprint": "8a9279fc584744b0e40ffaab99bd724021c67a06c926ce8d2778691e14390712",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "1c292e4255f0b00b1ed1840028b62a0db0747f221b625f145a18c21c0166cc5e",
         "arxiv": "1711.06243",
@@ -11368,7 +11504,7 @@
       "exact_reference": true,
       "fingerprint": "e3ba02e7875184264e008790d55e93d5985ad79d634688953a73553dda6c31b6",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "23b366ca1b4d04547560b9e69e2f1a5f09a17693a5674630d7159505eb240ead",
         "arxiv": "1802.09074",
@@ -11446,7 +11582,7 @@
       "exact_reference": true,
       "fingerprint": "5399b4c8b8428466942767128885cd866a13cd9adce8f7434e2efdc31fbc009c",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "5702232880736d60aba5fff41c659de76676247d5b83cd00b11a7b4177f070fb",
         "arxiv": "1803.00434",
@@ -11522,7 +11658,7 @@
       "exact_reference": true,
       "fingerprint": "f698a29a9fbc5fc7a113778f377f831bc0b00d47a843696e98d80607e50c940d",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "feb6eb664497076391a20bb7f7af362d216cfbdb6cb6344b03be9f39045f015c",
         "arxiv": "1803.01987",
@@ -11592,7 +11728,7 @@
       "exact_reference": true,
       "fingerprint": "88ea5ccc6f65f607e235cb31acaf5e054b343fd6f21af9b02f1ab8e50d7aabd2",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a8a27ec3afcc29f0822f4e349985f96f9dcd03d3aa20c921f6124d5500120667",
         "arxiv": "1803.02823",
@@ -11660,7 +11796,7 @@
       "exact_reference": true,
       "fingerprint": "a7e32d5187a28d990007809225ec692c87c3ee3c2a019d9d144eac8a6ab0d284",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "9bf194dc3d167197d214638ddc1d253ea24ec4af21213ebe4068d0282a400947",
         "arxiv": "1803.10811",
@@ -11729,7 +11865,7 @@
       "exact_reference": true,
       "fingerprint": "2af6b632fa75d0f1f0f3ea3553098d1a7d10a8eada1236ac402be5551425305b",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "1de4c4524000259633728751957753fcbd38d5012681ab4e74e816407df94d87",
         "arxiv": "1805.10361",
@@ -11813,7 +11949,7 @@
       "exact_reference": true,
       "fingerprint": "183013e56b49774ccc6ee2509b16c13116f6f92f3f49e6758aede53a6e8b915c",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "d786c28a692efba8ca43467fa3a1b524d8f4a3cc2cc5b33a7ec6c67d7a7ba47c",
         "arxiv": "1805.11152",
@@ -11886,7 +12022,7 @@
       "exact_reference": true,
       "fingerprint": "aaa47ac16613c12ab5138680df1903db0bb5c9a753ec5b980417666c397be1b2",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "96771e56c2b12bacb5c89a5072831728e27b28f0a7aa948ddca02c38624df223",
         "arxiv": "1807.05820",
@@ -11959,7 +12095,7 @@
       "exact_reference": true,
       "fingerprint": "32c337f9348195c35e7dfa00fad87e555a6acbe5a23c393287c2af12bab15dd9",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "46004d184c55c1a1d8462bcbd9fca7602b940536a39b3ebe903cb99692674a74",
         "arxiv": "1808.06655",
@@ -12037,7 +12173,7 @@
       "exact_reference": true,
       "fingerprint": "98978edb7ad230dbdbc110ad33b9367e32c1b071deb54e1b885b58c4a9d12308",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "471e4e136b1e1953bc86ed4b3b43847719842ef076a0a7719b72f634de51a279",
         "arxiv": "1810.07512",
@@ -12114,7 +12250,7 @@
       "exact_reference": true,
       "fingerprint": "a4f4b670f7cda9a5017a34453377ce824688e49871c85976412cadfe67954cb5",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "2ec4dc69c528e0be89dfdec58b3235d3d05fd13b3e63a1e2626c7ba163aaa553",
         "arxiv": "1810.13360",
@@ -12178,7 +12314,7 @@
       "exact_reference": true,
       "fingerprint": "6dfee672b4708876dd44525962b942dbc576c390aa585bb295c1bb01f87b4c91",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a8aa3bdb0bcabc4c551a96099116085931aacf8e567af39e1da103a74e1b367c",
         "arxiv": "1811.08601",
@@ -12254,7 +12390,7 @@
       "exact_reference": true,
       "fingerprint": "5caa8c5f83679140a1239f9b9be73c18542729eb9f2090a8037f76ca00713a6a",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "cb35e30d9f417e24364b45d9b8d25361e9bf76030e18b6459152e8dc2a5828d7",
         "arxiv": "1901.01071",
@@ -12398,7 +12534,7 @@
       "exact_reference": true,
       "fingerprint": "dfa7b305cc5f4c9bb8a92f0b3466a9bd1e725498330f46508351019fbc27c952",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "0622e52a910a0a8a12e97a0e97eb68213862fefb4f38d854b44872a99894a4fc",
         "arxiv": "2007.01329",
@@ -12478,7 +12614,7 @@
       "exact_reference": true,
       "fingerprint": "60c141b531abe70fc3ff8e0933cc5efb054a51b56633d44c7362fa4b638b854e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "cb3e1b51a9648badf8dda1b49585b70bb84310b1018ae8a4e3a50813fa1b1e87",
         "arxiv": "2007.14567",
@@ -12554,7 +12690,7 @@
       "exact_reference": true,
       "fingerprint": "72cb1884d1731d365153dee0d7a59a770f48a0925dce63278e9d7d57d8ffe194",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "b4717168d0ddd293723cc6dec453de4439011474764da3ea17ff2482ce58e93a",
         "arxiv": "2008.01223",
@@ -12615,7 +12751,7 @@
       "exact_reference": true,
       "fingerprint": "d7b6cfd661d25c513d61aebe3e059106cd08d08ce08310addb1867f00bb5e133",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "7d1c6910e614b62eff0d27694dd70cd703f170870d6b0c4e8303b5710dd8a5c5",
         "arxiv": "2008.05815",
@@ -12692,7 +12828,7 @@
       "exact_reference": true,
       "fingerprint": "3e76b6b482fb0b471c342d51613cbed366181423cc2304a56ffaadb477d223b4",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "e8da9a8dd3456200389446dd6c9f58ba50863761d3944a41f2d0e7a713186907",
         "arxiv": "2010.01281",
@@ -12774,7 +12910,7 @@
       "exact_reference": true,
       "fingerprint": "02b321f841d4a1a06cbe612bcbed8ee92de1f442d27b997485b2c42a1feb646b",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "4a6122fb47bd71f288f08ecad6b5a519227e6939324608c5ee66dff1edb04d77",
         "arxiv": "2012.03076",
@@ -12848,7 +12984,7 @@
       "exact_reference": true,
       "fingerprint": "8c6dfeee07dbcfb1584ae990c8c8f58e29bc64dad475defed575aaef9440f055",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "0ecd6ffb21f9efd215763424f5e4c3760f7a556fd5003b7f4e57df5756b389a8",
         "arxiv": "2102.07465",
@@ -12922,7 +13058,7 @@
       "exact_reference": true,
       "fingerprint": "5884535c2e0de39aa7e22723b0cb35b590506032eb6b32980753be6ff9c427a0",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "91dac26065719ac69ae6cbcb937ac1b8367bf3ea3d3bb6b7e6589c4de8579121",
         "arxiv": "2106.04049",
@@ -12990,7 +13126,7 @@
       "exact_reference": true,
       "fingerprint": "ee853d5546952ed6db780fbefe22039d123ee93f99bc29feb824e6fc6c3f4edc",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "df0704e141a18e09887dc70202cd0633c89d88d4bf1a1971681b24a8f4b5cc16",
         "arxiv": "2110.08354",
@@ -13065,7 +13201,7 @@
       "exact_reference": true,
       "fingerprint": "5529734724958722e28f69376faea131075cb076bbcabbe8854bda1671d897c4",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "16d8ebe43c257611dd28f9771f8c2e37f176df8e9ab85bd7a2dd087f041cc6ba",
         "arxiv": "2110.08587",
@@ -13145,7 +13281,7 @@
       "exact_reference": true,
       "fingerprint": "4d83da796ea1cceeed3081aad11d4b9e85e753c6d7ead4a8085cd5c07c1d5c36",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "9aa0ac4dd460f632e3e0ee3a8fc9be23dd07600880927304e8add8276d2c7905",
         "arxiv": "2111.05256",
@@ -13219,7 +13355,7 @@
       "exact_reference": true,
       "fingerprint": "54067b55fa0057ae3364508849a8274432a35121ed0d310a71d03898999bd593",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "2aad46e6d69f7ec017098dd6e633238de4675805ed4118312357bc7ebcadd8ec",
         "arxiv": "2111.06507",
@@ -13285,7 +13421,7 @@
       "exact_reference": true,
       "fingerprint": "cbf4c8c396c8c3fe4611bafe71467b5904b6832d268f19e00308b9bd9525bbdf",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "c16c47751100c0a7b0ac0f6d66283a47ba07461c0c3837485475df3c5cc40e47",
         "arxiv": "2111.06697",
@@ -13346,7 +13482,7 @@
       "exact_reference": true,
       "fingerprint": "1641570c54cab552c2692fa83199ea756252d51bebf1ed5925dd2b6e0678ad04",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "f3eafc798fcd4caa7d65affbce5ef3e9e212ff938dd302bf31ca9c9c156cbe82",
         "arxiv": "2202.08122",
@@ -13425,7 +13561,7 @@
       "exact_reference": true,
       "fingerprint": "c59eb2b3355c29f434b41b9205ca05dd71fd25a275af76b08dd2813be13ca63a",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "98b22bb8601de359cf43ec1eefd7467b96327f905aef568b3e7ad2c4becc0d08",
         "arxiv": "2203.10287",
@@ -13499,7 +13635,7 @@
       "exact_reference": true,
       "fingerprint": "55c20861c0ffddf53ac9280ba335492ab7d6a8d98bd5881b9fed24df01ce8715",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "6bb150e7bcf58508c8e2aec0dece0e683acb53a62504de52aa6a6cc9a50f4677",
         "arxiv": "2203.11302",
@@ -13568,7 +13704,7 @@
       "exact_reference": true,
       "fingerprint": "813fe8088c7f8d70a8a1faac7c96b7a23cfda4d66910b98ee6f971eff5084616",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "61e0d347e9715a02a882f1f0ffaa40f1ca9e4d64aa49cd12bb5e6936ea65a21f",
         "arxiv": "2205.07349",
@@ -13644,7 +13780,7 @@
       "exact_reference": true,
       "fingerprint": "c459968dfa73471f71f9ffec4c26fd94728714b5c9ca83975bf61ec635585369",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "102b130d28120bf9f75952ee573964435d350f29415d1eec4104ea74a418527c",
         "arxiv": "2206.11778",
@@ -13725,7 +13861,7 @@
       "exact_reference": true,
       "fingerprint": "0b57e90228f1c84f65d888bb3ec613bce331dd8e8da94afbd1297da2ca9e47e5",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "df6c84d2687ac76b35c462985afb7a15548930fb018632e14b297875500ec27d",
         "arxiv": "2207.12493",
@@ -13883,7 +14019,7 @@
       "exact_reference": true,
       "fingerprint": "439f1920785379345f037720a182abfb977a2a15d36f6e1cbd8c68bbc2d8009f",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "b69c96761f87c07dfe35a6d7668ef7fc5e5c9bb65ff8b1b0e01ba5f7259f8982",
         "arxiv": "2212.07539",
@@ -13957,7 +14093,7 @@
       "exact_reference": true,
       "fingerprint": "294df0e98791ebd986f56b2a3ee30e4ce96c145b70a48d58a1a4f724b11cf2e3",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "d17a64652a3a9e2ee919ed7d23d92126012a559c9b9a7d0997974822a389c811",
         "arxiv": "2212.10920",
@@ -14039,7 +14175,7 @@
       "exact_reference": true,
       "fingerprint": "4f30f54dc88e0265d9b287989de4a0cc5d207d29f8add3bab8f262e421ca2782",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "54a1a91c71a6d9eae1b7b55de77ee821ce5ee5a55c02a64e8153365cf21d4f0a",
         "arxiv": "2301.05656",
@@ -14241,7 +14377,7 @@
       "exact_reference": true,
       "fingerprint": "45e306f1d61f9f08c71928b687c9194010924801ebf88c75ab863d0e0d31e756",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "9143e45b7c6452b5fad7f27375794ad6b9119702a6226ec35b92fd541a59b341",
         "arxiv": "2304.11991",
@@ -14311,7 +14447,7 @@
       "exact_reference": true,
       "fingerprint": "6443fb0db4919ebcfafe82e400cf6e0d32541c34510d7fbfcb6aff624e89b82f",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "d4e8b4c9e102f438d5b04b89eb0c191a6a3a03f184173ba192b76b3b5ca01ab8",
         "arxiv": "2304.12658",
@@ -14382,7 +14518,7 @@
       "exact_reference": true,
       "fingerprint": "c575f8477f8e27985769dd15b9bc85e25ec9e8e6b96b0f953bc038aadbe7e190",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "866a97355a2493caf1612792e72f72f7fa8dd63df47b4ff2d89e4c1853e8be46",
         "arxiv": "2305.09227",
@@ -14453,7 +14589,7 @@
       "exact_reference": true,
       "fingerprint": "359bb0d8126a5d0f0be0cda50b6c9d4646c1f29f85ed779fd8d1307374570f33",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "41fd7336facf8b1503cc476388142dc9a4fb4c0e6e9e0e63de373bcb85acbc31",
         "arxiv": "2305.12022",
@@ -14528,7 +14664,7 @@
       "exact_reference": true,
       "fingerprint": "c2b3c1984809cbe42e7fbd85e7c37249a99de341b64ec3ee48a491af0469e846",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "c8703b8d3bea120c434451bba1be148026fddc0a6cc4508e2bcfeab1ab096d7b",
         "arxiv": "2307.14896",
@@ -14605,7 +14741,7 @@
       "exact_reference": true,
       "fingerprint": "2e5853270715b7307c42750723e618e885db985b041cc756d288edd217ff20df",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "7a076c31bc826076e000930ccc86851624bea8f1548f80faf7bc4e29b7922c3d",
         "arxiv": "2308.04878",
@@ -14822,7 +14958,7 @@
       "exact_reference": true,
       "fingerprint": "e61ab981e14e317c00ac8d8094c1bb048082eca16a85849b7336c968a785a818",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "ddf977cabac9565195b959f8236e1d203f7194f057966b91afea46cce2c9c6db",
         "arxiv": "2311.14862",
@@ -14888,7 +15024,7 @@
       "exact_reference": true,
       "fingerprint": "fd0e41237ddf0877212306a499c7129fb22a47c45c685ebf77b3da98863c36eb",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "3acb0ce444d02ef734807ce6f66c16a3d9b04c7a567069329e91a27be9443bb1",
         "arxiv": "2311.16871",
@@ -14963,7 +15099,7 @@
       "exact_reference": true,
       "fingerprint": "ce41b0c473c2476cc71c43ed06160f0bc5ec8941b13066f3706cf3e66222c945",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "5949f7eb8f95572021c9990c4d5c1b8cb2ad4aed56e173bbeaaaadaf400155c2",
         "arxiv": "2402.06643",
@@ -15037,7 +15173,7 @@
       "exact_reference": true,
       "fingerprint": "af7fcb77d1ee7a1af94ae56540a4af2a03121d3e253be22c65590fd038b4e91a",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "33d85097482b139b15012d946bd507cc734ef5d42184752c49bf88b71416a147",
         "arxiv": "2403.11943",
@@ -15106,7 +15242,7 @@
       "exact_reference": true,
       "fingerprint": "0fb0a90849985cd702d648c505a1354b63b6b46df9511e992b76227b3944c973",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "454df82d1703e7eb6eda6e3bc2d56fba5b0defc1046e80966686ab34b3653ecd",
         "arxiv": "2404.13559",
@@ -15175,7 +15311,7 @@
       "exact_reference": false,
       "fingerprint": "ce80d2218bd2d950b05c97e419efe8a7c554fffd181140fd2b51b9ee42e7163d",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "fabeae3cd7fc938e739f74d3e87dc15e78170a78b46899c53d92c6e9ce338b9a",
         "arxiv": "2404.17468",
@@ -15244,7 +15380,7 @@
       "exact_reference": false,
       "fingerprint": "de27285894f958b65532c96b2c810164f35765b16b30f95d84e0b7425bf37492",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "f88cca87bc9b36bdb2a4149d71093181757fc604de3f38508bbf39213e517127",
         "arxiv": "2405.01517",
@@ -15313,7 +15449,7 @@
       "exact_reference": true,
       "fingerprint": "4611c7db0062e3061a001cc00a22c809137c0ab6da473ac02ba41114afda6a6f",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "7a6387f55d40e752938486fa8f75de1b5222914dbd3b043d9534215408ff2f76",
         "arxiv": "2405.04058",
@@ -15469,7 +15605,7 @@
       "exact_reference": true,
       "fingerprint": "23072659cc1a2e14519bd71bc2c4fca80a1f3e572bc6dbdefa3f8a79be6a3d8f",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "7ba8fe224d63dd2588cd00874f9a41c830dd97cc1bbea2f34d6e8788fc0be51e",
         "arxiv": "2406.18970",
@@ -15825,7 +15961,7 @@
       "exact_reference": true,
       "fingerprint": "ad33ad75d3c9373849f2249928af3469625cde3c3e2b0aa7c5b0b638b672eb1f",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a3688e42d173dbbda2f332ce292d5841a6b514acc8176bb301f2025c43b09ac7",
         "arxiv": "2410.16814",
@@ -15902,7 +16038,7 @@
       "exact_reference": true,
       "fingerprint": "6cc52583529b757d0c3bfddf966c2fd7356f13d25b0d6ec51559a688730dc5db",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "b3d195a96300b8458c4dfd6f0c70fc84d10f022e9b16ae17d539897fbe03e9ff",
         "arxiv": "2411.06745",
@@ -16121,7 +16257,7 @@
       "exact_reference": true,
       "fingerprint": "a722f46d3e5e1b9868c042e6f7ecb20265c7b61ae3eb0bfe05383664b5819107",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a970dbd79a7e39555c339b4d688bb24997209c51aae942cd42b62df6d486f6cd",
         "arxiv": "2412.08815",
@@ -16196,7 +16332,7 @@
       "exact_reference": true,
       "fingerprint": "73b1100d52fd532d1e44562435b394cbdcef019e5400cdea1f5e54e8cf0f292e",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "51c21b7403e749835e26ee8d158dc11dc4ec401b1832cdd024a85ffdfd563dd6",
         "arxiv": "2501.06028",
@@ -16337,7 +16473,7 @@
       "exact_reference": true,
       "fingerprint": "aa289cbc1d9305e816142a146a2948bf34f2c940bdb45bafce2fce7b90b11651",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "199f26753e5b0e47ad96aa2ca958eb7458a45d0a5c9106688b8348a030a9488a",
         "arxiv": "2502.17218",
@@ -16474,7 +16610,7 @@
       "exact_reference": true,
       "fingerprint": "155ae4c8a360e988316be09b5f917a7b1a52e48ff5894e60c680ebcb49577235",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "fcbd72c20eb74da7acaba173761d7677320a309512052740297494e17b4fc852",
         "arxiv": "2505.02723",
@@ -16679,7 +16815,7 @@
       "exact_reference": true,
       "fingerprint": "d08147edc72db22e73cf3d0d1de4ee178400920668a529264fc0f5471b813249",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "e4c8934eae2650548c97a09c0046a1106dc63ea6523fd5c93174831446d06a8f",
         "arxiv": "2506.05254",
@@ -16755,7 +16891,7 @@
       "exact_reference": true,
       "fingerprint": "47f7d391556f3854b65a0a18e27f9a959d354bd4b93ffe65540af100eba141e3",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "ac4f815a0d6d98de402bbacb0545bc8fd0bda850d71f48731d99bf2a0ac3a1e2",
         "arxiv": "2506.12206",
@@ -16969,7 +17105,7 @@
       "exact_reference": true,
       "fingerprint": "063c43564f4af826c3cf66f7e1d9791bcb37422ccb0519a8c75291d27e13320b",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "0b15dc5be415febde7b320ff7d5d6a4137c8606e75b46fab9f680c69f80c1769",
         "arxiv": "2507.08347",
@@ -17045,7 +17181,7 @@
       "exact_reference": true,
       "fingerprint": "71be0558d85a1b9beab750f284d7ec5a836b9186728f23bdfa0e6dc831115749",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "832f5593de33af13de34d6e773f868d8ea67bbaeff73f1bced9c49dcb2050b5a",
         "arxiv": "2507.10779",
@@ -17117,7 +17253,7 @@
       "exact_reference": true,
       "fingerprint": "193520d259b565bc906ce5c17e9cc2abd183680957bca079af0cd6177b287857",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "898679d698c0d8963d4af579d0050d0be1d821a315feb6693dc43b3aa8fccb61",
         "arxiv": "2507.15908",
@@ -18477,7 +18613,7 @@
       "exact_reference": false,
       "fingerprint": "085fba31dbb30a83a9a4df5e578bbc36cd83081075142699403131c7234f9fbc",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "2104e8657b8b9869fda5a93793f1d8c90be853b5fa099fc82a980f5748e126dd",
         "arxiv": "2512.15351",
@@ -21741,6 +21877,83 @@
         "combinatorial"
       ]
     },
+    "arxiv:2609.08608": {
+      "affected_pages": [
+        "articles/discriminants.html",
+        "articles/factor-reversal.html",
+        "articles/factorization-algorithms.html",
+        "articles/frobenius.html",
+        "articles/galois-computation.html",
+        "articles/height-counting.html",
+        "articles/littlewood.html",
+        "articles/permutation-groups.html",
+        "articles/ramification-inertia.html",
+        "articles/random-matrices.html",
+        "articles/random-models.html",
+        "articles/random-reciprocal.html",
+        "articles/reciprocity.html",
+        "articles/resolvents.html",
+        "articles/twisted-reciprocity.html"
+      ],
+      "aliases": [
+        "arxiv:2609.08608"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "24860e586aa21a7a439f0d7008f7dd7169944a8e38caa738e1f5aa7e6b842ef3",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "9d881b90a5cbd33d3c26a3f83341d6396747abff7d2f96881fe898bf2e45f478",
+        "arxiv": "2609.08608",
+        "authors": [
+          "Junyu Zhou",
+          "Kaiyi Zhang"
+        ],
+        "doi": "",
+        "id": "2609.08608",
+        "journal": "",
+        "provider": "arxiv",
+        "published": "2026-09-08T11:43:44Z",
+        "relations": {},
+        "title": "Reduction Modulo Binary Polynomials with Logarithmic Feedback Depth",
+        "updated": "2026-11-17T13:26:50Z",
+        "url": "https://arxiv.org/abs/2609.08608v3",
+        "version": "v3"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "24860e586aa21a7a439f0d7008f7dd7169944a8e38caa738e1f5aa7e6b842ef3",
+          "metadata": {
+            "abstract_sha256": "9d881b90a5cbd33d3c26a3f83341d6396747abff7d2f96881fe898bf2e45f478",
+            "arxiv": "2609.08608",
+            "authors": [
+              "Junyu Zhou",
+              "Kaiyi Zhang"
+            ],
+            "doi": "",
+            "id": "2609.08608",
+            "journal": "",
+            "provider": "arxiv",
+            "published": "2026-09-08T11:43:44Z",
+            "relations": {},
+            "title": "Reduction Modulo Binary Polynomials with Logarithmic Feedback Depth",
+            "updated": "2026-11-17T13:26:50Z",
+            "url": "https://arxiv.org/abs/2609.08608v3",
+            "version": "v3"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "algorithms",
+        "galois",
+        "random"
+      ]
+    },
     "arxiv:2609.10526": {
       "affected_pages": [
         "articles/taylor-prescriptions.html#catalan"
@@ -24989,7 +25202,7 @@
       "exact_reference": true,
       "fingerprint": "899c1d665c8e4ad28037ecb4cea836ae29ecde176bdf68a198e6dba40cde6cf1",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-16T20:11:27Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "3860b146e291222bf4d19f86133875c28beeab10e1bfbf5cef3d63116d6c5fbf",
         "arxiv": "2610.22764",
@@ -27362,21 +27575,29 @@
     },
     "arxiv:2610.35783": {
       "affected_pages": [
+        "articles/bernoulli-euler.html",
+        "articles/chromatic-polynomials.html",
+        "articles/ehrhart-polynomials.html",
+        "articles/eulerian.html",
         "articles/krawtchouk.html",
         "articles/laguerre-negative-parameters.html",
         "articles/laguerre.html",
-        "articles/orthogonal-families.html"
+        "articles/orthogonal-families.html",
+        "articles/stern-polynomials.html",
+        "articles/touchard.html",
+        "articles/truncated-binomial.html",
+        "articles/tutte-polynomials.html"
       ],
       "aliases": [
         "arxiv:2610.35783"
       ],
       "cited_versions": [],
       "exact_reference": false,
-      "fingerprint": "dc34a57562bd7d51e3ff685e212ca888422d139b0ffd717236df4711a7c95442",
+      "fingerprint": "143f70730b843b9ee3dd5992ee4b22824d3b97d8b1eef1c133c4fa670c33b19c",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
-        "abstract_sha256": "e2af35c88a469e5676957de9bfd07ed8ac378568fc63c707543579fa5d16175e",
+        "abstract_sha256": "04e120509136bb30a574c27255aec63df28b5bcfe69c520696bf81377dbb6cb1",
         "arxiv": "2610.35783",
         "authors": [
           "Wenle Shi"
@@ -27388,9 +27609,9 @@
         "published": "2026-10-26T17:23:36Z",
         "relations": {},
         "title": "Weak Hurwitz stability of extended Turán expressions for Stirling--Whitney--Riordan and Laguerre polynomials",
-        "updated": "2026-10-26T17:23:36Z",
-        "url": "https://arxiv.org/abs/2610.35783v1",
-        "version": "v1"
+        "updated": "2026-11-17T16:31:11Z",
+        "url": "https://arxiv.org/abs/2610.35783v2",
+        "version": "v2"
       },
       "metadata_schema": 2,
       "references": [],
@@ -27416,9 +27637,31 @@
             "version": "v1"
           },
           "observed_at": "2026-11-13T20:10:38Z"
+        },
+        {
+          "fingerprint": "143f70730b843b9ee3dd5992ee4b22824d3b97d8b1eef1c133c4fa670c33b19c",
+          "metadata": {
+            "abstract_sha256": "04e120509136bb30a574c27255aec63df28b5bcfe69c520696bf81377dbb6cb1",
+            "arxiv": "2610.35783",
+            "authors": [
+              "Wenle Shi"
+            ],
+            "doi": "",
+            "id": "2610.35783",
+            "journal": "",
+            "provider": "arxiv",
+            "published": "2026-10-26T17:23:36Z",
+            "relations": {},
+            "title": "Weak Hurwitz stability of extended Turán expressions for Stirling--Whitney--Riordan and Laguerre polynomials",
+            "updated": "2026-11-17T16:31:11Z",
+            "url": "https://arxiv.org/abs/2610.35783v2",
+            "version": "v2"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
         }
       ],
       "topics": [
+        "combinatorial",
         "orthogonal"
       ]
     },
@@ -27992,9 +28235,9 @@
       ],
       "cited_versions": [],
       "exact_reference": false,
-      "fingerprint": "795b55bd251b78ef1f6e2a99411bd9bd104145203ee591f6a46f3599fa19643f",
+      "fingerprint": "ab8c9a10f26491b0dcaed2632bfc2b5d989bb7a15948814d27e749a7fa0ad42e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "5bb5e963f6c721d147906cc7de100b779f8df88d65533b48ebf2984e2e847942",
         "arxiv": "2610.36736",
@@ -28009,9 +28252,9 @@
         "published": "2026-10-27T06:53:24Z",
         "relations": {},
         "title": "The Legendre potential and the gradient case of the differential Galois criterion for the Jacobian Conjecture",
-        "updated": "2026-10-27T06:53:24Z",
-        "url": "https://arxiv.org/abs/2610.36736v1",
-        "version": "v1"
+        "updated": "2026-11-16T20:52:16Z",
+        "url": "https://arxiv.org/abs/2610.36736v2",
+        "version": "v2"
       },
       "metadata_schema": 2,
       "references": [],
@@ -28038,6 +28281,28 @@
             "version": "v1"
           },
           "observed_at": "2026-11-13T20:10:38Z"
+        },
+        {
+          "fingerprint": "ab8c9a10f26491b0dcaed2632bfc2b5d989bb7a15948814d27e749a7fa0ad42e",
+          "metadata": {
+            "abstract_sha256": "5bb5e963f6c721d147906cc7de100b779f8df88d65533b48ebf2984e2e847942",
+            "arxiv": "2610.36736",
+            "authors": [
+              "Elżbieta Adamus",
+              "Zbigniew Hajto"
+            ],
+            "doi": "",
+            "id": "2610.36736",
+            "journal": "",
+            "provider": "arxiv",
+            "published": "2026-10-27T06:53:24Z",
+            "relations": {},
+            "title": "The Legendre potential and the gradient case of the differential Galois criterion for the Jacobian Conjecture",
+            "updated": "2026-11-16T20:52:16Z",
+            "url": "https://arxiv.org/abs/2610.36736v2",
+            "version": "v2"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
         }
       ],
       "topics": [
@@ -32982,7 +33247,7 @@
       "exact_reference": false,
       "fingerprint": "5e921134e1f293e4e04f2a8e4d879ea997d04e9108c30cb9a2dc47fff8bc83bf",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "9204897cf934df4f90c5f4cdbc0098aebec8cd511dbe9a4761fc4d26e019141b",
         "arxiv": "2611.16157",
@@ -33904,7 +34169,7 @@
       "exact_reference": false,
       "fingerprint": "dae04a0316f0f645ba0414a4fb73dfa8fc2e081d4b4a2c1e64f0b79d0f213de5",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "d0f3f0fafaee07d091e46c33d46a545a12b1cb259be9c94f6a8946ae80703906",
         "arxiv": "2611.19873",
@@ -33972,7 +34237,7 @@
       "exact_reference": false,
       "fingerprint": "9a080dd721b7c2be9e48d3b3c3d77bb6b7f89e35d420bcb4afa52494c4230265",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "003faa9ab85579532017fd8a69f94feeff879718176c7bcb6299cca670313ef8",
         "arxiv": "2611.20332",
@@ -34036,7 +34301,7 @@
       "exact_reference": false,
       "fingerprint": "0b7ea2c39fde441edab97c1408a8acdec8965a856ddbf0d7c181a1e78eac841a",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "41061ce11caf07193a1e9f2f5f79d46603021b029660dc53e616fd7bb0b0a43f",
         "arxiv": "2611.20347",
@@ -34100,7 +34365,7 @@
       "exact_reference": false,
       "fingerprint": "3e5f3729f1f4867adcab80fd4ace1f30e2454850060a67f97366b38a02e294d1",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "add66cc4d872c209ca210f4a1cd3f37702a8d7aaa85b05c4e01c7406b52aaabb",
         "arxiv": "2611.20383",
@@ -34162,7 +34427,7 @@
       "exact_reference": false,
       "fingerprint": "d3dbccdadfda05b9c33009ce85bc2188716affd34ded18350e8180a33b0d42e6",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "633224473e79b849b0639c6fb0a0176b921a482311fdd672f379c4cb64bacc18",
         "arxiv": "2611.21566",
@@ -34212,6 +34477,273 @@
       ],
       "topics": [
         "orthogonal"
+      ]
+    },
+    "arxiv:2611.22110": {
+      "affected_pages": [
+        "articles/bernoulli-euler.html",
+        "articles/chromatic-polynomials.html",
+        "articles/ehrhart-polynomials.html",
+        "articles/eulerian.html",
+        "articles/stern-polynomials.html",
+        "articles/touchard.html",
+        "articles/truncated-binomial.html",
+        "articles/tutte-polynomials.html"
+      ],
+      "aliases": [
+        "arxiv:2611.22110"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "afcae57cf3e18ccff7e895c3dc1925864e83397f652f77530db68fab9ca5387a",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "dc71565b6edd6b5171913e8f681fd57ddc2c92526d119c040e1083a499aaadb0",
+        "arxiv": "2611.22110",
+        "authors": [
+          "Ethan Torres"
+        ],
+        "doi": "",
+        "id": "2611.22110",
+        "journal": "",
+        "provider": "arxiv",
+        "published": "2026-11-17T02:51:28Z",
+        "relations": {},
+        "title": "Real-Rootedness and Log-Concavity of Zigzag Eulerian Polynomials",
+        "updated": "2026-11-17T02:51:28Z",
+        "url": "https://arxiv.org/abs/2611.22110v1",
+        "version": "v1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "afcae57cf3e18ccff7e895c3dc1925864e83397f652f77530db68fab9ca5387a",
+          "metadata": {
+            "abstract_sha256": "dc71565b6edd6b5171913e8f681fd57ddc2c92526d119c040e1083a499aaadb0",
+            "arxiv": "2611.22110",
+            "authors": [
+              "Ethan Torres"
+            ],
+            "doi": "",
+            "id": "2611.22110",
+            "journal": "",
+            "provider": "arxiv",
+            "published": "2026-11-17T02:51:28Z",
+            "relations": {},
+            "title": "Real-Rootedness and Log-Concavity of Zigzag Eulerian Polynomials",
+            "updated": "2026-11-17T02:51:28Z",
+            "url": "https://arxiv.org/abs/2611.22110v1",
+            "version": "v1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "combinatorial"
+      ]
+    },
+    "arxiv:2611.22194": {
+      "affected_pages": [
+        "articles/archimedean-criteria.html",
+        "articles/eisenstein-dumas.html",
+        "articles/integer-values.html",
+        "articles/modular-irreducibility.html",
+        "articles/newton-polygons.html"
+      ],
+      "aliases": [
+        "arxiv:2611.22194"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "aedaa73e72787d02cabeca5be4efbef2a84af1335778da20be322e50ab01e57d",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "9bb346684177a28c0b7c31c0b4d8d8ada65058c6814b41f7438eca7c6656d8e0",
+        "arxiv": "2611.22194",
+        "authors": [
+          "Shi Zhenhua"
+        ],
+        "doi": "",
+        "id": "2611.22194",
+        "journal": "",
+        "provider": "arxiv",
+        "published": "2026-11-17T04:33:23Z",
+        "relations": {},
+        "title": "Towards the componentwise three-soliton conjecture: cones, collisions, soft momenta and graphs",
+        "updated": "2026-11-17T04:33:23Z",
+        "url": "https://arxiv.org/abs/2611.22194v1",
+        "version": "v1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "aedaa73e72787d02cabeca5be4efbef2a84af1335778da20be322e50ab01e57d",
+          "metadata": {
+            "abstract_sha256": "9bb346684177a28c0b7c31c0b4d8d8ada65058c6814b41f7438eca7c6656d8e0",
+            "arxiv": "2611.22194",
+            "authors": [
+              "Shi Zhenhua"
+            ],
+            "doi": "",
+            "id": "2611.22194",
+            "journal": "",
+            "provider": "arxiv",
+            "published": "2026-11-17T04:33:23Z",
+            "relations": {},
+            "title": "Towards the componentwise three-soliton conjecture: cones, collisions, soft momenta and graphs",
+            "updated": "2026-11-17T04:33:23Z",
+            "url": "https://arxiv.org/abs/2611.22194v1",
+            "version": "v1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "criteria"
+      ]
+    },
+    "arxiv:2611.22365": {
+      "affected_pages": [
+        "articles/factor-reversal.html",
+        "articles/height-counting.html",
+        "articles/littlewood.html",
+        "articles/random-matrices.html",
+        "articles/random-models.html",
+        "articles/random-reciprocal.html",
+        "articles/twisted-reciprocity.html"
+      ],
+      "aliases": [
+        "arxiv:2611.22365"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "9bdfa9a2f23288dfe43a6c0fe97d6f805e44191c6469b5926114e57cc4cb6257",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "5744d60208efb742f35f6eea708a43585025b494736f29bd0ec5fe2f00f2dee6",
+        "arxiv": "2611.22365",
+        "authors": [
+          "Niccolò Castronuovo",
+          "Alberto Dennunzio",
+          "Luciano Margara"
+        ],
+        "doi": "",
+        "id": "2611.22365",
+        "journal": "",
+        "provider": "arxiv",
+        "published": "2026-11-17T08:20:04Z",
+        "relations": {},
+        "title": "Strong Transitivity of Group Cellular Automata: Characterization and Decidability",
+        "updated": "2026-11-17T08:20:04Z",
+        "url": "https://arxiv.org/abs/2611.22365v1",
+        "version": "v1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "9bdfa9a2f23288dfe43a6c0fe97d6f805e44191c6469b5926114e57cc4cb6257",
+          "metadata": {
+            "abstract_sha256": "5744d60208efb742f35f6eea708a43585025b494736f29bd0ec5fe2f00f2dee6",
+            "arxiv": "2611.22365",
+            "authors": [
+              "Niccolò Castronuovo",
+              "Alberto Dennunzio",
+              "Luciano Margara"
+            ],
+            "doi": "",
+            "id": "2611.22365",
+            "journal": "",
+            "provider": "arxiv",
+            "published": "2026-11-17T08:20:04Z",
+            "relations": {},
+            "title": "Strong Transitivity of Group Cellular Automata: Characterization and Decidability",
+            "updated": "2026-11-17T08:20:04Z",
+            "url": "https://arxiv.org/abs/2611.22365v1",
+            "version": "v1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "random"
+      ]
+    },
+    "arxiv:2611.23031": {
+      "affected_pages": [
+        "articles/factor-reversal.html",
+        "articles/height-counting.html",
+        "articles/littlewood.html",
+        "articles/random-matrices.html",
+        "articles/random-models.html",
+        "articles/random-reciprocal.html",
+        "articles/twisted-reciprocity.html"
+      ],
+      "aliases": [
+        "arxiv:2611.23031"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "5cfd5d3dfd022b6f43454d41cd5b6dd4ae2d059ce9102010ce78f88011ef8f06",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "8d7242fe9284ad5746366821284ff855d48d111734543326a292df14d812292c",
+        "arxiv": "2611.23031",
+        "authors": [
+          "Caihua Luo",
+          "Xu Song",
+          "Yilin Zeng"
+        ],
+        "doi": "",
+        "id": "2611.23031",
+        "journal": "",
+        "provider": "arxiv",
+        "published": "2026-11-17T16:33:27Z",
+        "relations": {},
+        "title": "Invariant flags and integral matrices with prescribed characteristic polynomial",
+        "updated": "2026-11-17T16:33:27Z",
+        "url": "https://arxiv.org/abs/2611.23031v1",
+        "version": "v1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "5cfd5d3dfd022b6f43454d41cd5b6dd4ae2d059ce9102010ce78f88011ef8f06",
+          "metadata": {
+            "abstract_sha256": "8d7242fe9284ad5746366821284ff855d48d111734543326a292df14d812292c",
+            "arxiv": "2611.23031",
+            "authors": [
+              "Caihua Luo",
+              "Xu Song",
+              "Yilin Zeng"
+            ],
+            "doi": "",
+            "id": "2611.23031",
+            "journal": "",
+            "provider": "arxiv",
+            "published": "2026-11-17T16:33:27Z",
+            "relations": {},
+            "title": "Invariant flags and integral matrices with prescribed characteristic polynomial",
+            "updated": "2026-11-17T16:33:27Z",
+            "url": "https://arxiv.org/abs/2611.23031v1",
+            "version": "v1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "random"
       ]
     },
     "arxiv:math/0012099": {
@@ -52851,7 +53383,7 @@
       "exact_reference": true,
       "fingerprint": "8d736e8d2cf69302d77ba1d1d47634b1276505c8ebe28bfe5230125c30d75d01",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -52952,7 +53484,7 @@
       "exact_reference": true,
       "fingerprint": "ad8340bacc04da9db4ef15be624fc24b89ea4b6df75ffad6f0520437e7f040f6",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -53043,7 +53575,7 @@
       "exact_reference": true,
       "fingerprint": "2b4b04eb4201379bfd30cedd3dedfba1ddb4250f28280d489dd1e860cd9abe39",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -53407,9 +53939,9 @@
       ],
       "cited_versions": [],
       "exact_reference": true,
-      "fingerprint": "78aab651c5252ca1431111c13b2e573267b8b1fe4a6004d6b7447dde7d277af6",
+      "fingerprint": "30ab59fb8600ce57e150cd4f29e74932570dc7906de0f2b77545b695abba7529",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "44c08bdfcba8cc3d23d9e2f73c5946d459ca4d9dd8933db3aeca39a54c26836f",
         "article_number": "",
@@ -53428,12 +53960,20 @@
         "published_print": "2026",
         "publisher": "American Mathematical Society",
         "relations": {
-          "relation": {},
+          "relation": {
+            "is-part-of": [
+              {
+                "asserted-by": "object",
+                "id": "https://doi.org/10.1090/conm/832",
+                "id-type": "doi"
+              }
+            ]
+          },
           "type": "other",
           "update-to": []
         },
         "title": "Superelliptic Jacobians and central simple representations",
-        "updated": "2026-08-31T22:25:03Z",
+        "updated": "2026-11-16T12:37:06Z",
         "url": "https://doi.org/10.1090/conm/832/16612",
         "version": "",
         "volume": ""
@@ -53475,6 +54015,46 @@
             "volume": ""
           },
           "observed_at": "2026-11-13T05:27:43Z"
+        },
+        {
+          "fingerprint": "30ab59fb8600ce57e150cd4f29e74932570dc7906de0f2b77545b695abba7529",
+          "metadata": {
+            "abstract_sha256": "44c08bdfcba8cc3d23d9e2f73c5946d459ca4d9dd8933db3aeca39a54c26836f",
+            "article_number": "",
+            "arxiv": "",
+            "authors": [
+              "Yuri Zarhin"
+            ],
+            "doi": "10.1090/conm/832/16612",
+            "id": "10.1090/conm/832/16612",
+            "issue": "",
+            "journal": "Contemporary Mathematics; Arithmetic, Geometry, Cryptography and Coding Theory",
+            "pages": "175-209",
+            "provider": "crossref",
+            "published": "2026",
+            "published_online": "",
+            "published_print": "2026",
+            "publisher": "American Mathematical Society",
+            "relations": {
+              "relation": {
+                "is-part-of": [
+                  {
+                    "asserted-by": "object",
+                    "id": "https://doi.org/10.1090/conm/832",
+                    "id-type": "doi"
+                  }
+                ]
+              },
+              "type": "other",
+              "update-to": []
+            },
+            "title": "Superelliptic Jacobians and central simple representations",
+            "updated": "2026-11-16T12:37:06Z",
+            "url": "https://doi.org/10.1090/conm/832/16612",
+            "version": "",
+            "volume": ""
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
         }
       ],
       "topics": [
@@ -53504,7 +54084,7 @@
       "exact_reference": true,
       "fingerprint": "5055e1b3fe6750d676fc7fd46f1186b1d37c8c86a9ad7ee5c8ce79ca5c55d1b6",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "df748a545b2cf32dfb2c2dd0b4bd2b32271918c820f070078b9fa1c69756f0d1",
         "article_number": "",
@@ -53598,7 +54178,7 @@
       "exact_reference": true,
       "fingerprint": "34e5533d8fd47593596cdba6d6ad0c010dc6e3efa8748fa256db19f06a300c86",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -53695,7 +54275,7 @@
       "exact_reference": true,
       "fingerprint": "f153e074eff4412196afb903bca7cb9f36823d7b31a52dbedf76119530773c4d",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "1328098b7212b71c8d2188ff9c4905186804b061a682d629cd71db0cc9d63cda",
         "article_number": "",
@@ -53785,7 +54365,7 @@
       "exact_reference": true,
       "fingerprint": "a2c35ecbc0a975b59b0a571db04d3e9fb666f8a14097a8d67bfd589491480e94",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -53886,7 +54466,7 @@
       "exact_reference": true,
       "fingerprint": "ca6072303dd6350d26e3fed958911acea8acc3fa06df31f681673a998ea4842a",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -53964,7 +54544,7 @@
       "exact_reference": true,
       "fingerprint": "bb1221b4577aa7375e37a1bc0d90be8732bf954344457116858ce0cd60f3d0ef",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -54057,7 +54637,7 @@
       "exact_reference": true,
       "fingerprint": "9656fd257645dff1351a7b6312c1cdded0bb990be4af64a7c29234761ad820ac",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a7d64e83d4551d9730c4b5546d5d0c1724f3db689ad664eb1172db4a50459aa4",
         "article_number": "",
@@ -54160,7 +54740,7 @@
       "exact_reference": true,
       "fingerprint": "2f5bd0ed000e782a28ddbb182f12ea9d76f03f70b9d599bfb3cc423ec9010882",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "4059228f7c61562e543e43bd844a22d1aab7ce62ce24727d42ea488907510568",
         "article_number": "",
@@ -54267,7 +54847,7 @@
       "exact_reference": true,
       "fingerprint": "a465fe76a99fcb89c7429ce110021694aa5780a0b423a1e9b0da1449bf714955",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "dc30130240120e5bd93c7f55c6be380ec44b87e639eed4fd324693c25d49f289",
         "article_number": "",
@@ -54367,7 +54947,7 @@
       "exact_reference": true,
       "fingerprint": "5d426407e552b3f7d149ce71fbceea52c7effbd0446fca6d029a75d77bf4c025",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "f54bbac62f9f7a306481ccdeda8d5a67f50a4d8d23e74bee4a32fc8ed634175d",
         "article_number": "",
@@ -54458,7 +55038,7 @@
       "exact_reference": true,
       "fingerprint": "7f1d6d9604b9f14e26537186451c662715780fa85373d00c22298b146ef40d0a",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a745d8a98ad26c17cc2851924a500dde5a26c54a09fcae1cbc62cb0b4d23bf8e",
         "article_number": "",
@@ -54551,7 +55131,7 @@
       "exact_reference": true,
       "fingerprint": "6d081ce7bafe5d1f71cb61bfa19d1ff64b60558448c317b7e127777d44c1eae7",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "bc85dfa9048021a4a0550b7cb04ceb9571de5c91fda88fdc945643edbdc2ae33",
         "article_number": "",
@@ -54643,7 +55223,7 @@
       "exact_reference": true,
       "fingerprint": "b2e477e02797dcf66d186ecee3283151aad28175156c89b98ed8c0dab1f642e5",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "69340c6ceeeb750ecfb8b0d160b0158a127a2aaa032f7c3e1f092554d2f73b93",
         "article_number": "",
@@ -54725,7 +55305,7 @@
       "exact_reference": true,
       "fingerprint": "740323bf736ff6e6883053e2ef29c54552d8956993e8c85998a9ad24301842aa",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -54812,7 +55392,7 @@
       "exact_reference": true,
       "fingerprint": "a10dd92cde9a5b5e7f324cb8bd8ea3d5cf8df480453621c68285a09d5b88e840",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "f8a1529bf399efb86df5c0843962f64e826b6be0903d7ac1f843cc6c6534af98",
         "article_number": "",
@@ -54904,7 +55484,7 @@
       "exact_reference": true,
       "fingerprint": "b63e46c0eb69f5db92697e641d9f5dd3266b2092fd5bc56e982534bc8423ffb3",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "dcac94f761cc0690d4402728e47875749774120656ed64251a00db5e5a335de0",
         "article_number": "",
@@ -54994,7 +55574,7 @@
       "exact_reference": true,
       "fingerprint": "49894f3c7375ef66ce7dc08af58f49c45997497e3a178adddfe38cff90918c1b",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "9a4c03922ea1c60e97a419f4b82542aaa69fe9cb7ae86a5dcf690d896f933c94",
         "article_number": "",
@@ -55085,7 +55665,7 @@
       "exact_reference": true,
       "fingerprint": "7155b49ca128e1e2f22b5476d6676fdde6fea29f0c893499f7ab7fb20b800417",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "2ef12872efde67d767b7801ac44f22886c9b7265343317c9121307072cd7f934",
         "article_number": "",
@@ -55182,7 +55762,7 @@
       "exact_reference": true,
       "fingerprint": "8c5937b0dbdd61c2ba29c70a6b92726aa0ba9f1f66ef4721903870fccabd5d06",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "4fc504d0cb921388ddd78b1420de779327fbe13167bb25d1af4fa12a33743c6c",
         "article_number": "",
@@ -55281,7 +55861,7 @@
       "exact_reference": true,
       "fingerprint": "d5d1cf30ba631948e7bf0befe75a00b2bd02e15fcab46ad773b5377ab3d7bd79",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "80091d6909eee3e1b088c23f7fdba9858def4e5823a738c2910c41667bb774fb",
         "article_number": "",
@@ -55459,7 +56039,7 @@
       "exact_reference": true,
       "fingerprint": "6e0215a5395ffc5ea3246707a715337a81f72b196162c51c61b6e46038ff79c7",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "c612acb6d92668749af1743776f3dc7eef935bbaa5a2602f7510680bbcd6e148",
         "article_number": "",
@@ -55555,7 +56135,7 @@
       "exact_reference": true,
       "fingerprint": "24ce0830371ebe38c6b0a505527641a0533de5d78d74927cf00c800a37972122",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "d9ce42819f8201066395f609316a9e938d5af360a115a56d92a64b354b2aaf14",
         "article_number": "",
@@ -55646,7 +56226,7 @@
       "exact_reference": true,
       "fingerprint": "4e8487126d8daded422c1880e19d33d8a7aeac27af5e9319a2119f26cfeadd39",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "5fd8cfeb7c6d42460485b99e224de14d4a6b4904dec9068d36f7cb2a7dd46e36",
         "article_number": "rnaf136",
@@ -55739,7 +56319,7 @@
       "exact_reference": true,
       "fingerprint": "c4c47537311ca739f6ba8c94a01b34313d9df32043bcbf1fb7b107b11e3770c3",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "30e952a5f330017c131e6af67f967a3ef5d163ff14e48bec50536b1151ac1072",
         "article_number": "rnaf326",
@@ -55837,7 +56417,7 @@
       "exact_reference": true,
       "fingerprint": "9503c65bfe1e58c80c4f912fc34b6ab4946f5fcf3179eb880b054f16f24e76ae",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "dd5afd607f77a339338b626f2a5f92961315c7e49de02413f5a7734b88ce704a",
         "article_number": "rnag178",
@@ -55923,7 +56503,7 @@
       "exact_reference": true,
       "fingerprint": "6f549a3846a675056583461607594a03298d0876a2270e6ec455c32d2cd60246",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -56016,7 +56596,7 @@
       "exact_reference": true,
       "fingerprint": "674a43cff7bf4e79c9989252b8293e704f0f1a7f8ec3306c79a02672ddfce533",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -56104,7 +56684,7 @@
       "exact_reference": true,
       "fingerprint": "b63381340974a5d07f181844c846d51e70e3d3a41e66a227dafdecdbc3827e02",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -56188,7 +56768,7 @@
       "exact_reference": true,
       "fingerprint": "08bd95ee5d5605ef0178adb840fed5469a83a4683b5a3ae960752b55961d26c7",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -56654,7 +57234,7 @@
       "exact_reference": true,
       "fingerprint": "d0d41201347a7f0faf0176915b582324967b5d22f0dfa22a661c1ea585de146b",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -56747,7 +57327,7 @@
       "exact_reference": true,
       "fingerprint": "59b43dc0f868b909e490887fb58285816c907623e78fc43485fe35ba76effc3c",
       "first_seen": "2026-11-13T05:27:43Z",
-      "last_seen": "2026-11-13T05:27:43Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -56845,7 +57425,7 @@
       "exact_reference": true,
       "fingerprint": "4a6d651a0195a50032b02a2cd55495cddee7ee58f8776ea59822444ab672fe96",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "d1ec46b9e58d4f69166e8abe10ffe73e28b800c8be669ec727e1bd6ed4da1eba",
         "article_number": "",
@@ -56942,7 +57522,7 @@
       "exact_reference": true,
       "fingerprint": "d720e5142b080aa7dcfcf1d02c4bb8b21ee3d6d44fd6f7c0c602c639b3ca2a77",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "9839499814a0cdb913a4361220f8f1c859422cbe6a82f888058238f20e644617",
         "article_number": "",
@@ -57041,7 +57621,7 @@
       "exact_reference": true,
       "fingerprint": "13d34a8eebe8590f5fb5d15b7500c285353e783a5c725751506506f8c7881441",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "e791da97774dbda5649ee67dfddd3953307bbc5e637d59accddfa9588dd471ff",
         "article_number": "e70061",
@@ -57139,7 +57719,7 @@
       "exact_reference": true,
       "fingerprint": "da904b8c7ce0dc1b987f787c396b3309921a0c6d2f7df309f7060d32cde70428",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "b11d3a588c5747e0015e0e7c3889da2c42243ae1e5242c1c4b51b8ead202451d",
         "article_number": "e70257",
@@ -57230,7 +57810,7 @@
       "exact_reference": true,
       "fingerprint": "655b8335cf9da12125d4866aa8fb0a666f65068c147c3d792acf1fd9f2247398",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -57308,7 +57888,7 @@
       "exact_reference": true,
       "fingerprint": "1cb56c8f72832a687f05731bdb437d129895cf547820b4ba847a9041d91af41b",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -57386,7 +57966,7 @@
       "exact_reference": true,
       "fingerprint": "132e5973cc65b197cdb5dad7a7f44d58290200fdc559ff1ad5f85b41026e7e43",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -57473,7 +58053,7 @@
       "exact_reference": true,
       "fingerprint": "71614e5761ea6beb10c67ca621bae28f94610fc03b815fb4f28f768997aac135",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -57562,7 +58142,7 @@
       "exact_reference": true,
       "fingerprint": "b58a6200586637a5d04d353aa8ebe73e24251ec4e46eb45963ef39a12581bd28",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -57656,7 +58236,7 @@
       "exact_reference": true,
       "fingerprint": "99cb87a30c3a7dfb44f93f610eab6316f895d20c681933499ac3258d43a0da75",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "763eeced1d5c6d544d7a24200d630eb45c3053c581b47ad0c8d064c49f4befba",
         "article_number": "",
@@ -57749,7 +58329,7 @@
       "exact_reference": true,
       "fingerprint": "a654fbf379a98157c5806d0bba95bee339a46a28831f2af337804967680ad382",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -57837,7 +58417,7 @@
       "exact_reference": true,
       "fingerprint": "6eae3cec64142da2a0fa7081d8cac8263872b0bba648d45142972812fabe8f88",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -57926,7 +58506,7 @@
       "exact_reference": true,
       "fingerprint": "c761b185bb89f67ad2343b5789aa18f585ccbcc707161f81a8254aa2c36c8202",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -58010,7 +58590,7 @@
       "exact_reference": true,
       "fingerprint": "bae4c6c0c2042373e0bc83e58c6d9f0a2f94f83d5abdc3063e0bab25681f5f2d",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "13f394f0d369a554cd46d820c736fcf9c58af7a4ec8a65cd22dc1d80eac4215d",
         "article_number": "",
@@ -58111,7 +58691,7 @@
       "exact_reference": true,
       "fingerprint": "e8372d5fbf83495c12cd80cc5a4105ee385c4c1770f25a4ff9b1de862e5901f7",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-13T20:10:38Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "bdced0278f9e44acd000d938a96d283a832fb8f6a1d22eaa207d82123f46580b",
         "article_number": "",
@@ -77026,6 +77606,83 @@
         "galois"
       ]
     },
+    "hal:hal-00684883": {
+      "affected_pages": [
+        "articles/discriminants.html",
+        "articles/frobenius.html",
+        "articles/permutation-groups.html",
+        "articles/ramification-inertia.html",
+        "articles/reciprocity.html",
+        "articles/resolvents.html"
+      ],
+      "aliases": [
+        "doi:10.1088/1751-8113/44/4/045204",
+        "hal:hal-00684883"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "469f6dd76936d957d571bff739bf88544fef33ebab302c8a8ad3bab78a4f75ad",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "cbd85e087b2546ff57646a4c0cb4ee336056040fd9000e20cf860b5906ada0ee",
+        "arxiv": "",
+        "authors": [
+          "Alin Bostan",
+          "Salah Boukraa",
+          "Saoud Hassani",
+          "Mark van Hoeij",
+          "Jean-Marie Maillard",
+          "Jacques-Arthur Weil",
+          "Nadjah Zenine"
+        ],
+        "doi": "10.1088/1751-8113/44/4/045204",
+        "id": "hal-00684883",
+        "journal": "Journal of Physics A: Mathematical and Theoretical",
+        "provider": "hal",
+        "published": "2011",
+        "relations": {},
+        "title": "The Ising model: from elliptic curves to modular forms and Calabi-Yau equations",
+        "updated": "2026-11-18T19:29:15Z",
+        "url": "https://hal.science/hal-00684883v1",
+        "version": "1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "469f6dd76936d957d571bff739bf88544fef33ebab302c8a8ad3bab78a4f75ad",
+          "metadata": {
+            "abstract_sha256": "cbd85e087b2546ff57646a4c0cb4ee336056040fd9000e20cf860b5906ada0ee",
+            "arxiv": "",
+            "authors": [
+              "Alin Bostan",
+              "Salah Boukraa",
+              "Saoud Hassani",
+              "Mark van Hoeij",
+              "Jean-Marie Maillard",
+              "Jacques-Arthur Weil",
+              "Nadjah Zenine"
+            ],
+            "doi": "10.1088/1751-8113/44/4/045204",
+            "id": "hal-00684883",
+            "journal": "Journal of Physics A: Mathematical and Theoretical",
+            "provider": "hal",
+            "published": "2011",
+            "relations": {},
+            "title": "The Ising model: from elliptic curves to modular forms and Calabi-Yau equations",
+            "updated": "2026-11-18T19:29:15Z",
+            "url": "https://hal.science/hal-00684883v1",
+            "version": "1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "galois"
+      ]
+    },
     "hal:hal-00764649": {
       "affected_pages": [
         "articles/discriminants.html",
@@ -77084,6 +77741,80 @@
       ],
       "topics": [
         "galois"
+      ]
+    },
+    "hal:hal-00813684": {
+      "affected_pages": [
+        "articles/finite-field-bases.html",
+        "articles/finite-field-constructions.html",
+        "articles/finite-field-factorization-statistics.html",
+        "articles/finite-field-irreducibility.html",
+        "articles/finite-field-structure.html",
+        "articles/newman-pentanomials.html",
+        "articles/sparse-factorization.html",
+        "articles/sparse-finite-fields.html",
+        "articles/sparse-gaps.html",
+        "articles/trinomials.html"
+      ],
+      "aliases": [
+        "doi:10.1109/tvlsi.2011.2106524",
+        "hal:hal-00813684"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "77723a66efa18a5e8ecd7fb0a444caedd48c775d80319b5f25d16a6188254817",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "6ed90158742da4b97d9236a79dc011d2f9afa38ff0bf4bf0050aa88c370488dc",
+        "arxiv": "",
+        "authors": [
+          "Anwar Hasan",
+          "Ashkan Hosseinzadeh Namin",
+          "Christophe Negre"
+        ],
+        "doi": "10.1109/tvlsi.2011.2106524",
+        "id": "hal-00813684",
+        "journal": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+        "provider": "hal",
+        "published": "2012-03-01",
+        "relations": {},
+        "title": "Toeplitz Matrix Approach for Binary Field Multiplication Using Quadrinomials",
+        "updated": "2026-11-18T18:33:49Z",
+        "url": "https://hal.science/hal-00813684v1",
+        "version": "1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "77723a66efa18a5e8ecd7fb0a444caedd48c775d80319b5f25d16a6188254817",
+          "metadata": {
+            "abstract_sha256": "6ed90158742da4b97d9236a79dc011d2f9afa38ff0bf4bf0050aa88c370488dc",
+            "arxiv": "",
+            "authors": [
+              "Anwar Hasan",
+              "Ashkan Hosseinzadeh Namin",
+              "Christophe Negre"
+            ],
+            "doi": "10.1109/tvlsi.2011.2106524",
+            "id": "hal-00813684",
+            "journal": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+            "provider": "hal",
+            "published": "2012-03-01",
+            "relations": {},
+            "title": "Toeplitz Matrix Approach for Binary Field Multiplication Using Quadrinomials",
+            "updated": "2026-11-18T18:33:49Z",
+            "url": "https://hal.science/hal-00813684v1",
+            "version": "1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "finite-fields",
+        "sparse"
       ]
     },
     "hal:hal-00814548": {
@@ -77149,6 +77880,76 @@
       ],
       "topics": [
         "dynamics",
+        "galois"
+      ]
+    },
+    "hal:hal-00933051": {
+      "affected_pages": [
+        "articles/discriminants.html",
+        "articles/frobenius.html",
+        "articles/permutation-groups.html",
+        "articles/ramification-inertia.html",
+        "articles/reciprocity.html",
+        "articles/resolvents.html"
+      ],
+      "aliases": [
+        "hal:hal-00933051"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "296a943a99c9b179f72bf86a81feece1ec98ec5001d80a480fd11a2f27d19f90",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "e15628128bf07fa0323056d93a872b101e65c1c998b25a833faccc017df62142",
+        "arxiv": "",
+        "authors": [
+          "Salah Boukraa",
+          "S. Hassani",
+          "J.-M. Maillard",
+          "Jacques-Arthur Weil"
+        ],
+        "doi": "",
+        "id": "hal-00933051",
+        "journal": "Journal of Physics A General Physics (1968-1972)",
+        "provider": "hal",
+        "published": "2014",
+        "relations": {},
+        "title": "Differential algebra on lattice green and calabi-yau operators",
+        "updated": "2026-11-18T19:24:51Z",
+        "url": "https://unilim.hal.science/hal-00933051v1",
+        "version": "1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "296a943a99c9b179f72bf86a81feece1ec98ec5001d80a480fd11a2f27d19f90",
+          "metadata": {
+            "abstract_sha256": "e15628128bf07fa0323056d93a872b101e65c1c998b25a833faccc017df62142",
+            "arxiv": "",
+            "authors": [
+              "Salah Boukraa",
+              "S. Hassani",
+              "J.-M. Maillard",
+              "Jacques-Arthur Weil"
+            ],
+            "doi": "",
+            "id": "hal-00933051",
+            "journal": "Journal of Physics A General Physics (1968-1972)",
+            "provider": "hal",
+            "published": "2014",
+            "relations": {},
+            "title": "Differential algebra on lattice green and calabi-yau operators",
+            "updated": "2026-11-18T19:24:51Z",
+            "url": "https://unilim.hal.science/hal-00933051v1",
+            "version": "1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
         "galois"
       ]
     },
@@ -77510,6 +78311,73 @@
         "galois"
       ]
     },
+    "hal:hal-01310514": {
+      "affected_pages": [
+        "articles/finite-field-bases.html",
+        "articles/finite-field-constructions.html",
+        "articles/finite-field-factorization-statistics.html",
+        "articles/finite-field-irreducibility.html",
+        "articles/finite-field-structure.html",
+        "articles/sparse-finite-fields.html"
+      ],
+      "aliases": [
+        "doi:10.4064/aa8226-1-2016",
+        "hal:hal-01310514"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "a6d3af88be9e2e97785d545c039b18e79e57317f3308df323efbfe7db1d39e68",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "6326b60bc68ff8b76f6c49aaac79763456ed223fc910f30aa252307f71a4fa08",
+        "arxiv": "",
+        "authors": [
+          "Henri Faure",
+          "Christiane Lemieux"
+        ],
+        "doi": "10.4064/aa8226-1-2016",
+        "id": "hal-01310514",
+        "journal": "Acta Arithmetica",
+        "provider": "hal",
+        "published": "2016",
+        "relations": {},
+        "title": "Irreducible Sobol’ sequences in prime power bases",
+        "updated": "2026-11-18T18:33:49Z",
+        "url": "https://hal.science/hal-01310514v1",
+        "version": "1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "a6d3af88be9e2e97785d545c039b18e79e57317f3308df323efbfe7db1d39e68",
+          "metadata": {
+            "abstract_sha256": "6326b60bc68ff8b76f6c49aaac79763456ed223fc910f30aa252307f71a4fa08",
+            "arxiv": "",
+            "authors": [
+              "Henri Faure",
+              "Christiane Lemieux"
+            ],
+            "doi": "10.4064/aa8226-1-2016",
+            "id": "hal-01310514",
+            "journal": "Acta Arithmetica",
+            "provider": "hal",
+            "published": "2016",
+            "relations": {},
+            "title": "Irreducible Sobol’ sequences in prime power bases",
+            "updated": "2026-11-18T18:33:49Z",
+            "url": "https://hal.science/hal-01310514v1",
+            "version": "1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "finite-fields"
+      ]
+    },
     "hal:hal-01381981": {
       "affected_pages": [
         "articles/discriminants.html",
@@ -77820,7 +78688,7 @@
       "exact_reference": false,
       "fingerprint": "d5e9e85278efff1f3c63642cc90594df8b5eba7ca23fca2a6ba98da8753b6481",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "2da010198660749fdf14a88222a97c508d1650acc6f289a1ecb99a38e7953d7b",
         "arxiv": "",
@@ -78196,6 +79064,83 @@
         "sparse"
       ]
     },
+    "hal:hal-02315710": {
+      "affected_pages": [
+        "articles/arboreal-galois.html",
+        "articles/capelli-composition.html",
+        "articles/composition-iteration.html",
+        "articles/critical-parameter-polynomials.html",
+        "articles/polynomial-decomposition.html",
+        "articles/polynomial-stability.html"
+      ],
+      "aliases": [
+        "doi:10.1109/jphot.2019.2940689",
+        "hal:hal-02315710"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "6c5ecda5139de0ef660189218a3312033a24d06fb4eac0cf856fdd55aa73044f",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "32929e7ae375e5e8c194fa7c218d510b8c66b794a73709eee57c2df52bff35c7",
+        "arxiv": "",
+        "authors": [
+          "Raphael Abele",
+          "Redouane El Moubtahij",
+          "Daniele Fronte",
+          "Pierre-Yvan Liardet",
+          "Jean-Luc Damoiseaux",
+          "Jean-Marc Boi",
+          "Djamal Merad"
+        ],
+        "doi": "10.1109/jphot.2019.2940689",
+        "id": "hal-02315710",
+        "journal": "IEEE Photonics Journal",
+        "provider": "hal",
+        "published": "2019-10",
+        "relations": {},
+        "title": "FMPOD: A Novel Focus Metric Based on Polynomial Decomposition for Infrared Microscopy",
+        "updated": "2026-11-18T19:33:12Z",
+        "url": "https://amu.hal.science/hal-02315710v1",
+        "version": "1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "6c5ecda5139de0ef660189218a3312033a24d06fb4eac0cf856fdd55aa73044f",
+          "metadata": {
+            "abstract_sha256": "32929e7ae375e5e8c194fa7c218d510b8c66b794a73709eee57c2df52bff35c7",
+            "arxiv": "",
+            "authors": [
+              "Raphael Abele",
+              "Redouane El Moubtahij",
+              "Daniele Fronte",
+              "Pierre-Yvan Liardet",
+              "Jean-Luc Damoiseaux",
+              "Jean-Marc Boi",
+              "Djamal Merad"
+            ],
+            "doi": "10.1109/jphot.2019.2940689",
+            "id": "hal-02315710",
+            "journal": "IEEE Photonics Journal",
+            "provider": "hal",
+            "published": "2019-10",
+            "relations": {},
+            "title": "FMPOD: A Novel Focus Metric Based on Polynomial Decomposition for Infrared Microscopy",
+            "updated": "2026-11-18T19:33:12Z",
+            "url": "https://amu.hal.science/hal-02315710v1",
+            "version": "1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "dynamics"
+      ]
+    },
     "hal:hal-02356592": {
       "affected_pages": [
         "articles/arboreal-galois.html",
@@ -78282,7 +79227,7 @@
       "exact_reference": false,
       "fingerprint": "882013ef007eefa8633199d0e4561ed78765da095f81a5f7d48d1dce21784803",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "2646f48345315fb11458134c78c75a970a39f56525194227ffe0295bc43d3f41",
         "arxiv": "",
@@ -79972,7 +80917,7 @@
       "exact_reference": false,
       "fingerprint": "b2355d4b7b4e79dee3622bc38a22ae6770ceecf1df28427927b820d8bdacc1d3",
       "first_seen": "2026-11-14T19:57:13Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "a1ef04caf005e9cdeb8442b7c2e6decb527ec1c805206c7ea464cf5591700b52",
         "arxiv": "",
@@ -81114,6 +82059,74 @@
         "dynamics"
       ]
     },
+    "hal:hal-05777819": {
+      "affected_pages": [
+        "articles/discriminants.html",
+        "articles/frobenius.html",
+        "articles/permutation-groups.html",
+        "articles/ramification-inertia.html",
+        "articles/reciprocity.html",
+        "articles/resolvents.html"
+      ],
+      "aliases": [
+        "hal:hal-05777819"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "e163fda248142e597ea4abd95ac91bff42721eece8ea59002728846c757d82e3",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "992193c7783a5918f7448b39c121cf32562380351750a8f30fbde48231901f89",
+        "arxiv": "",
+        "authors": [
+          "Khazhgali Kozhasov",
+          "Bernard Mourrain",
+          "Adam Parusiński"
+        ],
+        "doi": "",
+        "id": "hal-05777819",
+        "journal": "",
+        "provider": "hal",
+        "published": "2026-10-05",
+        "relations": {},
+        "title": "On the distance to discriminants and osculating varieties",
+        "updated": "2026-11-18T10:37:52Z",
+        "url": "https://inria.hal.science/hal-05777819v1",
+        "version": "1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "e163fda248142e597ea4abd95ac91bff42721eece8ea59002728846c757d82e3",
+          "metadata": {
+            "abstract_sha256": "992193c7783a5918f7448b39c121cf32562380351750a8f30fbde48231901f89",
+            "arxiv": "",
+            "authors": [
+              "Khazhgali Kozhasov",
+              "Bernard Mourrain",
+              "Adam Parusiński"
+            ],
+            "doi": "",
+            "id": "hal-05777819",
+            "journal": "",
+            "provider": "hal",
+            "published": "2026-10-05",
+            "relations": {},
+            "title": "On the distance to discriminants and osculating varieties",
+            "updated": "2026-11-18T10:37:52Z",
+            "url": "https://inria.hal.science/hal-05777819v1",
+            "version": "1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "galois"
+      ]
+    },
     "hal:hal-05818977": {
       "affected_pages": [
         "articles/arboreal-galois.html",
@@ -81233,6 +82246,74 @@
       "topics": [
         "galois"
       ]
+    },
+    "hal:hal-05871381": {
+      "affected_pages": [
+        "articles/exceptional-specializations.html#effective-counting"
+      ],
+      "aliases": [
+        "doi:10.1017/fms.2025.10096",
+        "hal:hal-05871381"
+      ],
+      "cited_versions": [],
+      "exact_reference": true,
+      "fingerprint": "7b693c6d7fdac9a4fbdd263902371931b276c0164fa226e001c41eddc9d86e19",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "10b1b28dcb5862cfe819750ed764a75be489e085ef0001942bc3ace34965f037",
+        "arxiv": "",
+        "authors": [
+          "Raf Cluckers",
+          "Pierre Dèbes",
+          "Yotam Hendel",
+          "Kien Huu Nguyen",
+          "Floris Vermeulen"
+        ],
+        "doi": "10.1017/fms.2025.10096",
+        "id": "hal-05871381",
+        "journal": "Forum of Mathematics, Sigma",
+        "provider": "hal",
+        "published": "2025-09-19",
+        "relations": {},
+        "title": "Improvements on dimension growth results and effective Hilbert’s irreducibility theorem",
+        "updated": "2026-11-18T19:05:57Z",
+        "url": "https://hal.science/hal-05871381v1",
+        "version": "1"
+      },
+      "metadata_schema": 2,
+      "references": [
+        "CluckersDebesHendelNguyenVermeulen2025"
+      ],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "7b693c6d7fdac9a4fbdd263902371931b276c0164fa226e001c41eddc9d86e19",
+          "metadata": {
+            "abstract_sha256": "10b1b28dcb5862cfe819750ed764a75be489e085ef0001942bc3ace34965f037",
+            "arxiv": "",
+            "authors": [
+              "Raf Cluckers",
+              "Pierre Dèbes",
+              "Yotam Hendel",
+              "Kien Huu Nguyen",
+              "Floris Vermeulen"
+            ],
+            "doi": "10.1017/fms.2025.10096",
+            "id": "hal-05871381",
+            "journal": "Forum of Mathematics, Sigma",
+            "provider": "hal",
+            "published": "2025-09-19",
+            "relations": {},
+            "title": "Improvements on dimension growth results and effective Hilbert’s irreducibility theorem",
+            "updated": "2026-11-18T19:05:57Z",
+            "url": "https://hal.science/hal-05871381v1",
+            "version": "1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": []
     },
     "hal:medihal-01319245": {
       "affected_pages": [
@@ -82218,6 +83299,70 @@
         "orthogonal"
       ]
     },
+    "hexagon:2611.00572": {
+      "affected_pages": [
+        "articles/discriminants.html",
+        "articles/frobenius.html",
+        "articles/permutation-groups.html",
+        "articles/ramification-inertia.html",
+        "articles/reciprocity.html",
+        "articles/resolvents.html"
+      ],
+      "aliases": [
+        "hexagon:2611.00572"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "c3b4485ed9e71f212310105d134a34491afe9039786596969a732350b135d5e3",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "24632c93701e6232743d605ff31572c5d25752fa4b11d5a834f8c1021b954472",
+        "arxiv": "",
+        "authors": [
+          "Zeng Chunping"
+        ],
+        "doi": "",
+        "id": "2611.00572",
+        "journal": "",
+        "provider": "hexagon",
+        "published": "2026-11-17T22:35:05.000Z",
+        "relations": {},
+        "title": "The Tower Side of the DIC Audit: Semistable Towers, the Barrier $\\kappa\\le\\frac13$, and the Conductor--Discriminant Constant",
+        "updated": "2026-11-17T22:35:05.000Z",
+        "url": "https://hexagonmath.org/abs/2611.00572v1",
+        "version": "v1"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "c3b4485ed9e71f212310105d134a34491afe9039786596969a732350b135d5e3",
+          "metadata": {
+            "abstract_sha256": "24632c93701e6232743d605ff31572c5d25752fa4b11d5a834f8c1021b954472",
+            "arxiv": "",
+            "authors": [
+              "Zeng Chunping"
+            ],
+            "doi": "",
+            "id": "2611.00572",
+            "journal": "",
+            "provider": "hexagon",
+            "published": "2026-11-17T22:35:05.000Z",
+            "relations": {},
+            "title": "The Tower Side of the DIC Audit: Semistable Towers, the Barrier $\\kappa\\le\\frac13$, and the Conductor--Discriminant Constant",
+            "updated": "2026-11-17T22:35:05.000Z",
+            "url": "https://hexagonmath.org/abs/2611.00572v1",
+            "version": "v1"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "galois"
+      ]
+    },
     "page:conrad-notes": {
       "affected_pages": [
         "articles/archimedean-criteria.html",
@@ -82248,7 +83393,7 @@
       "exact_reference": false,
       "fingerprint": "90c1ba9ffac402ba5d32a1859c241e67a4da8021f0ef868563fe8d0dd7136343",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -82328,7 +83473,7 @@
       "exact_reference": false,
       "fingerprint": "bf7b052f03e7a586f004315570d2505ad030df72ec303120e7f4a7761d193dd9",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -82405,7 +83550,7 @@
       "exact_reference": false,
       "fingerprint": "d73a755829634fff9e33b2c2f53ae962018a9c1559dc25a9569fbe19c495a716",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -82472,7 +83617,7 @@
       "exact_reference": false,
       "fingerprint": "a7a739c92960133659baf32958301c2302061256a0b33960f55fac63beeb9837",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -82538,7 +83683,7 @@
       "exact_reference": false,
       "fingerprint": "e083a65650c81df81b6455efe9f6d9ef9f27ace3aff7e6af5f8549d73aad99f1",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -82609,7 +83754,7 @@
       "exact_reference": false,
       "fingerprint": "8ef932960f2f848cac36936e79c6da8d87fe51c19fbec3ca32823826887576b0",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -82673,7 +83818,7 @@
       "exact_reference": false,
       "fingerprint": "b82fcb6a786c3e736f22ffe09e848ddf0197cfa7df3d60f80d9acd0114baaf6c",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -82734,7 +83879,7 @@
       "exact_reference": false,
       "fingerprint": "5b6e266093cd08efa4b4f9455a8f51ed57cf45a379ca362e48a96a6897cffbe3",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -82796,7 +83941,7 @@
       "exact_reference": false,
       "fingerprint": "b0e98311730b19a9fd267f1f399b0701a5ab93e8d4fa92eee24719f8ccfcb8b1",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -82861,7 +84006,7 @@
       "exact_reference": false,
       "fingerprint": "06c3734336ee85570e5959f7f616897bf43dca335c30ddf941a988aee6373d40",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -88984,7 +90129,7 @@
       "exact_reference": false,
       "fingerprint": "1f97588c49812996d494c48c1de9eac5bcad22d48930a3501e799d64c7709ed3",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "4dc6bc9af9d5814e0a3564e604a74215f205a8bebc918960ddd62df26e90fd44",
         "arxiv": "",
@@ -89233,7 +90378,7 @@
       "exact_reference": false,
       "fingerprint": "2c3268606b9e046cdb3fff58ae4b3247cbb841edbd282f9290f33644362e5531",
       "first_seen": "2026-11-16T20:11:27Z",
-      "last_seen": "2026-11-17T20:19:08Z",
+      "last_seen": "2026-11-18T20:16:06Z",
       "metadata": {
         "abstract_sha256": "6fdd76c1b479fbe703434b01bb7372ea0987180416c7283e9a68f319c0f3a2b0",
         "arxiv": "",
@@ -89298,110 +90443,194 @@
       "topics": [
         "finite-fields"
       ]
+    },
+    "zenodo:24350768": {
+      "affected_pages": [
+        "articles/finite-field-bases.html",
+        "articles/finite-field-constructions.html",
+        "articles/finite-field-factorization-statistics.html",
+        "articles/finite-field-irreducibility.html",
+        "articles/finite-field-structure.html",
+        "articles/sparse-finite-fields.html"
+      ],
+      "aliases": [
+        "doi:10.5281/zenodo.24350768",
+        "zenodo-concept:24350767",
+        "zenodo:24350768"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "161805302f6c2a564f8d34d3cd7bd18787fd33a13824015594a64a381585638d",
+      "first_seen": "2026-11-18T20:16:06Z",
+      "last_seen": "2026-11-18T20:16:06Z",
+      "metadata": {
+        "abstract_sha256": "758c803cb951e2a00acc88cae5447cb3396fb9a96fadc2cef1655fa1e291c752",
+        "arxiv": "",
+        "authors": [
+          "Chen, Ruqing"
+        ],
+        "doi": "10.5281/zenodo.24350768",
+        "id": "24350768",
+        "journal": "",
+        "provider": "zenodo",
+        "published": "2026-11-18",
+        "relations": {
+          "conceptrecid": "24350767",
+          "files": [
+            {
+              "checksum": "md5:fec08a512567857dde18835de8260cbb",
+              "key": "kapetanakis_invariant_polynomials_audit.pdf"
+            }
+          ],
+          "related_identifiers": []
+        },
+        "title": "Prescribing coefficients of invariant irreducible polynomials over finite fields: counterexamples, corrected formulas, and complete restoration",
+        "updated": "2026-11-18T18:00:28.379315+00:00",
+        "url": "https://zenodo.org/records/24350768",
+        "version": "24350768"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "161805302f6c2a564f8d34d3cd7bd18787fd33a13824015594a64a381585638d",
+          "metadata": {
+            "abstract_sha256": "758c803cb951e2a00acc88cae5447cb3396fb9a96fadc2cef1655fa1e291c752",
+            "arxiv": "",
+            "authors": [
+              "Chen, Ruqing"
+            ],
+            "doi": "10.5281/zenodo.24350768",
+            "id": "24350768",
+            "journal": "",
+            "provider": "zenodo",
+            "published": "2026-11-18",
+            "relations": {
+              "conceptrecid": "24350767",
+              "files": [
+                {
+                  "checksum": "md5:fec08a512567857dde18835de8260cbb",
+                  "key": "kapetanakis_invariant_polynomials_audit.pdf"
+                }
+              ],
+              "related_identifiers": []
+            },
+            "title": "Prescribing coefficients of invariant irreducible polynomials over finite fields: counterexamples, corrected formulas, and complete restoration",
+            "updated": "2026-11-18T18:00:28.379315+00:00",
+            "url": "https://zenodo.org/records/24350768",
+            "version": "24350768"
+          },
+          "observed_at": "2026-11-18T20:16:06Z"
+        }
+      ],
+      "topics": [
+        "finite-fields"
+      ]
     }
   },
   "reference_attempts": {
-    "arxiv:0707.1835": "2026-11-17T20:19:08Z",
-    "arxiv:0807.2620": "2026-11-17T20:19:08Z",
-    "arxiv:0807.3578": "2026-11-17T20:19:08Z",
-    "arxiv:0811.4029": "2026-11-17T20:19:08Z",
-    "arxiv:0911.0286": "2026-11-17T20:19:08Z",
-    "arxiv:1001.3079": "2026-11-17T20:19:08Z",
-    "arxiv:1004.3813": "2026-11-17T20:19:08Z",
-    "arxiv:1005.2695": "2026-11-17T20:19:08Z",
-    "arxiv:1006.3869": "2026-11-17T20:19:08Z",
-    "arxiv:1009.5388": "2026-11-17T20:19:08Z",
-    "arxiv:1010.5341": "2026-11-17T20:19:08Z",
-    "arxiv:1012.2857": "2026-11-17T20:19:08Z",
-    "arxiv:1106.6151": "2026-11-17T20:19:08Z",
-    "arxiv:1205.3420": "2026-11-17T20:19:08Z",
-    "arxiv:1209.5169": "2026-11-17T20:19:08Z",
-    "arxiv:1210.7157": "2026-11-17T20:19:08Z",
-    "arxiv:1211.3588": "2026-11-17T20:19:08Z",
-    "arxiv:1302.0625": "2026-11-17T20:19:08Z",
-    "arxiv:1303.6513": "2026-11-17T20:19:08Z",
-    "arxiv:1304.0874": "2026-11-17T20:19:08Z",
-    "arxiv:1305.0222": "2026-11-17T20:19:08Z",
-    "arxiv:1402.6018": "2026-11-17T20:19:08Z",
-    "arxiv:1409.2034": "2026-11-17T20:19:08Z",
-    "arxiv:1410.3814": "2026-11-17T20:19:08Z",
-    "arxiv:1508.01870": "2026-11-17T20:19:08Z",
-    "arxiv:1601.06867": "2026-11-17T20:19:08Z",
-    "arxiv:1603.00673": "2026-11-17T20:19:08Z",
-    "arxiv:1603.03811": "2026-11-17T20:19:08Z",
-    "arxiv:1604.04023": "2026-11-17T20:19:08Z",
-    "arxiv:1605.01068": "2026-11-17T20:19:08Z",
-    "arxiv:1606.04592": "2026-11-17T20:19:08Z",
-    "arxiv:1608.01938": "2026-11-17T20:19:08Z",
-    "arxiv:1609.03398": "2026-11-17T20:19:08Z",
-    "arxiv:1610.00424": "2026-11-17T20:19:08Z",
-    "arxiv:1705.03709": "2026-11-17T20:19:08Z",
-    "arxiv:1707.02501": "2026-11-17T20:19:08Z",
-    "arxiv:1708.04932": "2026-11-17T20:19:08Z",
-    "arxiv:1709.03094": "2026-11-17T20:19:08Z",
-    "arxiv:1710.05165": "2026-11-17T20:19:08Z",
-    "arxiv:1711.06243": "2026-11-17T20:19:08Z",
-    "arxiv:1802.09074": "2026-11-17T20:19:08Z",
-    "arxiv:1803.00434": "2026-11-17T20:19:08Z",
-    "arxiv:1803.01987": "2026-11-17T20:19:08Z",
-    "arxiv:1803.02823": "2026-11-17T20:19:08Z",
-    "arxiv:1803.10811": "2026-11-17T20:19:08Z",
-    "arxiv:1805.10361": "2026-11-17T20:19:08Z",
-    "arxiv:1805.11152": "2026-11-17T20:19:08Z",
-    "arxiv:1807.05820": "2026-11-17T20:19:08Z",
-    "arxiv:1808.06655": "2026-11-17T20:19:08Z",
-    "arxiv:1810.07512": "2026-11-17T20:19:08Z",
-    "arxiv:1810.13360": "2026-11-17T20:19:08Z",
-    "arxiv:1811.08601": "2026-11-17T20:19:08Z",
-    "arxiv:1901.01071": "2026-11-17T20:19:08Z",
+    "arxiv:0707.1835": "2026-11-18T20:16:06Z",
+    "arxiv:0807.2620": "2026-11-18T20:16:06Z",
+    "arxiv:0807.3578": "2026-11-18T20:16:06Z",
+    "arxiv:0811.4029": "2026-11-18T20:16:06Z",
+    "arxiv:0911.0286": "2026-11-18T20:16:06Z",
+    "arxiv:1001.3079": "2026-11-18T20:16:06Z",
+    "arxiv:1004.3813": "2026-11-18T20:16:06Z",
+    "arxiv:1005.2695": "2026-11-18T20:16:06Z",
+    "arxiv:1006.3869": "2026-11-18T20:16:06Z",
+    "arxiv:1009.5388": "2026-11-18T20:16:06Z",
+    "arxiv:1010.5341": "2026-11-18T20:16:06Z",
+    "arxiv:1012.2857": "2026-11-18T20:16:06Z",
+    "arxiv:1106.6151": "2026-11-18T20:16:06Z",
+    "arxiv:1205.3420": "2026-11-18T20:16:06Z",
+    "arxiv:1209.5169": "2026-11-18T20:16:06Z",
+    "arxiv:1210.7157": "2026-11-18T20:16:06Z",
+    "arxiv:1211.3588": "2026-11-18T20:16:06Z",
+    "arxiv:1302.0625": "2026-11-18T20:16:06Z",
+    "arxiv:1303.6513": "2026-11-18T20:16:06Z",
+    "arxiv:1304.0874": "2026-11-18T20:16:06Z",
+    "arxiv:1305.0222": "2026-11-18T20:16:06Z",
+    "arxiv:1402.6018": "2026-11-18T20:16:06Z",
+    "arxiv:1409.2034": "2026-11-18T20:16:06Z",
+    "arxiv:1410.3814": "2026-11-18T20:16:06Z",
+    "arxiv:1508.01870": "2026-11-18T20:16:06Z",
+    "arxiv:1601.06867": "2026-11-18T20:16:06Z",
+    "arxiv:1603.00673": "2026-11-18T20:16:06Z",
+    "arxiv:1603.03811": "2026-11-18T20:16:06Z",
+    "arxiv:1604.04023": "2026-11-18T20:16:06Z",
+    "arxiv:1605.01068": "2026-11-18T20:16:06Z",
+    "arxiv:1606.04592": "2026-11-18T20:16:06Z",
+    "arxiv:1608.01938": "2026-11-18T20:16:06Z",
+    "arxiv:1609.03398": "2026-11-18T20:16:06Z",
+    "arxiv:1610.00424": "2026-11-18T20:16:06Z",
+    "arxiv:1705.03709": "2026-11-18T20:16:06Z",
+    "arxiv:1707.02501": "2026-11-18T20:16:06Z",
+    "arxiv:1708.04932": "2026-11-18T20:16:06Z",
+    "arxiv:1709.03094": "2026-11-18T20:16:06Z",
+    "arxiv:1710.05165": "2026-11-18T20:16:06Z",
+    "arxiv:1711.06243": "2026-11-18T20:16:06Z",
+    "arxiv:1802.09074": "2026-11-18T20:16:06Z",
+    "arxiv:1803.00434": "2026-11-18T20:16:06Z",
+    "arxiv:1803.01987": "2026-11-18T20:16:06Z",
+    "arxiv:1803.02823": "2026-11-18T20:16:06Z",
+    "arxiv:1803.10811": "2026-11-18T20:16:06Z",
+    "arxiv:1805.10361": "2026-11-18T20:16:06Z",
+    "arxiv:1805.11152": "2026-11-18T20:16:06Z",
+    "arxiv:1807.05820": "2026-11-18T20:16:06Z",
+    "arxiv:1808.06655": "2026-11-18T20:16:06Z",
+    "arxiv:1810.07512": "2026-11-18T20:16:06Z",
+    "arxiv:1810.13360": "2026-11-18T20:16:06Z",
+    "arxiv:1811.08601": "2026-11-18T20:16:06Z",
+    "arxiv:1901.01071": "2026-11-18T20:16:06Z",
     "arxiv:2003.05834": "2026-11-17T20:19:08Z",
-    "arxiv:2007.01329": "2026-11-16T20:11:27Z",
-    "arxiv:2007.14567": "2026-11-16T20:11:27Z",
-    "arxiv:2008.01223": "2026-11-16T20:11:27Z",
-    "arxiv:2008.05815": "2026-11-16T20:11:27Z",
-    "arxiv:2010.01281": "2026-11-16T20:11:27Z",
-    "arxiv:2012.03076": "2026-11-16T20:11:27Z",
-    "arxiv:2102.07465": "2026-11-16T20:11:27Z",
-    "arxiv:2106.04049": "2026-11-16T20:11:27Z",
-    "arxiv:2110.08354": "2026-11-16T20:11:27Z",
-    "arxiv:2110.08587": "2026-11-16T20:11:27Z",
-    "arxiv:2111.05256": "2026-11-16T20:11:27Z",
-    "arxiv:2111.06507": "2026-11-16T20:11:27Z",
-    "arxiv:2111.06697": "2026-11-16T20:11:27Z",
-    "arxiv:2202.08122": "2026-11-16T20:11:27Z",
-    "arxiv:2203.10287": "2026-11-16T20:11:27Z",
-    "arxiv:2203.11302": "2026-11-16T20:11:27Z",
-    "arxiv:2205.07349": "2026-11-16T20:11:27Z",
-    "arxiv:2206.11778": "2026-11-16T20:11:27Z",
-    "arxiv:2207.12493": "2026-11-16T20:11:27Z",
-    "arxiv:2212.07539": "2026-11-16T20:11:27Z",
-    "arxiv:2212.10920": "2026-11-16T20:11:27Z",
-    "arxiv:2301.05656": "2026-11-16T20:11:27Z",
-    "arxiv:2304.11991": "2026-11-16T20:11:27Z",
-    "arxiv:2304.12658": "2026-11-16T20:11:27Z",
-    "arxiv:2305.09227": "2026-11-16T20:11:27Z",
-    "arxiv:2305.12022": "2026-11-16T20:11:27Z",
-    "arxiv:2307.14896": "2026-11-16T20:11:27Z",
-    "arxiv:2308.04878": "2026-11-16T20:11:27Z",
-    "arxiv:2311.14862": "2026-11-16T20:11:27Z",
-    "arxiv:2311.16871": "2026-11-16T20:11:27Z",
-    "arxiv:2402.06643": "2026-11-16T20:11:27Z",
-    "arxiv:2403.11943": "2026-11-16T20:11:27Z",
-    "arxiv:2404.13559": "2026-11-16T20:11:27Z",
-    "arxiv:2405.04058": "2026-11-16T20:11:27Z",
-    "arxiv:2406.18970": "2026-11-16T20:11:27Z",
-    "arxiv:2410.16814": "2026-11-16T20:11:27Z",
-    "arxiv:2411.06745": "2026-11-16T20:11:27Z",
-    "arxiv:2412.08815": "2026-11-16T20:11:27Z",
-    "arxiv:2501.06028": "2026-11-16T20:11:27Z",
-    "arxiv:2502.17218": "2026-11-16T20:11:27Z",
-    "arxiv:2505.02723": "2026-11-16T20:11:27Z",
+    "arxiv:2007.01329": "2026-11-18T20:16:06Z",
+    "arxiv:2007.14567": "2026-11-18T20:16:06Z",
+    "arxiv:2008.01223": "2026-11-18T20:16:06Z",
+    "arxiv:2008.05815": "2026-11-18T20:16:06Z",
+    "arxiv:2010.01281": "2026-11-18T20:16:06Z",
+    "arxiv:2012.03076": "2026-11-18T20:16:06Z",
+    "arxiv:2102.07465": "2026-11-18T20:16:06Z",
+    "arxiv:2106.04049": "2026-11-18T20:16:06Z",
+    "arxiv:2110.08354": "2026-11-18T20:16:06Z",
+    "arxiv:2110.08587": "2026-11-18T20:16:06Z",
+    "arxiv:2111.05256": "2026-11-18T20:16:06Z",
+    "arxiv:2111.06507": "2026-11-18T20:16:06Z",
+    "arxiv:2111.06697": "2026-11-18T20:16:06Z",
+    "arxiv:2202.08122": "2026-11-18T20:16:06Z",
+    "arxiv:2203.10287": "2026-11-18T20:16:06Z",
+    "arxiv:2203.11302": "2026-11-18T20:16:06Z",
+    "arxiv:2205.07349": "2026-11-18T20:16:06Z",
+    "arxiv:2206.11778": "2026-11-18T20:16:06Z",
+    "arxiv:2207.12493": "2026-11-18T20:16:06Z",
+    "arxiv:2212.07539": "2026-11-18T20:16:06Z",
+    "arxiv:2212.10920": "2026-11-18T20:16:06Z",
+    "arxiv:2301.05656": "2026-11-18T20:16:06Z",
+    "arxiv:2304.11991": "2026-11-18T20:16:06Z",
+    "arxiv:2304.12658": "2026-11-18T20:16:06Z",
+    "arxiv:2305.09227": "2026-11-18T20:16:06Z",
+    "arxiv:2305.12022": "2026-11-18T20:16:06Z",
+    "arxiv:2307.14896": "2026-11-18T20:16:06Z",
+    "arxiv:2308.04878": "2026-11-18T20:16:06Z",
+    "arxiv:2311.14862": "2026-11-18T20:16:06Z",
+    "arxiv:2311.16871": "2026-11-18T20:16:06Z",
+    "arxiv:2402.06643": "2026-11-18T20:16:06Z",
+    "arxiv:2403.11943": "2026-11-18T20:16:06Z",
+    "arxiv:2404.13559": "2026-11-18T20:16:06Z",
+    "arxiv:2405.04058": "2026-11-18T20:16:06Z",
+    "arxiv:2406.18970": "2026-11-18T20:16:06Z",
+    "arxiv:2410.16814": "2026-11-18T20:16:06Z",
+    "arxiv:2411.06745": "2026-11-18T20:16:06Z",
+    "arxiv:2412.08815": "2026-11-18T20:16:06Z",
+    "arxiv:2501.06028": "2026-11-18T20:16:06Z",
+    "arxiv:2502.17218": "2026-11-18T20:16:06Z",
+    "arxiv:2505.02723": "2026-11-18T20:16:06Z",
     "arxiv:2505.08935": "2026-11-17T20:19:08Z",
-    "arxiv:2506.05254": "2026-11-16T20:11:27Z",
-    "arxiv:2506.12206": "2026-11-16T20:11:27Z",
-    "arxiv:2507.08347": "2026-11-16T20:11:27Z",
-    "arxiv:2507.10779": "2026-11-16T20:11:27Z",
-    "arxiv:2507.15908": "2026-11-16T20:11:27Z",
+    "arxiv:2506.05254": "2026-11-18T20:16:06Z",
+    "arxiv:2506.12206": "2026-11-18T20:16:06Z",
+    "arxiv:2507.08347": "2026-11-18T20:16:06Z",
+    "arxiv:2507.10779": "2026-11-18T20:16:06Z",
+    "arxiv:2507.15908": "2026-11-18T20:16:06Z",
     "arxiv:2507.16138": "2026-11-17T20:19:08Z",
     "arxiv:2508.12924": "2026-11-17T20:19:08Z",
     "arxiv:2510.05658": "2026-11-17T20:19:08Z",
@@ -89431,7 +90660,7 @@
     "arxiv:2609.40123": "2026-11-17T20:19:08Z",
     "arxiv:2610.10614": "2026-11-17T20:19:08Z",
     "arxiv:2610.18226": "2026-11-17T20:19:08Z",
-    "arxiv:2610.22764": "2026-11-16T20:11:27Z",
+    "arxiv:2610.22764": "2026-11-18T20:16:06Z",
     "arxiv:2610.26873": "2026-11-17T20:19:08Z",
     "arxiv:2610.28688": "2026-11-17T20:19:08Z",
     "arxiv:2610.36534": "2026-11-17T20:19:08Z",
@@ -89565,56 +90794,56 @@
     "corrections:10.1080/00029890.1935.11987732": "2026-11-17T20:19:08Z",
     "corrections:10.1080/00029890.2002.11919872": "2026-11-17T20:19:08Z",
     "corrections:10.1080/00927872.2014.910800": "2026-11-17T20:19:08Z",
-    "corrections:10.1080/10586458.2017.1325790": "2026-11-13T05:27:43Z",
-    "corrections:10.1080/10586458.2023.2293283": "2026-11-13T05:27:43Z",
-    "corrections:10.1081/agb-120027913": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/conm/832/16612": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/jams/912": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/proc/13212": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/proc/15920": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/pspum/024/0332694": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0002-9947-1922-1501189-9": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0002-9947-1936-1501879-8": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0002-9947-2011-05442-5": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0002-9947-2013-05800-x": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-02-01428-x": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-1973-0327712-4": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-1981-0606517-5": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-1987-0866111-3": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-1990-0993933-0": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-1991-1079014-x": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-1992-1134730-7": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-97-00835-1": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-98-00904-1": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0025-5718-98-00944-2": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/s0894-0347-2014-00820-1": "2026-11-13T05:27:43Z",
-    "corrections:10.1090/tran/7229": "2026-11-13T05:27:43Z",
-    "corrections:10.1093/imrn/rnaa182": "2026-11-13T05:27:43Z",
-    "corrections:10.1093/imrn/rnae126": "2026-11-13T05:27:43Z",
-    "corrections:10.1093/imrn/rnaf136": "2026-11-13T05:27:43Z",
-    "corrections:10.1093/imrn/rnaf326": "2026-11-13T05:27:43Z",
-    "corrections:10.1093/imrn/rnag178": "2026-11-13T05:27:43Z",
-    "corrections:10.1093/imrn/rnt349": "2026-11-13T05:27:43Z",
-    "corrections:10.1093/imrn/rny016": "2026-11-13T05:27:43Z",
-    "corrections:10.1093/qmath/12.1.304": "2026-11-13T05:27:43Z",
-    "corrections:10.1093/qmath/17.1.364": "2026-11-13T05:27:43Z",
-    "corrections:10.1112/blms.12225": "2026-11-13T05:27:43Z",
-    "corrections:10.1112/blms.12227": "2026-11-13T05:27:43Z",
-    "corrections:10.1112/blms.13049": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/blms.70008": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/jlms.70061": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/jlms.70257": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/jlms/jdn034": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/jlms/s1-38.1.183": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/plms/pdq009": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/plms/s3-43.2.227": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/plms/s3-51.3.385": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/s0010437x20007022": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/s0024610702003782": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/s0025579300011931": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/s0025579311002105": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/s1461157000000851": "2026-11-13T20:10:38Z",
-    "corrections:10.1112/s1461157012001052": "2026-11-13T20:10:38Z",
+    "corrections:10.1080/10586458.2017.1325790": "2026-11-18T20:16:06Z",
+    "corrections:10.1080/10586458.2023.2293283": "2026-11-18T20:16:06Z",
+    "corrections:10.1081/agb-120027913": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/conm/832/16612": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/jams/912": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/proc/13212": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/proc/15920": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/pspum/024/0332694": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0002-9947-1922-1501189-9": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0002-9947-1936-1501879-8": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0002-9947-2011-05442-5": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0002-9947-2013-05800-x": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-02-01428-x": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-1973-0327712-4": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-1981-0606517-5": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-1987-0866111-3": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-1990-0993933-0": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-1991-1079014-x": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-1992-1134730-7": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-97-00835-1": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-98-00904-1": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0025-5718-98-00944-2": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/s0894-0347-2014-00820-1": "2026-11-18T20:16:06Z",
+    "corrections:10.1090/tran/7229": "2026-11-18T20:16:06Z",
+    "corrections:10.1093/imrn/rnaa182": "2026-11-18T20:16:06Z",
+    "corrections:10.1093/imrn/rnae126": "2026-11-18T20:16:06Z",
+    "corrections:10.1093/imrn/rnaf136": "2026-11-18T20:16:06Z",
+    "corrections:10.1093/imrn/rnaf326": "2026-11-18T20:16:06Z",
+    "corrections:10.1093/imrn/rnag178": "2026-11-18T20:16:06Z",
+    "corrections:10.1093/imrn/rnt349": "2026-11-18T20:16:06Z",
+    "corrections:10.1093/imrn/rny016": "2026-11-18T20:16:06Z",
+    "corrections:10.1093/qmath/12.1.304": "2026-11-18T20:16:06Z",
+    "corrections:10.1093/qmath/17.1.364": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/blms.12225": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/blms.12227": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/blms.13049": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/blms.70008": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/jlms.70061": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/jlms.70257": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/jlms/jdn034": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/jlms/s1-38.1.183": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/plms/pdq009": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/plms/s3-43.2.227": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/plms/s3-51.3.385": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/s0010437x20007022": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/s0024610702003782": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/s0025579300011931": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/s0025579311002105": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/s1461157000000851": "2026-11-18T20:16:06Z",
+    "corrections:10.1112/s1461157012001052": "2026-11-18T20:16:06Z",
     "corrections:10.1112/s1461157013000302": "2026-11-13T20:10:38Z",
     "corrections:10.1112/tlm3.70026": "2026-11-13T20:10:38Z",
     "corrections:10.1112/tlm3.70035": "2026-11-13T20:10:38Z",
@@ -89850,56 +91079,56 @@
     "doi:10.1080/00029890.1935.11987732": "2026-11-17T20:19:08Z",
     "doi:10.1080/00029890.2002.11919872": "2026-11-17T20:19:08Z",
     "doi:10.1080/00927872.2014.910800": "2026-11-17T20:19:08Z",
-    "doi:10.1080/10586458.2017.1325790": "2026-11-13T05:27:43Z",
-    "doi:10.1080/10586458.2023.2293283": "2026-11-13T05:27:43Z",
-    "doi:10.1081/agb-120027913": "2026-11-13T05:27:43Z",
-    "doi:10.1090/conm/832/16612": "2026-11-13T05:27:43Z",
-    "doi:10.1090/jams/912": "2026-11-13T05:27:43Z",
-    "doi:10.1090/proc/13212": "2026-11-13T05:27:43Z",
-    "doi:10.1090/proc/15920": "2026-11-13T05:27:43Z",
-    "doi:10.1090/pspum/024/0332694": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0002-9947-1922-1501189-9": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0002-9947-1936-1501879-8": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0002-9947-2011-05442-5": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0002-9947-2013-05800-x": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-02-01428-x": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1973-0327712-4": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1981-0606517-5": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1987-0866111-3": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1990-0993933-0": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1991-1079014-x": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1992-1134730-7": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-97-00835-1": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-98-00904-1": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-98-00944-2": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0894-0347-2014-00820-1": "2026-11-13T05:27:43Z",
-    "doi:10.1090/tran/7229": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnaa182": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnae126": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnaf136": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnaf326": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnag178": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnt349": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rny016": "2026-11-13T05:27:43Z",
-    "doi:10.1093/qmath/12.1.304": "2026-11-13T05:27:43Z",
-    "doi:10.1093/qmath/17.1.364": "2026-11-13T05:27:43Z",
-    "doi:10.1112/blms.12225": "2026-11-13T05:27:43Z",
-    "doi:10.1112/blms.12227": "2026-11-13T05:27:43Z",
-    "doi:10.1112/blms.13049": "2026-11-13T20:10:38Z",
-    "doi:10.1112/blms.70008": "2026-11-13T20:10:38Z",
-    "doi:10.1112/jlms.70061": "2026-11-13T20:10:38Z",
-    "doi:10.1112/jlms.70257": "2026-11-13T20:10:38Z",
-    "doi:10.1112/jlms/jdn034": "2026-11-13T20:10:38Z",
-    "doi:10.1112/jlms/s1-38.1.183": "2026-11-13T20:10:38Z",
-    "doi:10.1112/plms/pdq009": "2026-11-13T20:10:38Z",
-    "doi:10.1112/plms/s3-43.2.227": "2026-11-13T20:10:38Z",
-    "doi:10.1112/plms/s3-51.3.385": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s0010437x20007022": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s0024610702003782": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s0025579300011931": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s0025579311002105": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s1461157000000851": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s1461157012001052": "2026-11-13T20:10:38Z",
+    "doi:10.1080/10586458.2017.1325790": "2026-11-18T20:16:06Z",
+    "doi:10.1080/10586458.2023.2293283": "2026-11-18T20:16:06Z",
+    "doi:10.1081/agb-120027913": "2026-11-18T20:16:06Z",
+    "doi:10.1090/conm/832/16612": "2026-11-18T20:16:06Z",
+    "doi:10.1090/jams/912": "2026-11-18T20:16:06Z",
+    "doi:10.1090/proc/13212": "2026-11-18T20:16:06Z",
+    "doi:10.1090/proc/15920": "2026-11-18T20:16:06Z",
+    "doi:10.1090/pspum/024/0332694": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0002-9947-1922-1501189-9": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0002-9947-1936-1501879-8": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0002-9947-2011-05442-5": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0002-9947-2013-05800-x": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-02-01428-x": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1973-0327712-4": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1981-0606517-5": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1987-0866111-3": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1990-0993933-0": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1991-1079014-x": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1992-1134730-7": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-97-00835-1": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-98-00904-1": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-98-00944-2": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0894-0347-2014-00820-1": "2026-11-18T20:16:06Z",
+    "doi:10.1090/tran/7229": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnaa182": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnae126": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnaf136": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnaf326": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnag178": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnt349": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rny016": "2026-11-18T20:16:06Z",
+    "doi:10.1093/qmath/12.1.304": "2026-11-18T20:16:06Z",
+    "doi:10.1093/qmath/17.1.364": "2026-11-18T20:16:06Z",
+    "doi:10.1112/blms.12225": "2026-11-18T20:16:06Z",
+    "doi:10.1112/blms.12227": "2026-11-18T20:16:06Z",
+    "doi:10.1112/blms.13049": "2026-11-18T20:16:06Z",
+    "doi:10.1112/blms.70008": "2026-11-18T20:16:06Z",
+    "doi:10.1112/jlms.70061": "2026-11-18T20:16:06Z",
+    "doi:10.1112/jlms.70257": "2026-11-18T20:16:06Z",
+    "doi:10.1112/jlms/jdn034": "2026-11-18T20:16:06Z",
+    "doi:10.1112/jlms/s1-38.1.183": "2026-11-18T20:16:06Z",
+    "doi:10.1112/plms/pdq009": "2026-11-18T20:16:06Z",
+    "doi:10.1112/plms/s3-43.2.227": "2026-11-18T20:16:06Z",
+    "doi:10.1112/plms/s3-51.3.385": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s0010437x20007022": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s0024610702003782": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s0025579300011931": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s0025579311002105": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s1461157000000851": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s1461157012001052": "2026-11-18T20:16:06Z",
     "doi:10.1112/s1461157013000302": "2026-11-13T20:10:38Z",
     "doi:10.1112/tlm3.70026": "2026-11-13T20:10:38Z",
     "doi:10.1112/tlm3.70035": "2026-11-13T20:10:38Z",
@@ -90020,107 +91249,107 @@
     "doi:10.7146/math.scand.a-11442": "2026-11-15T19:58:06Z"
   },
   "reference_checks": {
-    "arxiv:0707.1835": "2026-11-17T20:19:08Z",
-    "arxiv:0807.2620": "2026-11-17T20:19:08Z",
-    "arxiv:0807.3578": "2026-11-17T20:19:08Z",
-    "arxiv:0811.4029": "2026-11-17T20:19:08Z",
-    "arxiv:0911.0286": "2026-11-17T20:19:08Z",
-    "arxiv:1001.3079": "2026-11-17T20:19:08Z",
-    "arxiv:1004.3813": "2026-11-17T20:19:08Z",
-    "arxiv:1005.2695": "2026-11-17T20:19:08Z",
-    "arxiv:1006.3869": "2026-11-17T20:19:08Z",
-    "arxiv:1009.5388": "2026-11-17T20:19:08Z",
-    "arxiv:1010.5341": "2026-11-17T20:19:08Z",
-    "arxiv:1012.2857": "2026-11-17T20:19:08Z",
-    "arxiv:1106.6151": "2026-11-17T20:19:08Z",
-    "arxiv:1205.3420": "2026-11-17T20:19:08Z",
-    "arxiv:1209.5169": "2026-11-17T20:19:08Z",
-    "arxiv:1210.7157": "2026-11-17T20:19:08Z",
-    "arxiv:1211.3588": "2026-11-17T20:19:08Z",
-    "arxiv:1302.0625": "2026-11-17T20:19:08Z",
-    "arxiv:1303.6513": "2026-11-17T20:19:08Z",
-    "arxiv:1304.0874": "2026-11-17T20:19:08Z",
-    "arxiv:1305.0222": "2026-11-17T20:19:08Z",
-    "arxiv:1402.6018": "2026-11-17T20:19:08Z",
-    "arxiv:1409.2034": "2026-11-17T20:19:08Z",
-    "arxiv:1410.3814": "2026-11-17T20:19:08Z",
-    "arxiv:1508.01870": "2026-11-17T20:19:08Z",
-    "arxiv:1601.06867": "2026-11-17T20:19:08Z",
-    "arxiv:1603.00673": "2026-11-17T20:19:08Z",
-    "arxiv:1603.03811": "2026-11-17T20:19:08Z",
-    "arxiv:1604.04023": "2026-11-17T20:19:08Z",
-    "arxiv:1605.01068": "2026-11-17T20:19:08Z",
-    "arxiv:1606.04592": "2026-11-17T20:19:08Z",
-    "arxiv:1608.01938": "2026-11-17T20:19:08Z",
-    "arxiv:1609.03398": "2026-11-17T20:19:08Z",
-    "arxiv:1610.00424": "2026-11-17T20:19:08Z",
-    "arxiv:1705.03709": "2026-11-17T20:19:08Z",
-    "arxiv:1707.02501": "2026-11-17T20:19:08Z",
-    "arxiv:1708.04932": "2026-11-17T20:19:08Z",
-    "arxiv:1709.03094": "2026-11-17T20:19:08Z",
-    "arxiv:1710.05165": "2026-11-17T20:19:08Z",
-    "arxiv:1711.06243": "2026-11-17T20:19:08Z",
-    "arxiv:1802.09074": "2026-11-17T20:19:08Z",
-    "arxiv:1803.00434": "2026-11-17T20:19:08Z",
-    "arxiv:1803.01987": "2026-11-17T20:19:08Z",
-    "arxiv:1803.02823": "2026-11-17T20:19:08Z",
-    "arxiv:1803.10811": "2026-11-17T20:19:08Z",
-    "arxiv:1805.10361": "2026-11-17T20:19:08Z",
-    "arxiv:1805.11152": "2026-11-17T20:19:08Z",
-    "arxiv:1807.05820": "2026-11-17T20:19:08Z",
-    "arxiv:1808.06655": "2026-11-17T20:19:08Z",
-    "arxiv:1810.07512": "2026-11-17T20:19:08Z",
-    "arxiv:1810.13360": "2026-11-17T20:19:08Z",
-    "arxiv:1811.08601": "2026-11-17T20:19:08Z",
-    "arxiv:1901.01071": "2026-11-17T20:19:08Z",
+    "arxiv:0707.1835": "2026-11-18T20:16:06Z",
+    "arxiv:0807.2620": "2026-11-18T20:16:06Z",
+    "arxiv:0807.3578": "2026-11-18T20:16:06Z",
+    "arxiv:0811.4029": "2026-11-18T20:16:06Z",
+    "arxiv:0911.0286": "2026-11-18T20:16:06Z",
+    "arxiv:1001.3079": "2026-11-18T20:16:06Z",
+    "arxiv:1004.3813": "2026-11-18T20:16:06Z",
+    "arxiv:1005.2695": "2026-11-18T20:16:06Z",
+    "arxiv:1006.3869": "2026-11-18T20:16:06Z",
+    "arxiv:1009.5388": "2026-11-18T20:16:06Z",
+    "arxiv:1010.5341": "2026-11-18T20:16:06Z",
+    "arxiv:1012.2857": "2026-11-18T20:16:06Z",
+    "arxiv:1106.6151": "2026-11-18T20:16:06Z",
+    "arxiv:1205.3420": "2026-11-18T20:16:06Z",
+    "arxiv:1209.5169": "2026-11-18T20:16:06Z",
+    "arxiv:1210.7157": "2026-11-18T20:16:06Z",
+    "arxiv:1211.3588": "2026-11-18T20:16:06Z",
+    "arxiv:1302.0625": "2026-11-18T20:16:06Z",
+    "arxiv:1303.6513": "2026-11-18T20:16:06Z",
+    "arxiv:1304.0874": "2026-11-18T20:16:06Z",
+    "arxiv:1305.0222": "2026-11-18T20:16:06Z",
+    "arxiv:1402.6018": "2026-11-18T20:16:06Z",
+    "arxiv:1409.2034": "2026-11-18T20:16:06Z",
+    "arxiv:1410.3814": "2026-11-18T20:16:06Z",
+    "arxiv:1508.01870": "2026-11-18T20:16:06Z",
+    "arxiv:1601.06867": "2026-11-18T20:16:06Z",
+    "arxiv:1603.00673": "2026-11-18T20:16:06Z",
+    "arxiv:1603.03811": "2026-11-18T20:16:06Z",
+    "arxiv:1604.04023": "2026-11-18T20:16:06Z",
+    "arxiv:1605.01068": "2026-11-18T20:16:06Z",
+    "arxiv:1606.04592": "2026-11-18T20:16:06Z",
+    "arxiv:1608.01938": "2026-11-18T20:16:06Z",
+    "arxiv:1609.03398": "2026-11-18T20:16:06Z",
+    "arxiv:1610.00424": "2026-11-18T20:16:06Z",
+    "arxiv:1705.03709": "2026-11-18T20:16:06Z",
+    "arxiv:1707.02501": "2026-11-18T20:16:06Z",
+    "arxiv:1708.04932": "2026-11-18T20:16:06Z",
+    "arxiv:1709.03094": "2026-11-18T20:16:06Z",
+    "arxiv:1710.05165": "2026-11-18T20:16:06Z",
+    "arxiv:1711.06243": "2026-11-18T20:16:06Z",
+    "arxiv:1802.09074": "2026-11-18T20:16:06Z",
+    "arxiv:1803.00434": "2026-11-18T20:16:06Z",
+    "arxiv:1803.01987": "2026-11-18T20:16:06Z",
+    "arxiv:1803.02823": "2026-11-18T20:16:06Z",
+    "arxiv:1803.10811": "2026-11-18T20:16:06Z",
+    "arxiv:1805.10361": "2026-11-18T20:16:06Z",
+    "arxiv:1805.11152": "2026-11-18T20:16:06Z",
+    "arxiv:1807.05820": "2026-11-18T20:16:06Z",
+    "arxiv:1808.06655": "2026-11-18T20:16:06Z",
+    "arxiv:1810.07512": "2026-11-18T20:16:06Z",
+    "arxiv:1810.13360": "2026-11-18T20:16:06Z",
+    "arxiv:1811.08601": "2026-11-18T20:16:06Z",
+    "arxiv:1901.01071": "2026-11-18T20:16:06Z",
     "arxiv:2003.05834": "2026-11-17T20:19:08Z",
-    "arxiv:2007.01329": "2026-11-16T20:11:27Z",
-    "arxiv:2007.14567": "2026-11-16T20:11:27Z",
-    "arxiv:2008.01223": "2026-11-16T20:11:27Z",
-    "arxiv:2008.05815": "2026-11-16T20:11:27Z",
-    "arxiv:2010.01281": "2026-11-16T20:11:27Z",
-    "arxiv:2012.03076": "2026-11-16T20:11:27Z",
-    "arxiv:2102.07465": "2026-11-16T20:11:27Z",
-    "arxiv:2106.04049": "2026-11-16T20:11:27Z",
-    "arxiv:2110.08354": "2026-11-16T20:11:27Z",
-    "arxiv:2110.08587": "2026-11-16T20:11:27Z",
-    "arxiv:2111.05256": "2026-11-16T20:11:27Z",
-    "arxiv:2111.06507": "2026-11-16T20:11:27Z",
-    "arxiv:2111.06697": "2026-11-16T20:11:27Z",
-    "arxiv:2202.08122": "2026-11-16T20:11:27Z",
-    "arxiv:2203.10287": "2026-11-16T20:11:27Z",
-    "arxiv:2203.11302": "2026-11-16T20:11:27Z",
-    "arxiv:2205.07349": "2026-11-16T20:11:27Z",
-    "arxiv:2206.11778": "2026-11-16T20:11:27Z",
-    "arxiv:2207.12493": "2026-11-16T20:11:27Z",
-    "arxiv:2212.07539": "2026-11-16T20:11:27Z",
-    "arxiv:2212.10920": "2026-11-16T20:11:27Z",
-    "arxiv:2301.05656": "2026-11-16T20:11:27Z",
-    "arxiv:2304.11991": "2026-11-16T20:11:27Z",
-    "arxiv:2304.12658": "2026-11-16T20:11:27Z",
-    "arxiv:2305.09227": "2026-11-16T20:11:27Z",
-    "arxiv:2305.12022": "2026-11-16T20:11:27Z",
-    "arxiv:2307.14896": "2026-11-16T20:11:27Z",
-    "arxiv:2308.04878": "2026-11-16T20:11:27Z",
-    "arxiv:2311.14862": "2026-11-16T20:11:27Z",
-    "arxiv:2311.16871": "2026-11-16T20:11:27Z",
-    "arxiv:2402.06643": "2026-11-16T20:11:27Z",
-    "arxiv:2403.11943": "2026-11-16T20:11:27Z",
-    "arxiv:2404.13559": "2026-11-16T20:11:27Z",
-    "arxiv:2405.04058": "2026-11-16T20:11:27Z",
-    "arxiv:2406.18970": "2026-11-16T20:11:27Z",
-    "arxiv:2410.16814": "2026-11-16T20:11:27Z",
-    "arxiv:2411.06745": "2026-11-16T20:11:27Z",
-    "arxiv:2412.08815": "2026-11-16T20:11:27Z",
-    "arxiv:2501.06028": "2026-11-16T20:11:27Z",
-    "arxiv:2502.17218": "2026-11-16T20:11:27Z",
-    "arxiv:2505.02723": "2026-11-16T20:11:27Z",
+    "arxiv:2007.01329": "2026-11-18T20:16:06Z",
+    "arxiv:2007.14567": "2026-11-18T20:16:06Z",
+    "arxiv:2008.01223": "2026-11-18T20:16:06Z",
+    "arxiv:2008.05815": "2026-11-18T20:16:06Z",
+    "arxiv:2010.01281": "2026-11-18T20:16:06Z",
+    "arxiv:2012.03076": "2026-11-18T20:16:06Z",
+    "arxiv:2102.07465": "2026-11-18T20:16:06Z",
+    "arxiv:2106.04049": "2026-11-18T20:16:06Z",
+    "arxiv:2110.08354": "2026-11-18T20:16:06Z",
+    "arxiv:2110.08587": "2026-11-18T20:16:06Z",
+    "arxiv:2111.05256": "2026-11-18T20:16:06Z",
+    "arxiv:2111.06507": "2026-11-18T20:16:06Z",
+    "arxiv:2111.06697": "2026-11-18T20:16:06Z",
+    "arxiv:2202.08122": "2026-11-18T20:16:06Z",
+    "arxiv:2203.10287": "2026-11-18T20:16:06Z",
+    "arxiv:2203.11302": "2026-11-18T20:16:06Z",
+    "arxiv:2205.07349": "2026-11-18T20:16:06Z",
+    "arxiv:2206.11778": "2026-11-18T20:16:06Z",
+    "arxiv:2207.12493": "2026-11-18T20:16:06Z",
+    "arxiv:2212.07539": "2026-11-18T20:16:06Z",
+    "arxiv:2212.10920": "2026-11-18T20:16:06Z",
+    "arxiv:2301.05656": "2026-11-18T20:16:06Z",
+    "arxiv:2304.11991": "2026-11-18T20:16:06Z",
+    "arxiv:2304.12658": "2026-11-18T20:16:06Z",
+    "arxiv:2305.09227": "2026-11-18T20:16:06Z",
+    "arxiv:2305.12022": "2026-11-18T20:16:06Z",
+    "arxiv:2307.14896": "2026-11-18T20:16:06Z",
+    "arxiv:2308.04878": "2026-11-18T20:16:06Z",
+    "arxiv:2311.14862": "2026-11-18T20:16:06Z",
+    "arxiv:2311.16871": "2026-11-18T20:16:06Z",
+    "arxiv:2402.06643": "2026-11-18T20:16:06Z",
+    "arxiv:2403.11943": "2026-11-18T20:16:06Z",
+    "arxiv:2404.13559": "2026-11-18T20:16:06Z",
+    "arxiv:2405.04058": "2026-11-18T20:16:06Z",
+    "arxiv:2406.18970": "2026-11-18T20:16:06Z",
+    "arxiv:2410.16814": "2026-11-18T20:16:06Z",
+    "arxiv:2411.06745": "2026-11-18T20:16:06Z",
+    "arxiv:2412.08815": "2026-11-18T20:16:06Z",
+    "arxiv:2501.06028": "2026-11-18T20:16:06Z",
+    "arxiv:2502.17218": "2026-11-18T20:16:06Z",
+    "arxiv:2505.02723": "2026-11-18T20:16:06Z",
     "arxiv:2505.08935": "2026-11-17T20:19:08Z",
-    "arxiv:2506.05254": "2026-11-16T20:11:27Z",
-    "arxiv:2506.12206": "2026-11-16T20:11:27Z",
-    "arxiv:2507.08347": "2026-11-16T20:11:27Z",
-    "arxiv:2507.10779": "2026-11-16T20:11:27Z",
-    "arxiv:2507.15908": "2026-11-16T20:11:27Z",
+    "arxiv:2506.05254": "2026-11-18T20:16:06Z",
+    "arxiv:2506.12206": "2026-11-18T20:16:06Z",
+    "arxiv:2507.08347": "2026-11-18T20:16:06Z",
+    "arxiv:2507.10779": "2026-11-18T20:16:06Z",
+    "arxiv:2507.15908": "2026-11-18T20:16:06Z",
     "arxiv:2507.16138": "2026-11-17T20:19:08Z",
     "arxiv:2508.12924": "2026-11-17T20:19:08Z",
     "arxiv:2510.05658": "2026-11-17T20:19:08Z",
@@ -90150,7 +91379,7 @@
     "arxiv:2609.40123": "2026-11-17T20:19:08Z",
     "arxiv:2610.10614": "2026-11-17T20:19:08Z",
     "arxiv:2610.18226": "2026-11-17T20:19:08Z",
-    "arxiv:2610.22764": "2026-11-16T20:11:27Z",
+    "arxiv:2610.22764": "2026-11-18T20:16:06Z",
     "arxiv:2610.26873": "2026-11-17T20:19:08Z",
     "arxiv:2610.28688": "2026-11-17T20:19:08Z",
     "arxiv:2610.36534": "2026-11-17T20:19:08Z",
@@ -90271,6 +91500,8 @@
     "corrections:10.1016/s0747-7171(08)80054-5": "2026-11-13T05:22:24Z",
     "corrections:10.1017/cbo9780511471117": "2026-11-13T05:27:43Z",
     "corrections:10.1017/cbo9780511525926": "2026-11-13T05:27:43Z",
+    "corrections:10.1080/10586458.2017.1325790": "2026-11-18T20:16:06Z",
+    "corrections:10.1080/10586458.2023.2293283": "2026-11-18T20:16:06Z",
     "corrections:10.1112/blms.13049": "2026-11-13T20:10:38Z",
     "corrections:10.1112/blms.70008": "2026-11-13T20:10:38Z",
     "corrections:10.1112/jlms.70061": "2026-11-13T20:10:38Z",
@@ -90398,56 +91629,56 @@
     "doi:10.1080/00029890.1935.11987732": "2026-11-17T20:19:08Z",
     "doi:10.1080/00029890.2002.11919872": "2026-11-17T20:19:08Z",
     "doi:10.1080/00927872.2014.910800": "2026-11-17T20:19:08Z",
-    "doi:10.1080/10586458.2017.1325790": "2026-11-13T05:27:43Z",
-    "doi:10.1080/10586458.2023.2293283": "2026-11-13T05:27:43Z",
-    "doi:10.1081/agb-120027913": "2026-11-13T05:27:43Z",
-    "doi:10.1090/conm/832/16612": "2026-11-13T05:27:43Z",
-    "doi:10.1090/jams/912": "2026-11-13T05:27:43Z",
-    "doi:10.1090/proc/13212": "2026-11-13T05:27:43Z",
-    "doi:10.1090/proc/15920": "2026-11-13T05:27:43Z",
-    "doi:10.1090/pspum/024/0332694": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0002-9947-1922-1501189-9": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0002-9947-1936-1501879-8": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0002-9947-2011-05442-5": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0002-9947-2013-05800-x": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-02-01428-x": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1973-0327712-4": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1981-0606517-5": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1987-0866111-3": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1990-0993933-0": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1991-1079014-x": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-1992-1134730-7": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-97-00835-1": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-98-00904-1": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0025-5718-98-00944-2": "2026-11-13T05:27:43Z",
-    "doi:10.1090/s0894-0347-2014-00820-1": "2026-11-13T05:27:43Z",
-    "doi:10.1090/tran/7229": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnaa182": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnae126": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnaf136": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnaf326": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnag178": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rnt349": "2026-11-13T05:27:43Z",
-    "doi:10.1093/imrn/rny016": "2026-11-13T05:27:43Z",
-    "doi:10.1093/qmath/12.1.304": "2026-11-13T05:27:43Z",
-    "doi:10.1093/qmath/17.1.364": "2026-11-13T05:27:43Z",
-    "doi:10.1112/blms.12225": "2026-11-13T05:27:43Z",
-    "doi:10.1112/blms.12227": "2026-11-13T05:27:43Z",
-    "doi:10.1112/blms.13049": "2026-11-13T20:10:38Z",
-    "doi:10.1112/blms.70008": "2026-11-13T20:10:38Z",
-    "doi:10.1112/jlms.70061": "2026-11-13T20:10:38Z",
-    "doi:10.1112/jlms.70257": "2026-11-13T20:10:38Z",
-    "doi:10.1112/jlms/jdn034": "2026-11-13T20:10:38Z",
-    "doi:10.1112/jlms/s1-38.1.183": "2026-11-13T20:10:38Z",
-    "doi:10.1112/plms/pdq009": "2026-11-13T20:10:38Z",
-    "doi:10.1112/plms/s3-43.2.227": "2026-11-13T20:10:38Z",
-    "doi:10.1112/plms/s3-51.3.385": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s0010437x20007022": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s0024610702003782": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s0025579300011931": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s0025579311002105": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s1461157000000851": "2026-11-13T20:10:38Z",
-    "doi:10.1112/s1461157012001052": "2026-11-13T20:10:38Z",
+    "doi:10.1080/10586458.2017.1325790": "2026-11-18T20:16:06Z",
+    "doi:10.1080/10586458.2023.2293283": "2026-11-18T20:16:06Z",
+    "doi:10.1081/agb-120027913": "2026-11-18T20:16:06Z",
+    "doi:10.1090/conm/832/16612": "2026-11-18T20:16:06Z",
+    "doi:10.1090/jams/912": "2026-11-18T20:16:06Z",
+    "doi:10.1090/proc/13212": "2026-11-18T20:16:06Z",
+    "doi:10.1090/proc/15920": "2026-11-18T20:16:06Z",
+    "doi:10.1090/pspum/024/0332694": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0002-9947-1922-1501189-9": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0002-9947-1936-1501879-8": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0002-9947-2011-05442-5": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0002-9947-2013-05800-x": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-02-01428-x": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1973-0327712-4": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1981-0606517-5": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1987-0866111-3": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1990-0993933-0": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1991-1079014-x": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-1992-1134730-7": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-97-00835-1": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-98-00904-1": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0025-5718-98-00944-2": "2026-11-18T20:16:06Z",
+    "doi:10.1090/s0894-0347-2014-00820-1": "2026-11-18T20:16:06Z",
+    "doi:10.1090/tran/7229": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnaa182": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnae126": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnaf136": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnaf326": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnag178": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rnt349": "2026-11-18T20:16:06Z",
+    "doi:10.1093/imrn/rny016": "2026-11-18T20:16:06Z",
+    "doi:10.1093/qmath/12.1.304": "2026-11-18T20:16:06Z",
+    "doi:10.1093/qmath/17.1.364": "2026-11-18T20:16:06Z",
+    "doi:10.1112/blms.12225": "2026-11-18T20:16:06Z",
+    "doi:10.1112/blms.12227": "2026-11-18T20:16:06Z",
+    "doi:10.1112/blms.13049": "2026-11-18T20:16:06Z",
+    "doi:10.1112/blms.70008": "2026-11-18T20:16:06Z",
+    "doi:10.1112/jlms.70061": "2026-11-18T20:16:06Z",
+    "doi:10.1112/jlms.70257": "2026-11-18T20:16:06Z",
+    "doi:10.1112/jlms/jdn034": "2026-11-18T20:16:06Z",
+    "doi:10.1112/jlms/s1-38.1.183": "2026-11-18T20:16:06Z",
+    "doi:10.1112/plms/pdq009": "2026-11-18T20:16:06Z",
+    "doi:10.1112/plms/s3-43.2.227": "2026-11-18T20:16:06Z",
+    "doi:10.1112/plms/s3-51.3.385": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s0010437x20007022": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s0024610702003782": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s0025579300011931": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s0025579311002105": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s1461157000000851": "2026-11-18T20:16:06Z",
+    "doi:10.1112/s1461157012001052": "2026-11-18T20:16:06Z",
     "doi:10.1112/s1461157013000302": "2026-11-13T20:10:38Z",
     "doi:10.1112/tlm3.70026": "2026-11-13T20:10:38Z",
     "doi:10.1112/tlm3.70035": "2026-11-13T20:10:38Z",
@@ -91012,192 +92243,196 @@
       "at": "2026-11-17T20:19:08Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
-    "corrections:10.1080/10586458.2017.1325790": {
-      "at": "2026-11-13T05:27:43Z",
-      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
-    },
-    "corrections:10.1080/10586458.2023.2293283": {
-      "at": "2026-11-13T05:27:43Z",
-      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
-    },
     "corrections:10.1081/agb-120027913": {
-      "at": "2026-11-13T05:27:43Z",
-      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
+      "at": "2026-11-18T20:16:06Z",
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     "corrections:10.1090/conm/832/16612": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/jams/912": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/proc/13212": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/proc/15920": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/pspum/024/0332694": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0002-9947-1922-1501189-9": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0002-9947-1936-1501879-8": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0002-9947-2011-05442-5": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0002-9947-2013-05800-x": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-02-01428-x": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-1973-0327712-4": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-1981-0606517-5": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-1987-0866111-3": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-1990-0993933-0": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-1991-1079014-x": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-1992-1134730-7": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-97-00835-1": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-98-00904-1": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0025-5718-98-00944-2": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/s0894-0347-2014-00820-1": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1090/tran/7229": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1093/imrn/rnaa182": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1093/imrn/rnae126": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1093/imrn/rnaf136": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1093/imrn/rnaf326": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1093/imrn/rnag178": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1093/imrn/rnt349": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1093/imrn/rny016": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1093/qmath/12.1.304": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1093/qmath/17.1.364": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/blms.12225": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/blms.12227": {
-      "at": "2026-11-13T05:27:43Z",
+      "at": "2026-11-18T20:16:06Z",
+      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
+    },
+    "corrections:10.1112/blms.13049": {
+      "at": "2026-11-18T20:16:06Z",
+      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
+    },
+    "corrections:10.1112/blms.70008": {
+      "at": "2026-11-18T20:16:06Z",
+      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
+    },
+    "corrections:10.1112/jlms.70061": {
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/jlms.70257": {
-      "at": "2026-11-13T20:10:38Z",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "at": "2026-11-18T20:16:06Z",
+      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/jlms/jdn034": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/jlms/s1-38.1.183": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/plms/pdq009": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/plms/s3-43.2.227": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/plms/s3-51.3.385": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/s0010437x20007022": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/s0024610702003782": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/s0025579300011931": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/s0025579311002105": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/s1461157000000851": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/s1461157012001052": {
-      "at": "2026-11-13T20:10:38Z",
+      "at": "2026-11-18T20:16:06Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1112/s1461157013000302": {
@@ -91661,71 +92896,71 @@
       "error": "HTTPError: HTTP Error 404: Not Found"
     }
   },
-  "request_count": 75,
+  "request_count": 76,
   "schema_version": 1,
   "sources": {
     "arxiv/dynamics-finite-multivariate": {
       "error": "",
-      "items": 4,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "items": 3,
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "arxiv/irreducibility-galois": {
       "error": "",
-      "items": 10,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "items": 13,
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "arxiv/named-families": {
       "error": "",
-      "items": 8,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "items": 11,
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "conrad-notes/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "crossref/arboreal": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "crossref/galois": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "crossref/irreducibility": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "existing-arxiv": {
       "error": "",
       "items": 100,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "scheduled": 100,
       "status": "ok",
       "total_registered": 147
     },
     "existing-corrections": {
-      "error": "10.1016/j.ffa.2021.101837: HTTPError: HTTP Error 429: Too Many Requests; 10.1016/j.ffa.2022.102085: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1016/j.ffa.2024.102466: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1016/j.ffa.2025.102691: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1016/j.ffa.2025.102714: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1016/j.indag.2014.01.004: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1016/j.indag.2020.12.004: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1016/j.indag.2022.02.006: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1016/j.indag.2022.03.001: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1016/j.indag.2023.09.001: RuntimeError: Host tempora",
-      "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
+      "error": "10.1081/agb-120027913: HTTPError: HTTP Error 429: Too Many Requests; 10.1090/conm/832/16612: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1090/jams/912: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1090/proc/13212: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1090/proc/15920: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1090/pspum/024/0332694: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1090/s0002-9947-1922-1501189-9: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1090/s0002-9947-1936-1501879-8: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1090/s0002-9947-2011-05442-5: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.1090/s0002-9947-2013-05800-x: RuntimeError: Host temporarily skipped",
+      "items": 2,
+      "last_attempt": "2026-11-18T20:16:06Z",
       "last_success": "2026-11-13T05:22:24Z",
       "scheduled": 50,
       "status": "failed",
@@ -91734,8 +92969,8 @@
     "existing-doi": {
       "error": "",
       "items": 50,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "scheduled": 50,
       "status": "ok",
       "total_registered": 285
@@ -91757,133 +92992,133 @@
         "10.5281/zenodo.23661993"
       ],
       "items": 0,
-      "last_attempt": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
       "status": "not-covered"
     },
     "filaseta-preprints/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "hal/dynamics-finite-multivariate": {
       "error": "",
-      "items": 2,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "items": 3,
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "hal/families": {
       "error": "",
       "items": 0,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "hal/irreducibility-galois": {
       "error": "",
-      "items": 5,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "items": 16,
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "hexagon/polynomial-arithmetic": {
       "error": "",
-      "items": 0,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "items": 1,
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "journal-finite-fields/polynomial-arithmetic": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "journal-number-theory/polynomial-arithmetic": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "juul-research/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "milne-course-errata/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "milne-course-notes/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "milne-galois-errata/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "pdf-conradfinitetests/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "pdf-conradirredq/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "pdf-conradsnan/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "pdf-milne2020ant/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "zenodo/dynamics-finite-multivariate": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "zenodo/families": {
       "error": "",
-      "items": 3,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "items": 1,
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     },
     "zenodo/irreducibility-galois": {
       "error": "",
-      "items": 1,
-      "last_attempt": "2026-11-17T20:19:08Z",
-      "last_success": "2026-11-17T20:19:08Z",
+      "items": 2,
+      "last_attempt": "2026-11-18T20:16:06Z",
+      "last_success": "2026-11-18T20:16:06Z",
       "status": "ok"
     }
   }
