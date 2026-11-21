@@ -1,6 +1,6 @@
 # Literature watch
 
-Last attempted scan: 2026-11-20T20:15:58Z
+Last attempted scan: 2026-11-21T20:01:46Z
 
 Metadata leads for editorial review. A match or changed file does not verify a mathematical claim. Baselines record existing sources; they are not new publications.
 
@@ -8,37 +8,46 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 
 | Source / query | Result | Items | Last complete check | Detail |
 |---|---|---:|---|---|
-| arxiv/dynamics\-finite\-multivariate | ok | 6 | 2026-11-20T20:15:58Z |  |
-| arxiv/irreducibility\-galois | ok | 13 | 2026-11-20T20:15:58Z |  |
-| arxiv/named\-families | ok | 16 | 2026-11-20T20:15:58Z |  |
-| conrad\-notes/page | ok | 1 | 2026-11-20T20:15:58Z |  |
+| arxiv/dynamics\-finite\-multivariate | ok | 5 | 2026-11-21T20:01:46Z |  |
+| arxiv/irreducibility\-galois | ok | 9 | 2026-11-21T20:01:46Z |  |
+| arxiv/named\-families | ok | 12 | 2026-11-21T20:01:46Z |  |
+| conrad\-notes/page | ok | 1 | 2026-11-21T20:01:46Z |  |
 | crossref/arboreal | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/galois | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/irreducibility | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| existing\-arxiv | ok | 100 | 2026-11-20T20:15:58Z | Rotating batch: 100 attempted of 147 registered\. |
-| existing\-corrections | failed | 1 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 285 registered\. 10\.2307/2323198: HTTPError: HTTP Error 429: Too Many Requests; 10\.2478/s12175\-009\-0131\-6: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.37236/6578: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4007/annals\.2010\.172\.1315: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4007/annals\.2025\.201\.2\.1: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-11\-1\-1\-34: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-11\-4\-491: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-17\-3\-255\-271: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-82\-1\-1\-15: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-82\-3\-303\-307: RuntimeError: Host temporarily skipped after network failures or a rate\-l |
-| existing\-doi | failed | 48 | 2026-11-19T20:20:35Z | Rotating batch: 50 attempted of 285 registered\. Provider omitted 10\.2307/2323198; 10\.4064/aa\-11\-4\-491: HTTPError: HTTP Error 404: Not Found |
+| existing\-arxiv | ok | 100 | 2026-11-21T20:01:46Z | Rotating batch: 100 attempted of 147 registered\. |
+| existing\-corrections | failed | 1 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 285 registered\. 10\.1007/s40993\-026\-00743\-0: HTTPError: HTTP Error 429: Too Many Requests; 10\.1515/spma\-2024\-0020: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.2748/tmj/1178228289: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4153/s0008414x2610217x: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4153/s0008439526102082: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4169/amer\.math\.monthly\.118\.01\.003: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4169/amer\.math\.monthly\.123\.6\.557: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4171/jems/1073: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4230/lipics\.ccc\.2026\.20: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4230/lipics\.mfcs\.2016\.47: RuntimeError: Host tempor |
+| existing\-doi | failed | 48 | 2026-11-19T20:20:35Z | Rotating batch: 50 attempted of 285 registered\. 10\.4230/lipics\.ccc\.2026\.20: HTTPError: HTTP Error 404: Not Found; 10\.4230/lipics\.mfcs\.2016\.47: HTTPError: HTTP Error 404: Not Found |
 | existing\-non\-crossref | not-covered | 0 | never | 12 known non\-Crossref DOIs excluded from Crossref checks; arXiv identifiers are checked separately; other repository updates require editorial follow\-up |
-| filaseta\-preprints/page | ok | 1 | 2026-11-20T20:15:58Z |  |
-| hal/dynamics\-finite\-multivariate | ok | 3 | 2026-11-20T20:15:58Z |  |
-| hal/families | ok | 0 | 2026-11-20T20:15:58Z |  |
-| hal/irreducibility\-galois | ok | 17 | 2026-11-20T20:15:58Z |  |
-| hexagon/polynomial\-arithmetic | ok | 1 | 2026-11-20T20:15:58Z |  |
+| filaseta\-preprints/page | failed | 0 | 2026-11-20T20:15:58Z | URLError: |
+| hal/dynamics\-finite\-multivariate | ok | 2 | 2026-11-21T20:01:46Z |  |
+| hal/families | ok | 0 | 2026-11-21T20:01:46Z |  |
+| hal/irreducibility\-galois | ok | 15 | 2026-11-21T20:01:46Z |  |
+| hexagon/polynomial\-arithmetic | ok | 1 | 2026-11-21T20:01:46Z |  |
 | journal\-finite\-fields/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | journal\-number\-theory/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| juul\-research/page | ok | 1 | 2026-11-20T20:15:58Z |  |
-| milne\-course\-errata/page | ok | 1 | 2026-11-20T20:15:58Z |  |
-| milne\-course\-notes/page | ok | 1 | 2026-11-20T20:15:58Z |  |
-| milne\-galois\-errata/page | ok | 1 | 2026-11-20T20:15:58Z |  |
-| pdf\-conradfinitetests/page | ok | 1 | 2026-11-20T20:15:58Z |  |
-| pdf\-conradirredq/page | ok | 1 | 2026-11-20T20:15:58Z |  |
-| pdf\-conradsnan/page | ok | 1 | 2026-11-20T20:15:58Z |  |
-| pdf\-milne2020ant/page | ok | 1 | 2026-11-20T20:15:58Z |  |
-| zenodo/dynamics\-finite\-multivariate | ok | 1 | 2026-11-20T20:15:58Z |  |
-| zenodo/families | ok | 2 | 2026-11-20T20:15:58Z |  |
-| zenodo/irreducibility\-galois | ok | 1 | 2026-11-20T20:15:58Z |  |
+| juul\-research/page | ok | 1 | 2026-11-21T20:01:46Z |  |
+| milne\-course\-errata/page | ok | 1 | 2026-11-21T20:01:46Z |  |
+| milne\-course\-notes/page | ok | 1 | 2026-11-21T20:01:46Z |  |
+| milne\-galois\-errata/page | ok | 1 | 2026-11-21T20:01:46Z |  |
+| pdf\-conradfinitetests/page | ok | 1 | 2026-11-21T20:01:46Z |  |
+| pdf\-conradirredq/page | ok | 1 | 2026-11-21T20:01:46Z |  |
+| pdf\-conradsnan/page | ok | 1 | 2026-11-21T20:01:46Z |  |
+| pdf\-milne2020ant/page | ok | 1 | 2026-11-21T20:01:46Z |  |
+| zenodo/dynamics\-finite\-multivariate | ok | 1 | 2026-11-21T20:01:46Z |  |
+| zenodo/families | ok | 2 | 2026-11-21T20:01:46Z |  |
+| zenodo/irreducibility\-galois | ok | 1 | 2026-11-21T20:01:46Z |  |
 
 ## Unreviewed discoveries and changes
+
+### Local Fields
+
+- Event: `478a6a101db99c14bf9d` (changed, detected 2026-11-21T20:01:46Z)
+- Source: crossref; version: metadata only
+- Link: <https://doi.org/10.1007/978-1-4757-5673-9>
+- Existing reference keys: Serre1979
+- Possible affected pages: `articles/ramification-inertia.html#cubic-certificate`, `articles/ramification-inertia.html#simple-discriminant-prime`, `articles/ramification-inertia.html#tame-cycles`
+- Check the exact statement, definitions, version history and corrections before proposing text.
 
 ### Subsets of F\_p with two prescribed moments, Part I: the pair \(1,3\) — a moment subset sum over F\_p: exact counts of totally split squarefree polynomials with a non\-consecutive pair of prescribed coefficients, and exactly when those counts are elementary
 
@@ -1281,15 +1290,7 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### The distribution of $απ$ modulo one in $\\mathbb\{F\}q\(T\)$: beyond Matomäki's exponent
-
-- Event: `e3074e708d6323ad4b1e` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v2
-- Link: <https://arxiv.org/abs/2611.00623v2>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-Showing the latest 150 of 611 events; state.json retains the complete queue.
+Showing the latest 150 of 612 events; state.json retains the complete queue.
 
 ## Record totals
 
