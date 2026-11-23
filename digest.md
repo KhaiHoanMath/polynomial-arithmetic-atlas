@@ -1,6 +1,6 @@
 # Literature watch
 
-Last attempted scan: 2026-11-22T20:04:46Z
+Last attempted scan: 2026-11-23T20:15:38Z
 
 Metadata leads for editorial review. A match or changed file does not verify a mathematical claim. Baselines record existing sources; they are not new publications.
 
@@ -8,37 +8,125 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 
 | Source / query | Result | Items | Last complete check | Detail |
 |---|---|---:|---|---|
-| arxiv/dynamics\-finite\-multivariate | ok | 2 | 2026-11-22T20:04:46Z |  |
-| arxiv/irreducibility\-galois | ok | 3 | 2026-11-22T20:04:46Z |  |
-| arxiv/named\-families | ok | 7 | 2026-11-22T20:04:46Z |  |
-| conrad\-notes/page | ok | 1 | 2026-11-22T20:04:46Z |  |
+| arxiv/dynamics\-finite\-multivariate | ok | 6 | 2026-11-23T20:15:38Z |  |
+| arxiv/irreducibility\-galois | ok | 4 | 2026-11-23T20:15:38Z |  |
+| arxiv/named\-families | ok | 3 | 2026-11-23T20:15:38Z |  |
+| conrad\-notes/page | ok | 1 | 2026-11-23T20:15:38Z |  |
 | crossref/arboreal | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/galois | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/irreducibility | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| existing\-arxiv | ok | 100 | 2026-11-22T20:04:46Z | Rotating batch: 100 attempted of 147 registered\. |
-| existing\-corrections | failed | 2 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 285 registered\. 10\.1007/bf03027290: HTTPError: HTTP Error 429: Too Many Requests; 10\.1007/bfb0060799: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1007/bfb0063135: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1007/s00013\-022\-01766\-6: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1007/s00145\-004\-0221\-0: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1007/s00209\-025\-03717\-7: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1007/s00220\-025\-05522\-z: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1007/s00222\-023\-01193\-6: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1007/s00454\-001\-0024\-0: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1007/s00493\-020\-4657\-0: RuntimeError: Host temporarily skipped after network |
-| existing\-doi | ok | 50 | 2026-11-22T20:04:46Z | Rotating batch: 50 attempted of 285 registered\. |
+| existing\-arxiv | ok | 100 | 2026-11-23T20:15:38Z | Rotating batch: 100 attempted of 147 registered\. |
+| existing\-corrections | failed | 4 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 285 registered\. 10\.1016/j\.jnt\.2020\.02\.013: HTTPError: HTTP Error 429: Too Many Requests; 10\.1016/j\.jnt\.2020\.09\.002: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1016/j\.jnt\.2020\.11\.002: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1016/j\.jnt\.2021\.12\.009: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1016/j\.jnt\.2022\.04\.001: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1016/j\.jnt\.2022\.05\.001: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1016/j\.jnt\.2025\.09\.008: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1016/j\.jpaa\.2003\.10\.028: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1016/j\.jpaa\.2018\.05\.005: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.1016/j\.jpaa\.2021\.106717: RuntimeError: Host temporarily sk |
+| existing\-doi | ok | 50 | 2026-11-23T20:15:38Z | Rotating batch: 50 attempted of 285 registered\. |
 | existing\-non\-crossref | not-covered | 0 | never | 12 known non\-Crossref DOIs excluded from Crossref checks; arXiv identifiers are checked separately; other repository updates require editorial follow\-up |
-| filaseta\-preprints/page | failed | 0 | 2026-11-20T20:15:58Z | URLError: |
-| hal/dynamics\-finite\-multivariate | ok | 1 | 2026-11-22T20:04:46Z |  |
-| hal/families | ok | 0 | 2026-11-22T20:04:46Z |  |
-| hal/irreducibility\-galois | ok | 5 | 2026-11-22T20:04:46Z |  |
-| hexagon/polynomial\-arithmetic | ok | 0 | 2026-11-22T20:04:46Z |  |
+| filaseta\-preprints/page | ok | 1 | 2026-11-23T20:15:38Z |  |
+| hal/dynamics\-finite\-multivariate | ok | 4 | 2026-11-23T20:15:38Z |  |
+| hal/families | ok | 0 | 2026-11-23T20:15:38Z |  |
+| hal/irreducibility\-galois | ok | 3 | 2026-11-23T20:15:38Z |  |
+| hexagon/polynomial\-arithmetic | ok | 0 | 2026-11-23T20:15:38Z |  |
 | journal\-finite\-fields/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | journal\-number\-theory/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| juul\-research/page | ok | 1 | 2026-11-22T20:04:46Z |  |
-| milne\-course\-errata/page | ok | 1 | 2026-11-22T20:04:46Z |  |
-| milne\-course\-notes/page | ok | 1 | 2026-11-22T20:04:46Z |  |
-| milne\-galois\-errata/page | ok | 1 | 2026-11-22T20:04:46Z |  |
-| pdf\-conradfinitetests/page | ok | 1 | 2026-11-22T20:04:46Z |  |
-| pdf\-conradirredq/page | ok | 1 | 2026-11-22T20:04:46Z |  |
-| pdf\-conradsnan/page | ok | 1 | 2026-11-22T20:04:46Z |  |
-| pdf\-milne2020ant/page | ok | 1 | 2026-11-22T20:04:46Z |  |
-| zenodo/dynamics\-finite\-multivariate | ok | 1 | 2026-11-22T20:04:46Z |  |
-| zenodo/families | ok | 2 | 2026-11-22T20:04:46Z |  |
-| zenodo/irreducibility\-galois | ok | 1 | 2026-11-22T20:04:46Z |  |
+| juul\-research/page | ok | 1 | 2026-11-23T20:15:38Z |  |
+| milne\-course\-errata/page | ok | 1 | 2026-11-23T20:15:38Z |  |
+| milne\-course\-notes/page | ok | 1 | 2026-11-23T20:15:38Z |  |
+| milne\-galois\-errata/page | ok | 1 | 2026-11-23T20:15:38Z |  |
+| pdf\-conradfinitetests/page | ok | 1 | 2026-11-23T20:15:38Z |  |
+| pdf\-conradirredq/page | ok | 1 | 2026-11-23T20:15:38Z |  |
+| pdf\-conradsnan/page | ok | 1 | 2026-11-23T20:15:38Z |  |
+| pdf\-milne2020ant/page | ok | 1 | 2026-11-23T20:15:38Z |  |
+| zenodo/dynamics\-finite\-multivariate | ok | 1 | 2026-11-23T20:15:38Z |  |
+| zenodo/families | ok | 2 | 2026-11-23T20:15:38Z |  |
+| zenodo/irreducibility\-galois | ok | 1 | 2026-11-23T20:15:38Z |  |
 
 ## Unreviewed discoveries and changes
+
+### Secure Distributed Matrix Multiplication with Precomputation
+
+- Event: `fb705aab1187f83707a4` (changed, detected 2026-11-23T20:15:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2405.06121v3>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Arboreal Galois Groups of a PCF Map with Strictly Pre\-periodic Critical Points
+
+- Event: `e32f7f5cb8637165b3a6` (new, detected 2026-11-23T20:15:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2605.22466v3>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/branched-covers.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### A Learning\-Enhanced Control Scheme for Aerial Manipulator Under Composite Disturbances
+
+- Event: `ca886d7cde86bcef27cc` (new, detected 2026-11-23T20:15:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.27048v1>
+- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Splitting types of Richelot isogenies over finite fields and a newform of weight four
+
+- Event: `ac603586f1b2ec2c7f3f` (new, detected 2026-11-23T20:15:38Z)
+- Source: arxiv; version: v1
+- Link: <https://arxiv.org/abs/2611.27775v1>
+- Possible affected pages: `articles/discriminants.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### The monogenicity of $\\boldsymbol\{x^n\+c\\sum\_\{j=0\}^\{n\-1\}a^\{n\-j\-1\}x^j\}$
+
+- Event: `9d1c6380f7f57c0ec50c` (changed, detected 2026-11-23T20:15:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2611.20332v2>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Finite speed Ornstein\-Uhlenbeck\-Kac processes and their applications in generative modeling
+
+- Event: `8c6f210f0f8d3f47bc43` (changed, detected 2026-11-23T20:15:38Z)
+- Source: arxiv; version: v2
+- Link: <https://arxiv.org/abs/2611.17625v2>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Variοus density questiοns in the theοry οf Lucas sequences; Questions de densité diverses en théorie des suites de Lucas
+
+- Event: `663842c0e6b27506d94b` (new, detected 2026-11-23T20:15:38Z)
+- Source: hal; version: 1
+- Link: <https://theses.hal.science/tel-05418349v1>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/sparse-finite-fields.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### New Nonbinary Quantum Codes from Quasi\-Twisted Codes with Scalar and Matrix Twists
+
+- Event: `5f5fa8659703f8c59d6a` (new, detected 2026-11-23T20:15:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2412.13613v3>
+- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Cosmological Collider in the Grassmannian
+
+- Event: `246e21372f757e60fc6c` (new, detected 2026-11-23T20:15:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2605.21581v3>
+- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Reflection invariance of the periodic Bernoulli polynomials and the spectral derivation of the zeta functional equation
+
+- Event: `0e7c70a18edbc94cf93c` (new, detected 2026-11-23T20:15:38Z)
+- Source: zenodo; version: 1\.0
+- Link: <https://zenodo.org/records/24450142>
+- Possible affected pages: `articles/bernoulli-euler.html`, `articles/branched-covers.html`, `articles/chromatic-polynomials.html`, `articles/critical-points-monodromy.html`, `articles/ehrhart-polynomials.html`, `articles/eulerian.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/specialization.html`, `articles/stern-polynomials.html`, `articles/touchard.html`, `articles/truncated-binomial.html`, `articles/tutte-polynomials.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Relative Tate\-Shafarevich kernel of a reductive group over a global field
+
+- Event: `0410f24d8ae92b8a234d` (changed, detected 2026-11-23T20:15:38Z)
+- Source: arxiv; version: v3
+- Link: <https://arxiv.org/abs/2611.04773v3>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
 
 ### Eventual irreducibility and Galois groups of Gegenbauer polynomials
 
@@ -1202,99 +1290,11 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### Evaluation of a Double Integral with Exponentials and Two Generalized Laguerre Polynomials and Its Associated Moments
-
-- Event: `ee4fb261c949ce990120` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v1
-- Link: <https://arxiv.org/abs/2610.35995v1>
-- Possible affected pages: `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### An Equivariant Main Conjecture for Branched $\\mathbb Z\_p$\-Towers of Finite Graphs and Applications
-
-- Event: `ed98ce4eafcdf1ea91bd` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v2
-- Link: <https://arxiv.org/abs/2610.27551v2>
-- Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/discriminants.html`, `articles/exceptional-specializations.html`, `articles/frobenius.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`, `articles/specialization.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The Legendre potential and the gradient case of the differential Galois criterion for the Jacobian Conjecture
-
-- Event: `ec1513abd1f735773a58` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v1
-- Link: <https://arxiv.org/abs/2610.36736v1>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Edge universality of sparse Erdős\-Rényi digraphs
-
-- Event: `e918b62f49f4021200fd` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v7
-- Link: <https://arxiv.org/abs/2304.04723v7>
-- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Reflection equations and Littlewood identities for spin Hall\-Littlewood and $q$\-Whittaker functions
-
-- Event: `e7526cce91ce63d819ac` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v1
-- Link: <https://arxiv.org/abs/2610.36644v1>
-- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Equidistribution, multipliers, and moving targets in polynomial families
-
-- Event: `e71e8c38eec48c6b2472` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v1
-- Link: <https://arxiv.org/abs/2610.25509v1>
-- Possible affected pages: `articles/arboreal-galois.html`, `articles/capelli-composition.html`, `articles/composition-iteration.html`, `articles/critical-parameter-polynomials.html`, `articles/polynomial-decomposition.html`, `articles/polynomial-stability.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### The bigraded Frobenius series of the wreath product superspace coinvariant rings
-
-- Event: `e6f8de9a998e566f2d47` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v1
-- Link: <https://arxiv.org/abs/2610.38875v1>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Enhanced Dissipation by Transport Noise for Stochastic $p\(x\)$\-Laplace Equations
-
-- Event: `e5d00bb1028a24c24c40` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v2
-- Link: <https://arxiv.org/abs/2610.21242v2>
-- Possible affected pages: `articles/finite-field-bases.html`, `articles/finite-field-constructions.html`, `articles/finite-field-factorization-statistics.html`, `articles/finite-field-irreducibility.html`, `articles/finite-field-structure.html`, `articles/sparse-finite-fields.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Invariant pseudo\-unitary matrix ensembles and local statistics and conductance fluctuations of the DMPK ensemble
-
-- Event: `e522f91f5d4612c6da44` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v1
-- Link: <https://arxiv.org/abs/2610.27532v1>
-- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Whittaker groups and hyperelliptic curves
-
-- Event: `e46191b4582b0b1786e6` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v2
-- Link: <https://arxiv.org/abs/2605.22406v2>
-- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Harper's beyond square\-root conjecture for random matrices
-
-- Event: `e38731386d2b04d1c6c2` (new, detected 2026-11-13T20:10:38Z)
-- Source: arxiv; version: v2
-- Link: <https://arxiv.org/abs/2611.09753v2>
-- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-Showing the latest 150 of 613 events; state.json retains the complete queue.
+Showing the latest 150 of 623 events; state.json retains the complete queue.
 
 ## Record totals
 
-988 source records; 923 groups linked by exact identifiers. Similar titles alone are not merged.
-21 records screened out of the current review queue; their observation history is retained.
+995 source records; 930 groups linked by exact identifiers. Similar titles alone are not merged.
+22 records screened out of the current review queue; their observation history is retained.
 
 Metadata and webpage monitoring are selective. Failed or truncated scans retain their previous checkpoint. The weekly editor also searches outside this source register.
