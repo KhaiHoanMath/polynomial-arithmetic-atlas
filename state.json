@@ -9282,9 +9282,33 @@
       "kind": "changed",
       "record": "hexagon:2610.00468",
       "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-27T20:15:34Z",
+      "fingerprint": "f395846889cf43115aabe230ef0bda9736dd39c7eb207fc96ec73264d9d854fe",
+      "id": "068d1a2836cca08f40fc",
+      "kind": "new",
+      "record": "zenodo:24572663",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-27T20:15:34Z",
+      "fingerprint": "1ea4c969269ac8c93f937de34877aee931971380fe2a0e46a1849c4360c812c3",
+      "id": "b8b23a60828213b214a7",
+      "kind": "new",
+      "record": "zenodo:24575886",
+      "review_status": "unreviewed"
+    },
+    {
+      "detected_at": "2026-11-27T20:15:34Z",
+      "fingerprint": "e6ef457c837b11424ef510c6ae6c5346704195c597628ed56b3b6759358afc14",
+      "id": "18d243795311bc1b0be5",
+      "kind": "new",
+      "record": "zenodo:24574410",
+      "review_status": "unreviewed"
     }
   ],
-  "last_run": "2026-11-26T20:20:41Z",
+  "last_run": "2026-11-27T20:15:34Z",
   "last_run_complete": false,
   "records": {
     "arxiv:0707.1835": {
@@ -9309,7 +9333,7 @@
       "exact_reference": true,
       "fingerprint": "a7bbf3ef3d4ef0274b46b739a0b96b109f00a1f9f525fd1092a5507c8c535acb",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "f6a933f1fb331e692736e32daede31c59cdaa7b48e97317a83d0506d4f0484b8",
         "arxiv": "0707.1835",
@@ -9388,7 +9412,7 @@
       "exact_reference": true,
       "fingerprint": "dfb494f1000f6dccfaa701465666780252ad1fbad0b19c30b796564502902e2d",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "e8f9e2a1eec708ca385fc246db7f8da36823065caadde27cff49f9d5a3404dd5",
         "arxiv": "0807.2620",
@@ -9464,7 +9488,7 @@
       "exact_reference": true,
       "fingerprint": "7df2b58a7d6b48a21ae171199d411c596020be0404ef2c4fb27ae3eaabff3ac3",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "24c4f4b48f1c9f2b7dcc38e228d1e50b10fbb33649747454de6d713435c46160",
         "arxiv": "0807.3578",
@@ -9542,7 +9566,7 @@
       "exact_reference": true,
       "fingerprint": "5a2ba37bcf3a5ca7dd1e0b84565440b3e5f7764b68fa9fc439dc942fd1c44c7e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "b9d852b361c576b0b9c6423cac2ad6f5c4380207a78c2b3347298d7a63cfea5b",
         "arxiv": "0811.4029",
@@ -9619,7 +9643,7 @@
       "exact_reference": true,
       "fingerprint": "718a47fe8b74946dbe533a77f9bebd0bcbaa3adc803f36c5bd942ac73c715cd8",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "872fa7c4f80ef1bcd45fbd92275f390c448934e043f656788725fab333d669ac",
         "arxiv": "0911.0286",
@@ -9696,7 +9720,7 @@
       "exact_reference": true,
       "fingerprint": "a72676b0a5c0935aa3066e99544203c91c75af2dbdc501bbdec5a0fc8124093e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "8382d860835756644b1f1352012a456a9f2c6a3e921d316b9d7288f44787e499",
         "arxiv": "1001.3079",
@@ -9757,7 +9781,7 @@
       "exact_reference": true,
       "fingerprint": "c455f420fa13faa6985b90d0f46e2bb59c91bfdab8f01f5d09c1a008da602254",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "cd3c7d5b809ec5627afbaf6474e4d95b0b513a4c6d6a4081ad7de872163c59cc",
         "arxiv": "1004.3813",
@@ -9819,7 +9843,7 @@
       "exact_reference": true,
       "fingerprint": "4b18baf631f1d6fcab4e1b99772e5eeafacfb2a8067c1c055c3e56d5d59e07ff",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "be78915880631af76f3af04f9fdc570ec9cb2e27ee934ac57d6179916917dad1",
         "arxiv": "1005.2695",
@@ -9900,7 +9924,7 @@
       "exact_reference": true,
       "fingerprint": "41e24259a0774a7e301efb7149d6a7216872778185e37f194e53f301afb876a2",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "b3956a4ab13909083af9f28033e962a727be144c4d4d61f9eac947e0d1a90ae1",
         "arxiv": "1006.3869",
@@ -9972,7 +9996,7 @@
       "exact_reference": true,
       "fingerprint": "70d937374558a26af2226893b12076063cc617a4f923bfa747b1b309d4fd7293",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a8d85546b6fc25d242d8b8f1841e53c4bc6ca328fbd38f75f54a89a34438a7e2",
         "arxiv": "1009.5388",
@@ -10041,7 +10065,7 @@
       "exact_reference": true,
       "fingerprint": "746e7d157deaaf63e2356377f8d7b93d1b9378970ed5d624c9129802c8d2d367",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "0b85d81d8fc7af9d7e0fc85a4e7381307ee474d11337196b46e63bbfb254a03f",
         "arxiv": "1010.5341",
@@ -10124,7 +10148,7 @@
       "exact_reference": true,
       "fingerprint": "de6c116911a8b35ae203f3c23eacf659e27493afc4b6059d70a50cfa57f58dcc",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "41ac65c3895b288693873d31b90a7a6a88853e654d665d1dae70a863f651ee52",
         "arxiv": "1012.2857",
@@ -10196,7 +10220,7 @@
       "exact_reference": true,
       "fingerprint": "5263ae381af4e2be2398df2f061795048de03c999dc35f82fa9aed2e238aedb1",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "97d3591b220447319506957bf7fd84d7bd1c0c6cd25cc52764ed92c3585ae34f",
         "arxiv": "1106.6151",
@@ -10267,7 +10291,7 @@
       "exact_reference": true,
       "fingerprint": "56afaec2200770512a7d231b2cb0b65e8a4649fee24e816a59b94d1a27e192d7",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "88d43405c9c626c68ce5d6e36b256de27215658d927233957d6f41ca853b7df2",
         "arxiv": "1205.3420",
@@ -10336,7 +10360,7 @@
       "exact_reference": true,
       "fingerprint": "6ba5b37b6f51ddced96888974091bcb28ae1c1e788865d9c39f1bb9f7b52eb51",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "82615af2b47204c1050df2b260c4bf1b7395eda7c91572936d8897afa598993d",
         "arxiv": "1209.5169",
@@ -10415,7 +10439,7 @@
       "exact_reference": true,
       "fingerprint": "da4e889c4b76b7fbf4ec5fd566cffe13e8cf1232f9f58e4013f7a897887cbe14",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "58efd90b7e9d24af16abbe80508619facdc2be73adc82b343f8427a1b4a96a2a",
         "arxiv": "1210.7157",
@@ -10497,7 +10521,7 @@
       "exact_reference": true,
       "fingerprint": "0787b5fc649847a4f1dcfcaaf12cddecb535698e18739c8de5bfda32373a8809",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "c2ea00303d5be8c68259673f5cd6d60ffef1f425d25ca3fee871565a3771dae1",
         "arxiv": "1211.3588",
@@ -10572,7 +10596,7 @@
       "exact_reference": true,
       "fingerprint": "6a8f9adcee9f53e1f53ce592dc93b85a125097437d79d17211c535bc61af2cf6",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "2c301d9995a3e0596670b91a23bfc0ea99d8b710d811be3cf1d6f8c62b9fb308",
         "arxiv": "1302.0625",
@@ -10637,7 +10661,7 @@
       "exact_reference": true,
       "fingerprint": "2548ae83669035891b4dcd60619f70d6f0d67c9d64bec71aefc6675024b6364e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "364da342395e9cbc87f8a85cbbef39547cb0bddf5e8fb9236011f1edd1c6fa1d",
         "arxiv": "1303.6513",
@@ -10710,7 +10734,7 @@
       "exact_reference": true,
       "fingerprint": "224920c250a2d436716eadc6473460e031c9c1b9af88a6c108045ea24849d7d8",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a90c49e11f950b14084f01c1324594e14bd389322f6a680c8e3a8aed519e5d82",
         "arxiv": "1304.0874",
@@ -10789,7 +10813,7 @@
       "exact_reference": true,
       "fingerprint": "da4e55ae7a1217d585c345a22d53bcc303217be61dfd4ae3358410370e9ff4f3",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "354917cb70be045ce71a2bc85e9129028488200c49ba9f37ea7d6d23d98ecb6b",
         "arxiv": "1305.0222",
@@ -10944,7 +10968,7 @@
       "exact_reference": true,
       "fingerprint": "f8abc02b457500ad6a2fde373e6ba2407efe8f54e8b3a99ef9375a5fd48231cd",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "468ed4397d085d2c599d609ba94785341611777e479ed6f56366b39c736b8ea7",
         "arxiv": "1402.6018",
@@ -11013,7 +11037,7 @@
       "exact_reference": true,
       "fingerprint": "8a34693d034e823ff1a537240ba2a6aad7904b0d87311480e8c74236636eb56d",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "9f18e940d66f14206c56ae7e38504b0470fc5292b2cfbd883514420b1742999a",
         "arxiv": "1409.2034",
@@ -11092,7 +11116,7 @@
       "exact_reference": true,
       "fingerprint": "446333ec479ed01941476ec1e3f477bfccaf22cdd251d0337b00cd01ec812450",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "85d85cb277841a9217d486120a0919cd2dc9d21fdf42ab30bd749210c20625e2",
         "arxiv": "1410.3814",
@@ -11160,7 +11184,7 @@
       "exact_reference": true,
       "fingerprint": "d50f604b8e9de545c00e617520f7ebef31da573cd27bd7a492a452e89cb4bb1e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a96626a48aba596967cb761b728454d7072869c0339433a7ba44ddbdb75f94b7",
         "arxiv": "1508.01870",
@@ -11232,7 +11256,7 @@
       "exact_reference": true,
       "fingerprint": "a8bfa88f9729e1ae3fdb110df38c36d6d94410e78760a3fb38b52fb23748f4f6",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "87db9155c81b610a962f1070bbbe2c3cc482ef0b73de51050e34c5e1990bc872",
         "arxiv": "1601.06867",
@@ -11297,7 +11321,7 @@
       "exact_reference": true,
       "fingerprint": "98bb9002d641b6418016afe933c88497d99015e970503d2dd1e2113ea2ca1b74",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "804d7f329d04acb43434bb4c69b648d61cbef2cfd3614903509213a1e3095562",
         "arxiv": "1603.00673",
@@ -11366,7 +11390,7 @@
       "exact_reference": true,
       "fingerprint": "cf37dcf0a8c97b38cd80f782a7a0a414b4b04e6e502c04a19921d62eb2b9925f",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "f8729b73a77ba3a38a07461da8ca45d98fc9fb8a13ad2b24e939d239a8236009",
         "arxiv": "1603.03811",
@@ -11447,7 +11471,7 @@
       "exact_reference": true,
       "fingerprint": "31cbbe9195ad17423562f0f90458dff1bf1e3acab5b39ba2916abe2c7cba5a4e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "8d82207b6cb25cc66f3b30249253486359258fadd0e705acd2426b34041a429e",
         "arxiv": "1604.04023",
@@ -11510,7 +11534,7 @@
       "exact_reference": true,
       "fingerprint": "70adb1bf35e10660f3b4d53b9cacd2a5d47b403566aff8c121bf84bcb69b1c53",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "1ce11e45513d61efffec3927c5bf9567459e218b42c6e2ac4d03bc3ffeae87e8",
         "arxiv": "1605.01068",
@@ -11581,7 +11605,7 @@
       "exact_reference": true,
       "fingerprint": "3d62b9be4a4c7bf7f90bad4ba79c354504313d8cbe4e66608b48cc0fa36af6d7",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "cae1474d3aa1f95d9926db16592a96c7ac61646d1ced8fa023b9f2e438dc9d68",
         "arxiv": "1606.04592",
@@ -11653,7 +11677,7 @@
       "exact_reference": true,
       "fingerprint": "8d174f906c02aafb0dffbba6161d22873cecac77372ff87da499094cbc398345",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "575a2dd76b31fd8981e83c5cd2c39ac1d8b272aef9d8b3df0a9d3ec64685fe0b",
         "arxiv": "1608.01938",
@@ -11734,7 +11758,7 @@
       "exact_reference": true,
       "fingerprint": "e1747d392ddde348ef72c226f83c91247eaf835250adb80cf9c22a64111b8587",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "1a79d98e559905e2f82a0510dcae78d8416dc6d16733fec3a3f812355576d2b6",
         "arxiv": "1609.03398",
@@ -11811,7 +11835,7 @@
       "exact_reference": true,
       "fingerprint": "a70c7fdbbf8f163ca18be73b66826affa53029a98370cc8afdf75ecc5a78f6fb",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "0b33f6f2bfd12ac9c3877aa7cff5a932e491bfb2e1fb0100ab3ba11e76d8a7a9",
         "arxiv": "1610.00424",
@@ -11881,7 +11905,7 @@
       "exact_reference": true,
       "fingerprint": "f9af1eb2769f83892a7b5e06a3d74ad1fc9441c9396d253f45f7721e8a8d7a1c",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "53ba984705685fc3548149576de1afa34aa2ac8de4216da6bb4b28b963f56e3f",
         "arxiv": "1705.03709",
@@ -11964,7 +11988,7 @@
       "exact_reference": true,
       "fingerprint": "2a9679c49dc06e211056ebd95d0e6177f6890e5b5b7aaadce2d5c13d94e36506",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a0d073f2a28a7cfe133c591925030b3adaeb027304c7a117d764a58d56b398c6",
         "arxiv": "1707.02501",
@@ -12041,7 +12065,7 @@
       "exact_reference": true,
       "fingerprint": "320b94b00987611bb119186477b08e6487a9a3729eed64bca0511a41963ffe68",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "33872de53f1a2b5e2a961bbbf1af9207a6da69b908b5824550b42b483eff9305",
         "arxiv": "1708.04932",
@@ -12120,7 +12144,7 @@
       "exact_reference": true,
       "fingerprint": "2d0ce6e84ad6bb570287a149961c6e90859e8ba6e3bce937d2e8795501fb8995",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "f2de143cad842cf9c3041d9f17d464085497897373dad7fdcddb73d28bbdeeb7",
         "arxiv": "1709.03094",
@@ -12206,7 +12230,7 @@
       "exact_reference": true,
       "fingerprint": "6fe911ede2b5d7fef6c31c671670c1a4b6ac7270e81a76916abdaed25a0fe736",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "fd058d21f484e426242a3e955692a1b981b78ca18aaa919b1c8e8f2b367a2d70",
         "arxiv": "1710.05165",
@@ -12278,7 +12302,7 @@
       "exact_reference": true,
       "fingerprint": "8a9279fc584744b0e40ffaab99bd724021c67a06c926ce8d2778691e14390712",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "1c292e4255f0b00b1ed1840028b62a0db0747f221b625f145a18c21c0166cc5e",
         "arxiv": "1711.06243",
@@ -12362,7 +12386,7 @@
       "exact_reference": true,
       "fingerprint": "e3ba02e7875184264e008790d55e93d5985ad79d634688953a73553dda6c31b6",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "23b366ca1b4d04547560b9e69e2f1a5f09a17693a5674630d7159505eb240ead",
         "arxiv": "1802.09074",
@@ -12440,7 +12464,7 @@
       "exact_reference": true,
       "fingerprint": "5399b4c8b8428466942767128885cd866a13cd9adce8f7434e2efdc31fbc009c",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "5702232880736d60aba5fff41c659de76676247d5b83cd00b11a7b4177f070fb",
         "arxiv": "1803.00434",
@@ -12516,7 +12540,7 @@
       "exact_reference": true,
       "fingerprint": "f698a29a9fbc5fc7a113778f377f831bc0b00d47a843696e98d80607e50c940d",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "feb6eb664497076391a20bb7f7af362d216cfbdb6cb6344b03be9f39045f015c",
         "arxiv": "1803.01987",
@@ -12586,7 +12610,7 @@
       "exact_reference": true,
       "fingerprint": "88ea5ccc6f65f607e235cb31acaf5e054b343fd6f21af9b02f1ab8e50d7aabd2",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a8a27ec3afcc29f0822f4e349985f96f9dcd03d3aa20c921f6124d5500120667",
         "arxiv": "1803.02823",
@@ -12654,7 +12678,7 @@
       "exact_reference": true,
       "fingerprint": "a7e32d5187a28d990007809225ec692c87c3ee3c2a019d9d144eac8a6ab0d284",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "9bf194dc3d167197d214638ddc1d253ea24ec4af21213ebe4068d0282a400947",
         "arxiv": "1803.10811",
@@ -12723,7 +12747,7 @@
       "exact_reference": true,
       "fingerprint": "2af6b632fa75d0f1f0f3ea3553098d1a7d10a8eada1236ac402be5551425305b",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "1de4c4524000259633728751957753fcbd38d5012681ab4e74e816407df94d87",
         "arxiv": "1805.10361",
@@ -12807,7 +12831,7 @@
       "exact_reference": true,
       "fingerprint": "183013e56b49774ccc6ee2509b16c13116f6f92f3f49e6758aede53a6e8b915c",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "d786c28a692efba8ca43467fa3a1b524d8f4a3cc2cc5b33a7ec6c67d7a7ba47c",
         "arxiv": "1805.11152",
@@ -12880,7 +12904,7 @@
       "exact_reference": true,
       "fingerprint": "aaa47ac16613c12ab5138680df1903db0bb5c9a753ec5b980417666c397be1b2",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "96771e56c2b12bacb5c89a5072831728e27b28f0a7aa948ddca02c38624df223",
         "arxiv": "1807.05820",
@@ -12953,7 +12977,7 @@
       "exact_reference": true,
       "fingerprint": "32c337f9348195c35e7dfa00fad87e555a6acbe5a23c393287c2af12bab15dd9",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "46004d184c55c1a1d8462bcbd9fca7602b940536a39b3ebe903cb99692674a74",
         "arxiv": "1808.06655",
@@ -13031,7 +13055,7 @@
       "exact_reference": true,
       "fingerprint": "98978edb7ad230dbdbc110ad33b9367e32c1b071deb54e1b885b58c4a9d12308",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "471e4e136b1e1953bc86ed4b3b43847719842ef076a0a7719b72f634de51a279",
         "arxiv": "1810.07512",
@@ -13180,7 +13204,7 @@
       "exact_reference": true,
       "fingerprint": "a4f4b670f7cda9a5017a34453377ce824688e49871c85976412cadfe67954cb5",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "2ec4dc69c528e0be89dfdec58b3235d3d05fd13b3e63a1e2626c7ba163aaa553",
         "arxiv": "1810.13360",
@@ -13244,7 +13268,7 @@
       "exact_reference": true,
       "fingerprint": "6dfee672b4708876dd44525962b942dbc576c390aa585bb295c1bb01f87b4c91",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a8aa3bdb0bcabc4c551a96099116085931aacf8e567af39e1da103a74e1b367c",
         "arxiv": "1811.08601",
@@ -13320,7 +13344,7 @@
       "exact_reference": true,
       "fingerprint": "5caa8c5f83679140a1239f9b9be73c18542729eb9f2090a8037f76ca00713a6a",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "cb35e30d9f417e24364b45d9b8d25361e9bf76030e18b6459152e8dc2a5828d7",
         "arxiv": "1901.01071",
@@ -13393,7 +13417,7 @@
       "exact_reference": true,
       "fingerprint": "a00a17c96fdaa88bf030c487dbed2a2e329bbadbfdb7a583e6bfd53970006666",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "78deed8cda9444d4ac4dc3f220af0fb49b2f660063b2563554aafc371cf182f6",
         "arxiv": "2003.05834",
@@ -17894,7 +17918,7 @@
       "exact_reference": true,
       "fingerprint": "d8d1876b411c5224f5defbc9cf8aa697fd8f2a8f31052799eef70fa95180b4c7",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "21c180a113a9cdad3d77c9ed2e09d3da25681fd787857ca6987fe35766649f2b",
         "arxiv": "2505.08935",
@@ -18545,7 +18569,7 @@
       "exact_reference": true,
       "fingerprint": "bb3ae67590ca82c9f831e080dc61eaf921511a1762f3eca7fe56f3ca5347f1ba",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "689c7cb456647a34a3d4c35c5c17d30883c7351c10d62bf3ed82096958a228ee",
         "arxiv": "2507.16138",
@@ -18754,7 +18778,7 @@
       "exact_reference": true,
       "fingerprint": "bb0ff087fb04ff86c5d167b406f646c6d7e523dece6cb2d69cc8271ba89b81b0",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "7c7de440df7fcb3b1874484c276b2a3b5a1c7f8e74ab0639b973b48f55b2f94d",
         "arxiv": "2508.12924",
@@ -19052,7 +19076,7 @@
       "exact_reference": true,
       "fingerprint": "ff67aed1cea2ff433a12341bbd2e1a6e754e42b73e0c67c7345cd7eee6c13f7e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "0acaeb32206030df24aa622612a33a383c550745b4cbd5058adcf0246f36f9e5",
         "arxiv": "2510.05658",
@@ -19344,7 +19368,7 @@
       "exact_reference": true,
       "fingerprint": "fc0d78980e1a04535f1a841ad2849cc3d01bdabfd25ff09c3741161496b56377",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "8b7e3645cfd18240ddb3cb8a04a984cbda3151dd274de9ce4369beb6a1cf6cca",
         "arxiv": "2510.18857",
@@ -19488,7 +19512,7 @@
       "exact_reference": true,
       "fingerprint": "30c4b8c8046d943a7f65877971818ac96f571272bcdecb4b62046cf6c24ce2da",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "6d5dd399b3e648b18c797a96a9409d52408257049f6fcf67ecc1c23d489fcf12",
         "arxiv": "2511.03847",
@@ -19558,7 +19582,7 @@
       "exact_reference": true,
       "fingerprint": "b8190a0d837b81c944658b63c1021d4be7133194ef8053709b4a0648b26c6cda",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "ca084cc86d8e03551f555ce9328cd8fe96deef28895fd3d423133cf20a4d27e1",
         "arxiv": "2511.04240",
@@ -19629,7 +19653,7 @@
       "exact_reference": true,
       "fingerprint": "a60fb79a317be63cca13d8d65122af5fa2e7520fecd0f784ca8988362ba1c020",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "525295453d3a21f946078e5155e847d5a994dc3af612277178016852033a4c9b",
         "arxiv": "2511.10851",
@@ -19896,7 +19920,7 @@
       "exact_reference": true,
       "fingerprint": "51d372042df0146279b53d6762c070ad063b4d2371b1826b207348283caf65c3",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "9c2fc263c63c24f88fd55e271ed0893c1c210b4cfa1ff9f05f13dc8c1bd2b9d2",
         "arxiv": "2601.17422",
@@ -19967,7 +19991,7 @@
       "exact_reference": false,
       "fingerprint": "55bc545229f9870f46d43afc0afb4405356735cdd35fc6639e101ef3b84cfc99",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "dec555bab6c78e24e0b21431b75e6820656b3eadeae41ccb874e541255f5c898",
         "arxiv": "2601.20152",
@@ -20102,7 +20126,7 @@
       "exact_reference": true,
       "fingerprint": "131b5443bd4053f6787855249d8bda34d929c9e1c72ba535450cefa488c15e00",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "f31330513ea961ba4436ce06feb40a73affeb1fc8f8cbd6f09a2952e812c6fcc",
         "arxiv": "2602.06943",
@@ -20307,7 +20331,7 @@
       "exact_reference": false,
       "fingerprint": "819cce31c0e95822bb4ab242f11c437f4e52351e1df6ef450b6e244bd9f7bb95",
       "first_seen": "2026-11-25T20:14:30Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "fa6664728b7a92b411ce5ea9914f9c5d8a796d1734528f62a4723e7c73b64690",
         "arxiv": "2603.01886",
@@ -20511,7 +20535,7 @@
       "exact_reference": true,
       "fingerprint": "c53ef4e7154820f4790732dbe33b6313fa43e7cd832bea70ba661f0ecfdc4e7d",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "c4c0b72b1e8a477bac41d0c478cda4687e755ff7934135d35b8dc72f07e905d1",
         "arxiv": "2603.07589",
@@ -20580,7 +20604,7 @@
       "exact_reference": true,
       "fingerprint": "09f6d458c7937a085dadabac0b88afde5be11059d88e8418d64751819ff0c576",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "3b6ee11e139f72c7d385de3cc5e6fcb90355509c47aa83c0313c6f55ccb70173",
         "arxiv": "2603.14617",
@@ -20721,7 +20745,7 @@
       "exact_reference": true,
       "fingerprint": "eba43395dd592c0992664450f6a358b567a4d0211e3566f8c18885f601e916cc",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "e043f3cda62b928aee5a47142f04b43d03d5689d83f0e457e5e6f30a79480d77",
         "arxiv": "2603.25899",
@@ -20792,7 +20816,7 @@
       "exact_reference": true,
       "fingerprint": "c5d2f71edc14596bfdab57145e97c1cf69b3fe78fa59044be6ebc375a83fe2ac",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "f04029d6d60ca8beb1876af6f3c9d407d0fd785eb4528e18e22bb8757e9df4a3",
         "arxiv": "2603.27728",
@@ -21296,7 +21320,7 @@
       "exact_reference": true,
       "fingerprint": "8d0c3f36ab742dea2b0813e044be53e50cc95b0643a7eebd8098192788b4695f",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "d3ca1af4bb04d790fc3a7e5fe23cfba84020d6460a72b424659c3e44454e325d",
         "arxiv": "2605.09738",
@@ -21575,7 +21599,7 @@
       "exact_reference": true,
       "fingerprint": "3121c5498be9551501c14b2d2b238a9015acb3c7dc906ea09360bd9252686bde",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "2f927e59db0584008c03c854e37bbc74ad0eafbb4ffc53c6d6905fa119f5c774",
         "arxiv": "2605.21666",
@@ -21797,7 +21821,7 @@
       "exact_reference": true,
       "fingerprint": "87d41948a23360bdce1c4cb46a9125996e6f5a0643e86e0fbf77758c8deb4446",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "fed7990da89437d6ac832b3a9c68a0c485da001cbb977b0e5340c1d381536fd9",
         "arxiv": "2605.26771",
@@ -21889,7 +21913,7 @@
       "exact_reference": true,
       "fingerprint": "c8109a624e9df8e367c5e5619b01ad5025365cc5a1ddc1e0f6080147fdb1a4c2",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "1537e7b797b6746879a9f1e901bcb437ba076123d50e1051f9491dcdbc5d1940",
         "arxiv": "2606.02324",
@@ -21971,7 +21995,7 @@
       "exact_reference": true,
       "fingerprint": "2e1b745f3af6727ecc5913efa243ff7b0f4702949765f81906af084988410faf",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "b4037937bce2c6f3282215a7b649f524dc7e949636832df946331ac6c2829b64",
         "arxiv": "2606.10584",
@@ -22168,7 +22192,7 @@
       "exact_reference": true,
       "fingerprint": "8efbd666b6851f85defff497ac0c4572900586e5a26cf71290875c1fe60e30e1",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "009942a0cab81b509c6d02c3b724b46e158147d2a3ad659318ed917a3a66ca5a",
         "arxiv": "2606.27293",
@@ -22798,7 +22822,7 @@
       "exact_reference": true,
       "fingerprint": "74506c9d4ee09285cdac4429143743384ee65200585ebd6b01631aa82b1a7a44",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "2f6cf85efaae1208b3a684f1c0d7f2e092adde2d2f84e19cd8b8551fa0608f84",
         "arxiv": "2608.12019",
@@ -22932,7 +22956,7 @@
       "exact_reference": false,
       "fingerprint": "64b5f658b612cf2b657f3af7bf7a1ec6edb46624cb6b186c43b8076ae4e9a1f2",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "41ece315f64c271a059497180e66ca5b0ca69c43d7c694c510602ffdc9d3214d",
         "arxiv": "2608.13592",
@@ -23136,7 +23160,7 @@
       "exact_reference": true,
       "fingerprint": "343c78be20628ed334adbe2b77ab29dbbffa9d3974caaa30148de33394945845",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "46ad365947563ef384c1613a4684d0921b4ded7ae76e1ed76d6ec09f68341c37",
         "arxiv": "2608.22297",
@@ -23483,7 +23507,7 @@
       "exact_reference": true,
       "fingerprint": "b40b815b91ef6651e162d933076bc087231a9408be1be4c56e4cc88e962ad51f",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a1c123b5d9d275764eb055833c16f1ae5089cd44466e96a1fbc17da5f2af730f",
         "arxiv": "2609.04551",
@@ -23837,7 +23861,7 @@
       "exact_reference": true,
       "fingerprint": "68308efe412b996986f8669706d6c87a0d30c0ad2856c848fc29e2b94751e1fb",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "aafad5cf9d13d642b8773087a1b3036dbab658ca4e607d608d578c18e1efa1ac",
         "arxiv": "2609.10526",
@@ -24104,7 +24128,7 @@
       "exact_reference": true,
       "fingerprint": "c88651e9d9332ab0a5d883c0bb94b91200dd563c4ba5017a7c5036028e2eb899",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "e0c7766a0ece3027870afee819c7ee5eb86bb0df7f65dcd258e45729b2a755c0",
         "arxiv": "2609.22336",
@@ -24307,7 +24331,7 @@
       "exact_reference": true,
       "fingerprint": "5f0b091d7714e0dd08dfd1b5fc00f242f13b6fa10d2fe479107f3d0ed054f0c2",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "2027f3392105ffbbc0962a5c5a8b54649b66047fb2335707554c5f45c8f83b65",
         "arxiv": "2609.26771",
@@ -24685,7 +24709,7 @@
       "exact_reference": true,
       "fingerprint": "3241261882b1b7e83580b916ab7c294b438e9d8878a6ae80b98ff131732871f2",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "72ff50143c29374fa7f115dd24946b5e04e7d393251a70adaadd347e90273b89",
         "arxiv": "2609.31613",
@@ -25034,7 +25058,7 @@
       "exact_reference": true,
       "fingerprint": "7b3707ced1e5967b8f4df50901baf7e7ae9ddde4eb36f04353fd3944ac456030",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a07adcc4ade8606651da8ecf9ca1318885120506e3cf3bff0d69593321c655c4",
         "arxiv": "2609.40123",
@@ -25508,7 +25532,7 @@
       "exact_reference": true,
       "fingerprint": "e7b43346abe20037ea49d22023c71a9ed6e7537244c64afa2d4fd185a918166e",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "207e2bf342e92a568c2da480f10cc710bd9cfb176b4bee74e674c2ee5010e83e",
         "arxiv": "2610.10614",
@@ -26133,7 +26157,7 @@
       "exact_reference": true,
       "fingerprint": "583e9ff6cd3fa8de5e56c59373345b9477a8d7d42469651225e24d133460cab1",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "260744367cb6ccc80234b0105a2c2349a033bc78d43f327d6ce490f7e11f4730",
         "arxiv": "2610.18226",
@@ -26404,7 +26428,7 @@
       "exact_reference": false,
       "fingerprint": "e5d1e89fa0cc10f903f18342f768912c3108a7789fbde2704311868b99ba53f1",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "c10ac1fe2f3c5815f8eb3156b68b0ac4679d4925be4e25181640dbd25efc9ea0",
         "arxiv": "2610.19531",
@@ -27719,7 +27743,7 @@
       "exact_reference": true,
       "fingerprint": "1d17e6d0fc59da4a4b1177d30a63130c9d9c805073aba25f2b6be46b1756cf36",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "397de4d331eeaf116c770bb1e314b9cddad4d21f9945a9a51fd3c9bdccdf9ab8",
         "arxiv": "2610.26873",
@@ -28063,7 +28087,7 @@
       "exact_reference": true,
       "fingerprint": "55fac60ec1712dd3f5bf498fb250d332cf014cc2dcad6dc1d9aec4d829a1ecd1",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "545377852f693a2f95780b8143c06860dd7c8a809031fedaceb55141f0532bf5",
         "arxiv": "2610.28688",
@@ -29976,7 +30000,7 @@
       "exact_reference": true,
       "fingerprint": "1e7aef396115988676a3a38ca02559ede215adabd6b4eeb5f9a0fedbceb6c2be",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "6d0d5f4aa39a6d9e4e944a57d04b8d10d61f9891813fa8a8500f706f268a8780",
         "arxiv": "2610.36534",
@@ -30349,7 +30373,7 @@
       "exact_reference": true,
       "fingerprint": "60ea03ee072e99b651c6fd2efad7d27b617aeb4aa9bd9c2d6c5e9d4dc162cc18",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "2e6bc1870db0899ecafaf95fb1a18919a10c845cfbdf64309326fd478a7333f4",
         "arxiv": "2610.37179",
@@ -31572,7 +31596,7 @@
       "exact_reference": true,
       "fingerprint": "6c5852f7cc7adcab5f2924d220ac11940a05b8f5ae35d2e379db091085aab5be",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "dba01bf08ce7f1b863ec418b46d0dca3e23c00b561ff440834742b6f98745e80",
         "arxiv": "2611.00647",
@@ -32899,7 +32923,7 @@
       "exact_reference": true,
       "fingerprint": "d9b98372457b7710363207bd6a0958993ffd2b7265e28b3d838b072c746f95fb",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "0f629643ac37ec722332ada84c62c97bddb57e7f4efc40d6379926ad3a9e24a2",
         "arxiv": "2611.06054",
@@ -33623,7 +33647,7 @@
       "exact_reference": true,
       "fingerprint": "8431159e14de226e69f60b5cac9612f8a28a565e30f3807b59425f2d24bb3385",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "6bbf24bd01dc101d7b8e4901a4e8209a2ed08592157270cb3a78e15f0f7903e5",
         "arxiv": "2611.09312",
@@ -34500,7 +34524,7 @@
       "exact_reference": false,
       "fingerprint": "02ee30f8e6b2bd576c641db64375132352d5fb6bb88f2c6029c0f7bc83c8737e",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "08fe385abda48c03b125a8b01f43da2860bbe8b558f0523cc75dd2fda1f047af",
         "arxiv": "2611.12785",
@@ -34850,7 +34874,7 @@
       "exact_reference": true,
       "fingerprint": "7f18cff9269f3cc035469fc692f46c98eaef442a5075632b5905834dfffafeaf",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "f5b979ae7ed1cd95094ee8e3670175ed29afaad9495d202324de3715521927b7",
         "arxiv": "2611.14014",
@@ -37774,7 +37798,7 @@
       "exact_reference": false,
       "fingerprint": "58de85f9fcdae3560be67e0cc81ccf063ad6107bc5626110abb18145af3f2943",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "9bfee463242a4eb4385672e58ba02c9854d663687e2d541cbf8b4288451ca3c3",
         "arxiv": "2611.28390",
@@ -38316,7 +38340,7 @@
       "exact_reference": false,
       "fingerprint": "41aba8f8a46f921c0afd6b02f6b99101701d7cf90584b4fdf5369c32cf219593",
       "first_seen": "2026-11-25T20:14:30Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "aea9a7314bc43b567149553d8e50cf50d8800109b2f4a5b67fca1af36e581556",
         "arxiv": "2611.31630",
@@ -38382,7 +38406,7 @@
       "exact_reference": false,
       "fingerprint": "78cbe9e02939a30b3254ada85190aaa31aad7781942f49990d173e0b34e738ef",
       "first_seen": "2026-11-25T20:14:30Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "e38fb778052bb62c81eff8387fcf5867437d7684aab2efba662fb0f5a421e70a",
         "arxiv": "2611.31635",
@@ -38450,7 +38474,7 @@
       "exact_reference": false,
       "fingerprint": "77311abc2f286804a4b3fa8e5ea51d62447b578146826f0f3e1129d7d964300b",
       "first_seen": "2026-11-25T20:14:30Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "5b43f7228b0965e1763e1c06a542fe2bdb6a0c8ddc4715b62d8a663d019a76e3",
         "arxiv": "2611.31650",
@@ -38514,7 +38538,7 @@
       "exact_reference": false,
       "fingerprint": "8cce3db00ce3d1e42b9c07b10d439448e81c2bb0aaa998aab87e943bf098daa2",
       "first_seen": "2026-11-25T20:14:30Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "cc6435cb3ea2f6f0649987b012cb65c43b5b1f56c41061be701b570202aeb261",
         "arxiv": "2611.31992",
@@ -38586,7 +38610,7 @@
       "exact_reference": false,
       "fingerprint": "d6f255b16353806df93f3059eaffec73be1070c9ad6096e5879fec7e0ebe6a82",
       "first_seen": "2026-11-25T20:14:30Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a7f5dd212e6f129850d3a9be4a95b9a054562337367e6cd231ed42a0ccb561ce",
         "arxiv": "2611.32926",
@@ -38650,7 +38674,7 @@
       "exact_reference": false,
       "fingerprint": "a00d2056c8ad40022cfb55ef5cec9972ae07dae4db9ef49dabe98b593a82f222",
       "first_seen": "2026-11-25T20:14:30Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "ce3d6acc8695a022dc6eb07abeeb3946f8b1a83c99d1f48273fc9c90a94710d2",
         "arxiv": "2611.33073",
@@ -38716,7 +38740,7 @@
       "exact_reference": false,
       "fingerprint": "dbfed59241801a6d7eb095ded893591106314a0dca8aea7a778eb70815576e3e",
       "first_seen": "2026-11-25T20:14:30Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "89d326183412548efe3295cda926d5edb2a3bc258d81596882d78e43eaa68160",
         "arxiv": "2611.33120",
@@ -38783,7 +38807,7 @@
       "exact_reference": false,
       "fingerprint": "4bc2eae3dc6c3f3dae8631a097e410ea6928c552038a9bc5960f2b94a21a609d",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "154a2592832b2e3b6cf5a7749b8a8911d3ef50e361010f35e1128b0fc165aa79",
         "arxiv": "2611.33942",
@@ -38853,7 +38877,7 @@
       "exact_reference": false,
       "fingerprint": "99baebec05fbfa8242aaa79c764842eb33fe44f0c505ccbfa103b55ce6c6ac98",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "506508deff292c7b493c23b34e7dae4932fee23f8193146a1c3311f8aac82f5d",
         "arxiv": "2611.34178",
@@ -38927,7 +38951,7 @@
       "exact_reference": false,
       "fingerprint": "5aabfb1508f12e18ed61c1de2f303d8ad2217c76ae71abc31dde6c9525d4348b",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "ab6e239a1e74ad32c441b1c4e556d2644c8e5dca49bba3378b94d0b06be3caf1",
         "arxiv": "2611.34305",
@@ -38993,7 +39017,7 @@
       "exact_reference": false,
       "fingerprint": "671bcc018c0527e98f234fef7725992b8547a821dc85a2ea531290fbe61dfb22",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "14332708632653e9c960a79926b3f629b1947cd3e11f54b365612f4550137ac5",
         "arxiv": "2611.34306",
@@ -39062,7 +39086,7 @@
       "exact_reference": false,
       "fingerprint": "f70fc2e4b1ba4d25c006817264632447c517c743210ca6d0a286fcb960734833",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "0337351a9f0d621d9367142482a5391654f6b85c00d5a891c2839d5d2d1ecb64",
         "arxiv": "2611.34323",
@@ -39129,7 +39153,7 @@
       "exact_reference": false,
       "fingerprint": "5e81e070af8b4a8d3ceb6d781e6096b2b8356b6eb362524a4e660cc4c158484e",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a13f8561da5a18fa4490ec2e00a25fd7e4b87c2d0ab54e1a70d2cae00c354594",
         "arxiv": "2611.34468",
@@ -39206,7 +39230,7 @@
       "exact_reference": true,
       "fingerprint": "e97dbff5dab4ce4cb18ee1394c4cfcae41701b180e38af707c2dfed0057d30da",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "87c25fc9b59a920cacac6f3321d1752c790545f836ef171157da8c00d73611c4",
         "arxiv": "math/0012099",
@@ -39278,7 +39302,7 @@
       "exact_reference": true,
       "fingerprint": "98d4ce412ba4c344d12b0eee12e2bd977dfd1b84b2475de13ada2238e36f447e",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "7f92bf8e840cfc2fe8117db1213d9f41ac72e36c85a3c123ef7a1c4306f5c1e2",
         "arxiv": "math/0102232",
@@ -39361,7 +39385,7 @@
       "exact_reference": true,
       "fingerprint": "df7b93ac237ce0adb9af73abb94d42a1342c464a71553078db547ed745b51519",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "e0c78edf9d3cc9d9c8c366ebdd7267616d5b2f7c3a8825cc886936c69b484a7d",
         "arxiv": "math/0405139",
@@ -39449,7 +39473,7 @@
       "exact_reference": true,
       "fingerprint": "02816a05ce2e44ebafb3f5b8113844d40cd73a1290884280abb7cc14342fdb9b",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "e7a55face0c3373ad9ea4eb6200e289fd1c3ba4e4807bd029a2993bd33fc1575",
         "arxiv": "math/0406307",
@@ -39539,7 +39563,7 @@
       "exact_reference": true,
       "fingerprint": "d29cf33d6edaf7b67ababb9c15aec33c69cc9b22332337475f9bfd79e75da22d",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "231cd35ee82f3136c4679ed56adb7b389d7c811b647d036bf33a7d2b6c154525",
         "arxiv": "math/0406308",
@@ -39603,7 +39627,7 @@
       "exact_reference": true,
       "fingerprint": "0f6d5640e368d5583a867fea4da945f90e1d63081cd197e20e99e63c072cbd64",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "24f167d92348d771a01910188ddceca687ecafe9c15aaa7ab531458006472bb8",
         "arxiv": "math/0612415",
@@ -39668,7 +39692,7 @@
       "exact_reference": true,
       "fingerprint": "f311b7e452236842b7767888a203dc329a5f680700c77cc1f5fda63814184ff5",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "591ff33c97b0fdad2b0b66e030b8f8ff0bb068de8192bb07349249ef80ea1d0e",
         "arxiv": "math/0703532",
@@ -39737,7 +39761,7 @@
       "exact_reference": true,
       "fingerprint": "fd1f51c35b7609275640e0a4987b163488edc75421afbaaee2121c35dfa3301f",
       "first_seen": "2026-11-13T20:10:38Z",
-      "last_seen": "2026-11-25T20:14:30Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "7610be5f21d024c2529c4e33f6e3807bb897c2a6c0e7bd4f79841ff40aa41185",
         "arxiv": "math/9909052",
@@ -46689,7 +46713,7 @@
       "exact_reference": true,
       "fingerprint": "90c780fba3b56fbcd7f4dd1484a49435a26c150f47707e088d6e629c84c33278",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -46712,7 +46736,7 @@
           "update-to": []
         },
         "title": "Quelques applications du théorème de densité de Chebotarev",
-        "updated": "2026-10-18T03:29:46Z",
+        "updated": "2026-11-27T02:26:56Z",
         "url": "https://doi.org/10.1007/bf02698692",
         "version": "",
         "volume": "54"
@@ -46793,7 +46817,7 @@
       "exact_reference": true,
       "fingerprint": "f3956785671f1a198f27affc113e86e8846ec99f1b905a3df517a50814e148e2",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -46900,7 +46924,7 @@
       "exact_reference": true,
       "fingerprint": "de9e91d1bd5b167340558596c1c795673dd3faec3987c2387a02d1c9f6c9cf7e",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -47010,7 +47034,7 @@
       "exact_reference": true,
       "fingerprint": "ed840cef8ac2495736a34615281920be0e03535169ef2be0c4bc820c1cdb1f19",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -47220,7 +47244,7 @@
       "exact_reference": true,
       "fingerprint": "8d2161284b6174415c0d41375ec2bbdb13b6885dce163b7fafd9a364ffd6acf0",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -47567,7 +47591,7 @@
       "exact_reference": true,
       "fingerprint": "ee18ef72604dd8fae7a73cc5d296bb515cfc4602f2b02478caa5607aea5707a8",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -47753,7 +47777,7 @@
       "exact_reference": true,
       "fingerprint": "78b51d51318e8120ef9b768b118c36c5fffdb98fb46baccee6778348df40f93c",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -47862,7 +47886,7 @@
       "exact_reference": true,
       "fingerprint": "a15c9328ab8e578d155d6a9ef3a162edb0deb14906ff5f625adadf674f1447c3",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "08882c38d982f46583930ccfb26f9eb1ee947578a111b36f8658be5275f79473",
         "article_number": "11",
@@ -47983,7 +48007,7 @@
       "exact_reference": true,
       "fingerprint": "bd02b5f5c23edc7d8cf42c00707b4e89d26ebe553a042fc4f4d376c9248d2286",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "46f6420d69bfe49cd04fbe3bda96ad77a10157d3533f50e38c207c14ff592092",
         "article_number": "22",
@@ -48107,7 +48131,7 @@
       "exact_reference": true,
       "fingerprint": "a37fb34bf445227df6b34b95824612d641799169346e2e90006722b6e91287be",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -48348,7 +48372,7 @@
       "exact_reference": true,
       "fingerprint": "8abfacb7d56df3541e11c6719d50abbe7a7eeb599a5cca0bae14dd51673b8df8",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -48464,7 +48488,7 @@
       "exact_reference": true,
       "fingerprint": "651741cace57f093810cbea26ed5b270b66ee7c83a3c8455064f5fbcf063fa32",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -48578,7 +48602,7 @@
       "exact_reference": true,
       "fingerprint": "7e3b902b1272df20a64d858cf35d12fc7aab6737886d19b4152911f9ccab748c",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -48920,7 +48944,7 @@
       "exact_reference": true,
       "fingerprint": "0e25ad9e2842723c5d4f149d26baaa9b6ae1e11481a84eeaced2a7b8583cdc65",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -49039,7 +49063,7 @@
       "exact_reference": true,
       "fingerprint": "0d0dee58e3fed510a33dd720bcc8f2f3587c3e697f6bfce2afd17375416efba5",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-22T20:04:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -49152,7 +49176,7 @@
       "exact_reference": true,
       "fingerprint": "f20e9d394d1153a17a8282ae5b34901f588bdea8a40fba1b0cf777268f901e38",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -50157,7 +50181,7 @@
       "exact_reference": true,
       "fingerprint": "3b3e831b89427192586ee56437f94e7f16585d9e31a41b058bd40adcd866c929",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "52",
         "arxiv": "",
@@ -70424,7 +70448,7 @@
       "exact_reference": true,
       "fingerprint": "c99b0474cabb3c814fb52dd177c1a5ca629fab0b6cd548df3489b171be256191",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "6014c778456d1751bd783097d9cad8889dad2984b2732c897475f09d986e30eb",
         "article_number": "20240020",
@@ -72061,7 +72085,7 @@
       "exact_reference": true,
       "fingerprint": "a4f30a69f71add179ceb68cbafdebaa7fd63a88a22d217a9f31159bf58a5b0bb",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -77892,7 +77916,7 @@
       "exact_reference": true,
       "fingerprint": "8b33534d85f5ea46d85346a01b6bb75e7ebd8b0e2bfb904d3ed7790c94791567",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "71cf0f62edd7f16ece9c75a84556960251b30aa0b164751870ecc0eb2e73f8ce",
         "article_number": "",
@@ -77990,7 +78014,7 @@
       "exact_reference": true,
       "fingerprint": "7d4d1e6de6467ec9746e2b29dd9442eede09d8fad7731fcbc7fa9c90252503b9",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "ec54829c4d63c92af713c18335b33f51595fbdae5f634af463733f64f1316c0a",
         "article_number": "",
@@ -78083,7 +78107,7 @@
       "exact_reference": true,
       "fingerprint": "e1322be9614d5894a126eca8fe6eb058691c57157ab8dcfa06a2d4a3a7a176f3",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -78166,7 +78190,7 @@
       "exact_reference": true,
       "fingerprint": "002bf2e908b546c685a61cf16c60f2044c3596f5fbcd12457f709b3d25d70b4f",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -78254,7 +78278,7 @@
       "exact_reference": true,
       "fingerprint": "c2d037f6a63074bcf32268e2bcb48fbc07ca5f87810df110cdf5ddec3d59952c",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "0722c72361077ab8fd068235f6fa9bfe1ef3b0a87793794423ce0b57522b0153",
         "article_number": "",
@@ -78502,7 +78526,7 @@
       "exact_reference": true,
       "fingerprint": "798c63ff35147e6f90b59a240903e908f943882f1089c33d5ca08d03b40b2555",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -78586,7 +78610,7 @@
       "exact_reference": true,
       "fingerprint": "dc889490f9f1a75e19815c8294b01fbbb8b6abefa35cb75862b93cf2aafe7922",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -78678,7 +78702,7 @@
       "exact_reference": true,
       "fingerprint": "347dd851a37c36a49eabcbd8ecb640c4cee55c9d82e1399ed9929d1de34aee2f",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -78770,7 +78794,7 @@
       "exact_reference": true,
       "fingerprint": "66f11a694f6d7f85cac7c3a411da3538a5f34cde3dd8037a351c1b08d17e163f",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "5e83737aa928cd4d330fff7b5e0db89f1770b2343c30e68606a2b66064bc50dc",
         "article_number": "3061",
@@ -79204,7 +79228,7 @@
       "exact_reference": true,
       "fingerprint": "4b4255a31024a3000b28cc47759e886bfa2514a87d07eaa10e95c97e3e92d61d",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -79300,7 +79324,7 @@
       "exact_reference": true,
       "fingerprint": "454dbd37aeb29943ac3c562076070cdc26b29a9055fb184446b76197cdec1f3c",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "b390aa1fc62a3ef2030732e1feb1d730c9c070e6c3a6e71eaab83df8bdcea1e0",
         "article_number": "",
@@ -79471,7 +79495,7 @@
       "exact_reference": true,
       "fingerprint": "64ef1fb7327ef42f71fb8c848ba52a9069196ac97eeae87daa1da19fe6fc76ff",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "c63b592b05d99fbeefea0dee26730d75b5f58f8aaddf6c437b2e45308774913e",
         "article_number": "",
@@ -79581,7 +79605,7 @@
       "exact_reference": true,
       "fingerprint": "c224ca8a81acd1cd0d08c21a58807d1201ae80e065f5977a3191f313845f142c",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "ca51c48224568b3ec1b16213c10ba6f798c739d8850dddffcccbee79473a1ad1",
         "article_number": "",
@@ -79677,7 +79701,7 @@
       "exact_reference": true,
       "fingerprint": "cdc94b80d84d74987faa8a1bdca8c66d9a17b510ca15a7c841f2b6bf1788d684",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "d17a64652a3a9e2ee919ed7d23d92126012a559c9b9a7d0997974822a389c811",
         "article_number": "",
@@ -79769,7 +79793,7 @@
       "exact_reference": true,
       "fingerprint": "2338006eecca9f34fac66df5abfde41543c631352bfbcff0f7d94625c3bfe4e7",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "f9dad84ac1e5897b0730c1ffbc5ff9b07f0831ebe27ced033039a3af42efccd3",
         "article_number": "",
@@ -79794,7 +79818,7 @@
           "update-to": []
         },
         "title": "A note on the spectrum of a rational function",
-        "updated": "2026-01-13T20:48:48Z",
+        "updated": "2026-11-24T15:11:23Z",
         "url": "https://doi.org/10.5802/ambp.418",
         "version": "",
         "volume": "30"
@@ -79854,7 +79878,7 @@
       "exact_reference": true,
       "fingerprint": "db05f39b4d9ff38cd19fac41f238c95b954832a4fe71c53ce6839c1ff678dc40",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -79947,7 +79971,7 @@
       "exact_reference": true,
       "fingerprint": "58dac95f50fe7709cbdf8749bbc856c881c89640c0f83495a9c8c95ec4c30219",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "2cbedad100c6c236e17a7d2c5ff7dfebb6d9af452216cf44e017e0821485bd91",
         "article_number": "",
@@ -79971,7 +79995,7 @@
           "update-to": []
         },
         "title": "Topology of zero sets of polynomials with square discriminant",
-        "updated": "2026-04-22T15:05:49Z",
+        "updated": "2026-11-24T15:12:59Z",
         "url": "https://doi.org/10.5802/crmath.824",
         "version": "",
         "volume": "364"
@@ -80038,7 +80062,7 @@
       "exact_reference": true,
       "fingerprint": "546ef86d60811aad315eaa7087d9359550180a5aba7125268d1ce81e4e6acfd6",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "461f9dac702e9e614be923a7382448b053aef6fce1c8a2bae662dc382cf04efd",
         "article_number": "",
@@ -80154,7 +80178,7 @@
       "exact_reference": true,
       "fingerprint": "22cfdcf57e02ffe41b451ff3c81e1c979569f94a3c38b4e20c0f9057833725e3",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "b02da89d46ff1ce554e5ad939939e431f05a8a876177fd7c0cae6b8d9cf5d540",
         "article_number": "",
@@ -80251,7 +80275,7 @@
       "exact_reference": true,
       "fingerprint": "6cd5308efd747c47f7ebc454fd261132d2a331c32780f0a41ed4079c6382e231",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "fb7a0ccd12c1b60c239862b79eb7cafc2a74c17475cbd57dc5ad43cf1c944702",
         "article_number": "",
@@ -80350,7 +80374,7 @@
       "exact_reference": true,
       "fingerprint": "8b4b1644b58ba77a15974ee2c48631115fd6173430670193dbbabec50d268296",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "75792fcad9d5622eb874caa0cd3a18c56528adfbfa7c3bcc3878e42476de7815",
         "article_number": "",
@@ -80450,7 +80474,7 @@
       "exact_reference": true,
       "fingerprint": "76dd133993043c93e3a48fd3b8bdd63fc0b81aa8e9584869435b5673f9cf84fd",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "0ab3d8e9a0b017e46e5a57fc5cef163543dd0da74982592ef401b889905c1f92",
         "article_number": "",
@@ -80549,7 +80573,7 @@
       "exact_reference": true,
       "fingerprint": "c3bee6249741a1f50da4adb1d4c660e85147f3bc4408a12898ed8dd929c3081f",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "737f6a64a545b34337e9b1216054bba91634163edef80ca85c6a8da5281dde92",
         "article_number": "",
@@ -80640,7 +80664,7 @@
       "exact_reference": true,
       "fingerprint": "77747dc4c1a3da5b51d9f00aafc36f92a069ccc662ba7aa63d62c606c5c88dd0",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "6a39de6fe6b727cf526b0e7d67c778a605514ab42eadf88532f3642dd6f5ae33",
         "article_number": "",
@@ -80666,7 +80690,7 @@
           "update-to": []
         },
         "title": "Exponentielle tronquée et autres contes galoisiens",
-        "updated": "2026-01-13T20:41:59Z",
+        "updated": "2026-11-24T15:15:32Z",
         "url": "https://doi.org/10.5802/pmb.57",
         "version": "",
         "volume": ""
@@ -80739,7 +80763,7 @@
       "exact_reference": true,
       "fingerprint": "bd8bb87758b516fee65c0f4c348afc029cfa02e282ec2d02f609a4165d7e011b",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -81207,7 +81231,7 @@
       "exact_reference": true,
       "fingerprint": "05f7250a73b472bc55c14724fdd7ef387c13e257b1bc23d1bad09ac43b6a0bf3",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -81294,7 +81318,7 @@
       "exact_reference": true,
       "fingerprint": "4e5b2c750747446de3bfca1ecba538431a8c7c2d22febe4da520167ec6cc2dce",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -81383,7 +81407,7 @@
       "exact_reference": true,
       "fingerprint": "42755950be64a3b7ac945577b0a1c0a7ce36c7dca5272b94955671464411a4be",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -81465,7 +81489,7 @@
       "exact_reference": true,
       "fingerprint": "f8f473e1ad2c280bb2a8730087eab9a86e3466503acf928d6142ed77f58d83f5",
       "first_seen": "2026-11-15T19:58:06Z",
-      "last_seen": "2026-11-21T20:01:46Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "article_number": "",
         "arxiv": "",
@@ -83506,7 +83530,7 @@
       "exact_reference": false,
       "fingerprint": "05b2c3536fc4749fb9b5903d0e7ab662d2d1ed4c37e0e66802c70535203b29be",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "ba75fbbc93c346fa6582f197cc50c8f975240e81f7015f2dbf7cd89ae00727ef",
         "arxiv": "",
@@ -83597,7 +83621,7 @@
       "exact_reference": false,
       "fingerprint": "ed0dce90169fb7f362ef0ec54b71626c5734df45d7ea1046037dd72f360490b6",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "da1bf89d3b05a811d51334e1106ad34d201f5c3e8cf83fd2cf2f75be010936f7",
         "arxiv": "",
@@ -83687,7 +83711,7 @@
       "exact_reference": false,
       "fingerprint": "fd148600d8cf2bf49273f5ce94fbac312a900c0aff061d700992b406996f6d78",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "e90ffe74c8f4b1b951cf4679e08731a3ea2fe6604fd784f10f68cf4d9c979051",
         "arxiv": "",
@@ -83988,7 +84012,7 @@
       "exact_reference": false,
       "fingerprint": "8560537831238fcc1ed1c7b05102c85a3b573c80503f5384dee1c82d0b0f6a6c",
       "first_seen": "2026-11-17T20:19:08Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "2646f48345315fb11458134c78c75a970a39f56525194227ffe0295bc43d3f41",
         "arxiv": "",
@@ -84387,7 +84411,7 @@
       "exact_reference": false,
       "fingerprint": "9f0eca5443f7b5b2e0e083708bab9a79f1d3554599ea424ca642824dfcb42b33",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "44243f9f1c6e4afbdb6402bd99a828893d23cede18a7ee6f6b0aa3715cc7b603",
         "arxiv": "",
@@ -84507,7 +84531,7 @@
       "exact_reference": false,
       "fingerprint": "73158c91450b23ec7f687c7ce9062d9359ec7dc6a040c57f7e22262a66b8af7e",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [
@@ -84623,7 +84647,7 @@
       "exact_reference": false,
       "fingerprint": "ca5f0febcd8dfba1c8d7aad4adf9e09ba44f4e8eb5715fdcbe3e8de60148329d",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "a05b31e91b5b6d0fa0c0568783ad25d68e29659ce9d4775423f2088fe31c17fe",
         "arxiv": "",
@@ -84720,7 +84744,7 @@
       "exact_reference": false,
       "fingerprint": "b86e3fce26bf46a7447adc9c11cba76211a12de21869a2c9f4294eabbb777f1c",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "19bd4d435e1b6ca90dd45658d8a08e428cdacf50b56b4b617f4e2284b93cb876",
         "arxiv": "",
@@ -84897,7 +84921,7 @@
       "exact_reference": false,
       "fingerprint": "190e5eedea78688d39b36a86c30145102085df3e5033045754d7475de6940151",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "656e66cf9ee81847e518644650404572c495b093f5b6c8265d66f594c5c7b0e7",
         "arxiv": "",
@@ -84988,7 +85012,7 @@
       "exact_reference": false,
       "fingerprint": "cdb51aca2926509a60d0b97dd1fb6606bacca3fb950660e602cd486df5f83d51",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "dbe44b8526f99d8afe20d797b2189aa8ea98ec89b5f8b46bde5fdc5a91561b0a",
         "arxiv": "",
@@ -86033,7 +86057,7 @@
       "exact_reference": false,
       "fingerprint": "1b72beb5721d3eda46c57a1f89a2cd03b56c8475db73209723d78ededa21c199",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "82f61733986fdae935418f8aced4fb70d67d35421c1e32fcd7b1328137e47015",
         "arxiv": "",
@@ -86512,7 +86536,7 @@
       "exact_reference": false,
       "fingerprint": "d23f939dbae6eebce5134218e4ff42e3b64dc7f522b3252d946b92f7873beca9",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "e7bb95272b9a1fcce617f3b6cfb2033cecca7956d223b65511a7815af5f15e55",
         "arxiv": "",
@@ -86666,7 +86690,7 @@
       "exact_reference": false,
       "fingerprint": "131f173c2a03aaed161851e7b8953fe1eb2a6105788532dd710721f5e7ba1672",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "20dd36368a30e454a496af9ad3f161f863277d68c431229f25118a2f5429ccb1",
         "arxiv": "",
@@ -86812,7 +86836,7 @@
       "exact_reference": false,
       "fingerprint": "ef65b9d455b7d6155f15ef157acb026a762aaf526cf9d2ee40299db421064a0f",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "4ca01f64bd3d72082c9b1ac08cd3b740bf5babba45b9e2489aff30922327b118",
         "arxiv": "",
@@ -87953,7 +87977,7 @@
       "exact_reference": false,
       "fingerprint": "7f50096fc0fbbe8939043f7093ebb68e6a0824c1780c48864a71350f02fea20e",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "2bcd77c0d1d25db7a2a60de388a0d7d6b0dbbe57a019f68c98a233f00e146617",
         "arxiv": "",
@@ -88742,7 +88766,7 @@
       "exact_reference": false,
       "fingerprint": "3ca24bb080a77ca572b573fbf9afd1283212947fccf489faf951690710cddae3",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "38a522d8a8937b9963d8b928786d3db2118ea942eabb073fc09f0a3a35e0a6d0",
         "arxiv": "",
@@ -88875,7 +88899,7 @@
       "exact_reference": false,
       "fingerprint": "07498e08829a88a56742df5820f1ceef9d1a4fcd78e3bed19898feb63f05706e",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "b86d5376b0d2631b6211f137bbd25712128e8fa6cc96f102c3c712b883609761",
         "arxiv": "",
@@ -89332,7 +89356,7 @@
       "exact_reference": false,
       "fingerprint": "88d00de70fc9b3029b950460269148cc72c3a87ef912ce9381aae365cedf93d2",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "bfe75c496dfc9b5dade5b36c05b860a89d7d3e7404a54e7f11578ff913efa428",
         "arxiv": "",
@@ -89425,7 +89449,7 @@
       "exact_reference": false,
       "fingerprint": "ae44ab3847b2067a9306352f8a40566e3ee11607301d09a99ac94c97d5e33dc4",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "65cb461d0aa5357292f2281e2f4792c7cc9adc34d4051e6ee48f6a252e71e74f",
         "arxiv": "",
@@ -89526,7 +89550,7 @@
       "exact_reference": false,
       "fingerprint": "90c1ba9ffac402ba5d32a1859c241e67a4da8021f0ef868563fe8d0dd7136343",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -89606,7 +89630,7 @@
       "exact_reference": false,
       "fingerprint": "bf7b052f03e7a586f004315570d2505ad030df72ec303120e7f4a7761d193dd9",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -89683,7 +89707,7 @@
       "exact_reference": false,
       "fingerprint": "d73a755829634fff9e33b2c2f53ae962018a9c1559dc25a9569fbe19c495a716",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -89750,7 +89774,7 @@
       "exact_reference": false,
       "fingerprint": "a7a739c92960133659baf32958301c2302061256a0b33960f55fac63beeb9837",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -89816,7 +89840,7 @@
       "exact_reference": false,
       "fingerprint": "e083a65650c81df81b6455efe9f6d9ef9f27ace3aff7e6af5f8549d73aad99f1",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -89887,7 +89911,7 @@
       "exact_reference": false,
       "fingerprint": "8ef932960f2f848cac36936e79c6da8d87fe51c19fbec3ca32823826887576b0",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -89951,7 +89975,7 @@
       "exact_reference": false,
       "fingerprint": "b82fcb6a786c3e736f22ffe09e848ddf0197cfa7df3d60f80d9acd0114baaf6c",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -90012,7 +90036,7 @@
       "exact_reference": false,
       "fingerprint": "5b6e266093cd08efa4b4f9455a8f51ed57cf45a379ca362e48a96a6897cffbe3",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -90074,7 +90098,7 @@
       "exact_reference": false,
       "fingerprint": "b0e98311730b19a9fd267f1f399b0701a5ab93e8d4fa92eee24719f8ccfcb8b1",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -90139,7 +90163,7 @@
       "exact_reference": false,
       "fingerprint": "06c3734336ee85570e5959f7f616897bf43dca335c30ddf941a988aee6373d40",
       "first_seen": "2026-11-13T05:12:43Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "arxiv": "",
         "authors": [],
@@ -90210,7 +90234,7 @@
       "exact_reference": false,
       "fingerprint": "2c0161093561b1286b873d4dda7f8f4e1ca6ea240dfb1abe6ba6b0b582c52d81",
       "first_seen": "2026-11-20T20:15:58Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "8600d0a4d238fdb344502040210cb98ac2dbf344c419e067d45ffbd1084eae68",
         "arxiv": "",
@@ -97173,7 +97197,7 @@
       "exact_reference": false,
       "fingerprint": "fb53ae07cc3059ba6dc430645c01d261f3cc8999116d768a7028748e3f0d0f01",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "e5532bd1705cc7e2c1686c3a245de538cce040668a462ee85af5f72c39aadced",
         "arxiv": "",
@@ -97398,7 +97422,7 @@
       "exact_reference": false,
       "fingerprint": "8e8754e275db46fe2e9d895dabe0544cdb26c78c880aec910e7e39e687aa3a02",
       "first_seen": "2026-11-24T20:17:40Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "6429c9133ac2e04979b1347a53371ae933f392537cfcdb0edf748e18f9c1ee1c",
         "arxiv": "",
@@ -97513,7 +97537,7 @@
       "exact_reference": false,
       "fingerprint": "770ff6eba2e3903facdd5e98d7c02cac6c3c6bd3804758303b190f173e00ad83",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "32ad5fa566d55c066538401065ad45feb62ec22923b73c62e1aba9e1999c9e6f",
         "arxiv": "",
@@ -97612,7 +97636,7 @@
       "exact_reference": false,
       "fingerprint": "89485174cf3355f779bbf28644024a671025717a3066a1dd62f418b09f539178",
       "first_seen": "2026-11-26T20:20:41Z",
-      "last_seen": "2026-11-26T20:20:41Z",
+      "last_seen": "2026-11-27T20:15:34Z",
       "metadata": {
         "abstract_sha256": "558a312ed899eb8d3d9aae964e16d934935769c4c667261987efc922679c71cd",
         "arxiv": "",
@@ -97691,63 +97715,563 @@
       "topics": [
         "random"
       ]
+    },
+    "zenodo:24572663": {
+      "affected_pages": [
+        "articles/discriminants.html",
+        "articles/frobenius.html",
+        "articles/permutation-groups.html",
+        "articles/ramification-inertia.html",
+        "articles/reciprocity.html",
+        "articles/resolvents.html"
+      ],
+      "aliases": [
+        "doi:10.5281/zenodo.24572663",
+        "zenodo-concept:24050444",
+        "zenodo:24572663"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "f395846889cf43115aabe230ef0bda9736dd39c7eb207fc96ec73264d9d854fe",
+      "first_seen": "2026-11-27T20:15:34Z",
+      "last_seen": "2026-11-27T20:15:34Z",
+      "metadata": {
+        "abstract_sha256": "4620d07e1be4e28d701fb02792eb7945468abb283730699936707b01b9e227ee",
+        "arxiv": "",
+        "authors": [
+          "Urahigashi, Toshihisa"
+        ],
+        "doi": "10.5281/zenodo.24572663",
+        "id": "24572663",
+        "journal": "",
+        "provider": "zenodo",
+        "published": "2026-11-27",
+        "relations": {
+          "conceptrecid": "24050444",
+          "files": [
+            {
+              "checksum": "md5:76159d2d384f1bc42fa1672e21c766c5",
+              "key": "log_shell_edge.pdf"
+            },
+            {
+              "checksum": "md5:2f102540efeeb674c4f610b3f7086b28",
+              "key": "log-shell-edge-v1.2.0.zip"
+            }
+          ],
+          "related_identifiers": [
+            {
+              "identifier": "https://github.com/turahigashi/iut-explicit-initial-theta/tree/log-shell-edge-v1.2.0/log-shell-edge",
+              "relation": "isSupplementedBy",
+              "scheme": "url"
+            },
+            {
+              "identifier": "10.4171/PRIMS/57-1-3",
+              "relation": "cites",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.4171/PRIMS/57-1-4",
+              "relation": "cites",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.24043000",
+              "relation": "cites",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.24039374",
+              "relation": "cites",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.24039375",
+              "relation": "cites",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.23754276",
+              "relation": "cites",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.1007/BF01393199",
+              "relation": "cites",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.1007/BF01393200",
+              "relation": "cites",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "arXiv:2512.09231",
+              "relation": "cites",
+              "scheme": "arxiv"
+            },
+            {
+              "identifier": "arXiv:2605.25428",
+              "relation": "cites",
+              "scheme": "arxiv"
+            },
+            {
+              "identifier": "arXiv:2609.19696",
+              "relation": "cites",
+              "scheme": "arxiv"
+            },
+            {
+              "identifier": "arXiv:2512.05095",
+              "relation": "cites",
+              "scheme": "arxiv"
+            },
+            {
+              "identifier": "arXiv:2303.04309",
+              "relation": "cites",
+              "scheme": "arxiv"
+            },
+            {
+              "identifier": "arXiv:2004.13228",
+              "relation": "cites",
+              "scheme": "arxiv"
+            },
+            {
+              "identifier": "arXiv:2003.01890",
+              "relation": "cites",
+              "scheme": "arxiv"
+            },
+            {
+              "identifier": "arXiv:2401.13508",
+              "relation": "cites",
+              "scheme": "arxiv"
+            },
+            {
+              "identifier": "https://github.com/lana-agents/iut",
+              "relation": "cites",
+              "scheme": "url"
+            },
+            {
+              "identifier": "https://github.com/Takkun-kohinata/IUT_LEAN",
+              "relation": "cites",
+              "scheme": "url"
+            },
+            {
+              "identifier": "https://github.com/AnabLab/kb",
+              "relation": "cites",
+              "scheme": "url"
+            },
+            {
+              "identifier": "https://sishii1214.github.io/notes/NSW7-5.pdf",
+              "relation": "cites",
+              "scheme": "url"
+            },
+            {
+              "identifier": "https://www.mathi.uni-heidelberg.de/~schmidt/NSW2e/",
+              "relation": "cites",
+              "scheme": "url"
+            }
+          ]
+        },
+        "title": "How far automorphisms of a p-adic absolute Galois group move the ring of integers: to the edge of the log-shell, with an application to Step (v) of IUT IV",
+        "updated": "2026-11-26T23:06:34.446161+00:00",
+        "url": "https://zenodo.org/records/24572663",
+        "version": "1.2.0"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "f395846889cf43115aabe230ef0bda9736dd39c7eb207fc96ec73264d9d854fe",
+          "metadata": {
+            "abstract_sha256": "4620d07e1be4e28d701fb02792eb7945468abb283730699936707b01b9e227ee",
+            "arxiv": "",
+            "authors": [
+              "Urahigashi, Toshihisa"
+            ],
+            "doi": "10.5281/zenodo.24572663",
+            "id": "24572663",
+            "journal": "",
+            "provider": "zenodo",
+            "published": "2026-11-27",
+            "relations": {
+              "conceptrecid": "24050444",
+              "files": [
+                {
+                  "checksum": "md5:76159d2d384f1bc42fa1672e21c766c5",
+                  "key": "log_shell_edge.pdf"
+                },
+                {
+                  "checksum": "md5:2f102540efeeb674c4f610b3f7086b28",
+                  "key": "log-shell-edge-v1.2.0.zip"
+                }
+              ],
+              "related_identifiers": [
+                {
+                  "identifier": "https://github.com/turahigashi/iut-explicit-initial-theta/tree/log-shell-edge-v1.2.0/log-shell-edge",
+                  "relation": "isSupplementedBy",
+                  "scheme": "url"
+                },
+                {
+                  "identifier": "10.4171/PRIMS/57-1-3",
+                  "relation": "cites",
+                  "scheme": "doi"
+                },
+                {
+                  "identifier": "10.4171/PRIMS/57-1-4",
+                  "relation": "cites",
+                  "scheme": "doi"
+                },
+                {
+                  "identifier": "10.5281/zenodo.24043000",
+                  "relation": "cites",
+                  "scheme": "doi"
+                },
+                {
+                  "identifier": "10.5281/zenodo.24039374",
+                  "relation": "cites",
+                  "scheme": "doi"
+                },
+                {
+                  "identifier": "10.5281/zenodo.24039375",
+                  "relation": "cites",
+                  "scheme": "doi"
+                },
+                {
+                  "identifier": "10.5281/zenodo.23754276",
+                  "relation": "cites",
+                  "scheme": "doi"
+                },
+                {
+                  "identifier": "10.1007/BF01393199",
+                  "relation": "cites",
+                  "scheme": "doi"
+                },
+                {
+                  "identifier": "10.1007/BF01393200",
+                  "relation": "cites",
+                  "scheme": "doi"
+                },
+                {
+                  "identifier": "arXiv:2512.09231",
+                  "relation": "cites",
+                  "scheme": "arxiv"
+                },
+                {
+                  "identifier": "arXiv:2605.25428",
+                  "relation": "cites",
+                  "scheme": "arxiv"
+                },
+                {
+                  "identifier": "arXiv:2609.19696",
+                  "relation": "cites",
+                  "scheme": "arxiv"
+                },
+                {
+                  "identifier": "arXiv:2512.05095",
+                  "relation": "cites",
+                  "scheme": "arxiv"
+                },
+                {
+                  "identifier": "arXiv:2303.04309",
+                  "relation": "cites",
+                  "scheme": "arxiv"
+                },
+                {
+                  "identifier": "arXiv:2004.13228",
+                  "relation": "cites",
+                  "scheme": "arxiv"
+                },
+                {
+                  "identifier": "arXiv:2003.01890",
+                  "relation": "cites",
+                  "scheme": "arxiv"
+                },
+                {
+                  "identifier": "arXiv:2401.13508",
+                  "relation": "cites",
+                  "scheme": "arxiv"
+                },
+                {
+                  "identifier": "https://github.com/lana-agents/iut",
+                  "relation": "cites",
+                  "scheme": "url"
+                },
+                {
+                  "identifier": "https://github.com/Takkun-kohinata/IUT_LEAN",
+                  "relation": "cites",
+                  "scheme": "url"
+                },
+                {
+                  "identifier": "https://github.com/AnabLab/kb",
+                  "relation": "cites",
+                  "scheme": "url"
+                },
+                {
+                  "identifier": "https://sishii1214.github.io/notes/NSW7-5.pdf",
+                  "relation": "cites",
+                  "scheme": "url"
+                },
+                {
+                  "identifier": "https://www.mathi.uni-heidelberg.de/~schmidt/NSW2e/",
+                  "relation": "cites",
+                  "scheme": "url"
+                }
+              ]
+            },
+            "title": "How far automorphisms of a p-adic absolute Galois group move the ring of integers: to the edge of the log-shell, with an application to Step (v) of IUT IV",
+            "updated": "2026-11-26T23:06:34.446161+00:00",
+            "url": "https://zenodo.org/records/24572663",
+            "version": "1.2.0"
+          },
+          "observed_at": "2026-11-27T20:15:34Z"
+        }
+      ],
+      "topics": [
+        "galois"
+      ]
+    },
+    "zenodo:24574410": {
+      "affected_pages": [
+        "articles/factor-reversal.html",
+        "articles/height-counting.html",
+        "articles/littlewood.html",
+        "articles/random-matrices.html",
+        "articles/random-models.html",
+        "articles/random-reciprocal.html",
+        "articles/twisted-reciprocity.html"
+      ],
+      "aliases": [
+        "doi:10.5281/zenodo.24574410",
+        "zenodo-concept:23581347",
+        "zenodo:24574410"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "e6ef457c837b11424ef510c6ae6c5346704195c597628ed56b3b6759358afc14",
+      "first_seen": "2026-11-27T20:15:34Z",
+      "last_seen": "2026-11-27T20:15:34Z",
+      "metadata": {
+        "abstract_sha256": "f3bc23e022dc15388d301455189079f2988c790678372a9be25777b332a214f4",
+        "arxiv": "",
+        "authors": [
+          "Fathi, Kevin"
+        ],
+        "doi": "10.5281/zenodo.24574410",
+        "id": "24574410",
+        "journal": "",
+        "provider": "zenodo",
+        "published": "2026-11-27",
+        "relations": {
+          "conceptrecid": "23581347",
+          "files": [
+            {
+              "checksum": "md5:3b466cf9be8b710d54176c8cd531799b",
+              "key": "Borwein_Choi_Complete_Project.zip"
+            },
+            {
+              "checksum": "md5:1b3b0a0b9413b2cd075a03d739fc21ab",
+              "key": "Prime_Blocks_and_Additive_Divisor_Obstructions(1).pdf"
+            }
+          ],
+          "related_identifiers": []
+        },
+        "title": "Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials",
+        "updated": "2026-11-27T01:44:37.039955+00:00",
+        "url": "https://zenodo.org/records/24574410",
+        "version": "v15"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "e6ef457c837b11424ef510c6ae6c5346704195c597628ed56b3b6759358afc14",
+          "metadata": {
+            "abstract_sha256": "f3bc23e022dc15388d301455189079f2988c790678372a9be25777b332a214f4",
+            "arxiv": "",
+            "authors": [
+              "Fathi, Kevin"
+            ],
+            "doi": "10.5281/zenodo.24574410",
+            "id": "24574410",
+            "journal": "",
+            "provider": "zenodo",
+            "published": "2026-11-27",
+            "relations": {
+              "conceptrecid": "23581347",
+              "files": [
+                {
+                  "checksum": "md5:3b466cf9be8b710d54176c8cd531799b",
+                  "key": "Borwein_Choi_Complete_Project.zip"
+                },
+                {
+                  "checksum": "md5:1b3b0a0b9413b2cd075a03d739fc21ab",
+                  "key": "Prime_Blocks_and_Additive_Divisor_Obstructions(1).pdf"
+                }
+              ],
+              "related_identifiers": []
+            },
+            "title": "Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials",
+            "updated": "2026-11-27T01:44:37.039955+00:00",
+            "url": "https://zenodo.org/records/24574410",
+            "version": "v15"
+          },
+          "observed_at": "2026-11-27T20:15:34Z"
+        }
+      ],
+      "topics": [
+        "random"
+      ]
+    },
+    "zenodo:24575886": {
+      "affected_pages": [
+        "articles/factor-reversal.html",
+        "articles/height-counting.html",
+        "articles/littlewood.html",
+        "articles/random-matrices.html",
+        "articles/random-models.html",
+        "articles/random-reciprocal.html",
+        "articles/twisted-reciprocity.html"
+      ],
+      "aliases": [
+        "doi:10.5281/zenodo.24575886",
+        "zenodo-concept:23581347",
+        "zenodo:24575886"
+      ],
+      "cited_versions": [],
+      "exact_reference": false,
+      "fingerprint": "1ea4c969269ac8c93f937de34877aee931971380fe2a0e46a1849c4360c812c3",
+      "first_seen": "2026-11-27T20:15:34Z",
+      "last_seen": "2026-11-27T20:15:34Z",
+      "metadata": {
+        "abstract_sha256": "2fe608c2911760ec75461166dd58243e9765ac05ab954e66ca31ab10b606c333",
+        "arxiv": "",
+        "authors": [
+          "Fathi, Kevin"
+        ],
+        "doi": "10.5281/zenodo.24575886",
+        "id": "24575886",
+        "journal": "",
+        "provider": "zenodo",
+        "published": "2026-11-27",
+        "relations": {
+          "conceptrecid": "23581347",
+          "files": [
+            {
+              "checksum": "md5:affdaca31d75d0f0d17869a7f44ae077",
+              "key": "Borwein_Choi_Complete_Project (1).zip"
+            },
+            {
+              "checksum": "md5:98a99f94a7a7d2a6e83508e006965483",
+              "key": "Prime_Blocks_and_Additive_Divisor_Obstructions(1) (1).pdf"
+            }
+          ],
+          "related_identifiers": []
+        },
+        "title": "Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials",
+        "updated": "2026-11-27T03:35:08.001264+00:00",
+        "url": "https://zenodo.org/records/24575886",
+        "version": "v16"
+      },
+      "metadata_schema": 2,
+      "references": [],
+      "screening_status": "eligible",
+      "snapshots": [
+        {
+          "fingerprint": "1ea4c969269ac8c93f937de34877aee931971380fe2a0e46a1849c4360c812c3",
+          "metadata": {
+            "abstract_sha256": "2fe608c2911760ec75461166dd58243e9765ac05ab954e66ca31ab10b606c333",
+            "arxiv": "",
+            "authors": [
+              "Fathi, Kevin"
+            ],
+            "doi": "10.5281/zenodo.24575886",
+            "id": "24575886",
+            "journal": "",
+            "provider": "zenodo",
+            "published": "2026-11-27",
+            "relations": {
+              "conceptrecid": "23581347",
+              "files": [
+                {
+                  "checksum": "md5:affdaca31d75d0f0d17869a7f44ae077",
+                  "key": "Borwein_Choi_Complete_Project (1).zip"
+                },
+                {
+                  "checksum": "md5:98a99f94a7a7d2a6e83508e006965483",
+                  "key": "Prime_Blocks_and_Additive_Divisor_Obstructions(1) (1).pdf"
+                }
+              ],
+              "related_identifiers": []
+            },
+            "title": "Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials",
+            "updated": "2026-11-27T03:35:08.001264+00:00",
+            "url": "https://zenodo.org/records/24575886",
+            "version": "v16"
+          },
+          "observed_at": "2026-11-27T20:15:34Z"
+        }
+      ],
+      "topics": [
+        "random"
+      ]
     }
   },
   "reference_attempts": {
-    "arxiv:0707.1835": "2026-11-26T20:20:41Z",
-    "arxiv:0807.2620": "2026-11-26T20:20:41Z",
-    "arxiv:0807.3578": "2026-11-26T20:20:41Z",
-    "arxiv:0811.4029": "2026-11-26T20:20:41Z",
-    "arxiv:0911.0286": "2026-11-26T20:20:41Z",
-    "arxiv:1001.3079": "2026-11-26T20:20:41Z",
-    "arxiv:1004.3813": "2026-11-26T20:20:41Z",
-    "arxiv:1005.2695": "2026-11-26T20:20:41Z",
-    "arxiv:1006.3869": "2026-11-26T20:20:41Z",
-    "arxiv:1009.5388": "2026-11-26T20:20:41Z",
-    "arxiv:1010.5341": "2026-11-26T20:20:41Z",
-    "arxiv:1012.2857": "2026-11-26T20:20:41Z",
-    "arxiv:1106.6151": "2026-11-26T20:20:41Z",
-    "arxiv:1205.3420": "2026-11-26T20:20:41Z",
-    "arxiv:1209.5169": "2026-11-26T20:20:41Z",
-    "arxiv:1210.7157": "2026-11-26T20:20:41Z",
-    "arxiv:1211.3588": "2026-11-26T20:20:41Z",
-    "arxiv:1302.0625": "2026-11-26T20:20:41Z",
-    "arxiv:1303.6513": "2026-11-26T20:20:41Z",
-    "arxiv:1304.0874": "2026-11-26T20:20:41Z",
-    "arxiv:1305.0222": "2026-11-26T20:20:41Z",
-    "arxiv:1402.6018": "2026-11-26T20:20:41Z",
-    "arxiv:1409.2034": "2026-11-26T20:20:41Z",
-    "arxiv:1410.3814": "2026-11-26T20:20:41Z",
-    "arxiv:1508.01870": "2026-11-26T20:20:41Z",
-    "arxiv:1601.06867": "2026-11-26T20:20:41Z",
-    "arxiv:1603.00673": "2026-11-26T20:20:41Z",
-    "arxiv:1603.03811": "2026-11-26T20:20:41Z",
-    "arxiv:1604.04023": "2026-11-26T20:20:41Z",
-    "arxiv:1605.01068": "2026-11-26T20:20:41Z",
-    "arxiv:1606.04592": "2026-11-26T20:20:41Z",
-    "arxiv:1608.01938": "2026-11-26T20:20:41Z",
-    "arxiv:1609.03398": "2026-11-26T20:20:41Z",
-    "arxiv:1610.00424": "2026-11-26T20:20:41Z",
-    "arxiv:1705.03709": "2026-11-26T20:20:41Z",
-    "arxiv:1707.02501": "2026-11-26T20:20:41Z",
-    "arxiv:1708.04932": "2026-11-26T20:20:41Z",
-    "arxiv:1709.03094": "2026-11-26T20:20:41Z",
-    "arxiv:1710.05165": "2026-11-26T20:20:41Z",
-    "arxiv:1711.06243": "2026-11-26T20:20:41Z",
-    "arxiv:1802.09074": "2026-11-26T20:20:41Z",
-    "arxiv:1803.00434": "2026-11-26T20:20:41Z",
-    "arxiv:1803.01987": "2026-11-26T20:20:41Z",
-    "arxiv:1803.02823": "2026-11-26T20:20:41Z",
-    "arxiv:1803.10811": "2026-11-26T20:20:41Z",
-    "arxiv:1805.10361": "2026-11-26T20:20:41Z",
-    "arxiv:1805.11152": "2026-11-26T20:20:41Z",
-    "arxiv:1807.05820": "2026-11-26T20:20:41Z",
-    "arxiv:1808.06655": "2026-11-26T20:20:41Z",
-    "arxiv:1810.07512": "2026-11-26T20:20:41Z",
-    "arxiv:1810.13360": "2026-11-26T20:20:41Z",
-    "arxiv:1811.08601": "2026-11-26T20:20:41Z",
-    "arxiv:1901.01071": "2026-11-26T20:20:41Z",
-    "arxiv:2003.05834": "2026-11-25T20:14:30Z",
+    "arxiv:0707.1835": "2026-11-27T20:15:34Z",
+    "arxiv:0807.2620": "2026-11-27T20:15:34Z",
+    "arxiv:0807.3578": "2026-11-27T20:15:34Z",
+    "arxiv:0811.4029": "2026-11-27T20:15:34Z",
+    "arxiv:0911.0286": "2026-11-27T20:15:34Z",
+    "arxiv:1001.3079": "2026-11-27T20:15:34Z",
+    "arxiv:1004.3813": "2026-11-27T20:15:34Z",
+    "arxiv:1005.2695": "2026-11-27T20:15:34Z",
+    "arxiv:1006.3869": "2026-11-27T20:15:34Z",
+    "arxiv:1009.5388": "2026-11-27T20:15:34Z",
+    "arxiv:1010.5341": "2026-11-27T20:15:34Z",
+    "arxiv:1012.2857": "2026-11-27T20:15:34Z",
+    "arxiv:1106.6151": "2026-11-27T20:15:34Z",
+    "arxiv:1205.3420": "2026-11-27T20:15:34Z",
+    "arxiv:1209.5169": "2026-11-27T20:15:34Z",
+    "arxiv:1210.7157": "2026-11-27T20:15:34Z",
+    "arxiv:1211.3588": "2026-11-27T20:15:34Z",
+    "arxiv:1302.0625": "2026-11-27T20:15:34Z",
+    "arxiv:1303.6513": "2026-11-27T20:15:34Z",
+    "arxiv:1304.0874": "2026-11-27T20:15:34Z",
+    "arxiv:1305.0222": "2026-11-27T20:15:34Z",
+    "arxiv:1402.6018": "2026-11-27T20:15:34Z",
+    "arxiv:1409.2034": "2026-11-27T20:15:34Z",
+    "arxiv:1410.3814": "2026-11-27T20:15:34Z",
+    "arxiv:1508.01870": "2026-11-27T20:15:34Z",
+    "arxiv:1601.06867": "2026-11-27T20:15:34Z",
+    "arxiv:1603.00673": "2026-11-27T20:15:34Z",
+    "arxiv:1603.03811": "2026-11-27T20:15:34Z",
+    "arxiv:1604.04023": "2026-11-27T20:15:34Z",
+    "arxiv:1605.01068": "2026-11-27T20:15:34Z",
+    "arxiv:1606.04592": "2026-11-27T20:15:34Z",
+    "arxiv:1608.01938": "2026-11-27T20:15:34Z",
+    "arxiv:1609.03398": "2026-11-27T20:15:34Z",
+    "arxiv:1610.00424": "2026-11-27T20:15:34Z",
+    "arxiv:1705.03709": "2026-11-27T20:15:34Z",
+    "arxiv:1707.02501": "2026-11-27T20:15:34Z",
+    "arxiv:1708.04932": "2026-11-27T20:15:34Z",
+    "arxiv:1709.03094": "2026-11-27T20:15:34Z",
+    "arxiv:1710.05165": "2026-11-27T20:15:34Z",
+    "arxiv:1711.06243": "2026-11-27T20:15:34Z",
+    "arxiv:1802.09074": "2026-11-27T20:15:34Z",
+    "arxiv:1803.00434": "2026-11-27T20:15:34Z",
+    "arxiv:1803.01987": "2026-11-27T20:15:34Z",
+    "arxiv:1803.02823": "2026-11-27T20:15:34Z",
+    "arxiv:1803.10811": "2026-11-27T20:15:34Z",
+    "arxiv:1805.10361": "2026-11-27T20:15:34Z",
+    "arxiv:1805.11152": "2026-11-27T20:15:34Z",
+    "arxiv:1807.05820": "2026-11-27T20:15:34Z",
+    "arxiv:1808.06655": "2026-11-27T20:15:34Z",
+    "arxiv:1810.07512": "2026-11-27T20:15:34Z",
+    "arxiv:1810.13360": "2026-11-27T20:15:34Z",
+    "arxiv:1811.08601": "2026-11-27T20:15:34Z",
+    "arxiv:1901.01071": "2026-11-27T20:15:34Z",
+    "arxiv:2003.05834": "2026-11-27T20:15:34Z",
     "arxiv:2007.01329": "2026-11-26T20:20:41Z",
     "arxiv:2007.14567": "2026-11-26T20:20:41Z",
     "arxiv:2008.01223": "2026-11-26T20:20:41Z",
@@ -97789,58 +98313,58 @@
     "arxiv:2501.06028": "2026-11-26T20:20:41Z",
     "arxiv:2502.17218": "2026-11-26T20:20:41Z",
     "arxiv:2505.02723": "2026-11-26T20:20:41Z",
-    "arxiv:2505.08935": "2026-11-25T20:14:30Z",
+    "arxiv:2505.08935": "2026-11-27T20:15:34Z",
     "arxiv:2506.05254": "2026-11-26T20:20:41Z",
     "arxiv:2506.12206": "2026-11-26T20:20:41Z",
     "arxiv:2507.08347": "2026-11-26T20:20:41Z",
     "arxiv:2507.10779": "2026-11-26T20:20:41Z",
     "arxiv:2507.15908": "2026-11-26T20:20:41Z",
-    "arxiv:2507.16138": "2026-11-25T20:14:30Z",
-    "arxiv:2508.12924": "2026-11-25T20:14:30Z",
-    "arxiv:2510.05658": "2026-11-25T20:14:30Z",
-    "arxiv:2510.18857": "2026-11-25T20:14:30Z",
-    "arxiv:2511.03847": "2026-11-25T20:14:30Z",
-    "arxiv:2511.04240": "2026-11-25T20:14:30Z",
-    "arxiv:2511.10851": "2026-11-25T20:14:30Z",
-    "arxiv:2601.17422": "2026-11-25T20:14:30Z",
-    "arxiv:2602.06943": "2026-11-25T20:14:30Z",
-    "arxiv:2603.07589": "2026-11-25T20:14:30Z",
-    "arxiv:2603.14617": "2026-11-25T20:14:30Z",
-    "arxiv:2603.25899": "2026-11-25T20:14:30Z",
-    "arxiv:2603.27728": "2026-11-25T20:14:30Z",
-    "arxiv:2605.09738": "2026-11-25T20:14:30Z",
-    "arxiv:2605.21666": "2026-11-25T20:14:30Z",
-    "arxiv:2605.26771": "2026-11-25T20:14:30Z",
-    "arxiv:2606.02324": "2026-11-25T20:14:30Z",
-    "arxiv:2606.10584": "2026-11-25T20:14:30Z",
-    "arxiv:2606.27293": "2026-11-25T20:14:30Z",
-    "arxiv:2608.12019": "2026-11-25T20:14:30Z",
-    "arxiv:2608.22297": "2026-11-25T20:14:30Z",
-    "arxiv:2609.04551": "2026-11-25T20:14:30Z",
-    "arxiv:2609.10526": "2026-11-25T20:14:30Z",
-    "arxiv:2609.22336": "2026-11-25T20:14:30Z",
-    "arxiv:2609.26771": "2026-11-25T20:14:30Z",
-    "arxiv:2609.31613": "2026-11-25T20:14:30Z",
-    "arxiv:2609.40123": "2026-11-25T20:14:30Z",
-    "arxiv:2610.10614": "2026-11-25T20:14:30Z",
-    "arxiv:2610.18226": "2026-11-25T20:14:30Z",
+    "arxiv:2507.16138": "2026-11-27T20:15:34Z",
+    "arxiv:2508.12924": "2026-11-27T20:15:34Z",
+    "arxiv:2510.05658": "2026-11-27T20:15:34Z",
+    "arxiv:2510.18857": "2026-11-27T20:15:34Z",
+    "arxiv:2511.03847": "2026-11-27T20:15:34Z",
+    "arxiv:2511.04240": "2026-11-27T20:15:34Z",
+    "arxiv:2511.10851": "2026-11-27T20:15:34Z",
+    "arxiv:2601.17422": "2026-11-27T20:15:34Z",
+    "arxiv:2602.06943": "2026-11-27T20:15:34Z",
+    "arxiv:2603.07589": "2026-11-27T20:15:34Z",
+    "arxiv:2603.14617": "2026-11-27T20:15:34Z",
+    "arxiv:2603.25899": "2026-11-27T20:15:34Z",
+    "arxiv:2603.27728": "2026-11-27T20:15:34Z",
+    "arxiv:2605.09738": "2026-11-27T20:15:34Z",
+    "arxiv:2605.21666": "2026-11-27T20:15:34Z",
+    "arxiv:2605.26771": "2026-11-27T20:15:34Z",
+    "arxiv:2606.02324": "2026-11-27T20:15:34Z",
+    "arxiv:2606.10584": "2026-11-27T20:15:34Z",
+    "arxiv:2606.27293": "2026-11-27T20:15:34Z",
+    "arxiv:2608.12019": "2026-11-27T20:15:34Z",
+    "arxiv:2608.22297": "2026-11-27T20:15:34Z",
+    "arxiv:2609.04551": "2026-11-27T20:15:34Z",
+    "arxiv:2609.10526": "2026-11-27T20:15:34Z",
+    "arxiv:2609.22336": "2026-11-27T20:15:34Z",
+    "arxiv:2609.26771": "2026-11-27T20:15:34Z",
+    "arxiv:2609.31613": "2026-11-27T20:15:34Z",
+    "arxiv:2609.40123": "2026-11-27T20:15:34Z",
+    "arxiv:2610.10614": "2026-11-27T20:15:34Z",
+    "arxiv:2610.18226": "2026-11-27T20:15:34Z",
     "arxiv:2610.22764": "2026-11-26T20:20:41Z",
-    "arxiv:2610.26873": "2026-11-25T20:14:30Z",
-    "arxiv:2610.28688": "2026-11-25T20:14:30Z",
-    "arxiv:2610.36534": "2026-11-25T20:14:30Z",
-    "arxiv:2610.37179": "2026-11-25T20:14:30Z",
-    "arxiv:2611.00647": "2026-11-25T20:14:30Z",
-    "arxiv:2611.06054": "2026-11-25T20:14:30Z",
-    "arxiv:2611.09312": "2026-11-25T20:14:30Z",
-    "arxiv:2611.14014": "2026-11-25T20:14:30Z",
-    "arxiv:math/0012099": "2026-11-25T20:14:30Z",
-    "arxiv:math/0102232": "2026-11-25T20:14:30Z",
-    "arxiv:math/0405139": "2026-11-25T20:14:30Z",
-    "arxiv:math/0406307": "2026-11-25T20:14:30Z",
-    "arxiv:math/0406308": "2026-11-25T20:14:30Z",
-    "arxiv:math/0612415": "2026-11-25T20:14:30Z",
-    "arxiv:math/0703532": "2026-11-25T20:14:30Z",
-    "arxiv:math/9909052": "2026-11-25T20:14:30Z",
+    "arxiv:2610.26873": "2026-11-27T20:15:34Z",
+    "arxiv:2610.28688": "2026-11-27T20:15:34Z",
+    "arxiv:2610.36534": "2026-11-27T20:15:34Z",
+    "arxiv:2610.37179": "2026-11-27T20:15:34Z",
+    "arxiv:2611.00647": "2026-11-27T20:15:34Z",
+    "arxiv:2611.06054": "2026-11-27T20:15:34Z",
+    "arxiv:2611.09312": "2026-11-27T20:15:34Z",
+    "arxiv:2611.14014": "2026-11-27T20:15:34Z",
+    "arxiv:math/0012099": "2026-11-27T20:15:34Z",
+    "arxiv:math/0102232": "2026-11-27T20:15:34Z",
+    "arxiv:math/0405139": "2026-11-27T20:15:34Z",
+    "arxiv:math/0406307": "2026-11-27T20:15:34Z",
+    "arxiv:math/0406308": "2026-11-27T20:15:34Z",
+    "arxiv:math/0612415": "2026-11-27T20:15:34Z",
+    "arxiv:math/0703532": "2026-11-27T20:15:34Z",
+    "arxiv:math/9909052": "2026-11-27T20:15:34Z",
     "corrections:10.1002/9781118218457": "2026-11-25T20:14:30Z",
     "corrections:10.1002/j.1538-7305.1967.tb03174.x": "2026-11-25T20:14:30Z",
     "corrections:10.1006/jabr.1993.1063": "2026-11-25T20:14:30Z",
@@ -97871,22 +98395,22 @@
     "corrections:10.1007/bf01450724": "2026-11-26T20:20:41Z",
     "corrections:10.1007/bf01457454": "2026-11-26T20:20:41Z",
     "corrections:10.1007/bf01707594": "2026-11-26T20:20:41Z",
-    "corrections:10.1007/bf02698692": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/bf02764973": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/bf03027290": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/bfb0060799": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/bfb0063135": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s00013-022-01766-6": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s00145-004-0221-0": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s00209-025-03717-7": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s00220-025-05522-z": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s00222-023-01193-6": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s00454-001-0024-0": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s00493-020-4657-0": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s00605-010-0241-9": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s10801-011-0332-2": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s10959-018-0839-8": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s10998-017-0195-y": "2026-11-21T20:01:46Z",
+    "corrections:10.1007/bf02698692": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/bf02764973": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/bf03027290": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/bfb0060799": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/bfb0063135": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s00013-022-01766-6": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s00145-004-0221-0": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s00209-025-03717-7": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s00220-025-05522-z": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s00222-023-01193-6": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s00454-001-0024-0": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s00493-020-4657-0": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s00605-010-0241-9": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s10801-011-0332-2": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s10959-018-0839-8": "2026-11-27T20:15:34Z",
+    "corrections:10.1007/s10998-017-0195-y": "2026-11-27T20:15:34Z",
     "corrections:10.1007/s11856-016-1328-3": "2026-11-22T20:04:46Z",
     "corrections:10.1007/s11856-021-2101-9": "2026-11-22T20:04:46Z",
     "corrections:10.1007/s11856-026-2909-4": "2026-11-22T20:04:46Z",
@@ -97894,7 +98418,7 @@
     "corrections:10.1007/s40993-016-0064-4": "2026-11-22T20:04:46Z",
     "corrections:10.1007/s40993-016-0068-0": "2026-11-22T20:04:46Z",
     "corrections:10.1007/s40993-024-00539-0": "2026-11-22T20:04:46Z",
-    "corrections:10.1007/s40993-026-00743-0": "2026-11-21T20:01:46Z",
+    "corrections:10.1007/s40993-026-00743-0": "2026-11-27T20:15:34Z",
     "corrections:10.1007/s41478-025-01009-1": "2026-11-22T20:04:46Z",
     "corrections:10.1016/0021-8693(86)90174-2": "2026-11-22T20:04:46Z",
     "corrections:10.1016/0022-0000(85)90013-3": "2026-11-22T20:04:46Z",
@@ -98051,7 +98575,7 @@
     "corrections:10.1515/crll.1986.369.167": "2026-11-25T20:14:30Z",
     "corrections:10.1515/crll.2002.069": "2026-11-25T20:14:30Z",
     "corrections:10.1515/ms-2026-0503": "2026-11-25T20:14:30Z",
-    "corrections:10.1515/spma-2024-0020": "2026-11-21T20:01:46Z",
+    "corrections:10.1515/spma-2024-0020": "2026-11-27T20:15:34Z",
     "corrections:10.19086/da.849": "2026-11-25T20:14:30Z",
     "corrections:10.2140/ant.2013.7.1325": "2026-11-25T20:14:30Z",
     "corrections:10.2140/ant.2019.13.1039": "2026-11-25T20:14:30Z",
@@ -98062,7 +98586,7 @@
     "corrections:10.2307/1994841": "2026-11-26T20:20:41Z",
     "corrections:10.2307/2323198": "2026-11-26T20:20:41Z",
     "corrections:10.2478/s12175-009-0131-6": "2026-11-26T20:20:41Z",
-    "corrections:10.2748/tmj/1178228289": "2026-11-21T20:01:46Z",
+    "corrections:10.2748/tmj/1178228289": "2026-11-27T20:15:34Z",
     "corrections:10.37236/6578": "2026-11-26T20:20:41Z",
     "corrections:10.4007/annals.2010.172.1315": "2026-11-26T20:20:41Z",
     "corrections:10.4007/annals.2025.201.2.1": "2026-11-26T20:20:41Z",
@@ -98095,37 +98619,37 @@
     "corrections:10.4153/cjm-2017-022-1": "2026-11-26T20:20:41Z",
     "corrections:10.4153/cmb-1974-052-x": "2026-11-26T20:20:41Z",
     "corrections:10.4153/cmb-2018-027-x": "2026-11-26T20:20:41Z",
-    "corrections:10.4153/s0008414x2610217x": "2026-11-21T20:01:46Z",
-    "corrections:10.4153/s0008439526102082": "2026-11-21T20:01:46Z",
-    "corrections:10.4169/amer.math.monthly.118.01.003": "2026-11-21T20:01:46Z",
-    "corrections:10.4169/amer.math.monthly.123.6.557": "2026-11-21T20:01:46Z",
-    "corrections:10.4171/jems/1073": "2026-11-21T20:01:46Z",
-    "corrections:10.4230/lipics.ccc.2026.20": "2026-11-21T20:01:46Z",
-    "corrections:10.4230/lipics.mfcs.2016.47": "2026-11-21T20:01:46Z",
-    "corrections:10.4310/acta.2019.v223.n2.a1": "2026-11-21T20:01:46Z",
-    "corrections:10.4310/mrl.2000.v7.n1.a11": "2026-11-21T20:01:46Z",
-    "corrections:10.4310/mrl.2013.v20.n5.a14": "2026-11-21T20:01:46Z",
-    "corrections:10.46298/dmtcs.3061": "2026-11-21T20:01:46Z",
-    "corrections:10.5486/pmd.2017.7620": "2026-11-21T20:01:46Z",
-    "corrections:10.5486/pmd.2024.9906": "2026-11-21T20:01:46Z",
-    "corrections:10.56994/jxm.001.001.004": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/aif.2208": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/alco.252": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/ambp.418": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/ccirm.18": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/crmath.824": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/jtnb.1228": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/jtnb.505": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/jtnb.655": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/jtnb.659": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/jtnb.782": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/jtnb.822": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/pmb.57": "2026-11-21T20:01:46Z",
-    "corrections:10.5802/pmb.a-154": "2026-11-21T20:01:46Z",
-    "corrections:10.69763/polyjmath.2.4": "2026-11-21T20:01:46Z",
-    "corrections:10.7146/math.scand.a-10478": "2026-11-21T20:01:46Z",
-    "corrections:10.7146/math.scand.a-10593": "2026-11-21T20:01:46Z",
-    "corrections:10.7146/math.scand.a-11442": "2026-11-21T20:01:46Z",
+    "corrections:10.4153/s0008414x2610217x": "2026-11-27T20:15:34Z",
+    "corrections:10.4153/s0008439526102082": "2026-11-27T20:15:34Z",
+    "corrections:10.4169/amer.math.monthly.118.01.003": "2026-11-27T20:15:34Z",
+    "corrections:10.4169/amer.math.monthly.123.6.557": "2026-11-27T20:15:34Z",
+    "corrections:10.4171/jems/1073": "2026-11-27T20:15:34Z",
+    "corrections:10.4230/lipics.ccc.2026.20": "2026-11-27T20:15:34Z",
+    "corrections:10.4230/lipics.mfcs.2016.47": "2026-11-27T20:15:34Z",
+    "corrections:10.4310/acta.2019.v223.n2.a1": "2026-11-27T20:15:34Z",
+    "corrections:10.4310/mrl.2000.v7.n1.a11": "2026-11-27T20:15:34Z",
+    "corrections:10.4310/mrl.2013.v20.n5.a14": "2026-11-27T20:15:34Z",
+    "corrections:10.46298/dmtcs.3061": "2026-11-27T20:15:34Z",
+    "corrections:10.5486/pmd.2017.7620": "2026-11-27T20:15:34Z",
+    "corrections:10.5486/pmd.2024.9906": "2026-11-27T20:15:34Z",
+    "corrections:10.56994/jxm.001.001.004": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/aif.2208": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/alco.252": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/ambp.418": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/ccirm.18": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/crmath.824": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/jtnb.1228": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/jtnb.505": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/jtnb.655": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/jtnb.659": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/jtnb.782": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/jtnb.822": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/pmb.57": "2026-11-27T20:15:34Z",
+    "corrections:10.5802/pmb.a-154": "2026-11-27T20:15:34Z",
+    "corrections:10.69763/polyjmath.2.4": "2026-11-27T20:15:34Z",
+    "corrections:10.7146/math.scand.a-10478": "2026-11-27T20:15:34Z",
+    "corrections:10.7146/math.scand.a-10593": "2026-11-27T20:15:34Z",
+    "corrections:10.7146/math.scand.a-11442": "2026-11-27T20:15:34Z",
     "doi:10.1002/9781118218457": "2026-11-25T20:14:30Z",
     "doi:10.1002/j.1538-7305.1967.tb03174.x": "2026-11-25T20:14:30Z",
     "doi:10.1006/jabr.1993.1063": "2026-11-25T20:14:30Z",
@@ -98156,22 +98680,22 @@
     "doi:10.1007/bf01450724": "2026-11-26T20:20:41Z",
     "doi:10.1007/bf01457454": "2026-11-26T20:20:41Z",
     "doi:10.1007/bf01707594": "2026-11-26T20:20:41Z",
-    "doi:10.1007/bf02698692": "2026-11-22T20:04:46Z",
-    "doi:10.1007/bf02764973": "2026-11-22T20:04:46Z",
-    "doi:10.1007/bf03027290": "2026-11-22T20:04:46Z",
-    "doi:10.1007/bfb0060799": "2026-11-22T20:04:46Z",
-    "doi:10.1007/bfb0063135": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00013-022-01766-6": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00145-004-0221-0": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00209-025-03717-7": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00220-025-05522-z": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00222-023-01193-6": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00454-001-0024-0": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00493-020-4657-0": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00605-010-0241-9": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s10801-011-0332-2": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s10959-018-0839-8": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s10998-017-0195-y": "2026-11-21T20:01:46Z",
+    "doi:10.1007/bf02698692": "2026-11-27T20:15:34Z",
+    "doi:10.1007/bf02764973": "2026-11-27T20:15:34Z",
+    "doi:10.1007/bf03027290": "2026-11-27T20:15:34Z",
+    "doi:10.1007/bfb0060799": "2026-11-27T20:15:34Z",
+    "doi:10.1007/bfb0063135": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00013-022-01766-6": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00145-004-0221-0": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00209-025-03717-7": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00220-025-05522-z": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00222-023-01193-6": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00454-001-0024-0": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00493-020-4657-0": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00605-010-0241-9": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s10801-011-0332-2": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s10959-018-0839-8": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s10998-017-0195-y": "2026-11-27T20:15:34Z",
     "doi:10.1007/s11856-016-1328-3": "2026-11-22T20:04:46Z",
     "doi:10.1007/s11856-021-2101-9": "2026-11-22T20:04:46Z",
     "doi:10.1007/s11856-026-2909-4": "2026-11-22T20:04:46Z",
@@ -98179,7 +98703,7 @@
     "doi:10.1007/s40993-016-0064-4": "2026-11-22T20:04:46Z",
     "doi:10.1007/s40993-016-0068-0": "2026-11-22T20:04:46Z",
     "doi:10.1007/s40993-024-00539-0": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s40993-026-00743-0": "2026-11-21T20:01:46Z",
+    "doi:10.1007/s40993-026-00743-0": "2026-11-27T20:15:34Z",
     "doi:10.1007/s41478-025-01009-1": "2026-11-22T20:04:46Z",
     "doi:10.1016/0021-8693(86)90174-2": "2026-11-22T20:04:46Z",
     "doi:10.1016/0022-0000(85)90013-3": "2026-11-22T20:04:46Z",
@@ -98336,7 +98860,7 @@
     "doi:10.1515/crll.1986.369.167": "2026-11-25T20:14:30Z",
     "doi:10.1515/crll.2002.069": "2026-11-25T20:14:30Z",
     "doi:10.1515/ms-2026-0503": "2026-11-25T20:14:30Z",
-    "doi:10.1515/spma-2024-0020": "2026-11-21T20:01:46Z",
+    "doi:10.1515/spma-2024-0020": "2026-11-27T20:15:34Z",
     "doi:10.19086/da.849": "2026-11-25T20:14:30Z",
     "doi:10.2140/ant.2013.7.1325": "2026-11-25T20:14:30Z",
     "doi:10.2140/ant.2019.13.1039": "2026-11-25T20:14:30Z",
@@ -98347,7 +98871,7 @@
     "doi:10.2307/1994841": "2026-11-26T20:20:41Z",
     "doi:10.2307/2323198": "2026-11-26T20:20:41Z",
     "doi:10.2478/s12175-009-0131-6": "2026-11-26T20:20:41Z",
-    "doi:10.2748/tmj/1178228289": "2026-11-21T20:01:46Z",
+    "doi:10.2748/tmj/1178228289": "2026-11-27T20:15:34Z",
     "doi:10.37236/6578": "2026-11-26T20:20:41Z",
     "doi:10.4007/annals.2010.172.1315": "2026-11-26T20:20:41Z",
     "doi:10.4007/annals.2025.201.2.1": "2026-11-26T20:20:41Z",
@@ -98380,93 +98904,93 @@
     "doi:10.4153/cjm-2017-022-1": "2026-11-26T20:20:41Z",
     "doi:10.4153/cmb-1974-052-x": "2026-11-26T20:20:41Z",
     "doi:10.4153/cmb-2018-027-x": "2026-11-26T20:20:41Z",
-    "doi:10.4153/s0008414x2610217x": "2026-11-21T20:01:46Z",
-    "doi:10.4153/s0008439526102082": "2026-11-21T20:01:46Z",
-    "doi:10.4169/amer.math.monthly.118.01.003": "2026-11-21T20:01:46Z",
-    "doi:10.4169/amer.math.monthly.123.6.557": "2026-11-21T20:01:46Z",
-    "doi:10.4171/jems/1073": "2026-11-21T20:01:46Z",
-    "doi:10.4230/lipics.ccc.2026.20": "2026-11-21T20:01:46Z",
-    "doi:10.4230/lipics.mfcs.2016.47": "2026-11-21T20:01:46Z",
-    "doi:10.4310/acta.2019.v223.n2.a1": "2026-11-21T20:01:46Z",
-    "doi:10.4310/mrl.2000.v7.n1.a11": "2026-11-21T20:01:46Z",
-    "doi:10.4310/mrl.2013.v20.n5.a14": "2026-11-21T20:01:46Z",
-    "doi:10.46298/dmtcs.3061": "2026-11-21T20:01:46Z",
-    "doi:10.5486/pmd.2017.7620": "2026-11-21T20:01:46Z",
-    "doi:10.5486/pmd.2024.9906": "2026-11-21T20:01:46Z",
-    "doi:10.56994/jxm.001.001.004": "2026-11-21T20:01:46Z",
-    "doi:10.5802/aif.2208": "2026-11-21T20:01:46Z",
-    "doi:10.5802/alco.252": "2026-11-21T20:01:46Z",
-    "doi:10.5802/ambp.418": "2026-11-21T20:01:46Z",
-    "doi:10.5802/ccirm.18": "2026-11-21T20:01:46Z",
-    "doi:10.5802/crmath.824": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.1228": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.505": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.655": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.659": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.782": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.822": "2026-11-21T20:01:46Z",
-    "doi:10.5802/pmb.57": "2026-11-21T20:01:46Z",
-    "doi:10.5802/pmb.a-154": "2026-11-21T20:01:46Z",
-    "doi:10.69763/polyjmath.2.4": "2026-11-21T20:01:46Z",
-    "doi:10.7146/math.scand.a-10478": "2026-11-21T20:01:46Z",
-    "doi:10.7146/math.scand.a-10593": "2026-11-21T20:01:46Z",
-    "doi:10.7146/math.scand.a-11442": "2026-11-21T20:01:46Z"
+    "doi:10.4153/s0008414x2610217x": "2026-11-27T20:15:34Z",
+    "doi:10.4153/s0008439526102082": "2026-11-27T20:15:34Z",
+    "doi:10.4169/amer.math.monthly.118.01.003": "2026-11-27T20:15:34Z",
+    "doi:10.4169/amer.math.monthly.123.6.557": "2026-11-27T20:15:34Z",
+    "doi:10.4171/jems/1073": "2026-11-27T20:15:34Z",
+    "doi:10.4230/lipics.ccc.2026.20": "2026-11-27T20:15:34Z",
+    "doi:10.4230/lipics.mfcs.2016.47": "2026-11-27T20:15:34Z",
+    "doi:10.4310/acta.2019.v223.n2.a1": "2026-11-27T20:15:34Z",
+    "doi:10.4310/mrl.2000.v7.n1.a11": "2026-11-27T20:15:34Z",
+    "doi:10.4310/mrl.2013.v20.n5.a14": "2026-11-27T20:15:34Z",
+    "doi:10.46298/dmtcs.3061": "2026-11-27T20:15:34Z",
+    "doi:10.5486/pmd.2017.7620": "2026-11-27T20:15:34Z",
+    "doi:10.5486/pmd.2024.9906": "2026-11-27T20:15:34Z",
+    "doi:10.56994/jxm.001.001.004": "2026-11-27T20:15:34Z",
+    "doi:10.5802/aif.2208": "2026-11-27T20:15:34Z",
+    "doi:10.5802/alco.252": "2026-11-27T20:15:34Z",
+    "doi:10.5802/ambp.418": "2026-11-27T20:15:34Z",
+    "doi:10.5802/ccirm.18": "2026-11-27T20:15:34Z",
+    "doi:10.5802/crmath.824": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.1228": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.505": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.655": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.659": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.782": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.822": "2026-11-27T20:15:34Z",
+    "doi:10.5802/pmb.57": "2026-11-27T20:15:34Z",
+    "doi:10.5802/pmb.a-154": "2026-11-27T20:15:34Z",
+    "doi:10.69763/polyjmath.2.4": "2026-11-27T20:15:34Z",
+    "doi:10.7146/math.scand.a-10478": "2026-11-27T20:15:34Z",
+    "doi:10.7146/math.scand.a-10593": "2026-11-27T20:15:34Z",
+    "doi:10.7146/math.scand.a-11442": "2026-11-27T20:15:34Z"
   },
   "reference_checks": {
-    "arxiv:0707.1835": "2026-11-26T20:20:41Z",
-    "arxiv:0807.2620": "2026-11-26T20:20:41Z",
-    "arxiv:0807.3578": "2026-11-26T20:20:41Z",
-    "arxiv:0811.4029": "2026-11-26T20:20:41Z",
-    "arxiv:0911.0286": "2026-11-26T20:20:41Z",
-    "arxiv:1001.3079": "2026-11-26T20:20:41Z",
-    "arxiv:1004.3813": "2026-11-26T20:20:41Z",
-    "arxiv:1005.2695": "2026-11-26T20:20:41Z",
-    "arxiv:1006.3869": "2026-11-26T20:20:41Z",
-    "arxiv:1009.5388": "2026-11-26T20:20:41Z",
-    "arxiv:1010.5341": "2026-11-26T20:20:41Z",
-    "arxiv:1012.2857": "2026-11-26T20:20:41Z",
-    "arxiv:1106.6151": "2026-11-26T20:20:41Z",
-    "arxiv:1205.3420": "2026-11-26T20:20:41Z",
-    "arxiv:1209.5169": "2026-11-26T20:20:41Z",
-    "arxiv:1210.7157": "2026-11-26T20:20:41Z",
-    "arxiv:1211.3588": "2026-11-26T20:20:41Z",
-    "arxiv:1302.0625": "2026-11-26T20:20:41Z",
-    "arxiv:1303.6513": "2026-11-26T20:20:41Z",
-    "arxiv:1304.0874": "2026-11-26T20:20:41Z",
-    "arxiv:1305.0222": "2026-11-26T20:20:41Z",
-    "arxiv:1402.6018": "2026-11-26T20:20:41Z",
-    "arxiv:1409.2034": "2026-11-26T20:20:41Z",
-    "arxiv:1410.3814": "2026-11-26T20:20:41Z",
-    "arxiv:1508.01870": "2026-11-26T20:20:41Z",
-    "arxiv:1601.06867": "2026-11-26T20:20:41Z",
-    "arxiv:1603.00673": "2026-11-26T20:20:41Z",
-    "arxiv:1603.03811": "2026-11-26T20:20:41Z",
-    "arxiv:1604.04023": "2026-11-26T20:20:41Z",
-    "arxiv:1605.01068": "2026-11-26T20:20:41Z",
-    "arxiv:1606.04592": "2026-11-26T20:20:41Z",
-    "arxiv:1608.01938": "2026-11-26T20:20:41Z",
-    "arxiv:1609.03398": "2026-11-26T20:20:41Z",
-    "arxiv:1610.00424": "2026-11-26T20:20:41Z",
-    "arxiv:1705.03709": "2026-11-26T20:20:41Z",
-    "arxiv:1707.02501": "2026-11-26T20:20:41Z",
-    "arxiv:1708.04932": "2026-11-26T20:20:41Z",
-    "arxiv:1709.03094": "2026-11-26T20:20:41Z",
-    "arxiv:1710.05165": "2026-11-26T20:20:41Z",
-    "arxiv:1711.06243": "2026-11-26T20:20:41Z",
-    "arxiv:1802.09074": "2026-11-26T20:20:41Z",
-    "arxiv:1803.00434": "2026-11-26T20:20:41Z",
-    "arxiv:1803.01987": "2026-11-26T20:20:41Z",
-    "arxiv:1803.02823": "2026-11-26T20:20:41Z",
-    "arxiv:1803.10811": "2026-11-26T20:20:41Z",
-    "arxiv:1805.10361": "2026-11-26T20:20:41Z",
-    "arxiv:1805.11152": "2026-11-26T20:20:41Z",
-    "arxiv:1807.05820": "2026-11-26T20:20:41Z",
-    "arxiv:1808.06655": "2026-11-26T20:20:41Z",
-    "arxiv:1810.07512": "2026-11-26T20:20:41Z",
-    "arxiv:1810.13360": "2026-11-26T20:20:41Z",
-    "arxiv:1811.08601": "2026-11-26T20:20:41Z",
-    "arxiv:1901.01071": "2026-11-26T20:20:41Z",
-    "arxiv:2003.05834": "2026-11-25T20:14:30Z",
+    "arxiv:0707.1835": "2026-11-27T20:15:34Z",
+    "arxiv:0807.2620": "2026-11-27T20:15:34Z",
+    "arxiv:0807.3578": "2026-11-27T20:15:34Z",
+    "arxiv:0811.4029": "2026-11-27T20:15:34Z",
+    "arxiv:0911.0286": "2026-11-27T20:15:34Z",
+    "arxiv:1001.3079": "2026-11-27T20:15:34Z",
+    "arxiv:1004.3813": "2026-11-27T20:15:34Z",
+    "arxiv:1005.2695": "2026-11-27T20:15:34Z",
+    "arxiv:1006.3869": "2026-11-27T20:15:34Z",
+    "arxiv:1009.5388": "2026-11-27T20:15:34Z",
+    "arxiv:1010.5341": "2026-11-27T20:15:34Z",
+    "arxiv:1012.2857": "2026-11-27T20:15:34Z",
+    "arxiv:1106.6151": "2026-11-27T20:15:34Z",
+    "arxiv:1205.3420": "2026-11-27T20:15:34Z",
+    "arxiv:1209.5169": "2026-11-27T20:15:34Z",
+    "arxiv:1210.7157": "2026-11-27T20:15:34Z",
+    "arxiv:1211.3588": "2026-11-27T20:15:34Z",
+    "arxiv:1302.0625": "2026-11-27T20:15:34Z",
+    "arxiv:1303.6513": "2026-11-27T20:15:34Z",
+    "arxiv:1304.0874": "2026-11-27T20:15:34Z",
+    "arxiv:1305.0222": "2026-11-27T20:15:34Z",
+    "arxiv:1402.6018": "2026-11-27T20:15:34Z",
+    "arxiv:1409.2034": "2026-11-27T20:15:34Z",
+    "arxiv:1410.3814": "2026-11-27T20:15:34Z",
+    "arxiv:1508.01870": "2026-11-27T20:15:34Z",
+    "arxiv:1601.06867": "2026-11-27T20:15:34Z",
+    "arxiv:1603.00673": "2026-11-27T20:15:34Z",
+    "arxiv:1603.03811": "2026-11-27T20:15:34Z",
+    "arxiv:1604.04023": "2026-11-27T20:15:34Z",
+    "arxiv:1605.01068": "2026-11-27T20:15:34Z",
+    "arxiv:1606.04592": "2026-11-27T20:15:34Z",
+    "arxiv:1608.01938": "2026-11-27T20:15:34Z",
+    "arxiv:1609.03398": "2026-11-27T20:15:34Z",
+    "arxiv:1610.00424": "2026-11-27T20:15:34Z",
+    "arxiv:1705.03709": "2026-11-27T20:15:34Z",
+    "arxiv:1707.02501": "2026-11-27T20:15:34Z",
+    "arxiv:1708.04932": "2026-11-27T20:15:34Z",
+    "arxiv:1709.03094": "2026-11-27T20:15:34Z",
+    "arxiv:1710.05165": "2026-11-27T20:15:34Z",
+    "arxiv:1711.06243": "2026-11-27T20:15:34Z",
+    "arxiv:1802.09074": "2026-11-27T20:15:34Z",
+    "arxiv:1803.00434": "2026-11-27T20:15:34Z",
+    "arxiv:1803.01987": "2026-11-27T20:15:34Z",
+    "arxiv:1803.02823": "2026-11-27T20:15:34Z",
+    "arxiv:1803.10811": "2026-11-27T20:15:34Z",
+    "arxiv:1805.10361": "2026-11-27T20:15:34Z",
+    "arxiv:1805.11152": "2026-11-27T20:15:34Z",
+    "arxiv:1807.05820": "2026-11-27T20:15:34Z",
+    "arxiv:1808.06655": "2026-11-27T20:15:34Z",
+    "arxiv:1810.07512": "2026-11-27T20:15:34Z",
+    "arxiv:1810.13360": "2026-11-27T20:15:34Z",
+    "arxiv:1811.08601": "2026-11-27T20:15:34Z",
+    "arxiv:1901.01071": "2026-11-27T20:15:34Z",
+    "arxiv:2003.05834": "2026-11-27T20:15:34Z",
     "arxiv:2007.01329": "2026-11-26T20:20:41Z",
     "arxiv:2007.14567": "2026-11-26T20:20:41Z",
     "arxiv:2008.01223": "2026-11-26T20:20:41Z",
@@ -98508,58 +99032,58 @@
     "arxiv:2501.06028": "2026-11-26T20:20:41Z",
     "arxiv:2502.17218": "2026-11-26T20:20:41Z",
     "arxiv:2505.02723": "2026-11-26T20:20:41Z",
-    "arxiv:2505.08935": "2026-11-25T20:14:30Z",
+    "arxiv:2505.08935": "2026-11-27T20:15:34Z",
     "arxiv:2506.05254": "2026-11-26T20:20:41Z",
     "arxiv:2506.12206": "2026-11-26T20:20:41Z",
     "arxiv:2507.08347": "2026-11-26T20:20:41Z",
     "arxiv:2507.10779": "2026-11-26T20:20:41Z",
     "arxiv:2507.15908": "2026-11-26T20:20:41Z",
-    "arxiv:2507.16138": "2026-11-25T20:14:30Z",
-    "arxiv:2508.12924": "2026-11-25T20:14:30Z",
-    "arxiv:2510.05658": "2026-11-25T20:14:30Z",
-    "arxiv:2510.18857": "2026-11-25T20:14:30Z",
-    "arxiv:2511.03847": "2026-11-25T20:14:30Z",
-    "arxiv:2511.04240": "2026-11-25T20:14:30Z",
-    "arxiv:2511.10851": "2026-11-25T20:14:30Z",
-    "arxiv:2601.17422": "2026-11-25T20:14:30Z",
-    "arxiv:2602.06943": "2026-11-25T20:14:30Z",
-    "arxiv:2603.07589": "2026-11-25T20:14:30Z",
-    "arxiv:2603.14617": "2026-11-25T20:14:30Z",
-    "arxiv:2603.25899": "2026-11-25T20:14:30Z",
-    "arxiv:2603.27728": "2026-11-25T20:14:30Z",
-    "arxiv:2605.09738": "2026-11-25T20:14:30Z",
-    "arxiv:2605.21666": "2026-11-25T20:14:30Z",
-    "arxiv:2605.26771": "2026-11-25T20:14:30Z",
-    "arxiv:2606.02324": "2026-11-25T20:14:30Z",
-    "arxiv:2606.10584": "2026-11-25T20:14:30Z",
-    "arxiv:2606.27293": "2026-11-25T20:14:30Z",
-    "arxiv:2608.12019": "2026-11-25T20:14:30Z",
-    "arxiv:2608.22297": "2026-11-25T20:14:30Z",
-    "arxiv:2609.04551": "2026-11-25T20:14:30Z",
-    "arxiv:2609.10526": "2026-11-25T20:14:30Z",
-    "arxiv:2609.22336": "2026-11-25T20:14:30Z",
-    "arxiv:2609.26771": "2026-11-25T20:14:30Z",
-    "arxiv:2609.31613": "2026-11-25T20:14:30Z",
-    "arxiv:2609.40123": "2026-11-25T20:14:30Z",
-    "arxiv:2610.10614": "2026-11-25T20:14:30Z",
-    "arxiv:2610.18226": "2026-11-25T20:14:30Z",
+    "arxiv:2507.16138": "2026-11-27T20:15:34Z",
+    "arxiv:2508.12924": "2026-11-27T20:15:34Z",
+    "arxiv:2510.05658": "2026-11-27T20:15:34Z",
+    "arxiv:2510.18857": "2026-11-27T20:15:34Z",
+    "arxiv:2511.03847": "2026-11-27T20:15:34Z",
+    "arxiv:2511.04240": "2026-11-27T20:15:34Z",
+    "arxiv:2511.10851": "2026-11-27T20:15:34Z",
+    "arxiv:2601.17422": "2026-11-27T20:15:34Z",
+    "arxiv:2602.06943": "2026-11-27T20:15:34Z",
+    "arxiv:2603.07589": "2026-11-27T20:15:34Z",
+    "arxiv:2603.14617": "2026-11-27T20:15:34Z",
+    "arxiv:2603.25899": "2026-11-27T20:15:34Z",
+    "arxiv:2603.27728": "2026-11-27T20:15:34Z",
+    "arxiv:2605.09738": "2026-11-27T20:15:34Z",
+    "arxiv:2605.21666": "2026-11-27T20:15:34Z",
+    "arxiv:2605.26771": "2026-11-27T20:15:34Z",
+    "arxiv:2606.02324": "2026-11-27T20:15:34Z",
+    "arxiv:2606.10584": "2026-11-27T20:15:34Z",
+    "arxiv:2606.27293": "2026-11-27T20:15:34Z",
+    "arxiv:2608.12019": "2026-11-27T20:15:34Z",
+    "arxiv:2608.22297": "2026-11-27T20:15:34Z",
+    "arxiv:2609.04551": "2026-11-27T20:15:34Z",
+    "arxiv:2609.10526": "2026-11-27T20:15:34Z",
+    "arxiv:2609.22336": "2026-11-27T20:15:34Z",
+    "arxiv:2609.26771": "2026-11-27T20:15:34Z",
+    "arxiv:2609.31613": "2026-11-27T20:15:34Z",
+    "arxiv:2609.40123": "2026-11-27T20:15:34Z",
+    "arxiv:2610.10614": "2026-11-27T20:15:34Z",
+    "arxiv:2610.18226": "2026-11-27T20:15:34Z",
     "arxiv:2610.22764": "2026-11-26T20:20:41Z",
-    "arxiv:2610.26873": "2026-11-25T20:14:30Z",
-    "arxiv:2610.28688": "2026-11-25T20:14:30Z",
-    "arxiv:2610.36534": "2026-11-25T20:14:30Z",
-    "arxiv:2610.37179": "2026-11-25T20:14:30Z",
-    "arxiv:2611.00647": "2026-11-25T20:14:30Z",
-    "arxiv:2611.06054": "2026-11-25T20:14:30Z",
-    "arxiv:2611.09312": "2026-11-25T20:14:30Z",
-    "arxiv:2611.14014": "2026-11-25T20:14:30Z",
-    "arxiv:math/0012099": "2026-11-25T20:14:30Z",
-    "arxiv:math/0102232": "2026-11-25T20:14:30Z",
-    "arxiv:math/0405139": "2026-11-25T20:14:30Z",
-    "arxiv:math/0406307": "2026-11-25T20:14:30Z",
-    "arxiv:math/0406308": "2026-11-25T20:14:30Z",
-    "arxiv:math/0612415": "2026-11-25T20:14:30Z",
-    "arxiv:math/0703532": "2026-11-25T20:14:30Z",
-    "arxiv:math/9909052": "2026-11-25T20:14:30Z",
+    "arxiv:2610.26873": "2026-11-27T20:15:34Z",
+    "arxiv:2610.28688": "2026-11-27T20:15:34Z",
+    "arxiv:2610.36534": "2026-11-27T20:15:34Z",
+    "arxiv:2610.37179": "2026-11-27T20:15:34Z",
+    "arxiv:2611.00647": "2026-11-27T20:15:34Z",
+    "arxiv:2611.06054": "2026-11-27T20:15:34Z",
+    "arxiv:2611.09312": "2026-11-27T20:15:34Z",
+    "arxiv:2611.14014": "2026-11-27T20:15:34Z",
+    "arxiv:math/0012099": "2026-11-27T20:15:34Z",
+    "arxiv:math/0102232": "2026-11-27T20:15:34Z",
+    "arxiv:math/0405139": "2026-11-27T20:15:34Z",
+    "arxiv:math/0406307": "2026-11-27T20:15:34Z",
+    "arxiv:math/0406308": "2026-11-27T20:15:34Z",
+    "arxiv:math/0612415": "2026-11-27T20:15:34Z",
+    "arxiv:math/0703532": "2026-11-27T20:15:34Z",
+    "arxiv:math/9909052": "2026-11-27T20:15:34Z",
     "corrections:10.1002/9781118218457": "2026-11-13T05:12:43Z",
     "corrections:10.1002/j.1538-7305.1967.tb03174.x": "2026-11-13T05:12:43Z",
     "corrections:10.1006/jabr.1993.1063": "2026-11-13T05:12:43Z",
@@ -98605,7 +99129,7 @@
     "corrections:10.1007/s00605-010-0241-9": "2026-11-13T05:12:43Z",
     "corrections:10.1007/s10801-011-0332-2": "2026-11-13T05:12:43Z",
     "corrections:10.1007/s10959-018-0839-8": "2026-11-13T05:12:43Z",
-    "corrections:10.1007/s10998-017-0195-y": "2026-11-21T20:01:46Z",
+    "corrections:10.1007/s10998-017-0195-y": "2026-11-27T20:15:34Z",
     "corrections:10.1007/s11856-016-1328-3": "2026-11-13T05:12:43Z",
     "corrections:10.1007/s11856-021-2101-9": "2026-11-13T05:12:43Z",
     "corrections:10.1007/s11856-026-2909-4": "2026-11-13T05:12:43Z",
@@ -98613,7 +99137,7 @@
     "corrections:10.1007/s40993-016-0064-4": "2026-11-13T05:12:43Z",
     "corrections:10.1007/s40993-016-0068-0": "2026-11-13T05:22:24Z",
     "corrections:10.1007/s40993-024-00539-0": "2026-11-13T05:22:24Z",
-    "corrections:10.1007/s40993-026-00743-0": "2026-11-15T19:58:06Z",
+    "corrections:10.1007/s40993-026-00743-0": "2026-11-27T20:15:34Z",
     "corrections:10.1007/s41478-025-01009-1": "2026-11-13T05:22:24Z",
     "corrections:10.1016/0021-8693(86)90174-2": "2026-11-13T05:22:24Z",
     "corrections:10.1016/0022-0000(85)90013-3": "2026-11-13T05:22:24Z",
@@ -98725,22 +99249,22 @@
     "doi:10.1007/bf01450724": "2026-11-26T20:20:41Z",
     "doi:10.1007/bf01457454": "2026-11-26T20:20:41Z",
     "doi:10.1007/bf01707594": "2026-11-26T20:20:41Z",
-    "doi:10.1007/bf02698692": "2026-11-22T20:04:46Z",
-    "doi:10.1007/bf02764973": "2026-11-22T20:04:46Z",
-    "doi:10.1007/bf03027290": "2026-11-22T20:04:46Z",
-    "doi:10.1007/bfb0060799": "2026-11-22T20:04:46Z",
-    "doi:10.1007/bfb0063135": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00013-022-01766-6": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00145-004-0221-0": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00209-025-03717-7": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00220-025-05522-z": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00222-023-01193-6": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00454-001-0024-0": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00493-020-4657-0": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s00605-010-0241-9": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s10801-011-0332-2": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s10959-018-0839-8": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s10998-017-0195-y": "2026-11-21T20:01:46Z",
+    "doi:10.1007/bf02698692": "2026-11-27T20:15:34Z",
+    "doi:10.1007/bf02764973": "2026-11-27T20:15:34Z",
+    "doi:10.1007/bf03027290": "2026-11-27T20:15:34Z",
+    "doi:10.1007/bfb0060799": "2026-11-27T20:15:34Z",
+    "doi:10.1007/bfb0063135": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00013-022-01766-6": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00145-004-0221-0": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00209-025-03717-7": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00220-025-05522-z": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00222-023-01193-6": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00454-001-0024-0": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00493-020-4657-0": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s00605-010-0241-9": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s10801-011-0332-2": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s10959-018-0839-8": "2026-11-27T20:15:34Z",
+    "doi:10.1007/s10998-017-0195-y": "2026-11-27T20:15:34Z",
     "doi:10.1007/s11856-016-1328-3": "2026-11-22T20:04:46Z",
     "doi:10.1007/s11856-021-2101-9": "2026-11-22T20:04:46Z",
     "doi:10.1007/s11856-026-2909-4": "2026-11-22T20:04:46Z",
@@ -98748,7 +99272,7 @@
     "doi:10.1007/s40993-016-0064-4": "2026-11-22T20:04:46Z",
     "doi:10.1007/s40993-016-0068-0": "2026-11-22T20:04:46Z",
     "doi:10.1007/s40993-024-00539-0": "2026-11-22T20:04:46Z",
-    "doi:10.1007/s40993-026-00743-0": "2026-11-21T20:01:46Z",
+    "doi:10.1007/s40993-026-00743-0": "2026-11-27T20:15:34Z",
     "doi:10.1007/s41478-025-01009-1": "2026-11-22T20:04:46Z",
     "doi:10.1016/0021-8693(86)90174-2": "2026-11-22T20:04:46Z",
     "doi:10.1016/0022-0000(85)90013-3": "2026-11-22T20:04:46Z",
@@ -98905,7 +99429,7 @@
     "doi:10.1515/crll.1986.369.167": "2026-11-25T20:14:30Z",
     "doi:10.1515/crll.2002.069": "2026-11-25T20:14:30Z",
     "doi:10.1515/ms-2026-0503": "2026-11-25T20:14:30Z",
-    "doi:10.1515/spma-2024-0020": "2026-11-21T20:01:46Z",
+    "doi:10.1515/spma-2024-0020": "2026-11-27T20:15:34Z",
     "doi:10.19086/da.849": "2026-11-25T20:14:30Z",
     "doi:10.2140/ant.2013.7.1325": "2026-11-25T20:14:30Z",
     "doi:10.2140/ant.2019.13.1039": "2026-11-25T20:14:30Z",
@@ -98915,7 +99439,7 @@
     "doi:10.2307/1968341": "2026-11-25T20:14:30Z",
     "doi:10.2307/1994841": "2026-11-26T20:20:41Z",
     "doi:10.2478/s12175-009-0131-6": "2026-11-26T20:20:41Z",
-    "doi:10.2748/tmj/1178228289": "2026-11-21T20:01:46Z",
+    "doi:10.2748/tmj/1178228289": "2026-11-27T20:15:34Z",
     "doi:10.37236/6578": "2026-11-26T20:20:41Z",
     "doi:10.4007/annals.2010.172.1315": "2026-11-26T20:20:41Z",
     "doi:10.4007/annals.2025.201.2.1": "2026-11-26T20:20:41Z",
@@ -98947,35 +99471,35 @@
     "doi:10.4153/cjm-2017-022-1": "2026-11-26T20:20:41Z",
     "doi:10.4153/cmb-1974-052-x": "2026-11-26T20:20:41Z",
     "doi:10.4153/cmb-2018-027-x": "2026-11-26T20:20:41Z",
-    "doi:10.4153/s0008414x2610217x": "2026-11-21T20:01:46Z",
-    "doi:10.4153/s0008439526102082": "2026-11-21T20:01:46Z",
-    "doi:10.4169/amer.math.monthly.118.01.003": "2026-11-21T20:01:46Z",
-    "doi:10.4169/amer.math.monthly.123.6.557": "2026-11-21T20:01:46Z",
-    "doi:10.4171/jems/1073": "2026-11-21T20:01:46Z",
-    "doi:10.4310/acta.2019.v223.n2.a1": "2026-11-21T20:01:46Z",
-    "doi:10.4310/mrl.2000.v7.n1.a11": "2026-11-21T20:01:46Z",
-    "doi:10.4310/mrl.2013.v20.n5.a14": "2026-11-21T20:01:46Z",
-    "doi:10.46298/dmtcs.3061": "2026-11-21T20:01:46Z",
-    "doi:10.5486/pmd.2017.7620": "2026-11-21T20:01:46Z",
-    "doi:10.5486/pmd.2024.9906": "2026-11-21T20:01:46Z",
-    "doi:10.56994/jxm.001.001.004": "2026-11-21T20:01:46Z",
-    "doi:10.5802/aif.2208": "2026-11-21T20:01:46Z",
-    "doi:10.5802/alco.252": "2026-11-21T20:01:46Z",
-    "doi:10.5802/ambp.418": "2026-11-21T20:01:46Z",
-    "doi:10.5802/ccirm.18": "2026-11-21T20:01:46Z",
-    "doi:10.5802/crmath.824": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.1228": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.505": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.655": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.659": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.782": "2026-11-21T20:01:46Z",
-    "doi:10.5802/jtnb.822": "2026-11-21T20:01:46Z",
-    "doi:10.5802/pmb.57": "2026-11-21T20:01:46Z",
-    "doi:10.5802/pmb.a-154": "2026-11-21T20:01:46Z",
-    "doi:10.69763/polyjmath.2.4": "2026-11-21T20:01:46Z",
-    "doi:10.7146/math.scand.a-10478": "2026-11-21T20:01:46Z",
-    "doi:10.7146/math.scand.a-10593": "2026-11-21T20:01:46Z",
-    "doi:10.7146/math.scand.a-11442": "2026-11-21T20:01:46Z"
+    "doi:10.4153/s0008414x2610217x": "2026-11-27T20:15:34Z",
+    "doi:10.4153/s0008439526102082": "2026-11-27T20:15:34Z",
+    "doi:10.4169/amer.math.monthly.118.01.003": "2026-11-27T20:15:34Z",
+    "doi:10.4169/amer.math.monthly.123.6.557": "2026-11-27T20:15:34Z",
+    "doi:10.4171/jems/1073": "2026-11-27T20:15:34Z",
+    "doi:10.4310/acta.2019.v223.n2.a1": "2026-11-27T20:15:34Z",
+    "doi:10.4310/mrl.2000.v7.n1.a11": "2026-11-27T20:15:34Z",
+    "doi:10.4310/mrl.2013.v20.n5.a14": "2026-11-27T20:15:34Z",
+    "doi:10.46298/dmtcs.3061": "2026-11-27T20:15:34Z",
+    "doi:10.5486/pmd.2017.7620": "2026-11-27T20:15:34Z",
+    "doi:10.5486/pmd.2024.9906": "2026-11-27T20:15:34Z",
+    "doi:10.56994/jxm.001.001.004": "2026-11-27T20:15:34Z",
+    "doi:10.5802/aif.2208": "2026-11-27T20:15:34Z",
+    "doi:10.5802/alco.252": "2026-11-27T20:15:34Z",
+    "doi:10.5802/ambp.418": "2026-11-27T20:15:34Z",
+    "doi:10.5802/ccirm.18": "2026-11-27T20:15:34Z",
+    "doi:10.5802/crmath.824": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.1228": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.505": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.655": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.659": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.782": "2026-11-27T20:15:34Z",
+    "doi:10.5802/jtnb.822": "2026-11-27T20:15:34Z",
+    "doi:10.5802/pmb.57": "2026-11-27T20:15:34Z",
+    "doi:10.5802/pmb.a-154": "2026-11-27T20:15:34Z",
+    "doi:10.69763/polyjmath.2.4": "2026-11-27T20:15:34Z",
+    "doi:10.7146/math.scand.a-10478": "2026-11-27T20:15:34Z",
+    "doi:10.7146/math.scand.a-10593": "2026-11-27T20:15:34Z",
+    "doi:10.7146/math.scand.a-11442": "2026-11-27T20:15:34Z"
   },
   "reference_errors": {
     "corrections:10.1002/9781118218457": {
@@ -99098,56 +99622,64 @@
       "at": "2026-11-26T20:20:41Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
+    "corrections:10.1007/bf02698692": {
+      "at": "2026-11-27T20:15:34Z",
+      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
+    },
+    "corrections:10.1007/bf02764973": {
+      "at": "2026-11-27T20:15:34Z",
+      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
+    },
     "corrections:10.1007/bf03027290": {
-      "at": "2026-11-22T20:04:46Z",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "at": "2026-11-27T20:15:34Z",
+      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/bfb0060799": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/bfb0063135": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s00013-022-01766-6": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s00145-004-0221-0": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s00209-025-03717-7": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s00220-025-05522-z": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s00222-023-01193-6": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s00454-001-0024-0": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s00493-020-4657-0": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s00605-010-0241-9": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s10801-011-0332-2": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s10959-018-0839-8": {
-      "at": "2026-11-22T20:04:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1007/s11856-016-1328-3": {
@@ -99177,10 +99709,6 @@
     "corrections:10.1007/s40993-024-00539-0": {
       "at": "2026-11-22T20:04:46Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
-    },
-    "corrections:10.1007/s40993-026-00743-0": {
-      "at": "2026-11-21T20:01:46Z",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     "corrections:10.1007/s41478-025-01009-1": {
       "at": "2026-11-22T20:04:46Z",
@@ -99755,8 +100283,8 @@
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.1515/spma-2024-0020": {
-      "at": "2026-11-21T20:01:46Z",
-      "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
+      "at": "2026-11-27T20:15:34Z",
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     "corrections:10.19086/da.849": {
       "at": "2026-11-25T20:14:30Z",
@@ -99787,7 +100315,7 @@
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.2748/tmj/1178228289": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.37236/6578": {
@@ -99919,127 +100447,127 @@
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4153/s0008414x2610217x": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4153/s0008439526102082": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4169/amer.math.monthly.118.01.003": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4169/amer.math.monthly.123.6.557": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4171/jems/1073": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4230/lipics.ccc.2026.20": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4230/lipics.mfcs.2016.47": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4310/acta.2019.v223.n2.a1": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4310/mrl.2000.v7.n1.a11": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.4310/mrl.2013.v20.n5.a14": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.46298/dmtcs.3061": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5486/pmd.2017.7620": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5486/pmd.2024.9906": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.56994/jxm.001.001.004": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/aif.2208": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/alco.252": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/ambp.418": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/ccirm.18": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/crmath.824": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/jtnb.1228": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/jtnb.505": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/jtnb.655": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/jtnb.659": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/jtnb.782": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/jtnb.822": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/pmb.57": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.5802/pmb.a-154": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.69763/polyjmath.2.4": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.7146/math.scand.a-10478": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.7146/math.scand.a-10593": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "corrections:10.7146/math.scand.a-11442": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org"
     },
     "doi:10.2307/2323198": {
@@ -100051,88 +100579,88 @@
       "error": "HTTPError: HTTP Error 404: Not Found"
     },
     "doi:10.4230/lipics.ccc.2026.20": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "HTTPError: HTTP Error 404: Not Found"
     },
     "doi:10.4230/lipics.mfcs.2016.47": {
-      "at": "2026-11-21T20:01:46Z",
+      "at": "2026-11-27T20:15:34Z",
       "error": "HTTPError: HTTP Error 404: Not Found"
     }
   },
-  "request_count": 77,
+  "request_count": 76,
   "schema_version": 1,
   "sources": {
     "arxiv/dynamics-finite-multivariate": {
       "error": "",
-      "items": 15,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "items": 10,
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "arxiv/irreducibility-galois": {
       "error": "",
-      "items": 10,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "items": 4,
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "arxiv/named-families": {
       "error": "",
-      "items": 20,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "items": 17,
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "conrad-notes/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "crossref/arboreal": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "crossref/galois": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "crossref/irreducibility": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "existing-arxiv": {
       "error": "",
       "items": 100,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "scheduled": 100,
       "status": "ok",
       "total_registered": 147
     },
     "existing-corrections": {
-      "error": "10.37236/6578: HTTPError: HTTP Error 429: Too Many Requests; 10.4007/annals.2010.172.1315: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4007/annals.2025.201.2.1: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4064/aa-11-1-1-34: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4064/aa-11-4-491: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4064/aa-17-3-255-271: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4064/aa-82-1-1-15: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4064/aa-82-3-303-307: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4064/aa-87-4-291-317: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4064/aa-88-4-333-350: RuntimeError: Host temporarily skipped after network failures or a ",
-      "items": 3,
-      "last_attempt": "2026-11-26T20:20:41Z",
+      "error": "10.1515/spma-2024-0020: HTTPError: HTTP Error 429: Too Many Requests; 10.2748/tmj/1178228289: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4153/s0008414x2610217x: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4153/s0008439526102082: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4169/amer.math.monthly.118.01.003: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4169/amer.math.monthly.123.6.557: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4171/jems/1073: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4230/lipics.ccc.2026.20: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4230/lipics.mfcs.2016.47: RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org; 10.4310/acta.2019.v223.n2.a1: RuntimeError: Host temp",
+      "items": 2,
+      "last_attempt": "2026-11-27T20:15:34Z",
       "last_success": "2026-11-13T05:22:24Z",
       "scheduled": 50,
       "status": "failed",
       "total_registered": 285
     },
     "existing-doi": {
-      "error": "Provider omitted 10.2307/2323198; 10.4064/aa-11-4-491: HTTPError: HTTP Error 404: Not Found",
+      "error": "10.4230/lipics.ccc.2026.20: HTTPError: HTTP Error 404: Not Found; 10.4230/lipics.mfcs.2016.47: HTTPError: HTTP Error 404: Not Found",
       "items": 48,
-      "last_attempt": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
       "last_success": "2026-11-25T20:14:30Z",
       "scheduled": 50,
       "status": "failed",
@@ -100155,133 +100683,133 @@
         "10.5281/zenodo.23661993"
       ],
       "items": 0,
-      "last_attempt": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
       "status": "not-covered"
     },
     "filaseta-preprints/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "hal/dynamics-finite-multivariate": {
       "error": "",
-      "items": 5,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "items": 3,
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "hal/families": {
       "error": "",
       "items": 4,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "hal/irreducibility-galois": {
       "error": "",
-      "items": 19,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "items": 20,
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "hexagon/polynomial-arithmetic": {
       "error": "",
       "items": 3,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "journal-finite-fields/polynomial-arithmetic": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "journal-number-theory/polynomial-arithmetic": {
       "error": "RuntimeError: Host temporarily skipped after network failures or a rate-limit response: api.crossref.org",
       "items": 0,
-      "last_attempt": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
       "last_success": "2026-11-13T05:22:24Z",
       "status": "failed"
     },
     "juul-research/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "milne-course-errata/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "milne-course-notes/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "milne-galois-errata/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "pdf-conradfinitetests/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "pdf-conradirredq/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "pdf-conradsnan/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "pdf-milne2020ant/page": {
       "error": "",
       "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "zenodo/dynamics-finite-multivariate": {
       "error": "",
       "items": 3,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "zenodo/families": {
       "error": "",
-      "items": 5,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "items": 6,
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     },
     "zenodo/irreducibility-galois": {
       "error": "",
-      "items": 1,
-      "last_attempt": "2026-11-26T20:20:41Z",
-      "last_success": "2026-11-26T20:20:41Z",
+      "items": 2,
+      "last_attempt": "2026-11-27T20:15:34Z",
+      "last_success": "2026-11-27T20:15:34Z",
       "status": "ok"
     }
   }

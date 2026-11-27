@@ -1,6 +1,6 @@
 # Literature watch
 
-Last attempted scan: 2026-11-26T20:20:41Z
+Last attempted scan: 2026-11-27T20:15:34Z
 
 Metadata leads for editorial review. A match or changed file does not verify a mathematical claim. Baselines record existing sources; they are not new publications.
 
@@ -8,37 +8,61 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 
 | Source / query | Result | Items | Last complete check | Detail |
 |---|---|---:|---|---|
-| arxiv/dynamics\-finite\-multivariate | ok | 15 | 2026-11-26T20:20:41Z |  |
-| arxiv/irreducibility\-galois | ok | 10 | 2026-11-26T20:20:41Z |  |
-| arxiv/named\-families | ok | 20 | 2026-11-26T20:20:41Z |  |
-| conrad\-notes/page | ok | 1 | 2026-11-26T20:20:41Z |  |
+| arxiv/dynamics\-finite\-multivariate | ok | 10 | 2026-11-27T20:15:34Z |  |
+| arxiv/irreducibility\-galois | ok | 4 | 2026-11-27T20:15:34Z |  |
+| arxiv/named\-families | ok | 17 | 2026-11-27T20:15:34Z |  |
+| conrad\-notes/page | ok | 1 | 2026-11-27T20:15:34Z |  |
 | crossref/arboreal | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/galois | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | crossref/irreducibility | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| existing\-arxiv | ok | 100 | 2026-11-26T20:20:41Z | Rotating batch: 100 attempted of 147 registered\. |
-| existing\-corrections | failed | 3 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 285 registered\. 10\.37236/6578: HTTPError: HTTP Error 429: Too Many Requests; 10\.4007/annals\.2010\.172\.1315: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4007/annals\.2025\.201\.2\.1: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-11\-1\-1\-34: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-11\-4\-491: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-17\-3\-255\-271: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-82\-1\-1\-15: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-82\-3\-303\-307: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-87\-4\-291\-317: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4064/aa\-88\-4\-333\-350: RuntimeError: Host temporarily skipped after network failures or a |
-| existing\-doi | failed | 48 | 2026-11-25T20:14:30Z | Rotating batch: 50 attempted of 285 registered\. Provider omitted 10\.2307/2323198; 10\.4064/aa\-11\-4\-491: HTTPError: HTTP Error 404: Not Found |
+| existing\-arxiv | ok | 100 | 2026-11-27T20:15:34Z | Rotating batch: 100 attempted of 147 registered\. |
+| existing\-corrections | failed | 2 | 2026-11-13T05:22:24Z | Rotating batch: 50 attempted of 285 registered\. 10\.1515/spma\-2024\-0020: HTTPError: HTTP Error 429: Too Many Requests; 10\.2748/tmj/1178228289: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4153/s0008414x2610217x: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4153/s0008439526102082: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4169/amer\.math\.monthly\.118\.01\.003: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4169/amer\.math\.monthly\.123\.6\.557: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4171/jems/1073: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4230/lipics\.ccc\.2026\.20: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4230/lipics\.mfcs\.2016\.47: RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org; 10\.4310/acta\.2019\.v223\.n2\.a1: RuntimeError: Host temp |
+| existing\-doi | failed | 48 | 2026-11-25T20:14:30Z | Rotating batch: 50 attempted of 285 registered\. 10\.4230/lipics\.ccc\.2026\.20: HTTPError: HTTP Error 404: Not Found; 10\.4230/lipics\.mfcs\.2016\.47: HTTPError: HTTP Error 404: Not Found |
 | existing\-non\-crossref | not-covered | 0 | never | 12 known non\-Crossref DOIs excluded from Crossref checks; arXiv identifiers are checked separately; other repository updates require editorial follow\-up |
-| filaseta\-preprints/page | ok | 1 | 2026-11-26T20:20:41Z |  |
-| hal/dynamics\-finite\-multivariate | ok | 5 | 2026-11-26T20:20:41Z |  |
-| hal/families | ok | 4 | 2026-11-26T20:20:41Z |  |
-| hal/irreducibility\-galois | ok | 19 | 2026-11-26T20:20:41Z |  |
-| hexagon/polynomial\-arithmetic | ok | 3 | 2026-11-26T20:20:41Z |  |
+| filaseta\-preprints/page | ok | 1 | 2026-11-27T20:15:34Z |  |
+| hal/dynamics\-finite\-multivariate | ok | 3 | 2026-11-27T20:15:34Z |  |
+| hal/families | ok | 4 | 2026-11-27T20:15:34Z |  |
+| hal/irreducibility\-galois | ok | 20 | 2026-11-27T20:15:34Z |  |
+| hexagon/polynomial\-arithmetic | ok | 3 | 2026-11-27T20:15:34Z |  |
 | journal\-finite\-fields/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
 | journal\-number\-theory/polynomial\-arithmetic | failed | 0 | 2026-11-13T05:22:24Z | RuntimeError: Host temporarily skipped after network failures or a rate\-limit response: api\.crossref\.org |
-| juul\-research/page | ok | 1 | 2026-11-26T20:20:41Z |  |
-| milne\-course\-errata/page | ok | 1 | 2026-11-26T20:20:41Z |  |
-| milne\-course\-notes/page | ok | 1 | 2026-11-26T20:20:41Z |  |
-| milne\-galois\-errata/page | ok | 1 | 2026-11-26T20:20:41Z |  |
-| pdf\-conradfinitetests/page | ok | 1 | 2026-11-26T20:20:41Z |  |
-| pdf\-conradirredq/page | ok | 1 | 2026-11-26T20:20:41Z |  |
-| pdf\-conradsnan/page | ok | 1 | 2026-11-26T20:20:41Z |  |
-| pdf\-milne2020ant/page | ok | 1 | 2026-11-26T20:20:41Z |  |
-| zenodo/dynamics\-finite\-multivariate | ok | 3 | 2026-11-26T20:20:41Z |  |
-| zenodo/families | ok | 5 | 2026-11-26T20:20:41Z |  |
-| zenodo/irreducibility\-galois | ok | 1 | 2026-11-26T20:20:41Z |  |
+| juul\-research/page | ok | 1 | 2026-11-27T20:15:34Z |  |
+| milne\-course\-errata/page | ok | 1 | 2026-11-27T20:15:34Z |  |
+| milne\-course\-notes/page | ok | 1 | 2026-11-27T20:15:34Z |  |
+| milne\-galois\-errata/page | ok | 1 | 2026-11-27T20:15:34Z |  |
+| pdf\-conradfinitetests/page | ok | 1 | 2026-11-27T20:15:34Z |  |
+| pdf\-conradirredq/page | ok | 1 | 2026-11-27T20:15:34Z |  |
+| pdf\-conradsnan/page | ok | 1 | 2026-11-27T20:15:34Z |  |
+| pdf\-milne2020ant/page | ok | 1 | 2026-11-27T20:15:34Z |  |
+| zenodo/dynamics\-finite\-multivariate | ok | 3 | 2026-11-27T20:15:34Z |  |
+| zenodo/families | ok | 6 | 2026-11-27T20:15:34Z |  |
+| zenodo/irreducibility\-galois | ok | 2 | 2026-11-27T20:15:34Z |  |
 
 ## Unreviewed discoveries and changes
+
+### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
+
+- Event: `b8b23a60828213b214a7` (new, detected 2026-11-27T20:15:34Z)
+- Source: zenodo; version: v16
+- Link: <https://zenodo.org/records/24575886>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### Prime Blocks and Additive Divisor Obstructions in Cyclotomic Littlewood Polynomials
+
+- Event: `18d243795311bc1b0be5` (new, detected 2026-11-27T20:15:34Z)
+- Source: zenodo; version: v15
+- Link: <https://zenodo.org/records/24574410>
+- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
+
+### How far automorphisms of a p\-adic absolute Galois group move the ring of integers: to the edge of the log\-shell, with an application to Step \(v\) of IUT IV
+
+- Event: `068d1a2836cca08f40fc` (new, detected 2026-11-27T20:15:34Z)
+- Source: zenodo; version: 1\.2\.0
+- Link: <https://zenodo.org/records/24572663>
+- Possible affected pages: `articles/discriminants.html`, `articles/frobenius.html`, `articles/permutation-groups.html`, `articles/ramification-inertia.html`, `articles/reciprocity.html`, `articles/resolvents.html`
+- Check the exact statement, definitions, version history and corrections before proposing text.
 
 ### ON OZAKI'S THEOREM REALIZING PRESCRIBED p\-GROUPS AS p\-CLASS TOWER GROUPS
 
@@ -1227,38 +1251,11 @@ Metadata leads for editorial review. A match or changed file does not verify a m
 - Possible affected pages: `articles/branched-covers.html`, `articles/critical-points-monodromy.html`, `articles/exceptional-specializations.html`, `articles/generic-polynomials.html`, `articles/inverse-galois.html`, `articles/krawtchouk.html`, `articles/laguerre-negative-parameters.html`, `articles/laguerre.html`, `articles/orthogonal-families.html`, `articles/specialization.html`
 - Check the exact statement, definitions, version history and corrections before proposing text.
 
-### A Possible Generalization of Maeda’s Conjecture
-
-- Event: `c4e70122abd61244036b` (collector-schema-enriched, detected 2026-11-16T20:11:27Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/978-3-319-03847-6_12>
-- Existing reference keys: Tsaknias2012
-- Possible affected pages: `articles/eisenstein-zero-polynomials.html`, `articles/fekete.html`, `articles/hecke-polynomials.html`, `articles/hecke-polynomials.html#higher-level`, `articles/hecke-polynomials.html#maeda`, `articles/kaneko-zagier.html`, `articles/taylor-prescriptions.html`, `articles/taylor.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Irreducibility of random polynomials: general measures
-
-- Event: `bcab72247ac73217fa5d` (collector-schema-enriched, detected 2026-11-16T20:11:27Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/s00222-023-01193-6>
-- Existing reference keys: BarySorokerKoukoulopoulosKozma2023
-- Possible affected pages: `articles/factor-reversal.html`, `articles/height-counting.html`, `articles/littlewood.html`, `articles/random-matrices.html`, `articles/random-models.html`, `articles/random-models.html#general-laws`, `articles/random-models.html#methods`, `articles/random-models.html#models`, `articles/random-reciprocal.html`, `articles/twisted-reciprocity.html`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-### Complementary Bell Numbers: Arithmetical Properties and Wilf’s Conjecture
-
-- Event: `b64f3c46c7d7077c7b93` (collector-schema-enriched, detected 2026-11-16T20:11:27Z)
-- Source: crossref; version: metadata only
-- Link: <https://doi.org/10.1007/978-3-642-30979-3_2>
-- Existing reference keys: AmdeberhanDeAngelisMoll2013
-- Possible affected pages: `articles/touchard.html#definition`, `articles/touchard.html#known`
-- Check the exact statement, definitions, version history and corrections before proposing text.
-
-Showing the latest 150 of 693 events; state.json retains the complete queue.
+Showing the latest 150 of 696 events; state.json retains the complete queue.
 
 ## Record totals
 
-1043 source records; 978 groups linked by exact identifiers. Similar titles alone are not merged.
+1046 source records; 978 groups linked by exact identifiers. Similar titles alone are not merged.
 23 records screened out of the current review queue; their observation history is retained.
 
 Metadata and webpage monitoring are selective. Failed or truncated scans retain their previous checkpoint. The weekly editor also searches outside this source register.
